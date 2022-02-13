@@ -1,0 +1,552 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AsyncColShape&lt;TColShape&gt;
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class AsyncColShape&lt;TColShape&gt;
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Async_Elements_Entities_AsyncColShape_1__ctor__0_AltV_Net_Async_IAsyncContext_">AsyncColShape(TColShape, IAsyncContext)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Async_Elements_Entities_AsyncColShape_1_ColShapeType">ColShapeType</a></li><li><a href="#AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsPlayersOnly">IsPlayersOnly</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsEntityIn_AltV_Net_Elements_Entities_IEntity_">IsEntityIn(IEntity)</a></li><li><a href="#AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsPlayerIn_AltV_Net_Elements_Entities_IPlayer_">IsPlayerIn(IPlayer)</a></li><li><a href="#AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsVehicleIn_AltV_Net_Elements_Entities_IVehicle_">IsVehicleIn(IVehicle)</a></li><li><a href="#AltV_Net_Async_Elements_Entities_AsyncColShape_1_Remove">Remove()</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/Elements/Entities/AsyncColShape.cs/#L6">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_Elements_Entities_AsyncColShape_1.md&amp;value=---%0Auid%3A%20AltV.Net.Async.Elements.Entities.AsyncColShape%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Async_Elements_Entities_AsyncColShape_1" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1" class="text-break">Class AsyncColShape&lt;TColShape&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html">AsyncBaseObject</a>&lt;TColShape&gt;</div>
+    <div class="level2"><a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncWorldObject-1.html">AsyncWorldObject</a>&lt;TColShape&gt;</div>
+    <div class="level3"><span class="xref">AsyncColShape&lt;TColShape&gt;</span></div>
+      <div class="level4"><a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncCheckpoint-1.html">AsyncCheckpoint&lt;TCheckpoint&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a></div>
+    <div><a class="xref" href="AltV.Net.Elements.Entities.IWorldObject.html">IWorldObject</a></div>
+    <div><a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a></div>
+    <div><a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a></div>
+    <div><a class="xref" href="AltV.Net.Types.INative.html">INative</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncWorldObject-1.html#AltV_Net_Async_Elements_Entities_AsyncWorldObject_1_Position">AsyncWorldObject&lt;TColShape&gt;.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncWorldObject-1.html#AltV_Net_Async_Elements_Entities_AsyncWorldObject_1_Dimension">AsyncWorldObject&lt;TColShape&gt;.Dimension</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_NativePointer">AsyncBaseObject&lt;TColShape&gt;.NativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_Exists">AsyncBaseObject&lt;TColShape&gt;.Exists</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_Type">AsyncBaseObject&lt;TColShape&gt;.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_BaseObject">AsyncBaseObject&lt;TColShape&gt;.BaseObject</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_AsyncContext">AsyncBaseObject&lt;TColShape&gt;.AsyncContext</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_SetMetaData_System_String_System_Object_">AsyncBaseObject&lt;TColShape&gt;.SetMetaData(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_GetMetaData__1_System_String___0__">AsyncBaseObject&lt;TColShape&gt;.GetMetaData&lt;T&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">AsyncBaseObject&lt;TColShape&gt;.SetMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">AsyncBaseObject&lt;TColShape&gt;.GetMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_SetData_System_String_System_Object_">AsyncBaseObject&lt;TColShape&gt;.SetData(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_GetData__1_System_String___0__">AsyncBaseObject&lt;TColShape&gt;.GetData&lt;T&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_HasData_System_String_">AsyncBaseObject&lt;TColShape&gt;.HasData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_GetAllDataKeys">AsyncBaseObject&lt;TColShape&gt;.GetAllDataKeys()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_DeleteData_System_String_">AsyncBaseObject&lt;TColShape&gt;.DeleteData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_ClearData">AsyncBaseObject&lt;TColShape&gt;.ClearData()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_HasMetaData_System_String_">AsyncBaseObject&lt;TColShape&gt;.HasMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_DeleteMetaData_System_String_">AsyncBaseObject&lt;TColShape&gt;.DeleteMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_CheckIfEntityExists">AsyncBaseObject&lt;TColShape&gt;.CheckIfEntityExists()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_OnRemove">AsyncBaseObject&lt;TColShape&gt;.OnRemove()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_AddRef">AsyncBaseObject&lt;TColShape&gt;.AddRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Async.Elements.Entities.AsyncBaseObject-1.html#AltV_Net_Async_Elements_Entities_AsyncBaseObject_1_RemoveRef">AsyncBaseObject&lt;TColShape&gt;.RemoveRef()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Async.Elements.Entities.html">AltV.Net.Async.Elements.Entities</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Async.dll</h6>
+  <h5 id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AsyncColShape&lt;TColShape&gt; : AsyncWorldObject&lt;TColShape&gt;, IColShape, IWorldObject, IBaseObject, IRefCountable, INative where TColShape : class, IColShape</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TColShape</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_Elements_Entities_AsyncColShape_1__ctor__0_AltV_Net_Async_IAsyncContext_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.Elements.Entities.AsyncColShape%601.%23ctor(%600%2CAltV.Net.Async.IAsyncContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/Elements/Entities/AsyncColShape.cs/#L41">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_Elements_Entities_AsyncColShape_1__ctor_" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.#ctor*"></a>
+  <h4 id="AltV_Net_Async_Elements_Entities_AsyncColShape_1__ctor__0_AltV_Net_Async_IAsyncContext_" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.#ctor(`0,AltV.Net.Async.IAsyncContext)">AsyncColShape(TColShape, IAsyncContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncColShape(TColShape colShape, IAsyncContext asyncContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TColShape</span></td>
+        <td><span class="parametername">colShape</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Async.IAsyncContext.html">IAsyncContext</a></td>
+        <td><span class="parametername">asyncContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_Elements_Entities_AsyncColShape_1_ColShapeType.md&amp;value=---%0Auid%3A%20AltV.Net.Async.Elements.Entities.AsyncColShape%601.ColShapeType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/Elements/Entities/AsyncColShape.cs/#L10">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_ColShapeType_" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.ColShapeType*"></a>
+  <h4 id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_ColShapeType" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.ColShapeType">ColShapeType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColShapeType ColShapeType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.ColShapeType.html">ColShapeType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsPlayersOnly.md&amp;value=---%0Auid%3A%20AltV.Net.Async.Elements.Entities.AsyncColShape%601.IsPlayersOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/Elements/Entities/AsyncColShape.cs/#L22">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsPlayersOnly_" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.IsPlayersOnly*"></a>
+  <h4 id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsPlayersOnly" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.IsPlayersOnly">IsPlayersOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayersOnly { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsEntityIn_AltV_Net_Elements_Entities_IEntity_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.Elements.Entities.AsyncColShape%601.IsEntityIn(AltV.Net.Elements.Entities.IEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/Elements/Entities/AsyncColShape.cs/#L45">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsEntityIn_" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.IsEntityIn*"></a>
+  <h4 id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsEntityIn_AltV_Net_Elements_Entities_IEntity_" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.IsEntityIn(AltV.Net.Elements.Entities.IEntity)">IsEntityIn(IEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEntityIn(IEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsPlayerIn_AltV_Net_Elements_Entities_IPlayer_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.Elements.Entities.AsyncColShape%601.IsPlayerIn(AltV.Net.Elements.Entities.IPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/Elements/Entities/AsyncColShape.cs/#L54">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsPlayerIn_" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.IsPlayerIn*"></a>
+  <h4 id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsPlayerIn_AltV_Net_Elements_Entities_IPlayer_" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.IsPlayerIn(AltV.Net.Elements.Entities.IPlayer)">IsPlayerIn(IPlayer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlayerIn(IPlayer entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsVehicleIn_AltV_Net_Elements_Entities_IVehicle_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.Elements.Entities.AsyncColShape%601.IsVehicleIn(AltV.Net.Elements.Entities.IVehicle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/Elements/Entities/AsyncColShape.cs/#L63">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsVehicleIn_" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.IsVehicleIn*"></a>
+  <h4 id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_IsVehicleIn_AltV_Net_Elements_Entities_IVehicle_" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.IsVehicleIn(AltV.Net.Elements.Entities.IVehicle)">IsVehicleIn(IVehicle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVehicleIn(IVehicle entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_Elements_Entities_AsyncColShape_1_Remove.md&amp;value=---%0Auid%3A%20AltV.Net.Async.Elements.Entities.AsyncColShape%601.Remove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/Elements/Entities/AsyncColShape.cs/#L72">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_Remove_" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.Remove*"></a>
+  <h4 id="AltV_Net_Async_Elements_Entities_AsyncColShape_1_Remove" data-uid="AltV.Net.Async.Elements.Entities.AsyncColShape`1.Remove">Remove()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IWorldObject.html">IWorldObject</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Types.INative.html">INative</a>
+  </div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

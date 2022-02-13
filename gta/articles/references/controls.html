@@ -1,0 +1,2475 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Controls </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Controls ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../styles/colors.css">
+    <link rel="stylesheet" href="../../../styles/discord.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../../index.html">
+                        <img src="../../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#controls">Controls</a></li><li><a href="#input-groups">Input Groups</a></li><li><a href="#controls-1">Controls</a></li><li><a href="#examples">Examples</a><ul class="level2 nav bs-docs-sidenav examples"><li><a href="#disable-control-action">Disable control action</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs-gta/blob/master/articles/references/controls.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="controls">Controls</h1>
+
+<h1 id="input-groups">Input Groups</h1>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>INPUTGROUP_MOVE</td>
+</tr>
+<tr>
+<td>1</td>
+<td>INPUTGROUP_LOOK</td>
+</tr>
+<tr>
+<td>2</td>
+<td>INPUTGROUP_WHEEL</td>
+</tr>
+<tr>
+<td>3</td>
+<td>INPUTGROUP_CELLPHONE_NAVIGATE</td>
+</tr>
+<tr>
+<td>4</td>
+<td>INPUTGROUP_CELLPHONE_NAVIGATE_UD</td>
+</tr>
+<tr>
+<td>5</td>
+<td>INPUTGROUP_CELLPHONE_NAVIGATE_LR</td>
+</tr>
+<tr>
+<td>6</td>
+<td>INPUTGROUP_FRONTEND_DPAD_ALL</td>
+</tr>
+<tr>
+<td>7</td>
+<td>INPUTGROUP_FRONTEND_DPAD_UD</td>
+</tr>
+<tr>
+<td>8</td>
+<td>INPUTGROUP_FRONTEND_DPAD_LR</td>
+</tr>
+<tr>
+<td>9</td>
+<td>INPUTGROUP_FRONTEND_LSTICK_ALL</td>
+</tr>
+<tr>
+<td>10</td>
+<td>INPUTGROUP_FRONTEND_RSTICK_ALL</td>
+</tr>
+<tr>
+<td>11</td>
+<td>INPUTGROUP_FRONTEND_GENERIC_UD</td>
+</tr>
+<tr>
+<td>12</td>
+<td>INPUTGROUP_FRONTEND_GENERIC_LR</td>
+</tr>
+<tr>
+<td>13</td>
+<td>INPUTGROUP_FRONTEND_GENERIC_ALL</td>
+</tr>
+<tr>
+<td>14</td>
+<td>INPUTGROUP_FRONTEND_BUMPERS</td>
+</tr>
+<tr>
+<td>15</td>
+<td>INPUTGROUP_FRONTEND_TRIGGERS</td>
+</tr>
+<tr>
+<td>16</td>
+<td>INPUTGROUP_FRONTEND_STICKS</td>
+</tr>
+<tr>
+<td>17</td>
+<td>INPUTGROUP_SCRIPT_DPAD_ALL</td>
+</tr>
+<tr>
+<td>18</td>
+<td>INPUTGROUP_SCRIPT_DPAD_UD</td>
+</tr>
+<tr>
+<td>19</td>
+<td>INPUTGROUP_SCRIPT_DPAD_LR</td>
+</tr>
+<tr>
+<td>20</td>
+<td>INPUTGROUP_SCRIPT_LSTICK_ALL</td>
+</tr>
+<tr>
+<td>21</td>
+<td>INPUTGROUP_SCRIPT_RSTICK_ALL</td>
+</tr>
+<tr>
+<td>22</td>
+<td>INPUTGROUP_SCRIPT_BUMPERS</td>
+</tr>
+<tr>
+<td>23</td>
+<td>INPUTGROUP_SCRIPT_TRIGGERS</td>
+</tr>
+<tr>
+<td>24</td>
+<td>INPUTGROUP_WEAPON_WHEEL_CYCLE</td>
+</tr>
+<tr>
+<td>25</td>
+<td>INPUTGROUP_FLY</td>
+</tr>
+<tr>
+<td>26</td>
+<td>INPUTGROUP_SUB</td>
+</tr>
+<tr>
+<td>27</td>
+<td>INPUTGROUP_VEH_MOVE_ALL</td>
+</tr>
+<tr>
+<td>28</td>
+<td>INPUTGROUP_CURSOR</td>
+</tr>
+<tr>
+<td>29</td>
+<td>INPUTGROUP_CURSOR_SCROLL</td>
+</tr>
+<tr>
+<td>30</td>
+<td>INPUTGROUP_SNIPER_ZOOM_SECONDARY</td>
+</tr>
+<tr>
+<td>31</td>
+<td>INPUTGROUP_VEH_HYDRAULICS_CONTROL</td>
+</tr>
+</tbody>
+</table>
+<h1 id="controls-1">Controls</h1>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Name</th>
+<th>Default QWERTY</th>
+<th>Xbox Controller</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>INPUT_NEXT_CAMERA</td>
+<td>V</td>
+<td>BACK</td>
+</tr>
+<tr>
+<td>1</td>
+<td>INPUT_LOOK_LR</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>2</td>
+<td>INPUT_LOOK_UD</td>
+<td>MOUSE DOWN</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>3</td>
+<td>INPUT_LOOK_UP_ONLY</td>
+<td>(NONE)</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>4</td>
+<td>INPUT_LOOK_DOWN_ONLY</td>
+<td>MOUSE DOWN</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>5</td>
+<td>INPUT_LOOK_LEFT_ONLY</td>
+<td>(NONE)</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>6</td>
+<td>INPUT_LOOK_RIGHT_ONLY</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>7</td>
+<td>INPUT_CINEMATIC_SLOWMO</td>
+<td>(NONE)</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>8</td>
+<td>INPUT_SCRIPTED_FLY_UD</td>
+<td>S</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>9</td>
+<td>INPUT_SCRIPTED_FLY_LR</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>10</td>
+<td>INPUT_SCRIPTED_FLY_ZUP</td>
+<td>PAGEUP</td>
+<td>LT</td>
+</tr>
+<tr>
+<td>11</td>
+<td>INPUT_SCRIPTED_FLY_ZDOWN</td>
+<td>PAGEDOWN</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>12</td>
+<td>INPUT_WEAPON_WHEEL_UD</td>
+<td>MOUSE DOWN</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>13</td>
+<td>INPUT_WEAPON_WHEEL_LR</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>14</td>
+<td>INPUT_WEAPON_WHEEL_NEXT</td>
+<td>SCROLLWHEEL DOWN</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>15</td>
+<td>INPUT_WEAPON_WHEEL_PREV</td>
+<td>SCROLLWHEEL UP</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>16</td>
+<td>INPUT_SELECT_NEXT_WEAPON</td>
+<td>SCROLLWHEEL DOWN</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>17</td>
+<td>INPUT_SELECT_PREV_WEAPON</td>
+<td>SCROLLWHEEL UP</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>18</td>
+<td>INPUT_SKIP_CUTSCENE</td>
+<td>ENTER / LEFT MOUSE BUTTON / SPACEBAR</td>
+<td>A</td>
+</tr>
+<tr>
+<td>19</td>
+<td>INPUT_CHARACTER_WHEEL</td>
+<td>LEFT ALT</td>
+<td>DPAD DOWN</td>
+</tr>
+<tr>
+<td>20</td>
+<td>INPUT_MULTIPLAYER_INFO</td>
+<td>Z</td>
+<td>DPAD DOWN</td>
+</tr>
+<tr>
+<td>21</td>
+<td>INPUT_SPRINT</td>
+<td>LEFT SHIFT</td>
+<td>A</td>
+</tr>
+<tr>
+<td>22</td>
+<td>INPUT_JUMP</td>
+<td>SPACEBAR</td>
+<td>X</td>
+</tr>
+<tr>
+<td>23</td>
+<td>INPUT_ENTER</td>
+<td>F</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>24</td>
+<td>INPUT_ATTACK</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>25</td>
+<td>INPUT_AIM</td>
+<td>RIGHT MOUSE BUTTON</td>
+<td>LT</td>
+</tr>
+<tr>
+<td>26</td>
+<td>INPUT_LOOK_BEHIND</td>
+<td>C</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>27</td>
+<td>INPUT_PHONE</td>
+<td>ARROW UP / SCROLLWHEEL BUTTON (PRESS)</td>
+<td>DPAD UP</td>
+</tr>
+<tr>
+<td>28</td>
+<td>INPUT_SPECIAL_ABILITY</td>
+<td>(NONE)</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>29</td>
+<td>INPUT_SPECIAL_ABILITY_SECONDARY</td>
+<td>B</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>30</td>
+<td>INPUT_MOVE_LR</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>31</td>
+<td>INPUT_MOVE_UD</td>
+<td>S</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>32</td>
+<td>INPUT_MOVE_UP_ONLY</td>
+<td>W</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>33</td>
+<td>INPUT_MOVE_DOWN_ONLY</td>
+<td>S</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>34</td>
+<td>INPUT_MOVE_LEFT_ONLY</td>
+<td>A</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>35</td>
+<td>INPUT_MOVE_RIGHT_ONLY</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>36</td>
+<td>INPUT_DUCK</td>
+<td>LEFT CTRL</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>37</td>
+<td>INPUT_SELECT_WEAPON</td>
+<td>TAB</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>38</td>
+<td>INPUT_PICKUP</td>
+<td>E</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>39</td>
+<td>INPUT_SNIPER_ZOOM</td>
+<td>[</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>40</td>
+<td>INPUT_SNIPER_ZOOM_IN_ONLY</td>
+<td>]</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>41</td>
+<td>INPUT_SNIPER_ZOOM_OUT_ONLY</td>
+<td>[</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>42</td>
+<td>INPUT_SNIPER_ZOOM_IN_SECONDARY</td>
+<td>]</td>
+<td>DPAD UP</td>
+</tr>
+<tr>
+<td>43</td>
+<td>INPUT_SNIPER_ZOOM_OUT_SECONDARY</td>
+<td>[</td>
+<td>DPAD DOWN</td>
+</tr>
+<tr>
+<td>44</td>
+<td>INPUT_COVER</td>
+<td>Q</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>45</td>
+<td>INPUT_RELOAD</td>
+<td>R</td>
+<td>B</td>
+</tr>
+<tr>
+<td>46</td>
+<td>INPUT_TALK</td>
+<td>E</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>47</td>
+<td>INPUT_DETONATE</td>
+<td>G</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>48</td>
+<td>INPUT_HUD_SPECIAL</td>
+<td>Z</td>
+<td>DPAD DOWN</td>
+</tr>
+<tr>
+<td>49</td>
+<td>INPUT_ARREST</td>
+<td>F</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>50</td>
+<td>INPUT_ACCURATE_AIM</td>
+<td>SCROLLWHEEL DOWN</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>51</td>
+<td>INPUT_CONTEXT</td>
+<td>E</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>52</td>
+<td>INPUT_CONTEXT_SECONDARY</td>
+<td>Q</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>53</td>
+<td>INPUT_WEAPON_SPECIAL</td>
+<td>(NONE)</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>54</td>
+<td>INPUT_WEAPON_SPECIAL_TWO</td>
+<td>E</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>55</td>
+<td>INPUT_DIVE</td>
+<td>SPACEBAR</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>56</td>
+<td>INPUT_DROP_WEAPON</td>
+<td>F9</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>57</td>
+<td>INPUT_DROP_AMMO</td>
+<td>F10</td>
+<td>B</td>
+</tr>
+<tr>
+<td>58</td>
+<td>INPUT_THROW_GRENADE</td>
+<td>G</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>59</td>
+<td>INPUT_VEH_MOVE_LR</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>60</td>
+<td>INPUT_VEH_MOVE_UD</td>
+<td>LEFT CTRL</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>61</td>
+<td>INPUT_VEH_MOVE_UP_ONLY</td>
+<td>LEFT SHIFT</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>62</td>
+<td>INPUT_VEH_MOVE_DOWN_ONLY</td>
+<td>LEFT CTRL</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>63</td>
+<td>INPUT_VEH_MOVE_LEFT_ONLY</td>
+<td>A</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>64</td>
+<td>INPUT_VEH_MOVE_RIGHT_ONLY</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>65</td>
+<td>INPUT_VEH_SPECIAL</td>
+<td>(NONE)</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>66</td>
+<td>INPUT_VEH_GUN_LR</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>67</td>
+<td>INPUT_VEH_GUN_UD</td>
+<td>MOUSE DOWN</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>68</td>
+<td>INPUT_VEH_AIM</td>
+<td>RIGHT MOUSE BUTTON</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>69</td>
+<td>INPUT_VEH_ATTACK</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>70</td>
+<td>INPUT_VEH_ATTACK2</td>
+<td>RIGHT MOUSE BUTTON</td>
+<td>A</td>
+</tr>
+<tr>
+<td>71</td>
+<td>INPUT_VEH_ACCELERATE</td>
+<td>W</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>72</td>
+<td>INPUT_VEH_BRAKE</td>
+<td>S</td>
+<td>LT</td>
+</tr>
+<tr>
+<td>73</td>
+<td>INPUT_VEH_DUCK</td>
+<td>X</td>
+<td>A</td>
+</tr>
+<tr>
+<td>74</td>
+<td>INPUT_VEH_HEADLIGHT</td>
+<td>H</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>75</td>
+<td>INPUT_VEH_EXIT</td>
+<td>F</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>76</td>
+<td>INPUT_VEH_HANDBRAKE</td>
+<td>SPACEBAR</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>77</td>
+<td>INPUT_VEH_HOTWIRE_LEFT</td>
+<td>W</td>
+<td>LT</td>
+</tr>
+<tr>
+<td>78</td>
+<td>INPUT_VEH_HOTWIRE_RIGHT</td>
+<td>S</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>79</td>
+<td>INPUT_VEH_LOOK_BEHIND</td>
+<td>C</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>80</td>
+<td>INPUT_VEH_CIN_CAM</td>
+<td>R</td>
+<td>B</td>
+</tr>
+<tr>
+<td>81</td>
+<td>INPUT_VEH_NEXT_RADIO</td>
+<td>.</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>82</td>
+<td>INPUT_VEH_PREV_RADIO</td>
+<td>,</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>83</td>
+<td>INPUT_VEH_NEXT_RADIO_TRACK</td>
+<td>=</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>84</td>
+<td>INPUT_VEH_PREV_RADIO_TRACK</td>
+<td>-</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>85</td>
+<td>INPUT_VEH_RADIO_WHEEL</td>
+<td>Q</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>86</td>
+<td>INPUT_VEH_HORN</td>
+<td>E</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>87</td>
+<td>INPUT_VEH_FLY_THROTTLE_UP</td>
+<td>W</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>88</td>
+<td>INPUT_VEH_FLY_THROTTLE_DOWN</td>
+<td>S</td>
+<td>LT</td>
+</tr>
+<tr>
+<td>89</td>
+<td>INPUT_VEH_FLY_YAW_LEFT</td>
+<td>A</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>90</td>
+<td>INPUT_VEH_FLY_YAW_RIGHT</td>
+<td>D</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>91</td>
+<td>INPUT_VEH_PASSENGER_AIM</td>
+<td>RIGHT MOUSE BUTTON</td>
+<td>LT</td>
+</tr>
+<tr>
+<td>92</td>
+<td>INPUT_VEH_PASSENGER_ATTACK</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>93</td>
+<td>INPUT_VEH_SPECIAL_ABILITY_FRANKLIN</td>
+<td>(NONE)</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>94</td>
+<td>INPUT_VEH_STUNT_UD</td>
+<td>(NONE)</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>95</td>
+<td>INPUT_VEH_CINEMATIC_UD</td>
+<td>MOUSE DOWN</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>96</td>
+<td>INPUT_VEH_CINEMATIC_UP_ONLY</td>
+<td>NUMPAD- / SCROLLWHEEL UP</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>97</td>
+<td>INPUT_VEH_CINEMATIC_DOWN_ONLY</td>
+<td>NUMPAD+ / SCROLLWHEEL DOWN</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>98</td>
+<td>INPUT_VEH_CINEMATIC_LR</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>99</td>
+<td>INPUT_VEH_SELECT_NEXT_WEAPON</td>
+<td>SCROLLWHEEL UP</td>
+<td>X</td>
+</tr>
+<tr>
+<td>100</td>
+<td>INPUT_VEH_SELECT_PREV_WEAPON</td>
+<td>[</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>101</td>
+<td>INPUT_VEH_ROOF</td>
+<td>H</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>102</td>
+<td>INPUT_VEH_JUMP</td>
+<td>SPACEBAR</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>103</td>
+<td>INPUT_VEH_GRAPPLING_HOOK</td>
+<td>E</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>104</td>
+<td>INPUT_VEH_SHUFFLE</td>
+<td>H</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>105</td>
+<td>INPUT_VEH_DROP_PROJECTILE</td>
+<td>X</td>
+<td>A</td>
+</tr>
+<tr>
+<td>106</td>
+<td>INPUT_VEH_MOUSE_CONTROL_OVERRIDE</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>107</td>
+<td>INPUT_VEH_FLY_ROLL_LR</td>
+<td>NUMPAD 6</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>108</td>
+<td>INPUT_VEH_FLY_ROLL_LEFT_ONLY</td>
+<td>NUMPAD 4</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>109</td>
+<td>INPUT_VEH_FLY_ROLL_RIGHT_ONLY</td>
+<td>NUMPAD 6</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>110</td>
+<td>INPUT_VEH_FLY_PITCH_UD</td>
+<td>NUMPAD 5</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>111</td>
+<td>INPUT_VEH_FLY_PITCH_UP_ONLY</td>
+<td>NUMPAD 8</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>112</td>
+<td>INPUT_VEH_FLY_PITCH_DOWN_ONLY</td>
+<td>NUMPAD 5</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>113</td>
+<td>INPUT_VEH_FLY_UNDERCARRIAGE</td>
+<td>G</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>114</td>
+<td>INPUT_VEH_FLY_ATTACK</td>
+<td>RIGHT MOUSE BUTTON</td>
+<td>A</td>
+</tr>
+<tr>
+<td>115</td>
+<td>INPUT_VEH_FLY_SELECT_NEXT_WEAPON</td>
+<td>SCROLLWHEEL UP</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>116</td>
+<td>INPUT_VEH_FLY_SELECT_PREV_WEAPON</td>
+<td>[</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>117</td>
+<td>INPUT_VEH_FLY_SELECT_TARGET_LEFT</td>
+<td>NUMPAD 7</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>118</td>
+<td>INPUT_VEH_FLY_SELECT_TARGET_RIGHT</td>
+<td>NUMPAD 9</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>119</td>
+<td>INPUT_VEH_FLY_VERTICAL_FLIGHT_MODE</td>
+<td>E</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>120</td>
+<td>INPUT_VEH_FLY_DUCK</td>
+<td>X</td>
+<td>A</td>
+</tr>
+<tr>
+<td>121</td>
+<td>INPUT_VEH_FLY_ATTACK_CAMERA</td>
+<td>INSERT</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>122</td>
+<td>INPUT_VEH_FLY_MOUSE_CONTROL_OVERRIDE</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>123</td>
+<td>INPUT_VEH_SUB_TURN_LR</td>
+<td>NUMPAD 6</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>124</td>
+<td>INPUT_VEH_SUB_TURN_LEFT_ONLY</td>
+<td>NUMPAD 4</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>125</td>
+<td>INPUT_VEH_SUB_TURN_RIGHT_ONLY</td>
+<td>NUMPAD 6</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>126</td>
+<td>INPUT_VEH_SUB_PITCH_UD</td>
+<td>NUMPAD 5</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>127</td>
+<td>INPUT_VEH_SUB_PITCH_UP_ONLY</td>
+<td>NUMPAD 8</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>128</td>
+<td>INPUT_VEH_SUB_PITCH_DOWN_ONLY</td>
+<td>NUMPAD 5</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>129</td>
+<td>INPUT_VEH_SUB_THROTTLE_UP</td>
+<td>W</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>130</td>
+<td>INPUT_VEH_SUB_THROTTLE_DOWN</td>
+<td>S</td>
+<td>LT</td>
+</tr>
+<tr>
+<td>131</td>
+<td>INPUT_VEH_SUB_ASCEND</td>
+<td>LEFT SHIFT</td>
+<td>X</td>
+</tr>
+<tr>
+<td>132</td>
+<td>INPUT_VEH_SUB_DESCEND</td>
+<td>LEFT CTRL</td>
+<td>A</td>
+</tr>
+<tr>
+<td>133</td>
+<td>INPUT_VEH_SUB_TURN_HARD_LEFT</td>
+<td>A</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>134</td>
+<td>INPUT_VEH_SUB_TURN_HARD_RIGHT</td>
+<td>D</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>135</td>
+<td>INPUT_VEH_SUB_MOUSE_CONTROL_OVERRIDE</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>136</td>
+<td>INPUT_VEH_PUSHBIKE_PEDAL</td>
+<td>W</td>
+<td>A</td>
+</tr>
+<tr>
+<td>137</td>
+<td>INPUT_VEH_PUSHBIKE_SPRINT</td>
+<td>CAPSLOCK</td>
+<td>A</td>
+</tr>
+<tr>
+<td>138</td>
+<td>INPUT_VEH_PUSHBIKE_FRONT_BRAKE</td>
+<td>Q</td>
+<td>LT</td>
+</tr>
+<tr>
+<td>139</td>
+<td>INPUT_VEH_PUSHBIKE_REAR_BRAKE</td>
+<td>S</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>140</td>
+<td>INPUT_MELEE_ATTACK_LIGHT</td>
+<td>R</td>
+<td>B</td>
+</tr>
+<tr>
+<td>141</td>
+<td>INPUT_MELEE_ATTACK_HEAVY</td>
+<td>Q</td>
+<td>A</td>
+</tr>
+<tr>
+<td>142</td>
+<td>INPUT_MELEE_ATTACK_ALTERNATE</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>143</td>
+<td>INPUT_MELEE_BLOCK</td>
+<td>SPACEBAR</td>
+<td>X</td>
+</tr>
+<tr>
+<td>144</td>
+<td>INPUT_PARACHUTE_DEPLOY</td>
+<td>F / LEFT MOUSE BUTTON</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>145</td>
+<td>INPUT_PARACHUTE_DETACH</td>
+<td>F</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>146</td>
+<td>INPUT_PARACHUTE_TURN_LR</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>147</td>
+<td>INPUT_PARACHUTE_TURN_LEFT_ONLY</td>
+<td>A</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>148</td>
+<td>INPUT_PARACHUTE_TURN_RIGHT_ONLY</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>149</td>
+<td>INPUT_PARACHUTE_PITCH_UD</td>
+<td>S</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>150</td>
+<td>INPUT_PARACHUTE_PITCH_UP_ONLY</td>
+<td>W</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>151</td>
+<td>INPUT_PARACHUTE_PITCH_DOWN_ONLY</td>
+<td>S</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>152</td>
+<td>INPUT_PARACHUTE_BRAKE_LEFT</td>
+<td>Q</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>153</td>
+<td>INPUT_PARACHUTE_BRAKE_RIGHT</td>
+<td>E</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>154</td>
+<td>INPUT_PARACHUTE_SMOKE</td>
+<td>X</td>
+<td>A</td>
+</tr>
+<tr>
+<td>155</td>
+<td>INPUT_PARACHUTE_PRECISION_LANDING</td>
+<td>LEFT SHIFT</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>156</td>
+<td>INPUT_MAP</td>
+<td>(NONE)</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>157</td>
+<td>INPUT_SELECT_WEAPON_UNARMED</td>
+<td>1</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>158</td>
+<td>INPUT_SELECT_WEAPON_MELEE</td>
+<td>2</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>159</td>
+<td>INPUT_SELECT_WEAPON_HANDGUN</td>
+<td>6</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>160</td>
+<td>INPUT_SELECT_WEAPON_SHOTGUN</td>
+<td>3</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>161</td>
+<td>INPUT_SELECT_WEAPON_SMG</td>
+<td>7</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>162</td>
+<td>INPUT_SELECT_WEAPON_AUTO_RIFLE</td>
+<td>8</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>163</td>
+<td>INPUT_SELECT_WEAPON_SNIPER</td>
+<td>9</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>164</td>
+<td>INPUT_SELECT_WEAPON_HEAVY</td>
+<td>4</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>165</td>
+<td>INPUT_SELECT_WEAPON_SPECIAL</td>
+<td>5</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>166</td>
+<td>INPUT_SELECT_CHARACTER_MICHAEL</td>
+<td>F5</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>167</td>
+<td>INPUT_SELECT_CHARACTER_FRANKLIN</td>
+<td>F6</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>168</td>
+<td>INPUT_SELECT_CHARACTER_TREVOR</td>
+<td>F7</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>169</td>
+<td>INPUT_SELECT_CHARACTER_MULTIPLAYER</td>
+<td>F8 (CONSOLE)</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>170</td>
+<td>INPUT_SAVE_REPLAY_CLIP</td>
+<td>F3</td>
+<td>B</td>
+</tr>
+<tr>
+<td>171</td>
+<td>INPUT_SPECIAL_ABILITY_PC</td>
+<td>CAPSLOCK</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>172</td>
+<td>INPUT_CELLPHONE_UP</td>
+<td>ARROW UP</td>
+<td>DPAD UP</td>
+</tr>
+<tr>
+<td>173</td>
+<td>INPUT_CELLPHONE_DOWN</td>
+<td>ARROW DOWN</td>
+<td>DPAD DOWN</td>
+</tr>
+<tr>
+<td>174</td>
+<td>INPUT_CELLPHONE_LEFT</td>
+<td>ARROW LEFT</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>175</td>
+<td>INPUT_CELLPHONE_RIGHT</td>
+<td>ARROW RIGHT</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>176</td>
+<td>INPUT_CELLPHONE_SELECT</td>
+<td>ENTER / LEFT MOUSE BUTTON</td>
+<td>A</td>
+</tr>
+<tr>
+<td>177</td>
+<td>INPUT_CELLPHONE_CANCEL</td>
+<td>BACKSPACE / ESC / RIGHT MOUSE BUTTON</td>
+<td>B</td>
+</tr>
+<tr>
+<td>178</td>
+<td>INPUT_CELLPHONE_OPTION</td>
+<td>DELETE</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>179</td>
+<td>INPUT_CELLPHONE_EXTRA_OPTION</td>
+<td>SPACEBAR</td>
+<td>X</td>
+</tr>
+<tr>
+<td>180</td>
+<td>INPUT_CELLPHONE_SCROLL_FORWARD</td>
+<td>SCROLLWHEEL DOWN</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>181</td>
+<td>INPUT_CELLPHONE_SCROLL_BACKWARD</td>
+<td>SCROLLWHEEL UP</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>182</td>
+<td>INPUT_CELLPHONE_CAMERA_FOCUS_LOCK</td>
+<td>L</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>183</td>
+<td>INPUT_CELLPHONE_CAMERA_GRID</td>
+<td>G</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>184</td>
+<td>INPUT_CELLPHONE_CAMERA_SELFIE</td>
+<td>E</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>185</td>
+<td>INPUT_CELLPHONE_CAMERA_DOF</td>
+<td>F</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>186</td>
+<td>INPUT_CELLPHONE_CAMERA_EXPRESSION</td>
+<td>X</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>187</td>
+<td>INPUT_FRONTEND_DOWN</td>
+<td>ARROW DOWN</td>
+<td>DPAD DOWN</td>
+</tr>
+<tr>
+<td>188</td>
+<td>INPUT_FRONTEND_UP</td>
+<td>ARROW UP</td>
+<td>DPAD UP</td>
+</tr>
+<tr>
+<td>189</td>
+<td>INPUT_FRONTEND_LEFT</td>
+<td>ARROW LEFT</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>190</td>
+<td>INPUT_FRONTEND_RIGHT</td>
+<td>ARROW RIGHT</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>191</td>
+<td>INPUT_FRONTEND_RDOWN</td>
+<td>ENTER</td>
+<td>A</td>
+</tr>
+<tr>
+<td>192</td>
+<td>INPUT_FRONTEND_RUP</td>
+<td>TAB</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>193</td>
+<td>INPUT_FRONTEND_RLEFT</td>
+<td>(NONE)</td>
+<td>X</td>
+</tr>
+<tr>
+<td>194</td>
+<td>INPUT_FRONTEND_RRIGHT</td>
+<td>BACKSPACE</td>
+<td>B</td>
+</tr>
+<tr>
+<td>195</td>
+<td>INPUT_FRONTEND_AXIS_X</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>196</td>
+<td>INPUT_FRONTEND_AXIS_Y</td>
+<td>S</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>197</td>
+<td>INPUT_FRONTEND_RIGHT_AXIS_X</td>
+<td>]</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>198</td>
+<td>INPUT_FRONTEND_RIGHT_AXIS_Y</td>
+<td>SCROLLWHEEL DOWN</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>199</td>
+<td>INPUT_FRONTEND_PAUSE</td>
+<td>P</td>
+<td>START</td>
+</tr>
+<tr>
+<td>200</td>
+<td>INPUT_FRONTEND_PAUSE_ALTERNATE</td>
+<td>ESC</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>201</td>
+<td>INPUT_FRONTEND_ACCEPT</td>
+<td>ENTER / NUMPAD ENTER</td>
+<td>A</td>
+</tr>
+<tr>
+<td>202</td>
+<td>INPUT_FRONTEND_CANCEL</td>
+<td>BACKSPACE / ESC</td>
+<td>B</td>
+</tr>
+<tr>
+<td>203</td>
+<td>INPUT_FRONTEND_X</td>
+<td>SPACEBAR</td>
+<td>X</td>
+</tr>
+<tr>
+<td>204</td>
+<td>INPUT_FRONTEND_Y</td>
+<td>TAB</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>205</td>
+<td>INPUT_FRONTEND_LB</td>
+<td>Q</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>206</td>
+<td>INPUT_FRONTEND_RB</td>
+<td>E</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>207</td>
+<td>INPUT_FRONTEND_LT</td>
+<td>PAGE DOWN</td>
+<td>LT</td>
+</tr>
+<tr>
+<td>208</td>
+<td>INPUT_FRONTEND_RT</td>
+<td>PAGE UP</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>209</td>
+<td>INPUT_FRONTEND_LS</td>
+<td>LEFT SHIFT</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>210</td>
+<td>INPUT_FRONTEND_RS</td>
+<td>LEFT CONTROL</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>211</td>
+<td>INPUT_FRONTEND_LEADERBOARD</td>
+<td>TAB</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>212</td>
+<td>INPUT_FRONTEND_SOCIAL_CLUB</td>
+<td>HOME</td>
+<td>BACK</td>
+</tr>
+<tr>
+<td>213</td>
+<td>INPUT_FRONTEND_SOCIAL_CLUB_SECONDARY</td>
+<td>HOME</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>214</td>
+<td>INPUT_FRONTEND_DELETE</td>
+<td>DELETE</td>
+<td>X</td>
+</tr>
+<tr>
+<td>215</td>
+<td>INPUT_FRONTEND_ENDSCREEN_ACCEPT</td>
+<td>ENTER</td>
+<td>A</td>
+</tr>
+<tr>
+<td>216</td>
+<td>INPUT_FRONTEND_ENDSCREEN_EXPAND</td>
+<td>SPACEBAR</td>
+<td>X</td>
+</tr>
+<tr>
+<td>217</td>
+<td>INPUT_FRONTEND_SELECT</td>
+<td>CAPSLOCK</td>
+<td>BACK</td>
+</tr>
+<tr>
+<td>218</td>
+<td>INPUT_SCRIPT_LEFT_AXIS_X</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>219</td>
+<td>INPUT_SCRIPT_LEFT_AXIS_Y</td>
+<td>S</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>220</td>
+<td>INPUT_SCRIPT_RIGHT_AXIS_X</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>221</td>
+<td>INPUT_SCRIPT_RIGHT_AXIS_Y</td>
+<td>MOUSE DOWN</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>222</td>
+<td>INPUT_SCRIPT_RUP</td>
+<td>RIGHT MOUSE BUTTON</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>223</td>
+<td>INPUT_SCRIPT_RDOWN</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>A</td>
+</tr>
+<tr>
+<td>224</td>
+<td>INPUT_SCRIPT_RLEFT</td>
+<td>LEFT CTRL</td>
+<td>X</td>
+</tr>
+<tr>
+<td>225</td>
+<td>INPUT_SCRIPT_RRIGHT</td>
+<td>RIGHT MOUSE BUTTON</td>
+<td>B</td>
+</tr>
+<tr>
+<td>226</td>
+<td>INPUT_SCRIPT_LB</td>
+<td>(NONE)</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>227</td>
+<td>INPUT_SCRIPT_RB</td>
+<td>(NONE)</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>228</td>
+<td>INPUT_SCRIPT_LT</td>
+<td>(NONE)</td>
+<td>LT</td>
+</tr>
+<tr>
+<td>229</td>
+<td>INPUT_SCRIPT_RT</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>230</td>
+<td>INPUT_SCRIPT_LS</td>
+<td>(NONE)</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>231</td>
+<td>INPUT_SCRIPT_RS</td>
+<td>(NONE)</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>232</td>
+<td>INPUT_SCRIPT_PAD_UP</td>
+<td>W</td>
+<td>DPAD UP</td>
+</tr>
+<tr>
+<td>233</td>
+<td>INPUT_SCRIPT_PAD_DOWN</td>
+<td>S</td>
+<td>DPAD DOWN</td>
+</tr>
+<tr>
+<td>234</td>
+<td>INPUT_SCRIPT_PAD_LEFT</td>
+<td>A</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>235</td>
+<td>INPUT_SCRIPT_PAD_RIGHT</td>
+<td>D</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>236</td>
+<td>INPUT_SCRIPT_SELECT</td>
+<td>V</td>
+<td>BACK</td>
+</tr>
+<tr>
+<td>237</td>
+<td>INPUT_CURSOR_ACCEPT</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>238</td>
+<td>INPUT_CURSOR_CANCEL</td>
+<td>RIGHT MOUSE BUTTON</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>239</td>
+<td>INPUT_CURSOR_X</td>
+<td>(NONE)</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>240</td>
+<td>INPUT_CURSOR_Y</td>
+<td>(NONE)</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>241</td>
+<td>INPUT_CURSOR_SCROLL_UP</td>
+<td>SCROLLWHEEL UP</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>242</td>
+<td>INPUT_CURSOR_SCROLL_DOWN</td>
+<td>SCROLLWHEEL DOWN</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>243</td>
+<td>INPUT_ENTER_CHEAT_CODE</td>
+<td>~ / `</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>244</td>
+<td>INPUT_INTERACTION_MENU</td>
+<td>M</td>
+<td>BACK</td>
+</tr>
+<tr>
+<td>245</td>
+<td>INPUT_MP_TEXT_CHAT_ALL</td>
+<td>T</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>246</td>
+<td>INPUT_MP_TEXT_CHAT_TEAM</td>
+<td>Y</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>247</td>
+<td>INPUT_MP_TEXT_CHAT_FRIENDS</td>
+<td>(NONE)</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>248</td>
+<td>INPUT_MP_TEXT_CHAT_CREW</td>
+<td>(NONE)</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>249</td>
+<td>INPUT_PUSH_TO_TALK</td>
+<td>N</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>250</td>
+<td>INPUT_CREATOR_LS</td>
+<td>R</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>251</td>
+<td>INPUT_CREATOR_RS</td>
+<td>F</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>252</td>
+<td>INPUT_CREATOR_LT</td>
+<td>X</td>
+<td>LT</td>
+</tr>
+<tr>
+<td>253</td>
+<td>INPUT_CREATOR_RT</td>
+<td>C</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>254</td>
+<td>INPUT_CREATOR_MENU_TOGGLE</td>
+<td>LEFT SHIFT</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>255</td>
+<td>INPUT_CREATOR_ACCEPT</td>
+<td>SPACEBAR</td>
+<td>A</td>
+</tr>
+<tr>
+<td>256</td>
+<td>INPUT_CREATOR_DELETE</td>
+<td>DELETE</td>
+<td>X</td>
+</tr>
+<tr>
+<td>257</td>
+<td>INPUT_ATTACK2</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>258</td>
+<td>INPUT_RAPPEL_JUMP</td>
+<td>(NONE)</td>
+<td>A</td>
+</tr>
+<tr>
+<td>259</td>
+<td>INPUT_RAPPEL_LONG_JUMP</td>
+<td>(NONE)</td>
+<td>X</td>
+</tr>
+<tr>
+<td>260</td>
+<td>INPUT_RAPPEL_SMASH_WINDOW</td>
+<td>(NONE)</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>261</td>
+<td>INPUT_PREV_WEAPON</td>
+<td>SCROLLWHEEL UP</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>262</td>
+<td>INPUT_NEXT_WEAPON</td>
+<td>SCROLLWHEEL DOWN</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>263</td>
+<td>INPUT_MELEE_ATTACK1</td>
+<td>R</td>
+<td>B</td>
+</tr>
+<tr>
+<td>264</td>
+<td>INPUT_MELEE_ATTACK2</td>
+<td>Q</td>
+<td>A</td>
+</tr>
+<tr>
+<td>265</td>
+<td>INPUT_WHISTLE</td>
+<td>(NONE)</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>266</td>
+<td>INPUT_MOVE_LEFT</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>267</td>
+<td>INPUT_MOVE_RIGHT</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>268</td>
+<td>INPUT_MOVE_UP</td>
+<td>S</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>269</td>
+<td>INPUT_MOVE_DOWN</td>
+<td>S</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>270</td>
+<td>INPUT_LOOK_LEFT</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>271</td>
+<td>INPUT_LOOK_RIGHT</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>272</td>
+<td>INPUT_LOOK_UP</td>
+<td>MOUSE DOWN</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>273</td>
+<td>INPUT_LOOK_DOWN</td>
+<td>MOUSE DOWN</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>274</td>
+<td>INPUT_SNIPER_ZOOM_IN</td>
+<td>[</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>275</td>
+<td>INPUT_SNIPER_ZOOM_OUT</td>
+<td>[</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>276</td>
+<td>INPUT_SNIPER_ZOOM_IN_ALTERNATE</td>
+<td>[</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>277</td>
+<td>INPUT_SNIPER_ZOOM_OUT_ALTERNATE</td>
+<td>[</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>278</td>
+<td>INPUT_VEH_MOVE_LEFT</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>279</td>
+<td>INPUT_VEH_MOVE_RIGHT</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>280</td>
+<td>INPUT_VEH_MOVE_UP</td>
+<td>LEFT CTRL</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>281</td>
+<td>INPUT_VEH_MOVE_DOWN</td>
+<td>LEFT CTRL</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>282</td>
+<td>INPUT_VEH_GUN_LEFT</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>283</td>
+<td>INPUT_VEH_GUN_RIGHT</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>284</td>
+<td>INPUT_VEH_GUN_UP</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>285</td>
+<td>INPUT_VEH_GUN_DOWN</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>286</td>
+<td>INPUT_VEH_LOOK_LEFT</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>287</td>
+<td>INPUT_VEH_LOOK_RIGHT</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>288</td>
+<td>INPUT_REPLAY_START_STOP_RECORDING</td>
+<td>F1</td>
+<td>A</td>
+</tr>
+<tr>
+<td>289</td>
+<td>INPUT_REPLAY_START_STOP_RECORDING_SECONDARY</td>
+<td>F2</td>
+<td>X</td>
+</tr>
+<tr>
+<td>290</td>
+<td>INPUT_SCALED_LOOK_LR</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>291</td>
+<td>INPUT_SCALED_LOOK_UD</td>
+<td>MOUSE DOWN</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>292</td>
+<td>INPUT_SCALED_LOOK_UP_ONLY</td>
+<td>(NONE)</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>293</td>
+<td>INPUT_SCALED_LOOK_DOWN_ONLY</td>
+<td>(NONE)</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>294</td>
+<td>INPUT_SCALED_LOOK_LEFT_ONLY</td>
+<td>(NONE)</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>295</td>
+<td>INPUT_SCALED_LOOK_RIGHT_ONLY</td>
+<td>(NONE)</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>296</td>
+<td>INPUT_REPLAY_MARKER_DELETE</td>
+<td>DELETE</td>
+<td>X</td>
+</tr>
+<tr>
+<td>297</td>
+<td>INPUT_REPLAY_CLIP_DELETE</td>
+<td>DELETE</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>298</td>
+<td>INPUT_REPLAY_PAUSE</td>
+<td>SPACEBAR</td>
+<td>A</td>
+</tr>
+<tr>
+<td>299</td>
+<td>INPUT_REPLAY_REWIND</td>
+<td>ARROW DOWN</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>300</td>
+<td>INPUT_REPLAY_FFWD</td>
+<td>ARROW UP</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>301</td>
+<td>INPUT_REPLAY_NEWMARKER</td>
+<td>M</td>
+<td>A</td>
+</tr>
+<tr>
+<td>302</td>
+<td>INPUT_REPLAY_RECORD</td>
+<td>S</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>303</td>
+<td>INPUT_REPLAY_SCREENSHOT</td>
+<td>U</td>
+<td>DPAD UP</td>
+</tr>
+<tr>
+<td>304</td>
+<td>INPUT_REPLAY_HIDEHUD</td>
+<td>H</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>305</td>
+<td>INPUT_REPLAY_STARTPOINT</td>
+<td>B</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>306</td>
+<td>INPUT_REPLAY_ENDPOINT</td>
+<td>N</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>307</td>
+<td>INPUT_REPLAY_ADVANCE</td>
+<td>ARROW RIGHT</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>308</td>
+<td>INPUT_REPLAY_BACK</td>
+<td>ARROW LEFT</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>309</td>
+<td>INPUT_REPLAY_TOOLS</td>
+<td>T</td>
+<td>DPAD DOWN</td>
+</tr>
+<tr>
+<td>310</td>
+<td>INPUT_REPLAY_RESTART</td>
+<td>R</td>
+<td>BACK</td>
+</tr>
+<tr>
+<td>311</td>
+<td>INPUT_REPLAY_SHOWHOTKEY</td>
+<td>K</td>
+<td>DPAD DOWN</td>
+</tr>
+<tr>
+<td>312</td>
+<td>INPUT_REPLAY_CYCLEMARKERLEFT</td>
+<td>[</td>
+<td>DPAD LEFT</td>
+</tr>
+<tr>
+<td>313</td>
+<td>INPUT_REPLAY_CYCLEMARKERRIGHT</td>
+<td>]</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>314</td>
+<td>INPUT_REPLAY_FOVINCREASE</td>
+<td>NUMPAD +</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>315</td>
+<td>INPUT_REPLAY_FOVDECREASE</td>
+<td>NUMPAD -</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>316</td>
+<td>INPUT_REPLAY_CAMERAUP</td>
+<td>PAGE UP</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>317</td>
+<td>INPUT_REPLAY_CAMERADOWN</td>
+<td>PAGE DOWN</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>318</td>
+<td>INPUT_REPLAY_SAVE</td>
+<td>F5</td>
+<td>START</td>
+</tr>
+<tr>
+<td>319</td>
+<td>INPUT_REPLAY_TOGGLETIME</td>
+<td>C</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>320</td>
+<td>INPUT_REPLAY_TOGGLETIPS</td>
+<td>V</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>321</td>
+<td>INPUT_REPLAY_PREVIEW</td>
+<td>SPACEBAR</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>322</td>
+<td>INPUT_REPLAY_TOGGLE_TIMELINE</td>
+<td>ESC</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>323</td>
+<td>INPUT_REPLAY_TIMELINE_PICKUP_CLIP</td>
+<td>X</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>324</td>
+<td>INPUT_REPLAY_TIMELINE_DUPLICATE_CLIP</td>
+<td>C</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>325</td>
+<td>INPUT_REPLAY_TIMELINE_PLACE_CLIP</td>
+<td>V</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>326</td>
+<td>INPUT_REPLAY_CTRL</td>
+<td>LEFT CTRL</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>327</td>
+<td>INPUT_REPLAY_TIMELINE_SAVE</td>
+<td>F5</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>328</td>
+<td>INPUT_REPLAY_PREVIEW_AUDIO</td>
+<td>SPACEBAR</td>
+<td>RT</td>
+</tr>
+<tr>
+<td>329</td>
+<td>INPUT_VEH_DRIVE_LOOK</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>330</td>
+<td>INPUT_VEH_DRIVE_LOOK2</td>
+<td>RIGHT MOUSE BUTTON</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>331</td>
+<td>INPUT_VEH_FLY_ATTACK2</td>
+<td>RIGHT MOUSE BUTTON</td>
+<td>(NONE)</td>
+</tr>
+<tr>
+<td>332</td>
+<td>INPUT_RADIO_WHEEL_UD</td>
+<td>MOUSE DOWN</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>333</td>
+<td>INPUT_RADIO_WHEEL_LR</td>
+<td>MOUSE RIGHT</td>
+<td>RIGHT STICK</td>
+</tr>
+<tr>
+<td>334</td>
+<td>INPUT_VEH_SLOWMO_UD</td>
+<td>SCROLLWHEEL DOWN</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>335</td>
+<td>INPUT_VEH_SLOWMO_UP_ONLY</td>
+<td>SCROLLWHEEL UP</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>336</td>
+<td>INPUT_VEH_SLOWMO_DOWN_ONLY</td>
+<td>SCROLLWHEEL DOWN</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>337</td>
+<td>INPUT_VEH_HYDRAULICS_CONTROL_TOGGLE</td>
+<td>X</td>
+<td>A</td>
+</tr>
+<tr>
+<td>338</td>
+<td>INPUT_VEH_HYDRAULICS_CONTROL_LEFT</td>
+<td>A</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>339</td>
+<td>INPUT_VEH_HYDRAULICS_CONTROL_RIGHT</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>340</td>
+<td>INPUT_VEH_HYDRAULICS_CONTROL_UP</td>
+<td>LEFT SHIFT</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>341</td>
+<td>INPUT_VEH_HYDRAULICS_CONTROL_DOWN</td>
+<td>LEFT CTRL</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>342</td>
+<td>INPUT_VEH_HYDRAULICS_CONTROL_UD</td>
+<td>D</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>343</td>
+<td>INPUT_VEH_HYDRAULICS_CONTROL_LR</td>
+<td>LEFT CTRL</td>
+<td>LEFT STICK</td>
+</tr>
+<tr>
+<td>344</td>
+<td>INPUT_SWITCH_VISOR</td>
+<td>F11</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>345</td>
+<td>INPUT_VEH_MELEE_HOLD</td>
+<td>X</td>
+<td>A</td>
+</tr>
+<tr>
+<td>346</td>
+<td>INPUT_VEH_MELEE_LEFT</td>
+<td>LEFT MOUSE BUTTON</td>
+<td>LB</td>
+</tr>
+<tr>
+<td>347</td>
+<td>INPUT_VEH_MELEE_RIGHT</td>
+<td>RIGHT MOUSE BUTTON</td>
+<td>RB</td>
+</tr>
+<tr>
+<td>348</td>
+<td>INPUT_MAP_POI</td>
+<td>SCROLLWHEEL BUTTON (PRESS)</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>349</td>
+<td>INPUT_REPLAY_SNAPMATIC_PHOTO</td>
+<td>TAB</td>
+<td>X</td>
+</tr>
+<tr>
+<td>350</td>
+<td>INPUT_VEH_CAR_JUMP</td>
+<td>E</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>351</td>
+<td>INPUT_VEH_ROCKET_BOOST</td>
+<td>E</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>352</td>
+<td>INPUT_VEH_FLY_BOOST</td>
+<td>LEFT SHIFT</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>353</td>
+<td>INPUT_VEH_PARACHUTE</td>
+<td>SPACEBAR</td>
+<td>A</td>
+</tr>
+<tr>
+<td>354</td>
+<td>INPUT_VEH_BIKE_WINGS</td>
+<td>X</td>
+<td>A</td>
+</tr>
+<tr>
+<td>355</td>
+<td>INPUT_VEH_FLY_BOMB_BAY</td>
+<td>E</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>356</td>
+<td>INPUT_VEH_FLY_COUNTER</td>
+<td>E</td>
+<td>DPAD RIGHT</td>
+</tr>
+<tr>
+<td>357</td>
+<td>INPUT_VEH_TRANSFORM</td>
+<td>X</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<h1 id="examples">Examples</h1>
+<h2 id="disable-control-action">Disable control action</h2>
+<pre><code class="lang-js">import native from 'natives';
+
+let controlAction = alt.everyTick(() =&gt; {
+    // Vehicle
+    native.disableControlAction(0, 59, true) // Disable left/right
+    native.disableControlAction(0, 60, true) // Disable up/down
+
+    // HUD
+    native.disableControlAction(0, 199, true) // Disable Pause Menu
+});
+
+// Once you're done, don't forget to clear everyTick
+alt.clearEveryTick(controlAction);
+</code></pre>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../../styles/discord.js"></script>
+<script type="text/javascript" src="../../../styles/main.js"></script>
+
+    </body>
+
+</html>

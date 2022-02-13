@@ -1,0 +1,749 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Worker
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class Worker
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#_altmp_altv_types_alt_client_Worker_constructor">Worker(string)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#_altmp_altv_types_alt_client_Worker_filePath">filePath</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_isPaused">isPaused</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_valid">valid</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_maxWorkers">maxWorkers</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_Worker_destroy">destroy()</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_emit">emit(string, any[])</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_off">off(string, (...args: any[]) =&gt; void)</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_on">on(string, (...args: any[]) =&gt; void)</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_once">once(string, (...args: any[]) =&gt; void)</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_pause">pause()</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_resume">resume()</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_start">start()</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_addSharedArrayBuffer">addSharedArrayBuffer(SharedArrayBuffer)</a></li><li><a href="#_altmp_altv_types_alt_client_Worker_removeSharedArrayBuffer">removeSharedArrayBuffer(number)</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="@altmp/altv-types.alt-client.Worker">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1268">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="_altmp_altv_types_alt_client_Worker" data-uid="@altmp/altv-types.alt-client.Worker">Class Worker
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6 data-noindex=""><strong>Module</strong>: <a class="xref" href="alt-client.html">alt-client</a></h6>
+  <h6 data-noindex=""><strong>Package</strong>: <span class="xref">@altmp/altv-types</span></h6>
+  <h5 id="_altmp_altv_types_alt_client_Worker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">class Worker</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="_altmp_altv_types_alt_client_Worker_constructor" data-uid="@altmp/altv-types.alt-client.Worker.constructor">Worker(string)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Creates a new worker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">Worker(filePath: string): Worker</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>filePath</em></td>
+        <td>
+          <p>The path to the worker script file, can be relative or absolute path.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_client_Worker_constructor_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This will throw an error if the resource has reached its maximum amount of workers. See <a class="xref" href="alt-client.Worker.html#_altmp_altv_types_alt_client_Worker_maxWorkers">maxWorkers</a>.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_filePath.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.filePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1309">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_filePath" data-uid="@altmp/altv-types.alt-client.Worker.filePath">filePath
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>The file path that was used to create this worker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly filePath: string</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_isPaused.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.isPaused%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1314">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_isPaused" data-uid="@altmp/altv-types.alt-client.Worker.isPaused">isPaused
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Whether the worker is currently paused. See <a class="xref" href="alt-client.Worker.html#_altmp_altv_types_alt_client_Worker_pause">pause()</a> and <a class="xref" href="alt-client.Worker.html#_altmp_altv_types_alt_client_Worker_resume">resume()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly isPaused: boolean</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_valid.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.valid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1304">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_valid" data-uid="@altmp/altv-types.alt-client.Worker.valid">valid
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Whether this worker is still valid. See <a class="xref" href="alt-client.Worker.html#_altmp_altv_types_alt_client_Worker_destroy">destroy()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly valid: boolean</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_maxWorkers.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.maxWorkers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1272">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_maxWorkers" data-uid="@altmp/altv-types.alt-client.Worker.maxWorkers">maxWorkers
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Maximum available workers per resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly static maxWorkers: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_destroy.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.destroy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1326">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_destroy" data-uid="@altmp/altv-types.alt-client.Worker.destroy">destroy()
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Destroys the worker and stops it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public destroy(): void</code></pre>
+  </div>
+  <h5 id="_altmp_altv_types_alt_client_Worker_destroy_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This permanently sets <a class="xref" href="alt-client.Worker.html#_altmp_altv_types_alt_client_Worker_valid">valid</a> to false.</p>
+</div>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_emit.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.emit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1333">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_emit" data-uid="@altmp/altv-types.alt-client.Worker.emit">emit(string, any[])
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Emits the specified event to the worker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public emit(eventName: string, ...args: any[]): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>eventName</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">any[]</span></td>
+        <td><em>args</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_client_Worker_emit_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be called before the worker is started.</p>
+</div>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_off.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.off%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1378">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_off" data-uid="@altmp/altv-types.alt-client.Worker.off">off(string, (...args: any[]) =&gt; void)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Unsubscribes from Worker event handler with specified listener.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public off(eventName: string, listener: (...args: any[]) =&gt; void): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>eventName</em></td>
+        <td>
+          <p>Name of the event.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">(...args: any[]) =&gt; void</span></td>
+        <td><em>listener</em></td>
+        <td>
+          <p>Listener that should be removed.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_client_Worker_off_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Listener should be of the same reference as when event was subscribed.</p>
+</div>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_on.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.on%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1343">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_on" data-uid="@altmp/altv-types.alt-client.Worker.on">on(string, (...args: any[]) =&gt; void)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Listens to an event emitted by the worker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public on(eventName: string, callback: (...args: any[]) =&gt; void): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>eventName</em></td>
+        <td>
+          <p>The event to listen for.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">(...args: any[]) =&gt; void</span></td>
+        <td><em>callback</em></td>
+        <td>
+          <p>The callback to call when the event is received.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_client_Worker_on_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The event handlers should be registered before starting the worker.</p>
+</div>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_once.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.once%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1353">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_once" data-uid="@altmp/altv-types.alt-client.Worker.once">once(string, (...args: any[]) =&gt; void)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Listens to an event emitted by the worker once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public once(eventName: string, callback: (...args: any[]) =&gt; void): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>eventName</em></td>
+        <td>
+          <p>The event to listen for.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">(...args: any[]) =&gt; void</span></td>
+        <td><em>callback</em></td>
+        <td>
+          <p>The callback to call when the event is received.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_client_Worker_once_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a class="xref" href="alt-client.Worker.html#_altmp_altv_types_alt_client_Worker_on">on(string, (...args: any[]) =&gt; void)</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_pause.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.pause%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1361">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_pause" data-uid="@altmp/altv-types.alt-client.Worker.pause">pause()
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Pauses execution of the worker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public pause(): void</code></pre>
+  </div>
+  <h5 id="_altmp_altv_types_alt_client_Worker_pause_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This completely stops the JavaScript event loop of the worker
+but events can still be received (and will be handled once the worker is resumed).</p>
+</div>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_resume.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.resume%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1368">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_resume" data-uid="@altmp/altv-types.alt-client.Worker.resume">resume()
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Resumes execution of the worker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public resume(): void</code></pre>
+  </div>
+  <h5 id="_altmp_altv_types_alt_client_Worker_resume_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a class="xref" href="alt-client.Worker.html#_altmp_altv_types_alt_client_Worker_pause">pause()</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_start.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1319">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_start" data-uid="@altmp/altv-types.alt-client.Worker.start">start()
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Starts the worker script.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public start(): void</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_addSharedArrayBuffer.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.addSharedArrayBuffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1283">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_addSharedArrayBuffer" data-uid="@altmp/altv-types.alt-client.Worker.addSharedArrayBuffer">addSharedArrayBuffer(SharedArrayBuffer)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Adds a shared array buffer to the workers array buffer pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public static addSharedArrayBuffer(buffer: SharedArrayBuffer): number</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SharedArrayBuffer</span></td>
+        <td><em>buffer</em></td>
+        <td>
+          <p>The shared array buffer to make available in workers.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><p>The id of the shared array buffer that can be used in workers to retrieve it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="_altmp_altv_types_alt_client_Worker_addSharedArrayBuffer_remarks" class="decalaration">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Make sure to remove the array buffer once you are done with it by calling <a class="xref" href="alt-client.Worker.html#_altmp_altv_types_alt_client_Worker_removeSharedArrayBuffer">removeSharedArrayBuffer(number)</a>,
+otherwise you are creating a memory leak.</p>
+</div>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Worker_removeSharedArrayBuffer.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Worker.removeSharedArrayBuffer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/57134e48800145d814087efa028502aeaeed52e1/./client/index.d.ts/#L1290">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_Worker_removeSharedArrayBuffer" data-uid="@altmp/altv-types.alt-client.Worker.removeSharedArrayBuffer">removeSharedArrayBuffer(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Removes the shared array buffer from the workers array buffer pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public static removeSharedArrayBuffer(id: number): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>id</em></td>
+        <td>
+          <p>The id of the shared array buffer to remove.</p>
+
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../../styles/docfx.js"></script>
+        <script type="text/javascript" src="../../styles/discord.js"></script>
+        <script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

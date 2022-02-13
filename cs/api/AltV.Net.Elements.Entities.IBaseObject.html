@@ -1,0 +1,997 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IBaseObject
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Interface IBaseObject
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column interface">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Elements_Entities_IBaseObject_Type">Type</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Elements_Entities_IBaseObject_CheckIfEntityExists">CheckIfEntityExists()</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_ClearData">ClearData()</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_DeleteData_System_String_">DeleteData(String)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_DeleteMetaData_System_String_">DeleteMetaData(String)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_GetAllDataKeys">GetAllDataKeys()</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_GetData__1_System_String___0__">GetData&lt;T&gt;(String, out T)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">GetMetaData(String, out MValueConst)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_System_Int32__">GetMetaData(String, out Int32)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_System_Single__">GetMetaData(String, out Single)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_System_UInt32__">GetMetaData(String, out UInt32)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_GetMetaData__1_System_String___0__">GetMetaData&lt;T&gt;(String, out T)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_HasData_System_String_">HasData(String)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_HasMetaData_System_String_">HasMetaData(String)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_OnRemove">OnRemove()</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_SetData_System_String_System_Object_">SetData(String, Object)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">SetMetaData(String, in MValueConst)</a></li><li><a href="#AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_System_Object_">SetMetaData(String, Object)</a></li></ul></li><li><a href="#extensionmethods">Extension Methods</a></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Elements.Entities.IBaseObject">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L7">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Elements_Entities_IBaseObject" data-uid="AltV.Net.Elements.Entities.IBaseObject" class="text-break">Interface IBaseObject
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AltV.Net.Types.IRefCountable.html#AltV_Net_Types_IRefCountable_AddRef">IRefCountable.AddRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Types.IRefCountable.html#AltV_Net_Types_IRefCountable_RemoveRef">IRefCountable.RemoveRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Types.INative.html#AltV_Net_Types_INative_NativePointer">INative.NativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Types.INative.html#AltV_Net_Types_INative_Exists">INative.Exists</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Elements.Entities.html">AltV.Net.Elements.Entities</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.dll</h6>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBaseObject : IRefCountable, INative</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_Type.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L9">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_Type_" data-uid="AltV.Net.Elements.Entities.IBaseObject.Type*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_Type" data-uid="AltV.Net.Elements.Entities.IBaseObject.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BaseObjectType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.BaseObjectType.html">BaseObjectType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_CheckIfEntityExists.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.CheckIfEntityExists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L109">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_CheckIfEntityExists_" data-uid="AltV.Net.Elements.Entities.IBaseObject.CheckIfEntityExists*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_CheckIfEntityExists" data-uid="AltV.Net.Elements.Entities.IBaseObject.CheckIfEntityExists">CheckIfEntityExists()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CheckIfEntityExists()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_ClearData.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.ClearData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L92">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_ClearData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.ClearData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_ClearData" data-uid="AltV.Net.Elements.Entities.IBaseObject.ClearData">ClearData()</h4>
+  <div class="markdown level1 summary"><p>Deletes all set data from the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ClearData()</code></pre>
+  </div>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_ClearData_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Data is accessible only within the resource that set the data.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_DeleteData_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.DeleteData(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L86">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_DeleteData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.DeleteData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_DeleteData_System_String_" data-uid="AltV.Net.Elements.Entities.IBaseObject.DeleteData(System.String)">DeleteData(String)</h4>
+  <div class="markdown level1 summary"><p>Deletes a value by a given key from the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteData(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_DeleteData_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Data is accessible only within the resource that set the data.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_DeleteMetaData_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.DeleteMetaData(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L107">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_DeleteMetaData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.DeleteMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_DeleteMetaData_System_String_" data-uid="AltV.Net.Elements.Entities.IBaseObject.DeleteMetaData(System.String)">DeleteMetaData(String)</h4>
+  <div class="markdown level1 summary"><p>Deletes a meta data key from an entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteMetaData(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_DeleteMetaData_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Meta data is accessible across different serverside resources.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_GetAllDataKeys.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.GetAllDataKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L79">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_GetAllDataKeys_" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetAllDataKeys*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_GetAllDataKeys" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetAllDataKeys">GetAllDataKeys()</h4>
+  <div class="markdown level1 summary"><p>Returns all stored data keys retrievable with <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html#AltV_Net_Elements_Entities_IBaseObject_GetData__1_System_String___0__">GetData&lt;T&gt;(String, out T)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; GetAllDataKeys()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>IEnumerable</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_GetData__1_System_String___0__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.GetData%60%601(System.String%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L65">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_GetData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_GetData__1_System_String___0__" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetData``1(System.String,``0@)">GetData&lt;T&gt;(String, out T)</h4>
+  <div class="markdown level1 summary"><p>Returns data for a given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetData&lt;T&gt;(string key, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_GetData__1_System_String___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Data is accessible only within the resource that set the data.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.GetMetaData(System.String%2CAltV.Net.Elements.Args.MValueConst%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L47">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetMetaData(System.String,AltV.Net.Elements.Args.MValueConst@)">GetMetaData(String, out MValueConst)</h4>
+  <div class="markdown level1 summary"><p>Returns meta data for a given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetMetaData(string key, out MValueConst value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Meta data is accessible across different serverside resources.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_System_Int32__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.GetMetaData(System.String%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L113">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_System_Int32__" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetMetaData(System.String,System.Int32@)">GetMetaData(String, out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool GetMetaData(string key, out int result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_System_Single__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.GetMetaData(System.String%2CSystem.Single%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L149">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_System_Single__" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetMetaData(System.String,System.Single@)">GetMetaData(String, out Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool GetMetaData(string key, out float result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_System_UInt32__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.GetMetaData(System.String%2CSystem.UInt32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L131">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData_System_String_System_UInt32__" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetMetaData(System.String,System.UInt32@)">GetMetaData(String, out UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool GetMetaData(string key, out uint result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_GetMetaData__1_System_String___0__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.GetMetaData%60%601(System.String%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L28">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData__1_System_String___0__" data-uid="AltV.Net.Elements.Entities.IBaseObject.GetMetaData``1(System.String,``0@)">GetMetaData&lt;T&gt;(String, out T)</h4>
+  <div class="markdown level1 summary"><p>Returns meta data for a given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetMetaData&lt;T&gt;(string key, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_GetMetaData__1_System_String___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Meta data is accessible across different serverside resources.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_HasData_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.HasData(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L73">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_HasData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.HasData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_HasData_System_String_" data-uid="AltV.Net.Elements.Entities.IBaseObject.HasData(System.String)">HasData(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if the entity has a value for the given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasData(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_HasData_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Data is accessible only within the resource that set the data.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_HasMetaData_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.HasMetaData(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L100">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_HasMetaData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.HasMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_HasMetaData_System_String_" data-uid="AltV.Net.Elements.Entities.IBaseObject.HasMetaData(System.String)">HasMetaData(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if the entity has a given meta data key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasMetaData(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_HasMetaData_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Meta data is accessible across different serverside resources.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_OnRemove.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.OnRemove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L111">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_OnRemove_" data-uid="AltV.Net.Elements.Entities.IBaseObject.OnRemove*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_OnRemove" data-uid="AltV.Net.Elements.Entities.IBaseObject.OnRemove">OnRemove()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OnRemove()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_SetData_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.SetData(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L55">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_SetData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.SetData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_SetData_System_String_System_Object_" data-uid="AltV.Net.Elements.Entities.IBaseObject.SetData(System.String,System.Object)">SetData(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Sets a value with a given on an entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetData(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_SetData_System_String_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Data is accessible only within the resource that set the data.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.SetMetaData(System.String%2CAltV.Net.Elements.Args.MValueConst%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L37">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_SetMetaData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.SetMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__" data-uid="AltV.Net.Elements.Entities.IBaseObject.SetMetaData(System.String,AltV.Net.Elements.Args.MValueConst@)">SetMetaData(String, in MValueConst)</h4>
+  <div class="markdown level1 summary"><p>Sets the given object into the meta data with the given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetMetaData(string key, in MValueConst value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Meta data is accessible across different serverside resources.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was deleted before</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.IBaseObject.SetMetaData(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IBaseObject.cs/#L18">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_IBaseObject_SetMetaData_" data-uid="AltV.Net.Elements.Entities.IBaseObject.SetMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_System_Object_" data-uid="AltV.Net.Elements.Entities.IBaseObject.SetMetaData(System.String,System.Object)">SetMetaData(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Sets the given object into the meta data with the given key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetMetaData(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Elements_Entities_IBaseObject_SetMetaData_System_String_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Meta data is accessible across different serverside resources.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was deleted before</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_ExistsAsync_AltV_Net_Elements_Entities_IBaseObject_">AltAsync.ExistsAsync(IBaseObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_GetTypeAsync_AltV_Net_Elements_Entities_IBaseObject_">AltAsync.GetTypeAsync(IBaseObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_SetMetaDataAsync_AltV_Net_Elements_Entities_IBaseObject_System_String_System_Object_">AltAsync.SetMetaDataAsync(IBaseObject, String, Object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_GetMetaDataAsync__1_AltV_Net_Elements_Entities_IBaseObject_System_String_">AltAsync.GetMetaDataAsync&lt;T&gt;(IBaseObject, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_ExecuteLocked_AltV_Net_Elements_Entities_IBaseObject_Action_">AltAsync.ExecuteLocked(IBaseObject, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_ExecuteLocked__1_AltV_Net_Elements_Entities_IBaseObject_Action___0____0_">AltAsync.ExecuteLocked&lt;T&gt;(IBaseObject, Action&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_ExecuteLocked__3_AltV_Net_Elements_Entities_IBaseObject_Action___0___1___2____0___1___2_">AltAsync.ExecuteLocked&lt;T1, T2, T3&gt;(IBaseObject, Action&lt;T1, T2, T3&gt;, T1, T2, T3)</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Async.AltAsync.html#AltV_Net_Async_AltAsync_ExecuteLocked__4_AltV_Net_Elements_Entities_IBaseObject_Action___0___1___2___3____0___1___2___3_">AltAsync.ExecuteLocked&lt;T1, T2, T3, T4&gt;(IBaseObject, Action&lt;T1, T2, T3, T4&gt;, T1, T2, T3, T4)</a>
+  </div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

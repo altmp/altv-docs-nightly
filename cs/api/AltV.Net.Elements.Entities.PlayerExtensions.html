@@ -1,0 +1,824 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PlayerExtensions
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class PlayerExtensions
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_AddWeaponComponent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_UInt32_">AddWeaponComponent(IPlayer, WeaponModel, UInt32)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_GetForwardVector_AltV_Net_Elements_Entities_IPlayer_">GetForwardVector(IPlayer)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_Int32__">GetLocalMetaData(IPlayer, String, out Int32)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_Single__">GetLocalMetaData(IPlayer, String, out Single)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_UInt32__">GetLocalMetaData(IPlayer, String, out UInt32)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData__1_AltV_Net_Elements_Entities_IPlayer_System_String___0__">GetLocalMetaData&lt;T&gt;(IPlayer, String, out T)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_GiveWeapon_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_Int32_System_Boolean_">GiveWeapon(IPlayer, WeaponModel, Int32, Boolean)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_RemoveWeapon_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_">RemoveWeapon(IPlayer, WeaponModel)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_RemoveWeaponComponent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_UInt32_">RemoveWeaponComponent(IPlayer, WeaponModel, UInt32)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_SetDateTime_AltV_Net_Elements_Entities_IPlayer_DateTime_">SetDateTime(IPlayer, DateTime)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_SetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_Object_">SetLocalMetaData(IPlayer, String, Object)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_SetWeaponTintIndex_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_Byte_">SetWeaponTintIndex(IPlayer, WeaponModel, Byte)</a></li><li><a href="#AltV_Net_Elements_Entities_PlayerExtensions_SetWeather_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeatherType_">SetWeather(IPlayer, WeatherType)</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Elements.Entities.PlayerExtensions">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L479">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Elements_Entities_PlayerExtensions" data-uid="AltV.Net.Elements.Entities.PlayerExtensions" class="text-break">Class PlayerExtensions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PlayerExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Elements.Entities.html">AltV.Net.Elements.Entities</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.dll</h6>
+  <h5 id="AltV_Net_Elements_Entities_PlayerExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class PlayerExtensions : object</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_AddWeaponComponent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_UInt32_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.AddWeaponComponent(AltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Enums.WeaponModel%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L503">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_AddWeaponComponent_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.AddWeaponComponent*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_AddWeaponComponent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_UInt32_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.AddWeaponComponent(AltV.Net.Elements.Entities.IPlayer,AltV.Net.Enums.WeaponModel,System.UInt32)">AddWeaponComponent(IPlayer, WeaponModel, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Adds a weapon component to model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddWeaponComponent(this IPlayer player, WeaponModel weaponModel, uint weaponComponent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>The Player</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Enums.WeaponModel.html">WeaponModel</a></td>
+        <td><span class="parametername">weaponModel</span></td>
+        <td><p>The Weapon</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">weaponComponent</span></td>
+        <td><p>The Component</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_GetForwardVector_AltV_Net_Elements_Entities_IPlayer_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.GetForwardVector(AltV.Net.Elements.Entities.IPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L547">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_GetForwardVector_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GetForwardVector*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_GetForwardVector_AltV_Net_Elements_Entities_IPlayer_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GetForwardVector(AltV.Net.Elements.Entities.IPlayer)">GetForwardVector(IPlayer)</h4>
+  <div class="markdown level1 summary"><p>Returns the forward vector of the player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetForwardVector(this IPlayer player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_Int32__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData(AltV.Net.Elements.Entities.IPlayer%2CSystem.String%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L568">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_Int32__" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData(AltV.Net.Elements.Entities.IPlayer,System.String,System.Int32@)">GetLocalMetaData(IPlayer, String, out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetLocalMetaData(this IPlayer player, string key, out int result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_Single__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData(AltV.Net.Elements.Entities.IPlayer%2CSystem.String%2CSystem.Single%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L604">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_Single__" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData(AltV.Net.Elements.Entities.IPlayer,System.String,System.Single@)">GetLocalMetaData(IPlayer, String, out Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetLocalMetaData(this IPlayer player, string key, out float result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_UInt32__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData(AltV.Net.Elements.Entities.IPlayer%2CSystem.String%2CSystem.UInt32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L586">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_UInt32__" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData(AltV.Net.Elements.Entities.IPlayer,System.String,System.UInt32@)">GetLocalMetaData(IPlayer, String, out UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetLocalMetaData(this IPlayer player, string key, out uint result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData__1_AltV_Net_Elements_Entities_IPlayer_System_String___0__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData%60%601(AltV.Net.Elements.Entities.IPlayer%2CSystem.String%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L622">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_GetLocalMetaData__1_AltV_Net_Elements_Entities_IPlayer_System_String___0__" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GetLocalMetaData``1(AltV.Net.Elements.Entities.IPlayer,System.String,``0@)">GetLocalMetaData&lt;T&gt;(IPlayer, String, out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetLocalMetaData&lt;T&gt;(this IPlayer player, string key, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_GiveWeapon_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.GiveWeapon(AltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Enums.WeaponModel%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L531">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_GiveWeapon_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GiveWeapon*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_GiveWeapon_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_Int32_System_Boolean_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.GiveWeapon(AltV.Net.Elements.Entities.IPlayer,AltV.Net.Enums.WeaponModel,System.Int32,System.Boolean)">GiveWeapon(IPlayer, WeaponModel, Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gives player a weapon</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GiveWeapon(this IPlayer player, WeaponModel weaponModel, int ammo, bool selectWeapon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>The player</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Enums.WeaponModel.html">WeaponModel</a></td>
+        <td><span class="parametername">weaponModel</span></td>
+        <td><p>The weapon</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ammo</span></td>
+        <td><p>The amount of ammo</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">selectWeapon</span></td>
+        <td><p>If the weapon is selected automatically</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_RemoveWeapon_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.RemoveWeapon(AltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Enums.WeaponModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L539">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_RemoveWeapon_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.RemoveWeapon*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_RemoveWeapon_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.RemoveWeapon(AltV.Net.Elements.Entities.IPlayer,AltV.Net.Enums.WeaponModel)">RemoveWeapon(IPlayer, WeaponModel)</h4>
+  <div class="markdown level1 summary"><p>Removes the specific weapon from the player</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveWeapon(this IPlayer player, WeaponModel weaponModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>The player</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Enums.WeaponModel.html">WeaponModel</a></td>
+        <td><span class="parametername">weaponModel</span></td>
+        <td><p>The weapon to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_RemoveWeaponComponent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_UInt32_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.RemoveWeaponComponent(AltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Enums.WeaponModel%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L512">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_RemoveWeaponComponent_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.RemoveWeaponComponent*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_RemoveWeaponComponent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_UInt32_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.RemoveWeaponComponent(AltV.Net.Elements.Entities.IPlayer,AltV.Net.Enums.WeaponModel,System.UInt32)">RemoveWeaponComponent(IPlayer, WeaponModel, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Removes a weapon component from model</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveWeaponComponent(this IPlayer player, WeaponModel weaponModel, uint weaponComponent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>The player</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Enums.WeaponModel.html">WeaponModel</a></td>
+        <td><span class="parametername">weaponModel</span></td>
+        <td><p>The weapon</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">weaponComponent</span></td>
+        <td><p>The component to be removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_SetDateTime_AltV_Net_Elements_Entities_IPlayer_DateTime_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.SetDateTime(AltV.Net.Elements.Entities.IPlayer%2CDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L486">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_SetDateTime_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.SetDateTime*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_SetDateTime_AltV_Net_Elements_Entities_IPlayer_DateTime_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.SetDateTime(AltV.Net.Elements.Entities.IPlayer,DateTime)">SetDateTime(IPlayer, DateTime)</h4>
+  <div class="markdown level1 summary"><p>Sets the players current Date and Time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDateTime(this IPlayer player, DateTime dateTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>The player</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">dateTime</span></td>
+        <td><p>The DateTime object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_SetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.SetLocalMetaData(AltV.Net.Elements.Entities.IPlayer%2CSystem.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L560">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_SetLocalMetaData_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.SetLocalMetaData*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_SetLocalMetaData_AltV_Net_Elements_Entities_IPlayer_System_String_System_Object_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.SetLocalMetaData(AltV.Net.Elements.Entities.IPlayer,System.String,System.Object)">SetLocalMetaData(IPlayer, String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetLocalMetaData(this IPlayer player, string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_SetWeaponTintIndex_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_Byte_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.SetWeaponTintIndex(AltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Enums.WeaponModel%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L521">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_SetWeaponTintIndex_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.SetWeaponTintIndex*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_SetWeaponTintIndex_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeaponModel_System_Byte_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.SetWeaponTintIndex(AltV.Net.Elements.Entities.IPlayer,AltV.Net.Enums.WeaponModel,System.Byte)">SetWeaponTintIndex(IPlayer, WeaponModel, Byte)</h4>
+  <div class="markdown level1 summary"><p>Sets the weapon tint to a weapon</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetWeaponTintIndex(this IPlayer player, WeaponModel weaponModel, byte tintIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>The player</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Enums.WeaponModel.html">WeaponModel</a></td>
+        <td><span class="parametername">weaponModel</span></td>
+        <td><p>The weapon</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">tintIndex</span></td>
+        <td><p>The tint index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Entities_PlayerExtensions_SetWeather_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeatherType_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Entities.PlayerExtensions.SetWeather(AltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Enums.WeatherType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Entities/IPlayer.cs/#L494">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Entities_PlayerExtensions_SetWeather_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.SetWeather*"></a>
+  <h4 id="AltV_Net_Elements_Entities_PlayerExtensions_SetWeather_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Enums_WeatherType_" data-uid="AltV.Net.Elements.Entities.PlayerExtensions.SetWeather(AltV.Net.Elements.Entities.IPlayer,AltV.Net.Enums.WeatherType)">SetWeather(IPlayer, WeatherType)</h4>
+  <div class="markdown level1 summary"><p>Sets the players current weather</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetWeather(this IPlayer player, WeatherType weatherType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>The Player</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Enums.WeatherType.html">WeatherType</a></td>
+        <td><span class="parametername">weatherType</span></td>
+        <td><p>The weather type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

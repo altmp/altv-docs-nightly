@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Troubleshoot Server </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Troubleshoot Server ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#troubleshoot-server">Troubleshoot Server</a><ul class="level2 nav bs-docs-sidenav troubleshoot-server"><li><a href="#known-issues--solutions">Known issues &amp; solutions</a><ul class="level3 nav bs-docs-sidenav known-issues--solutions"><li><a href="#warning-to-load-an-es-module-set-type-module-in-the-packagejson-or-use-the-mjs-extension">Warning: To load an ES module, set &quot;type&quot;: &quot;module&quot; in the package.json or use the .mjs extension.</a></li><li><a href="#failed-to-load-js-moduledll-win32-error-127-7f">Failed to load &quot;js-module.dll&quot; Win32 error: 127 (7f)</a></li><li><a href="#module-outdated-module-uses-sdk-vxx-server-requires-sdk-vxx">Module outdated, module uses SDK vXX, server requires SDK vXX</a></li><li><a href="#error-while-reading-servercfg-on-line-xx-column-reason-invalid-token">Error while reading server.cfg on line xx, column. Reason: invalid token</a></li><li><a href="#master-server-connect-failed-invalid-token">Master server connect failed. Invalid token</a></li><li><a href="#unhandled-exception-received-an-unhandled-exception-from-">Unhandled Exception: Received an unhandled exception from: ...</a></li></ul></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/troubleshooting/server.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="troubleshoot-server">Troubleshoot Server</h1>
+
+<p>Sometimes when you are running a server, some issues can occur. Most of these issues are repetitive and easy to solve. Therefore, this article collects the most common errors and their solutions.</p>
+<h2 id="known-issues--solutions">Known issues &amp; solutions</h2>
+<h4 id="warning-to-load-an-es-module-set-type-module-in-the-packagejson-or-use-the-mjs-extension">Warning: To load an ES module, set &quot;type&quot;: &quot;module&quot; in the package.json or use the .mjs extension.</h4>
+<p>This issue is caused by missing the <code>type</code> configuration inside your package.json. To solve this problem you need to add <code>&quot;type&quot;:&quot;module&quot;</code> in your package.json</p>
+<h4 id="failed-to-load-js-moduledll-win32-error-127-7f">Failed to load &quot;js-module.dll&quot; Win32 error: 127 (7f)</h4>
+<p>If you head into your alt:V server directory, you will most likely find a <code>libnode.dll</code> file. In order to solve this issue, you need to delete this file.</p>
+<h4 id="module-outdated-module-uses-sdk-vxx-server-requires-sdk-vxx">Module outdated, module uses SDK vXX, server requires SDK vXX</h4>
+<p>You will sometimes get this error especially if there is a new release. Usually, it is enough to update your server by downloading the latest alt:V server files which include the latest <code>csharp-module.dll</code> or <code>js-module.dll</code>.</p>
+<h4 id="error-while-reading-servercfg-on-line-xx-column-reason-invalid-token">Error while reading server.cfg on line xx, column. Reason: invalid token</h4>
+<p>This issue mostly occurs when strings are not put in double quotes. For example, the URL of your website is not put in double quotes inside the <code>server.cfg</code> will cause this issue. To find the issue inside your<code>server.cfg</code> you should pay attention to the error message which gives you the exact line.</p>
+<h4 id="master-server-connect-failed-invalid-token">Master server connect failed. Invalid token</h4>
+<p>Inside your <code>server.cfg</code> you can find a configuration variable called <code>announce</code>. If this is set to <code>true</code>, you will need a <strong>valid</strong> token. Therefore, you need to request a master list token from the alt:V Master-Bot. To receive a token, you need to send a single message with the content &quot;token&quot; to <code>Master-Bot#3667</code> on discord. To obtain a token you have to meet one of the following requirements:</p>
+<ol>
+<li>You can obtain a token for broadcasting to the master list by waiting 30 days to generate one.</li>
+<li>You can obtain a token immediately by subscribing as a Bronze Patreon to generate your token. If you would like to go down this route you can visit <a href="https://www.patreon.com/altVMP">https://www.patreon.com/altVMP</a> to subscribe.</li>
+</ol>
+<p>Keep in mind that you usually do not need a master list announcement while you are in the development stage. You can set the <code>announce</code> flag to <code>false</code> inside your <code>server.cfg</code>.</p>
+<h4 id="unhandled-exception-received-an-unhandled-exception-from-">Unhandled Exception: Received an unhandled exception from: ...</h4>
+<p>When you use C# on your server-side, you will encounter this problem sometimes. You can easily solve this problem by updating the alt:V NuGet packages and rebuilding your resource.</p>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

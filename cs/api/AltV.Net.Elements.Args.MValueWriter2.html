@@ -1,0 +1,936 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MValueWriter2
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class MValueWriter2
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Elements_Args_MValueWriter2_BeginArray">BeginArray()</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_BeginObject">BeginObject()</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_EndArray">EndArray()</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_EndObject">EndObject()</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Name_System_String_">Name(String)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_ToMValue_AltV_Net_Elements_Args_MValueConst__">ToMValue(out MValueConst)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Data_Position_">Value(Position)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Data_Rgba_">Value(Rgba)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Data_Rotation_">Value(Rotation)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_IBlip_">Value(IBlip)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_ICheckpoint_">Value(ICheckpoint)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_IPlayer_">Value(IPlayer)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_IVehicle_">Value(IVehicle)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_IWritable_">Value(IWritable)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_ICollection_">Value(ICollection)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_System_Boolean_">Value(Boolean)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_System_Double_">Value(Double)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_System_Int32_">Value(Int32)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_System_Int64_">Value(Int64)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_System_Single_">Value(Single)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_System_String_">Value(String)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_System_UInt32_">Value(UInt32)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_System_UInt64_">Value(UInt64)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_Vector2_">Value(Vector2)</a></li><li><a href="#AltV_Net_Elements_Args_MValueWriter2_Value_Vector3_">Value(Vector3)</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Elements.Args.MValueWriter2">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L10">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Elements_Args_MValueWriter2" data-uid="AltV.Net.Elements.Args.MValueWriter2" class="text-break">Class MValueWriter2
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MValueWriter2</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AltV.Net.IMValueWriter.html">IMValueWriter</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Elements.Args.html">AltV.Net.Elements.Args</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.dll</h6>
+  <h5 id="AltV_Net_Elements_Args_MValueWriter2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MValueWriter2 : object, IMValueWriter</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_BeginArray.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.BeginArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L137">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_BeginArray_" data-uid="AltV.Net.Elements.Args.MValueWriter2.BeginArray*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_BeginArray" data-uid="AltV.Net.Elements.Args.MValueWriter2.BeginArray">BeginArray()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginArray()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_BeginObject.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.BeginObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L105">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_BeginObject_" data-uid="AltV.Net.Elements.Args.MValueWriter2.BeginObject*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_BeginObject" data-uid="AltV.Net.Elements.Args.MValueWriter2.BeginObject">BeginObject()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginObject()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_EndArray.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.EndArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L144">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_EndArray_" data-uid="AltV.Net.Elements.Args.MValueWriter2.EndArray*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_EndArray" data-uid="AltV.Net.Elements.Args.MValueWriter2.EndArray">EndArray()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndArray()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_EndObject.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.EndObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L112">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_EndObject_" data-uid="AltV.Net.Elements.Args.MValueWriter2.EndObject*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_EndObject" data-uid="AltV.Net.Elements.Args.MValueWriter2.EndObject">EndObject()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndObject()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Name_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Name(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L169">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Name_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Name*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Name_System_String_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Name(System.String)">Name(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Name(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_ToMValue_AltV_Net_Elements_Args_MValueConst__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.ToMValue(AltV.Net.Elements.Args.MValueConst%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L331">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_ToMValue_" data-uid="AltV.Net.Elements.Args.MValueWriter2.ToMValue*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_ToMValue_AltV_Net_Elements_Args_MValueConst__" data-uid="AltV.Net.Elements.Args.MValueWriter2.ToMValue(AltV.Net.Elements.Args.MValueConst@)">ToMValue(out MValueConst)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ToMValue(out MValueConst mValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a></td>
+        <td><span class="parametername">mValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Data_Position_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Data.Position)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L289">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Data_Position_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Data.Position)">Value(Position)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(Position value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Position.html">Position</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Data_Rgba_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Data.Rgba)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L305">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Data_Rgba_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Data.Rgba)">Value(Rgba)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(Rgba value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Rgba.html">Rgba</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Data_Rotation_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Data.Rotation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L297">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Data_Rotation_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Data.Rotation)">Value(Rotation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(Rotation value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Rotation.html">Rotation</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_IBlip_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Elements.Entities.IBlip)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L249">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_IBlip_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Elements.Entities.IBlip)">Value(IBlip)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(IBlip value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IBlip.html">IBlip</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_ICheckpoint_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Elements.Entities.ICheckpoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L241">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_ICheckpoint_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Elements.Entities.ICheckpoint)">Value(ICheckpoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(ICheckpoint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.ICheckpoint.html">ICheckpoint</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_IPlayer_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Elements.Entities.IPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L265">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_IPlayer_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Elements.Entities.IPlayer)">Value(IPlayer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(IPlayer value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_IVehicle_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Elements.Entities.IVehicle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L257">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_Elements_Entities_IVehicle_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.Elements.Entities.IVehicle)">Value(IVehicle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(IVehicle value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_IWritable_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.IWritable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L281">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_AltV_Net_IWritable_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(AltV.Net.IWritable)">Value(IWritable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(IWritable value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IWritable.html">IWritable</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_ICollection_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(ICollection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L273">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_ICollection_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(ICollection)">Value(ICollection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(ICollection value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_System_Boolean_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L177">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_System_Boolean_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(System.Boolean)">Value(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_System_Double_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L225">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_System_Double_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(System.Double)">Value(Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_System_Int32_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L185">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_System_Int32_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(System.Int32)">Value(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_System_Int64_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L193">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_System_Int64_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(System.Int64)">Value(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_System_Single_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L217">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_System_Single_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(System.Single)">Value(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L233">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_System_String_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(System.String)">Value(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_System_UInt32_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L201">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_System_UInt32_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(System.UInt32)">Value(UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_System_UInt64_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(System.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L209">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_System_UInt64_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(System.UInt64)">Value(UInt64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_Vector2_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L321">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_Vector2_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(Vector2)">Value(Vector2)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(Vector2 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Args_MValueWriter2_Value_Vector3_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Args.MValueWriter2.Value(Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net/Elements/Args/MValueWriter2.cs/#L313">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Args_MValueWriter2_Value_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value*"></a>
+  <h4 id="AltV_Net_Elements_Args_MValueWriter2_Value_Vector3_" data-uid="AltV.Net.Elements.Args.MValueWriter2.Value(Vector3)">Value(Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Value(Vector3 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AltV.Net.IMValueWriter.html">IMValueWriter</a>
+  </div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

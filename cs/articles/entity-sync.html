@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Entity Sync </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Entity Sync ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#entity-sync">Entity Sync</a><ul class="level2 nav bs-docs-sidenav entity-sync"><li><a href="#setup">Setup</a></li><li><a href="#configure-the-entity-sync">Configure the Entity Sync</a></li><li><a href="#add-entities">Add Entities</a></li><li><a href="#remove-entities">Remove entities</a></li><li><a href="#update-entity-position">Update entity position</a></li><li><a href="#update-entity-range">Update entity range</a></li><li><a href="#update-entity-dimension">Update entity dimension</a></li><li><a href="#update-entity-data">Update entity data</a></li><li><a href="#get-entity-data">Get entity data</a></li><li><a href="#get-entity-net-owner">Get entity net owner</a></li><li><a href="#servereventnetworklayer">ServerEventNetworkLayer</a><ul class="level3 nav bs-docs-sidenav servereventnetworklayer"><li><a href="#entity-create">Entity create</a></li><li><a href="#entity-remove">Entity remove</a></li><li><a href="#entity-position-update">Entity position update</a></li><li><a href="#entity-data-update">Entity data update</a></li><li><a href="#entity-clear-cache">Entity clear cache</a></li><li><a href="#entity-net-owner">Entity net owner</a></li></ul></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/master/docs/articles/entity-sync.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="entity-sync">Entity Sync</h1>
+
+<p>This article will describes how to use the entity sync package to sync custom entities from serverside to clients efficiently.</p>
+<h2 id="setup">Setup</h2>
+<p>Install the following nuget packages and make sure both packages are on the latest version:
+<a href="https://www.nuget.org/packages/AltV.Net.EntitySync">https://www.nuget.org/packages/AltV.Net.EntitySync</a> // The core package with the sync logic
+<a href="https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent">https://www.nuget.org/packages/AltV.Net.EntitySync.ServerEvent</a> // A optional package that will send the entity sync events to the client via server events</p>
+<h2 id="configure-the-entity-sync">Configure the Entity Sync</h2>
+<pre><code class="lang-csharp">AltEntitySync.Init(1, (threadId) =&gt; 100, (threadId) =&gt; false,
+   (threadCount, repository) =&gt; new ServerEventNetworkLayer(threadCount, repository),
+   (entity, threadCount) =&gt; (entity.Id % threadCount), 
+   (entityId, entityType, threadCount) =&gt; (entityId % threadCount),
+   (threadId) =&gt; new LimitedGrid3(50_000, 50_000, 100, 10_000, 10_000, 300),
+   new IdProvider());
+</code></pre>
+<p>Now breakdown the parameters of the Init function:</p>
+<p>The first parameter is the thread count, this describes the number of thats that will run in parallel to calculate the streamed entities.</p>
+<p>The second parameter is the sync rate, it describes the interval in which each sync thread calculates the streamed entities and can be configured per thread id.</p>
+<p>The third parameter is a bool with that you can enable net owner calculations and events.</p>
+<p>The fourth parameter is the Action that returns a new NetworkLayer for a repository. The ServerEventNetworkLayer is part of the second nuget package.</p>
+<p>The fifth parameter defines the thread the entity shoud use.</p>
+<p>The sixth parameter defines the thread a entityId + entityType should use.</p>
+<p>The seventh parameter is the Action that returns a new space partitioning algorithm for each specific sync thread id. The LimitedGrid3 is one of the algorithms that comes included in the core.
+LimitedGrid3 has following parameters: (int maxX, int maxY, int areaSize, int xOffset, int yOffset, int limit).
+The (int maxX, int maxY) parameters are defining the size of the map the grid is inserting, removing and finding entities in. The default values are defining the default gta 5 map.
+The two offsets (int xOffset, int yOffset) preventing the corrdinates to become negative, because the gta maps goes from -10k to 50k.
+The (int limit) makes sure a client can only have streamed in the amount of entities he can actually render. E.g. the gta 5 client in altv can only create around 300 Objects without stability issues.</p>
+<p>The eight and last parameter is the id provider that increments the entity ids incremental and free's unused ids. The IdProvider is included inside the core package as well.</p>
+<h2 id="add-entities">Add Entities</h2>
+<p>To add entities that can be streamed there are two ways.</p>
+<p>The easiert way is to use the CreateEntity method from AltEntitySync.</p>
+<pre><code class="lang-csharp">AltEntitySync.CreateEntity(ulong type, Vector3 position, int dimension, uint range,
+            IDictionary&lt;string, object&gt; data);
+</code></pre>
+<p>The entity type are your own ids to differentiate between e.g. a object, a ped, a 3d Text, ect.
+The position is the entity position.
+The dimension is working same as the dimension of a player, vehicle ect.
+The range defines the streaming range this entity is streamed in.
+The data is the data the entity contains when its streamed in on clientside.</p>
+<p>The second way is to use the entity constructor.</p>
+<pre><code class="lang-csharp">var entity = new Entity(ulong type, Vector3 position, int dimension, uint range,
+            IDictionary&lt;string, object&gt; data);
+AltEntitySync.AddEntity(entity);
+</code></pre>
+<h2 id="remove-entities">Remove entities</h2>
+<p>To remove a entity you just need the entity or the entity id.</p>
+<pre><code class="lang-csharp">AltEntitySync.RemoveEntity(IEntity entity);
+// or
+AltEntitySync.RemoveEntity(ulong id);
+</code></pre>
+<h2 id="update-entity-position">Update entity position</h2>
+<p>The update the position of a entity just use the position setter.
+The position is a Vector3.</p>
+<pre><code class="lang-csharp">entity.Position = new Vector3(x, y, z);
+</code></pre>
+<h2 id="update-entity-range">Update entity range</h2>
+<p>The update the range of a entity just use the range setter.
+The range is a uint and should never be 0.</p>
+<pre><code class="lang-csharp">entity.Range = range;
+</code></pre>
+<h2 id="update-entity-dimension">Update entity dimension</h2>
+<p>The update the dimension of a entity just use the dimension setter.
+The dimension is a int.</p>
+<pre><code class="lang-csharp">entity.Dimension = dimension;
+</code></pre>
+<h2 id="update-entity-data">Update entity data</h2>
+<p>The update the range of a entity just use the data methods.
+Each type that works with <a href="custom-events.html">Custom Events</a> also works with ServerEventNetworkLayer.</p>
+<pre><code class="lang-csharp">entity.SetData(&quot;my-data&quot;, 123);
+</code></pre>
+<p>You can reset the data with. Resetted data is received as null.</p>
+<pre><code class="lang-csharp">entity.ResetData(&quot;my-data&quot;);
+</code></pre>
+<h2 id="get-entity-data">Get entity data</h2>
+<pre><code class="lang-csharp">if (entity.TryGetData(&quot;my-data&quot;, out int data)) {
+
+}
+</code></pre>
+<h2 id="get-entity-net-owner">Get entity net owner</h2>
+<p>This is always null when third parameter is false, otherwise its the closest player to the entity.</p>
+<pre><code class="lang-csharp">entity.NetOwner
+</code></pre>
+<h2 id="servereventnetworklayer">ServerEventNetworkLayer</h2>
+<p>This describes the events the client receives from the ServerEventNetworkLayer that you need to implement in your client code.</p>
+<h3 id="entity-create">Entity create</h3>
+<p>This is called every time you come in the range of the entity.</p>
+<p>The server assumes you cache the entity depending on the entity.id so make sure to do it.</p>
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:create&quot;, (entityId, entityType, position, newEntityData) =&gt; {
+    alt.log(entityId);
+    alt.log(entityType);
+    alt.log(position);
+    alt.log(newEntityData);
+    if (newEntityData) {
+       if (!entityData[entityType]) {
+          entityData[entityType] = {};
+       }
+       if (!entityData[entityType][entityId]) {
+            entityData[entityType][entityId] = {};
+       }
+       for (const key in newEntityData) {
+           entityData[entityType][entityId][key] = newEntityData[key];
+       }
+    }
+    let currentEntityData;
+    if (entityData[entityType] &amp;&amp; entityData[entityType][entityId]) {
+      currentEntityData = entityData[entityType][entityId];
+    } else {
+      currentEntityData = null;
+    }
+    alt.log(currentEntityData);
+})
+</code></pre>
+<h3 id="entity-remove">Entity remove</h3>
+<p>This is called every time you go out of the range of the entity.</p>
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:remove&quot;, (entityId, entityType) =&gt; {
+    let currentEntityData;
+    if (entityData[entityType]) {
+         currentEntityData = entityData[entityType][entityId];
+    } else {
+         currentEntityData = null;
+    }
+    alt.log(entityId);
+    alt.log(entityType);
+    alt.log(entityData);
+})
+</code></pre>
+<h3 id="entity-position-update">Entity position update</h3>
+<p>This is called very time you update the entity position while you are in the range of the entity.</p>
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:updatePosition&quot;, (entityId, entityType, position) =&gt; {
+    let currEntityData;
+    if (entityData[entityType]) {
+         currEntityData = entityData[entityType][entityId];
+    } else {
+         currEntityData = null;
+    }
+    alt.log(entityId);
+    alt.log(entityType);
+    alt.log(currEntityData);
+})
+</code></pre>
+<h3 id="entity-data-update">Entity data update</h3>
+<p>This is called every time you update the entity data while you are in the range of the entity.</p>
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:updateData&quot;, (entityId, entityType, newEntityData) =&gt; {
+    if (!entityData[entityType]) {
+       entityData[entityType] = {};
+    }
+    if (!entityData[entityType][entityId]) {
+         entityData[entityType][entityId] = {};
+    }
+    if (newEntityData) {
+       for (const key in newEntityData) {
+           entityData[entityType][entityId][key] = newEntityData[key];
+       }
+    }
+    let currentEntityData = entityData[entityType][entityId];
+})
+</code></pre>
+<h3 id="entity-clear-cache">Entity clear cache</h3>
+<p>This is called every time you remove a entity on serverside completely and clients still have data in cache of this entity.</p>
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:clearCache&quot;, (entityId, entityType) =&gt; {
+    if (!entityData[entityType]) {
+      return;
+    }
+    delete entityData[entityType][entityId];
+})
+</code></pre>
+<h3 id="entity-net-owner">Entity net owner</h3>
+<p>This is called when you set the third parameter to true and the current client becomes the net owner of the entity by beeing the closest player to the entity.</p>
+<pre><code class="lang-js">alt.onServer(&quot;entitySync:netOwner&quot;, (entityId, entityType, isNetOwner) =&gt; {
+    //...
+})
+</code></pre>
+<p>Now you can call your own logic inside the events to spawn objects, npcs, 3d text, markers, ... ect.</p>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Handling events </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Handling events ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../index.html">
+                        <img src="../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#handling-events">Handling events</a><ul class="level2 nav bs-docs-sidenav handling-events"><li><a href="#table-of-contents">Table of Contents</a></li><li><a href="#what-is-an-event">What is an event</a></li><li><a href="#how-to-handle-events">How to handle events</a><ul class="level3 nav bs-docs-sidenav how-to-handle-events"><li><a href="#handling-events-globally">Handling events globally</a></li><li><a href="#handling-events-per-resource">Handling events per resource</a></li><li><a href="#canceling-events">Canceling events</a><ul class="level4 nav bs-docs-sidenav canceling-events"><li><a href="#what-are-mvalues">What are MValues</a></li></ul></li></ul></li><li><a href="#how-to-emit-events">How to emit events</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/cpp-sdk/blob/master/articles/handling-events.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="handling-events">Handling events</h1>
+
+<p>In this article you will learn how to handle and emit events with the module SDK.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#what-is-an-event">What is an event</a></li>
+<li><a href="#how-to-handle-events">How to handle events</a>
+<ol>
+<li><a href="#handling-events-globally">Handling events globally</a></li>
+<li><a href="#handling-events-per-resource">Handling events per resource</a></li>
+<li><a href="#canceling-events">Canceling events</a></li>
+</ol>
+</li>
+<li><a href="#how-to-emit-events">How to emit events</a></li>
+<li><a href="#what-are-mvalues">What are MValues</a></li>
+</ol>
+<h2 id="what-is-an-event">What is an event</h2>
+<p>An event is an action that has happened on the client/server and is not caused by the developer directly.
+E.g. when a player is spawned no event is dispatched, because the developer has full control over spawning the player, and because of that
+no event is needed. On the other hand when e.g. a player gets damaged, the player damage event gets dispatched, so the developer can act
+upon that action.</p>
+<p>Events are automatically dispatched by the alt:V core and need to be handled and forwarded to the scripting language by the module.</p>
+<h2 id="how-to-handle-events">How to handle events</h2>
+<p>There are two ways to handle events. They can be either handled globally, or they are handled by each resource individually.
+It is recommended the module handles the events per resource.</p>
+<p>Both approaches will be covered here.</p>
+<h3 id="handling-events-globally">Handling events globally</h3>
+<p>Events can be handled globally by using the <a href="https://github.com/altmp/cpp-sdk/blob/master/ICore.h#L85"><code>alt::ICore::SubscribeEvent</code></a> method.
+This method accepts three parameters, first is the event type that should be handled, second is the callback for the event
+and third is the custom user data passed to the callback. The user data is optional and can be left as a <code>nullptr</code>.</p>
+<p>Here is an example on how to handle the player connect event globally:</p>
+<pre><code class="lang-c++">alt::ICore::Instance().SubscribeEvent(alt::CEvent::Type::PLAYER_CONNECT, [](const alt::CEvent* ev, void* userData) {
+    // Cast the event to the correct event class to access the event data
+    auto event = static_cast&lt;const alt::CPlayerConnectEvent*&gt;(ev);
+
+    // Gets the player that connected to the server
+    alt::Ref&lt;alt::IPlayer*&gt; player = event-&gt;GetTarget();
+    // Gets the connect reason
+    alt::StringView reason = event-&gt;GetReason();
+
+    // Log the player name and connect reason to the console
+    std::stringstream stream;
+    stream &lt;&lt; &quot;Player &quot; &lt;&lt; player-&gt;GetName().CStr() &lt;&lt; &quot; connected. Reason: &quot; &lt;&lt; reason.CStr();
+    alt::ICore::Instance().LogInfo(stream.str());
+
+    // In a real module we would obviously do something more useful with the data from this event,
+    // like forwarding it to the scripting language.
+
+    return true;
+});
+</code></pre>
+<p>This method can also catch <em>all</em> incoming events by using the <code>alt::CEvent::Type::ALL</code> event type.</p>
+<blockquote>
+<p>It is recommended to handle events per resource, handling events globally should mostly be used for debugging purposes.</p>
+</blockquote>
+<h3 id="handling-events-per-resource">Handling events per resource</h3>
+<p>The module can also choose to handle events per resource individually instead of in a single global event handler.
+This can be done by using the <code>OnEvent</code> method of your <a href="creating-resource.html">own resource class</a>.
+When using this approach, you have to use the <code>GetType</code> method of the received event, to determine the type of the event
+and to cast it to its corresponding event class.</p>
+<p>An example for this can be seen here:</p>
+<pre><code class="lang-c++">bool MyResource::OnEvent(const alt::CEvent* ev)
+{
+    // Get the type of the event
+    auto type = ev-&gt;GetType();
+    // Do something if the event is the player connect event
+    if(type == alt::CEvent::Type::PLAYER_CONNECT)
+    {
+        // Cast the event to the correct event class to access the event data
+        auto event = static_cast&lt;const alt::CPlayerConnectEvent*&gt;(ev);
+
+        // Gets the player that connected to the server
+        alt::Ref&lt;alt::IPlayer*&gt; player = event-&gt;GetTarget();
+        // Gets the connect reason
+        alt::StringView reason = event-&gt;GetReason();
+
+        // Log the player name and connect reason to the console
+        std::stringstream stream;
+        stream &lt;&lt; &quot;Player &quot; &lt;&lt; player-&gt;GetName().CStr() &lt;&lt; &quot; connected. Reason: &quot; &lt;&lt; reason.CStr();
+        alt::ICore::Instance().LogInfo(stream.str());
+
+        // In a real module we would obviously do something more useful with the data from this event,
+        // like forwarding it to the scripting language.
+    }
+}
+</code></pre>
+<p>It is recommended to not handle every event in this method directly for clarity.
+There should be some sort of wrapper for events in your module.
+An example for this can be found in the <a href="https://github.com/altmp/v8-helpers/blob/89972fcdfd8f2f80c40cb910a9da61dcc8148ccd/V8Helpers.h#L110">JS module</a>
+or the <a href="https://github.com/LeonMrBonnie/altv-angelscript-module/blob/dev/src/helpers/events.h">AngelScript module</a>.</p>
+<blockquote>
+<p>A list of event types can be found <a href="https://github.com/altmp/cpp-sdk/blob/master/events/CEvent.h#L10">here</a>.</p>
+</blockquote>
+<h3 id="canceling-events">Canceling events</h3>
+<p>There are two ways of cancelling an event, either you can cancel an event to discard it's data to not sync it to other clients except than the player
+who sent that data (E.g. in the explosion event), or you cancel an event to remove it from the event queue so that other event handlers (global or per resource)
+will not receive that event.</p>
+<p>The first way can be achieved by calling the <code>Cancel</code> method on the received event, and the second way can be done by returning <code>false</code> from the event callback.</p>
+<h2 id="how-to-emit-events">How to emit events</h2>
+<p>It is possible to emit custom events (<code>alt::CEvent::Type::SERVER_SCRIPT_EVENT</code> or <code>alt::CEvent::Type::CLIENT_SCRIPT_EVENT</code>) from the module.
+These events can be emitted by using
+<a href="https://github.com/altmp/cpp-sdk/blob/master/ICore.h#L100"><code>alt::ICore::TriggerLocalEvent</code></a>,
+<a href="https://github.com/altmp/cpp-sdk/blob/master/ICore.h#L123"><code>alt::ICore::TriggerServerEvent</code></a> and
+<a href="https://github.com/altmp/cpp-sdk/blob/master/ICore.h#L215"><code>alt::ICore::TriggerClientEvent</code></a> respectively.</p>
+<p>These methods take the custom event name and the event arguments as parameters. The event arguments have to be in the form
+of <a href="#what-are-mvalues">MValues</a>.
+An example on how to emit an custom event can be found here:</p>
+<pre><code class="lang-c++">// Create an instance of an MValueArgs array to store our event arguments.
+// We can also use an `alt::Array&lt;alt::MValueConst&gt;` instead, they are the same.
+// But we use MValueArgs here for code clarity.
+alt::MValueArgs args;
+
+// Push an integer to the arguments
+auto arg = alt::ICore::Instance().CreateMValueInt(523);
+args.Push(arg);
+
+// Push a bool to the arguments
+auto arg2 = alt::ICore::Instance().CreateMValueBool(true);
+args.Push(arg2);
+
+// Emit the event
+alt::ICore::Instance().TriggerLocalEvent(&quot;MyCustomEvent&quot;, args);
+</code></pre>
+<blockquote>
+<p>All methods to create MValues can be found <a href="https://github.com/altmp/cpp-sdk/blob/master/ICore.h#L63">here</a>.</p>
+</blockquote>
+<h2 id="what-are-mvalues">What are MValues</h2>
+<p>The <a href="mvalues.html">next article</a> will explain what MValues are and how to use them.</p>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/discord.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

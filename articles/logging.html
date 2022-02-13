@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Logging in alt:V </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Logging in alt:V ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../index.html">
+                        <img src="../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#logging-in-altv">Logging in alt:V</a><ul class="level2 nav bs-docs-sidenav logging-in-altv"><li><a href="#what-is-logging-used-for">What is logging used for</a></li><li><a href="#important-things-to-know-about-logging">Important things to know about logging</a></li><li><a href="#when-and-how-to-use-logging">When and how to use logging</a></li><li><a href="#using-colors-in-logs">Using colors in logs</a></li><li><a href="#using-logs-in-your-code">Using logs in your code</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/logging.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="logging-in-altv">Logging in alt:V</h1>
+
+<p>This article will explain the usage of logging in alt:V.<br>
+It will explain the concept of logging, the different types of logging and how to use logging in alt:V.</p>
+<h2 id="what-is-logging-used-for">What is logging used for</h2>
+<p>As a programmer, logging is very important for debugging and showing information.<br>
+By logging to the console, you can check the values of variables etc. at runtime to find your bug or optimize your code.</p>
+<h2 id="important-things-to-know-about-logging">Important things to know about logging</h2>
+<p>Don't use logging in production too much, because it can lag the console and will also hide the important logs you have placed.<br>
+It is best to completely disable logging on the client in the production, and setting logging to the bare minimum (e.g. only errors) on the server.<br>
+Also don't put any sensitive information into your logs, the logs get saved to a file in plain text, so logging e.g. a password to the console is a big security risk.</p>
+<h2 id="when-and-how-to-use-logging">When and how to use logging</h2>
+<p>There are different types of logging, which should be used for different kinds of logs.<br>
+You can see a table of the different types of logs here:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span style="color: cyan;"><code>Infos</code></span></td>
+<td>To display general information about something</td>
+</tr>
+<tr>
+<td><span style="color: orange;"><code>Warnings</code></span></td>
+<td>To display something maybe being wrong, but not being very important</td>
+</tr>
+<tr>
+<td><span style="color: red;"><code>Errors</code></span></td>
+<td>To display something going very wrong, which needs immediate action</td>
+</tr>
+</tbody>
+</table>
+<h2 id="using-colors-in-logs">Using colors in logs</h2>
+<p>If you want to make your log messages look better, you can use different color codes to highlight important parts of the message. Or to group/categorize your logs better.<br>
+The color codes can be used by appending a color code, like this for example: <code>~r~</code>, before your part of the text that should have that color.<br>
+You can see a list of all color codes in the table below:</p>
+<table>
+<thead>
+<tr>
+<th>Color code</th>
+<th>Screenshot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>~k~</code></td>
+<td><img src="https://i.imgur.com/yY2SFRY.png"></td>
+</tr>
+<tr>
+<td><code>~r~</code></td>
+<td><img src="https://i.imgur.com/baznoxc.png"></td>
+</tr>
+<tr>
+<td><code>~g~</code></td>
+<td><img src="https://i.imgur.com/l5rR0IK.png"></td>
+</tr>
+<tr>
+<td><code>~b~</code></td>
+<td><img src="https://i.imgur.com/UxrGn1x.png"></td>
+</tr>
+<tr>
+<td><code>~y~</code></td>
+<td><img src="https://i.imgur.com/opeovLN.png"></td>
+</tr>
+<tr>
+<td><code>~m~</code></td>
+<td><img src="https://i.imgur.com/NM1Pjp2.png"></td>
+</tr>
+<tr>
+<td><code>~c~</code></td>
+<td><img src="https://i.imgur.com/HISQbpP.png"></td>
+</tr>
+<tr>
+<td><code>~w~</code></td>
+<td><img src="https://i.imgur.com/GCiTxlG.png"></td>
+</tr>
+<tr>
+<td><code>~lk~</code></td>
+<td><img src="https://i.imgur.com/HGHzOeZ.png"></td>
+</tr>
+<tr>
+<td><code>~lr~</code></td>
+<td><img src="https://i.imgur.com/UNvRM7X.png"></td>
+</tr>
+<tr>
+<td><code>~lg~</code></td>
+<td><img src="https://i.imgur.com/VJ0Cv5j.png"></td>
+</tr>
+<tr>
+<td><code>~lb~</code></td>
+<td><img src="https://i.imgur.com/78TlRwR.png"></td>
+</tr>
+<tr>
+<td><code>~ly~</code></td>
+<td><img src="https://i.imgur.com/h45ys47.png"></td>
+</tr>
+<tr>
+<td><code>~lm~</code></td>
+<td><img src="https://i.imgur.com/ulzEp7v.png"></td>
+</tr>
+<tr>
+<td><code>~lc~</code></td>
+<td><img src="https://i.imgur.com/5v1Vcjd.png"></td>
+</tr>
+<tr>
+<td><code>~lw~</code></td>
+<td><img src="https://i.imgur.com/UsjQXdk.png"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="using-logs-in-your-code">Using logs in your code</h2>
+<p>Here you can find small examples in the different programming languages alt:V offers on how to use logging:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tabid-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tabid-1" data-tab="tabid-1" tabindex="0" aria-selected="true">Javascript</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tabid-2" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tabid-2" data-tab="tabid-2" tabindex="-1">C#</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_tabid-1" role="tabpanel" data-tab="tabid-1">
+
+<pre><code class="lang-js">alt.log(&quot;~r~Hello ~g~World!&quot;);
+alt.logWarning(&quot;This is a warning&quot;);
+alt.logError(&quot;This is an error&quot;);
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_tabid-2" role="tabpanel" data-tab="tabid-2" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-csharp">ColoredMessage coloredMessage = new ColoredMessage();
+coloredMessage += TextColor.Red;
+coloredMessage += &quot;Hello &quot;;
+coloredMessage += TextColor.Green;
+coloredMessage += &quot;World!&quot;;
+Alt.LogColored(coloredMessage);
+Alt.LogWarning(&quot;This is a warning&quot;);
+Alt.LogError(&quot;This is an error&quot;);
+Alt.LogInfo(&quot;This is an info&quot;);
+Alt.LogDebug(&quot;This is a debug message&quot;);
+</code></pre>
+</section>
+</div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/discord.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

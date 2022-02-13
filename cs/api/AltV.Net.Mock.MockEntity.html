@@ -1,0 +1,1647 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MockEntity
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class MockEntity
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Mock_MockEntity__ctor_AltV_Net_IServer_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_System_UInt16_">MockEntity(IServer, IntPtr, BaseObjectType, UInt16)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Mock_MockEntity_Dimension">Dimension</a></li><li><a href="#AltV_Net_Mock_MockEntity_Exists">Exists</a></li><li><a href="#AltV_Net_Mock_MockEntity_Id">Id</a></li><li><a href="#AltV_Net_Mock_MockEntity_Model">Model</a></li><li><a href="#AltV_Net_Mock_MockEntity_NativePointer">NativePointer</a></li><li><a href="#AltV_Net_Mock_MockEntity_Position">Position</a></li><li><a href="#AltV_Net_Mock_MockEntity_Rotation">Rotation</a></li><li><a href="#AltV_Net_Mock_MockEntity_Type">Type</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Mock_MockEntity_AddRef">AddRef()</a></li><li><a href="#AltV_Net_Mock_MockEntity_CheckIfEntityExists">CheckIfEntityExists()</a></li><li><a href="#AltV_Net_Mock_MockEntity_ClearData">ClearData()</a></li><li><a href="#AltV_Net_Mock_MockEntity_DeleteData_System_String_">DeleteData(String)</a></li><li><a href="#AltV_Net_Mock_MockEntity_GetAllDataKeys">GetAllDataKeys()</a></li><li><a href="#AltV_Net_Mock_MockEntity_GetData__1_System_String___0__">GetData&lt;T&gt;(String, out T)</a></li><li><a href="#AltV_Net_Mock_MockEntity_GetMetaData__1_System_String___0__">GetMetaData&lt;T&gt;(String, out T)</a></li><li><a href="#AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_System_String_System_Int32__">GetStreamSyncedMetaData(String, out Int32)</a></li><li><a href="#AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_System_String_System_Single__">GetStreamSyncedMetaData(String, out Single)</a></li><li><a href="#AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_System_String_System_UInt32__">GetStreamSyncedMetaData(String, out UInt32)</a></li><li><a href="#AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData__1_System_String___0__">GetStreamSyncedMetaData&lt;T&gt;(String, out T)</a></li><li><a href="#AltV_Net_Mock_MockEntity_GetSyncedMetaData_System_String_System_Int32__">GetSyncedMetaData(String, out Int32)</a></li><li><a href="#AltV_Net_Mock_MockEntity_GetSyncedMetaData_System_String_System_Single__">GetSyncedMetaData(String, out Single)</a></li><li><a href="#AltV_Net_Mock_MockEntity_GetSyncedMetaData_System_String_System_UInt32__">GetSyncedMetaData(String, out UInt32)</a></li><li><a href="#AltV_Net_Mock_MockEntity_GetSyncedMetaData__1_System_String___0__">GetSyncedMetaData&lt;T&gt;(String, out T)</a></li><li><a href="#AltV_Net_Mock_MockEntity_HasData_System_String_">HasData(String)</a></li><li><a href="#AltV_Net_Mock_MockEntity_OnRemove">OnRemove()</a></li><li><a href="#AltV_Net_Mock_MockEntity_Remove">Remove()</a></li><li><a href="#AltV_Net_Mock_MockEntity_RemoveRef">RemoveRef()</a></li><li><a href="#AltV_Net_Mock_MockEntity_ResetNetworkOwner">ResetNetworkOwner()</a></li><li><a href="#AltV_Net_Mock_MockEntity_SetData_System_String_System_Object_">SetData(String, Object)</a></li><li><a href="#AltV_Net_Mock_MockEntity_SetMetaData_System_String_System_Object_">SetMetaData(String, Object)</a></li><li><a href="#AltV_Net_Mock_MockEntity_SetPosition_System_Single_System_Single_System_Single_">SetPosition(Single, Single, Single)</a></li><li><a href="#AltV_Net_Mock_MockEntity_SetRotation_System_Single_System_Single_System_Single_">SetRotation(Single, Single, Single)</a></li><li><a href="#AltV_Net_Mock_MockEntity_SetStreamSyncedMetaData_System_String_System_Object_">SetStreamSyncedMetaData(String, Object)</a></li><li><a href="#AltV_Net_Mock_MockEntity_SetSyncedMetaData_System_String_System_Object_">SetSyncedMetaData(String, Object)</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Mock.MockEntity">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L10">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Mock_MockEntity" data-uid="AltV.Net.Mock.MockEntity" class="text-break">Class MockEntity
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html">BaseObject</a></div>
+    <div class="level2"><a class="xref" href="AltV.Net.Elements.Entities.WorldObject.html">WorldObject</a></div>
+    <div class="level3"><a class="xref" href="AltV.Net.Elements.Entities.Entity.html">Entity</a></div>
+    <div class="level4"><span class="xref">MockEntity</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></div>
+    <div><a class="xref" href="AltV.Net.Elements.Entities.IWorldObject.html">IWorldObject</a></div>
+    <div><a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a></div>
+    <div><a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a></div>
+    <div><a class="xref" href="AltV.Net.Types.INative.html">INative</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_NetworkOwner">Entity.NetworkOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_Visible">Entity.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_Streamed">Entity.Streamed</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_SetNetworkOwner_AltV_Net_Elements_Entities_IPlayer_System_Boolean_">Entity.SetNetworkOwner(IPlayer, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_SetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Entity.SetSyncedMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_GetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Entity.GetSyncedMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_HasSyncedMetaData_System_String_">Entity.HasSyncedMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_DeleteSyncedMetaData_System_String_">Entity.DeleteSyncedMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_SetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Entity.SetStreamSyncedMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_GetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Entity.GetStreamSyncedMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_HasStreamSyncedMetaData_System_String_">Entity.HasStreamSyncedMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_DeleteStreamSyncedMetaData_System_String_">Entity.DeleteStreamSyncedMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_AttachToEntity_AltV_Net_Elements_Entities_IEntity_System_Int16_System_Int16_AltV_Net_Data_Position_AltV_Net_Data_Rotation_System_Boolean_System_Boolean_">Entity.AttachToEntity(IEntity, Int16, Int16, Position, Rotation, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_Detach">Entity.Detach()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Server">BaseObject.Server</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">BaseObject.SetMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">BaseObject.GetMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_HasMetaData_System_String_">BaseObject.HasMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_DeleteMetaData_System_String_">BaseObject.DeleteMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_InternalAddRef">BaseObject.InternalAddRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_InternalRemoveRef">BaseObject.InternalRemoveRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData_System_String_System_Int32__">BaseObject.GetMetaData(String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData_System_String_System_UInt32__">BaseObject.GetMetaData(String, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData_System_String_System_Single__">BaseObject.GetMetaData(String, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_CheckIfCallIsValid_System_String_">BaseObject.CheckIfCallIsValid(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetHashCode">BaseObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Equals_System_Object_">BaseObject.Equals(Object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Mock.html">AltV.Net.Mock</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Mock.dll</h6>
+  <h5 id="AltV_Net_Mock_MockEntity_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class MockEntity : Entity, IInternalBaseObject, IEntity, IWorldObject, IBaseObject, IRefCountable, INative</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity__ctor_AltV_Net_IServer_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_System_UInt16_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.%23ctor(AltV.Net.IServer%2CIntPtr%2CAltV.Net.Elements.Entities.BaseObjectType%2CSystem.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L27">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity__ctor_" data-uid="AltV.Net.Mock.MockEntity.#ctor*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity__ctor_AltV_Net_IServer_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_System_UInt16_" data-uid="AltV.Net.Mock.MockEntity.#ctor(AltV.Net.IServer,IntPtr,AltV.Net.Elements.Entities.BaseObjectType,System.UInt16)">MockEntity(IServer, IntPtr, BaseObjectType, UInt16)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MockEntity(IServer server, IntPtr nativePointer, BaseObjectType baseObjectType, ushort id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IServer.html">IServer</a></td>
+        <td><span class="parametername">server</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">nativePointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.BaseObjectType.html">BaseObjectType</a></td>
+        <td><span class="parametername">baseObjectType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_Dimension.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.Dimension%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L18">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_Dimension_" data-uid="AltV.Net.Mock.MockEntity.Dimension*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_Dimension" data-uid="AltV.Net.Mock.MockEntity.Dimension">Dimension</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Dimension { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Elements.Entities.WorldObject.html#AltV_Net_Elements_Entities_WorldObject_Dimension">WorldObject.Dimension</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_Exists.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.Exists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L13">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_Exists_" data-uid="AltV.Net.Mock.MockEntity.Exists*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_Exists" data-uid="AltV.Net.Mock.MockEntity.Exists">Exists</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Exists { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_Id.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L14">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_Id_" data-uid="AltV.Net.Mock.MockEntity.Id*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_Id" data-uid="AltV.Net.Mock.MockEntity.Id">Id</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_Model.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.Model%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L19">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_Model_" data-uid="AltV.Net.Mock.MockEntity.Model*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_Model" data-uid="AltV.Net.Mock.MockEntity.Model">Model</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override uint Model { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_Model">Entity.Model</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_NativePointer.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.NativePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L12">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_NativePointer_" data-uid="AltV.Net.Mock.MockEntity.NativePointer*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_NativePointer" data-uid="AltV.Net.Mock.MockEntity.NativePointer">NativePointer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr NativePointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_Position.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L16">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_Position_" data-uid="AltV.Net.Mock.MockEntity.Position*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_Position" data-uid="AltV.Net.Mock.MockEntity.Position">Position</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Position Position { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Position.html">Position</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Elements.Entities.WorldObject.html#AltV_Net_Elements_Entities_WorldObject_Position">WorldObject.Position</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_Rotation.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.Rotation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L17">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_Rotation_" data-uid="AltV.Net.Mock.MockEntity.Rotation*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_Rotation" data-uid="AltV.Net.Mock.MockEntity.Rotation">Rotation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Rotation Rotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Rotation.html">Rotation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_Rotation">Entity.Rotation</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_Type.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L15">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_Type_" data-uid="AltV.Net.Mock.MockEntity.Type*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_Type" data-uid="AltV.Net.Mock.MockEntity.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseObjectType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.BaseObjectType.html">BaseObjectType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_AddRef.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.AddRef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L162">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_AddRef_" data-uid="AltV.Net.Mock.MockEntity.AddRef*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_AddRef" data-uid="AltV.Net.Mock.MockEntity.AddRef">AddRef()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddRef()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_CheckIfEntityExists.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.CheckIfEntityExists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L148">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_CheckIfEntityExists_" data-uid="AltV.Net.Mock.MockEntity.CheckIfEntityExists*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_CheckIfEntityExists" data-uid="AltV.Net.Mock.MockEntity.CheckIfEntityExists">CheckIfEntityExists()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckIfEntityExists()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_ClearData.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.ClearData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L131">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_ClearData_" data-uid="AltV.Net.Mock.MockEntity.ClearData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_ClearData" data-uid="AltV.Net.Mock.MockEntity.ClearData">ClearData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearData()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_DeleteData_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.DeleteData(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L126">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_DeleteData_" data-uid="AltV.Net.Mock.MockEntity.DeleteData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_DeleteData_System_String_" data-uid="AltV.Net.Mock.MockEntity.DeleteData(System.String)">DeleteData(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteData(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_GetAllDataKeys.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.GetAllDataKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L172">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_GetAllDataKeys_" data-uid="AltV.Net.Mock.MockEntity.GetAllDataKeys*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_GetAllDataKeys" data-uid="AltV.Net.Mock.MockEntity.GetAllDataKeys">GetAllDataKeys()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetAllDataKeys()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_GetData__1_System_String___0__.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.GetData%60%601(System.String%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L79">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_GetData_" data-uid="AltV.Net.Mock.MockEntity.GetData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_GetData__1_System_String___0__" data-uid="AltV.Net.Mock.MockEntity.GetData``1(System.String,``0@)">GetData&lt;T&gt;(String, out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetData&lt;T&gt;(string key, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_GetMetaData__1_System_String___0__.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.GetMetaData%60%601(System.String%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L56">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_GetMetaData_" data-uid="AltV.Net.Mock.MockEntity.GetMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_GetMetaData__1_System_String___0__" data-uid="AltV.Net.Mock.MockEntity.GetMetaData``1(System.String,``0@)">GetMetaData&lt;T&gt;(String, out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetMetaData&lt;T&gt;(string key, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_System_String_System_Int32__.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData(System.String%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L192">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_" data-uid="AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_System_String_System_Int32__" data-uid="AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData(System.String,System.Int32@)">GetStreamSyncedMetaData(String, out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetStreamSyncedMetaData(string key, out int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_System_String_System_Single__.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData(System.String%2CSystem.Single%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L202">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_" data-uid="AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_System_String_System_Single__" data-uid="AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData(System.String,System.Single@)">GetStreamSyncedMetaData(String, out Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetStreamSyncedMetaData(string key, out float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_System_String_System_UInt32__.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData(System.String%2CSystem.UInt32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L197">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_" data-uid="AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_System_String_System_UInt32__" data-uid="AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData(System.String,System.UInt32@)">GetStreamSyncedMetaData(String, out UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetStreamSyncedMetaData(string key, out uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData__1_System_String___0__.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData%60%601(System.String%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L141">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData_" data-uid="AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_GetStreamSyncedMetaData__1_System_String___0__" data-uid="AltV.Net.Mock.MockEntity.GetStreamSyncedMetaData``1(System.String,``0@)">GetStreamSyncedMetaData&lt;T&gt;(String, out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetStreamSyncedMetaData&lt;T&gt;(string key, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_GetSyncedMetaData_System_String_System_Int32__.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.GetSyncedMetaData(System.String%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L177">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_GetSyncedMetaData_" data-uid="AltV.Net.Mock.MockEntity.GetSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_GetSyncedMetaData_System_String_System_Int32__" data-uid="AltV.Net.Mock.MockEntity.GetSyncedMetaData(System.String,System.Int32@)">GetSyncedMetaData(String, out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSyncedMetaData(string key, out int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_GetSyncedMetaData_System_String_System_Single__.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.GetSyncedMetaData(System.String%2CSystem.Single%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L187">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_GetSyncedMetaData_" data-uid="AltV.Net.Mock.MockEntity.GetSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_GetSyncedMetaData_System_String_System_Single__" data-uid="AltV.Net.Mock.MockEntity.GetSyncedMetaData(System.String,System.Single@)">GetSyncedMetaData(String, out Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSyncedMetaData(string key, out float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_GetSyncedMetaData_System_String_System_UInt32__.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.GetSyncedMetaData(System.String%2CSystem.UInt32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L182">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_GetSyncedMetaData_" data-uid="AltV.Net.Mock.MockEntity.GetSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_GetSyncedMetaData_System_String_System_UInt32__" data-uid="AltV.Net.Mock.MockEntity.GetSyncedMetaData(System.String,System.UInt32@)">GetSyncedMetaData(String, out UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSyncedMetaData(string key, out uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_GetSyncedMetaData__1_System_String___0__.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.GetSyncedMetaData%60%601(System.String%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L103">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_GetSyncedMetaData_" data-uid="AltV.Net.Mock.MockEntity.GetSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_GetSyncedMetaData__1_System_String___0__" data-uid="AltV.Net.Mock.MockEntity.GetSyncedMetaData``1(System.String,``0@)">GetSyncedMetaData&lt;T&gt;(String, out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSyncedMetaData&lt;T&gt;(string key, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_HasData_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.HasData(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L121">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_HasData_" data-uid="AltV.Net.Mock.MockEntity.HasData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_HasData_System_String_" data-uid="AltV.Net.Mock.MockEntity.HasData(System.String)">HasData(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasData(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_OnRemove.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.OnRemove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L158">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_OnRemove_" data-uid="AltV.Net.Mock.MockEntity.OnRemove*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_OnRemove" data-uid="AltV.Net.Mock.MockEntity.OnRemove">OnRemove()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRemove()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_Remove.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.Remove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L146">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_Remove_" data-uid="AltV.Net.Mock.MockEntity.Remove*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_Remove" data-uid="AltV.Net.Mock.MockEntity.Remove">Remove()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Remove()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_RemoveRef.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.RemoveRef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L167">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_RemoveRef_" data-uid="AltV.Net.Mock.MockEntity.RemoveRef*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_RemoveRef" data-uid="AltV.Net.Mock.MockEntity.RemoveRef">RemoveRef()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveRef()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_ResetNetworkOwner.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.ResetNetworkOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L35">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_ResetNetworkOwner_" data-uid="AltV.Net.Mock.MockEntity.ResetNetworkOwner*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_ResetNetworkOwner" data-uid="AltV.Net.Mock.MockEntity.ResetNetworkOwner">ResetNetworkOwner()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetNetworkOwner()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_SetData_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.SetData(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L74">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_SetData_" data-uid="AltV.Net.Mock.MockEntity.SetData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_SetData_System_String_System_Object_" data-uid="AltV.Net.Mock.MockEntity.SetData(System.String,System.Object)">SetData(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetData(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_SetMetaData_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.SetMetaData(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L50">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_SetMetaData_" data-uid="AltV.Net.Mock.MockEntity.SetMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_SetMetaData_System_String_System_Object_" data-uid="AltV.Net.Mock.MockEntity.SetMetaData(System.String,System.Object)">SetMetaData(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMetaData(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_SetPosition_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.SetPosition(System.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L40">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_SetPosition_" data-uid="AltV.Net.Mock.MockEntity.SetPosition*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_SetPosition_System_Single_System_Single_System_Single_" data-uid="AltV.Net.Mock.MockEntity.SetPosition(System.Single,System.Single,System.Single)">SetPosition(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPosition(float x, float y, float z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">z</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_SetRotation_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.SetRotation(System.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L45">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_SetRotation_" data-uid="AltV.Net.Mock.MockEntity.SetRotation*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_SetRotation_System_Single_System_Single_System_Single_" data-uid="AltV.Net.Mock.MockEntity.SetRotation(System.Single,System.Single,System.Single)">SetRotation(Single, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRotation(float roll, float pitch, float yaw)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">roll</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">pitch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">yaw</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_SetStreamSyncedMetaData_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.SetStreamSyncedMetaData(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L136">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_SetStreamSyncedMetaData_" data-uid="AltV.Net.Mock.MockEntity.SetStreamSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_SetStreamSyncedMetaData_System_String_System_Object_" data-uid="AltV.Net.Mock.MockEntity.SetStreamSyncedMetaData(System.String,System.Object)">SetStreamSyncedMetaData(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStreamSyncedMetaData(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockEntity_SetSyncedMetaData_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockEntity.SetSyncedMetaData(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Mock/MockEntity.cs/#L97">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockEntity_SetSyncedMetaData_" data-uid="AltV.Net.Mock.MockEntity.SetSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Mock_MockEntity_SetSyncedMetaData_System_String_System_Object_" data-uid="AltV.Net.Mock.MockEntity.SetSyncedMetaData(System.String,System.Object)">SetSyncedMetaData(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSyncedMetaData(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IWorldObject.html">IWorldObject</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Types.INative.html">INative</a>
+  </div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Events </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Events ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search empty" data-noindex="" style="display: none;">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix">
+                                <div></div>
+                              </div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/master/docs/articles/events.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="events">Events</h1>
+
+<p>For custom events see <a href="custom-events.html">Custom Events</a>.</p>
+<p>Events can be registered via <a href="create-script.html">scripts</a> or dynamically via event delegates.
+This documentation is registering events via delegates dynamically.</p>
+<p>To add for example a player connect event handler dynamically you can just add the delegate that will be called when a player connects.</p>
+<p>This is a example using the lambda operator to add a event handler.</p>
+<pre><code class="lang-csharp">Alt.OnPlayerConnect += (player, reason) =&gt; {
+  Console.WriteLine($&quot;{player.Name} connected.&quot;);
+};
+</code></pre>
+<p>Its also possible to add a method instead of using a lambda. The method can be private, public, static ect.</p>
+<pre><code class="lang-csharp">Alt.OnPlayerConnect += OnPlayerConnect;
+...
+public void OnPlayerConnect(IPlayer player, string reason)
+{
+  Console.WriteLine($&quot;{player.Name} connected.&quot;);
+}
+</code></pre>
+<p>You should not register event handlers in async code.</p>
+<p>Below is a list of all event handlers.</p>
+<pre><code class="lang-csharp" name="Events">using AltV.Net.Events;
+
+namespace AltV.Net
+{
+    public static partial class Alt
+    {
+        public static event CheckpointDelegate OnCheckpoint
+        {
+            add =&gt; Module.CheckpointEventHandler.Add(value);
+            remove =&gt; Module.CheckpointEventHandler.Remove(value);
+        }
+
+        /// &lt;summary&gt;
+        /// Player connect event handler
+        /// &lt;example&gt;
+        /// &lt;code&gt;
+        /// Alt.OnPlayerConnect += (player, reason) =&gt; {
+        ///   Console.WriteLine($&quot;{player.Name} connected.&quot;);
+        /// };
+        /// &lt;/code&gt;
+        /// &lt;/example&gt;
+        /// &lt;/summary&gt;
+        public static event PlayerConnectDelegate OnPlayerConnect
+        {
+            add =&gt; Module.PlayerConnectEventHandler.Add(value);
+            remove =&gt; Module.PlayerConnectEventHandler.Remove(value);
+        }
+
+        public static event PlayerBeforeConnectDelegate OnPlayerBeforeConnect
+        {
+            add =&gt; Module.PlayerBeforeConnectEventHandler.Add(value);
+            remove =&gt; Module.PlayerBeforeConnectEventHandler.Remove(value);
+        }
+
+        public static event ResourceEventDelegate OnAnyResourceStart
+        {
+            add =&gt; Module.ResourceStartEventHandler.Add(value);
+            remove =&gt; Module.ResourceStartEventHandler.Remove(value);
+        }
+
+        public static event ResourceEventDelegate OnAnyResourceStop
+        {
+            add =&gt; Module.ResourceStopEventHandler.Add(value);
+            remove =&gt; Module.ResourceStopEventHandler.Remove(value);
+        }
+
+        public static event ResourceEventDelegate OnAnyResourceError
+        {
+            add =&gt; Module.ResourceErrorEventHandler.Add(value);
+            remove =&gt; Module.ResourceErrorEventHandler.Remove(value);
+        }
+
+        public static event PlayerDamageDelegate OnPlayerDamage
+        {
+            add =&gt; Module.PlayerDamageEventHandler.Add(value);
+            remove =&gt; Module.PlayerDamageEventHandler.Remove(value);
+        }
+
+        public static event PlayerDeadDelegate OnPlayerDead
+        {
+            add =&gt; Module.PlayerDeadEventHandler.Add(value);
+            remove =&gt; Module.PlayerDeadEventHandler.Remove(value);
+        }
+
+        public static event ExplosionDelegate OnExplosion
+        {
+            add =&gt; Module.ExplosionEventHandler.Add(value);
+            remove =&gt; Module.ExplosionEventHandler.Remove(value);
+        }
+
+        /// &lt;summary&gt;
+        /// Weapon damage event handler
+        /// &lt;example&gt;
+        /// &lt;code&gt;
+        /// Alt.OnWeaponDamage += (player, target, weapon, damage, shotOffset, bodyPart) =&gt; {
+        ///   Console.WriteLine($&quot;{player.Name} got damaged.&quot;);
+        ///   return true; // return false will cancel the weapon damage event and player won't receive damage.
+        /// };
+        /// &lt;/code&gt;
+        /// &lt;/example&gt;
+        /// &lt;/summary&gt;
+        public static event WeaponDamageDelegate OnWeaponDamage
+        {
+            add =&gt; Module.WeaponDamageEventHandler.Add(value);
+            remove =&gt; Module.WeaponDamageEventHandler.Remove(value);
+        }
+
+        public static event PlayerDisconnectDelegate OnPlayerDisconnect
+        {
+            add =&gt; Module.PlayerDisconnectEventHandler.Add(value);
+            remove =&gt; Module.PlayerDisconnectEventHandler.Remove(value);
+        }
+
+        public static event PlayerRemoveDelegate OnPlayerRemove
+        {
+            add =&gt; Module.PlayerRemoveEventHandler.Add(value);
+            remove =&gt; Module.PlayerRemoveEventHandler.Remove(value);
+        }
+
+        public static event VehicleRemoveDelegate OnVehicleRemove
+        {
+            add =&gt; Module.VehicleRemoveEventHandler.Add(value);
+            remove =&gt; Module.VehicleRemoveEventHandler.Remove(value);
+        }
+
+        public static event PlayerChangeVehicleSeatDelegate OnPlayerChangeVehicleSeat
+        {
+            add =&gt; Module.PlayerChangeVehicleSeatEventHandler.Add(value);
+            remove =&gt; Module.PlayerChangeVehicleSeatEventHandler.Remove(value);
+        }
+
+        public static event PlayerEnterVehicleDelegate OnPlayerEnterVehicle
+        {
+            add =&gt; Module.PlayerEnterVehicleEventHandler.Add(value);
+            remove =&gt; Module.PlayerEnterVehicleEventHandler.Remove(value);
+        }
+
+        public static event PlayerEnteringVehicleDelegate OnPlayerEnteringVehicle
+        {
+            add =&gt; Module.PlayerEnteringVehicleEventHandler.Add(value);
+            remove =&gt; Module.PlayerEnteringVehicleEventHandler.Remove(value);
+        }
+
+        public static event PlayerLeaveVehicleDelegate OnPlayerLeaveVehicle
+        {
+            add =&gt; Module.PlayerLeaveVehicleEventHandler.Add(value);
+            remove =&gt; Module.PlayerLeaveVehicleEventHandler.Remove(value);
+        }
+
+        public static event PlayerClientEventDelegate OnPlayerEvent
+        {
+            add =&gt; Module.PlayerClientEventEventHandler.Add(value);
+            remove =&gt; Module.PlayerClientEventEventHandler.Remove(value);
+        }
+
+        public static event PlayerClientCustomEventDelegate OnPlayerCustomEvent
+        {
+            add =&gt; Module.PlayerClientCustomEventEventHandler.Add(value);
+            remove =&gt; Module.PlayerClientCustomEventEventHandler.Remove(value);
+        }
+
+        public static event ServerEventEventDelegate OnServerEvent
+        {
+            add =&gt; Module.ServerEventEventHandler.Add(value);
+            remove =&gt; Module.ServerEventEventHandler.Remove(value);
+        }
+
+        public static event ServerCustomEventEventDelegate OnServerCustomEvent
+        {
+            add =&gt; Module.ServerCustomEventEventHandler.Add(value);
+            remove =&gt; Module.ServerCustomEventEventHandler.Remove(value);
+        }
+
+        public static event ConsoleCommandDelegate OnConsoleCommand
+        {
+            add =&gt; Module.ConsoleCommandEventHandler.Add(value);
+            remove =&gt; Module.ConsoleCommandEventHandler.Remove(value);
+        }
+
+        /// &lt;summary&gt;
+        /// Event that is invoked when the meta data of an entity has changed.
+        /// &lt;/summary&gt;
+        /// &lt;remarks&gt;Meta data is accessible across different serverside resources.&lt;/remarks&gt;
+        public static event MetaDataChangeDelegate OnMetaDataChange
+        {
+            add =&gt; Module.MetaDataChangeEventHandler.Add(value);
+            remove =&gt; Module.MetaDataChangeEventHandler.Remove(value);
+        }
+
+        /// &lt;summary&gt;
+        /// Event that is invoked when the synced meta data of an entity has changed.
+        /// &lt;/summary&gt;
+        /// &lt;remarks&gt;Synced meta data is accessible across different serverside resources and to all clients without range limitation.&lt;/remarks&gt;
+        public static event MetaDataChangeDelegate OnSyncedMetaDataChange
+        {
+            add =&gt; Module.SyncedMetaDataChangeEventHandler.Add(value);
+            remove =&gt; Module.SyncedMetaDataChangeEventHandler.Remove(value);
+        }
+
+        public static event ColShapeDelegate OnColShape
+        {
+            add =&gt; Module.ColShapeEventHandler.Add(value);
+            remove =&gt; Module.ColShapeEventHandler.Remove(value);
+        }
+
+        public static event VehicleDestroyDelegate OnVehicleDestroy
+        {
+            add =&gt; Module.VehicleDestroyEventHandler.Add(value);
+            remove =&gt; Module.VehicleDestroyEventHandler.Remove(value);
+        }
+
+        public static event FireDelegate OnFire
+        {
+            add =&gt; Module.FireEventHandler.Add(value);
+            remove =&gt; Module.FireEventHandler.Remove(value);
+        }
+
+        public static event StartProjectileDelegate OnStartProjectile
+        {
+            add =&gt; Module.StartProjectileEventHandler.Add(value);
+            remove =&gt; Module.StartProjectileEventHandler.Remove(value);
+        }
+
+        public static event PlayerWeaponChangeDelegate OnPlayerWeaponChange
+        {
+            add =&gt; Module.PlayerWeaponChangeEventHandler.Add(value);
+            remove =&gt; Module.PlayerWeaponChangeEventHandler.Remove(value);
+        }
+
+        public static event NetOwnerChangeDelegate OnNetworkOwnerChange
+        {
+            add =&gt; Module.NetOwnerChangeEventHandler.Add(value);
+            remove =&gt; Module.NetOwnerChangeEventHandler.Remove(value);
+        }
+
+        public static event VehicleAttachDelegate OnVehicleAttach
+        {
+            add =&gt; Module.VehicleAttachEventHandler.Add(value);
+            remove =&gt; Module.VehicleAttachEventHandler.Remove(value);
+        }
+
+        public static event VehicleDetachDelegate OnVehicleDetach
+        {
+            add =&gt; Module.VehicleDetachEventHandler.Add(value);
+            remove =&gt; Module.VehicleDetachEventHandler.Remove(value);
+        }
+
+        public static event VehicleDamageDelegate OnVehicleDamage
+        {
+            add =&gt; Module.VehicleDamageEventHandler.Add(value);
+            remove =&gt; Module.VehicleDamageEventHandler.Remove(value);
+        }
+        
+        public static event ConnectionQueueAddDelegate OnConnectionQueueAdd
+        {
+            add =&gt; Module.ConnectionQueueAddHandler.Add(value);
+            remove =&gt; Module.ConnectionQueueAddHandler.Remove(value);
+        }
+        
+        public static event ConnectionQueueRemoveDelegate OnConnectionQueueRemove
+        {
+            add =&gt; Module.ConnectionQueueRemoveHandler.Add(value);
+            remove =&gt; Module.ConnectionQueueRemoveHandler.Remove(value);
+        }
+    }
+}
+</code></pre>
+<p>Below is a list of all event handler method signatures.</p>
+<pre><code class="lang-csharp" name="Events">using AltV.Net.Data;
+using AltV.Net.Elements.Args;
+using AltV.Net.Elements.Entities;
+using AltV.Net.Types;
+
+namespace AltV.Net.Events
+{
+    public delegate void CheckpointDelegate(ICheckpoint checkpoint, IEntity entity, bool state);
+
+    public delegate void ClientEventDelegate(IPlayer player, object[] args);
+
+    public delegate void PlayerConnectDelegate(IPlayer player, string reason);
+
+    public delegate string PlayerBeforeConnectDelegate(PlayerConnectionInfo connectionInfo, string reason);
+
+    public delegate void ResourceEventDelegate(INativeResource resource);
+
+    public delegate void PlayerDamageDelegate(IPlayer player, IEntity attacker, uint weapon, ushort healthDamage, ushort armourDamage);
+
+    public delegate void PlayerDeadDelegate(IPlayer player, IEntity killer, uint weapon);
+
+    public delegate void PlayerDisconnectDelegate(IPlayer player, string reason);
+
+    public delegate void PlayerRemoveDelegate(IPlayer player);
+
+    public delegate void VehicleRemoveDelegate(IVehicle vehicle);
+
+    public delegate void ServerEventDelegate(object[] args);
+
+    public delegate void PlayerClientEventDelegate(IPlayer player, string eventName, object[] args);
+
+    public delegate void PlayerClientCustomEventDelegate(IPlayer player, string eventName, MValueConst[] mValueArray);
+
+    public delegate void PlayerChangeVehicleSeatDelegate(IVehicle vehicle, IPlayer player, byte oldSeat, byte newSeat);
+
+    public delegate void PlayerEnterVehicleDelegate(IVehicle vehicle, IPlayer player, byte seat);
+
+    public delegate void PlayerEnteringVehicleDelegate(IVehicle vehicle, IPlayer player, byte seat);
+
+    public delegate void PlayerLeaveVehicleDelegate(IVehicle vehicle, IPlayer player, byte seat);
+
+    public delegate void ServerEventEventDelegate(string eventName, object[] args);
+
+    public delegate void ServerCustomEventEventDelegate(string eventName, MValueConst[] mValueArray);
+
+    public delegate void ConsoleCommandDelegate(string name, string[] args);
+
+    public delegate void MetaDataChangeDelegate(IEntity entity, string key, object value);
+
+    public delegate void ColShapeDelegate(IColShape colShape, IEntity targetEntity, bool state);
+
+    public delegate bool ExplosionDelegate(IPlayer player, ExplosionType explosionType, Position position,
+        uint explosionFx, IEntity targetEntity);
+
+    public delegate bool WeaponDamageDelegate(IPlayer player, IEntity target, uint weapon, ushort damage,
+        Position shotOffset, BodyPart bodyPart);
+
+    public delegate void VehicleDestroyDelegate(IVehicle vehicle);
+
+    public delegate bool FireDelegate(IPlayer player, FireInfo[] fireInfos);
+
+    public delegate bool StartProjectileDelegate(IPlayer player, Position startPosition, Position direction, uint ammoHash, uint weaponHash);
+
+    public delegate bool PlayerWeaponChangeDelegate(IPlayer player, uint oldWeapon, uint newWeapon);
+
+    public delegate void NetOwnerChangeDelegate(IEntity target, IPlayer oldNetOwner, IPlayer newNetOwner);
+
+    public delegate void VehicleAttachDelegate(IVehicle target, IVehicle attachedVehicle);
+
+    public delegate void VehicleDetachDelegate(IVehicle target, IVehicle detachedVehicle);
+
+    public delegate void VehicleDamageDelegate(IVehicle target, IEntity attacker, uint bodyHealthDamage, uint additionalBodyHealthDamage, uint engineHealthDamage, uint petrolTankDamage, uint weaponHash);
+    
+    public delegate void ConnectionQueueAddDelegate(IConnectionInfo connectionInfo);
+    
+    public delegate void ConnectionQueueRemoveDelegate(IConnectionInfo connectionInfo);
+}
+</code></pre>
+<p>The player event handler looks like this.</p>
+<pre><code class="lang-csharp">Alt.OnPlayerEvent += (player, name, args) =&gt; { 
+};
+</code></pre>
+<p>For automated arguments validating you can use <a href="custom-events.html">Custom Events</a>.</p>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

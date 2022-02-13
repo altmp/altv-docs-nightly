@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Resource initialization order </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Resource initialization order ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#resource-initialization-order">Resource initialization order</a><ul class="level2 nav bs-docs-sidenav resource-initialization-order"><li><a href="#why-you-should-know-the-initialization-order">Why you should know the initialization order</a></li><li><a href="#initialization-order">Initialization order</a><ul class="level3 nav bs-docs-sidenav initialization-order"><li><a href="#1-resource-constructor">1. Resource constructor</a></li><li><a href="#2-entity-factories-and-entity-pool-methods">2. Entity factories and entity pool methods</a></li><li><a href="#3-getmodule-override">3. GetModule override</a></li><li><a href="#4-onstart-override">4. OnStart override</a></li><li><a href="#5-intermediate-overrides-and-events">5. Intermediate overrides and events</a></li><li><a href="#6-onstop-override-on-resource-stop-or-graceful-server-shutdown">6. OnStop override on resource stop OR graceful server shutdown</a></li></ul></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/master/docs/articles/resource-initialization-order.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="resource-initialization-order">Resource initialization order</h1>
+
+<h2 id="why-you-should-know-the-initialization-order">Why you should know the initialization order</h2>
+<p>The <code>Resource</code> and <code>AsyncResource</code> classes provide overridable methods to modify the instantiation of players or vehicles and to modify the pools of those entities - just to name some.</p>
+<p>Now, one could need custom parameters while instantiating, for example, a new class inheriting from <code>IPlayer</code>, assuming that there exists a player factory (<code>MyPlayerFactory</code>) using a custom argument (<code>myConstant</code>) in the constructor, which is later on passed to the player class.</p>
+<pre><code class="lang-csharp">public override IEntityFactory&lt;IPlayer&gt; GetPlayerFactory()
+{
+    return new MyPlayerFactory(/* insert your value for myConstant */);
+}
+</code></pre>
+<p>This could be an example, where a constructor argument is needed. Now, consider the case where your player - and thus your player factory - needs a constructor value which is also used by other components later on in the initialization process.</p>
+<p>Then you probably would like to know which initialization order the alt:V follows, to provide the correct instances and values to all of your components.</p>
+<p>For example, for the example above, you would have to create the value in the constructor and save it to a class variable like this:</p>
+<pre><code class="lang-csharp">class MyResource : Resource
+{
+    private string mySecret;
+
+    public MyResource()
+    {
+        mySecret = &quot;1234&quot;;
+    }
+    
+    public override IEntityFactory&lt;IPlayer&gt; GetPlayerFactory()
+    {
+        return new MyPlayerFactory(mySecret);
+    }
+    
+    public override OnStart()
+    {
+        // we could need our secret also here
+        new AnotherComponent(mySecret);
+    }
+    
+    public override OnStop() {}
+}
+</code></pre>
+<h2 id="initialization-order">Initialization order</h2>
+<p>The initialization order is as follows:</p>
+<h3 id="1-resource-constructor">1. Resource constructor</h3>
+<p>A resource in C# is created by either inheriting from <code>Resource</code> or <code>AsyncResource</code> on a class and provide overrides for <code>OnStart()</code> and <code>OnStop()</code>.</p>
+<p>The constructor of the class inheriting from <code>Resource</code> or <code>AsyncResource</code> is called first, which makes sense because the class of the resource has to be instantiated.</p>
+<h3 id="2-entity-factories-and-entity-pool-methods">2. Entity factories and entity pool methods</h3>
+<p>Second, the entity factory and entity pool methods are called, since before the resource starts, the internal module (of type <code>Module</code>) has to know about all factories and pools as they can not be changed later on.</p>
+<h3 id="3-getmodule-override">3. <code>GetModule</code> override</h3>
+<p>After the creation of entity factories and entity pools, <code>GetModule</code> is called with all its arguments.</p>
+<h3 id="4-onstart-override">4. <code>OnStart</code> override</h3>
+<p>Nothing much to say about it. The literal start of the resource is about to be begin.</p>
+<h3 id="5-intermediate-overrides-and-events">5. Intermediate overrides and events</h3>
+<p>All events known to the public API (<code>AltV.Net.Alt.On...</code>) and the method <code>OnTick(...)</code> are possible to be called multiple times between <code>OnStart()</code> and <code>OnStop()</code>, since events can occur multiple times and a tick occurs every few milliseconds.</p>
+<h3 id="6-onstop-override-on-resource-stop-or-graceful-server-shutdown">6. <code>OnStop</code> override on resource stop OR graceful server shutdown</h3>
+<p>The last step is the stop of the alt:V server.</p>
+<p>Keep in mind that <code>OnStop</code> is only called if the resource was stopped manually using the alt:V API or by gracefully stopping the alt:V server. Otherwise, this event <strong>will not be executed</strong>!</p>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

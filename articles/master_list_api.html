@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Master list API </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Master list API ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../index.html">
+                        <img src="../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#master-list-api">Master list API</a><ul class="level2 nav bs-docs-sidenav master-list-api"><li><a href="#information">Information</a></li><li><a href="#api-links">API Links</a></li><li><a href="#response-example">Response example</a><ul class="level3 nav bs-docs-sidenav response-example"><li><a href="#statistics">Statistics</a></li><li><a href="#server-list">Server list</a></li><li><a href="#specific-server">Specific server</a></li><li><a href="#average--maximum">Average / Maximum</a></li></ul></li></ul></li><li><a href="#altstatsnet---altv-stats-api-unofficial">altstats.net - alt:V Stats API (Unofficial)</a><ul class="level2 nav bs-docs-sidenav altstatsnet---altv-stats-api-unofficial"><li><a href="#information-1">Information</a></li><li><a href="#api-links-1">API Links</a></li><li><a href="#response-example-1">Response example</a><ul class="level3 nav bs-docs-sidenav response-example-1"><li><a href="#count">Count</a></li><li><a href="#servers">Servers</a></li><li><a href="#specific-server-1">Specific server</a></li></ul></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/master_list_api.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="master-list-api">Master list API</h1>
+
+<p>The master list api allow you to fetch data from the alt:V master list service.</p>
+<h2 id="information">Information</h2>
+<ul>
+<li>GET only</li>
+<li>Return JSON Object</li>
+<li>If abused you can be banned from using the API</li>
+</ul>
+<h2 id="api-links">API Links</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">URL</th>
+<th style="text-align: center;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="https://api.altv.mp/servers">https://api.altv.mp/servers</a></td>
+<td style="text-align: center;">Statistics - Player Count across all servers &amp; The amount of servers online</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="https://api.altv.mp/servers/list">https://api.altv.mp/servers/list</a></td>
+<td style="text-align: center;">Servers - All information known about all servers (Name, Description, IP, Language, Website, Etc.)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="https://api.altv.mp/server/MASTERLIST_ID">https://api.altv.mp/server/MASTERLIST_ID</a></td>
+<td style="text-align: center;">Specific Server - Filters server list for a specific one. Uses &quot;id&quot; which is unique to the server token</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="https://api.altv.mp/avg/MASTERLIST_ID/TIME">https://api.altv.mp/avg/MASTERLIST_ID/TIME</a></td>
+<td style="text-align: center;">Averages - Returns averages data about the specified server (TIME = 1d, 7d, 31d)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="https://api.altv.mp/max/MASTERLIST_ID/TIME">https://api.altv.mp/max/MASTERLIST_ID/TIME</a></td>
+<td style="text-align: center;">Maximum - Returns maximum data about the specified server (TIME = 1d, 7d, 31d)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="response-example">Response example</h2>
+<h3 id="statistics">Statistics</h3>
+<pre><code class="lang-json">{ &quot;ServersCount&quot;: 64, &quot;playersCount&quot;: 1582 }
+</code></pre>
+<h3 id="server-list">Server list</h3>
+<p>It's a fragment of API's response.</p>
+<pre><code class="lang-json">[
+    {
+        &quot;id&quot;:&quot;ceaac3d1cc22761223beac38386f5ab2&quot;,
+        &quot;maxPlayers&quot;:128,
+        &quot;players&quot;:0,
+        &quot;name&quot;:&quot;Simple Freeroam Server | by PlebMasters.de&quot;,
+        &quot;locked&quot;:false,
+        &quot;host&quot;:&quot;116.203.227.203&quot;,
+        &quot;port&quot;:7791,
+        &quot;gameMode&quot;:&quot;Freeroam&quot;,
+        &quot;website&quot;:&quot;discord.gg/86uqkqc&quot;,
+        &quot;language&quot;:&quot;en&quot;,
+        &quot;description&quot;:&quot;A simple game mode to test the performance of alt:V, but also to move freely around the map without any rules.&quot;,
+        &quot;verified&quot;:false,
+        &quot;promoted&quot;:false,
+        &quot;useEarlyAuth&quot;:false,
+        &quot;earlyAuthUrl&quot;:&quot;&quot;,
+        &quot;useCdn&quot;:false,
+        &quot;cdnUrl&quot;:&quot;&quot;,
+        &quot;useVoiceChat&quot;:false,
+        &quot;tags&quot;:
+            [
+                &quot;No Rules&quot;,
+                &quot;All Weapons&quot;,
+                &quot;All Vehicles&quot;
+            ],
+        &quot;bannerUrl&quot;:null,
+        &quot;branch&quot;:&quot;release&quot;,
+        &quot;build&quot;:1181,
+        &quot;lastUpdate&quot;:1596840894273
+    }
+]
+</code></pre>
+<h3 id="specific-server">Specific server</h3>
+<pre><code class="lang-json">{
+    &quot;active&quot;:true,
+    &quot;info&quot;:{
+        &quot;id&quot;:&quot;ceaac3d1cc22761223beac38386f5ab2&quot;,
+        &quot;maxPlayers&quot;:128,
+        &quot;players&quot;:0,
+        &quot;name&quot;:&quot;Simple Freeroam Server | by PlebMasters.de&quot;,
+        &quot;locked&quot;:false,
+        &quot;host&quot;:&quot;144.91.81.134&quot;,
+        &quot;port&quot;:7791,
+        &quot;gameMode&quot;:&quot;Freeroam&quot;,
+        &quot;website&quot;:&quot;discord.gg/86uqkqc&quot;,
+        &quot;language&quot;:&quot;en&quot;,
+        &quot;description&quot;:&quot;A simple game mode to test the performance of alt:V, but also to move freely around the map without any rules.&quot;,
+        &quot;verified&quot;:false,
+        &quot;promoted&quot;:false,
+        &quot;useEarlyAuth&quot;:false,
+        &quot;earlyAuthUrl&quot;:&quot;&quot;,
+        &quot;useCdn&quot;:false,
+        &quot;cdnUrl&quot;:&quot;&quot;,
+        &quot;useVoiceChat&quot;:false,
+        &quot;tags&quot;:[
+            &quot;No Rules&quot;,
+            &quot;All Weapons&quot;,
+            &quot;All Vehicles&quot;,
+            &quot;Enabled Cayo Perico&quot;
+        ],
+        &quot;bannerUrl&quot;:null,
+        &quot;branch&quot;:&quot;release&quot;,
+        &quot;build&quot;:-1,
+        &quot;version&quot;:&quot;2.8&quot;,
+        &quot;lastUpdate&quot;:1612571971068
+    }
+}
+</code></pre>
+<h3 id="average--maximum">Average / Maximum</h3>
+<pre><code class="lang-json">[
+    { &quot;t&quot;:1612562230,&quot;c&quot;:4 },
+    { &quot;t&quot;:1612562280,&quot;c&quot;:4 },
+    { &quot;t&quot;:1612562341,&quot;c&quot;:4 }
+]
+</code></pre>
+<p>Description: t = Timestamp in UTC, c = Player Count.</p>
+<h1 id="altstatsnet---altv-stats-api-unofficial">altstats.net - alt:V Stats API (Unofficial)</h1>
+<p>altstats.net - alt:V Stats is a alternative server list, developed and supported by members of the altMP Team. It has additional statistics about servers like player count for the last 24 hours, 7 days or month and you have a server specific API.</p>
+<p>Features like showing the player count for the last month are premium features, you need to pay for them to enable them.</p>
+<h2 id="information-1">Information</h2>
+<ul>
+<li>GET only</li>
+<li>Return JSON Object</li>
+<li>If abused you can be banned from using the API</li>
+<li>API can change anytime without notice</li>
+</ul>
+<h2 id="api-links-1">API Links</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">URL</th>
+<th style="text-align: center;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="https://api.altstats.net/api/v1/master">https://api.altstats.net/api/v1/master</a></td>
+<td style="text-align: center;">Count - Shows the server and player count for the last 24 hours</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="https://api.altstats.net/api/v1/server">https://api.altstats.net/api/v1/server</a></td>
+<td style="text-align: center;">Servers - Basic information about all known servers</td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="https://api.altstats.net/api/v1/server/serverID">https://api.altstats.net/api/v1/server/serverID</a></td>
+<td style="text-align: center;">Specific Server - Lists you all information about a server</td>
+</tr>
+</tbody>
+</table>
+<h2 id="response-example-1">Response example</h2>
+<h3 id="count">Count</h3>
+<pre><code class="lang-json">[
+  {
+    &quot;ServerCount&quot;: 72,
+    &quot;PlayerCount&quot;: 958,
+    &quot;TimeStamp&quot;: &quot;2021-01-01T12:15:00.464Z&quot;
+  },
+  {
+    &quot;ServerCount&quot;: 73,
+    &quot;PlayerCount&quot;: 945,
+    &quot;TimeStamp&quot;: &quot;2021-01-01T12:10:00.465Z&quot;
+  },
+  {
+    &quot;others&quot;: &quot;...&quot;
+  }
+]
+</code></pre>
+<h3 id="servers">Servers</h3>
+<pre><code class="lang-json">[
+  {
+    &quot;others&quot;: &quot;...&quot;
+  },
+  {
+    &quot;id&quot;: 330,
+    &quot;name&quot;: &quot;Simple Freeroam Server | by PlebMasters.de&quot;,
+    &quot;locked&quot;: 0,
+    &quot;playerCount&quot;: 1,
+    &quot;slots&quot;: 128,
+    &quot;gameMode&quot;: &quot;Freeroam&quot;,
+    &quot;language&quot;: {
+      &quot;full&quot;: &quot;English&quot;,
+      &quot;short&quot;: &quot;gb&quot;
+    },
+    &quot;official&quot;: 0,
+    &quot;verified&quot;: 0,
+    &quot;promoted&quot;: 0,
+    &quot;tags&quot;: [
+      &quot;No Rules&quot;,
+      &quot;All Weapons&quot;,
+      &quot;All Vehicles&quot;,
+      &quot;Enabled Cayo Perico&quot;
+    ]
+  },
+  {
+    &quot;others&quot;: &quot;...&quot;
+  }
+]
+</code></pre>
+<h3 id="specific-server-1">Specific server</h3>
+<pre><code class="lang-json">{
+  &quot;Id&quot;: 330,
+  &quot;FoundAt&quot;: &quot;2020-01-01T12:41:21.433Z&quot;,
+  &quot;LastActivity&quot;: &quot;2021-01-01T12:00:19.364Z&quot;,
+  &quot;Visible&quot;: true,
+  &quot;ServerId&quot;: &quot;ceaac3d1cc22761223beac38386f5ab2&quot;,
+  &quot;Players&quot;: 1,
+  &quot;Name&quot;: &quot;Simple Freeroam Server | by PlebMasters.de&quot;,
+  &quot;Locked&quot;: false,
+  &quot;Ip&quot;: &quot;144.91.81.134&quot;,
+  &quot;Port&quot;: 7791,
+  &quot;MaxPlayers&quot;: 128,
+  &quot;Ping&quot;: 0,
+  &quot;Website&quot;: &quot;discord.gg/86uqkqc&quot;,
+  &quot;Language&quot;: &quot;English&quot;,
+  &quot;Description&quot;: &quot;A simple game mode to test the performance of alt:V, but also to move freely around the map without any rules.&quot;,
+  &quot;LastUpdate&quot;: 1609502415186,
+  &quot;IsOfficial&quot;: false,
+  &quot;PlayerRecord&quot;: 34,
+  &quot;PlayerRecordDate&quot;: &quot;2020-07-01T14:15:07.388Z&quot;,
+  &quot;LastFetchOnline&quot;: true,
+  &quot;LanguageShort&quot;: &quot;gb&quot;,
+  &quot;GameMode&quot;: &quot;Freeroam&quot;,
+  &quot;Branch&quot;: &quot;release&quot;,
+  &quot;Build&quot;: -1,
+  &quot;CdnUrl&quot;: &quot;&quot;,
+  &quot;EarlyAuthUrl&quot;: &quot;&quot;,
+  &quot;Verified&quot;: false,
+  &quot;UseCdn&quot;: false,
+  &quot;UseEarlyAuth&quot;: false,
+  &quot;BannerUrl&quot;: null,
+  &quot;Promoted&quot;: false,
+  &quot;Tags&quot;: [
+    &quot;No Rules&quot;,
+    &quot;All Weapons&quot;,
+    &quot;All Vehicles&quot;,
+    &quot;Enabled Cayo Perico&quot;
+  ],
+  &quot;UseVoiceChat&quot;: false,
+  &quot;Level&quot;: 3,
+  &quot;Version&quot;: &quot;2.2&quot;
+}
+</code></pre>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/discord.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

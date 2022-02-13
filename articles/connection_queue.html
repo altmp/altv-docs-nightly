@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Player connection queue </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Player connection queue ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../index.html">
+                        <img src="../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#player-connection-queue">Player connection queue</a><ul class="level2 nav bs-docs-sidenav player-connection-queue"><li><a href="#what-is-a-connection-queue">What is a connection queue</a></li><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#config">Config</a></li><li><a href="#player-queue-events">Player queue events</a></li><li><a href="#connection-info">Connection info</a></li><li><a href="#script-usage">Script usage</a></li></ul></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/connection_queue.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="player-connection-queue">Player connection queue</h1>
+
+<p>This article will explain the player connection queue added in the 9.0 update.</p>
+<h2 id="what-is-a-connection-queue">What is a connection queue</h2>
+<p>Due to the current underlying networking, each player in the queue will actually occupy a slot and increase the player count.<br>
+When the player queue is activated, the playerConnect event is triggered once the connection has been accepted.<br>
+The connection queue will place the players attempting to connect to the server in a queue. You can then accept or decline the upcoming connection at any moment.</p>
+<h2 id="usage">Usage</h2>
+<h3 id="config">Config</h3>
+<p>You have to set / add the following field in your server.cfg</p>
+<pre><code class="lang-json">connectionQueue: 'true'
+</code></pre>
+<h3 id="player-queue-events">Player queue events</h3>
+<p>The connectionQueueRemove event is triggered when you accept / decline the connection or when the player disconnects by canceling the connection.</p>
+<table>
+<thead>
+<tr>
+<th>Event Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>connectionQueueAdd</td>
+<td>Event triggered once a player is added to the connection queue</td>
+</tr>
+<tr>
+<td>connectionQueueRemove</td>
+<td>Event triggered once a player is removed from the connection queue</td>
+</tr>
+</tbody>
+</table>
+<h3 id="connection-info">Connection info</h3>
+<p>You have access to a connection info class instance as the first parameter of the <code>connectionQueueAdd</code> and <code>connectionQueueRemove</code> events.</p>
+<p>Functions</p>
+<table>
+<thead>
+<tr>
+<th>Function Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>connectionInfo.accept()</td>
+<td>Accept the player connection to the server.</td>
+</tr>
+<tr>
+<td>connectionInfo.decline(reason)</td>
+<td>Decline the player connection to the server with an optional reason.</td>
+</tr>
+</tbody>
+</table>
+<p>Properties</p>
+<table>
+<thead>
+<tr>
+<th>Property Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>connectionInfo.name</td>
+<td>Player name.</td>
+</tr>
+<tr>
+<td>connectionInfo.socialID</td>
+<td>Player social club id.</td>
+</tr>
+<tr>
+<td>connectionInfo.discordID</td>
+<td>Player discord id.</td>
+</tr>
+<tr>
+<td>connectionInfo.ip</td>
+<td>Player IP adress.</td>
+</tr>
+<tr>
+<td>connectionInfo.hwidHash</td>
+<td>Player hwidHash.</td>
+</tr>
+<tr>
+<td>connectionInfo.hwidExHash</td>
+<td>Player hwidExHash.</td>
+</tr>
+<tr>
+<td>connectionInfo.authToken</td>
+<td>Player auth token if early auth was used.</td>
+</tr>
+<tr>
+<td>connectionInfo.isDebug</td>
+<td>Whether the player client is in debug mode or not.</td>
+</tr>
+<tr>
+<td>connectionInfo.branch</td>
+<td>Player client branch.</td>
+</tr>
+<tr>
+<td>connectionInfo.build</td>
+<td>Player client build.</td>
+</tr>
+<tr>
+<td>connectionInfo.cdnUrl</td>
+<td>CDN url if used.</td>
+</tr>
+<tr>
+<td>connectionInfo.passwordHash</td>
+<td>Password hash entered in the server connection modal.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="script-usage">Script usage</h3>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tabid-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tabid-1" data-tab="tabid-1" tabindex="0" aria-selected="true">Javascript</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tabid-2" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tabid-2" data-tab="tabid-2" tabindex="-1">Typescript</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tabid-3" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tabid-3" data-tab="tabid-3" tabindex="-1">C#</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_tabid-1" role="tabpanel" data-tab="tabid-1">
+
+<pre><code class="lang-js">async function getDataFromDatabase() {
+    return new Promise(resolve =&gt; setTimeout(resolve(true), 5000));
+}
+
+async function processPlayerInQueue(connectionInfo) {
+    if (await getDataFromDatabase());
+        connectionInfo.accept();
+}
+
+alt.on('connectionQueueAdd', processPlayerInQueue);
+alt.on('connectionQueueRemove', (connectionInfo) =&gt; {
+    console.log(&quot;Player removed from the queue, even if I accept the connection now it's handled!&quot;);
+});
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_tabid-2" role="tabpanel" data-tab="tabid-2" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-ts">async function getDataFromDatabase(): Promise&lt;true&gt; {
+    return new Promise(resolve =&gt; setTimeout(resolve(true), 5000));
+}
+
+async function processPlayerInQueue(connectionInfo: alt.ConnectionInfo): Promise&lt;void&gt; {
+    if (await getDataFromDatabase());
+        connectionInfo.accept();
+}
+
+alt.on('connectionQueueAdd', processPlayerInQueue);
+alt.on('connectionQueueRemove', (connectionInfo: alt.ConnectionInfo) =&gt; {
+    console.log(&quot;Player removed from the queue, even if I accept the connection now it's handled!&quot;);
+});
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_tabid-3" role="tabpanel" data-tab="tabid-3" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-csharp"></code></pre>
+</section>
+</div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/discord.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

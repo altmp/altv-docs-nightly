@@ -1,0 +1,2022 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AsyncModule
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class AsyncModule
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Async_AsyncModule__ctor_AltV_Net_IServer_AssemblyLoadContext_AltV_Net_INativeResource_AltV_Net_IBaseBaseObjectPool_AltV_Net_IBaseEntityPool_AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IPlayer__AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IVehicle__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IBlip__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_ICheckpoint__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVoiceChannel__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IColShape__AltV_Net_INativeResourcePool_">AsyncModule(IServer, AssemblyLoadContext, INativeResource, IBaseBaseObjectPool, IBaseEntityPool, IEntityPool&lt;IPlayer&gt;, IEntityPool&lt;IVehicle&gt;, IBaseObjectPool&lt;IBlip&gt;, IBaseObjectPool&lt;ICheckpoint&gt;, IBaseObjectPool&lt;IVoiceChannel&gt;, IBaseObjectPool&lt;IColShape&gt;, INativeResourcePool)</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Async_AsyncModule_IsMainThread">IsMainThread()</a></li><li><a href="#AltV_Net_Async_AsyncModule_OffClient_System_String_AltV_Net_Function_">OffClient(String, Function)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OffServer_System_String_AltV_Net_Function_">OffServer(String, Function)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnCheckPointEvent_AltV_Net_Elements_Entities_ICheckpoint_AltV_Net_Elements_Entities_IEntity_System_Boolean_">OnCheckPointEvent(ICheckpoint, IEntity, Boolean)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnClient_System_String_AltV_Net_Function_">OnClient(String, Function)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnClientEventEvent_AltV_Net_Elements_Entities_IPlayer_System_String_IntPtr___AltV_Net_Elements_Args_MValueConst___System_Object___">OnClientEventEvent(IPlayer, String, IntPtr[], MValueConst[], Object[])</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnColShapeEvent_AltV_Net_Elements_Entities_IColShape_AltV_Net_Elements_Entities_IEntity_System_Boolean_">OnColShapeEvent(IColShape, IEntity, Boolean)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnConnectionQueueAddEvent_AltV_Net_Types_IConnectionInfo_">OnConnectionQueueAddEvent(IConnectionInfo)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnConnectionQueueRemoveEvent_AltV_Net_Types_IConnectionInfo_">OnConnectionQueueRemoveEvent(IConnectionInfo)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnConsoleCommandEvent_System_String_System_String___">OnConsoleCommandEvent(String, String[])</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnExplosionEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Data_ExplosionType_AltV_Net_Data_Position_System_UInt32_AltV_Net_Elements_Entities_IEntity_">OnExplosionEvent(IntPtr, IPlayer, ExplosionType, Position, UInt32, IEntity)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnFireEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_FireInfo___">OnFireEvent(IntPtr, IPlayer, FireInfo[])</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnMetaDataChangeEvent_AltV_Net_Elements_Entities_IEntity_System_String_System_Object_">OnMetaDataChangeEvent(IEntity, String, Object)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnNetOwnerChangeEvent_AltV_Net_Elements_Entities_IEntity_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IPlayer_">OnNetOwnerChangeEvent(IEntity, IPlayer, IPlayer)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnPlayerBeforeConnectEvent_IntPtr_AltV_Net_Data_PlayerConnectionInfo_System_String_">OnPlayerBeforeConnectEvent(IntPtr, PlayerConnectionInfo, String)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnPlayerChangeVehicleSeatEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_System_Byte_">OnPlayerChangeVehicleSeatEvent(IVehicle, IPlayer, Byte, Byte)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnPlayerConnectEvent_AltV_Net_Elements_Entities_IPlayer_System_String_">OnPlayerConnectEvent(IPlayer, String)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnPlayerDamageEvent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IEntity_System_UInt32_System_UInt16_System_UInt16_">OnPlayerDamageEvent(IPlayer, IEntity, UInt32, UInt16, UInt16)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnPlayerDeathEvent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IEntity_System_UInt32_">OnPlayerDeathEvent(IPlayer, IEntity, UInt32)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnPlayerDisconnectEvent_AltV_Net_Elements_Entities_IPlayer_System_String_">OnPlayerDisconnectEvent(IPlayer, String)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnPlayerEnteringVehicleEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_">OnPlayerEnteringVehicleEvent(IVehicle, IPlayer, Byte)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnPlayerEnterVehicleEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_">OnPlayerEnterVehicleEvent(IVehicle, IPlayer, Byte)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnPlayerLeaveVehicleEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_">OnPlayerLeaveVehicleEvent(IVehicle, IPlayer, Byte)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnPlayerRemoveEvent_AltV_Net_Elements_Entities_IPlayer_">OnPlayerRemoveEvent(IPlayer)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnPlayerWeaponChangeEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_System_UInt32_System_UInt32_">OnPlayerWeaponChangeEvent(IntPtr, IPlayer, UInt32, UInt32)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnScriptLoaded_AltV_Net_IScript_">OnScriptLoaded(IScript)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnServer_System_String_AltV_Net_Function_">OnServer(String, Function)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnServerEventEvent_System_String_IntPtr___AltV_Net_Elements_Args_MValueConst___System_Object___">OnServerEventEvent(String, IntPtr[], MValueConst[], Object[])</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnStartProjectileEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Data_Position_AltV_Net_Data_Position_System_UInt32_System_UInt32_">OnStartProjectileEvent(IntPtr, IPlayer, Position, Position, UInt32, UInt32)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnSyncedMetaDataChangeEvent_AltV_Net_Elements_Entities_IEntity_System_String_System_Object_">OnSyncedMetaDataChangeEvent(IEntity, String, Object)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnVehicleAttachEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IVehicle_">OnVehicleAttachEvent(IVehicle, IVehicle)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnVehicleDamageEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IEntity_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_">OnVehicleDamageEvent(IVehicle, IEntity, UInt32, UInt32, UInt32, UInt32, UInt32)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnVehicleDestroyEvent_AltV_Net_Elements_Entities_IVehicle_">OnVehicleDestroyEvent(IVehicle)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnVehicleDetachEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IVehicle_">OnVehicleDetachEvent(IVehicle, IVehicle)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnVehicleRemoveEvent_AltV_Net_Elements_Entities_IVehicle_">OnVehicleRemoveEvent(IVehicle)</a></li><li><a href="#AltV_Net_Async_AsyncModule_OnWeaponDamageEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IEntity_System_UInt32_System_UInt16_AltV_Net_Data_Position_AltV_Net_Data_BodyPart_">OnWeaponDamageEvent(IntPtr, IPlayer, IEntity, UInt32, UInt16, Position, BodyPart)</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Async.AsyncModule">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L18">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Async_AsyncModule" data-uid="AltV.Net.Async.AsyncModule" class="text-break">Class AsyncModule
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="AltV.Net.Module.html">Module</a></div>
+    <div class="level2"><span class="xref">AsyncModule</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_CountUpRefForCurrentThread_AltV_Net_Types_IRefCountable_">Module.CountUpRefForCurrentThread(IRefCountable)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_CountDownRefForCurrentThread_AltV_Net_Types_IRefCountable_">Module.CountDownRefForCurrentThread(IRefCountable)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_HasRefForCurrentThread_AltV_Net_Types_IRefCountable_">Module.HasRefForCurrentThread(IRefCountable)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_LoadAssemblyFromName_AssemblyName_">Module.LoadAssemblyFromName(AssemblyName)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_LoadAssemblyFromStream_Stream_">Module.LoadAssemblyFromStream(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_LoadAssemblyFromStream_Stream_Stream_">Module.LoadAssemblyFromStream(Stream, Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_LoadAssemblyFromPath_System_String_">Module.LoadAssemblyFromPath(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_LoadAssemblyFromNativeImagePath_System_String_System_String_">Module.LoadAssemblyFromNativeImagePath(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_GetAssemblyLoadContext">Module.GetAssemblyLoadContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_On__1_System_String___0_AltV_Net_FunctionParser_ClientEventParser___0__">Module.On&lt;TFunc&gt;(String, TFunc, ClientEventParser&lt;TFunc&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_Off__1_System_String___0_AltV_Net_FunctionParser_ClientEventParser___0__">Module.Off&lt;TFunc&gt;(String, TFunc, ClientEventParser&lt;TFunc&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_On__1_System_String___0_AltV_Net_FunctionParser_ServerEventParser___0__">Module.On&lt;TFunc&gt;(String, TFunc, ServerEventParser&lt;TFunc&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_Off__1_System_String___0_AltV_Net_FunctionParser_ServerEventParser___0__">Module.Off&lt;TFunc&gt;(String, TFunc, ServerEventParser&lt;TFunc&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnCheckpoint_IntPtr_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_System_Boolean_">Module.OnCheckpoint(IntPtr, IntPtr, BaseObjectType, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerConnect_IntPtr_System_UInt16_System_String_">Module.OnPlayerConnect(IntPtr, UInt16, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerBeforeConnect_IntPtr_AltV_Net_Data_PlayerConnectionInfo_System_String_">Module.OnPlayerBeforeConnect(IntPtr, PlayerConnectionInfo, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnResourceStart_IntPtr_">Module.OnResourceStart(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnResourceStartEvent_AltV_Net_INativeResource_">Module.OnResourceStartEvent(INativeResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnResourceStop_IntPtr_">Module.OnResourceStop(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnResourceStopEvent_AltV_Net_INativeResource_">Module.OnResourceStopEvent(INativeResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnResourceError_IntPtr_">Module.OnResourceError(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnResourceErrorEvent_AltV_Net_INativeResource_">Module.OnResourceErrorEvent(INativeResource)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerDamage_IntPtr_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_System_UInt16_System_UInt32_System_UInt16_System_UInt16_">Module.OnPlayerDamage(IntPtr, IntPtr, BaseObjectType, UInt16, UInt32, UInt16, UInt16)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerDeath_IntPtr_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_System_UInt32_">Module.OnPlayerDeath(IntPtr, IntPtr, BaseObjectType, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnExplosion_IntPtr_IntPtr_AltV_Net_Data_ExplosionType_AltV_Net_Data_Position_System_UInt32_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_">Module.OnExplosion(IntPtr, IntPtr, ExplosionType, Position, UInt32, IntPtr, BaseObjectType)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnWeaponDamage_IntPtr_IntPtr_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_System_UInt32_System_UInt16_AltV_Net_Data_Position_AltV_Net_Data_BodyPart_">Module.OnWeaponDamage(IntPtr, IntPtr, IntPtr, BaseObjectType, UInt32, UInt16, Position, BodyPart)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerChangeVehicleSeat_IntPtr_IntPtr_System_Byte_System_Byte_">Module.OnPlayerChangeVehicleSeat(IntPtr, IntPtr, Byte, Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerEnterVehicle_IntPtr_IntPtr_System_Byte_">Module.OnPlayerEnterVehicle(IntPtr, IntPtr, Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerEnteringVehicle_IntPtr_IntPtr_System_Byte_">Module.OnPlayerEnteringVehicle(IntPtr, IntPtr, Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerLeaveVehicle_IntPtr_IntPtr_System_Byte_">Module.OnPlayerLeaveVehicle(IntPtr, IntPtr, Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerDisconnect_IntPtr_System_String_">Module.OnPlayerDisconnect(IntPtr, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerRemove_IntPtr_">Module.OnPlayerRemove(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnVehicleRemove_IntPtr_">Module.OnVehicleRemove(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnClientEvent_IntPtr_System_String_IntPtr___">Module.OnClientEvent(IntPtr, String, IntPtr[])</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnServerEvent_System_String_IntPtr___">Module.OnServerEvent(String, IntPtr[])</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnCreatePlayer_IntPtr_System_UInt16_">Module.OnCreatePlayer(IntPtr, UInt16)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnRemovePlayer_IntPtr_">Module.OnRemovePlayer(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnCreateVehicle_IntPtr_System_UInt16_">Module.OnCreateVehicle(IntPtr, UInt16)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnCreateVoiceChannel_IntPtr_">Module.OnCreateVoiceChannel(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnCreateColShape_IntPtr_">Module.OnCreateColShape(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnRemoveVehicle_IntPtr_">Module.OnRemoveVehicle(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnCreateBlip_IntPtr_">Module.OnCreateBlip(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnRemoveBlip_IntPtr_">Module.OnRemoveBlip(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnCreateCheckpoint_IntPtr_">Module.OnCreateCheckpoint(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnRemoveCheckpoint_IntPtr_">Module.OnRemoveCheckpoint(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnRemoveVoiceChannel_IntPtr_">Module.OnRemoveVoiceChannel(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnRemoveColShape_IntPtr_">Module.OnRemoveColShape(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnConsoleCommand_System_String_System_String___">Module.OnConsoleCommand(String, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnMetaDataChange_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_System_String_IntPtr_">Module.OnMetaDataChange(IntPtr, BaseObjectType, String, IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnSyncedMetaDataChange_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_System_String_IntPtr_">Module.OnSyncedMetaDataChange(IntPtr, BaseObjectType, String, IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnColShape_IntPtr_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_System_Boolean_">Module.OnColShape(IntPtr, IntPtr, BaseObjectType, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnVehicleDestroy_IntPtr_">Module.OnVehicleDestroy(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnFire_IntPtr_IntPtr_AltV_Net_FireInfo___">Module.OnFire(IntPtr, IntPtr, FireInfo[])</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnStartProjectile_IntPtr_IntPtr_AltV_Net_Data_Position_AltV_Net_Data_Position_System_UInt32_System_UInt32_">Module.OnStartProjectile(IntPtr, IntPtr, Position, Position, UInt32, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerWeaponChange_IntPtr_IntPtr_System_UInt32_System_UInt32_">Module.OnPlayerWeaponChange(IntPtr, IntPtr, UInt32, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnNetOwnerChange_IntPtr_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_IntPtr_IntPtr_">Module.OnNetOwnerChange(IntPtr, IntPtr, BaseObjectType, IntPtr, IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnVehicleAttach_IntPtr_IntPtr_IntPtr_">Module.OnVehicleAttach(IntPtr, IntPtr, IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnVehicleDetach_IntPtr_IntPtr_IntPtr_">Module.OnVehicleDetach(IntPtr, IntPtr, IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnVehicleDamage_IntPtr_IntPtr_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_">Module.OnVehicleDamage(IntPtr, IntPtr, IntPtr, BaseObjectType, UInt32, UInt32, UInt32, UInt32, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnConnectionQueueAdd_IntPtr_">Module.OnConnectionQueueAdd(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnConnectionQueueRemove_IntPtr_">Module.OnConnectionQueueRemove(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnScriptsLoaded_AltV_Net_IScript___">Module.OnScriptsLoaded(IScript[])</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnModulesLoaded_AltV_Net_IModule___">Module.OnModulesLoaded(IModule[])</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnModuleLoaded_AltV_Net_IModule_">Module.OnModuleLoaded(IModule)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_SetExport_System_String_AltV_Net_Function_">Module.SetExport(String, Function)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_Dispose">Module.Dispose()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Async.html">AltV.Net.Async</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Async.dll</h6>
+  <h5 id="AltV_Net_Async_AsyncModule_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AsyncModule : Module</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule__ctor_AltV_Net_IServer_AssemblyLoadContext_AltV_Net_INativeResource_AltV_Net_IBaseBaseObjectPool_AltV_Net_IBaseEntityPool_AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IPlayer__AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IVehicle__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IBlip__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_ICheckpoint__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVoiceChannel__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IColShape__AltV_Net_INativeResourcePool_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.%23ctor(AltV.Net.IServer%2CAssemblyLoadContext%2CAltV.Net.INativeResource%2CAltV.Net.IBaseBaseObjectPool%2CAltV.Net.IBaseEntityPool%2CAltV.Net.IEntityPool%7BAltV.Net.Elements.Entities.IPlayer%7D%2CAltV.Net.IEntityPool%7BAltV.Net.Elements.Entities.IVehicle%7D%2CAltV.Net.IBaseObjectPool%7BAltV.Net.Elements.Entities.IBlip%7D%2CAltV.Net.IBaseObjectPool%7BAltV.Net.Elements.Entities.ICheckpoint%7D%2CAltV.Net.IBaseObjectPool%7BAltV.Net.Elements.Entities.IVoiceChannel%7D%2CAltV.Net.IBaseObjectPool%7BAltV.Net.Elements.Entities.IColShape%7D%2CAltV.Net.INativeResourcePool)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L114">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule__ctor_" data-uid="AltV.Net.Async.AsyncModule.#ctor*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule__ctor_AltV_Net_IServer_AssemblyLoadContext_AltV_Net_INativeResource_AltV_Net_IBaseBaseObjectPool_AltV_Net_IBaseEntityPool_AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IPlayer__AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IVehicle__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IBlip__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_ICheckpoint__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVoiceChannel__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IColShape__AltV_Net_INativeResourcePool_" data-uid="AltV.Net.Async.AsyncModule.#ctor(AltV.Net.IServer,AssemblyLoadContext,AltV.Net.INativeResource,AltV.Net.IBaseBaseObjectPool,AltV.Net.IBaseEntityPool,AltV.Net.IEntityPool{AltV.Net.Elements.Entities.IPlayer},AltV.Net.IEntityPool{AltV.Net.Elements.Entities.IVehicle},AltV.Net.IBaseObjectPool{AltV.Net.Elements.Entities.IBlip},AltV.Net.IBaseObjectPool{AltV.Net.Elements.Entities.ICheckpoint},AltV.Net.IBaseObjectPool{AltV.Net.Elements.Entities.IVoiceChannel},AltV.Net.IBaseObjectPool{AltV.Net.Elements.Entities.IColShape},AltV.Net.INativeResourcePool)">AsyncModule(IServer, AssemblyLoadContext, INativeResource, IBaseBaseObjectPool, IBaseEntityPool, IEntityPool&lt;IPlayer&gt;, IEntityPool&lt;IVehicle&gt;, IBaseObjectPool&lt;IBlip&gt;, IBaseObjectPool&lt;ICheckpoint&gt;, IBaseObjectPool&lt;IVoiceChannel&gt;, IBaseObjectPool&lt;IColShape&gt;, INativeResourcePool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AsyncModule(IServer server, AssemblyLoadContext assemblyLoadContext, INativeResource moduleResource, IBaseBaseObjectPool baseBaseObjectPool, IBaseEntityPool baseEntityPool, IEntityPool&lt;IPlayer&gt; playerPool, IEntityPool&lt;IVehicle&gt; vehiclePool, IBaseObjectPool&lt;IBlip&gt; blipPool, IBaseObjectPool&lt;ICheckpoint&gt; checkpointPool, IBaseObjectPool&lt;IVoiceChannel&gt; voiceChannelPool, IBaseObjectPool&lt;IColShape&gt; colShapePool, INativeResourcePool nativeResourcePool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IServer.html">IServer</a></td>
+        <td><span class="parametername">server</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">AssemblyLoadContext</span></td>
+        <td><span class="parametername">assemblyLoadContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.INativeResource.html">INativeResource</a></td>
+        <td><span class="parametername">moduleResource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseBaseObjectPool.html">IBaseBaseObjectPool</a></td>
+        <td><span class="parametername">baseBaseObjectPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseEntityPool.html">IBaseEntityPool</a></td>
+        <td><span class="parametername">baseEntityPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>&gt;</td>
+        <td><span class="parametername">playerPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a>&gt;</td>
+        <td><span class="parametername">vehiclePool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IBlip.html">IBlip</a>&gt;</td>
+        <td><span class="parametername">blipPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.ICheckpoint.html">ICheckpoint</a>&gt;</td>
+        <td><span class="parametername">checkpointPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVoiceChannel.html">IVoiceChannel</a>&gt;</td>
+        <td><span class="parametername">voiceChannelPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a>&gt;</td>
+        <td><span class="parametername">colShapePool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.INativeResourcePool.html">INativeResourcePool</a></td>
+        <td><span class="parametername">nativeResourcePool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_IsMainThread.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.IsMainThread%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L129">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_IsMainThread_" data-uid="AltV.Net.Async.AsyncModule.IsMainThread*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_IsMainThread" data-uid="AltV.Net.Async.AsyncModule.IsMainThread">IsMainThread()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsMainThread()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_IsMainThread">Module.IsMainThread()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OffClient_System_String_AltV_Net_Function_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OffClient(System.String%2CAltV.Net.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L848">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OffClient_" data-uid="AltV.Net.Async.AsyncModule.OffClient*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OffClient_System_String_AltV_Net_Function_" data-uid="AltV.Net.Async.AsyncModule.OffClient(System.String,AltV.Net.Function)">OffClient(String, Function)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OffClient(string eventName, Function function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Function.html">Function</a></td>
+        <td><span class="parametername">function</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OffServer_System_String_AltV_Net_Function_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OffServer(System.String%2CAltV.Net.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L873">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OffServer_" data-uid="AltV.Net.Async.AsyncModule.OffServer*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OffServer_System_String_AltV_Net_Function_" data-uid="AltV.Net.Async.AsyncModule.OffServer(System.String,AltV.Net.Function)">OffServer(String, Function)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OffServer(string eventName, Function function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Function.html">Function</a></td>
+        <td><span class="parametername">function</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnCheckPointEvent_AltV_Net_Elements_Entities_ICheckpoint_AltV_Net_Elements_Entities_IEntity_System_Boolean_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnCheckPointEvent(AltV.Net.Elements.Entities.ICheckpoint%2CAltV.Net.Elements.Entities.IEntity%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L134">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnCheckPointEvent_" data-uid="AltV.Net.Async.AsyncModule.OnCheckPointEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnCheckPointEvent_AltV_Net_Elements_Entities_ICheckpoint_AltV_Net_Elements_Entities_IEntity_System_Boolean_" data-uid="AltV.Net.Async.AsyncModule.OnCheckPointEvent(AltV.Net.Elements.Entities.ICheckpoint,AltV.Net.Elements.Entities.IEntity,System.Boolean)">OnCheckPointEvent(ICheckpoint, IEntity, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnCheckPointEvent(ICheckpoint checkpoint, IEntity entity, bool state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.ICheckpoint.html">ICheckpoint</a></td>
+        <td><span class="parametername">checkpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnClient_System_String_AltV_Net_Function_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnClient(System.String%2CAltV.Net.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L832">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnClient_" data-uid="AltV.Net.Async.AsyncModule.OnClient*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnClient_System_String_AltV_Net_Function_" data-uid="AltV.Net.Async.AsyncModule.OnClient(System.String,AltV.Net.Function)">OnClient(String, Function)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Function OnClient(string eventName, Function function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Function.html">Function</a></td>
+        <td><span class="parametername">function</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Function.html">Function</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnClientEventEvent_AltV_Net_Elements_Entities_IPlayer_System_String_IntPtr___AltV_Net_Elements_Args_MValueConst___System_Object___.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnClientEventEvent(AltV.Net.Elements.Entities.IPlayer%2CSystem.String%2CIntPtr%5B%5D%2CAltV.Net.Elements.Args.MValueConst%5B%5D%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L412">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnClientEventEvent_" data-uid="AltV.Net.Async.AsyncModule.OnClientEventEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnClientEventEvent_AltV_Net_Elements_Entities_IPlayer_System_String_IntPtr___AltV_Net_Elements_Args_MValueConst___System_Object___" data-uid="AltV.Net.Async.AsyncModule.OnClientEventEvent(AltV.Net.Elements.Entities.IPlayer,System.String,IntPtr[],AltV.Net.Elements.Args.MValueConst[],System.Object[])">OnClientEventEvent(IPlayer, String, IntPtr[], MValueConst[], Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnClientEventEvent(IPlayer player, string name, IntPtr[] args, MValueConst[] mValues, object[] objects)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a>[]</td>
+        <td><span class="parametername">mValues</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">objects</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnColShapeEvent_AltV_Net_Elements_Entities_IColShape_AltV_Net_Elements_Entities_IEntity_System_Boolean_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnColShapeEvent(AltV.Net.Elements.Entities.IColShape%2CAltV.Net.Elements.Entities.IEntity%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L620">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnColShapeEvent_" data-uid="AltV.Net.Async.AsyncModule.OnColShapeEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnColShapeEvent_AltV_Net_Elements_Entities_IColShape_AltV_Net_Elements_Entities_IEntity_System_Boolean_" data-uid="AltV.Net.Async.AsyncModule.OnColShapeEvent(AltV.Net.Elements.Entities.IColShape,AltV.Net.Elements.Entities.IEntity,System.Boolean)">OnColShapeEvent(IColShape, IEntity, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnColShapeEvent(IColShape colShape, IEntity entity, bool state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a></td>
+        <td><span class="parametername">colShape</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnConnectionQueueAddEvent_AltV_Net_Types_IConnectionInfo_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnConnectionQueueAddEvent(AltV.Net.Types.IConnectionInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L800">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnConnectionQueueAddEvent_" data-uid="AltV.Net.Async.AsyncModule.OnConnectionQueueAddEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnConnectionQueueAddEvent_AltV_Net_Types_IConnectionInfo_" data-uid="AltV.Net.Async.AsyncModule.OnConnectionQueueAddEvent(AltV.Net.Types.IConnectionInfo)">OnConnectionQueueAddEvent(IConnectionInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnConnectionQueueAddEvent(IConnectionInfo connectionInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Types.IConnectionInfo.html">IConnectionInfo</a></td>
+        <td><span class="parametername">connectionInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnConnectionQueueAddEvent_AltV_Net_Types_IConnectionInfo_">Module.OnConnectionQueueAddEvent(IConnectionInfo)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnConnectionQueueRemoveEvent_AltV_Net_Types_IConnectionInfo_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnConnectionQueueRemoveEvent(AltV.Net.Types.IConnectionInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L816">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnConnectionQueueRemoveEvent_" data-uid="AltV.Net.Async.AsyncModule.OnConnectionQueueRemoveEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnConnectionQueueRemoveEvent_AltV_Net_Types_IConnectionInfo_" data-uid="AltV.Net.Async.AsyncModule.OnConnectionQueueRemoveEvent(AltV.Net.Types.IConnectionInfo)">OnConnectionQueueRemoveEvent(IConnectionInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnConnectionQueueRemoveEvent(IConnectionInfo connectionInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Types.IConnectionInfo.html">IConnectionInfo</a></td>
+        <td><span class="parametername">connectionInfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnConnectionQueueRemoveEvent_AltV_Net_Types_IConnectionInfo_">Module.OnConnectionQueueRemoveEvent(IConnectionInfo)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnConsoleCommandEvent_System_String_System_String___.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnConsoleCommandEvent(System.String%2CSystem.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L579">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnConsoleCommandEvent_" data-uid="AltV.Net.Async.AsyncModule.OnConsoleCommandEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnConsoleCommandEvent_System_String_System_String___" data-uid="AltV.Net.Async.AsyncModule.OnConsoleCommandEvent(System.String,System.String[])">OnConsoleCommandEvent(String, String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnConsoleCommandEvent(string name, string[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnExplosionEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Data_ExplosionType_AltV_Net_Data_Position_System_UInt32_AltV_Net_Elements_Entities_IEntity_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnExplosionEvent(IntPtr%2CAltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Data.ExplosionType%2CAltV.Net.Data.Position%2CSystem.UInt32%2CAltV.Net.Elements.Entities.IEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L229">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnExplosionEvent_" data-uid="AltV.Net.Async.AsyncModule.OnExplosionEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnExplosionEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Data_ExplosionType_AltV_Net_Data_Position_System_UInt32_AltV_Net_Elements_Entities_IEntity_" data-uid="AltV.Net.Async.AsyncModule.OnExplosionEvent(IntPtr,AltV.Net.Elements.Entities.IPlayer,AltV.Net.Data.ExplosionType,AltV.Net.Data.Position,System.UInt32,AltV.Net.Elements.Entities.IEntity)">OnExplosionEvent(IntPtr, IPlayer, ExplosionType, Position, UInt32, IEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnExplosionEvent(IntPtr eventPointer, IPlayer sourcePlayer, ExplosionType explosionType, Position position, uint explosionFx, IEntity targetEntity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">sourcePlayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.ExplosionType.html">ExplosionType</a></td>
+        <td><span class="parametername">explosionType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Position.html">Position</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">explosionFx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">targetEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnFireEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_FireInfo___.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnFireEvent(IntPtr%2CAltV.Net.Elements.Entities.IPlayer%2CAltV.Net.FireInfo%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L657">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnFireEvent_" data-uid="AltV.Net.Async.AsyncModule.OnFireEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnFireEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_FireInfo___" data-uid="AltV.Net.Async.AsyncModule.OnFireEvent(IntPtr,AltV.Net.Elements.Entities.IPlayer,AltV.Net.FireInfo[])">OnFireEvent(IntPtr, IPlayer, FireInfo[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnFireEvent(IntPtr eventPointer, IPlayer player, FireInfo[] fires)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.FireInfo.html">FireInfo</a>[]</td>
+        <td><span class="parametername">fires</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnMetaDataChangeEvent_AltV_Net_Elements_Entities_IEntity_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnMetaDataChangeEvent(AltV.Net.Elements.Entities.IEntity%2CSystem.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L588">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnMetaDataChangeEvent_" data-uid="AltV.Net.Async.AsyncModule.OnMetaDataChangeEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnMetaDataChangeEvent_AltV_Net_Elements_Entities_IEntity_System_String_System_Object_" data-uid="AltV.Net.Async.AsyncModule.OnMetaDataChangeEvent(AltV.Net.Elements.Entities.IEntity,System.String,System.Object)">OnMetaDataChangeEvent(IEntity, String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnMetaDataChangeEvent(IEntity entity, string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnNetOwnerChangeEvent_AltV_Net_Elements_Entities_IEntity_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IPlayer_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnNetOwnerChangeEvent(AltV.Net.Elements.Entities.IEntity%2CAltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Elements.Entities.IPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L708">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnNetOwnerChangeEvent_" data-uid="AltV.Net.Async.AsyncModule.OnNetOwnerChangeEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnNetOwnerChangeEvent_AltV_Net_Elements_Entities_IEntity_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IPlayer_" data-uid="AltV.Net.Async.AsyncModule.OnNetOwnerChangeEvent(AltV.Net.Elements.Entities.IEntity,AltV.Net.Elements.Entities.IPlayer,AltV.Net.Elements.Entities.IPlayer)">OnNetOwnerChangeEvent(IEntity, IPlayer, IPlayer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnNetOwnerChangeEvent(IEntity targetEntity, IPlayer oldPlayer, IPlayer newPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">targetEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">oldPlayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">newPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnNetOwnerChangeEvent_AltV_Net_Elements_Entities_IEntity_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IPlayer_">Module.OnNetOwnerChangeEvent(IEntity, IPlayer, IPlayer)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnPlayerBeforeConnectEvent_IntPtr_AltV_Net_Data_PlayerConnectionInfo_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnPlayerBeforeConnectEvent(IntPtr%2CAltV.Net.Data.PlayerConnectionInfo%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L191">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnPlayerBeforeConnectEvent_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerBeforeConnectEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnPlayerBeforeConnectEvent_IntPtr_AltV_Net_Data_PlayerConnectionInfo_System_String_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerBeforeConnectEvent(IntPtr,AltV.Net.Data.PlayerConnectionInfo,System.String)">OnPlayerBeforeConnectEvent(IntPtr, PlayerConnectionInfo, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerBeforeConnectEvent(IntPtr eventPointer, PlayerConnectionInfo connectionInfo, string reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.PlayerConnectionInfo.html">PlayerConnectionInfo</a></td>
+        <td><span class="parametername">connectionInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnPlayerChangeVehicleSeatEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_System_Byte_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnPlayerChangeVehicleSeatEvent(AltV.Net.Elements.Entities.IVehicle%2CAltV.Net.Elements.Entities.IPlayer%2CSystem.Byte%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L275">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnPlayerChangeVehicleSeatEvent_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerChangeVehicleSeatEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnPlayerChangeVehicleSeatEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_System_Byte_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerChangeVehicleSeatEvent(AltV.Net.Elements.Entities.IVehicle,AltV.Net.Elements.Entities.IPlayer,System.Byte,System.Byte)">OnPlayerChangeVehicleSeatEvent(IVehicle, IPlayer, Byte, Byte)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerChangeVehicleSeatEvent(IVehicle vehicle, IPlayer player, byte oldSeat, byte newSeat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">vehicle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">oldSeat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">newSeat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnPlayerConnectEvent_AltV_Net_Elements_Entities_IPlayer_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnPlayerConnectEvent(AltV.Net.Elements.Entities.IPlayer%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L175">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnPlayerConnectEvent_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerConnectEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnPlayerConnectEvent_AltV_Net_Elements_Entities_IPlayer_System_String_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerConnectEvent(AltV.Net.Elements.Entities.IPlayer,System.String)">OnPlayerConnectEvent(IPlayer, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerConnectEvent(IPlayer player, string reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnPlayerDamageEvent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IEntity_System_UInt32_System_UInt16_System_UInt16_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnPlayerDamageEvent(AltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Elements.Entities.IEntity%2CSystem.UInt32%2CSystem.UInt16%2CSystem.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L202">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnPlayerDamageEvent_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerDamageEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnPlayerDamageEvent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IEntity_System_UInt32_System_UInt16_System_UInt16_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerDamageEvent(AltV.Net.Elements.Entities.IPlayer,AltV.Net.Elements.Entities.IEntity,System.UInt32,System.UInt16,System.UInt16)">OnPlayerDamageEvent(IPlayer, IEntity, UInt32, UInt16, UInt16)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerDamageEvent(IPlayer player, IEntity entity, uint weapon, ushort healthDamage, ushort armourDamage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">weapon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">healthDamage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">armourDamage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnPlayerDeathEvent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IEntity_System_UInt32_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnPlayerDeathEvent(AltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Elements.Entities.IEntity%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L154">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnPlayerDeathEvent_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerDeathEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnPlayerDeathEvent_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IEntity_System_UInt32_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerDeathEvent(AltV.Net.Elements.Entities.IPlayer,AltV.Net.Elements.Entities.IEntity,System.UInt32)">OnPlayerDeathEvent(IPlayer, IEntity, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerDeathEvent(IPlayer player, IEntity killer, uint weapon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">killer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">weapon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnPlayerDisconnectEvent_AltV_Net_Elements_Entities_IPlayer_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnPlayerDisconnectEvent(AltV.Net.Elements.Entities.IPlayer%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L360">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnPlayerDisconnectEvent_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerDisconnectEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnPlayerDisconnectEvent_AltV_Net_Elements_Entities_IPlayer_System_String_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerDisconnectEvent(AltV.Net.Elements.Entities.IPlayer,System.String)">OnPlayerDisconnectEvent(IPlayer, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerDisconnectEvent(IPlayer player, string reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnPlayerEnteringVehicleEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnPlayerEnteringVehicleEvent(AltV.Net.Elements.Entities.IVehicle%2CAltV.Net.Elements.Entities.IPlayer%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L318">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnPlayerEnteringVehicleEvent_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerEnteringVehicleEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnPlayerEnteringVehicleEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerEnteringVehicleEvent(AltV.Net.Elements.Entities.IVehicle,AltV.Net.Elements.Entities.IPlayer,System.Byte)">OnPlayerEnteringVehicleEvent(IVehicle, IPlayer, Byte)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerEnteringVehicleEvent(IVehicle vehicle, IPlayer player, byte seat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">vehicle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">seat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnPlayerEnterVehicleEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnPlayerEnterVehicleEvent(AltV.Net.Elements.Entities.IVehicle%2CAltV.Net.Elements.Entities.IPlayer%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L297">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnPlayerEnterVehicleEvent_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerEnterVehicleEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnPlayerEnterVehicleEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerEnterVehicleEvent(AltV.Net.Elements.Entities.IVehicle,AltV.Net.Elements.Entities.IPlayer,System.Byte)">OnPlayerEnterVehicleEvent(IVehicle, IPlayer, Byte)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerEnterVehicleEvent(IVehicle vehicle, IPlayer player, byte seat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">vehicle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">seat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnPlayerLeaveVehicleEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnPlayerLeaveVehicleEvent(AltV.Net.Elements.Entities.IVehicle%2CAltV.Net.Elements.Entities.IPlayer%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L339">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnPlayerLeaveVehicleEvent_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerLeaveVehicleEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnPlayerLeaveVehicleEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IPlayer_System_Byte_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerLeaveVehicleEvent(AltV.Net.Elements.Entities.IVehicle,AltV.Net.Elements.Entities.IPlayer,System.Byte)">OnPlayerLeaveVehicleEvent(IVehicle, IPlayer, Byte)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerLeaveVehicleEvent(IVehicle vehicle, IPlayer player, byte seat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">vehicle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">seat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnPlayerRemoveEvent_AltV_Net_Elements_Entities_IPlayer_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnPlayerRemoveEvent(AltV.Net.Elements.Entities.IPlayer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L377">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnPlayerRemoveEvent_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerRemoveEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnPlayerRemoveEvent_AltV_Net_Elements_Entities_IPlayer_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerRemoveEvent(AltV.Net.Elements.Entities.IPlayer)">OnPlayerRemoveEvent(IPlayer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerRemoveEvent(IPlayer player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnPlayerRemoveEvent_AltV_Net_Elements_Entities_IPlayer_">Module.OnPlayerRemoveEvent(IPlayer)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnPlayerWeaponChangeEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_System_UInt32_System_UInt32_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnPlayerWeaponChangeEvent(IntPtr%2CAltV.Net.Elements.Entities.IPlayer%2CSystem.UInt32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L691">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnPlayerWeaponChangeEvent_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerWeaponChangeEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnPlayerWeaponChangeEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_System_UInt32_System_UInt32_" data-uid="AltV.Net.Async.AsyncModule.OnPlayerWeaponChangeEvent(IntPtr,AltV.Net.Elements.Entities.IPlayer,System.UInt32,System.UInt32)">OnPlayerWeaponChangeEvent(IntPtr, IPlayer, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPlayerWeaponChangeEvent(IntPtr eventPointer, IPlayer player, uint oldWeapon, uint newWeapon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">oldWeapon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">newWeapon</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnScriptLoaded_AltV_Net_IScript_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnScriptLoaded(AltV.Net.IScript)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L882">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnScriptLoaded_" data-uid="AltV.Net.Async.AsyncModule.OnScriptLoaded*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnScriptLoaded_AltV_Net_IScript_" data-uid="AltV.Net.Async.AsyncModule.OnScriptLoaded(AltV.Net.IScript)">OnScriptLoaded(IScript)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnScriptLoaded(IScript script)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IScript.html">IScript</a></td>
+        <td><span class="parametername">script</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnScriptLoaded_AltV_Net_IScript_">Module.OnScriptLoaded(IScript)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnServer_System_String_AltV_Net_Function_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnServer(System.String%2CAltV.Net.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L857">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnServer_" data-uid="AltV.Net.Async.AsyncModule.OnServer*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnServer_System_String_AltV_Net_Function_" data-uid="AltV.Net.Async.AsyncModule.OnServer(System.String,AltV.Net.Function)">OnServer(String, Function)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Function OnServer(string eventName, Function function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Function.html">Function</a></td>
+        <td><span class="parametername">function</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Function.html">Function</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnServerEventEvent_System_String_IntPtr___AltV_Net_Elements_Args_MValueConst___System_Object___.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnServerEventEvent(System.String%2CIntPtr%5B%5D%2CAltV.Net.Elements.Args.MValueConst%5B%5D%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L523">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnServerEventEvent_" data-uid="AltV.Net.Async.AsyncModule.OnServerEventEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnServerEventEvent_System_String_IntPtr___AltV_Net_Elements_Args_MValueConst___System_Object___" data-uid="AltV.Net.Async.AsyncModule.OnServerEventEvent(System.String,IntPtr[],AltV.Net.Elements.Args.MValueConst[],System.Object[])">OnServerEventEvent(String, IntPtr[], MValueConst[], Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnServerEventEvent(string name, IntPtr[] args, MValueConst[] mValues, object[] objects)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a>[]</td>
+        <td><span class="parametername">mValues</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">objects</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnStartProjectileEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Data_Position_AltV_Net_Data_Position_System_UInt32_System_UInt32_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnStartProjectileEvent(IntPtr%2CAltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Data.Position%2CAltV.Net.Data.Position%2CSystem.UInt32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L673">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnStartProjectileEvent_" data-uid="AltV.Net.Async.AsyncModule.OnStartProjectileEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnStartProjectileEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Data_Position_AltV_Net_Data_Position_System_UInt32_System_UInt32_" data-uid="AltV.Net.Async.AsyncModule.OnStartProjectileEvent(IntPtr,AltV.Net.Elements.Entities.IPlayer,AltV.Net.Data.Position,AltV.Net.Data.Position,System.UInt32,System.UInt32)">OnStartProjectileEvent(IntPtr, IPlayer, Position, Position, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnStartProjectileEvent(IntPtr eventPointer, IPlayer player, Position startPosition, Position direction, uint ammoHash, uint weaponHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Position.html">Position</a></td>
+        <td><span class="parametername">startPosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Position.html">Position</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">ammoHash</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">weaponHash</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnSyncedMetaDataChangeEvent_AltV_Net_Elements_Entities_IEntity_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnSyncedMetaDataChangeEvent(AltV.Net.Elements.Entities.IEntity%2CSystem.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L604">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnSyncedMetaDataChangeEvent_" data-uid="AltV.Net.Async.AsyncModule.OnSyncedMetaDataChangeEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnSyncedMetaDataChangeEvent_AltV_Net_Elements_Entities_IEntity_System_String_System_Object_" data-uid="AltV.Net.Async.AsyncModule.OnSyncedMetaDataChangeEvent(AltV.Net.Elements.Entities.IEntity,System.String,System.Object)">OnSyncedMetaDataChangeEvent(IEntity, String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnSyncedMetaDataChangeEvent(IEntity entity, string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnVehicleAttachEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IVehicle_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnVehicleAttachEvent(AltV.Net.Elements.Entities.IVehicle%2CAltV.Net.Elements.Entities.IVehicle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L734">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnVehicleAttachEvent_" data-uid="AltV.Net.Async.AsyncModule.OnVehicleAttachEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnVehicleAttachEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IVehicle_" data-uid="AltV.Net.Async.AsyncModule.OnVehicleAttachEvent(AltV.Net.Elements.Entities.IVehicle,AltV.Net.Elements.Entities.IVehicle)">OnVehicleAttachEvent(IVehicle, IVehicle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnVehicleAttachEvent(IVehicle targetVehicle, IVehicle attachedVehicle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">targetVehicle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">attachedVehicle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnVehicleAttachEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IVehicle_">Module.OnVehicleAttachEvent(IVehicle, IVehicle)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnVehicleDamageEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IEntity_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnVehicleDamageEvent(AltV.Net.Elements.Entities.IVehicle%2CAltV.Net.Elements.Entities.IEntity%2CSystem.UInt32%2CSystem.UInt32%2CSystem.UInt32%2CSystem.UInt32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L776">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnVehicleDamageEvent_" data-uid="AltV.Net.Async.AsyncModule.OnVehicleDamageEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnVehicleDamageEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IEntity_System_UInt32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_" data-uid="AltV.Net.Async.AsyncModule.OnVehicleDamageEvent(AltV.Net.Elements.Entities.IVehicle,AltV.Net.Elements.Entities.IEntity,System.UInt32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)">OnVehicleDamageEvent(IVehicle, IEntity, UInt32, UInt32, UInt32, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnVehicleDamageEvent(IVehicle targetVehicle, IEntity sourceEntity, uint bodyHealthDamage, uint additionalBodyHealthDamage, uint engineHealthDamage, uint petrolTankDamage, uint weaponHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">targetVehicle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">sourceEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">bodyHealthDamage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">additionalBodyHealthDamage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">engineHealthDamage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">petrolTankDamage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">weaponHash</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnVehicleDestroyEvent_AltV_Net_Elements_Entities_IVehicle_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnVehicleDestroyEvent(AltV.Net.Elements.Entities.IVehicle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L641">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnVehicleDestroyEvent_" data-uid="AltV.Net.Async.AsyncModule.OnVehicleDestroyEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnVehicleDestroyEvent_AltV_Net_Elements_Entities_IVehicle_" data-uid="AltV.Net.Async.AsyncModule.OnVehicleDestroyEvent(AltV.Net.Elements.Entities.IVehicle)">OnVehicleDestroyEvent(IVehicle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnVehicleDestroyEvent(IVehicle vehicle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">vehicle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnVehicleDestroyEvent_AltV_Net_Elements_Entities_IVehicle_">Module.OnVehicleDestroyEvent(IVehicle)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnVehicleDetachEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IVehicle_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnVehicleDetachEvent(AltV.Net.Elements.Entities.IVehicle%2CAltV.Net.Elements.Entities.IVehicle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L755">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnVehicleDetachEvent_" data-uid="AltV.Net.Async.AsyncModule.OnVehicleDetachEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnVehicleDetachEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IVehicle_" data-uid="AltV.Net.Async.AsyncModule.OnVehicleDetachEvent(AltV.Net.Elements.Entities.IVehicle,AltV.Net.Elements.Entities.IVehicle)">OnVehicleDetachEvent(IVehicle, IVehicle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnVehicleDetachEvent(IVehicle targetVehicle, IVehicle detachedVehicle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">targetVehicle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">detachedVehicle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnVehicleDetachEvent_AltV_Net_Elements_Entities_IVehicle_AltV_Net_Elements_Entities_IVehicle_">Module.OnVehicleDetachEvent(IVehicle, IVehicle)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnVehicleRemoveEvent_AltV_Net_Elements_Entities_IVehicle_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnVehicleRemoveEvent(AltV.Net.Elements.Entities.IVehicle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L393">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnVehicleRemoveEvent_" data-uid="AltV.Net.Async.AsyncModule.OnVehicleRemoveEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnVehicleRemoveEvent_AltV_Net_Elements_Entities_IVehicle_" data-uid="AltV.Net.Async.AsyncModule.OnVehicleRemoveEvent(AltV.Net.Elements.Entities.IVehicle)">OnVehicleRemoveEvent(IVehicle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnVehicleRemoveEvent(IVehicle vehicle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">vehicle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Module.html#AltV_Net_Module_OnVehicleRemoveEvent_AltV_Net_Elements_Entities_IVehicle_">Module.OnVehicleRemoveEvent(IVehicle)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Async_AsyncModule_OnWeaponDamageEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IEntity_System_UInt32_System_UInt16_AltV_Net_Data_Position_AltV_Net_Data_BodyPart_.md&amp;value=---%0Auid%3A%20AltV.Net.Async.AsyncModule.OnWeaponDamageEvent(IntPtr%2CAltV.Net.Elements.Entities.IPlayer%2CAltV.Net.Elements.Entities.IEntity%2CSystem.UInt32%2CSystem.UInt16%2CAltV.Net.Data.Position%2CAltV.Net.Data.BodyPart)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.Async/AsyncModule.cs/#L252">View Source</a>
+  </span>
+  <a id="AltV_Net_Async_AsyncModule_OnWeaponDamageEvent_" data-uid="AltV.Net.Async.AsyncModule.OnWeaponDamageEvent*"></a>
+  <h4 id="AltV_Net_Async_AsyncModule_OnWeaponDamageEvent_IntPtr_AltV_Net_Elements_Entities_IPlayer_AltV_Net_Elements_Entities_IEntity_System_UInt32_System_UInt16_AltV_Net_Data_Position_AltV_Net_Data_BodyPart_" data-uid="AltV.Net.Async.AsyncModule.OnWeaponDamageEvent(IntPtr,AltV.Net.Elements.Entities.IPlayer,AltV.Net.Elements.Entities.IEntity,System.UInt32,System.UInt16,AltV.Net.Data.Position,AltV.Net.Data.BodyPart)">OnWeaponDamageEvent(IntPtr, IPlayer, IEntity, UInt32, UInt16, Position, BodyPart)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnWeaponDamageEvent(IntPtr eventPointer, IPlayer sourcePlayer, IEntity targetEntity, uint weapon, ushort damage, Position shotOffset, BodyPart bodyPart)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">sourcePlayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">targetEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">weapon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">damage</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Position.html">Position</a></td>
+        <td><span class="parametername">shotOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.BodyPart.html">BodyPart</a></td>
+        <td><span class="parametername">bodyPart</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

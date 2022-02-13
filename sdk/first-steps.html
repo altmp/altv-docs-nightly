@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>First Steps for your own module </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="First Steps for your own module ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/colors.css">
+    <link rel="stylesheet" href="../styles/discord.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../index.html">
+                        <img src="../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#first-steps-for-your-own-module">First Steps for your own module</a><ul class="level2 nav bs-docs-sidenav first-steps-for-your-own-module"><li><a href="#table-of-contents">Table of Contents</a></li><li><a href="#setup">Setup</a></li><li><a href="#creating-the-entry-file">Creating the entry file</a></li><li><a href="#needed-module-exports">Needed module exports</a></li><li><a href="#creating-your-own-runtime">Creating your own runtime</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/cpp-sdk/blob/master/articles/first-steps.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="first-steps-for-your-own-module">First Steps for your own module</h1>
+
+<p>It is now time to start using the SDK to create your own module, this article will teach you the first steps to creating and running your module.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#creating-the-entry-file">Creating the entry file</a></li>
+<li><a href="#needed-module-exports">Needed module exports</a></li>
+<li><a href="#creating-your-own-runtime">Creating your own runtime</a></li>
+</ol>
+<h2 id="setup">Setup</h2>
+<p>Firstly, you should create your C++ project. What compiler, IDE, etc. you use is completely up to you, as long as it outputs a 64-bit DLL it's good to go.</p>
+<p>Make sure to correctly set the include path so you can import the SDK header files from your project.
+Also make sure your compiler is configured to support C++17 features, otherwise using the SDK will not work.</p>
+<p>Next, add the <code>ALT_SERVER_API</code> or <code>ALT_CLIENT_API</code> define to your compiler or in the main header file of your code, this enables specific features
+in the SDK.</p>
+<p>Your main header file should now look something like this:</p>
+<pre><code class="lang-c++">#define ALT_SERVER_API
+
+#include &quot;cpp-sdk/SDK.h&quot;
+</code></pre>
+<p>This is the bare minimum needed setup for your module.</p>
+<h2 id="creating-the-entry-file">Creating the entry file</h2>
+<p>Now you need to create your first <code>.cpp</code> file, where your entry point function will be.
+The entry point function is called by the alt:V core when your module is loaded, from that entry point function you need to start your module.</p>
+<p>On serverside, the needed entry function is called <code>altMain</code> and it returns a bool whether the module could be started or it failed.
+This function receives the alt:V core instance as the first argument, you need to set the received instance as the used instance for the SDK.
+You also need to register your runtime as a script runtime in this function.
+The <code>altMain</code> function should then look something like this:</p>
+<pre><code class="lang-c++">// The 'EXPORT' macro is defined by the SDK
+// It is needed so the alt:V core can call this function
+EXPORT bool altMain(alt::ICore* core)
+{   
+    // Important! Sets the core for the SDK to the received instance, so you can interact with the server or client
+    alt::ICore::SetInstance(core);
+
+    // Pseudocode of creating a runtime,
+    // how to create your own runtime will be explained in another article
+    auto runtime = new MyRuntime();
+    // Register the script runtime
+    // The first argument is the 'type' for your module,
+    // that needs to be specified in the resource.cfg
+    // The second argument is a pointer to your runtime instance
+    core-&gt;RegisterScriptRuntime(&quot;myModule&quot;, runtime);
+
+    // Logs an info message to the console
+    core-&gt;LogInfo(&quot;Loaded my module!&quot;);
+
+    // Return true to indicate that the module loaded successfully
+    return true;
+}
+</code></pre>
+<p>On clientside it works a little differently, you need to export an entry point function called <code>CreateScriptRuntime</code> that returns a pointer to an instance of your runtime.
+Like on serverside, it receives the alt:V core as the first argument, you also need to set the core instance on the clientside.
+The <code>CreateScriptRuntime</code> function should look something like this:</p>
+<pre><code class="lang-c++">EXPORT alt::IScriptRuntime* CreateScriptRuntime(alt::ICore* core)
+{
+    // Important! Sets the core for the SDK to the received instance, so you can interact with the server or client
+    alt::ICore::SetInstance(core);
+
+    // Pseudocode of creating a runtime,
+    // how to create your own runtime will be explained in another article
+    auto runtime = new MyRuntime();
+
+    // Return the pointer to our runtime
+    // If it fails, return nullptr
+    return runtime;
+}
+</code></pre>
+<p>The <code>alt::ICore</code> is the main interface for interacting with the server or client, it provides the necessary functions like getting all entities, creating a vehicle etc.</p>
+<blockquote>
+<p>You should only ever create a single instance of your runtime in the entry point function, the function will only be called once when the server or client starts
+and is the only place where you should create create an instance of your runtime.</p>
+</blockquote>
+<h2 id="needed-module-exports">Needed module exports</h2>
+<p>The module doesn't only need the entrypoint function as an export, on both sides there is also another export needed.
+You need to export the <code>GetSDKVersion</code> function, which returns the version of the SDK the module was compiled with.
+This is needed so the alt:V core can check if the used module SDK version is compatible with the alt:V core SDK version.
+You just need to return <code>alt::ICore::SDK_VERSION</code> from this function.
+The function should look like this:</p>
+<pre><code class="lang-c++">EXPORT uint32_t GetSDKVersion()
+{
+    return alt::ICore::SDK_VERSION;
+}
+</code></pre>
+<blockquote>
+<p>Remember that your module always needs to be on the same SDK version as the SDK version used by the alt:V core. Otherwise, your module will not load.</p>
+</blockquote>
+<p>On clientside, you also need another export called <code>GetType</code> that defines what the <code>type</code> of the module is.
+That is the <code>client-type</code> that needs to be specified in the <code>resource.cfg</code> for your module to be used for the resource.
+This function should return a <code>const char*</code> of the module type.
+It should look like this:</p>
+<pre><code class="lang-c++">EXPORT const char* GetType()
+{
+    return &quot;myModule&quot;;
+}
+</code></pre>
+<p>Now you finished the first steps to creating your own module. The needed exports are set up, and now you are ready to create your own script runtime.</p>
+<h2 id="creating-your-own-runtime">Creating your own runtime</h2>
+<p>In the next article, you will learn how to <a href="creating-runtime.html">create your own script runtime</a>.</p>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../styles/docfx.js"></script>
+<script type="text/javascript" src="../styles/discord.js"></script>
+<script type="text/javascript" src="../styles/main.js"></script>
+
+    </body>
+
+</html>

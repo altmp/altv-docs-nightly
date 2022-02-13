@@ -1,0 +1,3358 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Weapon Components </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Weapon Components ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../styles/colors.css">
+    <link rel="stylesheet" href="../../../styles/discord.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../../index.html">
+                        <img src="../../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#weapon-components">Weapon Components</a></li><li><a href="#melees">Melees</a><ul class="level2 nav bs-docs-sidenav melees"><li><a href="#knuckle-duster">Knuckle Duster</a></li><li><a href="#switchblade">Switchblade</a></li></ul></li><li><a href="#pistols">Pistols</a><ul class="level2 nav bs-docs-sidenav pistols"><li><a href="#pistol">Pistol</a></li><li><a href="#combat-pistol">Combat Pistol</a></li><li><a href="#ap-pistol">AP Pistol</a></li><li><a href="#pistol-50">Pistol .50</a></li><li><a href="#heavy-revolver">Heavy Revolver</a></li><li><a href="#sns-pistol">SNS Pistol</a></li><li><a href="#heavy-pistol">Heavy Pistol</a></li><li><a href="#heavy-revolver-mk-ii">Heavy Revolver Mk II</a></li><li><a href="#sns-pistol-mk-ii">SNS Pistol Mk II</a></li><li><a href="#pistol-mk-ii">Pistol Mk II</a></li><li><a href="#vintage-pistol">Vintage Pistol</a></li><li><a href="#up-n-atomizer">Up-n-Atomizer</a></li><li><a href="#ceramic-pistol">Ceramic Pistol</a></li></ul></li><li><a href="#submachine-guns">Submachine Guns</a><ul class="level2 nav bs-docs-sidenav submachine-guns"><li><a href="#micro-smg">Micro SMG</a></li><li><a href="#smg">SMG</a></li><li><a href="#assault-smg">Assault SMG</a></li><li><a href="#mini-smg">Mini SMG</a></li><li><a href="#smg-mk-ii">SMG Mk II</a></li><li><a href="#machine-pistol">Machine Pistol</a></li><li><a href="#combat-pdw">Combat PDW</a></li></ul></li><li><a href="#shotguns">Shotguns</a><ul class="level2 nav bs-docs-sidenav shotguns"><li><a href="#pump-shotgun">Pump Shotgun</a></li><li><a href="#sawed-off-shotgun">Sawed-Off Shotgun</a></li><li><a href="#assault-shotgun">Assault Shotgun</a></li><li><a href="#bullpup-shotgun">Bullpup Shotgun</a></li><li><a href="#pump-shotgun-mk-ii">Pump Shotgun Mk II</a></li><li><a href="#heavy-shotgun">Heavy Shotgun</a></li></ul></li><li><a href="#rifles">Rifles</a><ul class="level2 nav bs-docs-sidenav rifles"><li><a href="#assault-rifle">Assault Rifle</a></li><li><a href="#carbine-rifle">Carbine Rifle</a></li><li><a href="#advanced-rifle">Advanced Rifle</a></li><li><a href="#special-carbine">Special Carbine</a></li><li><a href="#bullpup-rifle">Bullpup Rifle</a></li><li><a href="#bullpup-rifle-mk-ii">Bullpup Rifle Mk II</a></li><li><a href="#special-carbine-mk-ii">Special Carbine Mk II</a></li><li><a href="#assault-rifle-mk-ii">Assault Rifle Mk II</a></li><li><a href="#carbine-rifle-mk-ii">Carbine Rifle Mk II</a></li><li><a href="#compact-rifle">Compact Rifle</a></li></ul></li><li><a href="#machine-guns">Machine Guns</a><ul class="level2 nav bs-docs-sidenav machine-guns"><li><a href="#mg">MG</a></li><li><a href="#combat-mg">Combat MG</a></li><li><a href="#combat-mg-mk-ii">Combat MG Mk II</a></li><li><a href="#gusenberg-sweeper">Gusenberg Sweeper</a></li></ul></li><li><a href="#sniper-rifles">Sniper Rifles</a><ul class="level2 nav bs-docs-sidenav sniper-rifles"><li><a href="#sniper-rifle">Sniper Rifle</a></li><li><a href="#heavy-sniper">Heavy Sniper</a></li><li><a href="#marksman-rifle-mk-ii">Marksman Rifle Mk II</a></li><li><a href="#heavy-sniper-mk-ii">Heavy Sniper Mk II</a></li><li><a href="#marksman-rifle">Marksman Rifle</a></li></ul></li><li><a href="#heavy-weapons">Heavy Weapons</a><ul class="level2 nav bs-docs-sidenav heavy-weapons"><li><a href="#grenade-launcher">Grenade Launcher</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs-gta/blob/master/articles/weapons/components.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="weapon-components">Weapon Components</h1>
+
+<h1 id="melees">Melees</h1>
+<h2 id="knuckle-duster">Knuckle Duster</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base Model</td>
+<td style="text-align: center;">COMPONENT_KNUCKLE_VARMOD_BASE</td>
+<td style="text-align: right;">0xF3462F33</td>
+</tr>
+<tr>
+<td>The Pimp</td>
+<td style="text-align: center;">COMPONENT_KNUCKLE_VARMOD_PIMP</td>
+<td style="text-align: right;">0xC613F685</td>
+</tr>
+<tr>
+<td>The Ballas</td>
+<td style="text-align: center;">COMPONENT_KNUCKLE_VARMOD_BALLAS</td>
+<td style="text-align: right;">0xEED9FD63</td>
+</tr>
+<tr>
+<td>The Hustler</td>
+<td style="text-align: center;">COMPONENT_KNUCKLE_VARMOD_DOLLAR</td>
+<td style="text-align: right;">0x50910C31</td>
+</tr>
+<tr>
+<td>The Rock</td>
+<td style="text-align: center;">COMPONENT_KNUCKLE_VARMOD_DIAMOND</td>
+<td style="text-align: right;">0x9761D9DC</td>
+</tr>
+<tr>
+<td>The Hater</td>
+<td style="text-align: center;">COMPONENT_KNUCKLE_VARMOD_HATE</td>
+<td style="text-align: right;">0x7DECFE30</td>
+</tr>
+<tr>
+<td>The Lover</td>
+<td style="text-align: center;">COMPONENT_KNUCKLE_VARMOD_LOVE</td>
+<td style="text-align: right;">0x3F4E8AA6</td>
+</tr>
+<tr>
+<td>The Player</td>
+<td style="text-align: center;">COMPONENT_KNUCKLE_VARMOD_PLAYER</td>
+<td style="text-align: right;">0x8B808BB</td>
+</tr>
+<tr>
+<td>The King</td>
+<td style="text-align: center;">COMPONENT_KNUCKLE_VARMOD_KING</td>
+<td style="text-align: right;">0xE28BABEF</td>
+</tr>
+<tr>
+<td>The Vagos</td>
+<td style="text-align: center;">COMPONENT_KNUCKLE_VARMOD_VAGOS</td>
+<td style="text-align: right;">0x7AF3F785</td>
+</tr>
+</tbody>
+</table>
+<h2 id="switchblade">Switchblade</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Handle</td>
+<td style="text-align: center;">COMPONENT_SWITCHBLADE_VARMOD_BASE</td>
+<td style="text-align: right;">0x9137A500</td>
+</tr>
+<tr>
+<td>VIP Variant</td>
+<td style="text-align: center;">COMPONENT_SWITCHBLADE_VARMOD_VAR1</td>
+<td style="text-align: right;">0x5B3E7DB6</td>
+</tr>
+<tr>
+<td>Bodyguard Variant</td>
+<td style="text-align: center;">COMPONENT_SWITCHBLADE_VARMOD_VAR2</td>
+<td style="text-align: right;">0xE7939662</td>
+</tr>
+</tbody>
+</table>
+<h1 id="pistols">Pistols</h1>
+<h2 id="pistol">Pistol</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_PISTOL_CLIP_01</td>
+<td style="text-align: right;">0xFED0FD71</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_PISTOL_CLIP_02</td>
+<td style="text-align: right;">0xED265A1C</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_PI_FLSH</td>
+<td style="text-align: right;">0x359B7AAE</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_PI_SUPP_02</td>
+<td style="text-align: right;">0x65EA7EBB</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_PISTOL_VARMOD_LUXE</td>
+<td style="text-align: right;">0xD7391086</td>
+</tr>
+</tbody>
+</table>
+<h2 id="combat-pistol">Combat Pistol</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_COMBATPISTOL_CLIP_01</td>
+<td style="text-align: right;">0x721B079</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_COMBATPISTOL_CLIP_02</td>
+<td style="text-align: right;">0xD67B4F2D</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_PI_FLSH</td>
+<td style="text-align: right;">0x359B7AAE</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_PI_SUPP</td>
+<td style="text-align: right;">0xC304849A</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER</td>
+<td style="text-align: right;">0xC6654D72</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ap-pistol">AP Pistol</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_APPISTOL_CLIP_01</td>
+<td style="text-align: right;">0x31C4B22A</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_APPISTOL_CLIP_02</td>
+<td style="text-align: right;">0x249A17D5</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_PI_FLSH</td>
+<td style="text-align: right;">0x359B7AAE</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_PI_SUPP</td>
+<td style="text-align: right;">0xC304849A</td>
+</tr>
+<tr>
+<td>Gilded Gun Metal Finish</td>
+<td style="text-align: center;">COMPONENT_APPISTOL_VARMOD_LUXE</td>
+<td style="text-align: right;">0x9B76C72C</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pistol-50">Pistol .50</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_PISTOL50_CLIP_01</td>
+<td style="text-align: right;">0x2297BE19</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_PISTOL50_CLIP_02</td>
+<td style="text-align: right;">0xD9D3AC92</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_PI_FLSH</td>
+<td style="text-align: right;">0x359B7AAE</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP_02</td>
+<td style="text-align: right;">0xA73D4664</td>
+</tr>
+<tr>
+<td>Platinum Pearl Deluxe Finish</td>
+<td style="text-align: center;">COMPONENT_PISTOL50_VARMOD_LUXE</td>
+<td style="text-align: right;">0x77B8AB2F</td>
+</tr>
+</tbody>
+</table>
+<h2 id="heavy-revolver">Heavy Revolver</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VIP Variant</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_VARMOD_BOSS</td>
+<td style="text-align: right;">0x16EE3040</td>
+</tr>
+<tr>
+<td>Bodyguard Variant</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_VARMOD_GOON</td>
+<td style="text-align: right;">0x9493B80D</td>
+</tr>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_CLIP_01</td>
+<td style="text-align: right;">0xE9867CE3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sns-pistol">SNS Pistol</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_CLIP_01</td>
+<td style="text-align: right;">0xF8802ED9</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_CLIP_02</td>
+<td style="text-align: right;">0x7B0033B3</td>
+</tr>
+<tr>
+<td>Etched Wood Grip Finish</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_VARMOD_LOWRIDER</td>
+<td style="text-align: right;">0x8033ECAF</td>
+</tr>
+</tbody>
+</table>
+<h2 id="heavy-pistol">Heavy Pistol</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_HEAVYPISTOL_CLIP_01</td>
+<td style="text-align: right;">0xD4A969A</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_HEAVYPISTOL_CLIP_02</td>
+<td style="text-align: right;">0x64F9C62B</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_PI_FLSH</td>
+<td style="text-align: right;">0x359B7AAE</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_PI_SUPP</td>
+<td style="text-align: right;">0xC304849A</td>
+</tr>
+<tr>
+<td>Etched Wood Grip Finish</td>
+<td style="text-align: center;">COMPONENT_HEAVYPISTOL_VARMOD_LUXE</td>
+<td style="text-align: right;">0x7A6A7B7B</td>
+</tr>
+</tbody>
+</table>
+<h2 id="heavy-revolver-mk-ii">Heavy Revolver Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Rounds</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CLIP_01</td>
+<td style="text-align: right;">0xBA23D8BE</td>
+</tr>
+<tr>
+<td>Tracer Rounds</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CLIP_TRACER</td>
+<td style="text-align: right;">0xC6D8E476</td>
+</tr>
+<tr>
+<td>Incendiary Rounds</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0xEFBF25</td>
+</tr>
+<tr>
+<td>Hollow Point Rounds</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CLIP_HOLLOWPOINT</td>
+<td style="text-align: right;">0x10F42E8F</td>
+</tr>
+<tr>
+<td>Full Metal Jacket Rounds</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CLIP_FMJ</td>
+<td style="text-align: right;">0xDC8BA3F</td>
+</tr>
+<tr>
+<td>Holographic Sight</td>
+<td style="text-align: center;">COMPONENT_AT_SIGHTS</td>
+<td style="text-align: right;">0x420FD713</td>
+</tr>
+<tr>
+<td>Small Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MACRO_MK2</td>
+<td style="text-align: right;">0x49B2945</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_PI_FLSH</td>
+<td style="text-align: right;">0x359B7AAE</td>
+</tr>
+<tr>
+<td>Compensator</td>
+<td style="text-align: center;">COMPONENT_AT_PI_COMP_03</td>
+<td style="text-align: right;">0x27077CCB</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CAMO</td>
+<td style="text-align: right;">0xC03FED9F</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CAMO_02</td>
+<td style="text-align: right;">0xB5DE24</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CAMO_03</td>
+<td style="text-align: right;">0xA7FF1B8</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CAMO_04</td>
+<td style="text-align: right;">0xF2E24289</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CAMO_05</td>
+<td style="text-align: right;">0x11317F27</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CAMO_06</td>
+<td style="text-align: right;">0x17C30C42</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CAMO_07</td>
+<td style="text-align: right;">0x257927AE</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CAMO_08</td>
+<td style="text-align: right;">0x37304B1C</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CAMO_09</td>
+<td style="text-align: right;">0x48DAEE71</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CAMO_10</td>
+<td style="text-align: right;">0x20ED9B5B</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_REVOLVER_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0xD951E867</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sns-pistol-mk-ii">SNS Pistol Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CLIP_01</td>
+<td style="text-align: right;">0x1466CE6</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CLIP_02</td>
+<td style="text-align: right;">0xCE8C0772</td>
+</tr>
+<tr>
+<td>Tracer Rounds</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CLIP_TRACER</td>
+<td style="text-align: right;">0x902DA26E</td>
+</tr>
+<tr>
+<td>Incendiary Rounds</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0xE6AD5F79</td>
+</tr>
+<tr>
+<td>Hollow Point Rounds</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CLIP_HOLLOWPOINT</td>
+<td style="text-align: right;">0x8D107402</td>
+</tr>
+<tr>
+<td>Full Metal Jacket Rounds</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CLIP_FMJ</td>
+<td style="text-align: right;">0xC111EB26</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_PI_FLSH_03</td>
+<td style="text-align: right;">0x4A4965F3</td>
+</tr>
+<tr>
+<td>Mounted Scope</td>
+<td style="text-align: center;">COMPONENT_AT_PI_RAIL_02</td>
+<td style="text-align: right;">0x47DE9258</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_PI_SUPP_02</td>
+<td style="text-align: right;">0x65EA7EBB</td>
+</tr>
+<tr>
+<td>Compensator</td>
+<td style="text-align: center;">COMPONENT_AT_PI_COMP_02</td>
+<td style="text-align: right;">0xAA8283BF</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO</td>
+<td style="text-align: right;">0xF7BEEDD</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_02</td>
+<td style="text-align: right;">0x8A612EF6</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_03</td>
+<td style="text-align: right;">0x76FA8829</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_04</td>
+<td style="text-align: right;">0xA93C6CAC</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_05</td>
+<td style="text-align: right;">0x9C905354</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_06</td>
+<td style="text-align: right;">0x4DFA3621</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_07</td>
+<td style="text-align: right;">0x42E91FFF</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_08</td>
+<td style="text-align: right;">0x54A8437D</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_09</td>
+<td style="text-align: right;">0x68C2746</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_10</td>
+<td style="text-align: right;">0x2366E467</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0x441882E6</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_SLIDE</td>
+<td style="text-align: right;">0xE7EE68EA</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_02_SLIDE</td>
+<td style="text-align: right;">0x29366D21</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_03_SLIDE</td>
+<td style="text-align: right;">0x3ADE514B</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_04_SLIDE</td>
+<td style="text-align: right;">0xE64513E9</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_05_SLIDE</td>
+<td style="text-align: right;">0xCD7AEB9A</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_06_SLIDE</td>
+<td style="text-align: right;">0xFA7B27A6</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_07_SLIDE</td>
+<td style="text-align: right;">0xE285CA9A</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_08_SLIDE</td>
+<td style="text-align: right;">0x2B904B19</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_09_SLIDE</td>
+<td style="text-align: right;">0x22C24F9C</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_10_SLIDE</td>
+<td style="text-align: right;">0x8D0D5ECD</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_SNSPISTOL_MK2_CAMO_IND_01_SLIDE</td>
+<td style="text-align: right;">0x1F07150A</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pistol-mk-ii">Pistol Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CLIP_01</td>
+<td style="text-align: right;">0x94F42D62</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CLIP_02</td>
+<td style="text-align: right;">0x5ED6C128</td>
+</tr>
+<tr>
+<td>Tracer Rounds</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CLIP_TRACER</td>
+<td style="text-align: right;">0x25CAAEAF</td>
+</tr>
+<tr>
+<td>Incendiary Rounds</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0x2BBD7A3A</td>
+</tr>
+<tr>
+<td>Hollow Point Rounds</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CLIP_HOLLOWPOINT</td>
+<td style="text-align: right;">0x85FEA109</td>
+</tr>
+<tr>
+<td>Full Metal Jacket Rounds</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CLIP_FMJ</td>
+<td style="text-align: right;">0x4F37DF2A</td>
+</tr>
+<tr>
+<td>Mounted Scope</td>
+<td style="text-align: center;">COMPONENT_AT_PI_RAIL</td>
+<td style="text-align: right;">0x8ED4BB70</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_PI_FLSH_02</td>
+<td style="text-align: right;">0x43FD595B</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_PI_SUPP_02</td>
+<td style="text-align: right;">0x65EA7EBB</td>
+</tr>
+<tr>
+<td>Compensator</td>
+<td style="text-align: center;">COMPONENT_AT_PI_COMP</td>
+<td style="text-align: right;">0x21E34793</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO</td>
+<td style="text-align: right;">0x5C6C749C</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_02</td>
+<td style="text-align: right;">0x15F7A390</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_03</td>
+<td style="text-align: right;">0x968E24DB</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_04</td>
+<td style="text-align: right;">0x17BFA99</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_05</td>
+<td style="text-align: right;">0xF2685C72</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_06</td>
+<td style="text-align: right;">0xDD2231E6</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_07</td>
+<td style="text-align: right;">0xBB43EE76</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_08</td>
+<td style="text-align: right;">0x4D901310</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_09</td>
+<td style="text-align: right;">0x5F31B653</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_10</td>
+<td style="text-align: right;">0x697E19A0</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0x930CB951</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_SLIDE</td>
+<td style="text-align: right;">0xB4FC92B0</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_02_SLIDE</td>
+<td style="text-align: right;">0x1A1F1260</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_03_SLIDE</td>
+<td style="text-align: right;">0xE4E00B70</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_04_SLIDE</td>
+<td style="text-align: right;">0x2C298B2B</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_05_SLIDE</td>
+<td style="text-align: right;">0xDFB79725</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_06_SLIDE</td>
+<td style="text-align: right;">0x6BD7228C</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_07_SLIDE</td>
+<td style="text-align: right;">0x9DDBCF8C</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_08_SLIDE</td>
+<td style="text-align: right;">0xB319A52C</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_09_SLIDE</td>
+<td style="text-align: right;">0xC6836E12</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_10_SLIDE</td>
+<td style="text-align: right;">0x43B1B173</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_PISTOL_MK2_CAMO_IND_01_SLIDE</td>
+<td style="text-align: right;">0x4ABDA3FA</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vintage-pistol">Vintage Pistol</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_VINTAGEPISTOL_CLIP_01</td>
+<td style="text-align: right;">0x45A3B6BB</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_VINTAGEPISTOL_CLIP_02</td>
+<td style="text-align: right;">0x33BA12E8</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_PI_SUPP</td>
+<td style="text-align: right;">0xC304849A</td>
+</tr>
+</tbody>
+</table>
+<h2 id="up-n-atomizer">Up-n-Atomizer</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Festive tint</td>
+<td style="text-align: center;">COMPONENT_RAYPISTOL_VARMOD_XMAS18</td>
+<td style="text-align: right;">0xD7DBF707</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ceramic-pistol">Ceramic Pistol</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_CERAMICPISTOL_CLIP_01</td>
+<td style="text-align: right;">0x54D41361</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_CERAMICPISTOL_CLIP_02</td>
+<td style="text-align: right;">0x81786CA9</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_CERAMICPISTOL_SUPP</td>
+<td style="text-align: right;">0x9307D6FA</td>
+</tr>
+</tbody>
+</table>
+<h1 id="submachine-guns">Submachine Guns</h1>
+<h2 id="micro-smg">Micro SMG</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_MICROSMG_CLIP_01</td>
+<td style="text-align: right;">0xCB48AEF0</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_MICROSMG_CLIP_02</td>
+<td style="text-align: right;">0x10E6BA2B</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_PI_FLSH</td>
+<td style="text-align: right;">0x359B7AAE</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MACRO</td>
+<td style="text-align: right;">0x9D2FBF29</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP_02</td>
+<td style="text-align: right;">0xA73D4664</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_MICROSMG_VARMOD_LUXE</td>
+<td style="text-align: right;">0x487AAE09</td>
+</tr>
+</tbody>
+</table>
+<h2 id="smg">SMG</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_SMG_CLIP_01</td>
+<td style="text-align: right;">0x26574997</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_SMG_CLIP_02</td>
+<td style="text-align: right;">0x350966FB</td>
+</tr>
+<tr>
+<td>Drum Magazine</td>
+<td style="text-align: center;">COMPONENT_SMG_CLIP_03</td>
+<td style="text-align: right;">0x79C77076</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MACRO_02</td>
+<td style="text-align: right;">0x3CC6BA57</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_PI_SUPP</td>
+<td style="text-align: right;">0xC304849A</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_SMG_VARMOD_LUXE</td>
+<td style="text-align: right;">0x27872C90</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assault-smg">Assault SMG</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_ASSAULTSMG_CLIP_01</td>
+<td style="text-align: right;">0x8D1307B0</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_ASSAULTSMG_CLIP_02</td>
+<td style="text-align: right;">0xBB46E417</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MACRO</td>
+<td style="text-align: right;">0x9D2FBF29</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP_02</td>
+<td style="text-align: right;">0xA73D4664</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_ASSAULTSMG_VARMOD_LOWRIDER</td>
+<td style="text-align: right;">0x278C78AF</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mini-smg">Mini SMG</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_MINISMG_CLIP_01</td>
+<td style="text-align: right;">0x84C8B2D3</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_MINISMG_CLIP_02</td>
+<td style="text-align: right;">0x937ED0B7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="smg-mk-ii">SMG Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CLIP_01</td>
+<td style="text-align: right;">0x4C24806E</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CLIP_02</td>
+<td style="text-align: right;">0xB9835B2E</td>
+</tr>
+<tr>
+<td>Tracer Rounds</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CLIP_TRACER</td>
+<td style="text-align: right;">0x7FEA36EC</td>
+</tr>
+<tr>
+<td>Incendiary Rounds</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0xD99222E5</td>
+</tr>
+<tr>
+<td>Hollow Point Rounds</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CLIP_HOLLOWPOINT</td>
+<td style="text-align: right;">0x3A1BD6FA</td>
+</tr>
+<tr>
+<td>Full Metal Jacket Rounds</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CLIP_FMJ</td>
+<td style="text-align: right;">0xB5A715F</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Holographic Sight</td>
+<td style="text-align: center;">COMPONENT_AT_SIGHTS_SMG</td>
+<td style="text-align: right;">0x9FDB5652</td>
+</tr>
+<tr>
+<td>Small Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MACRO_02_SMG_MK2</td>
+<td style="text-align: right;">0xE502AB6B</td>
+</tr>
+<tr>
+<td>Medium Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_SMALL_SMG_MK2</td>
+<td style="text-align: right;">0x3DECC7DA</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_PI_SUPP</td>
+<td style="text-align: right;">0xC304849A</td>
+</tr>
+<tr>
+<td>Flat Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_01</td>
+<td style="text-align: right;">0xB99402D4</td>
+</tr>
+<tr>
+<td>Tactical Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_02</td>
+<td style="text-align: right;">0xC867A07B</td>
+</tr>
+<tr>
+<td>Fat-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_03</td>
+<td style="text-align: right;">0xDE11CBCF</td>
+</tr>
+<tr>
+<td>Precision Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_04</td>
+<td style="text-align: right;">0xEC9068CC</td>
+</tr>
+<tr>
+<td>Heavy Duty Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_05</td>
+<td style="text-align: right;">0x2E7957A</td>
+</tr>
+<tr>
+<td>Slanted Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_06</td>
+<td style="text-align: right;">0x347EF8AC</td>
+</tr>
+<tr>
+<td>Split-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_07</td>
+<td style="text-align: right;">0x4DB62ABE</td>
+</tr>
+<tr>
+<td>Default Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_SB_BARREL_01</td>
+<td style="text-align: right;">0xD9103EE1</td>
+</tr>
+<tr>
+<td>Heavy Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_SB_BARREL_02</td>
+<td style="text-align: right;">0xA564D78B</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CAMO</td>
+<td style="text-align: right;">0xC4979067</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CAMO_02</td>
+<td style="text-align: right;">0x3815A945</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CAMO_03</td>
+<td style="text-align: right;">0x4B4B4FB0</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CAMO_04</td>
+<td style="text-align: right;">0xEC729200</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CAMO_05</td>
+<td style="text-align: right;">0x48F64B22</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CAMO_06</td>
+<td style="text-align: right;">0x35992468</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CAMO_07</td>
+<td style="text-align: right;">0x24B782A5</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CAMO_08</td>
+<td style="text-align: right;">0xA2E67F01</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CAMO_09</td>
+<td style="text-align: right;">0x2218FD68</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CAMO_10</td>
+<td style="text-align: right;">0x45C5C3C5</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_SMG_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0x399D558F</td>
+</tr>
+</tbody>
+</table>
+<h2 id="machine-pistol">Machine Pistol</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_MACHINEPISTOL_CLIP_01</td>
+<td style="text-align: right;">0x476E85FF</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_MACHINEPISTOL_CLIP_02</td>
+<td style="text-align: right;">0xB92C6979</td>
+</tr>
+<tr>
+<td>Drum Magazine</td>
+<td style="text-align: center;">COMPONENT_MACHINEPISTOL_CLIP_03</td>
+<td style="text-align: right;">0xA9E9CAF4</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_PI_SUPP</td>
+<td style="text-align: right;">0xC304849A</td>
+</tr>
+</tbody>
+</table>
+<h2 id="combat-pdw">Combat PDW</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_COMBATPDW_CLIP_01</td>
+<td style="text-align: right;">0x4317F19E</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_COMBATPDW_CLIP_02</td>
+<td style="text-align: right;">0x334A5203</td>
+</tr>
+<tr>
+<td>Drum Magazine</td>
+<td style="text-align: center;">COMPONENT_COMBATPDW_CLIP_03</td>
+<td style="text-align: right;">0x6EB8C8DB</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP</td>
+<td style="text-align: right;">0xC164F53</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_SMALL</td>
+<td style="text-align: right;">0xAA2C45B4</td>
+</tr>
+</tbody>
+</table>
+<h1 id="shotguns">Shotguns</h1>
+<h2 id="pump-shotgun">Pump Shotgun</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_SR_SUPP</td>
+<td style="text-align: right;">0xE608B35E</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER</td>
+<td style="text-align: right;">0xA2D79DDB</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sawed-off-shotgun">Sawed-Off Shotgun</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gilded Gun Metal Finish</td>
+<td style="text-align: center;">COMPONENT_SAWNOFFSHOTGUN_VARMOD_LUXE</td>
+<td style="text-align: right;">0x85A64DF9</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assault-shotgun">Assault Shotgun</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_ASSAULTSHOTGUN_CLIP_01</td>
+<td style="text-align: right;">0x94E81BC7</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_ASSAULTSHOTGUN_CLIP_02</td>
+<td style="text-align: right;">0x86BD7F72</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP</td>
+<td style="text-align: right;">0x837445AA</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP</td>
+<td style="text-align: right;">0xC164F53</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bullpup-shotgun">Bullpup Shotgun</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP_02</td>
+<td style="text-align: right;">0xA73D4664</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP</td>
+<td style="text-align: right;">0xC164F53</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pump-shotgun-mk-ii">Pump Shotgun Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Shells</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CLIP_01</td>
+<td style="text-align: right;">0xCD940141</td>
+</tr>
+<tr>
+<td>Dragon's Breath Shells</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0x9F8A1BF5</td>
+</tr>
+<tr>
+<td>Steel Buckshot Shells</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CLIP_ARMORPIERCING</td>
+<td style="text-align: right;">0x4E65B425</td>
+</tr>
+<tr>
+<td>Flechette Shells</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CLIP_HOLLOWPOINT</td>
+<td style="text-align: right;">0xE9582927</td>
+</tr>
+<tr>
+<td>Explosive Slugs</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CLIP_EXPLOSIVE</td>
+<td style="text-align: right;">0x3BE4465D</td>
+</tr>
+<tr>
+<td>Holographic Sight</td>
+<td style="text-align: center;">COMPONENT_AT_SIGHTS</td>
+<td style="text-align: right;">0x420FD713</td>
+</tr>
+<tr>
+<td>Small Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MACRO_MK2</td>
+<td style="text-align: right;">0x49B2945</td>
+</tr>
+<tr>
+<td>Medium Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_SMALL_MK2</td>
+<td style="text-align: right;">0x3F3C8181</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_SR_SUPP_03</td>
+<td style="text-align: right;">0xAC42DF71</td>
+</tr>
+<tr>
+<td>Squared Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_08</td>
+<td style="text-align: right;">0x5F7DCE4D</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CAMO</td>
+<td style="text-align: right;">0xE3BD9E44</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CAMO_02</td>
+<td style="text-align: right;">0x17148F9B</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CAMO_03</td>
+<td style="text-align: right;">0x24D22B16</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CAMO_04</td>
+<td style="text-align: right;">0xF2BEC6F0</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CAMO_05</td>
+<td style="text-align: right;">0x85627D</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CAMO_06</td>
+<td style="text-align: right;">0xDC2919C5</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CAMO_07</td>
+<td style="text-align: right;">0xE184247B</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CAMO_08</td>
+<td style="text-align: right;">0xD8EF9356</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CAMO_09</td>
+<td style="text-align: right;">0xEF29BFCA</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CAMO_10</td>
+<td style="text-align: right;">0x67AEB165</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_PUMPSHOTGUN_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0x46411A1D</td>
+</tr>
+</tbody>
+</table>
+<h2 id="heavy-shotgun">Heavy Shotgun</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_HEAVYSHOTGUN_CLIP_01</td>
+<td style="text-align: right;">0x324F2D5F</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_HEAVYSHOTGUN_CLIP_02</td>
+<td style="text-align: right;">0x971CF6FD</td>
+</tr>
+<tr>
+<td>Drum Magazine</td>
+<td style="text-align: center;">COMPONENT_HEAVYSHOTGUN_CLIP_03</td>
+<td style="text-align: right;">0x88C7DA53</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP_02</td>
+<td style="text-align: right;">0xA73D4664</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP</td>
+<td style="text-align: right;">0xC164F53</td>
+</tr>
+</tbody>
+</table>
+<h1 id="rifles">Rifles</h1>
+<h2 id="assault-rifle">Assault Rifle</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_CLIP_01</td>
+<td style="text-align: right;">0xBE5EEA16</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_CLIP_02</td>
+<td style="text-align: right;">0xB1214F9B</td>
+</tr>
+<tr>
+<td>Drum Magazine</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_CLIP_03</td>
+<td style="text-align: right;">0xDBF0A53D</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MACRO</td>
+<td style="text-align: right;">0x9D2FBF29</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP_02</td>
+<td style="text-align: right;">0xA73D4664</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP</td>
+<td style="text-align: right;">0xC164F53</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_VARMOD_LUXE</td>
+<td style="text-align: right;">0x4EAD7533</td>
+</tr>
+</tbody>
+</table>
+<h2 id="carbine-rifle">Carbine Rifle</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_CLIP_01</td>
+<td style="text-align: right;">0x9FBE33EC</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_CLIP_02</td>
+<td style="text-align: right;">0x91109691</td>
+</tr>
+<tr>
+<td>Box Magazine</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_CLIP_03</td>
+<td style="text-align: right;">0xBA62E935</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MEDIUM</td>
+<td style="text-align: right;">0xA0D89C42</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP</td>
+<td style="text-align: right;">0x837445AA</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP</td>
+<td style="text-align: right;">0xC164F53</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_VARMOD_LUXE</td>
+<td style="text-align: right;">0xD89B9658</td>
+</tr>
+</tbody>
+</table>
+<h2 id="advanced-rifle">Advanced Rifle</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_ADVANCEDRIFLE_CLIP_01</td>
+<td style="text-align: right;">0xFA8FA10F</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_ADVANCEDRIFLE_CLIP_02</td>
+<td style="text-align: right;">0x8EC1C979</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_SMALL</td>
+<td style="text-align: right;">0xAA2C45B4</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP</td>
+<td style="text-align: right;">0x837445AA</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE</td>
+<td style="text-align: right;">0x377CD377</td>
+</tr>
+</tbody>
+</table>
+<h2 id="special-carbine">Special Carbine</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_CLIP_01</td>
+<td style="text-align: right;">0xC6C7E581</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_CLIP_02</td>
+<td style="text-align: right;">0x7C8BD10E</td>
+</tr>
+<tr>
+<td>Drum Magazine</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_CLIP_03</td>
+<td style="text-align: right;">0x6B59AEAA</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MEDIUM</td>
+<td style="text-align: right;">0xA0D89C42</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP_02</td>
+<td style="text-align: right;">0xA73D4664</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP</td>
+<td style="text-align: right;">0xC164F53</td>
+</tr>
+<tr>
+<td>Etched Gun Metal Finish</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER</td>
+<td style="text-align: right;">0x730154F2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bullpup-rifle">Bullpup Rifle</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_CLIP_01</td>
+<td style="text-align: right;">0xC5A12F80</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_CLIP_02</td>
+<td style="text-align: right;">0xB3688B0F</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_SMALL</td>
+<td style="text-align: right;">0xAA2C45B4</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP</td>
+<td style="text-align: right;">0x837445AA</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP</td>
+<td style="text-align: right;">0xC164F53</td>
+</tr>
+<tr>
+<td>Gilded Gun Metal Finish</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_VARMOD_LOW</td>
+<td style="text-align: right;">0xA857BC78</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bullpup-rifle-mk-ii">Bullpup Rifle Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CLIP_01</td>
+<td style="text-align: right;">0x18929DA</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CLIP_02</td>
+<td style="text-align: right;">0xEFB00628</td>
+</tr>
+<tr>
+<td>Tracer Rounds</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CLIP_TRACER</td>
+<td style="text-align: right;">0x822060A9</td>
+</tr>
+<tr>
+<td>Incendiary Rounds</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0xA99CF95A</td>
+</tr>
+<tr>
+<td>Armor Piercing Rounds</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CLIP_ARMORPIERCING</td>
+<td style="text-align: right;">0xFAA7F5ED</td>
+</tr>
+<tr>
+<td>Full Metal Jacket Rounds</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CLIP_FMJ</td>
+<td style="text-align: right;">0x43621710</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Holographic Sight</td>
+<td style="text-align: center;">COMPONENT_AT_SIGHTS</td>
+<td style="text-align: right;">0x420FD713</td>
+</tr>
+<tr>
+<td>Small Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MACRO_02_MK2</td>
+<td style="text-align: right;">0xC7ADD105</td>
+</tr>
+<tr>
+<td>Medium Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_SMALL_MK2</td>
+<td style="text-align: right;">0x3F3C8181</td>
+</tr>
+<tr>
+<td>Default Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_BP_BARREL_01</td>
+<td style="text-align: right;">0x659AC11B</td>
+</tr>
+<tr>
+<td>Heavy Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_BP_BARREL_02</td>
+<td style="text-align: right;">0x3BF26DC7</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP</td>
+<td style="text-align: right;">0x837445AA</td>
+</tr>
+<tr>
+<td>Flat Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_01</td>
+<td style="text-align: right;">0xB99402D4</td>
+</tr>
+<tr>
+<td>Tactical Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_02</td>
+<td style="text-align: right;">0xC867A07B</td>
+</tr>
+<tr>
+<td>Fat-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_03</td>
+<td style="text-align: right;">0xDE11CBCF</td>
+</tr>
+<tr>
+<td>Precision Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_04</td>
+<td style="text-align: right;">0xEC9068CC</td>
+</tr>
+<tr>
+<td>Heavy Duty Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_05</td>
+<td style="text-align: right;">0x2E7957A</td>
+</tr>
+<tr>
+<td>Slanted Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_06</td>
+<td style="text-align: right;">0x347EF8AC</td>
+</tr>
+<tr>
+<td>Split-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_07</td>
+<td style="text-align: right;">0x4DB62ABE</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP_02</td>
+<td style="text-align: right;">0x9D65907A</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CAMO</td>
+<td style="text-align: right;">0xAE4055B7</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CAMO_02</td>
+<td style="text-align: right;">0xB905ED6B</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CAMO_03</td>
+<td style="text-align: right;">0xA6C448E8</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CAMO_04</td>
+<td style="text-align: right;">0x9486246C</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CAMO_05</td>
+<td style="text-align: right;">0x8A390FD2</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CAMO_06</td>
+<td style="text-align: right;">0x2337FC5</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CAMO_07</td>
+<td style="text-align: right;">0xEFFFDB5E</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CAMO_08</td>
+<td style="text-align: right;">0xDDBDB6DA</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CAMO_09</td>
+<td style="text-align: right;">0xCB631225</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CAMO_10</td>
+<td style="text-align: right;">0xA87D541E</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_BULLPUPRIFLE_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0xC5E9AE52</td>
+</tr>
+</tbody>
+</table>
+<h2 id="special-carbine-mk-ii">Special Carbine Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CLIP_01</td>
+<td style="text-align: right;">0x16C69281</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CLIP_02</td>
+<td style="text-align: right;">0xDE1FA12C</td>
+</tr>
+<tr>
+<td>Tracer Rounds</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CLIP_TRACER</td>
+<td style="text-align: right;">0x8765C68A</td>
+</tr>
+<tr>
+<td>Incendiary Rounds</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0xDE011286</td>
+</tr>
+<tr>
+<td>Armor Piercing Rounds</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CLIP_ARMORPIERCING</td>
+<td style="text-align: right;">0x51351635</td>
+</tr>
+<tr>
+<td>Full Metal Jacket Rounds</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CLIP_FMJ</td>
+<td style="text-align: right;">0x503DEA90</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Holographic Sight</td>
+<td style="text-align: center;">COMPONENT_AT_SIGHTS</td>
+<td style="text-align: right;">0x420FD713</td>
+</tr>
+<tr>
+<td>Small Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MACRO_MK2</td>
+<td style="text-align: right;">0x49B2945</td>
+</tr>
+<tr>
+<td>Medium Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MEDIUM_MK2</td>
+<td style="text-align: right;">0xC66B6542</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP_02</td>
+<td style="text-align: right;">0xA73D4664</td>
+</tr>
+<tr>
+<td>Flat Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_01</td>
+<td style="text-align: right;">0xB99402D4</td>
+</tr>
+<tr>
+<td>Tactical Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_02</td>
+<td style="text-align: right;">0xC867A07B</td>
+</tr>
+<tr>
+<td>Fat-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_03</td>
+<td style="text-align: right;">0xDE11CBCF</td>
+</tr>
+<tr>
+<td>Precision Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_04</td>
+<td style="text-align: right;">0xEC9068CC</td>
+</tr>
+<tr>
+<td>Heavy Duty Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_05</td>
+<td style="text-align: right;">0x2E7957A</td>
+</tr>
+<tr>
+<td>Slanted Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_06</td>
+<td style="text-align: right;">0x347EF8AC</td>
+</tr>
+<tr>
+<td>Split-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_07</td>
+<td style="text-align: right;">0x4DB62ABE</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP_02</td>
+<td style="text-align: right;">0x9D65907A</td>
+</tr>
+<tr>
+<td>Default Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_SC_BARREL_01</td>
+<td style="text-align: right;">0xE73653A9</td>
+</tr>
+<tr>
+<td>Heavy Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_SC_BARREL_02</td>
+<td style="text-align: right;">0xF97F783B</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CAMO</td>
+<td style="text-align: right;">0xD40BB53B</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CAMO_02</td>
+<td style="text-align: right;">0x431B238B</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CAMO_03</td>
+<td style="text-align: right;">0x34CF86F4</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CAMO_04</td>
+<td style="text-align: right;">0xB4C306DD</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CAMO_05</td>
+<td style="text-align: right;">0xEE677A25</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CAMO_06</td>
+<td style="text-align: right;">0xDF90DC78</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CAMO_07</td>
+<td style="text-align: right;">0xA4C31EE</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CAMO_08</td>
+<td style="text-align: right;">0x89CFB0F7</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CAMO_09</td>
+<td style="text-align: right;">0x7B82145C</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CAMO_10</td>
+<td style="text-align: right;">0x899CAF75</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_SPECIALCARBINE_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0x5218C819</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assault-rifle-mk-ii">Assault Rifle Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CLIP_01</td>
+<td style="text-align: right;">0x8610343F</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CLIP_02</td>
+<td style="text-align: right;">0xD12ACA6F</td>
+</tr>
+<tr>
+<td>Tracer Rounds</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CLIP_TRACER</td>
+<td style="text-align: right;">0xEF2C78C1</td>
+</tr>
+<tr>
+<td>Incendiary Rounds</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0xFB70D853</td>
+</tr>
+<tr>
+<td>Armor Piercing Rounds</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CLIP_ARMORPIERCING</td>
+<td style="text-align: right;">0xA7DD1E58</td>
+</tr>
+<tr>
+<td>Full Metal Jacket Rounds</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CLIP_FMJ</td>
+<td style="text-align: right;">0x63E0A098</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP_02</td>
+<td style="text-align: right;">0x9D65907A</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Holographic Sight</td>
+<td style="text-align: center;">COMPONENT_AT_SIGHTS</td>
+<td style="text-align: right;">0x420FD713</td>
+</tr>
+<tr>
+<td>Small Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MACRO_MK2</td>
+<td style="text-align: right;">0x49B2945</td>
+</tr>
+<tr>
+<td>Medium Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MEDIUM_MK2</td>
+<td style="text-align: right;">0xC66B6542</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP_02</td>
+<td style="text-align: right;">0xA73D4664</td>
+</tr>
+<tr>
+<td>Flat Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_01</td>
+<td style="text-align: right;">0xB99402D4</td>
+</tr>
+<tr>
+<td>Tactical Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_02</td>
+<td style="text-align: right;">0xC867A07B</td>
+</tr>
+<tr>
+<td>Fat-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_03</td>
+<td style="text-align: right;">0xDE11CBCF</td>
+</tr>
+<tr>
+<td>Precision Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_04</td>
+<td style="text-align: right;">0xEC9068CC</td>
+</tr>
+<tr>
+<td>Heavy Duty Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_05</td>
+<td style="text-align: right;">0x2E7957A</td>
+</tr>
+<tr>
+<td>Slanted Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_06</td>
+<td style="text-align: right;">0x347EF8AC</td>
+</tr>
+<tr>
+<td>Split-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_07</td>
+<td style="text-align: right;">0x4DB62ABE</td>
+</tr>
+<tr>
+<td>Default Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_AR_BARREL_01</td>
+<td style="text-align: right;">0x43A49D26</td>
+</tr>
+<tr>
+<td>Heavy Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_AR_BARREL_02</td>
+<td style="text-align: right;">0x5646C26A</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CAMO</td>
+<td style="text-align: right;">0x911B24AF</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CAMO_02</td>
+<td style="text-align: right;">0x37E5444B</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CAMO_03</td>
+<td style="text-align: right;">0x538B7B97</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CAMO_04</td>
+<td style="text-align: right;">0x25789F72</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CAMO_05</td>
+<td style="text-align: right;">0xC5495F2D</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CAMO_06</td>
+<td style="text-align: right;">0xCF8B73B1</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CAMO_07</td>
+<td style="text-align: right;">0xA9BB2811</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CAMO_08</td>
+<td style="text-align: right;">0xFC674D54</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CAMO_09</td>
+<td style="text-align: right;">0x7C7FCD9B</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CAMO_10</td>
+<td style="text-align: right;">0xA5C38392</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_ASSAULTRIFLE_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0xB9B15DB0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="carbine-rifle-mk-ii">Carbine Rifle Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CLIP_01</td>
+<td style="text-align: right;">0x4C7A391E</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CLIP_02</td>
+<td style="text-align: right;">0x5DD5DBD5</td>
+</tr>
+<tr>
+<td>Tracer Rounds</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CLIP_TRACER</td>
+<td style="text-align: right;">0x1757F566</td>
+</tr>
+<tr>
+<td>Incendiary Rounds</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0x3D25C2A7</td>
+</tr>
+<tr>
+<td>Armor Piercing Rounds</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CLIP_ARMORPIERCING</td>
+<td style="text-align: right;">0x255D5D57</td>
+</tr>
+<tr>
+<td>Full Metal Jacket Rounds</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CLIP_FMJ</td>
+<td style="text-align: right;">0x44032F11</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP_02</td>
+<td style="text-align: right;">0x9D65907A</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Holographic Sight</td>
+<td style="text-align: center;">COMPONENT_AT_SIGHTS</td>
+<td style="text-align: right;">0x420FD713</td>
+</tr>
+<tr>
+<td>Small Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MACRO_MK2</td>
+<td style="text-align: right;">0x49B2945</td>
+</tr>
+<tr>
+<td>Medium Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MEDIUM_MK2</td>
+<td style="text-align: right;">0xC66B6542</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP</td>
+<td style="text-align: right;">0x837445AA</td>
+</tr>
+<tr>
+<td>Flat Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_01</td>
+<td style="text-align: right;">0xB99402D4</td>
+</tr>
+<tr>
+<td>Tactical Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_02</td>
+<td style="text-align: right;">0xC867A07B</td>
+</tr>
+<tr>
+<td>Fat-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_03</td>
+<td style="text-align: right;">0xDE11CBCF</td>
+</tr>
+<tr>
+<td>Precision Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_04</td>
+<td style="text-align: right;">0xEC9068CC</td>
+</tr>
+<tr>
+<td>Heavy Duty Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_05</td>
+<td style="text-align: right;">0x2E7957A</td>
+</tr>
+<tr>
+<td>Slanted Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_06</td>
+<td style="text-align: right;">0x347EF8AC</td>
+</tr>
+<tr>
+<td>Split-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_07</td>
+<td style="text-align: right;">0x4DB62ABE</td>
+</tr>
+<tr>
+<td>Default Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_CR_BARREL_01</td>
+<td style="text-align: right;">0x833637FF</td>
+</tr>
+<tr>
+<td>Heavy Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_CR_BARREL_02</td>
+<td style="text-align: right;">0x8B3C480B</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CAMO</td>
+<td style="text-align: right;">0x4BDD6F16</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CAMO_02</td>
+<td style="text-align: right;">0x406A7908</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CAMO_03</td>
+<td style="text-align: right;">0x2F3856A4</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CAMO_04</td>
+<td style="text-align: right;">0xE50C424D</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CAMO_05</td>
+<td style="text-align: right;">0xD37D1F2F</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CAMO_06</td>
+<td style="text-align: right;">0x86268483</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CAMO_07</td>
+<td style="text-align: right;">0xF420E076</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CAMO_08</td>
+<td style="text-align: right;">0xAAE14DF8</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CAMO_09</td>
+<td style="text-align: right;">0x9893A95D</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CAMO_10</td>
+<td style="text-align: right;">0x6B13CD3E</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_CARBINERIFLE_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0xDA55CD3F</td>
+</tr>
+</tbody>
+</table>
+<h2 id="compact-rifle">Compact Rifle</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_COMPACTRIFLE_CLIP_01</td>
+<td style="text-align: right;">0x513F0A63</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_COMPACTRIFLE_CLIP_02</td>
+<td style="text-align: right;">0x59FF9BF8</td>
+</tr>
+<tr>
+<td>Drum Magazine</td>
+<td style="text-align: center;">COMPONENT_COMPACTRIFLE_CLIP_03</td>
+<td style="text-align: right;">0xC607740E</td>
+</tr>
+</tbody>
+</table>
+<h1 id="machine-guns">Machine Guns</h1>
+<h2 id="mg">MG</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_MG_CLIP_01</td>
+<td style="text-align: right;">0xF434EF84</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_MG_CLIP_02</td>
+<td style="text-align: right;">0x82158B47</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_SMALL_02</td>
+<td style="text-align: right;">0x3C00AFED</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_MG_VARMOD_LOWRIDER</td>
+<td style="text-align: right;">0xD6DABABE</td>
+</tr>
+</tbody>
+</table>
+<h2 id="combat-mg">Combat MG</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_CLIP_01</td>
+<td style="text-align: right;">0xE1FFB34A</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_CLIP_02</td>
+<td style="text-align: right;">0xD6C59CD6</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MEDIUM</td>
+<td style="text-align: right;">0xA0D89C42</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP</td>
+<td style="text-align: right;">0x3C00AFED</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_VARMOD_LOWRIDER</td>
+<td style="text-align: right;">0x92FECCDD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="combat-mg-mk-ii">Combat MG Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CLIP_01</td>
+<td style="text-align: right;">0x492B257C</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CLIP_02</td>
+<td style="text-align: right;">0x17DF42E9</td>
+</tr>
+<tr>
+<td>Tracer Rounds</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CLIP_TRACER</td>
+<td style="text-align: right;">0xF6649745</td>
+</tr>
+<tr>
+<td>Incendiary Rounds</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0xC326BDBA</td>
+</tr>
+<tr>
+<td>Armor Piercing Rounds</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CLIP_ARMORPIERCING</td>
+<td style="text-align: right;">0x29882423</td>
+</tr>
+<tr>
+<td>Full Metal Jacket Rounds</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CLIP_FMJ</td>
+<td style="text-align: right;">0x57EF1CC8</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP_02</td>
+<td style="text-align: right;">0x9D65907A</td>
+</tr>
+<tr>
+<td>Holographic Sight</td>
+<td style="text-align: center;">COMPONENT_AT_SIGHTS</td>
+<td style="text-align: right;">0x420FD713</td>
+</tr>
+<tr>
+<td>Medium Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_SMALL_MK2</td>
+<td style="text-align: right;">0x3F3C8181</td>
+</tr>
+<tr>
+<td>Large Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MEDIUM_MK2</td>
+<td style="text-align: right;">0xC66B6542</td>
+</tr>
+<tr>
+<td>Flat Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_01</td>
+<td style="text-align: right;">0xB99402D4</td>
+</tr>
+<tr>
+<td>Tactical Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_02</td>
+<td style="text-align: right;">0xC867A07B</td>
+</tr>
+<tr>
+<td>Fat-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_03</td>
+<td style="text-align: right;">0xDE11CBCF</td>
+</tr>
+<tr>
+<td>Precision Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_04</td>
+<td style="text-align: right;">0xEC9068CC</td>
+</tr>
+<tr>
+<td>Heavy Duty Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_05</td>
+<td style="text-align: right;">0x2E7957A</td>
+</tr>
+<tr>
+<td>Slanted Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_06</td>
+<td style="text-align: right;">0x347EF8AC</td>
+</tr>
+<tr>
+<td>Split-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_07</td>
+<td style="text-align: right;">0x4DB62ABE</td>
+</tr>
+<tr>
+<td>Default Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_MG_BARREL_01</td>
+<td style="text-align: right;">0xC34EF234</td>
+</tr>
+<tr>
+<td>Heavy Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_MG_BARREL_02</td>
+<td style="text-align: right;">0xB5E2575B</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CAMO</td>
+<td style="text-align: right;">0x4A768CB5</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CAMO_02</td>
+<td style="text-align: right;">0xCCE06BBD</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CAMO_03</td>
+<td style="text-align: right;">0xBE94CF26</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CAMO_04</td>
+<td style="text-align: right;">0x7609BE11</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CAMO_05</td>
+<td style="text-align: right;">0x48AF6351</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CAMO_06</td>
+<td style="text-align: right;">0x9186750A</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CAMO_07</td>
+<td style="text-align: right;">0x84555AA8</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CAMO_08</td>
+<td style="text-align: right;">0x1B4C088B</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CAMO_09</td>
+<td style="text-align: right;">0xE046DFC</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CAMO_10</td>
+<td style="text-align: right;">0x28B536E</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_COMBATMG_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0xD703C94D</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gusenberg-sweeper">Gusenberg Sweeper</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_GUSENBERG_CLIP_01</td>
+<td style="text-align: right;">0x1CE5A6A5</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_GUSENBERG_CLIP_02</td>
+<td style="text-align: right;">0xEAC8C270</td>
+</tr>
+</tbody>
+</table>
+<h1 id="sniper-rifles">Sniper Rifles</h1>
+<h2 id="sniper-rifle">Sniper Rifle</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_SNIPERRIFLE_CLIP_01</td>
+<td style="text-align: right;">0x9BC64089</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP_02</td>
+<td style="text-align: right;">0xA73D4664</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_LARGE</td>
+<td style="text-align: right;">0xD2443DDC</td>
+</tr>
+<tr>
+<td>Advanced Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MAX</td>
+<td style="text-align: right;">0xBC54DA77</td>
+</tr>
+<tr>
+<td>Etched Wood Grip Finish</td>
+<td style="text-align: center;">COMPONENT_SNIPERRIFLE_VARMOD_LUXE</td>
+<td style="text-align: right;">0x4032B5E7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="heavy-sniper">Heavy Sniper</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_CLIP_01</td>
+<td style="text-align: right;">0x476F52F4</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_LARGE</td>
+<td style="text-align: right;">0xD2443DDC</td>
+</tr>
+<tr>
+<td>Advanced Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MAX</td>
+<td style="text-align: right;">0xBC54DA77</td>
+</tr>
+</tbody>
+</table>
+<h2 id="marksman-rifle-mk-ii">Marksman Rifle Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CLIP_01</td>
+<td style="text-align: right;">0x94E12DCE</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CLIP_02</td>
+<td style="text-align: right;">0xE6CFD1AA</td>
+</tr>
+<tr>
+<td>Tracer Rounds</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CLIP_TRACER</td>
+<td style="text-align: right;">0xD77A22D2</td>
+</tr>
+<tr>
+<td>Incendiary Rounds</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0x6DD7A86E</td>
+</tr>
+<tr>
+<td>Armor Piercing Rounds</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CLIP_ARMORPIERCING</td>
+<td style="text-align: right;">0xF46FD079</td>
+</tr>
+<tr>
+<td>Full Metal Jacket Rounds</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CLIP_FMJ</td>
+<td style="text-align: right;">0xE14A9ED3</td>
+</tr>
+<tr>
+<td>Holographic Sight</td>
+<td style="text-align: center;">COMPONENT_AT_SIGHTS</td>
+<td style="text-align: right;">0x420FD713</td>
+</tr>
+<tr>
+<td>Large Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MEDIUM_MK2</td>
+<td style="text-align: right;">0xC66B6542</td>
+</tr>
+<tr>
+<td>Zoom Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM_MK2</td>
+<td style="text-align: right;">0x5B1C713C</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP</td>
+<td style="text-align: right;">0x837445AA</td>
+</tr>
+<tr>
+<td>Flat Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_01</td>
+<td style="text-align: right;">0xB99402D4</td>
+</tr>
+<tr>
+<td>Tactical Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_02</td>
+<td style="text-align: right;">0xC867A07B</td>
+</tr>
+<tr>
+<td>Fat-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_03</td>
+<td style="text-align: right;">0xDE11CBCF</td>
+</tr>
+<tr>
+<td>Precision Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_04</td>
+<td style="text-align: right;">0xEC9068CC</td>
+</tr>
+<tr>
+<td>Heavy Duty Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_05</td>
+<td style="text-align: right;">0x2E7957A</td>
+</tr>
+<tr>
+<td>Slanted Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_06</td>
+<td style="text-align: right;">0x347EF8AC</td>
+</tr>
+<tr>
+<td>Split-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_07</td>
+<td style="text-align: right;">0x4DB62ABE</td>
+</tr>
+<tr>
+<td>Default Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_MRFL_BARREL_01</td>
+<td style="text-align: right;">0x381B5D89</td>
+</tr>
+<tr>
+<td>Heavy Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_MRFL_BARREL_02</td>
+<td style="text-align: right;">0x68373DDC</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP_02</td>
+<td style="text-align: right;">0x9D65907A</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CAMO</td>
+<td style="text-align: right;">0x9094FBA0</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CAMO_02</td>
+<td style="text-align: right;">0x7320F4B2</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CAMO_03</td>
+<td style="text-align: right;">0x60CF500F</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CAMO_04</td>
+<td style="text-align: right;">0xFE668B3F</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CAMO_05</td>
+<td style="text-align: right;">0xF3757559</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CAMO_06</td>
+<td style="text-align: right;">0x193B40E8</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CAMO_07</td>
+<td style="text-align: right;">0x107D2F6C</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CAMO_08</td>
+<td style="text-align: right;">0xC4E91841</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CAMO_09</td>
+<td style="text-align: right;">0x9BB1C5D3</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CAMO_10</td>
+<td style="text-align: right;">0x3B61040B</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0xB7A316DA</td>
+</tr>
+</tbody>
+</table>
+<h2 id="heavy-sniper-mk-ii">Heavy Sniper Mk II</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CLIP_01</td>
+<td style="text-align: right;">0xFA1E1A28</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CLIP_02</td>
+<td style="text-align: right;">0x2CD8FF9D</td>
+</tr>
+<tr>
+<td>Incendiary Rounds</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CLIP_INCENDIARY</td>
+<td style="text-align: right;">0xEC0F617</td>
+</tr>
+<tr>
+<td>Armor Piercing Rounds</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CLIP_ARMORPIERCING</td>
+<td style="text-align: right;">0xF835D6D4</td>
+</tr>
+<tr>
+<td>Full Metal Jacket Rounds</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CLIP_FMJ</td>
+<td style="text-align: right;">0x3BE948F6</td>
+</tr>
+<tr>
+<td>Explosive Rounds</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CLIP_EXPLOSIVE</td>
+<td style="text-align: right;">0x89EBDAA7</td>
+</tr>
+<tr>
+<td>Zoom Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_LARGE_MK2</td>
+<td style="text-align: right;">0x82C10383</td>
+</tr>
+<tr>
+<td>Advanced Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_MAX</td>
+<td style="text-align: right;">0xBC54DA77</td>
+</tr>
+<tr>
+<td>Night Vision Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_NV</td>
+<td style="text-align: right;">0xB68010B0</td>
+</tr>
+<tr>
+<td>Thermal Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_THERMAL</td>
+<td style="text-align: right;">0x2E43DA41</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_SR_SUPP_03</td>
+<td style="text-align: right;">0xAC42DF71</td>
+</tr>
+<tr>
+<td>Squared Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_08</td>
+<td style="text-align: right;">0x5F7DCE4D</td>
+</tr>
+<tr>
+<td>Bell-End Muzzle Brake</td>
+<td style="text-align: center;">COMPONENT_AT_MUZZLE_09</td>
+<td style="text-align: right;">0x6927E1A1</td>
+</tr>
+<tr>
+<td>Default Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_SR_BARREL_01</td>
+<td style="text-align: right;">0x909630B7</td>
+</tr>
+<tr>
+<td>Heavy Barrel</td>
+<td style="text-align: center;">COMPONENT_AT_SR_BARREL_02</td>
+<td style="text-align: right;">0x108AB09E</td>
+</tr>
+<tr>
+<td>Digital Camo</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CAMO</td>
+<td style="text-align: right;">0xF8337D02</td>
+</tr>
+<tr>
+<td>Brushstroke Camo</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CAMO_02</td>
+<td style="text-align: right;">0xC5BEDD65</td>
+</tr>
+<tr>
+<td>Woodland Camo</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CAMO_03</td>
+<td style="text-align: right;">0xE9712475</td>
+</tr>
+<tr>
+<td>Skull</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CAMO_04</td>
+<td style="text-align: right;">0x13AA78E7</td>
+</tr>
+<tr>
+<td>Sessanta Nove</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CAMO_05</td>
+<td style="text-align: right;">0x26591E50</td>
+</tr>
+<tr>
+<td>Perseus</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CAMO_06</td>
+<td style="text-align: right;">0x302731EC</td>
+</tr>
+<tr>
+<td>Leopard</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CAMO_07</td>
+<td style="text-align: right;">0xAC722A78</td>
+</tr>
+<tr>
+<td>Zebra</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CAMO_08</td>
+<td style="text-align: right;">0xBEA4CEDD</td>
+</tr>
+<tr>
+<td>Geometric</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CAMO_09</td>
+<td style="text-align: right;">0xCD776C82</td>
+</tr>
+<tr>
+<td>Boom!</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CAMO_10</td>
+<td style="text-align: right;">0xABC5ACC7</td>
+</tr>
+<tr>
+<td>Patriotic</td>
+<td style="text-align: center;">COMPONENT_HEAVYSNIPER_MK2_CAMO_IND_01</td>
+<td style="text-align: right;">0x6C32D2EB</td>
+</tr>
+</tbody>
+</table>
+<h2 id="marksman-rifle">Marksman Rifle</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_CLIP_01</td>
+<td style="text-align: right;">0xD83B4141</td>
+</tr>
+<tr>
+<td>Extended Clip</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_CLIP_02</td>
+<td style="text-align: right;">0xCCFD2AC5</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM</td>
+<td style="text-align: right;">0x1C221B1A</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Suppressor</td>
+<td style="text-align: center;">COMPONENT_AT_AR_SUPP</td>
+<td style="text-align: right;">0x837445AA</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP</td>
+<td style="text-align: right;">0xC164F53</td>
+</tr>
+<tr>
+<td>Yusuf Amir Luxury Finish</td>
+<td style="text-align: center;">COMPONENT_MARKSMANRIFLE_VARMOD_LUXE</td>
+<td style="text-align: right;">0x161E9241</td>
+</tr>
+</tbody>
+</table>
+<h1 id="heavy-weapons">Heavy Weapons</h1>
+<h2 id="grenade-launcher">Grenade Launcher</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align: center;">Hash Key</th>
+<th style="text-align: right;">Hash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default Clip</td>
+<td style="text-align: center;">COMPONENT_GRENADELAUNCHER_CLIP_01</td>
+<td style="text-align: right;">0x11AE5C97</td>
+</tr>
+<tr>
+<td>Flashlight</td>
+<td style="text-align: center;">COMPONENT_AT_AR_FLSH</td>
+<td style="text-align: right;">0x7BC4CDDC</td>
+</tr>
+<tr>
+<td>Grip</td>
+<td style="text-align: center;">COMPONENT_AT_AR_AFGRIP</td>
+<td style="text-align: right;">0xC164F53</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td style="text-align: center;">COMPONENT_AT_SCOPE_SMALL</td>
+<td style="text-align: right;">0xAA2C45B4</td>
+</tr>
+</tbody>
+</table>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../../styles/discord.js"></script>
+<script type="text/javascript" src="../../../styles/main.js"></script>
+
+    </body>
+
+</html>

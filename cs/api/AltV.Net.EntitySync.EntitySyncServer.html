@@ -1,0 +1,758 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EntitySyncServer
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class EntitySyncServer
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_EntitySync_EntitySyncServer__ctor_System_UInt64_Func_System_UInt64_System_Int32__Func_System_UInt64_System_Boolean__Func_System_UInt64_AltV_Net_EntitySync_IClientRepository_AltV_Net_EntitySync_NetworkLayer__Func_AltV_Net_EntitySync_IEntity_System_UInt64_System_UInt64__Func_System_UInt64_System_UInt64_System_UInt64_System_UInt64__Func_System_UInt64_AltV_Net_EntitySync_SpatialPartitions_SpatialPartition__AltV_Net_EntitySync_IIdProvider_System_UInt64__">EntitySyncServer(UInt64, Func&lt;UInt64, Int32&gt;, Func&lt;UInt64, Boolean&gt;, Func&lt;UInt64, IClientRepository, NetworkLayer&gt;, Func&lt;IEntity, UInt64, UInt64&gt;, Func&lt;UInt64, UInt64, UInt64, UInt64&gt;, Func&lt;UInt64, SpatialPartition&gt;, IIdProvider&lt;UInt64&gt;)</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_EntitySync_EntitySyncServer_AddEntity_AltV_Net_EntitySync_IEntity_">AddEntity(IEntity)</a></li><li><a href="#AltV_Net_EntitySync_EntitySyncServer_CreateEntity_System_UInt64_System_UInt64_Vector3_System_Int32_System_UInt32_IDictionary_System_String_System_Object__">CreateEntity(UInt64, UInt64, Vector3, Int32, UInt32, IDictionary&lt;String, Object&gt;)</a></li><li><a href="#AltV_Net_EntitySync_EntitySyncServer_CreateEntity_System_UInt64_Vector3_System_Int32_System_UInt32_IDictionary_System_String_System_Object__">CreateEntity(UInt64, Vector3, Int32, UInt32, IDictionary&lt;String, Object&gt;)</a></li><li><a href="#AltV_Net_EntitySync_EntitySyncServer_FindEntities_Vector3_System_Int32_">FindEntities(Vector3, Int32)</a></li><li><a href="#AltV_Net_EntitySync_EntitySyncServer_GetAllEntities">GetAllEntities()</a></li><li><a href="#AltV_Net_EntitySync_EntitySyncServer_RemoveEntity_AltV_Net_EntitySync_IEntity_">RemoveEntity(IEntity)</a></li><li><a href="#AltV_Net_EntitySync_EntitySyncServer_RemoveEntity_System_UInt64_System_UInt64_">RemoveEntity(UInt64, UInt64)</a></li><li><a href="#AltV_Net_EntitySync_EntitySyncServer_ResetEntityData_AltV_Net_EntitySync_IEntity_System_String_">ResetEntityData(IEntity, String)</a></li><li><a href="#AltV_Net_EntitySync_EntitySyncServer_Stop">Stop()</a></li><li><a href="#AltV_Net_EntitySync_EntitySyncServer_TryGetEntity_System_UInt64_System_UInt64_AltV_Net_EntitySync_IEntity__">TryGetEntity(UInt64, UInt64, out IEntity)</a></li><li><a href="#AltV_Net_EntitySync_EntitySyncServer_UpdateEntity_AltV_Net_EntitySync_IEntity_">UpdateEntity(IEntity)</a></li><li><a href="#AltV_Net_EntitySync_EntitySyncServer_UpdateEntityData_AltV_Net_EntitySync_IEntity_System_String_System_Object_">UpdateEntityData(IEntity, String, Object)</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.EntitySync.EntitySyncServer">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L14">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_EntitySync_EntitySyncServer" data-uid="AltV.Net.EntitySync.EntitySyncServer" class="text-break">Class EntitySyncServer
+  </h1>
+  <div class="markdown level0 summary"><p>The sync server creates the threads, the client repository and entity repositories.
+It transmits the streamer callbacks to the network layer.
+It will also transfer callbacks from network layer to streamer, for e.g. updating entity position when net owner is implemented.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EntitySyncServer</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.EntitySync.html">AltV.Net.EntitySync</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.EntitySync.dll</h6>
+  <h5 id="AltV_Net_EntitySync_EntitySyncServer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EntitySyncServer : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer__ctor_System_UInt64_Func_System_UInt64_System_Int32__Func_System_UInt64_System_Boolean__Func_System_UInt64_AltV_Net_EntitySync_IClientRepository_AltV_Net_EntitySync_NetworkLayer__Func_AltV_Net_EntitySync_IEntity_System_UInt64_System_UInt64__Func_System_UInt64_System_UInt64_System_UInt64_System_UInt64__Func_System_UInt64_AltV_Net_EntitySync_SpatialPartitions_SpatialPartition__AltV_Net_EntitySync_IIdProvider_System_UInt64__.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.%23ctor(System.UInt64%2CFunc%7BSystem.UInt64%2CSystem.Int32%7D%2CFunc%7BSystem.UInt64%2CSystem.Boolean%7D%2CFunc%7BSystem.UInt64%2CAltV.Net.EntitySync.IClientRepository%2CAltV.Net.EntitySync.NetworkLayer%7D%2CFunc%7BAltV.Net.EntitySync.IEntity%2CSystem.UInt64%2CSystem.UInt64%7D%2CFunc%7BSystem.UInt64%2CSystem.UInt64%2CSystem.UInt64%2CSystem.UInt64%7D%2CFunc%7BSystem.UInt64%2CAltV.Net.EntitySync.SpatialPartitions.SpatialPartition%7D%2CAltV.Net.EntitySync.IIdProvider%7BSystem.UInt64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L36">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer__ctor_" data-uid="AltV.Net.EntitySync.EntitySyncServer.#ctor*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer__ctor_System_UInt64_Func_System_UInt64_System_Int32__Func_System_UInt64_System_Boolean__Func_System_UInt64_AltV_Net_EntitySync_IClientRepository_AltV_Net_EntitySync_NetworkLayer__Func_AltV_Net_EntitySync_IEntity_System_UInt64_System_UInt64__Func_System_UInt64_System_UInt64_System_UInt64_System_UInt64__Func_System_UInt64_AltV_Net_EntitySync_SpatialPartitions_SpatialPartition__AltV_Net_EntitySync_IIdProvider_System_UInt64__" data-uid="AltV.Net.EntitySync.EntitySyncServer.#ctor(System.UInt64,Func{System.UInt64,System.Int32},Func{System.UInt64,System.Boolean},Func{System.UInt64,AltV.Net.EntitySync.IClientRepository,AltV.Net.EntitySync.NetworkLayer},Func{AltV.Net.EntitySync.IEntity,System.UInt64,System.UInt64},Func{System.UInt64,System.UInt64,System.UInt64,System.UInt64},Func{System.UInt64,AltV.Net.EntitySync.SpatialPartitions.SpatialPartition},AltV.Net.EntitySync.IIdProvider{System.UInt64})">EntitySyncServer(UInt64, Func&lt;UInt64, Int32&gt;, Func&lt;UInt64, Boolean&gt;, Func&lt;UInt64, IClientRepository, NetworkLayer&gt;, Func&lt;IEntity, UInt64, UInt64&gt;, Func&lt;UInt64, UInt64, UInt64, UInt64&gt;, Func&lt;UInt64, SpatialPartition&gt;, IIdProvider&lt;UInt64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntitySyncServer(ulong threadCount, Func&lt;ulong, int&gt; syncRate, Func&lt;ulong, bool&gt; netOwnerEvents, Func&lt;ulong, IClientRepository, NetworkLayer&gt; createNetworkLayer, Func&lt;IEntity, ulong, ulong&gt; entityThreadId, Func&lt;ulong, ulong, ulong, ulong&gt; entityIdAndTypeThreadId, Func&lt;ulong, SpatialPartition&gt; createSpatialPartition, IIdProvider&lt;ulong&gt; idProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">threadCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.UInt64</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">syncRate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.UInt64</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">netOwnerEvents</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="AltV.Net.EntitySync.IClientRepository.html">IClientRepository</a>, <a class="xref" href="AltV.Net.EntitySync.NetworkLayer.html">NetworkLayer</a>&gt;</td>
+        <td><span class="parametername">createNetworkLayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a>, <span class="xref">System.UInt64</span>, <span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">entityThreadId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.UInt64</span>, <span class="xref">System.UInt64</span>, <span class="xref">System.UInt64</span>, <span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">entityIdAndTypeThreadId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.UInt64</span>, <a class="xref" href="AltV.Net.EntitySync.SpatialPartitions.SpatialPartition.html">SpatialPartition</a>&gt;</td>
+        <td><span class="parametername">createSpatialPartition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.IIdProvider-1.html">IIdProvider</a>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">idProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_AddEntity_AltV_Net_EntitySync_IEntity_.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.AddEntity(AltV.Net.EntitySync.IEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L193">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_AddEntity_" data-uid="AltV.Net.EntitySync.EntitySyncServer.AddEntity*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_AddEntity_AltV_Net_EntitySync_IEntity_" data-uid="AltV.Net.EntitySync.EntitySyncServer.AddEntity(AltV.Net.EntitySync.IEntity)">AddEntity(IEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEntity(IEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_CreateEntity_System_UInt64_System_UInt64_Vector3_System_Int32_System_UInt32_IDictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.CreateEntity(System.UInt64%2CSystem.UInt64%2CVector3%2CSystem.Int32%2CSystem.UInt32%2CIDictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L182">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_CreateEntity_" data-uid="AltV.Net.EntitySync.EntitySyncServer.CreateEntity*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_CreateEntity_System_UInt64_System_UInt64_Vector3_System_Int32_System_UInt32_IDictionary_System_String_System_Object__" data-uid="AltV.Net.EntitySync.EntitySyncServer.CreateEntity(System.UInt64,System.UInt64,Vector3,System.Int32,System.UInt32,IDictionary{System.String,System.Object})">CreateEntity(UInt64, UInt64, Vector3, Int32, UInt32, IDictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntity CreateEntity(ulong id, ulong type, Vector3 position, int dimension, uint range, IDictionary&lt;string, object&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dimension</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">range</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_CreateEntity_System_UInt64_Vector3_System_Int32_System_UInt32_IDictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.CreateEntity(System.UInt64%2CVector3%2CSystem.Int32%2CSystem.UInt32%2CIDictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L175">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_CreateEntity_" data-uid="AltV.Net.EntitySync.EntitySyncServer.CreateEntity*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_CreateEntity_System_UInt64_Vector3_System_Int32_System_UInt32_IDictionary_System_String_System_Object__" data-uid="AltV.Net.EntitySync.EntitySyncServer.CreateEntity(System.UInt64,Vector3,System.Int32,System.UInt32,IDictionary{System.String,System.Object})">CreateEntity(UInt64, Vector3, Int32, UInt32, IDictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntity CreateEntity(ulong type, Vector3 position, int dimension, uint range, IDictionary&lt;string, object&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dimension</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">range</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_FindEntities_Vector3_System_Int32_.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.FindEntities(Vector3%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L235">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_FindEntities_" data-uid="AltV.Net.EntitySync.EntitySyncServer.FindEntities*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_FindEntities_Vector3_System_Int32_" data-uid="AltV.Net.EntitySync.EntitySyncServer.FindEntities(Vector3,System.Int32)">FindEntities(Vector3, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IEntity&gt; FindEntities(Vector3 position, int dimension)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">dimension</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_GetAllEntities.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.GetAllEntities%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L230">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_GetAllEntities_" data-uid="AltV.Net.EntitySync.EntitySyncServer.GetAllEntities*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_GetAllEntities" data-uid="AltV.Net.EntitySync.EntitySyncServer.GetAllEntities">GetAllEntities()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IEntity&gt; GetAllEntities()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_RemoveEntity_AltV_Net_EntitySync_IEntity_.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.RemoveEntity(AltV.Net.EntitySync.IEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L198">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_RemoveEntity_" data-uid="AltV.Net.EntitySync.EntitySyncServer.RemoveEntity*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_RemoveEntity_AltV_Net_EntitySync_IEntity_" data-uid="AltV.Net.EntitySync.EntitySyncServer.RemoveEntity(AltV.Net.EntitySync.IEntity)">RemoveEntity(IEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveEntity(IEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_RemoveEntity_System_UInt64_System_UInt64_.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.RemoveEntity(System.UInt64%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L204">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_RemoveEntity_" data-uid="AltV.Net.EntitySync.EntitySyncServer.RemoveEntity*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_RemoveEntity_System_UInt64_System_UInt64_" data-uid="AltV.Net.EntitySync.EntitySyncServer.RemoveEntity(System.UInt64,System.UInt64)">RemoveEntity(UInt64, UInt64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveEntity(ulong id, ulong type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_ResetEntityData_AltV_Net_EntitySync_IEntity_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.ResetEntityData(AltV.Net.EntitySync.IEntity%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L220">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_ResetEntityData_" data-uid="AltV.Net.EntitySync.EntitySyncServer.ResetEntityData*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_ResetEntityData_AltV_Net_EntitySync_IEntity_System_String_" data-uid="AltV.Net.EntitySync.EntitySyncServer.ResetEntityData(AltV.Net.EntitySync.IEntity,System.String)">ResetEntityData(IEntity, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetEntityData(IEntity entity, string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_Stop.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L249">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_Stop_" data-uid="AltV.Net.EntitySync.EntitySyncServer.Stop*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_Stop" data-uid="AltV.Net.EntitySync.EntitySyncServer.Stop">Stop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_TryGetEntity_System_UInt64_System_UInt64_AltV_Net_EntitySync_IEntity__.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.TryGetEntity(System.UInt64%2CSystem.UInt64%2CAltV.Net.EntitySync.IEntity%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L225">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_TryGetEntity_" data-uid="AltV.Net.EntitySync.EntitySyncServer.TryGetEntity*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_TryGetEntity_System_UInt64_System_UInt64_AltV_Net_EntitySync_IEntity__" data-uid="AltV.Net.EntitySync.EntitySyncServer.TryGetEntity(System.UInt64,System.UInt64,AltV.Net.EntitySync.IEntity@)">TryGetEntity(UInt64, UInt64, out IEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetEntity(ulong id, ulong type, out IEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_UpdateEntity_AltV_Net_EntitySync_IEntity_.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.UpdateEntity(AltV.Net.EntitySync.IEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L210">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_UpdateEntity_" data-uid="AltV.Net.EntitySync.EntitySyncServer.UpdateEntity*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_UpdateEntity_AltV_Net_EntitySync_IEntity_" data-uid="AltV.Net.EntitySync.EntitySyncServer.UpdateEntity(AltV.Net.EntitySync.IEntity)">UpdateEntity(IEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateEntity(IEntity entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_EntitySync_EntitySyncServer_UpdateEntityData_AltV_Net_EntitySync_IEntity_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AltV.Net.EntitySync.EntitySyncServer.UpdateEntityData(AltV.Net.EntitySync.IEntity%2CSystem.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/1ccd2fcd7464ebb17845b6fbb4215ebde91d58a7/api/AltV.Net.EntitySync/EntitySyncServer.cs/#L215">View Source</a>
+  </span>
+  <a id="AltV_Net_EntitySync_EntitySyncServer_UpdateEntityData_" data-uid="AltV.Net.EntitySync.EntitySyncServer.UpdateEntityData*"></a>
+  <h4 id="AltV_Net_EntitySync_EntitySyncServer_UpdateEntityData_AltV_Net_EntitySync_IEntity_System_String_System_Object_" data-uid="AltV.Net.EntitySync.EntitySyncServer.UpdateEntityData(AltV.Net.EntitySync.IEntity,System.String,System.Object)">UpdateEntityData(IEntity, String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateEntityData(IEntity entity, string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.EntitySync.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

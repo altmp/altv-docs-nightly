@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Weather </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Weather ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../styles/colors.css">
+    <link rel="stylesheet" href="../../../styles/discord.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../../index.html">
+                        <img src="../../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#weather">Weather</a><ul class="level2 nav bs-docs-sidenav weather"><li><a href="#weather-ids">Weather IDs</a></li><li><a href="#general-preview">General Preview</a></li><li><a href="#weather-id-9">Weather ID 9</a></li><li><a href="#weather-id-14">Weather ID 14</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs-gta/blob/master/articles/references/weather.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="weather">Weather</h1>
+
+<h2 id="weather-ids">Weather IDs</h2>
+<table>
+<thead>
+<tr>
+<th>Weather</th>
+<th>ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Extra Sunny</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Clear</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Clouds</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Smog</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Foggy</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Overcast</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Rain</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Thunder</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Light rain</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Smoggy light rain</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Very light snow</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Windy light snow</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Light snow</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Christmas</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Halloween</td>
+</tr>
+</tbody>
+</table>
+<h2 id="general-preview">General Preview</h2>
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/0_day.jpg" alt="Missing image &quot;0_day.jpg&quot;" title="Extra Sunny" loading="lazy">
+        </div>
+        <b>ID 0</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/1_day.jpg" alt="Missing image &quot;1_day.jpg&quot;" title="Clear" loading="lazy">
+        </div>
+        <b>ID 1</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/2_day.jpg" alt="Missing image &quot;2_day.jpg&quot;" title="Clouds" loading="lazy">
+        </div>
+        <b>ID 2</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/3_day.jpg" alt="Missing image &quot;3_day.jpg&quot;" title="Smog" loading="lazy">
+        </div>
+        <b>ID 3</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/4_day.jpg" alt="Missing image &quot;4_day.jpg&quot;" title="Foggy" loading="lazy">
+        </div>
+        <b>ID 4</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/5_day.jpg" alt="Missing image &quot;5_day.jpg&quot;" title="Overcast" loading="lazy">
+        </div>
+        <b>ID 5</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/6_day.jpg" alt="Missing image &quot;6_day.jpg&quot;" title="Rain" loading="lazy">
+        </div>
+        <b>ID 6</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/7_day.jpg" alt="Missing image &quot;7_day.jpg&quot;" title="Thunder" loading="lazy">
+        </div>
+        <b>ID 7</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/8_day.jpg" alt="Missing image &quot;8_day.jpg&quot;" title="Light rain" loading="lazy">
+        </div>
+        <b>ID 8</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_day.jpg" alt="Missing image &quot;9_day.jpg&quot;" title="Smoggy light rain" loading="lazy">
+        </div>
+        <b>ID 9</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/10_day.jpg" alt="Missing image &quot;10_day.jpg&quot;" title="Very light snow" loading="lazy">
+        </div>
+        <b>ID 10</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/11_day.jpg" alt="Missing image &quot;11_day.jpg&quot;" title="Windy light snow" loading="lazy">
+        </div>
+        <b>ID 11</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/12_day.jpg" alt="Missing image &quot;12_day.jpg&quot;" title="Light snow" loading="lazy">
+        </div>
+        <b>ID 12</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/13_day.jpg" alt="Missing image &quot;13_day.jpg&quot;" title="Christmas" loading="lazy">
+        </div>
+        <b>ID 13</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/14_day.jpg" alt="Missing image &quot;14_day.jpg&quot;" title="Halloween" loading="lazy">
+        </div>
+        <b>ID 14</b>
+    </div>
+</div>
+<h2 id="weather-id-9">Weather ID 9</h2>
+<p>Depending on the time.</p>
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_0.jpg" alt="Missing image &quot;9_hour_0.jpg&quot;" title="Time: 00:00" loading="lazy">
+        </div>
+        <b>Time: 00:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_1.jpg" alt="Missing image &quot;9_hour_1.jpg&quot;" title="Time: 01:00" loading="lazy">
+        </div>
+        <b>Time: 01:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_2.jpg" alt="Missing image &quot;9_hour_2.jpg&quot;" title="Time: 02:00" loading="lazy">
+        </div>
+        <b>Time: 02:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_3.jpg" alt="Missing image &quot;9_hour_3.jpg&quot;" title="Time: 03:00" loading="lazy">
+        </div>
+        <b>Time: 03:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_4.jpg" alt="Missing image &quot;9_hour_4.jpg&quot;" title="Time: 04:00" loading="lazy">
+        </div>
+        <b>Time: 04:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_5.jpg" alt="Missing image &quot;9_hour_5.jpg&quot;" title="Time: 05:00" loading="lazy">
+        </div>
+        <b>Time: 05:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_6.jpg" alt="Missing image &quot;9_hour_6.jpg&quot;" title="Time: 06:00" loading="lazy">
+        </div>
+        <b>Time: 06:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_7.jpg" alt="Missing image &quot;9_hour_7.jpg&quot;" title="Time: 07:00" loading="lazy">
+        </div>
+        <b>Time: 07:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_8.jpg" alt="Missing image &quot;9_hour_8.jpg&quot;" title="Time: 08:00" loading="lazy">
+        </div>
+        <b>Time: 08:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_9.jpg" alt="Missing image &quot;9_hour_9.jpg&quot;" title="Time: 09:00" loading="lazy">
+        </div>
+        <b>Time: 09:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_10.jpg" alt="Missing image &quot;9_hour_10.jpg&quot;" title="Time: 10:00" loading="lazy">
+        </div>
+        <b>Time: 10:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_11.jpg" alt="Missing image &quot;9_hour_11.jpg&quot;" title="Time: 11:00" loading="lazy">
+        </div>
+        <b>Time: 11:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_12.jpg" alt="Missing image &quot;9_hour_12.jpg&quot;" title="Time: 12:00" loading="lazy">
+        </div>
+        <b>Time: 12:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_13.jpg" alt="Missing image &quot;9_hour_13.jpg&quot;" title="Time: 13:00" loading="lazy">
+        </div>
+        <b>Time: 13:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_14.jpg" alt="Missing image &quot;9_hour_14.jpg&quot;" title="Time: 14:00" loading="lazy">
+        </div>
+        <b>Time: 14:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_15.jpg" alt="Missing image &quot;9_hour_15.jpg&quot;" title="Time: 15:00" loading="lazy">
+        </div>
+        <b>Time: 15:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_16.jpg" alt="Missing image &quot;9_hour_16.jpg&quot;" title="Time: 16:00" loading="lazy">
+        </div>
+        <b>Time: 16:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_17.jpg" alt="Missing image &quot;9_hour_17.jpg&quot;" title="Time: 17:00" loading="lazy">
+        </div>
+        <b>Time: 17:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_18.jpg" alt="Missing image &quot;9_hour_18.jpg&quot;" title="Time: 18:00" loading="lazy">
+        </div>
+        <b>Time: 18:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_19.jpg" alt="Missing image &quot;9_hour_19.jpg&quot;" title="Time: 19:00" loading="lazy">
+        </div>
+        <b>Time: 19:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_20.jpg" alt="Missing image &quot;9_hour_20.jpg&quot;" title="Time: 20:00" loading="lazy">
+        </div>
+        <b>Time: 20:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_21.jpg" alt="Missing image &quot;9_hour_21.jpg&quot;" title="Time: 21:00" loading="lazy">
+        </div>
+        <b>Time: 21:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_22.jpg" alt="Missing image &quot;9_hour_22.jpg&quot;" title="Time: 22:00" loading="lazy">
+        </div>
+        <b>Time: 22:00</b>
+    </div>
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/9_hour_23.jpg" alt="Missing image &quot;9_hour_23.jpg&quot;" title="Time: 23:00" loading="lazy">
+        </div>
+        <b>Time: 23:00</b>
+    </div>
+</div>
+<h2 id="weather-id-14">Weather ID 14</h2>
+<p>This weather ID is more noticeable at night.</p>
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="grid-item-img">
+            <img src="../../../altv-docs-gta-assets/images/world/weather/14_night.jpg" alt="Missing image &quot;14_night.jpg&quot;" title="Time: 00:00" loading="lazy">
+        </div>
+        <b>Time: 00:00</b>
+    </div>
+</div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../../styles/discord.js"></script>
+<script type="text/javascript" src="../../../styles/main.js"></script>
+
+    </body>
+
+</html>

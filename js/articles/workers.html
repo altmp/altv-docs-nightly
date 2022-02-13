@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Workers </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Workers ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#workers">Workers</a><ul class="level2 nav bs-docs-sidenav workers"><li><a href="#what-are-the-altv-workers">What are the alt:V Workers</a><ul class="level3 nav bs-docs-sidenav what-are-the-altv-workers"><li><a href="#important-notes">Important notes</a></li></ul></li><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#classes-available-in-a-worker">Classes available in a worker</a></li><li><a href="#functions-available-in-a-worker">Functions available in a worker</a></li><li><a href="#properties-available-in-a-worker">Properties available in a worker</a></li><li><a href="#how-to-create-a-worker">How to create a worker</a></li></ul></li><li><a href="#built-in-worker-events">Built-in worker events</a><ul class="level3 nav bs-docs-sidenav built-in-worker-events"><li><a href="#knowing-when-the-worker-is-loaded">Knowing when the worker is loaded</a></li><li><a href="#error-handling">Error handling</a></li><li><a href="#communicating-from-the-client-to-the-worker">Communicating from the client to the Worker</a></li><li><a href="#communicating-from-the-worker-to-the-client">Communicating from the worker to the client</a></li><li><a href="#using-shared-array-buffers">Using shared array buffers</a></li></ul></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-types/blob/master/docs/articles/workers.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="workers">Workers</h1>
+
+<h2 id="what-are-the-altv-workers">What are the alt:V Workers</h2>
+<p>The alt:V workers implementation is very similar to the NodeJS one as it allows you to run javascript code in parallel in another thread.
+Workers (threads) are useful for performing CPU-intensive operations, while they aren't any big help with I/O-intensive work.
+The V8 asynchronous I/O operations are more efficient than Workers can be.</p>
+<h3 id="important-notes">Important notes</h3>
+<ul>
+<li>Natives are not accessible in workers</li>
+<li>Creating a worker thread won't make your code perform better, it will just offload it in another thread</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>In order to be able to use the alt:V Worker API, you must import it via <code>import * as alt from alt-worker</code>. You can find the whole worker class api <a href="https://docs.altv.mp/js/api/alt-client.Worker.html">here</a></p>
+</div>
+<h3 id="classes-available-in-a-worker">Classes available in a worker</h3>
+<p>Only the following client-side alt API classes that are thread safe are available in a Worker:</p>
+<ul>
+<li>alt.File</li>
+<li>alt.RGBA</li>
+<li>alt.Vector2</li>
+<li>alt.Vector3</li>
+</ul>
+<h3 id="functions-available-in-a-worker">Functions available in a worker</h3>
+<p>In the alt:V context, basics like <code>setInterval</code> or <code>console.log</code> don't exist. That's why we expose our own functions for it, but to make it easier if you do <code>setInterval</code> or <code>console.log</code> it will call the corresponding alt method.</p>
+<table>
+<thead>
+<tr>
+<th>Function Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alt.emit</td>
+<td>Emit an event to the client side.</td>
+</tr>
+<tr>
+<td>alt.on</td>
+<td>Receives an event emitted from the client side.</td>
+</tr>
+<tr>
+<td>alt.once</td>
+<td>Receives an event emitted from the client-side. Once triggered the handler is destroyed.</td>
+</tr>
+<tr>
+<td>alt.log</td>
+<td>Logs the specified arguments to the console using alt:V logger. (gets printed in the client logs files).</td>
+</tr>
+<tr>
+<td>alt.logWarning</td>
+<td>Logs the specified arguments as a warning to the console using alt:V logger.</td>
+</tr>
+<tr>
+<td>alt.logError</td>
+<td>Logs the specified arguments as an error to the console using alt:V logger.</td>
+</tr>
+<tr>
+<td>alt.nextTick</td>
+<td>Schedules execution of handler on next tick/next frame.</td>
+</tr>
+<tr>
+<td>alt.setInterval</td>
+<td>Schedules execution of handler in specified intervals.</td>
+</tr>
+<tr>
+<td>alt.setTimeout</td>
+<td>Schedules execution of handler once after the expiration of interval.</td>
+</tr>
+<tr>
+<td>alt.clearNextTick</td>
+<td>Clears a timer set with the nextTick function.</td>
+</tr>
+<tr>
+<td>alt.clearInterval</td>
+<td>Clears a timer set with the setInterval function.</td>
+</tr>
+<tr>
+<td>alt.clearTimeout</td>
+<td>Clears a timer set with the setTimeout function.</td>
+</tr>
+<tr>
+<td>alt.hash</td>
+<td>Creates a hash using Jenkins one-at-a-time algorithm.</td>
+</tr>
+<tr>
+<td>alt.getSharedArrayBuffer</td>
+<td>Retrieves the shared array buffer instance with the given id.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties-available-in-a-worker">Properties available in a worker</h3>
+<table>
+<thead>
+<tr>
+<th>Property Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alt.version</td>
+<td>Represents the current version.</td>
+</tr>
+<tr>
+<td>alt.branch</td>
+<td>Represents the current branch.</td>
+</tr>
+<tr>
+<td>alt.sdkVersion</td>
+<td>Represents the current SDK version.</td>
+</tr>
+<tr>
+<td>alt.debug</td>
+<td>Returns if the resource is in debug mode.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-to-create-a-worker">How to create a worker</h3>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tab1-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-0" data-tab="tab1-0" tabindex="0" aria-selected="true">relative path</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tab1-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-1" data-tab="tab1-1" tabindex="-1">absolute path</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_tab1-0" role="tabpanel" data-tab="tab1-0">
+
+<pre><code class="lang-js">import * as alt from 'alt-client';
+
+const worker = new alt.Worker('./worker.js');
+worker.start();
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_tab1-1" role="tabpanel" data-tab="tab1-1" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-js">import * as alt from 'alt-client';
+
+// Path starting from the resource root directory
+const worker = new alt.Worker('/client/worker.js');
+worker.start();
+</code></pre>
+</section>
+</div>
+<h2 id="built-in-worker-events">Built-in worker events</h2>
+<h3 id="knowing-when-the-worker-is-loaded">Knowing when the worker is loaded</h3>
+<pre><code class="lang-js">worker.on('load', () =&gt; {
+    console.log('Worker loaded');
+});
+</code></pre>
+<h3 id="error-handling">Error handling</h3>
+<pre><code class="lang-js">worker.on('error', (error) =&gt; {
+    console.log(error);
+});
+</code></pre>
+<h3 id="communicating-from-the-client-to-the-worker">Communicating from the client to the Worker</h3>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_tab2-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_tab2-0" data-tab="tab2-0" tabindex="0" aria-selected="true">client</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_tab2-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_tab2-1" data-tab="tab2-1" tabindex="-1">worker</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_tab2-0" role="tabpanel" data-tab="tab2-0">
+
+<pre><code class="lang-js">import * as alt from 'alt-client';
+
+const worker = new alt.Worker('./worker.js');
+worker.start();
+
+worker.on('load', () =&gt; worker.emit('eventName', true, 0, [''], { p1: new Map() }));
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-1_tab2-1" role="tabpanel" data-tab="tab2-1" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-js">import * as alt from 'alt-worker';
+
+alt.on('eventName', (...args) =&gt; {
+    console.log(args);
+});
+</code></pre>
+</section>
+</div>
+<h3 id="communicating-from-the-worker-to-the-client">Communicating from the worker to the client</h3>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_tab3-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_tab3-0" data-tab="tab3-0" tabindex="0" aria-selected="true">worker</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_tab3-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_tab3-1" data-tab="tab3-1" tabindex="-1">client</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-2_tab3-0" role="tabpanel" data-tab="tab3-0">
+
+<pre><code class="lang-js">import * as alt from 'alt-worker';
+
+alt.emit('eventName', true, 0, [''], { p1: new Map() });
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-2_tab3-1" role="tabpanel" data-tab="tab3-1" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-js">import * as alt from 'alt-client';
+
+const worker = new alt.Worker('./worker.js');
+
+worker.on('eventName', (...args) =&gt; {
+    console.log(args);
+});
+</code></pre>
+</section>
+</div>
+<h3 id="using-shared-array-buffers">Using shared array buffers</h3>
+<p>An <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer">ArrayBuffer</a> is an object used to represent a generic, fixed-length raw binary data buffer.
+It is an array of bytes, you cannot directly manipulate its content but create a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray">TypedArray</a> object / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView">DataView</a> to read and write the buffer content.</p>
+<p>A <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer">SharedArrayBuffer</a> is very similar to an array buffer except it is built in a way that they can be used to create views on shared memory.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>You should learn how to use SharedArrayBuffers outside of the alt:V context in order to use them properly. The following example is making use of the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics">Atomics</a> API to make the SharedArrayBuffer usage <a href="https://en.wikipedia.org/wiki/Thread_safety">thread safe</a></p>
+</div>
+<p><strong>Example usage</strong></p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-3">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-3_tab4-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_tab4-0" data-tab="tab4-0" tabindex="0" aria-selected="true">client</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-3_tab4-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_tab4-1" data-tab="tab4-1" tabindex="-1">worker</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-3_tab4-0" role="tabpanel" data-tab="tab4-0">
+
+<pre><code class="lang-js">import * as alt from 'alt-client';
+
+const worker = new alt.Worker('./worker.js');
+worker.start();
+
+const buffer = createBuffer();
+const sharedArray = new Int32Array(buffer);
+
+worker.on('changedValue', () =&gt; {
+     for(let i = 0; i &lt; 10; i++){
+       // Output of the changed values on &quot;main thread&quot;
+       const value = Atomics.load(sharedArray,i);
+       console.log(`[Main thread]: Value of index ${i} is ${value}`);
+    }
+});
+
+function createBuffer() {
+    // Calculating the size of the buffer size depending on the array type
+    const length = 10;
+    const size = Int32Array.BYTES_PER_ELEMENT * length;
+    const sharedBuffer = new SharedArrayBuffer(size);
+    const sharedArray = new Int32Array(sharedBuffer);
+      
+    // applying values to the array
+    for(let i = 0; i&lt; 10; i++){
+        sharedArray[i] = i*20;
+    }
+  
+    const bufferIndex = alt.Worker.addSharedArrayBuffer(sharedBuffer);
+    worker.emit(&quot;addedMyBuffer&quot;, bufferIndex);
+    alt.log('emitted buffer to worker')
+
+    return sharedBuffer;
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-3_tab4-1" role="tabpanel" data-tab="tab4-1" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-js">alt.on('addedMyBuffer', (index) =&gt; {
+    //Getting the buffer by index and generate a Int32Array 
+    const buffer = alt.getSharedArrayBuffer(index);
+    const sharedArray = new Int32Array(buffer);
+
+    for(let i = 0; i &lt; 10; i++) {
+        //Read the value
+        const arrayValue = Atomics.load(sharedArray, i);
+        console.log(`[Worker] Value from main thread for [${i}] is ${arrayValue}`);
+
+        // Atomics.exchange returns the old value on i.
+        const oldValue = Atomics.exchange(sharedArray, i, 5)
+        console.log(`[Worker] Value change to 5 on [${i}]`);
+
+        // reading the new value
+        const changedValue = Atomics.load(sharedArray, i);
+        console.log(`[Worker] New value on ${i} is ${changedValue} (old value: ${oldValue})`);
+
+        alt.emit('changedValue');
+    }
+});
+</code></pre>
+</section>
+</div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>
