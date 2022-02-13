@@ -59,20 +59,29 @@ h1[id], h2[id]
 
 h3 
 {
-    margin-block-start: 1em;
+    margin-block-start: 3em;
     font-weight: 300;
     font-size: 1.5em;
     color: var(--header-secondary);
-    margin-block-start: 3em;
 }
 
 h3[id]
 {
     position: relative;
     margin: 0;
-    padding-block-start: 1em;
     padding-block-start: 3em;
     padding-block-end: 0.25em;
+}
+
+.content-column.Conceptual h1, .content-column.Conceptual h2,
+.content-column.Conceptual h3, .content-column.Conceptual h4,
+.content-column.Conceptual h5
+{
+    margin: 0 !important;
+    margin-block-start: revert !important;
+    margin-block-end: revert !important;
+    padding-block-start: 0 !important;
+    padding-block-end: 0 !important;
 }
 
 h4 
@@ -92,8 +101,8 @@ h4[id]
 
 h5
 {
-    margin-block-end: .8em;
     margin-block-start: 1em;
+    margin-block-end: .8em;
     font-size: .85em;
     font-weight: 500;
     color: var(--header-secondary);
@@ -101,8 +110,8 @@ h5
 
 h6
 {
-    font-size: .75em;
     margin: 0;
+    font-size: .75em;
     color: var(--header-secondary);
 }
 
@@ -1118,7 +1127,7 @@ code tr > td:first-child
 
 /* DocFX related */
 
-.content
+article.content
 {
     margin-bottom: 64px;
 }

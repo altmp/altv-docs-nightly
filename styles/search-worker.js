@@ -35,7 +35,6 @@ onmessage = function (ev) {
     return !term.startsWith('-') ? (!term.startsWith('+') ? '+' + term : term.substring(1)) : term;
   }).join(' '));
   const results = [];
-  hits.sort((a, b) => (searchData[a.ref].type > searchData[b.ref].type) - (searchData[a.ref].type < searchData[b.ref].type));
   hits.forEach(function (hit) {
     results.push(searchData[hit.ref]);
   });
