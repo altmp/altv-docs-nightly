@@ -293,7 +293,43 @@ alt.on('connectionQueueRemove', (connectionInfo: alt.ConnectionInfo) =&gt; {
 </section>
 <section id="tabpanel_bHGHmlrG6S_tabid-3" role="tabpanel" data-tab="tabid-3" aria-hidden="true" hidden="hidden">
 
-<pre><code class="lang-csharp"></code></pre>
+<pre><code class="lang-csharp">using AltV.Net.Async;
+using AltV.Net.Types;
+
+namespace Example
+{
+    class ExampleResource : AsyncResource
+    {
+        private async Task&lt;bool&gt; GetDataFromDatabase()
+        {
+            await Task.Delay(5000);
+            return true;
+        }
+
+        private async Task OnConnectionQueueAdd(IConnectionInfo connectionInfo)
+        {
+            if (await this.GetDataFromDatabase())
+                connectionInfo.Accept();
+        }
+
+        private Task OnConnectionQueueRemove(IConnectionInfo _)
+        {
+            Console.WriteLine(&quot;Player removed from the queue, even if I accept the connection now it's handled!&quot;);
+            return Task.CompletedTask;
+        }
+
+        public override void OnStart()
+        {
+            AltAsync.OnConnectionQueueAdd += this.OnConnectionQueueAdd;
+            AltAsync.OnConnectionQueueRemove += this.OnConnectionQueueRemove;
+        }
+
+        public override void OnStop()
+        {
+        }
+    }
+}
+</code></pre>
 </section>
 </div>
 </article>

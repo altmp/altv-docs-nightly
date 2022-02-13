@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>10.0-Release </title>
+    <title>8.0-Release </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="10.0-Release ">
+    <meta name="title" content="8.0-Release ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#100-release">10.0-Release</a><ul class="level2 nav bs-docs-sidenav 100-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li><li><a href="#breaking-changes">Breaking changes</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#80-release">8.0-Release</a><ul class="level2 nav bs-docs-sidenav 80-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#fixed-1">Fixed</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -127,64 +127,70 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/changelogs/upcoming.md/#L1">Improve this Doc</a>
+                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/changelogs/8_0.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
-<h1 id="100-release">10.0-Release</h1>
+<h1 id="80-release">8.0-Release</h1>
 
 <div class="WARNING">
 <h5>Warning</h5>
-<p>This update isn't released yet.</p>
+<p>This update is the latest.</p>
 </div>
-<div class="CAUTION">
-<h5>Caution</h5>
-<p>This update contains <strong>breaking changes</strong>, which can potentially break the functionality of your gamemode, please verify and change accordingly.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>This update was released on 20.12.2021<br>
+This update was a compatibility patch for the GTA Online DLC: The Contract</p>
+</div>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- 8.0 / 8.1:
+   - Add support for GTA version 2545 (The Contract DLC)
+   - Fix clientside vehicle enter / exit events
+- 8.2:
+   - Fix vehicle spawning
+- 8.3:
+   - Fix DLC vehicle spawning
+   - Fix vehicle.engineHealth getter
+- 8.4:
+   - Fix trailer spawning
+- 8.5:
+   - Add Quit and Reconnect button on server disconnect
+   - Fix weapon autoswap animation glitch
+   - Fix deleting vehicles via natives
+- 8.6:
+   - Fix trailer sync
+- 8.7:
+   - large projectiles wasn't synced
+- 8.8:
+   - adjust some gta pools
+- 8.9:
+   - Increase drawable related game pool sizes (DrawableStore &amp; DwdStore)
+</code></pre>
 </div>
 <h2 id="client">Client</h2>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- windowFocusChange Event
-- netOwnerChange event for local player ownership changes
-- loading rml document from string
+<pre><code class="lang-yaml">- Quit and Reconnect button on server disconnect
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- clientside created blips didn't delete on reconnect
-- Rockstar launcher detected unexpected Files
-- serverside blip attached to entity is not deleted with entity
-- serverside created blip API category setter doesent update
+<pre><code class="lang-yaml">- Support for GTA version 2545 (The Contract DLC)
+- Vehicle sync
+- Vehicle spawning
+- Vehicle enter / exit events
+- Deleting vehicles via natives
+- Weapon autoswap animation glitch
+- Attach API desync
+- Trailer attach desync
+- Trailer sync
 </code></pre>
 </div>
-<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- disabled document.execCommand in webviews
-</code></pre>
-</div>
-<h2 id="server">Server</h2>
-<h3 id="added-1">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- getServerConfig method
-- optimized synced meta data
-</code></pre>
-</div>
+<h2 id="server--client">Server &amp; Client</h2>
 <h3 id="fixed-1">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- serverside blip heading setter
-- vehicles created on resource start will be missing in resource start
-</code></pre>
-</div>
-<!-- ### <span style="color: red;">Breaking changes</span>
-
-> [!div class="nohljsln"]
-> ```yaml
-> ``` -->
-<h2 id="server--client">Server &amp; Client</h2>
-<h3 id="added-2">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- resource class
+<pre><code class="lang-yaml">- vehicle.engineHealth getter
 </code></pre>
 </div>
 </article>

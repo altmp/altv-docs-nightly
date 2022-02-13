@@ -170,7 +170,7 @@ async function getClientStatus() {
 
 async function autoReconnect()  {
     const status = await getClientStatus();
-    if (status !== &quot;MAIN_MENU&quot; || status !== &quot;IN_GAME&quot;) {
+    if (status !== &quot;MAIN_MENU&quot; &amp;&amp; status !== &quot;IN_GAME&quot;) {
         setTimeout(autoReconnect, 2500);
         return;
     }
@@ -208,7 +208,7 @@ async function getClientStatus(): Promise&lt;STATUS&gt; {
 
 async function autoReconnect(): Promise&lt;void&gt; {
     const status = await getClientStatus();
-    if (status !== &quot;MAIN_MENU&quot; || status !== &quot;IN_GAME&quot;) {
+    if (status !== &quot;MAIN_MENU&quot; &amp;&amp; status !== &quot;IN_GAME&quot;) {
         setTimeout(autoReconnect, 2500);
         return;
     }
@@ -228,7 +228,69 @@ autoReconnect();
 </section>
 <section id="tabpanel_bHGHmlrG6S_tabid-3" role="tabpanel" data-tab="tabid-3" aria-hidden="true" hidden="hidden">
 
-<pre><code class="lang-csharp"></code></pre>
+<pre><code class="lang-csharp">using AltV.Net.Async;
+using Timer = System.Timers.Timer;
+
+namespace Example
+{
+    class ExampleResource : AsyncResource
+    {
+        private const int DebugPort = 9223;
+
+        private readonly HttpClient _httpClient = new();
+        private readonly Timer _timer = new(2500);
+
+        private async Task&lt;string&gt; GetClientStatus()
+        {
+            try
+            {
+                var response = await this._httpClient.GetAsync($&quot;http://127.0.0.1:{DebugPort}/status&quot;);
+                return await response.Content.ReadAsStringAsync();
+            }
+            catch (Exception)
+            {
+                return &quot;ERROR&quot;;
+            }
+        }
+
+        private async Task AutoReconnect()
+        {
+            var status = await this.GetClientStatus();
+            if (status != &quot;MAIN_MENU&quot; &amp;&amp; status != &quot;IN_GAME&quot;)
+            {
+                this._timer.Start();
+                return;
+            }
+
+            try
+            {
+                await this._httpClient.PostAsync(
+                    $&quot;http://127.0.0.1:{DebugPort}/reconnect&quot;,
+                    new StringContent(&quot;serverPassword&quot;)  // only needed when a password is set in the server.cfg, otherwise pass null instead of StringContent
+                );
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+
+        public override void OnStart()
+        {
+            this._timer.Elapsed += (_, _) =&gt;
+            {
+                _ = this.AutoReconnect();
+            };
+            
+            _ = this.AutoReconnect();
+        }
+
+        public override void OnStop()
+        {
+        }
+    }
+}
+</code></pre>
 </section>
 </div>
 </article>

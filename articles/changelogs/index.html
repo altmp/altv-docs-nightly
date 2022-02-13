@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>8.0-Release </title>
+    <title>9.0-Release </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="8.0-Release ">
+    <meta name="title" content="9.0-Release ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#80-release">8.0-Release</a><ul class="level2 nav bs-docs-sidenav 80-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#fixed-1">Fixed</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#90-release">9.0-Release</a><ul class="level2 nav bs-docs-sidenav 90-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li><li><a href="#breaking-changes">Breaking changes</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,65 +132,121 @@
                                     </ul>
                                 </span>
 
-<h1 id="80-release">8.0-Release</h1>
+<h1 id="90-release">9.0-Release</h1>
 
-<div class="WARNING">
-<h5>Warning</h5>
-<p>This update is the latest.</p>
-</div>
 <div class="TIP">
 <h5>Tip</h5>
-<p>This update was released on 20.12.2021<br>
-This update was a compatibility patch for the GTA Online DLC: The Contract</p>
+<p>This update was released on 04.02.2022</p>
+</div>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>This update contains <strong>breaking changes</strong>, which can potentially break the functionality of your gamemode, please verify and change accordingly.</p>
 </div>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- 8.0 / 8.1:
-   - Add support for GTA version 2545 (The Contract DLC)
-   - Fix clientside vehicle enter / exit events
-- 8.2:
-   - Fix vehicle spawning
-- 8.3:
-   - Fix DLC vehicle spawning
-   - Fix vehicle.engineHealth getter
-- 8.4:
-   - Fix trailer spawning
-- 8.5:
-   - Add Quit and Reconnect button on server disconnect
-   - Fix weapon autoswap animation glitch
-   - Fix deleting vehicles via natives
-- 8.6:
-   - Fix trailer sync
-- 8.7:
-   - large projectiles wasn't synced
-- 8.8:
-   - adjust some gta pools
-- 8.9:
-   - Increase drawable related game pool sizes (DrawableStore &amp; DwdStore)
+<pre><code class="lang-yaml">- 9.1:
+   - Fixed crash in worker.pause &amp; worker.resume
+   - Change invalid timer id message to warning
+- 9.3:
+   - Fixed model change
+   - Fixed invisible player &amp; vehicles after server start in some cases
+- 9.4:
+   - Fixed bytecode related issues
+- 9.5:
+   - fixed ENB compatibility
 </code></pre>
 </div>
 <h2 id="client">Client</h2>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Quit and Reconnect button on server disconnect
+<pre><code class="lang-yaml">- debug http server for reconnect
+- isReloading getter
+- alt.Profiler.getMemoryProfile
+- alt.isCamFrozen()
+- password in connect url
+- spawned event
+- disabled social club menu
+- Option to exit Game Inside GTA:V  Menu
+- alt.copyToClipboard
+- start menu shortcut
+- reuse last password on reconnect command if no password specified
+- alt.worldToScreen, alt.screenToWorld &amp; alt.getCamPos
+- vehicle seatCount getter
+- Vector2 and RGBA support in webviews
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Support for GTA version 2545 (The Contract DLC)
-- Vehicle sync
-- Vehicle spawning
-- Vehicle enter / exit events
-- Deleting vehicles via natives
-- Weapon autoswap animation glitch
-- Attach API desync
-- Trailer attach desync
-- Trailer sync
+<pre><code class="lang-yaml">- netowner getter returned null
+- discord api wasn't working if it was started after alt:V launch
+- players didn't die at vehicle explosion
+- player got rejected if the server has no password, but pw field was not empty
+- player to player attach
+- &quot;Temp data already defined&quot;-Error
+- sometimes it wasn't possible to reconnect if you got a timeout once
+- weaponswap configflag deactivated vehicle weapons
+- setArtificialLightsState native
+- GetCursorPosition and SetCursorPosition was usable if game window was out of focus
+- getHeadshotBase64 crashes
+- AltV Voice LipSync
+</code></pre>
+</div>
+<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- client mods that need d3d11.dll to work are now disabled until further notice
+</code></pre>
+</div>
+<h2 id="server">Server</h2>
+<h3 id="added-1">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- warning when Server is started with debug mode
+- string support in beforePlayerConnect event
+- voice channel GetPlayers and GetPlayerCount
+- server starts with default config if no server.cfg exists
+- alt.stopServer
+- IsEntityInStreamingRange accepts entity id now
+- Warning when specifying cdn url without protocol
+- don't stream in players that are not spawned
+- warning when announcing but CDN URL is empty
+- warning when health or armour setters are used with invalid values
+- 3 unknown train setter &amp; getter
+- getVehicleModelInfoByHash
+- improved net owner calculations
+- improved server.cfg error message for Invalid token
+- polygon colshape
+- improved colshape remove performance
+- sync data optimization for high population areas
+- multithreaded sync
+- thread safe synced meta data
+- thread safe vehicle and player apis
+- improved server loop performance
+- connection queue
+- --help command-line option
+</code></pre>
+</div>
+<h3 id="fixed-1">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Crash if entity id limit is reached
+- OnPlayerLeaveVehicle event is never fired when a player disconnects
+- Vehicle locked state setter
+- crashes when using restartResource or stopResource
+- fixed colshape entity race conditions causing error logs
+- fixed connect race condition keeping entity connected
+- train doors were always open
+- version getter was broken on linux
+- vehicle healthdata getter was broken on linux
+</code></pre>
+</div>
+<h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- vehicle base64 getters and setter are now checking the gta version and the old data before this change is incompatible
 </code></pre>
 </div>
 <h2 id="server--client">Server &amp; Client</h2>
-<h3 id="fixed-1">Fixed</h3>
+<h3 id="added-2">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- vehicle.engineHealth getter
+<pre><code class="lang-yaml">- localMeta Api
+- getAllResources method
+- alt.time &amp; alt.timeEnd
 </code></pre>
 </div>
 </article>
