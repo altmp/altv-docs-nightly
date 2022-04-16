@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Mock_MockCheckpoint__ctor_AltV_Net_IServer_IntPtr_">MockCheckpoint(IServer, IntPtr)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Mock_MockCheckpoint_CheckpointType">CheckpointType</a></li><li><a href="#AltV_Net_Mock_MockCheckpoint_Color">Color</a></li><li><a href="#AltV_Net_Mock_MockCheckpoint_Height">Height</a></li><li><a href="#AltV_Net_Mock_MockCheckpoint_NextPosition">NextPosition</a></li><li><a href="#AltV_Net_Mock_MockCheckpoint_Radius">Radius</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Mock_MockCheckpoint__ctor_AltV_Net_ICore_IntPtr_">MockCheckpoint(ICore, IntPtr)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Mock_MockCheckpoint_CheckpointNativePointer">CheckpointNativePointer</a></li><li><a href="#AltV_Net_Mock_MockCheckpoint_CheckpointType">CheckpointType</a></li><li><a href="#AltV_Net_Mock_MockCheckpoint_Color">Color</a></li><li><a href="#AltV_Net_Mock_MockCheckpoint_Height">Height</a></li><li><a href="#AltV_Net_Mock_MockCheckpoint_NextPosition">NextPosition</a></li><li><a href="#AltV_Net_Mock_MockCheckpoint_Radius">Radius</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
                             </div>
 
                             
@@ -129,7 +129,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/dev/api/AltV.Net.Mock/MockCheckpoint.cs/#L7">View Source</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Mock/MockCheckpoint.cs/#L7">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockCheckpoint.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockCheckpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -154,15 +154,19 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><span class="xref">AltV.Net.Elements.Entities.IInternalBaseObject</span></div>
     <div><a class="xref" href="AltV.Net.Elements.Entities.ICheckpoint.html">ICheckpoint</a></div>
     <div><a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a></div>
     <div><a class="xref" href="AltV.Net.Elements.Entities.IWorldObject.html">IWorldObject</a></div>
+    <div><a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedWorldObject.html">ISharedWorldObject</a></div>
     <div><a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a></div>
-    <div><a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a></div>
-    <div><a class="xref" href="AltV.Net.Types.INative.html">INative</a></div>
+    <div><a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html">ISharedBaseObject</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AltV.Net.Mock.MockColShape.html#AltV_Net_Mock_MockColShape_ColShapeNativePointer">MockColShape.ColShapeNativePointer</a>
+    </div>
     <div>
       <a class="xref" href="AltV.Net.Mock.MockColShape.html#AltV_Net_Mock_MockColShape_ColShapeType">MockColShape.ColShapeType</a>
     </div>
@@ -182,118 +186,58 @@
       <a class="xref" href="AltV.Net.Mock.MockColShape.html#AltV_Net_Mock_MockColShape_IsVehicleIn_AltV_Net_Elements_Entities_IVehicle_">MockColShape.IsVehicleIn(IVehicle)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Mock.MockWorldObject.html#AltV_Net_Mock_MockWorldObject_Position">MockWorldObject.Position</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.WorldObject.html#AltV_Net_Elements_Entities_WorldObject_WorldObjectNativePointer">WorldObject.WorldObjectNativePointer</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Mock.MockWorldObject.html#AltV_Net_Mock_MockWorldObject_Dimension">MockWorldObject.Dimension</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.WorldObject.html#AltV_Net_Elements_Entities_WorldObject_NativePointer">WorldObject.NativePointer</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Mock.MockWorldObject.html#AltV_Net_Mock_MockWorldObject_HasMetaData_System_String_">MockWorldObject.HasMetaData(String)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.WorldObject.html#AltV_Net_Elements_Entities_WorldObject_Position">WorldObject.Position</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Mock.MockWorldObject.html#AltV_Net_Mock_MockWorldObject_DeleteMetaData_System_String_">MockWorldObject.DeleteMetaData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Mock.MockWorldObject.html#AltV_Net_Mock_MockWorldObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">MockWorldObject.SetMetaData(String, MValueConst)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Mock.MockWorldObject.html#AltV_Net_Mock_MockWorldObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">MockWorldObject.GetMetaData(String, MValueConst)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Mock.MockWorldObject.html#AltV_Net_Mock_MockWorldObject_InternalAddRef">MockWorldObject.InternalAddRef()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Mock.MockWorldObject.html#AltV_Net_Mock_MockWorldObject_InternalRemoveRef">MockWorldObject.InternalRemoveRef()</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.WorldObject.html#AltV_Net_Elements_Entities_WorldObject_Dimension">WorldObject.Dimension</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.WorldObject.html#AltV_Net_Elements_Entities_WorldObject_CheckIfEntityExists">WorldObject.CheckIfEntityExists()</a>
     </div>
     <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_BaseObjectNativePointer">BaseObject.BaseObjectNativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Core">BaseObject.Core</a>
+    </div>
+    <div>
       <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Server">BaseObject.Server</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_NativePointer">BaseObject.NativePointer</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Exists">BaseObject.Exists</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Type">BaseObject.Type</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_SetMetaData_System_String_System_Object_">BaseObject.SetMetaData(String, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData_System_String_System_Int32__">BaseObject.GetMetaData(String, Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData_System_String_System_UInt32__">BaseObject.GetMetaData(String, UInt32)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData_System_String_System_Single__">BaseObject.GetMetaData(String, Single)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData__1_System_String___0__">BaseObject.GetMetaData&lt;T&gt;(String, T)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_SetData_System_String_System_Object_">BaseObject.SetData(String, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetData__1_System_String___0__">BaseObject.GetData&lt;T&gt;(String, T)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetAllDataKeys">BaseObject.GetAllDataKeys()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_HasData_System_String_">BaseObject.HasData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_DeleteData_System_String_">BaseObject.DeleteData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_ClearData">BaseObject.ClearData()</a>
-    </div>
-    <div>
       <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_CheckIfCallIsValid_System_String_">BaseObject.CheckIfCallIsValid(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetHashCode">BaseObject.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Equals_System_Object_">BaseObject.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_OnRemove">BaseObject.OnRemove()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_AddRef">BaseObject.AddRef()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_RemoveRef">BaseObject.RemoveRef()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Mock.html">AltV.Net.Mock</a></h6>
   <h6><strong>Assembly</strong>: AltV.Net.Mock.dll</h6>
   <h5 id="AltV_Net_Mock_MockCheckpoint_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MockCheckpoint : MockColShape, IInternalBaseObject, ICheckpoint, IColShape, IWorldObject, IBaseObject, IRefCountable, INative</code></pre>
+    <pre><code class="lang-csharp hljs">public class MockCheckpoint : MockColShape, IInternalBaseObject, ICheckpoint, IColShape, IWorldObject, ISharedWorldObject, IBaseObject, ISharedBaseObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockCheckpoint__ctor_AltV_Net_IServer_IntPtr_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockCheckpoint.%23ctor(AltV.Net.IServer%2CIntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockCheckpoint__ctor_AltV_Net_ICore_IntPtr_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockCheckpoint.%23ctor(AltV.Net.ICore%2CIntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/dev/api/AltV.Net.Mock/MockCheckpoint.cs/#L9">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Mock/MockCheckpoint.cs/#L9">View Source</a>
   </span>
   <a id="AltV_Net_Mock_MockCheckpoint__ctor_" data-uid="AltV.Net.Mock.MockCheckpoint.#ctor*"></a>
-  <h4 id="AltV_Net_Mock_MockCheckpoint__ctor_AltV_Net_IServer_IntPtr_" data-uid="AltV.Net.Mock.MockCheckpoint.#ctor(AltV.Net.IServer,IntPtr)">MockCheckpoint(IServer, IntPtr)</h4>
+  <h4 id="AltV_Net_Mock_MockCheckpoint__ctor_AltV_Net_ICore_IntPtr_" data-uid="AltV.Net.Mock.MockCheckpoint.#ctor(AltV.Net.ICore,IntPtr)">MockCheckpoint(ICore, IntPtr)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MockCheckpoint(IServer server, IntPtr nativePointer)</code></pre>
+    <pre><code class="lang-csharp hljs">public MockCheckpoint(ICore core, IntPtr nativePointer)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -306,8 +250,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AltV.Net.IServer.html">IServer</a></td>
-        <td><span class="parametername">server</span></td>
+        <td><a class="xref" href="AltV.Net.ICore.html">ICore</a></td>
+        <td><span class="parametername">core</span></td>
         <td></td>
       </tr>
       <tr>
@@ -321,10 +265,40 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockCheckpoint_CheckpointNativePointer.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockCheckpoint.CheckpointNativePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Mock/MockCheckpoint.cs/#L15">View Source</a>
+  </span>
+  <a id="AltV_Net_Mock_MockCheckpoint_CheckpointNativePointer_" data-uid="AltV.Net.Mock.MockCheckpoint.CheckpointNativePointer*"></a>
+  <h4 id="AltV_Net_Mock_MockCheckpoint_CheckpointNativePointer" data-uid="AltV.Net.Mock.MockCheckpoint.CheckpointNativePointer">CheckpointNativePointer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr CheckpointNativePointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockCheckpoint_CheckpointType.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockCheckpoint.CheckpointType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/dev/api/AltV.Net.Mock/MockCheckpoint.cs/#L15">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Mock/MockCheckpoint.cs/#L16">View Source</a>
   </span>
   <a id="AltV_Net_Mock_MockCheckpoint_CheckpointType_" data-uid="AltV.Net.Mock.MockCheckpoint.CheckpointType*"></a>
   <h4 id="AltV_Net_Mock_MockCheckpoint_CheckpointType" data-uid="AltV.Net.Mock.MockCheckpoint.CheckpointType">CheckpointType</h4>
@@ -354,7 +328,7 @@
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockCheckpoint_Color.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockCheckpoint.Color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/dev/api/AltV.Net.Mock/MockCheckpoint.cs/#L18">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Mock/MockCheckpoint.cs/#L19">View Source</a>
   </span>
   <a id="AltV_Net_Mock_MockCheckpoint_Color_" data-uid="AltV.Net.Mock.MockCheckpoint.Color*"></a>
   <h4 id="AltV_Net_Mock_MockCheckpoint_Color" data-uid="AltV.Net.Mock.MockCheckpoint.Color">Color</h4>
@@ -374,7 +348,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AltV.Net.Data.Rgba.html">Rgba</a></td>
+        <td><span class="xref">Rgba</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -384,7 +358,7 @@
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockCheckpoint_Height.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockCheckpoint.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/dev/api/AltV.Net.Mock/MockCheckpoint.cs/#L16">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Mock/MockCheckpoint.cs/#L17">View Source</a>
   </span>
   <a id="AltV_Net_Mock_MockCheckpoint_Height_" data-uid="AltV.Net.Mock.MockCheckpoint.Height*"></a>
   <h4 id="AltV_Net_Mock_MockCheckpoint_Height" data-uid="AltV.Net.Mock.MockCheckpoint.Height">Height</h4>
@@ -414,7 +388,7 @@
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockCheckpoint_NextPosition.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockCheckpoint.NextPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/dev/api/AltV.Net.Mock/MockCheckpoint.cs/#L20">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Mock/MockCheckpoint.cs/#L21">View Source</a>
   </span>
   <a id="AltV_Net_Mock_MockCheckpoint_NextPosition_" data-uid="AltV.Net.Mock.MockCheckpoint.NextPosition*"></a>
   <h4 id="AltV_Net_Mock_MockCheckpoint_NextPosition" data-uid="AltV.Net.Mock.MockCheckpoint.NextPosition">NextPosition</h4>
@@ -434,7 +408,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AltV.Net.Data.Position.html">Position</a></td>
+        <td><span class="xref">Position</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -444,7 +418,7 @@
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockCheckpoint_Radius.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockCheckpoint.Radius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/dev/api/AltV.Net.Mock/MockCheckpoint.cs/#L17">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Mock/MockCheckpoint.cs/#L18">View Source</a>
   </span>
   <a id="AltV_Net_Mock_MockCheckpoint_Radius_" data-uid="AltV.Net.Mock.MockCheckpoint.Radius*"></a>
   <h4 id="AltV_Net_Mock_MockCheckpoint_Radius" data-uid="AltV.Net.Mock.MockCheckpoint.Radius">Radius</h4>
@@ -471,6 +445,9 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
+      <span class="xref">AltV.Net.Elements.Entities.IInternalBaseObject</span>
+  </div>
+  <div>
       <a class="xref" href="AltV.Net.Elements.Entities.ICheckpoint.html">ICheckpoint</a>
   </div>
   <div>
@@ -480,13 +457,13 @@
       <a class="xref" href="AltV.Net.Elements.Entities.IWorldObject.html">IWorldObject</a>
   </div>
   <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedWorldObject.html">ISharedWorldObject</a>
+  </div>
+  <div>
       <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a>
   </div>
   <div>
-      <a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a>
-  </div>
-  <div>
-      <a class="xref" href="AltV.Net.Types.INative.html">INative</a>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html">ISharedBaseObject</a>
   </div>
 </article>
                     </div>

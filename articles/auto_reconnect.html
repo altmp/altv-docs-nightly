@@ -214,7 +214,7 @@ async function autoReconnect(): Promise&lt;void&gt; {
     }
 
     try {
-        fetch(`http://127.0.0.1:${DEBUG_PORT}/reconnect`, {
+        await fetch(`http://127.0.0.1:${DEBUG_PORT}/reconnect`, {
             method: &quot;POST&quot;,
             body: &quot;serverPassword&quot; // only needed when a password is set in the server.cfg
         });

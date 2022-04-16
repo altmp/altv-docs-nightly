@@ -1,0 +1,1262 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ISharedEntity
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Interface ISharedEntity
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column interface">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_EntityNativePointer">EntityNativePointer</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_Exists">Exists</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_Id">Id</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_Model">Model</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_NetworkOwner">NetworkOwner</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_Rotation">Rotation</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">GetStreamSyncedMetaData(String, out MValueConst)</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_Int32__">GetStreamSyncedMetaData(String, out Int32)</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_Single__">GetStreamSyncedMetaData(String, out Single)</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_UInt32__">GetStreamSyncedMetaData(String, out UInt32)</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData__1_System_String___0__">GetStreamSyncedMetaData&lt;T&gt;(String, out T)</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">GetSyncedMetaData(String, out MValueConst)</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_Int32__">GetSyncedMetaData(String, out Int32)</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_Single__">GetSyncedMetaData(String, out Single)</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_UInt32__">GetSyncedMetaData(String, out UInt32)</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData__1_System_String___0__">GetSyncedMetaData&lt;T&gt;(String, out T)</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_HasStreamSyncedMetaData_System_String_">HasStreamSyncedMetaData(String)</a></li><li><a href="#AltV_Net_Shared_Elements_Entities_ISharedEntity_HasSyncedMetaData_System_String_">HasSyncedMetaData(String)</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L9">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Shared_Elements_Entities_ISharedEntity" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity" class="text-break">Interface ISharedEntity
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedWorldObject.html#AltV_Net_Shared_Elements_Entities_ISharedWorldObject_WorldObjectNativePointer">ISharedWorldObject.WorldObjectNativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedWorldObject.html#AltV_Net_Shared_Elements_Entities_ISharedWorldObject_Position">ISharedWorldObject.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_BaseObjectNativePointer">ISharedBaseObject.BaseObjectNativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_Type">ISharedBaseObject.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_Core">ISharedBaseObject.Core</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_SetMetaData_System_String_System_Object_">ISharedBaseObject.SetMetaData(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_GetMetaData__1_System_String___0__">ISharedBaseObject.GetMetaData&lt;T&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">ISharedBaseObject.SetMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">ISharedBaseObject.GetMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_HasMetaData_System_String_">ISharedBaseObject.HasMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_DeleteMetaData_System_String_">ISharedBaseObject.DeleteMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_GetMetaData_System_String_System_Int32__">ISharedBaseObject.GetMetaData(String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_GetMetaData_System_String_System_UInt32__">ISharedBaseObject.GetMetaData(String, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_GetMetaData_System_String_System_Single__">ISharedBaseObject.GetMetaData(String, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_SetData_System_String_System_Object_">ISharedBaseObject.SetData(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_GetData__1_System_String___0__">ISharedBaseObject.GetData&lt;T&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_HasData_System_String_">ISharedBaseObject.HasData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_GetAllDataKeys">ISharedBaseObject.GetAllDataKeys()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_DeleteData_System_String_">ISharedBaseObject.DeleteData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_ClearData">ISharedBaseObject.ClearData()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_OnRemove">ISharedBaseObject.OnRemove()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html#AltV_Net_Shared_Elements_Entities_ISharedBaseObject_CheckIfEntityExists">ISharedBaseObject.CheckIfEntityExists()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Types.IRefCountable.html#AltV_Net_Types_IRefCountable_AddRef">IRefCountable.AddRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Types.IRefCountable.html#AltV_Net_Types_IRefCountable_RemoveRef">IRefCountable.RemoveRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Types.INative.html#AltV_Net_Types_INative_NativePointer">INative.NativePointer</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Shared.Elements.Entities.html">AltV.Net.Shared.Elements.Entities</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Shared.dll</h6>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISharedEntity : ISharedWorldObject, ISharedBaseObject, IRefCountable, INative</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_EntityNativePointer.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.EntityNativePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L11">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_EntityNativePointer_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.EntityNativePointer*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_EntityNativePointer" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.EntityNativePointer">EntityNativePointer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntPtr EntityNativePointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_Exists.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.Exists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L19">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_Exists_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.Exists*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_Exists" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.Exists">Exists</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Exists { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_Id.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L17">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_Id_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.Id*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_Id" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Get the entity id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ushort Id { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_Model.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.Model%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L25">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_Model_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.Model*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_Model" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.Model">Model</h4>
+  <div class="markdown level1 summary"><p>Get model of the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint Model { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_NetworkOwner.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.NetworkOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L31">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_NetworkOwner_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.NetworkOwner*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_NetworkOwner" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.NetworkOwner">NetworkOwner</h4>
+  <div class="markdown level1 summary"><p>Get the network owner, or null if none is present</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISharedPlayer NetworkOwner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedPlayer.html">ISharedPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_Rotation.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.Rotation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L37">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_Rotation_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.Rotation*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_Rotation" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.Rotation">Rotation</h4>
+  <div class="markdown level1 summary"><p>Get rotation of the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Rotation Rotation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Rotation.html">Rotation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData(System.String%2CAltV.Net.Elements.Args.MValueConst%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L85">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData(System.String,AltV.Net.Elements.Args.MValueConst@)">GetStreamSyncedMetaData(String, out MValueConst)</h4>
+  <div class="markdown level1 summary"><p>Get synced meta data of the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetStreamSyncedMetaData(string key, out MValueConst value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Stream synced meta data is accessible across different serverside resources and across all clients within the streaming range of the clients.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_Int32__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData(System.String%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L55">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_Int32__" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData(System.String,System.Int32@)">GetStreamSyncedMetaData(String, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Get synced meta data of the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetStreamSyncedMetaData(string key, out int result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Stream synced meta data is accessible across different serverside resources and across all clients within the streaming range of the clients.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_Single__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData(System.String%2CSystem.Single%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L75">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_Single__" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData(System.String,System.Single@)">GetStreamSyncedMetaData(String, out Single)</h4>
+  <div class="markdown level1 summary"><p>Get synced meta data of the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetStreamSyncedMetaData(string key, out float result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_Single___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Stream synced meta data is accessible across different serverside resources and across all clients within the streaming range of the clients.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_UInt32__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData(System.String%2CSystem.UInt32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L65">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_UInt32__" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData(System.String,System.UInt32@)">GetStreamSyncedMetaData(String, out UInt32)</h4>
+  <div class="markdown level1 summary"><p>Get synced meta data of the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetStreamSyncedMetaData(string key, out uint result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_System_String_System_UInt32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Stream synced meta data is accessible across different serverside resources and across all clients within the streaming range of the clients.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData__1_System_String___0__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData%60%601(System.String%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L96">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData__1_System_String___0__" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetStreamSyncedMetaData``1(System.String,``0@)">GetStreamSyncedMetaData&lt;T&gt;(String, out T)</h4>
+  <div class="markdown level1 summary"><p>Get synced meta data of the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetStreamSyncedMetaData&lt;T&gt;(string key, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetStreamSyncedMetaData__1_System_String___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Stream synced meta data is accessible across different serverside resources and across all clients within the streaming range of the clients.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData(System.String%2CAltV.Net.Elements.Args.MValueConst%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L136">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData(System.String,AltV.Net.Elements.Args.MValueConst@)">GetSyncedMetaData(String, out MValueConst)</h4>
+  <div class="markdown level1 summary"><p>Gets the synced meta data of an entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetSyncedMetaData(string key, out MValueConst value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Synced meta data is accessible across different serverside resources and across all clients.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_Int32__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData(System.String%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L112">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_Int32__" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData(System.String,System.Int32@)">GetSyncedMetaData(String, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the synced meta data of an entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetSyncedMetaData(string key, out int result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Synced meta data is accessible across different serverside resources and across all clients.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_Single__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData(System.String%2CSystem.Single%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L128">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_Single__" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData(System.String,System.Single@)">GetSyncedMetaData(String, out Single)</h4>
+  <div class="markdown level1 summary"><p>Gets the synced meta data of an entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetSyncedMetaData(string key, out float result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_Single___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Synced meta data is accessible across different serverside resources and across all clients.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_UInt32__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData(System.String%2CSystem.UInt32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L120">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_UInt32__" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData(System.String,System.UInt32@)">GetSyncedMetaData(String, out UInt32)</h4>
+  <div class="markdown level1 summary"><p>Gets the synced meta data of an entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetSyncedMetaData(string key, out uint result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_System_String_System_UInt32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Synced meta data is accessible across different serverside resources and across all clients.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData__1_System_String___0__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData%60%601(System.String%2C%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L147">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData__1_System_String___0__" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.GetSyncedMetaData``1(System.String,``0@)">GetSyncedMetaData&lt;T&gt;(String, out T)</h4>
+  <div class="markdown level1 summary"><p>Get synced meta data of the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetSyncedMetaData&lt;T&gt;(string key, out T result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_GetSyncedMetaData__1_System_String___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Synced meta data is accessible across different serverside resources and across all clients.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.EntityRemovedException.html">EntityRemovedException</a></td>
+        <td><p>This entity was removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_HasStreamSyncedMetaData_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.HasStreamSyncedMetaData(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L45">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_HasStreamSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.HasStreamSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_HasStreamSyncedMetaData_System_String_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.HasStreamSyncedMetaData(System.String)">HasStreamSyncedMetaData(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if a stream synced meta data key is set on an entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasStreamSyncedMetaData(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_HasStreamSyncedMetaData_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Stream synced meta data is accessible across different serverside resources and across all clients within the streaming range of the clients.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Entities_ISharedEntity_HasSyncedMetaData_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Entities.ISharedEntity.HasSyncedMetaData(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Shared/Elements/Entities/ISharedEntity.cs/#L104">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Entities_ISharedEntity_HasSyncedMetaData_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.HasSyncedMetaData*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_HasSyncedMetaData_System_String_" data-uid="AltV.Net.Shared.Elements.Entities.ISharedEntity.HasSyncedMetaData(System.String)">HasSyncedMetaData(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if a synced meta data key is set on an entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasSyncedMetaData(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="AltV_Net_Shared_Elements_Entities_ISharedEntity_HasSyncedMetaData_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Synced meta data is accessible across different serverside resources and across all clients.</p>
+</div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

@@ -163,8 +163,8 @@ namespace AltV.Net
     {
         public static event CheckpointDelegate OnCheckpoint
         {
-            add =&gt; Module.CheckpointEventHandler.Add(value);
-            remove =&gt; Module.CheckpointEventHandler.Remove(value);
+            add =&gt; CoreImpl.CheckpointEventHandler.Add(value);
+            remove =&gt; CoreImpl.CheckpointEventHandler.Remove(value);
         }
 
         /// &lt;summary&gt;
@@ -179,50 +179,50 @@ namespace AltV.Net
         /// &lt;/summary&gt;
         public static event PlayerConnectDelegate OnPlayerConnect
         {
-            add =&gt; Module.PlayerConnectEventHandler.Add(value);
-            remove =&gt; Module.PlayerConnectEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerConnectEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerConnectEventHandler.Remove(value);
         }
 
         public static event PlayerBeforeConnectDelegate OnPlayerBeforeConnect
         {
-            add =&gt; Module.PlayerBeforeConnectEventHandler.Add(value);
-            remove =&gt; Module.PlayerBeforeConnectEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerBeforeConnectEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerBeforeConnectEventHandler.Remove(value);
         }
 
         public static event ResourceEventDelegate OnAnyResourceStart
         {
-            add =&gt; Module.ResourceStartEventHandler.Add(value);
-            remove =&gt; Module.ResourceStartEventHandler.Remove(value);
+            add =&gt; CoreImpl.ResourceStartEventHandler.Add(value);
+            remove =&gt; CoreImpl.ResourceStartEventHandler.Remove(value);
         }
 
         public static event ResourceEventDelegate OnAnyResourceStop
         {
-            add =&gt; Module.ResourceStopEventHandler.Add(value);
-            remove =&gt; Module.ResourceStopEventHandler.Remove(value);
+            add =&gt; CoreImpl.ResourceStopEventHandler.Add(value);
+            remove =&gt; CoreImpl.ResourceStopEventHandler.Remove(value);
         }
 
         public static event ResourceEventDelegate OnAnyResourceError
         {
-            add =&gt; Module.ResourceErrorEventHandler.Add(value);
-            remove =&gt; Module.ResourceErrorEventHandler.Remove(value);
+            add =&gt; CoreImpl.ResourceErrorEventHandler.Add(value);
+            remove =&gt; CoreImpl.ResourceErrorEventHandler.Remove(value);
         }
 
         public static event PlayerDamageDelegate OnPlayerDamage
         {
-            add =&gt; Module.PlayerDamageEventHandler.Add(value);
-            remove =&gt; Module.PlayerDamageEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerDamageEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerDamageEventHandler.Remove(value);
         }
 
         public static event PlayerDeadDelegate OnPlayerDead
         {
-            add =&gt; Module.PlayerDeadEventHandler.Add(value);
-            remove =&gt; Module.PlayerDeadEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerDeadEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerDeadEventHandler.Remove(value);
         }
 
         public static event ExplosionDelegate OnExplosion
         {
-            add =&gt; Module.ExplosionEventHandler.Add(value);
-            remove =&gt; Module.ExplosionEventHandler.Remove(value);
+            add =&gt; CoreImpl.ExplosionEventHandler.Add(value);
+            remove =&gt; CoreImpl.ExplosionEventHandler.Remove(value);
         }
 
         /// &lt;summary&gt;
@@ -238,80 +238,80 @@ namespace AltV.Net
         /// &lt;/summary&gt;
         public static event WeaponDamageDelegate OnWeaponDamage
         {
-            add =&gt; Module.WeaponDamageEventHandler.Add(value);
-            remove =&gt; Module.WeaponDamageEventHandler.Remove(value);
+            add =&gt; CoreImpl.WeaponDamageEventHandler.Add(value);
+            remove =&gt; CoreImpl.WeaponDamageEventHandler.Remove(value);
         }
 
         public static event PlayerDisconnectDelegate OnPlayerDisconnect
         {
-            add =&gt; Module.PlayerDisconnectEventHandler.Add(value);
-            remove =&gt; Module.PlayerDisconnectEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerDisconnectEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerDisconnectEventHandler.Remove(value);
         }
 
         public static event PlayerRemoveDelegate OnPlayerRemove
         {
-            add =&gt; Module.PlayerRemoveEventHandler.Add(value);
-            remove =&gt; Module.PlayerRemoveEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerRemoveEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerRemoveEventHandler.Remove(value);
         }
 
         public static event VehicleRemoveDelegate OnVehicleRemove
         {
-            add =&gt; Module.VehicleRemoveEventHandler.Add(value);
-            remove =&gt; Module.VehicleRemoveEventHandler.Remove(value);
+            add =&gt; CoreImpl.VehicleRemoveEventHandler.Add(value);
+            remove =&gt; CoreImpl.VehicleRemoveEventHandler.Remove(value);
         }
 
         public static event PlayerChangeVehicleSeatDelegate OnPlayerChangeVehicleSeat
         {
-            add =&gt; Module.PlayerChangeVehicleSeatEventHandler.Add(value);
-            remove =&gt; Module.PlayerChangeVehicleSeatEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerChangeVehicleSeatEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerChangeVehicleSeatEventHandler.Remove(value);
         }
 
         public static event PlayerEnterVehicleDelegate OnPlayerEnterVehicle
         {
-            add =&gt; Module.PlayerEnterVehicleEventHandler.Add(value);
-            remove =&gt; Module.PlayerEnterVehicleEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerEnterVehicleEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerEnterVehicleEventHandler.Remove(value);
         }
 
         public static event PlayerEnteringVehicleDelegate OnPlayerEnteringVehicle
         {
-            add =&gt; Module.PlayerEnteringVehicleEventHandler.Add(value);
-            remove =&gt; Module.PlayerEnteringVehicleEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerEnteringVehicleEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerEnteringVehicleEventHandler.Remove(value);
         }
 
         public static event PlayerLeaveVehicleDelegate OnPlayerLeaveVehicle
         {
-            add =&gt; Module.PlayerLeaveVehicleEventHandler.Add(value);
-            remove =&gt; Module.PlayerLeaveVehicleEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerLeaveVehicleEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerLeaveVehicleEventHandler.Remove(value);
         }
 
         public static event PlayerClientEventDelegate OnPlayerEvent
         {
-            add =&gt; Module.PlayerClientEventEventHandler.Add(value);
-            remove =&gt; Module.PlayerClientEventEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerClientEventEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerClientEventEventHandler.Remove(value);
         }
 
         public static event PlayerClientCustomEventDelegate OnPlayerCustomEvent
         {
-            add =&gt; Module.PlayerClientCustomEventEventHandler.Add(value);
-            remove =&gt; Module.PlayerClientCustomEventEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerClientCustomEventEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerClientCustomEventEventHandler.Remove(value);
         }
 
         public static event ServerEventEventDelegate OnServerEvent
         {
-            add =&gt; Module.ServerEventEventHandler.Add(value);
-            remove =&gt; Module.ServerEventEventHandler.Remove(value);
+            add =&gt; CoreImpl.ServerEventEventHandler.Add(value);
+            remove =&gt; CoreImpl.ServerEventEventHandler.Remove(value);
         }
 
         public static event ServerCustomEventEventDelegate OnServerCustomEvent
         {
-            add =&gt; Module.ServerCustomEventEventHandler.Add(value);
-            remove =&gt; Module.ServerCustomEventEventHandler.Remove(value);
+            add =&gt; CoreImpl.ServerCustomEventEventHandler.Add(value);
+            remove =&gt; CoreImpl.ServerCustomEventEventHandler.Remove(value);
         }
 
         public static event ConsoleCommandDelegate OnConsoleCommand
         {
-            add =&gt; Module.ConsoleCommandEventHandler.Add(value);
-            remove =&gt; Module.ConsoleCommandEventHandler.Remove(value);
+            add =&gt; CoreImpl.ConsoleCommandEventHandler.Add(value);
+            remove =&gt; CoreImpl.ConsoleCommandEventHandler.Remove(value);
         }
 
         /// &lt;summary&gt;
@@ -320,8 +320,8 @@ namespace AltV.Net
         /// &lt;remarks&gt;Meta data is accessible across different serverside resources.&lt;/remarks&gt;
         public static event MetaDataChangeDelegate OnMetaDataChange
         {
-            add =&gt; Module.MetaDataChangeEventHandler.Add(value);
-            remove =&gt; Module.MetaDataChangeEventHandler.Remove(value);
+            add =&gt; CoreImpl.MetaDataChangeEventHandler.Add(value);
+            remove =&gt; CoreImpl.MetaDataChangeEventHandler.Remove(value);
         }
 
         /// &lt;summary&gt;
@@ -330,75 +330,88 @@ namespace AltV.Net
         /// &lt;remarks&gt;Synced meta data is accessible across different serverside resources and to all clients without range limitation.&lt;/remarks&gt;
         public static event MetaDataChangeDelegate OnSyncedMetaDataChange
         {
-            add =&gt; Module.SyncedMetaDataChangeEventHandler.Add(value);
-            remove =&gt; Module.SyncedMetaDataChangeEventHandler.Remove(value);
+            add =&gt; CoreImpl.SyncedMetaDataChangeEventHandler.Add(value);
+            remove =&gt; CoreImpl.SyncedMetaDataChangeEventHandler.Remove(value);
         }
 
         public static event ColShapeDelegate OnColShape
         {
-            add =&gt; Module.ColShapeEventHandler.Add(value);
-            remove =&gt; Module.ColShapeEventHandler.Remove(value);
+            add =&gt; CoreImpl.ColShapeEventHandler.Add(value);
+            remove =&gt; CoreImpl.ColShapeEventHandler.Remove(value);
         }
 
         public static event VehicleDestroyDelegate OnVehicleDestroy
         {
-            add =&gt; Module.VehicleDestroyEventHandler.Add(value);
-            remove =&gt; Module.VehicleDestroyEventHandler.Remove(value);
+            add =&gt; CoreImpl.VehicleDestroyEventHandler.Add(value);
+            remove =&gt; CoreImpl.VehicleDestroyEventHandler.Remove(value);
         }
 
         public static event FireDelegate OnFire
         {
-            add =&gt; Module.FireEventHandler.Add(value);
-            remove =&gt; Module.FireEventHandler.Remove(value);
+            add =&gt; CoreImpl.FireEventHandler.Add(value);
+            remove =&gt; CoreImpl.FireEventHandler.Remove(value);
         }
 
         public static event StartProjectileDelegate OnStartProjectile
         {
-            add =&gt; Module.StartProjectileEventHandler.Add(value);
-            remove =&gt; Module.StartProjectileEventHandler.Remove(value);
+            add =&gt; CoreImpl.StartProjectileEventHandler.Add(value);
+            remove =&gt; CoreImpl.StartProjectileEventHandler.Remove(value);
         }
 
         public static event PlayerWeaponChangeDelegate OnPlayerWeaponChange
         {
-            add =&gt; Module.PlayerWeaponChangeEventHandler.Add(value);
-            remove =&gt; Module.PlayerWeaponChangeEventHandler.Remove(value);
+            add =&gt; CoreImpl.PlayerWeaponChangeEventHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerWeaponChangeEventHandler.Remove(value);
         }
 
         public static event NetOwnerChangeDelegate OnNetworkOwnerChange
         {
-            add =&gt; Module.NetOwnerChangeEventHandler.Add(value);
-            remove =&gt; Module.NetOwnerChangeEventHandler.Remove(value);
+            add =&gt; CoreImpl.NetOwnerChangeEventHandler.Add(value);
+            remove =&gt; CoreImpl.NetOwnerChangeEventHandler.Remove(value);
         }
 
         public static event VehicleAttachDelegate OnVehicleAttach
         {
-            add =&gt; Module.VehicleAttachEventHandler.Add(value);
-            remove =&gt; Module.VehicleAttachEventHandler.Remove(value);
+            add =&gt; CoreImpl.VehicleAttachEventHandler.Add(value);
+            remove =&gt; CoreImpl.VehicleAttachEventHandler.Remove(value);
         }
 
         public static event VehicleDetachDelegate OnVehicleDetach
         {
-            add =&gt; Module.VehicleDetachEventHandler.Add(value);
-            remove =&gt; Module.VehicleDetachEventHandler.Remove(value);
+            add =&gt; CoreImpl.VehicleDetachEventHandler.Add(value);
+            remove =&gt; CoreImpl.VehicleDetachEventHandler.Remove(value);
         }
 
         public static event VehicleDamageDelegate OnVehicleDamage
         {
-            add =&gt; Module.VehicleDamageEventHandler.Add(value);
-            remove =&gt; Module.VehicleDamageEventHandler.Remove(value);
+            add =&gt; CoreImpl.VehicleDamageEventHandler.Add(value);
+            remove =&gt; CoreImpl.VehicleDamageEventHandler.Remove(value);
         }
         
         public static event ConnectionQueueAddDelegate OnConnectionQueueAdd
         {
-            add =&gt; Module.ConnectionQueueAddHandler.Add(value);
-            remove =&gt; Module.ConnectionQueueAddHandler.Remove(value);
+            add =&gt; CoreImpl.ConnectionQueueAddHandler.Add(value);
+            remove =&gt; CoreImpl.ConnectionQueueAddHandler.Remove(value);
         }
         
         public static event ConnectionQueueRemoveDelegate OnConnectionQueueRemove
         {
-            add =&gt; Module.ConnectionQueueRemoveHandler.Add(value);
-            remove =&gt; Module.ConnectionQueueRemoveHandler.Remove(value);
+            add =&gt; CoreImpl.ConnectionQueueRemoveHandler.Add(value);
+            remove =&gt; CoreImpl.ConnectionQueueRemoveHandler.Remove(value);
         }
+        
+        public static event ServerStartedDelegate OnServerStarted
+        {
+            add =&gt; CoreImpl.ServerStartedHandler.Add(value);
+            remove =&gt; CoreImpl.ServerStartedHandler.Remove(value);
+        }
+        
+        public static event PlayerRequestControlDelegate OnPlayerRequestControl
+        {
+            add =&gt; CoreImpl.PlayerRequestControlHandler.Add(value);
+            remove =&gt; CoreImpl.PlayerRequestControlHandler.Remove(value);
+        }
+        
     }
 }
 </code></pre>
@@ -479,6 +492,10 @@ namespace AltV.Net.Events
     public delegate void ConnectionQueueAddDelegate(IConnectionInfo connectionInfo);
     
     public delegate void ConnectionQueueRemoveDelegate(IConnectionInfo connectionInfo);
+
+    public delegate void ServerStartedDelegate();
+
+    public delegate void PlayerRequestControlDelegate(IEntity target, IPlayer player);
 }
 </code></pre>
 <p>The player event handler looks like this.</p>

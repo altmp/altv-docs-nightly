@@ -136,6 +136,21 @@ function enableSearch() {
     }
 
     indexReady.promise().done(function() {
+      $("#search-query").on("keydown", function(ev) {
+        if (ev.originalEvent.isComposing || ev.key !== "Escape") {
+            return;
+        }
+        ev.preventDefault();
+        $("#search-query").blur();
+      });
+
+      $("#search-query").on("beforeinput textInput", function(ev) {
+        if (ev.originalEvent.inputType !== "insertParagraph" && ev.originalEvent.data?.split(/(?<=[^\\])/)?.pop() !== "\n") {
+          return;
+        }
+        ev.preventDefault();
+        handleSearchInput(this);
+      });
       $("body").bind("queryReady", function() {
         worker.postMessage({ q: query });
       });
@@ -171,23 +186,6 @@ function enableSearch() {
 }
 
 function addSearchEvent() {
-  $("body").bind("searchEvent", function() {
-    $("#search-query").on("keydown", function(ev) {
-      if (ev.originalEvent.isComposing || ev.key !== "Escape") {
-          return;
-      }
-      ev.preventDefault();
-      $("#search-query").blur();
-    });
-
-    $("#search-query").on("beforeinput textInput", function(ev) {
-      if (ev.originalEvent.inputType !== "insertParagraph" && ev.originalEvent.data?.split(/(?<=[^\\])/)?.pop() !== "\n") {
-        return;
-      }
-      ev.preventDefault();
-      handleSearchInput(this);
-    });
-  });
   $("#search-query").on("focusin", function(ev) {
     const el = $(this);
     if (el.text() !== "") {

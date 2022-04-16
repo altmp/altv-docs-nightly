@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Mock_MockPlayer__ctor_AltV_Net_IServer_IntPtr_System_UInt16_">MockPlayer(IServer, IntPtr, UInt16)</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Mock_MockPlayer__ctor_AltV_Net_ICore_IntPtr_System_UInt16_">MockPlayer(ICore, IntPtr, UInt16)</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
                             </div>
 
                             
@@ -129,7 +129,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/dev/api/AltV.Net.Mock/MockPlayer.cs/#L6">View Source</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Mock/MockPlayer.cs/#L6">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockPlayer.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -154,83 +154,35 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><span class="xref">AltV.Net.Elements.Entities.IInternalBaseObject</span></div>
     <div><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></div>
+    <div><a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedPlayer.html">ISharedPlayer</a></div>
     <div><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></div>
+    <div><a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html">ISharedEntity</a></div>
     <div><a class="xref" href="AltV.Net.Elements.Entities.IWorldObject.html">IWorldObject</a></div>
+    <div><a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedWorldObject.html">ISharedWorldObject</a></div>
     <div><a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a></div>
-    <div><a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a></div>
-    <div><a class="xref" href="AltV.Net.Types.INative.html">INative</a></div>
+    <div><a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html">ISharedBaseObject</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_PlayerNativePointer">Player.PlayerNativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_NativePointer">Player.NativePointer</a>
+    </div>
+    <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetId_IntPtr_">Player.GetId(IntPtr)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_NetworkOwner">Player.NetworkOwner</a>
-    </div>
-    <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Model">Player.Model</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Position">Player.Position</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Rotation">Player.Rotation</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Visible">Player.Visible</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Streamed">Player.Streamed</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Dimension">Player.Dimension</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Ping">Player.Ping</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Ip">Player.Ip</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_SetNetworkOwner_AltV_Net_Elements_Entities_IPlayer_System_Boolean_">Player.SetNetworkOwner(IPlayer, Boolean)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Player.GetMetaData(String, MValueConst)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Player.SetMetaData(String, MValueConst)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_HasMetaData_System_String_">Player.HasMetaData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_DeleteMetaData_System_String_">Player.DeleteMetaData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_SetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Player.SetSyncedMetaData(String, MValueConst)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Player.GetSyncedMetaData(String, MValueConst)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_HasSyncedMetaData_System_String_">Player.HasSyncedMetaData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_DeleteSyncedMetaData_System_String_">Player.DeleteSyncedMetaData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_SetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Player.SetStreamSyncedMetaData(String, MValueConst)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Player.GetStreamSyncedMetaData(String, MValueConst)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_HasStreamSyncedMetaData_System_String_">Player.HasStreamSyncedMetaData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_DeleteStreamSyncedMetaData_System_String_">Player.DeleteStreamSyncedMetaData(String)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetLocalMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Player.GetLocalMetaData(String, MValueConst)</a>
@@ -323,7 +275,7 @@
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Seat">Player.Seat</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Spawn_AltV_Net_Data_Position_System_UInt32_">Player.Spawn(Position, UInt32)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Spawn_Position_System_UInt32_">Player.Spawn(Position, UInt32)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Despawn">Player.Despawn()</a>
@@ -374,19 +326,13 @@
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Emit_System_String_System_Object___">Player.Emit(String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_InternalAddRef">Player.InternalAddRef()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_InternalRemoveRef">Player.InternalRemoveRef()</a>
-    </div>
-    <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_ClearBloodDamage">Player.ClearBloodDamage()</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetClothes_System_Byte_">Player.GetClothes(Byte)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetClothes_System_Byte_AltV_Net_Data_Cloth__">Player.GetClothes(Byte, Cloth)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetClothes_System_Byte_Cloth__">Player.GetClothes(Byte, Cloth)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_SetClothes_System_Byte_System_UInt16_System_Byte_System_Byte_">Player.SetClothes(Byte, UInt16, Byte, Byte)</a>
@@ -395,7 +341,7 @@
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetDlcClothes_System_Byte_">Player.GetDlcClothes(Byte)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetDlcClothes_System_Byte_AltV_Net_Data_DlcCloth__">Player.GetDlcClothes(Byte, DlcCloth)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetDlcClothes_System_Byte_DlcCloth__">Player.GetDlcClothes(Byte, DlcCloth)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_SetDlcClothes_System_Byte_System_UInt16_System_Byte_System_Byte_System_UInt32_">Player.SetDlcClothes(Byte, UInt16, Byte, Byte, UInt32)</a>
@@ -404,7 +350,7 @@
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetProps_System_Byte_">Player.GetProps(Byte)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetProps_System_Byte_AltV_Net_Data_Prop__">Player.GetProps(Byte, Prop)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetProps_System_Byte_Prop__">Player.GetProps(Byte, Prop)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_SetProps_System_Byte_System_UInt16_System_Byte_">Player.SetProps(Byte, UInt16, Byte)</a>
@@ -413,7 +359,7 @@
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetDlcProps_System_Byte_">Player.GetDlcProps(Byte)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetDlcProps_System_Byte_AltV_Net_Data_DlcProp__">Player.GetDlcProps(Byte, DlcProp)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetDlcProps_System_Byte_DlcProp__">Player.GetDlcProps(Byte, DlcProp)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_SetDlcProps_System_Byte_System_UInt16_System_Byte_System_UInt32_">Player.SetDlcProps(Byte, UInt16, Byte, UInt32)</a>
@@ -425,7 +371,7 @@
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_IsEntityInStreamingRange_AltV_Net_Elements_Entities_IEntity_">Player.IsEntityInStreamingRange(IEntity)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_AttachToEntity_AltV_Net_Elements_Entities_IEntity_System_Int16_System_Int16_AltV_Net_Data_Position_AltV_Net_Data_Rotation_System_Boolean_System_Boolean_">Player.AttachToEntity(IEntity, Int16, Int16, Position, Rotation, Boolean, Boolean)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_AttachToEntity_AltV_Net_Elements_Entities_IEntity_System_Int16_System_Int16_Position_Rotation_System_Boolean_System_Boolean_">Player.AttachToEntity(IEntity, Int16, Int16, Position, Rotation, Boolean, Boolean)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_Detach">Player.Detach()</a>
@@ -482,7 +428,7 @@
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_RemoveFaceFeature_System_Byte_">Player.RemoveFaceFeature(Byte)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_SetHeadBlendPaletteColor_System_Byte_AltV_Net_Data_Rgba_">Player.SetHeadBlendPaletteColor(Byte, Rgba)</a>
+      <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_SetHeadBlendPaletteColor_System_Byte_Rgba_">Player.SetHeadBlendPaletteColor(Byte, Rgba)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetHeadBlendPaletteColor_System_Byte_">Player.GetHeadBlendPaletteColor(Byte)</a>
@@ -497,7 +443,49 @@
       <a class="xref" href="AltV.Net.Elements.Entities.Player.html#AltV_Net_Elements_Entities_Player_GetHeadOverlay_System_Byte_">Player.GetHeadOverlay(Byte)</a>
     </div>
     <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_EntityNativePointer">Entity.EntityNativePointer</a>
+    </div>
+    <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_Id">Entity.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_NetworkOwner">Entity.NetworkOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_Rotation">Entity.Rotation</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_Visible">Entity.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_Streamed">Entity.Streamed</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_SetNetworkOwner_AltV_Net_Elements_Entities_IPlayer_System_Boolean_">Entity.SetNetworkOwner(IPlayer, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_SetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Entity.SetSyncedMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_GetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Entity.GetSyncedMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_HasSyncedMetaData_System_String_">Entity.HasSyncedMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_DeleteSyncedMetaData_System_String_">Entity.DeleteSyncedMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_SetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Entity.SetStreamSyncedMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_GetStreamSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">Entity.GetStreamSyncedMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_HasStreamSyncedMetaData_System_String_">Entity.HasStreamSyncedMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_DeleteStreamSyncedMetaData_System_String_">Entity.DeleteStreamSyncedMetaData(String)</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_SetSyncedMetaData_System_String_System_Object_">Entity.SetSyncedMetaData(String, Object)</a>
@@ -533,94 +521,61 @@
       <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_ResetNetworkOwner">Entity.ResetNetworkOwner()</a>
     </div>
     <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_Frozen">Entity.Frozen</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_Collision">Entity.Collision</a>
+    </div>
+    <div>
       <a class="xref" href="AltV.Net.Elements.Entities.Entity.html#AltV_Net_Elements_Entities_Entity_CheckIfEntityExists">Entity.CheckIfEntityExists()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.WorldObject.html#AltV_Net_Elements_Entities_WorldObject_WorldObjectNativePointer">WorldObject.WorldObjectNativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.WorldObject.html#AltV_Net_Elements_Entities_WorldObject_Position">WorldObject.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.WorldObject.html#AltV_Net_Elements_Entities_WorldObject_Dimension">WorldObject.Dimension</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_BaseObjectNativePointer">BaseObject.BaseObjectNativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Core">BaseObject.Core</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Server">BaseObject.Server</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_NativePointer">BaseObject.NativePointer</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Exists">BaseObject.Exists</a>
-    </div>
-    <div>
       <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Type">BaseObject.Type</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_SetMetaData_System_String_System_Object_">BaseObject.SetMetaData(String, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData_System_String_System_Int32__">BaseObject.GetMetaData(String, Int32)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData_System_String_System_UInt32__">BaseObject.GetMetaData(String, UInt32)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData_System_String_System_Single__">BaseObject.GetMetaData(String, Single)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetMetaData__1_System_String___0__">BaseObject.GetMetaData&lt;T&gt;(String, T)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_SetData_System_String_System_Object_">BaseObject.SetData(String, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetData__1_System_String___0__">BaseObject.GetData&lt;T&gt;(String, T)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetAllDataKeys">BaseObject.GetAllDataKeys()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_HasData_System_String_">BaseObject.HasData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_DeleteData_System_String_">BaseObject.DeleteData(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_ClearData">BaseObject.ClearData()</a>
-    </div>
-    <div>
       <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_CheckIfCallIsValid_System_String_">BaseObject.CheckIfCallIsValid(String)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_GetHashCode">BaseObject.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_Equals_System_Object_">BaseObject.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_OnRemove">BaseObject.OnRemove()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_AddRef">BaseObject.AddRef()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Elements.Entities.BaseObject.html#AltV_Net_Elements_Entities_BaseObject_RemoveRef">BaseObject.RemoveRef()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Mock.html">AltV.Net.Mock</a></h6>
   <h6><strong>Assembly</strong>: AltV.Net.Mock.dll</h6>
   <h5 id="AltV_Net_Mock_MockPlayer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MockPlayer : Player, IInternalBaseObject, IPlayer, IEntity, IWorldObject, IBaseObject, IRefCountable, INative</code></pre>
+    <pre><code class="lang-csharp hljs">public class MockPlayer : Player, IInternalBaseObject, IPlayer, ISharedPlayer, IEntity, ISharedEntity, IWorldObject, ISharedWorldObject, IBaseObject, ISharedBaseObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockPlayer__ctor_AltV_Net_IServer_IntPtr_System_UInt16_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockPlayer.%23ctor(AltV.Net.IServer%2CIntPtr%2CSystem.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Mock_MockPlayer__ctor_AltV_Net_ICore_IntPtr_System_UInt16_.md&amp;value=---%0Auid%3A%20AltV.Net.Mock.MockPlayer.%23ctor(AltV.Net.ICore%2CIntPtr%2CSystem.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/dev/api/AltV.Net.Mock/MockPlayer.cs/#L8">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.Mock/MockPlayer.cs/#L8">View Source</a>
   </span>
   <a id="AltV_Net_Mock_MockPlayer__ctor_" data-uid="AltV.Net.Mock.MockPlayer.#ctor*"></a>
-  <h4 id="AltV_Net_Mock_MockPlayer__ctor_AltV_Net_IServer_IntPtr_System_UInt16_" data-uid="AltV.Net.Mock.MockPlayer.#ctor(AltV.Net.IServer,IntPtr,System.UInt16)">MockPlayer(IServer, IntPtr, UInt16)</h4>
+  <h4 id="AltV_Net_Mock_MockPlayer__ctor_AltV_Net_ICore_IntPtr_System_UInt16_" data-uid="AltV.Net.Mock.MockPlayer.#ctor(AltV.Net.ICore,IntPtr,System.UInt16)">MockPlayer(ICore, IntPtr, UInt16)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MockPlayer(IServer server, IntPtr nativePointer, ushort id)</code></pre>
+    <pre><code class="lang-csharp hljs">public MockPlayer(ICore core, IntPtr nativePointer, ushort id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -633,8 +588,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="AltV.Net.IServer.html">IServer</a></td>
-        <td><span class="parametername">server</span></td>
+        <td><a class="xref" href="AltV.Net.ICore.html">ICore</a></td>
+        <td><span class="parametername">core</span></td>
         <td></td>
       </tr>
       <tr>
@@ -651,22 +606,31 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
+      <span class="xref">AltV.Net.Elements.Entities.IInternalBaseObject</span>
+  </div>
+  <div>
       <a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedPlayer.html">ISharedPlayer</a>
   </div>
   <div>
       <a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a>
   </div>
   <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedEntity.html">ISharedEntity</a>
+  </div>
+  <div>
       <a class="xref" href="AltV.Net.Elements.Entities.IWorldObject.html">IWorldObject</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedWorldObject.html">ISharedWorldObject</a>
   </div>
   <div>
       <a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a>
   </div>
   <div>
-      <a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a>
-  </div>
-  <div>
-      <a class="xref" href="AltV.Net.Types.INative.html">INative</a>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html">ISharedBaseObject</a>
   </div>
 </article>
                     </div>

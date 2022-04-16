@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#100-release">10.0-Release</a><ul class="level2 nav bs-docs-sidenav 100-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li><li><a href="#breaking-changes">Breaking changes</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#100-release">10.0-Release</a><ul class="level2 nav bs-docs-sidenav 100-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li><li><a href="#breaking-changes">Breaking changes</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a></li></ul></li><li><a href="#js-module">JS Module</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -150,6 +150,13 @@
 - loading rml document from string
 - alt.setMinimapComponentPosition
 - alt.setMinimapIsRectangle
+- branch validation to launcher config
+- alt.getScreenResolution
+- windowResolutionChange event
+- webview size and pos getter &amp; setter
+- alt.utils class
+- isRemote getter for blips
+- increased 2d volume of sound api
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
@@ -159,6 +166,9 @@
 - serverside blip attached to entity is not deleted with entity
 - serverside created blip API category setter doesent update
 - resolution change did not apply for rmlui
+- webview visible setter before view is initialized didn't worked
+- webview size and pos parameter in constructor
+- pixelation in rmlui when resolution changes
 </code></pre>
 </div>
 <h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
@@ -173,6 +183,14 @@
 - optimized synced meta data
 - enable xenon mod when setting headlight color
 - support for resources in subfolders
+- error message when binding to invalid host address
+- serverStarted event
+- boat anchor setter &amp; getter
+- node inspector, source-maps, heap-profiler, profiler server.cfg entry for js module, global-fetch, global-webcrypto, network-imports (see https://docs.altv.mp/articles/configs/server.html for references)
+- props &amp; clothes setters returns a bool now
+- collision &amp; frozen setter, getter
+- don't disable props when inside a bike, helicopter, submarine
+- cancelable requestControl event
 </code></pre>
 </div>
 <h3 id="fixed-1">Fixed</h3>
@@ -180,6 +198,9 @@
 <pre><code class="lang-yaml">- blip rotation setter
 - vehicles created on resource start will be missing in resource start
 - empty resources got sended to client
+- last command being executed when pressed enter
+- checkpoint destroy
+- utf-8 with BOM destroyed server.cfg
 </code></pre>
 </div>
 <!-- ### <span style="color: red;">Breaking changes</span>
@@ -192,6 +213,12 @@
 <div class="nohljsln">
 <pre><code class="lang-yaml">- resource class
 - resourceStop and resourceStart events now support async functions, and will wait until the async function is resolved
+- stringToSHA256 method
+</code></pre>
+</div>
+<h2 id="js-module">JS Module</h2>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Updated nodeJS to v17.7.0
 </code></pre>
 </div>
 </article>

@@ -177,7 +177,7 @@ deps: [
 </code></pre>
 <p><strong>deps</strong> Allows you to require other resources, if they aren't found your resource will fail to load!</p>
 <p>You can access exported functions &amp; more by adding the following in your code:</p>
-<pre><code class="lang-js">import chat from 'chat';
+<pre><code class="lang-js">import * as chat from 'chat';
 </code></pre>
 <p><strong>main</strong> is the main server file.</p>
 <p><strong>client-main</strong> is the first file loaded on Client-side for a player.</p>
@@ -187,7 +187,7 @@ deps: [
 We're going to add <strong>chat</strong> as a dependency to our resource.
 Then we're going to import 'alt' and 'chat'.</p>
 <pre><code class="lang-js">import * as alt from 'alt-server';
-import chat from 'chat';
+import * as chat from 'chat';
 
 console.log('==&gt; Your Resource Has Loaded! Horray!');
 

@@ -201,15 +201,27 @@ and is the only place where you should create create an instance of your runtime
 </blockquote>
 <h2 id="needed-module-exports">Needed module exports</h2>
 <p>The module doesn't only need the entrypoint function as an export, on both sides there is also another export needed.
-You need to export the <code>GetSDKVersion</code> function, which returns the version of the SDK the module was compiled with.
+You need to export the <code>GetSDKHash</code> function, which returns the git commit hash of the SDK the module was compiled with.
 This is needed so the alt:V core can check if the used module SDK version is compatible with the alt:V core SDK version.
-You just need to return <code>alt::ICore::SDK_VERSION</code> from this function.
+You just need to return the <code>ALT_SDK_VERSION</code> define from this function.
 The function should look like this:</p>
-<pre><code class="lang-c++">EXPORT uint32_t GetSDKVersion()
+<pre><code class="lang-c++">#include &quot;cpp-sdk/version/version.h&quot;
+
+EXPORT const char* GetSDKHash()
 {
-    return alt::ICore::SDK_VERSION;
+    return ALT_SDK_VERSION;
 }
 </code></pre>
+<p>This define is created by the SDK version script (found in the <code>version</code> subdirectory), which you can easily add to your workflow
+if you are using CMake by adding these lines to your CMake project:</p>
+<pre><code class="lang-cmake"># Top of your CMake file
+include(cpp-sdk/CMakeLists.txt)
+# After `add_executable` or `add_library`
+add_dependencies(${PROJECT_NAME} alt-sdk)
+</code></pre>
+<p>The path here of course needs to be changed, so that it matches your path to the SDK.</p>
+<p>This will make sure that the script is run every time the project is compiled, when this script is ran, the <code>version/version.h</code> will be created
+in the SDK directory, which you should then include because it contains the needed <code>ALT_SDK_VERSION</code> define.</p>
 <blockquote>
 <p>Remember that your module always needs to be on the same SDK version as the SDK version used by the alt:V core. Otherwise, your module will not load.</p>
 </blockquote>

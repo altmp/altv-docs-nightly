@@ -1,0 +1,3068 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ICore
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Interface ICore
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column interface">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_ICore_BaseBaseObjectPool">BaseBaseObjectPool</a></li><li><a href="#AltV_Net_ICore_BaseEntityPool">BaseEntityPool</a></li><li><a href="#AltV_Net_ICore_BlipPool">BlipPool</a></li><li><a href="#AltV_Net_ICore_CheckpointPool">CheckpointPool</a></li><li><a href="#AltV_Net_ICore_ColShapePool">ColShapePool</a></li><li><a href="#AltV_Net_ICore_NativeResourcePool">NativeResourcePool</a></li><li><a href="#AltV_Net_ICore_NetTime">NetTime</a></li><li><a href="#AltV_Net_ICore_PlayerPool">PlayerPool</a></li><li><a href="#AltV_Net_ICore_Resource">Resource</a></li><li><a href="#AltV_Net_ICore_RootDirectory">RootDirectory</a></li><li><a href="#AltV_Net_ICore_VehiclePool">VehiclePool</a></li><li><a href="#AltV_Net_ICore_VoiceChannelPool">VoiceChannelPool</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_ICore_CreateBlip_AltV_Net_Elements_Entities_IPlayer_System_Byte_AltV_Net_Elements_Entities_IEntity_">CreateBlip(IPlayer, Byte, IEntity)</a></li><li><a href="#AltV_Net_ICore_CreateBlip_AltV_Net_Elements_Entities_IPlayer_System_Byte_Position_">CreateBlip(IPlayer, Byte, Position)</a></li><li><a href="#AltV_Net_ICore_CreateCheckpoint_System_Byte_Position_System_Single_System_Single_Rgba_">CreateCheckpoint(Byte, Position, Single, Single, Rgba)</a></li><li><a href="#AltV_Net_ICore_CreateColShapeCircle_Position_System_Single_">CreateColShapeCircle(Position, Single)</a></li><li><a href="#AltV_Net_ICore_CreateColShapeCube_Position_Position_">CreateColShapeCube(Position, Position)</a></li><li><a href="#AltV_Net_ICore_CreateColShapeCylinder_Position_System_Single_System_Single_">CreateColShapeCylinder(Position, Single, Single)</a></li><li><a href="#AltV_Net_ICore_CreateColShapePolygon_System_Single_System_Single_Vector2___">CreateColShapePolygon(Single, Single, Vector2[])</a></li><li><a href="#AltV_Net_ICore_CreateColShapeRectangle_System_Single_System_Single_System_Single_System_Single_System_Single_">CreateColShapeRectangle(Single, Single, Single, Single, Single)</a></li><li><a href="#AltV_Net_ICore_CreateColShapeSphere_Position_System_Single_">CreateColShapeSphere(Position, Single)</a></li><li><a href="#AltV_Net_ICore_CreateVehicle_System_UInt32_Position_Rotation_">CreateVehicle(UInt32, Position, Rotation)</a></li><li><a href="#AltV_Net_ICore_CreateVehicleEntity_System_UInt16__System_UInt32_Position_Rotation_">CreateVehicleEntity(out UInt16, UInt32, Position, Rotation)</a></li><li><a href="#AltV_Net_ICore_CreateVoiceChannel_System_Boolean_System_Single_">CreateVoiceChannel(Boolean, Single)</a></li><li><a href="#AltV_Net_ICore_DeleteSyncedMetaData_System_String_">DeleteSyncedMetaData(String)</a></li><li><a href="#AltV_Net_ICore_FileExists_System_String_">FileExists(String)</a></li><li><a href="#AltV_Net_ICore_FileRead_System_String_">FileRead(String)</a></li><li><a href="#AltV_Net_ICore_GetEntityById_System_UInt16_">GetEntityById(UInt16)</a></li><li><a href="#AltV_Net_ICore_GetPlayers">GetPlayers()</a></li><li><a href="#AltV_Net_ICore_GetResource_IntPtr_">GetResource(IntPtr)</a></li><li><a href="#AltV_Net_ICore_GetResource_System_String_">GetResource(String)</a></li><li><a href="#AltV_Net_ICore_GetVehicleModelInfo_System_UInt32_">GetVehicleModelInfo(UInt32)</a></li><li><a href="#AltV_Net_ICore_GetVehicles">GetVehicles()</a></li><li><a href="#AltV_Net_ICore_HashPassword_System_String_">HashPassword(String)</a></li><li><a href="#AltV_Net_ICore_RemoveBlip_AltV_Net_Elements_Entities_IBlip_">RemoveBlip(IBlip)</a></li><li><a href="#AltV_Net_ICore_RemoveCheckpoint_AltV_Net_Elements_Entities_ICheckpoint_">RemoveCheckpoint(ICheckpoint)</a></li><li><a href="#AltV_Net_ICore_RemoveColShape_AltV_Net_Elements_Entities_IColShape_">RemoveColShape(IColShape)</a></li><li><a href="#AltV_Net_ICore_RemoveVehicle_AltV_Net_Elements_Entities_IVehicle_">RemoveVehicle(IVehicle)</a></li><li><a href="#AltV_Net_ICore_RemoveVoiceChannel_AltV_Net_Elements_Entities_IVoiceChannel_">RemoveVoiceChannel(IVoiceChannel)</a></li><li><a href="#AltV_Net_ICore_RestartResource_System_String_">RestartResource(String)</a></li><li><a href="#AltV_Net_ICore_SetPassword_System_String_">SetPassword(String)</a></li><li><a href="#AltV_Net_ICore_SetSyncedMetaData_System_String_System_Object_">SetSyncedMetaData(String, Object)</a></li><li><a href="#AltV_Net_ICore_StartResource_System_String_">StartResource(String)</a></li><li><a href="#AltV_Net_ICore_StopResource_System_String_">StopResource(String)</a></li><li><a href="#AltV_Net_ICore_StopServer">StopServer()</a></li><li><a href="#AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_IntPtr_AltV_Net_Elements_Args_MValueConst___">TriggerClientEvent(IPlayer, IntPtr, MValueConst[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_IntPtr_IntPtr___">TriggerClientEvent(IPlayer, IntPtr, IntPtr[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_IntPtr_System_Object___">TriggerClientEvent(IPlayer, IntPtr, Object[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_System_String_AltV_Net_Elements_Args_MValueConst___">TriggerClientEvent(IPlayer, String, MValueConst[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_System_String_IntPtr___">TriggerClientEvent(IPlayer, String, IntPtr[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_System_String_System_Object___">TriggerClientEvent(IPlayer, String, Object[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForAll_IntPtr_AltV_Net_Elements_Args_MValueConst___">TriggerClientEventForAll(IntPtr, MValueConst[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForAll_IntPtr_IntPtr___">TriggerClientEventForAll(IntPtr, IntPtr[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForAll_IntPtr_System_Object___">TriggerClientEventForAll(IntPtr, Object[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForAll_System_String_AltV_Net_Elements_Args_MValueConst___">TriggerClientEventForAll(String, MValueConst[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForAll_System_String_IntPtr___">TriggerClientEventForAll(String, IntPtr[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForAll_System_String_System_Object___">TriggerClientEventForAll(String, Object[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___IntPtr_AltV_Net_Elements_Args_MValueConst___">TriggerClientEventForSome(IPlayer[], IntPtr, MValueConst[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___IntPtr_IntPtr___">TriggerClientEventForSome(IPlayer[], IntPtr, IntPtr[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___IntPtr_System_Object___">TriggerClientEventForSome(IPlayer[], IntPtr, Object[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___System_String_AltV_Net_Elements_Args_MValueConst___">TriggerClientEventForSome(IPlayer[], String, MValueConst[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___System_String_IntPtr___">TriggerClientEventForSome(IPlayer[], String, IntPtr[])</a></li><li><a href="#AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___System_String_System_Object___">TriggerClientEventForSome(IPlayer[], String, Object[])</a></li><li><a href="#AltV_Net_ICore_TriggerServerEvent_IntPtr_AltV_Net_Elements_Args_MValueConst___">TriggerServerEvent(IntPtr, MValueConst[])</a></li><li><a href="#AltV_Net_ICore_TriggerServerEvent_IntPtr_IntPtr___">TriggerServerEvent(IntPtr, IntPtr[])</a></li><li><a href="#AltV_Net_ICore_TriggerServerEvent_IntPtr_System_Object___">TriggerServerEvent(IntPtr, Object[])</a></li><li><a href="#AltV_Net_ICore_TriggerServerEvent_System_String_AltV_Net_Elements_Args_MValueConst___">TriggerServerEvent(String, MValueConst[])</a></li><li><a href="#AltV_Net_ICore_TriggerServerEvent_System_String_IntPtr___">TriggerServerEvent(String, IntPtr[])</a></li><li><a href="#AltV_Net_ICore_TriggerServerEvent_System_String_System_Object___">TriggerServerEvent(String, Object[])</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.ICore">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L13">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore.md&amp;value=---%0Auid%3A%20AltV.Net.ICore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_ICore" data-uid="AltV.Net.ICore" class="text-break">Interface ICore
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_NativePointer">ISharedCore.NativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_Version">ISharedCore.Version</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_Branch">ISharedCore.Branch</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_IsDebug">ISharedCore.IsDebug</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_LogInfo_System_String_">ISharedCore.LogInfo(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_Hash_System_String_">ISharedCore.Hash(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_LogDebug_System_String_">ISharedCore.LogDebug(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_LogWarning_System_String_">ISharedCore.LogWarning(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_LogError_System_String_">ISharedCore.LogError(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_LogColored_System_String_">ISharedCore.LogColored(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_LogInfo_IntPtr_">ISharedCore.LogInfo(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_LogDebug_IntPtr_">ISharedCore.LogDebug(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_LogWarning_IntPtr_">ISharedCore.LogWarning(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_LogError_IntPtr_">ISharedCore.LogError(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_LogColored_IntPtr_">ISharedCore.LogColored(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_PtrToStringUtf8AndFree_System_IntPtr_System_Int32_">ISharedCore.PtrToStringUtf8AndFree(IntPtr, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_RegisterMValueAdapter__1_AltV_Net_IMValueAdapter___0__">ISharedCore.RegisterMValueAdapter&lt;T&gt;(IMValueAdapter&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_ToMValue_System_Object_Type_AltV_Net_Elements_Args_MValueConst__">ISharedCore.ToMValue(Object, Type, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_FromMValue_AltV_Net_Elements_Args_MValueConst__Type_System_Object__">ISharedCore.FromMValue(MValueConst, Type, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_MValueFromObject_System_Object_Type_System_Object__">ISharedCore.MValueFromObject(Object, Type, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_IsMValueConvertible_Type_">ISharedCore.IsMValueConvertible(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueNil_AltV_Net_Elements_Args_MValueConst__">ISharedCore.CreateMValueNil(MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueBool_AltV_Net_Elements_Args_MValueConst__System_Boolean_">ISharedCore.CreateMValueBool(MValueConst, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueInt_AltV_Net_Elements_Args_MValueConst__System_Int64_">ISharedCore.CreateMValueInt(MValueConst, Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueUInt_AltV_Net_Elements_Args_MValueConst__System_UInt64_">ISharedCore.CreateMValueUInt(MValueConst, UInt64)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueDouble_AltV_Net_Elements_Args_MValueConst__System_Double_">ISharedCore.CreateMValueDouble(MValueConst, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueString_AltV_Net_Elements_Args_MValueConst__System_String_">ISharedCore.CreateMValueString(MValueConst, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueList_AltV_Net_Elements_Args_MValueConst__AltV_Net_Elements_Args_MValueConst___System_UInt64_">ISharedCore.CreateMValueList(MValueConst, MValueConst[], UInt64)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueDict_AltV_Net_Elements_Args_MValueConst__System_String___AltV_Net_Elements_Args_MValueConst___System_UInt64_">ISharedCore.CreateMValueDict(MValueConst, String[], MValueConst[], UInt64)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueBaseObject_AltV_Net_Elements_Args_MValueConst__AltV_Net_Shared_Elements_Entities_ISharedBaseObject_">ISharedCore.CreateMValueBaseObject(MValueConst, ISharedBaseObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueFunction_AltV_Net_Elements_Args_MValueConst__IntPtr_">ISharedCore.CreateMValueFunction(MValueConst, IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueVector3_AltV_Net_Elements_Args_MValueConst__AltV_Net_Data_Position_">ISharedCore.CreateMValueVector3(MValueConst, Position)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueVector2_AltV_Net_Elements_Args_MValueConst__Vector2_">ISharedCore.CreateMValueVector2(MValueConst, Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueRgba_AltV_Net_Elements_Args_MValueConst__AltV_Net_Data_Rgba_">ISharedCore.CreateMValueRgba(MValueConst, Rgba)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValueByteArray_AltV_Net_Elements_Args_MValueConst__System_Byte___">ISharedCore.CreateMValueByteArray(MValueConst, Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValue_AltV_Net_Elements_Args_MValueConst__System_Object_">ISharedCore.CreateMValue(MValueConst, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_CreateMValues_AltV_Net_Elements_Args_MValueConst___System_Object___">ISharedCore.CreateMValues(MValueConst[], Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_SetMetaData_System_String_System_Object_">ISharedCore.SetMetaData(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_HasMetaData_System_String_">ISharedCore.HasMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_DeleteMetaData_System_String_">ISharedCore.DeleteMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">ISharedCore.GetMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_HasSyncedMetaData_System_String_">ISharedCore.HasSyncedMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedCore.html#AltV_Net_Shared_ISharedCore_GetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">ISharedCore.GetSyncedMetaData(String, MValueConst)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.html">AltV.Net</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.dll</h6>
+  <h5 id="AltV_Net_ICore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICore : ISharedCore, ICApiCore</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_BaseBaseObjectPool.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.BaseBaseObjectPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L15">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_BaseBaseObjectPool_" data-uid="AltV.Net.ICore.BaseBaseObjectPool*"></a>
+  <h4 id="AltV_Net_ICore_BaseBaseObjectPool" data-uid="AltV.Net.ICore.BaseBaseObjectPool">BaseBaseObjectPool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IBaseBaseObjectPool BaseBaseObjectPool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseBaseObjectPool.html">IBaseBaseObjectPool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_BaseEntityPool.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.BaseEntityPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L29">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_BaseEntityPool_" data-uid="AltV.Net.ICore.BaseEntityPool*"></a>
+  <h4 id="AltV_Net_ICore_BaseEntityPool" data-uid="AltV.Net.ICore.BaseEntityPool">BaseEntityPool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IBaseEntityPool BaseEntityPool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseEntityPool.html">IBaseEntityPool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_BlipPool.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.BlipPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L18">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_BlipPool_" data-uid="AltV.Net.ICore.BlipPool*"></a>
+  <h4 id="AltV_Net_ICore_BlipPool" data-uid="AltV.Net.ICore.BlipPool">BlipPool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IBaseObjectPool&lt;IBlip&gt; BlipPool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IBlip.html">IBlip</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CheckpointPool.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CheckpointPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L19">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CheckpointPool_" data-uid="AltV.Net.ICore.CheckpointPool*"></a>
+  <h4 id="AltV_Net_ICore_CheckpointPool" data-uid="AltV.Net.ICore.CheckpointPool">CheckpointPool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IBaseObjectPool&lt;ICheckpoint&gt; CheckpointPool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.ICheckpoint.html">ICheckpoint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_ColShapePool.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.ColShapePool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L21">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_ColShapePool_" data-uid="AltV.Net.ICore.ColShapePool*"></a>
+  <h4 id="AltV_Net_ICore_ColShapePool" data-uid="AltV.Net.ICore.ColShapePool">ColShapePool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IBaseObjectPool&lt;IColShape&gt; ColShapePool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_NativeResourcePool.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.NativeResourcePool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L22">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_NativeResourcePool_" data-uid="AltV.Net.ICore.NativeResourcePool*"></a>
+  <h4 id="AltV_Net_ICore_NativeResourcePool" data-uid="AltV.Net.ICore.NativeResourcePool">NativeResourcePool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INativeResourcePool NativeResourcePool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.INativeResourcePool.html">INativeResourcePool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_NetTime.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.NetTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L24">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_NetTime_" data-uid="AltV.Net.ICore.NetTime*"></a>
+  <h4 id="AltV_Net_ICore_NetTime" data-uid="AltV.Net.ICore.NetTime">NetTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int NetTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_PlayerPool.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.PlayerPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L16">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_PlayerPool_" data-uid="AltV.Net.ICore.PlayerPool*"></a>
+  <h4 id="AltV_Net_ICore_PlayerPool" data-uid="AltV.Net.ICore.PlayerPool">PlayerPool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEntityPool&lt;IPlayer&gt; PlayerPool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_Resource.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.Resource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L28">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_Resource_" data-uid="AltV.Net.ICore.Resource*"></a>
+  <h4 id="AltV_Net_ICore_Resource" data-uid="AltV.Net.ICore.Resource">Resource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INativeResource Resource { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.INativeResource.html">INativeResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_RootDirectory.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.RootDirectory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L26">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_RootDirectory_" data-uid="AltV.Net.ICore.RootDirectory*"></a>
+  <h4 id="AltV_Net_ICore_RootDirectory" data-uid="AltV.Net.ICore.RootDirectory">RootDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RootDirectory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_VehiclePool.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.VehiclePool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L17">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_VehiclePool_" data-uid="AltV.Net.ICore.VehiclePool*"></a>
+  <h4 id="AltV_Net_ICore_VehiclePool" data-uid="AltV.Net.ICore.VehiclePool">VehiclePool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEntityPool&lt;IVehicle&gt; VehiclePool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_VoiceChannelPool.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.VoiceChannelPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L20">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_VoiceChannelPool_" data-uid="AltV.Net.ICore.VoiceChannelPool*"></a>
+  <h4 id="AltV_Net_ICore_VoiceChannelPool" data-uid="AltV.Net.ICore.VoiceChannelPool">VoiceChannelPool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IBaseObjectPool&lt;IVoiceChannel&gt; VoiceChannelPool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVoiceChannel.html">IVoiceChannel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateBlip_AltV_Net_Elements_Entities_IPlayer_System_Byte_AltV_Net_Elements_Entities_IEntity_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateBlip(AltV.Net.Elements.Entities.IPlayer%2CSystem.Byte%2CAltV.Net.Elements.Entities.IEntity)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L93">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateBlip_" data-uid="AltV.Net.ICore.CreateBlip*"></a>
+  <h4 id="AltV_Net_ICore_CreateBlip_AltV_Net_Elements_Entities_IPlayer_System_Byte_AltV_Net_Elements_Entities_IEntity_" data-uid="AltV.Net.ICore.CreateBlip(AltV.Net.Elements.Entities.IPlayer,System.Byte,AltV.Net.Elements.Entities.IEntity)">CreateBlip(IPlayer, Byte, IEntity)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IBlip CreateBlip(IPlayer player, byte type, IEntity entityAttach)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td><span class="parametername">entityAttach</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IBlip.html">IBlip</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateBlip_AltV_Net_Elements_Entities_IPlayer_System_Byte_Position_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateBlip(AltV.Net.Elements.Entities.IPlayer%2CSystem.Byte%2CPosition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L91">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateBlip_" data-uid="AltV.Net.ICore.CreateBlip*"></a>
+  <h4 id="AltV_Net_ICore_CreateBlip_AltV_Net_Elements_Entities_IPlayer_System_Byte_Position_" data-uid="AltV.Net.ICore.CreateBlip(AltV.Net.Elements.Entities.IPlayer,System.Byte,Position)">CreateBlip(IPlayer, Byte, Position)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IBlip CreateBlip(IPlayer player, byte type, Position pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Position</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IBlip.html">IBlip</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateCheckpoint_System_Byte_Position_System_Single_System_Single_Rgba_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateCheckpoint(System.Byte%2CPosition%2CSystem.Single%2CSystem.Single%2CRgba)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L89">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateCheckpoint_" data-uid="AltV.Net.ICore.CreateCheckpoint*"></a>
+  <h4 id="AltV_Net_ICore_CreateCheckpoint_System_Byte_Position_System_Single_System_Single_Rgba_" data-uid="AltV.Net.ICore.CreateCheckpoint(System.Byte,Position,System.Single,System.Single,Rgba)">CreateCheckpoint(Byte, Position, Single, Single, Rgba)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ICheckpoint CreateCheckpoint(byte type, Position pos, float radius, float height, Rgba color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Position</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Rgba</span></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.ICheckpoint.html">ICheckpoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateColShapeCircle_Position_System_Single_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateColShapeCircle(Position%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L101">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateColShapeCircle_" data-uid="AltV.Net.ICore.CreateColShapeCircle*"></a>
+  <h4 id="AltV_Net_ICore_CreateColShapeCircle_Position_System_Single_" data-uid="AltV.Net.ICore.CreateColShapeCircle(Position,System.Single)">CreateColShapeCircle(Position, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IColShape CreateColShapeCircle(Position pos, float radius)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Position</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateColShapeCube_Position_Position_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateColShapeCube(Position%2CPosition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L103">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateColShapeCube_" data-uid="AltV.Net.ICore.CreateColShapeCube*"></a>
+  <h4 id="AltV_Net_ICore_CreateColShapeCube_Position_Position_" data-uid="AltV.Net.ICore.CreateColShapeCube(Position,Position)">CreateColShapeCube(Position, Position)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IColShape CreateColShapeCube(Position pos, Position pos2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Position</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Position</span></td>
+        <td><span class="parametername">pos2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateColShapeCylinder_Position_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateColShapeCylinder(Position%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L97">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateColShapeCylinder_" data-uid="AltV.Net.ICore.CreateColShapeCylinder*"></a>
+  <h4 id="AltV_Net_ICore_CreateColShapeCylinder_Position_System_Single_System_Single_" data-uid="AltV.Net.ICore.CreateColShapeCylinder(Position,System.Single,System.Single)">CreateColShapeCylinder(Position, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IColShape CreateColShapeCylinder(Position pos, float radius, float height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Position</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateColShapePolygon_System_Single_System_Single_Vector2___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateColShapePolygon(System.Single%2CSystem.Single%2CVector2%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L107">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateColShapePolygon_" data-uid="AltV.Net.ICore.CreateColShapePolygon*"></a>
+  <h4 id="AltV_Net_ICore_CreateColShapePolygon_System_Single_System_Single_Vector2___" data-uid="AltV.Net.ICore.CreateColShapePolygon(System.Single,System.Single,Vector2[])">CreateColShapePolygon(Single, Single, Vector2[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IColShape CreateColShapePolygon(float minZ, float maxZ, Vector2[] points)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">minZ</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxZ</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector2</span>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateColShapeRectangle_System_Single_System_Single_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateColShapeRectangle(System.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L105">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateColShapeRectangle_" data-uid="AltV.Net.ICore.CreateColShapeRectangle*"></a>
+  <h4 id="AltV_Net_ICore_CreateColShapeRectangle_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="AltV.Net.ICore.CreateColShapeRectangle(System.Single,System.Single,System.Single,System.Single,System.Single)">CreateColShapeRectangle(Single, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IColShape CreateColShapeRectangle(float x1, float y1, float x2, float y2, float z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">x2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">y2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">z</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateColShapeSphere_Position_System_Single_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateColShapeSphere(Position%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L99">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateColShapeSphere_" data-uid="AltV.Net.ICore.CreateColShapeSphere*"></a>
+  <h4 id="AltV_Net_ICore_CreateColShapeSphere_Position_System_Single_" data-uid="AltV.Net.ICore.CreateColShapeSphere(Position,System.Single)">CreateColShapeSphere(Position, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IColShape CreateColShapeSphere(Position pos, float radius)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Position</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateVehicle_System_UInt32_Position_Rotation_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateVehicle(System.UInt32%2CPosition%2CRotation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L87">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateVehicle_" data-uid="AltV.Net.ICore.CreateVehicle*"></a>
+  <h4 id="AltV_Net_ICore_CreateVehicle_System_UInt32_Position_Rotation_" data-uid="AltV.Net.ICore.CreateVehicle(System.UInt32,Position,Rotation)">CreateVehicle(UInt32, Position, Rotation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IVehicle CreateVehicle(uint model, Position pos, Rotation rotation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Position</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Rotation</span></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateVehicleEntity_System_UInt16__System_UInt32_Position_Rotation_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateVehicleEntity(System.UInt16%40%2CSystem.UInt32%2CPosition%2CRotation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L125">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateVehicleEntity_" data-uid="AltV.Net.ICore.CreateVehicleEntity*"></a>
+  <h4 id="AltV_Net_ICore_CreateVehicleEntity_System_UInt16__System_UInt32_Position_Rotation_" data-uid="AltV.Net.ICore.CreateVehicleEntity(System.UInt16@,System.UInt32,Position,Rotation)">CreateVehicleEntity(out UInt16, UInt32, Position, Rotation)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntPtr CreateVehicleEntity(out ushort id, uint model, Position pos, Rotation rotation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Position</span></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Rotation</span></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_CreateVoiceChannel_System_Boolean_System_Single_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.CreateVoiceChannel(System.Boolean%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L95">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_CreateVoiceChannel_" data-uid="AltV.Net.ICore.CreateVoiceChannel*"></a>
+  <h4 id="AltV_Net_ICore_CreateVoiceChannel_System_Boolean_System_Single_" data-uid="AltV.Net.ICore.CreateVoiceChannel(System.Boolean,System.Single)">CreateVoiceChannel(Boolean, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IVoiceChannel CreateVoiceChannel(bool spatial, float maxDistance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">spatial</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxDistance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVoiceChannel.html">IVoiceChannel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_DeleteSyncedMetaData_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.DeleteSyncedMetaData(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L141">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_DeleteSyncedMetaData_" data-uid="AltV.Net.ICore.DeleteSyncedMetaData*"></a>
+  <h4 id="AltV_Net_ICore_DeleteSyncedMetaData_System_String_" data-uid="AltV.Net.ICore.DeleteSyncedMetaData(System.String)">DeleteSyncedMetaData(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteSyncedMetaData(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_FileExists_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.FileExists(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L143">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_FileExists_" data-uid="AltV.Net.ICore.FileExists*"></a>
+  <h4 id="AltV_Net_ICore_FileExists_System_String_" data-uid="AltV.Net.ICore.FileExists(System.String)">FileExists(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool FileExists(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_FileRead_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.FileRead(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L145">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_FileRead_" data-uid="AltV.Net.ICore.FileRead*"></a>
+  <h4 id="AltV_Net_ICore_FileRead_System_String_" data-uid="AltV.Net.ICore.FileRead(System.String)">FileRead(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string FileRead(string path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_GetEntityById_System_UInt16_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.GetEntityById(System.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L131">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_GetEntityById_" data-uid="AltV.Net.ICore.GetEntityById*"></a>
+  <h4 id="AltV_Net_ICore_GetEntityById_System_UInt16_" data-uid="AltV.Net.ICore.GetEntityById(System.UInt16)">GetEntityById(UInt16)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEntity GetEntityById(ushort id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IEntity.html">IEntity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_GetPlayers.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.GetPlayers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L127">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_GetPlayers_" data-uid="AltV.Net.ICore.GetPlayers*"></a>
+  <h4 id="AltV_Net_ICore_GetPlayers" data-uid="AltV.Net.ICore.GetPlayers">GetPlayers()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPlayer[] GetPlayers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_GetResource_IntPtr_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.GetResource(IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L121">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_GetResource_" data-uid="AltV.Net.ICore.GetResource*"></a>
+  <h4 id="AltV_Net_ICore_GetResource_IntPtr_" data-uid="AltV.Net.ICore.GetResource(IntPtr)">GetResource(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INativeResource GetResource(IntPtr resourcePointer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">resourcePointer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.INativeResource.html">INativeResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_GetResource_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.GetResource(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L119">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_GetResource_" data-uid="AltV.Net.ICore.GetResource*"></a>
+  <h4 id="AltV_Net_ICore_GetResource_System_String_" data-uid="AltV.Net.ICore.GetResource(System.String)">GetResource(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INativeResource GetResource(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.INativeResource.html">INativeResource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_GetVehicleModelInfo_System_UInt32_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.GetVehicleModelInfo(System.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L35">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_GetVehicleModelInfo_" data-uid="AltV.Net.ICore.GetVehicleModelInfo*"></a>
+  <h4 id="AltV_Net_ICore_GetVehicleModelInfo_System_UInt32_" data-uid="AltV.Net.ICore.GetVehicleModelInfo(System.UInt32)">GetVehicleModelInfo(UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">VehicleModelInfo GetVehicleModelInfo(uint hash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">hash</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.VehicleModelInfo.html">VehicleModelInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_GetVehicles.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.GetVehicles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L129">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_GetVehicles_" data-uid="AltV.Net.ICore.GetVehicles*"></a>
+  <h4 id="AltV_Net_ICore_GetVehicles" data-uid="AltV.Net.ICore.GetVehicles">GetVehicles()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IVehicle[] GetVehicles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_HashPassword_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.HashPassword(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L31">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_HashPassword_" data-uid="AltV.Net.ICore.HashPassword*"></a>
+  <h4 id="AltV_Net_ICore_HashPassword_System_String_" data-uid="AltV.Net.ICore.HashPassword(System.String)">HashPassword(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ulong HashPassword(string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_RemoveBlip_AltV_Net_Elements_Entities_IBlip_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.RemoveBlip(AltV.Net.Elements.Entities.IBlip)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L109">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_RemoveBlip_" data-uid="AltV.Net.ICore.RemoveBlip*"></a>
+  <h4 id="AltV_Net_ICore_RemoveBlip_AltV_Net_Elements_Entities_IBlip_" data-uid="AltV.Net.ICore.RemoveBlip(AltV.Net.Elements.Entities.IBlip)">RemoveBlip(IBlip)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveBlip(IBlip blip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IBlip.html">IBlip</a></td>
+        <td><span class="parametername">blip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_RemoveCheckpoint_AltV_Net_Elements_Entities_ICheckpoint_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.RemoveCheckpoint(AltV.Net.Elements.Entities.ICheckpoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L111">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_RemoveCheckpoint_" data-uid="AltV.Net.ICore.RemoveCheckpoint*"></a>
+  <h4 id="AltV_Net_ICore_RemoveCheckpoint_AltV_Net_Elements_Entities_ICheckpoint_" data-uid="AltV.Net.ICore.RemoveCheckpoint(AltV.Net.Elements.Entities.ICheckpoint)">RemoveCheckpoint(ICheckpoint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveCheckpoint(ICheckpoint checkpoint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.ICheckpoint.html">ICheckpoint</a></td>
+        <td><span class="parametername">checkpoint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_RemoveColShape_AltV_Net_Elements_Entities_IColShape_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.RemoveColShape(AltV.Net.Elements.Entities.IColShape)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L117">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_RemoveColShape_" data-uid="AltV.Net.ICore.RemoveColShape*"></a>
+  <h4 id="AltV_Net_ICore_RemoveColShape_AltV_Net_Elements_Entities_IColShape_" data-uid="AltV.Net.ICore.RemoveColShape(AltV.Net.Elements.Entities.IColShape)">RemoveColShape(IColShape)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveColShape(IColShape colShape)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a></td>
+        <td><span class="parametername">colShape</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_RemoveVehicle_AltV_Net_Elements_Entities_IVehicle_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.RemoveVehicle(AltV.Net.Elements.Entities.IVehicle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L113">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_RemoveVehicle_" data-uid="AltV.Net.ICore.RemoveVehicle*"></a>
+  <h4 id="AltV_Net_ICore_RemoveVehicle_AltV_Net_Elements_Entities_IVehicle_" data-uid="AltV.Net.ICore.RemoveVehicle(AltV.Net.Elements.Entities.IVehicle)">RemoveVehicle(IVehicle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveVehicle(IVehicle vehicle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a></td>
+        <td><span class="parametername">vehicle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_RemoveVoiceChannel_AltV_Net_Elements_Entities_IVoiceChannel_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.RemoveVoiceChannel(AltV.Net.Elements.Entities.IVoiceChannel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L115">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_RemoveVoiceChannel_" data-uid="AltV.Net.ICore.RemoveVoiceChannel*"></a>
+  <h4 id="AltV_Net_ICore_RemoveVoiceChannel_AltV_Net_Elements_Entities_IVoiceChannel_" data-uid="AltV.Net.ICore.RemoveVoiceChannel(AltV.Net.Elements.Entities.IVoiceChannel)">RemoveVoiceChannel(IVoiceChannel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveVoiceChannel(IVoiceChannel channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IVoiceChannel.html">IVoiceChannel</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_RestartResource_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.RestartResource(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L137">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_RestartResource_" data-uid="AltV.Net.ICore.RestartResource*"></a>
+  <h4 id="AltV_Net_ICore_RestartResource_System_String_" data-uid="AltV.Net.ICore.RestartResource(System.String)">RestartResource(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RestartResource(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_SetPassword_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.SetPassword(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L33">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_SetPassword_" data-uid="AltV.Net.ICore.SetPassword*"></a>
+  <h4 id="AltV_Net_ICore_SetPassword_System_String_" data-uid="AltV.Net.ICore.SetPassword(System.String)">SetPassword(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetPassword(string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_SetSyncedMetaData_System_String_System_Object_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.SetSyncedMetaData(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L139">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_SetSyncedMetaData_" data-uid="AltV.Net.ICore.SetSyncedMetaData*"></a>
+  <h4 id="AltV_Net_ICore_SetSyncedMetaData_System_String_System_Object_" data-uid="AltV.Net.ICore.SetSyncedMetaData(System.String,System.Object)">SetSyncedMetaData(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetSyncedMetaData(string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_StartResource_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.StartResource(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L133">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_StartResource_" data-uid="AltV.Net.ICore.StartResource*"></a>
+  <h4 id="AltV_Net_ICore_StartResource_System_String_" data-uid="AltV.Net.ICore.StartResource(System.String)">StartResource(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StartResource(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_StopResource_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.StopResource(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L135">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_StopResource_" data-uid="AltV.Net.ICore.StopResource*"></a>
+  <h4 id="AltV_Net_ICore_StopResource_System_String_" data-uid="AltV.Net.ICore.StopResource(System.String)">StopResource(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StopResource(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_StopServer.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.StopServer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L37">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_StopServer_" data-uid="AltV.Net.ICore.StopServer*"></a>
+  <h4 id="AltV_Net_ICore_StopServer" data-uid="AltV.Net.ICore.StopServer">StopServer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StopServer()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_IntPtr_AltV_Net_Elements_Args_MValueConst___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer%2CIntPtr%2CAltV.Net.Elements.Args.MValueConst%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L51">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEvent_" data-uid="AltV.Net.ICore.TriggerClientEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_IntPtr_AltV_Net_Elements_Args_MValueConst___" data-uid="AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer,IntPtr,AltV.Net.Elements.Args.MValueConst[])">TriggerClientEvent(IPlayer, IntPtr, MValueConst[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEvent(IPlayer player, IntPtr eventNamePtr, MValueConst[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_IntPtr_IntPtr___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer%2CIntPtr%2CIntPtr%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L55">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEvent_" data-uid="AltV.Net.ICore.TriggerClientEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_IntPtr_IntPtr___" data-uid="AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer,IntPtr,IntPtr[])">TriggerClientEvent(IPlayer, IntPtr, IntPtr[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEvent(IPlayer player, IntPtr eventNamePtr, IntPtr[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_IntPtr_System_Object___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer%2CIntPtr%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L59">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEvent_" data-uid="AltV.Net.ICore.TriggerClientEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_IntPtr_System_Object___" data-uid="AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer,IntPtr,System.Object[])">TriggerClientEvent(IPlayer, IntPtr, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEvent(IPlayer player, IntPtr eventNamePtr, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_System_String_AltV_Net_Elements_Args_MValueConst___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer%2CSystem.String%2CAltV.Net.Elements.Args.MValueConst%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L53">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEvent_" data-uid="AltV.Net.ICore.TriggerClientEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_System_String_AltV_Net_Elements_Args_MValueConst___" data-uid="AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer,System.String,AltV.Net.Elements.Args.MValueConst[])">TriggerClientEvent(IPlayer, String, MValueConst[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEvent(IPlayer player, string eventName, MValueConst[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_System_String_IntPtr___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer%2CSystem.String%2CIntPtr%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L57">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEvent_" data-uid="AltV.Net.ICore.TriggerClientEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_System_String_IntPtr___" data-uid="AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer,System.String,IntPtr[])">TriggerClientEvent(IPlayer, String, IntPtr[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEvent(IPlayer player, string eventName, IntPtr[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_System_String_System_Object___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L61">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEvent_" data-uid="AltV.Net.ICore.TriggerClientEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEvent_AltV_Net_Elements_Entities_IPlayer_System_String_System_Object___" data-uid="AltV.Net.ICore.TriggerClientEvent(AltV.Net.Elements.Entities.IPlayer,System.String,System.Object[])">TriggerClientEvent(IPlayer, String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEvent(IPlayer player, string eventName, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForAll_IntPtr_AltV_Net_Elements_Args_MValueConst___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForAll(IntPtr%2CAltV.Net.Elements.Args.MValueConst%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L63">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForAll_" data-uid="AltV.Net.ICore.TriggerClientEventForAll*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForAll_IntPtr_AltV_Net_Elements_Args_MValueConst___" data-uid="AltV.Net.ICore.TriggerClientEventForAll(IntPtr,AltV.Net.Elements.Args.MValueConst[])">TriggerClientEventForAll(IntPtr, MValueConst[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForAll(IntPtr eventNamePtr, MValueConst[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForAll_IntPtr_IntPtr___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForAll(IntPtr%2CIntPtr%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L67">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForAll_" data-uid="AltV.Net.ICore.TriggerClientEventForAll*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForAll_IntPtr_IntPtr___" data-uid="AltV.Net.ICore.TriggerClientEventForAll(IntPtr,IntPtr[])">TriggerClientEventForAll(IntPtr, IntPtr[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForAll(IntPtr eventNamePtr, IntPtr[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForAll_IntPtr_System_Object___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForAll(IntPtr%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L71">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForAll_" data-uid="AltV.Net.ICore.TriggerClientEventForAll*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForAll_IntPtr_System_Object___" data-uid="AltV.Net.ICore.TriggerClientEventForAll(IntPtr,System.Object[])">TriggerClientEventForAll(IntPtr, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForAll(IntPtr eventNamePtr, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForAll_System_String_AltV_Net_Elements_Args_MValueConst___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForAll(System.String%2CAltV.Net.Elements.Args.MValueConst%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L65">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForAll_" data-uid="AltV.Net.ICore.TriggerClientEventForAll*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForAll_System_String_AltV_Net_Elements_Args_MValueConst___" data-uid="AltV.Net.ICore.TriggerClientEventForAll(System.String,AltV.Net.Elements.Args.MValueConst[])">TriggerClientEventForAll(String, MValueConst[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForAll(string eventName, MValueConst[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForAll_System_String_IntPtr___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForAll(System.String%2CIntPtr%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L69">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForAll_" data-uid="AltV.Net.ICore.TriggerClientEventForAll*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForAll_System_String_IntPtr___" data-uid="AltV.Net.ICore.TriggerClientEventForAll(System.String,IntPtr[])">TriggerClientEventForAll(String, IntPtr[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForAll(string eventName, IntPtr[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForAll_System_String_System_Object___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForAll(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L73">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForAll_" data-uid="AltV.Net.ICore.TriggerClientEventForAll*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForAll_System_String_System_Object___" data-uid="AltV.Net.ICore.TriggerClientEventForAll(System.String,System.Object[])">TriggerClientEventForAll(String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForAll(string eventName, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___IntPtr_AltV_Net_Elements_Args_MValueConst___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer%5B%5D%2CIntPtr%2CAltV.Net.Elements.Args.MValueConst%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L75">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForSome_" data-uid="AltV.Net.ICore.TriggerClientEventForSome*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___IntPtr_AltV_Net_Elements_Args_MValueConst___" data-uid="AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer[],IntPtr,AltV.Net.Elements.Args.MValueConst[])">TriggerClientEventForSome(IPlayer[], IntPtr, MValueConst[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForSome(IPlayer[] clients, IntPtr eventNamePtr, MValueConst[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>[]</td>
+        <td><span class="parametername">clients</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___IntPtr_IntPtr___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer%5B%5D%2CIntPtr%2CIntPtr%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L79">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForSome_" data-uid="AltV.Net.ICore.TriggerClientEventForSome*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___IntPtr_IntPtr___" data-uid="AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer[],IntPtr,IntPtr[])">TriggerClientEventForSome(IPlayer[], IntPtr, IntPtr[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForSome(IPlayer[] clients, IntPtr eventNamePtr, IntPtr[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>[]</td>
+        <td><span class="parametername">clients</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___IntPtr_System_Object___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer%5B%5D%2CIntPtr%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L83">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForSome_" data-uid="AltV.Net.ICore.TriggerClientEventForSome*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___IntPtr_System_Object___" data-uid="AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer[],IntPtr,System.Object[])">TriggerClientEventForSome(IPlayer[], IntPtr, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForSome(IPlayer[] clients, IntPtr eventNamePtr, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>[]</td>
+        <td><span class="parametername">clients</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___System_String_AltV_Net_Elements_Args_MValueConst___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer%5B%5D%2CSystem.String%2CAltV.Net.Elements.Args.MValueConst%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L77">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForSome_" data-uid="AltV.Net.ICore.TriggerClientEventForSome*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___System_String_AltV_Net_Elements_Args_MValueConst___" data-uid="AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer[],System.String,AltV.Net.Elements.Args.MValueConst[])">TriggerClientEventForSome(IPlayer[], String, MValueConst[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForSome(IPlayer[] clients, string eventName, MValueConst[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>[]</td>
+        <td><span class="parametername">clients</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___System_String_IntPtr___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer%5B%5D%2CSystem.String%2CIntPtr%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L81">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForSome_" data-uid="AltV.Net.ICore.TriggerClientEventForSome*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___System_String_IntPtr___" data-uid="AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer[],System.String,IntPtr[])">TriggerClientEventForSome(IPlayer[], String, IntPtr[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForSome(IPlayer[] clients, string eventName, IntPtr[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>[]</td>
+        <td><span class="parametername">clients</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___System_String_System_Object___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer%5B%5D%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L85">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerClientEventForSome_" data-uid="AltV.Net.ICore.TriggerClientEventForSome*"></a>
+  <h4 id="AltV_Net_ICore_TriggerClientEventForSome_AltV_Net_Elements_Entities_IPlayer___System_String_System_Object___" data-uid="AltV.Net.ICore.TriggerClientEventForSome(AltV.Net.Elements.Entities.IPlayer[],System.String,System.Object[])">TriggerClientEventForSome(IPlayer[], String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerClientEventForSome(IPlayer[] clients, string eventName, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>[]</td>
+        <td><span class="parametername">clients</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerServerEvent_IntPtr_AltV_Net_Elements_Args_MValueConst___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerServerEvent(IntPtr%2CAltV.Net.Elements.Args.MValueConst%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L41">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerServerEvent_" data-uid="AltV.Net.ICore.TriggerServerEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerServerEvent_IntPtr_AltV_Net_Elements_Args_MValueConst___" data-uid="AltV.Net.ICore.TriggerServerEvent(IntPtr,AltV.Net.Elements.Args.MValueConst[])">TriggerServerEvent(IntPtr, MValueConst[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerServerEvent(IntPtr eventNamePtr, MValueConst[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerServerEvent_IntPtr_IntPtr___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerServerEvent(IntPtr%2CIntPtr%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L45">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerServerEvent_" data-uid="AltV.Net.ICore.TriggerServerEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerServerEvent_IntPtr_IntPtr___" data-uid="AltV.Net.ICore.TriggerServerEvent(IntPtr,IntPtr[])">TriggerServerEvent(IntPtr, IntPtr[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerServerEvent(IntPtr eventNamePtr, IntPtr[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerServerEvent_IntPtr_System_Object___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerServerEvent(IntPtr%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L47">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerServerEvent_" data-uid="AltV.Net.ICore.TriggerServerEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerServerEvent_IntPtr_System_Object___" data-uid="AltV.Net.ICore.TriggerServerEvent(IntPtr,System.Object[])">TriggerServerEvent(IntPtr, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerServerEvent(IntPtr eventNamePtr, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">eventNamePtr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerServerEvent_System_String_AltV_Net_Elements_Args_MValueConst___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerServerEvent(System.String%2CAltV.Net.Elements.Args.MValueConst%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L39">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerServerEvent_" data-uid="AltV.Net.ICore.TriggerServerEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerServerEvent_System_String_AltV_Net_Elements_Args_MValueConst___" data-uid="AltV.Net.ICore.TriggerServerEvent(System.String,AltV.Net.Elements.Args.MValueConst[])">TriggerServerEvent(String, MValueConst[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerServerEvent(string eventName, MValueConst[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Args.MValueConst.html">MValueConst</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerServerEvent_System_String_IntPtr___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerServerEvent(System.String%2CIntPtr%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L43">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerServerEvent_" data-uid="AltV.Net.ICore.TriggerServerEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerServerEvent_System_String_IntPtr___" data-uid="AltV.Net.ICore.TriggerServerEvent(System.String,IntPtr[])">TriggerServerEvent(String, IntPtr[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerServerEvent(string eventName, IntPtr[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_ICore_TriggerServerEvent_System_String_System_Object___.md&amp;value=---%0Auid%3A%20AltV.Net.ICore.TriggerServerEvent(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net/ICore.cs/#L49">View Source</a>
+  </span>
+  <a id="AltV_Net_ICore_TriggerServerEvent_" data-uid="AltV.Net.ICore.TriggerServerEvent*"></a>
+  <h4 id="AltV_Net_ICore_TriggerServerEvent_System_String_System_Object___" data-uid="AltV.Net.ICore.TriggerServerEvent(System.String,System.Object[])">TriggerServerEvent(String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TriggerServerEvent(string eventName, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">eventName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>
