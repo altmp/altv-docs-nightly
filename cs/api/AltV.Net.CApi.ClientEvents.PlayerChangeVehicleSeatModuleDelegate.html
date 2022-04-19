@@ -6,10 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate ResourceErrorModuleDelegate
+    <title>Delegate PlayerChangeVehicleSeatModuleDelegate
    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Delegate ResourceErrorModuleDelegate
+    <meta name="title" content="Delegate PlayerChangeVehicleSeatModuleDelegate
    ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -126,30 +126,30 @@
                               <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
                             </div>
 
-                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.CApi.ClientEvents.ResourceErrorModuleDelegate">
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.CApi.ClientEvents.PlayerChangeVehicleSeatModuleDelegate">
 
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/c165471d2495967f93b98216a07c2d0ce8f0ebba/api/AltV.Net.CApi/Events/Events.cs/#L25">View Source</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/dev/api/AltV.Net.CApi/Events/Events.cs/#L26">View Source</a>
                                             </li>
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_CApi_ClientEvents_ResourceErrorModuleDelegate.md&amp;value=---%0Auid%3A%20AltV.Net.CApi.ClientEvents.ResourceErrorModuleDelegate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_CApi_ClientEvents_PlayerChangeVehicleSeatModuleDelegate.md&amp;value=---%0Auid%3A%20AltV.Net.CApi.ClientEvents.PlayerChangeVehicleSeatModuleDelegate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
   
   
-  <h1 id="AltV_Net_CApi_ClientEvents_ResourceErrorModuleDelegate" data-uid="AltV.Net.CApi.ClientEvents.ResourceErrorModuleDelegate" class="text-break">Delegate ResourceErrorModuleDelegate
+  <h1 id="AltV_Net_CApi_ClientEvents_PlayerChangeVehicleSeatModuleDelegate" data-uid="AltV.Net.CApi.ClientEvents.PlayerChangeVehicleSeatModuleDelegate" class="text-break">Delegate PlayerChangeVehicleSeatModuleDelegate
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.CApi.ClientEvents.html">AltV.Net.CApi.ClientEvents</a></h6>
   <h6><strong>Assembly</strong>: AltV.Net.CApi.dll</h6>
-  <h5 id="AltV_Net_CApi_ClientEvents_ResourceErrorModuleDelegate_syntax">Syntax</h5>
+  <h5 id="AltV_Net_CApi_ClientEvents_PlayerChangeVehicleSeatModuleDelegate_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void ResourceErrorModuleDelegate(string name);</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void PlayerChangeVehicleSeatModuleDelegate(IntPtr pointer, byte oldSeat, byte newSeat);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,8 +162,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">pointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">oldSeat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">newSeat</span></td>
         <td></td>
       </tr>
     </tbody>

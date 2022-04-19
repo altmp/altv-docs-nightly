@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#_altmp_altv_types_alt_server_Utils_constructor">Utils()</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_server_Utils_wait">wait(number)</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#_altmp_altv_types_alt_server_Utils_constructor">Utils()</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_server_Utils_wait">wait(number)</a></li><li><a href="#_altmp_altv_types_alt_server_Utils_waitFor">waitFor(() =&gt; boolean, number)</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -129,7 +129,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-types/blob/2715c7ab8b262889412ecb280f477af66a984268/./shared/index.d.ts/#L1735">View Source</a>
+                                                <a href="https://github.com/altmp/altv-types/blob/True/./shared/index.d.ts/#L1836">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Utils.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Utils%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -170,7 +170,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Utils_wait.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Utils.wait%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/2715c7ab8b262889412ecb280f477af66a984268/./shared/index.d.ts/#L1739">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./shared/index.d.ts/#L1840">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Utils_wait" data-uid="@altmp/altv-types.alt-server.Utils.wait">wait(number)
   <span class="release-stage alpha"></span>
@@ -196,6 +196,68 @@
         <td><em>timeout</em></td>
         <td>
           
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Promise&lt;void&gt;</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Utils_waitFor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Utils.waitFor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/True/./shared/index.d.ts/#L1850">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Utils_waitFor" data-uid="@altmp/altv-types.alt-server.Utils.waitFor">waitFor(() =&gt; boolean, number)
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"><p>Waits for the callback to return true, otherwise the promise will be rejected after timeout</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public static waitFor(callback: () =&gt; boolean, timeout?: number): Promise&lt;void&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">() =&gt; boolean</span></td>
+        <td><em>callback</em></td>
+        <td>
+          <p>If callback returns true it resolves promise.</p>
+
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>timeout</em></td>
+        <td>
+          <p>The maximum milliseconds to wait, otherwise promise will be rejected. Defaults to 2000.</p>
+
           
         </td>
       </tr>
