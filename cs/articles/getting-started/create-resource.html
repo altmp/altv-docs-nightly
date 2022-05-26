@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Create Resource </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Create Resource ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../styles/colors.css">
+    <link rel="stylesheet" href="../../../styles/discord.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../../index.html">
+                        <img src="../../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#create-resource">Create Resource</a><ul class="level2 nav bs-docs-sidenav create-resource"><li><a href="#create-solution">Create solution</a><ul class="level3 nav bs-docs-sidenav create-solution"><li><a href="#create-a-project-with-visual-studio-19">Create a project with Visual Studio 19</a></li><li><a href="#create-a-project-with-rider-202211">Create a project with Rider 2022.1.1</a></li></ul></li><li><a href="#dependency-deploy">Dependency deploy</a><ul class="level3 nav bs-docs-sidenav dependency-deploy"><li><a href="#modifying-csproj">Modifying csproj</a><ul class="level4 nav bs-docs-sidenav modifying-csproj"><li><a href="#vs">VS</a></li><li><a href="#rider">Rider</a></li></ul></li><li><a href="#publishing-project">Publishing project</a><ul class="level4 nav bs-docs-sidenav publishing-project"><li><a href="#automatic-deploy">Automatic deploy</a><ul class="level5 nav bs-docs-sidenav automatic-deploy"><li><a href="#create-resource-1">Create resource</a><ul class="level6 nav bs-docs-sidenav create-resource-1"><li><a href="#client-side">Client-side</a></li><li><a href="#server-side">Server-side</a></li></ul></li></ul></li></ul></li></ul></li><li><a href="#setup-a-resource-class">Setup a resource class</a></li><li><a href="#next-steps">Next steps</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/master/docs/articles/getting-started/create-resource.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="create-resource">Create Resource</h1>
+
+<div class="TIP">
+<h5>Tip</h5>
+<p>This article covers both <strong>client-side</strong> and <strong>server-side</strong> resources.</p>
+</div>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>C# client-side module cannot be used in production yet.<br>
+The module is still in development, and can be released regardless of alt:V updates.<br></p>
+</div>
+<h2 id="create-solution">Create solution</h2>
+<p>In this example we will assume you call both your resource and your solution &quot;ExampleProject&quot;.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If you want to create a client-side resource, and have a server-side solution already, you can just add a new project to an existing solution.</p>
+</div>
+<h3 id="create-a-project-with-visual-studio-19">Create a project with Visual Studio 19</h3>
+<ul>
+<li>Go to &quot;File -&gt; New -&gt; Project...&quot;, now the Project Wizard should appear.</li>
+<li>In the left column select &quot;Installed -&gt; Visual C# -&gt; .NET&quot;.</li>
+<li>Now select &quot;Class Library (.NET)&quot; and enter &quot;Name&quot;, &quot;Location&quot; and the &quot;Solution name&quot;.</li>
+<li>To setup the correct NuGet Packages open the Manager under &quot;Tools -&gt; NuGet Package Manager -&gt; Manage NuGet Packages for Solution...&quot;</li>
+<li>Select Browse and search for AltV.Net and install the package &quot;AltV.Net&quot; (or &quot;AltV.Net.Async&quot; if you need async thread-safe api access)</li>
+</ul>
+<h3 id="create-a-project-with-rider-202211">Create a project with Rider 2022.1.1</h3>
+<ul>
+<li>Go to &quot;New Solution&quot;, now the &quot;New Solution&quot; window should open.</li>
+<li>In the left column select &quot;.NET / .NET Core -&gt; Class Library&quot;</li>
+<li>Now fill out &quot;Solution name&quot;, &quot;Project name&quot;, &quot;Solution directory&quot; and click &quot;Create&quot;.
+Filled out &quot;New Solution&quot; window should look like this:
+<img src="../../../../altv-docs-assets/coreclr-module/images/create_solution_rider.png" alt="New_solution_window"></li>
+<li>To setup the correct NuGet Packages open the &quot;NuGet&quot; tab at the bottom row of IDE.</li>
+<li>In the search bar enter &quot;AltV.Net&quot; and install the package &quot;AltV.Net&quot; (or &quot;AltV.Net.Async&quot; if you need async thread-safe api access)
+<img src="../../../../altv-docs-assets/coreclr-module/images/nuget_rider.png" alt="Nuget_manager"></li>
+</ul>
+<h2 id="dependency-deploy">Dependency deploy</h2>
+<p>AltV server requires you to put all your NuGet dependencies near your built solution dll. This can be achieved in two ways:</p>
+<ul>
+<li>You can use CopyLocalLockFileAssemblies csproj setting</li>
+<li>You can use publish instead of build</li>
+</ul>
+<h3 id="modifying-csproj">Modifying csproj</h3>
+<p>You can add <code>&lt;CopyLocalLockFileAssemblies&gt;true&lt;/CopyLocalLockFileAssemblies&gt;</code> to a <code>PropertyGroup</code> in your <code>ExampleProject.csproj</code>.
+With that you can build your project normally, each build will have all the dependencies near the built dll in every case.</p>
+<p>To build your project, use <code>dotnet build</code> command or &quot;Build&quot; button in the IDE.
+By default, built files will be located at <code>ExampleProject/ExampleProject/bin/Debug/net6.0/</code></p>
+<h4 id="vs">VS</h4>
+<p>If you want to customize build output, go to &quot;Project -&gt; {Your Project Name} Properties... -&gt; Build&quot;, here you can select the Output path where the dll should be saved.</p>
+<h4 id="rider">Rider</h4>
+<p>If you want to customize build output, right click your assembly (Second &quot;ExampleProject&quot; in your solution tree on the left), go to &quot;Properties -&gt; Debug (or Release, if you build Release)&quot;, here you can hange the &quot;Output path&quot; where the dlls will be placed after the build.</p>
+<h3 id="publishing-project">Publishing project</h3>
+<p>Instead of build use command &quot;dotnet publish&quot; or IDE &quot;Publish&quot; button. In that way resulting dll will contain all the dependeny dlls near, alongside with some runtime stuff, that is not required.</p>
+<p>To build your project, use <code>dotnet publish</code> command or &quot;Publish&quot; button in the IDE.
+By default, built files will be located at <code>ExampleProject/ExampleProject/bin/Debug/net6.0/publish/</code></p>
+<h4 id="automatic-deploy">Automatic deploy</h4>
+<p>See <a href="https://docs.microsoft.com/en-us/visualstudio/deployment/quickstart-deploy-to-local-folder?view=vs-2019">https://docs.microsoft.com/en-us/visualstudio/deployment/quickstart-deploy-to-local-folder?view=vs-2019</a> to automatically publish it in your resource folder or see the boilerplate project file.</p>
+<p>Or, otherwise you can edit .csproj file adding a Target, that will copy files for you.</p>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+    &lt;AllOutputFiles Include=&quot;$(OutputPath)\publish\*.*&quot; /&gt;
+&lt;/ItemGroup&gt;
+
+&lt;Target Name=&quot;CopyFiles&quot; AfterTargets=&quot;publish&quot;&gt;
+    &lt;PropertyGroup&gt;
+        &lt;CopiedFiles&gt;$(OutputPath)\publish\*.*&lt;/CopiedFiles&gt;
+        &lt;TargetLocation Condition=&quot; '$(Configuration)' == 'Release' &quot;&gt;../path/where/dlls/should/be/copied/&lt;/TargetLocation&gt;
+    &lt;/PropertyGroup&gt;
+    &lt;Copy Condition=&quot; '$(TargetLocation)' != '' &quot; SourceFiles=&quot;@(AllOutputFiles)&quot; DestinationFolder=&quot;$(TargetLocation)&quot; SkipUnchangedFiles=&quot;false&quot; /&gt;
+&lt;/Target&gt;
+</code></pre>
+<h2 id="setup-a-resource-class">Setup a resource class</h2>
+<p>Now you have to create a single class, that will be an entry point for your resource.
+The class should extend <code>Resource</code> or <code>AsyncResource</code>, class name doesn't matter.
+Also the class should override <code>void OnStart()</code> and <code>void OnStop()</code> methods.
+The class will be automatically constructed by the module.</p>
+<p>Example code for ExampleResource.cs:</p>
+<pre><code class="lang-csharp">using System;
+using AltV.Net;
+
+namespace ExampleProject
+{
+    internal class ExampleResource : Resource
+    {
+        public override void OnStart()
+        {
+            Console.WriteLine(&quot;Started&quot;);
+        }
+
+        public override void OnStop()
+        {
+            Console.WriteLine(&quot;Stopped&quot;);
+        }
+    }
+}
+</code></pre>
+<div class="TIP">
+<h5>Tip</h5>
+<p>For client-side resource use <code>using AltV.Net.Client</code> instead of <code>using AltV.Net</code></p>
+</div>
+<h2 id="create-resource-1">Create resource</h2>
+<p>In the server's <code>resource</code> folder you need to create a folder, which will be a folder for your resource.</p>
+<p>Make a <code>bin</code> folder inside of your resource folder, and copy your project dll's (with NuGet generated dlls e.g. AltV.Net.dll) to this folder</p>
+<p>Finally, in the folder you should contain a config file with name <code>resource.cfg</code>.</p>
+<h3 id="client-side">Client-side</h3>
+<p>Example <code>resource.cfg</code> for a C# client-side resource:</p>
+<pre><code class="lang-yaml">client-type: &quot;csharp&quot;,
+client-main: &quot;bin/ExampleProject.dll&quot;,
+client-files: [
+    &quot;bin&quot;
+]
+</code></pre>
+<p>For client in <code>client-files</code> you need to specify folder, where all the dll's are located.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can combine both client-side and server-side code in one resource.<br>
+In order to do that, just combine both config examples, and change dll names.</p>
+</div>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>We recommend you to not put your server-side resource dlls in any folder, that is specified in <code>client-files</code>.<br>
+That will lead to the server-side dll being sent to client.</p>
+</div>
+<h3 id="server-side">Server-side</h3>
+<p>Example <code>resource.cfg</code> for a C# server-side resource:</p>
+<pre><code class="lang-yaml">type: &quot;csharp&quot;,
+main: &quot;bin/ExampleProject.dll&quot;
+</code></pre>
+<p>At the end you should add the resource in your <code>server.cfg</code> like this:</p>
+<pre><code class="lang-yaml">resources: [
+    &quot;my-example-csharp-resource&quot;
+]
+</code></pre>
+<p>Your server folder now look similar to this one:</p>
+<pre><code>modules/
+└── csharp-module.dll
+resources/
+└── my-example-csharp-resource/
+    ├── resource.cfg
+    ├── ExampleProject.dll
+    ├── AltV.Net.dll
+    └── ... (Dependencies like &quot;AltV.Net.Async.dll&quot;, &quot;mysql.dll&quot;, if you have any)
+AltV.Net.Host.dll
+AltV.Net.Host.runtimeconfig.json
+server.cfg
+altv-server.exe
+</code></pre>
+<h2 id="next-steps">Next steps</h2>
+<p>For creating scripts that can be created multiple times see: <a href="create-script.html">Create script</a>.</p>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../../styles/discord.js"></script>
+<script type="text/javascript" src="../../../styles/main.js"></script>
+
+    </body>
+
+</html>

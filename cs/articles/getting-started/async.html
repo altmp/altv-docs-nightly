@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Async </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Async ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../styles/colors.css">
+    <link rel="stylesheet" href="../../../styles/discord.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../../index.html">
+                        <img src="../../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#async">Async</a><ul class="level2 nav bs-docs-sidenav async"><li><a href="#setup-async-module">Setup async module</a></li><li><a href="#async-event-handlers">Async event handlers</a></li><li><a href="#api-call-thread-safety">API call thread safety</a><ul class="level3 nav bs-docs-sidenav api-call-thread-safety"><li><a href="#first-way---altasync-methods">First way - AltAsync methods</a></li><li><a href="#second-way---altasyncdo-or-altasyncrunonmainthread">Second way - AltAsync.Do or AltAsync.RunOnMainThread</a></li></ul></li></ul></li><li><a href="#async-entities">Async entities</a><ul class="level2 nav bs-docs-sidenav async-entities"><li><a href="#first-way---locking-an-entity">First way - locking an entity</a></li><li><a href="#second-way---using-async-safe-entities">Second way - using async (safe) entities</a><ul class="level3 nav bs-docs-sidenav second-way---using-async-safe-entities"><li><a href="#using-safe-entities-with-a-custom-entity-class">Using safe entities with a custom entity class</a></li></ul></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/master/docs/articles/getting-started/async.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="async">Async</h1>
+
+<div class="TIP">
+<h5>Tip</h5>
+<p>This article only describes <strong>server-side</strong> version of the API.<br>
+Client-side article is WIP yet.</p>
+</div>
+<p>While writing a C# resource for your server it's quite useful to execute some asynchronous operations (async/await).
+For that reasons there's a separated module, that's intended to allow you to work safely in async conditions.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Everything described in this article should be only used after you set up an AsyncResource properly.<br>
+In order to do that make sure to follow &quot;Setup async module&quot; instructions</p>
+</div>
+<h2 id="setup-async-module">Setup async module</h2>
+<p>To be able to use the alt:V async API you have to make several preparations.</p>
+<ol>
+<li>Add the nuget package <a href="https://www.nuget.org/packages/AltV.Net.Async/">AltV.Net.Async</a> to your project</li>
+<li>Your resource inherits from <code>AsyncResource</code> instead of <code>Resource</code> (<code>public class MyResource : AsyncResource</code>)</li>
+</ol>
+<h2 id="async-event-handlers">Async event handlers</h2>
+<p>You can register a async event handler when using AltAsync instead of Alt for registering event handlers like</p>
+<pre><code class="lang-cs">AltAsync.OnPlayerConnect += async (player, reason) =&gt; {
+    Console.WriteLine($&quot;{player.Name} connected.&quot;);
+    await DoAsyncStuff(player);
+};
+
+AltAsync.OnClient&lt;IPlayer, string, Task&gt;(&quot;ShowMessage&quot;, async (player, message) =&gt; {
+    await VerifyPlayerLogin(player);
+    Console.WriteLine(&quot;Message from player: &quot; + message);
+});
+</code></pre>
+<div class="TIP">
+<h5>Tip</h5>
+<p>You can mix AltAsync events with Alt events.<br>
+If you already know your function won't require async operations you can use an Alt event to avoid thread switching.</p>
+</div>
+<h2 id="api-call-thread-safety">API call thread safety</h2>
+<p>In C# using <code>await</code> commonly leads to a thread switch, but there are few APIs that are only safe to call from the main thread.<br>
+To use those APIs safely from any thread you can use the special safe API version from AltAsync class or use a helper function which allows you to call some code on the main thread.</p>
+<p>Here's the list of non thread-safe APIs, that should be used with one of the ways below:</p>
+<ul>
+<li>Alt.CreateVehicle</li>
+<li>Alt.CreateBlip</li>
+<li>Alt.CreateCheckpoint</li>
+</ul>
+<h3 id="first-way---altasync-methods">First way - AltAsync methods</h3>
+<p>In order to use methods like that, you just need to use methods with the same name from AltAsync class, adding an await to them.
+Example:</p>
+<pre><code class="lang-cs">var vehicle = await AltAsync.CreateVehicle(vehicleHash, player.Position, player.Rotation);
+</code></pre>
+<h3 id="second-way---altasyncdo-or-altasyncrunonmainthread">Second way - AltAsync.Do or AltAsync.RunOnMainThread</h3>
+<p>Sometimes you want to call multiple non thread-safe APIs in a row.
+Doing so using AltAsync versions of the APIs can be quite slow, as those just queue sync API execution to the main thread for next tick.
+That's why you can manually execute one function on the main thread, that will do all the non thread-safe stuff that you need in one tcick execution.</p>
+<p>Example:</p>
+<pre><code class="lang-cs">await AltAsync.RunOnMainThread(() =&gt; {
+    foreach (var vehicleHash in hashes) {
+        Alt.CreateVehicle(vehicleHash, player.Position, player.Rotation);
+    }
+});
+</code></pre>
+<div class="TIP">
+<h5>Tip</h5>
+<p>AltAsync.Do allows you to return some value, while AltAsync.RunOnMainThread doesn't.</p>
+</div>
+<h1 id="async-entities">Async entities</h1>
+<p>Currently in C# module calling any API on a deleted entity (e.g. a disconnected player) in async context can cause some issues.
+Mostly, in that cases server can stop with 139 exit code, but that behaviour can be quite random.
+In order to avoid those situations there are multiple ways to go.</p>
+<h2 id="first-way---locking-an-entity">First way - locking an entity</h2>
+<p>In order to use APIs by locking the entity, you need to lock the entity and check if it does exist inside of the lock body.<br>
+That way you will prevent the entity from deletion until you finish your tasks.</p>
+<p>Here's an example:</p>
+<pre><code class="lang-cs">lock (player) {
+    if (player.Exists) {
+        player.Position = new Vector3(0, 0, 70);
+        Alt.Log(player.Rotation.ToString());
+    }
+}
+</code></pre>
+<p>Let's breakdown this example line-by-line:</p>
+<pre><code class="lang-cs">lock (player) {
+</code></pre>
+<p>This line enters a block, that prevents the C# module to delete the player on disconnect.
+Lock statement will unlock the entity after leaving the block, so make sure to not use any long-executing stuff like Thread.Sleep in there.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Locking the player when it's already locked will end up in a deadlock. Never do this.<br>
+Locks also work accross method calls so be careful.<br>
+Example of bad code:</p>
+<pre><code class="lang-cs">lock (player) { 
+    lock (player) {
+        player.Position = new Vector3(0, 0, 70);
+   }
+}
+</code></pre>
+</div>
+<pre><code class="lang-cs">if (player.Exists) {
+</code></pre>
+<p>This line checks if player does still exist, if it doesn't then we don't do anything.</p>
+<pre><code class="lang-cs">player.Position = new Vector3(0, 0, 70);
+</code></pre>
+<p>With this line we set the player position to a (0, 0, 70).</p>
+<pre><code class="lang-cs">Alt.Log(player.Rotation.ToString());
+</code></pre>
+<p>With this line we log player's rotation to a console.</p>
+<h2 id="second-way---using-async-safe-entities">Second way - using async (safe) entities</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>This way requires you to have Async module set up. See <a href="async.html">Async</a> for more info.</p>
+</div>
+<p>In order to get your async (safe) version of an entity, you need to call the ToAsync() method on it.</p>
+<p>Here's a small example:</p>
+<pre><code class="lang-cs">var asyncPlayer = player.ToAsync();
+asyncPlayer.Position = new Vector3(0, 0, 70);
+Alt.Log(asyncPlayer.Rotation.ToString());
+</code></pre>
+<p>If the player does not exist, any call to any method will do nothing, and any getter will return default type value.<br>
+For instance, the example above will set player's position to (0, 0, 70) and log out the player's rotation if the player is still connected.
+But if the player has disconnected already, the Position setter won't do anything, and (0, 0, 0) vector will be logged to the console.</p>
+<h3 id="using-safe-entities-with-a-custom-entity-class">Using safe entities with a custom entity class</h3>
+<p>This part is only required for those, who have their own entity factories.<br>
+See <a href="entity-factories.html">Entity Factories</a> for more info.</p>
+<p>If you want to create your own async entity class, make sure it extends the interface <code>IAsyncConvertible&lt;IYourInterface&gt;</code>. You can check out the <a href="https://github.com/FabianTerhorst/coreclr-module/blob/e681349d3452765ae6b6cf053ff14c3b5e8dc019/api/AltV.Net.Example/MyPlayer.cs#L15">example</a> how to create a async entity class.</p>
+<p>The recommended way to generate a async entity class is by using the <a href="https://www.nuget.org/packages/AltV.Net.Async.CodeGen/">AltV.Net.Async.CodeGen</a> nuget.<br>
+This nuget will create an async entity class for you based on your entity factories class.<br>
+In order to automatically generate async classes you need:</p>
+<ol>
+<li>Download the nuget package <a href="https://www.nuget.org/packages/AltV.Net.Async.CodeGen/">AltV.Net.Async.CodeGen</a></li>
+<li>Create an interface for your class</li>
+<li>Make sure both class and interface have the <code>partial</code> modifier</li>
+<li>Make sure the class has the attribute <code>[AsyncEntity(typeof(IYourInterface))]</code></li>
+</ol>
+<p>Let's have a look at an example:</p>
+<pre><code class="lang-cs">public partial interface IMyPlayer : IPlayer
+{
+    public bool IsLoggedIn { get; set; }
+}
+
+[AsyncEntity(typeof(IMyPlayer))]
+public partial class MyPlayer : Player, IMyPlayer
+{
+    public bool IsLoggedIn { get; set; }
+    
+    public MyPlayer(ICore core, IntPtr nativePointer, ushort id) : base(core, nativePointer, id)
+    {
+    }
+}
+</code></pre>
+<p>With having the partial class &amp; interface combined with the AsyncEntity attribute the ToAsync() will return your interface, giving you the possibilites to use all your custom properties &amp; functions.</p>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../../styles/discord.js"></script>
+<script type="text/javascript" src="../../../styles/main.js"></script>
+
+    </body>
+
+</html>

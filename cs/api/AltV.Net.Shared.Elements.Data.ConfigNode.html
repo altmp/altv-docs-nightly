@@ -1,0 +1,1134 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConfigNode
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class ConfigNode
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#fields">Fields</a><ul class="level2 nav bs-docs-sidenav fields"><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_core">core</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_ElementType">ElementType</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_Item_System_Int32_">Item[Int32]</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_Item_System_String_">Item[String]</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_Get_System_Int32_">Get(Int32)</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_Get_System_String_">Get(String)</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetDict">GetDict()</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetDict_Dictionary_System_String_AltV_Net_Shared_Elements_Data_ConfigNode___">GetDict(out Dictionary&lt;String, ConfigNode&gt;)</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetDouble">GetDouble()</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetDouble_System_Double__">GetDouble(out Double)</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetFloat">GetFloat()</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetFloat_System_Single__">GetFloat(out Single)</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetInt">GetInt()</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetInt_System_Int32__">GetInt(out Int32)</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetList">GetList()</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetList_AltV_Net_Shared_Elements_Data_ConfigNode____">GetList(out ConfigNode[])</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetLong">GetLong()</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetLong_System_Int64__">GetLong(out Int64)</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetString">GetString()</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetString_System_String__">GetString(out String)</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetUInt">GetUInt()</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetUInt_System_UInt32__">GetUInt(out UInt32)</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetULong">GetULong()</a></li><li><a href="#AltV_Net_Shared_Elements_Data_ConfigNode_GetULong_System_UInt64__">GetULong(out UInt64)</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L37">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Shared_Elements_Data_ConfigNode" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode" class="text-break">Class ConfigNode
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ConfigNode</span></div>
+      <div class="level2"><a class="xref" href="AltV.Net.Shared.Elements.Data.Config.html">Config</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AltV.Net.Shared.Elements.Data.IConfigNode.html">IConfigNode</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Shared.Elements.Data.html">AltV.Net.Shared.Elements.Data</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Shared.dll</h6>
+  <h5 id="AltV_Net_Shared_Elements_Data_ConfigNode_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConfigNode : object, IConfigNode</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_core.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.core%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L59">View Source</a>
+  </span>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_core" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.core">core</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ISharedCore core</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Shared.ISharedCore.html">ISharedCore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_ElementType.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.ElementType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L68">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_ElementType_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.ElementType*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_ElementType" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.ElementType">ElementType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigNode.Type ElementType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Shared.Elements.Data.ConfigNode.Type.html">ConfigNode.Type</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_Item_System_Int32_.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L247">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_Item_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.Item*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_Item_System_Int32_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigNode this[int index] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Shared.Elements.Data.ConfigNode.html">ConfigNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_Item_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.Item(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L248">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_Item_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.Item*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_Item_System_String_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.Item(System.String)">Item[String]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigNode this[string key] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Shared.Elements.Data.ConfigNode.html">ConfigNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_Get_System_Int32_.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.Get(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L207">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_Get_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.Get*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_Get_System_Int32_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.Get(System.Int32)">Get(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigNode Get(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Shared.Elements.Data.ConfigNode.html">ConfigNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_Get_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.Get(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L220">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_Get_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.Get*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_Get_System_String_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.Get(System.String)">Get(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigNode Get(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Shared.Elements.Data.ConfigNode.html">ConfigNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetDict.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetDict%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L205">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetDict_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetDict*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetDict" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetDict">GetDict()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, ConfigNode&gt;? GetDict()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="AltV.Net.Shared.Elements.Data.ConfigNode.html">ConfigNode</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetDict_Dictionary_System_String_AltV_Net_Shared_Elements_Data_ConfigNode___.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetDict(Dictionary%7BSystem.String%2CAltV.Net.Shared.Elements.Data.ConfigNode%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L182">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetDict_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetDict*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetDict_Dictionary_System_String_AltV_Net_Shared_Elements_Data_ConfigNode___" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetDict(Dictionary{System.String,AltV.Net.Shared.Elements.Data.ConfigNode}@)">GetDict(out Dictionary&lt;String, ConfigNode&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDict(out Dictionary&lt;string, ConfigNode&gt; value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="AltV.Net.Shared.Elements.Data.ConfigNode.html">ConfigNode</a>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetDouble.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetDouble%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L159">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetDouble_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetDouble*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetDouble" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetDouble">GetDouble()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double? GetDouble()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetDouble_System_Double__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetDouble(System.Double%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L148">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetDouble_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetDouble*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetDouble_System_Double__" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetDouble(System.Double@)">GetDouble(out Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDouble(out double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetFloat.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L146">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetFloat_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetFloat*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetFloat" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetFloat">GetFloat()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float? GetFloat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetFloat_System_Single__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetFloat(System.Single%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L135">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetFloat_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetFloat*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetFloat_System_Single__" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetFloat(System.Single@)">GetFloat(out Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetFloat(out float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetInt.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetInt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L94">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetInt_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetInt*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetInt" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetInt">GetInt()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? GetInt()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetInt_System_Int32__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetInt(System.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L83">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetInt_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetInt*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetInt_System_Int32__" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetInt(System.Int32@)">GetInt(out Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetInt(out int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetList.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L180">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetList_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetList*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetList" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetList">GetList()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigNode[] GetList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Shared.Elements.Data.ConfigNode.html">ConfigNode</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetList_AltV_Net_Shared_Elements_Data_ConfigNode____.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetList(AltV.Net.Shared.Elements.Data.ConfigNode%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L161">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetList_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetList*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetList_AltV_Net_Shared_Elements_Data_ConfigNode____" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetList(AltV.Net.Shared.Elements.Data.ConfigNode[]@)">GetList(out ConfigNode[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetList(out ConfigNode[] value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Shared.Elements.Data.ConfigNode.html">ConfigNode</a>[]</td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetLong.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetLong%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L120">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetLong_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetLong*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetLong" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetLong">GetLong()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? GetLong()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetLong_System_Int64__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetLong(System.Int64%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L109">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetLong_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetLong*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetLong_System_Int64__" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetLong(System.Int64@)">GetLong(out Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetLong(out long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetString.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L81">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetString_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetString*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetString" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetString">GetString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetString_System_String__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetString(System.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L70">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetString_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetString*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetString_System_String__" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetString(System.String@)">GetString(out String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetString(out string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetUInt.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetUInt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L107">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetUInt_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetUInt*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetUInt" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetUInt">GetUInt()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint? GetUInt()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetUInt_System_UInt32__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetUInt(System.UInt32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L96">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetUInt_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetUInt*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetUInt_System_UInt32__" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetUInt(System.UInt32@)">GetUInt(out UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetUInt(out uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetULong.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetULong%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L133">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetULong_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetULong*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetULong" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetULong">GetULong()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong? GetULong()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Shared_Elements_Data_ConfigNode_GetULong_System_UInt64__.md&amp;value=---%0Auid%3A%20AltV.Net.Shared.Elements.Data.ConfigNode.GetULong(System.UInt64%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/cf7340c6b5242b8f061be5a677c668db2b2d31c6/api/AltV.Net.Shared/Elements/Data/ConfigNode.cs/#L122">View Source</a>
+  </span>
+  <a id="AltV_Net_Shared_Elements_Data_ConfigNode_GetULong_" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetULong*"></a>
+  <h4 id="AltV_Net_Shared_Elements_Data_ConfigNode_GetULong_System_UInt64__" data-uid="AltV.Net.Shared.Elements.Data.ConfigNode.GetULong(System.UInt64@)">GetULong(out UInt64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetULong(out ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Data.IConfigNode.html">IConfigNode</a>
+  </div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

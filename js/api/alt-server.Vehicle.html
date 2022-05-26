@@ -129,7 +129,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1223">View Source</a>
+                                                <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1266">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -144,7 +144,8 @@
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A vehicle is an extension of the Entity class.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -250,6 +251,17 @@
   <div class="codewrapper">
     <pre><code class="lang-typeScript hljs">class Vehicle extends Entity</code></pre>
   </div>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_examples"><strong>Examples</strong></h5>
+  <pre><code class="lang-js">// Get the vehicle a player is driving.
+const vehicle = alt.Vehicle.all.find(veh =&gt; veh.driver &amp;&amp; veh.driver.name === 'Stuyk');
+if (!vehicle) {
+    console.log('Stuyk is not driving a vehicle');
+} else {
+    console.log('Stuyk is driving a vehicle.')
+    const player = vehicle.driver;
+}
+</code></pre>
+
   <h3 id="constructors">Constructors
   </h3>
   
@@ -389,7 +401,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_activeRadioStation.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.activeRadioStation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1248">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1312">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_activeRadioStation" data-uid="@altmp/altv-types.alt-server.Vehicle.activeRadioStation">activeRadioStation
   <span class="release-stage public"></span>
@@ -418,12 +430,21 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_activeRadioStation_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const someVehicle = alt.Vehicle.all[0];
+const stationNumber = someVehicle.activeRadioStation;
+console.log(`Current Station: ${stationNumber}`);
+
+someVehicle.activeRadioStation = 255;
+console.log(`Vehicle radio station was turned off.`);
+</code></pre>
+
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_attached.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.attached%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1428">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1607">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_attached" data-uid="@altmp/altv-types.alt-server.Vehicle.attached">attached
   <span class="release-stage public"></span>
@@ -457,7 +478,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_attachedTo.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.attachedTo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1432">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1611">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_attachedTo" data-uid="@altmp/altv-types.alt-server.Vehicle.attachedTo">attachedTo
   <span class="release-stage public"></span>
@@ -491,7 +512,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_boatAnchorActive.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.boatAnchorActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1933">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2112">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_boatAnchorActive" data-uid="@altmp/altv-types.alt-server.Vehicle.boatAnchorActive">boatAnchorActive
   <span class="release-stage alpha"></span>
@@ -523,7 +544,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_bodyAdditionalHealth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.bodyAdditionalHealth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1252">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1317">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_bodyAdditionalHealth" data-uid="@altmp/altv-types.alt-server.Vehicle.bodyAdditionalHealth">bodyAdditionalHealth
   <span class="release-stage public"></span>
@@ -557,7 +578,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_bodyHealth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.bodyHealth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1256">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1321">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_bodyHealth" data-uid="@altmp/altv-types.alt-server.Vehicle.bodyHealth">bodyHealth
   <span class="release-stage public"></span>
@@ -591,7 +612,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_customPrimaryColor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.customPrimaryColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1260">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1333">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_customPrimaryColor" data-uid="@altmp/altv-types.alt-server.Vehicle.customPrimaryColor">customPrimaryColor
   <span class="release-stage public"></span>
@@ -620,12 +641,18 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_customPrimaryColor_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const someVehicle = new alt.Vehicle('elegy', 0, 0, 0, 0, 0, 0);
+someVehicle.customPrimaryColor = new alt.RGBA(255, 0, 0);
+console.log(`Vehicle custom primary color was set to red`);
+</code></pre>
+
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_customSecondaryColor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.customSecondaryColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1264">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1344">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_customSecondaryColor" data-uid="@altmp/altv-types.alt-server.Vehicle.customSecondaryColor">customSecondaryColor
   <span class="release-stage public"></span>
@@ -654,12 +681,18 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_customSecondaryColor_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const someVehicle = new alt.Vehicle('elegy', 0, 0, 0, 0, 0, 0);
+someVehicle.customSecondaryColor = new alt.RGBA(255, 0, 0);
+console.log(`Vehicle custom secondary color was set to red`);
+</code></pre>
+
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_customTires.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.customTires%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1268">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1349">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_customTires" data-uid="@altmp/altv-types.alt-server.Vehicle.customTires">customTires
   <span class="release-stage public"></span>
@@ -693,7 +726,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_darkness.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.darkness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1272">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1360">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_darkness" data-uid="@altmp/altv-types.alt-server.Vehicle.darkness">darkness
   <span class="release-stage public"></span>
@@ -722,19 +755,25 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_darkness_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const someVehicle = new alt.Vehicle('elegy', 0, 0, 0, 0, 0, 0);
+someVehicle.darkness = 500;
+</code></pre>
+
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_dashboardColor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.dashboardColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1276">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1373">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_dashboardColor" data-uid="@altmp/altv-types.alt-server.Vehicle.dashboardColor">dashboardColor
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Gets or sets the dashboard color of the vehicle.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the dashboard color of the vehicle.
+Dash board colors range from 0 to 159.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -756,12 +795,17 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_dashboardColor_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const someVehicle = new alt.Vehicle('elegy', 0, 0, 0, 0, 0, 0);
+someVehicle.dashboardColor = 139;
+</code></pre>
+
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_daylightOn.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.daylightOn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1280">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1388">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_daylightOn" data-uid="@altmp/altv-types.alt-server.Vehicle.daylightOn">daylightOn
   <span class="release-stage public"></span>
@@ -790,19 +834,30 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_daylightOn_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const someVehicle = new alt.Vehicle('elegy', 0, 0, 0, 0, 0, 0);
+if (someVehicle.daylightOn) {
+    console.log('Vehicle daylights are on');
+} else {
+    console.log('Vehicle daylights are off');
+}
+</code></pre>
+
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_destroyed.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.destroyed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1284">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1406">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_destroyed" data-uid="@altmp/altv-types.alt-server.Vehicle.destroyed">destroyed
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Gets if a vehicle is destroyed.</p>
+  <div class="markdown level1 summary"><p>Gets if a vehicle is destroyed.
+Destroyed is set to true when specific game activities cause the engine to stop.
+Explosions, being underwater, crashing too much, etc.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -824,12 +879,20 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_destroyed_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const someVehicle = new alt.Vehicle('elegy', 0, 0, 0, 0, 0, 0);
+
+if (someVehicle.destroyed) {
+   console.log(`The elegy has been destroyed.`);
+}
+</code></pre>
+
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_dirtLevel.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.dirtLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1288">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1411">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_dirtLevel" data-uid="@altmp/altv-types.alt-server.Vehicle.dirtLevel">dirtLevel
   <span class="release-stage public"></span>
@@ -863,7 +926,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_driftModeEnabled.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.driftModeEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1440">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1619">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_driftModeEnabled" data-uid="@altmp/altv-types.alt-server.Vehicle.driftModeEnabled">driftModeEnabled
   <span class="release-stage public"></span>
@@ -897,7 +960,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_driver.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.driver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1292">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1427">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_driver" data-uid="@altmp/altv-types.alt-server.Vehicle.driver">driver
   <span class="release-stage public"></span>
@@ -926,19 +989,31 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_driver_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const someVehicle = new alt.Vehicle('elegy', 0, 0, 0, 0, 0, 0);
+const driver = someVehicle.driver;
+
+if (driver) {
+    console.log(`There is currently a player driving this car. ${driver.name}`);
+}
+</code></pre>
+
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_engineHealth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.engineHealth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1296">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1465">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_engineHealth" data-uid="@altmp/altv-types.alt-server.Vehicle.engineHealth">engineHealth
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Gets or sets the current engine health.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the current engine health.
+Default maximum engine health is 1000.
+The <code>vehicle.repair()</code> function should be used to repair a vehicle if the engine health is less than or equal to zero.</p>
+<p>This example demonstrates that when you drive through a ColShape it will repair the vehicle.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -960,19 +1035,46 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_engineHealth_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const someColShape = new alt.ColshapeCircle(-1295.9208984375, 86.0835189819336, 2);
+someColShape.repairVehicles = true;
+
+alt.on('entityEnterColshape', (colshape, entity) =&gt; {
+      // Check if the entity is a vehicle or not.
+    if (!(entity instanceof alt.Vehicle)) {
+       return;
+    }
+
+    // Check if it's the right colshape to do this.
+    if (!colshape.repairVehicles) {
+       return;
+    }
+
+    if (entity.destroyed) {
+        entity.repair();
+        console.log('Repaired Destroyed Vehicle');
+        return;
+    }
+
+    entity.engineHealth = 1000;
+    console.log('Repaired Vehicle')
+});
+</code></pre>
+
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_engineOn.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.engineOn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1300">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1478">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_engineOn" data-uid="@altmp/altv-types.alt-server.Vehicle.engineOn">engineOn
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Gets or sets the engine state of the vehicle.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the engine state of the vehicle.
+The functionality of the vehicle engine can be triggered on either client-side or server-side. If you want to trigger the engine on client-side use native.setVehicleEngineOn.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -994,12 +1096,17 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_engineOn_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const vehicle = new alt.Vehicle('elegy', 0, 0, 0, 0, 0, 0);
+vehicle.engineOn = true;
+</code></pre>
+
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_flamethrowerActive.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.flamethrowerActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1304">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1483">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_flamethrowerActive" data-uid="@altmp/altv-types.alt-server.Vehicle.flamethrowerActive">flamethrowerActive
   <span class="release-stage public"></span>
@@ -1033,7 +1140,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_frontWheels.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.frontWheels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1416">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1595">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_frontWheels" data-uid="@altmp/altv-types.alt-server.Vehicle.frontWheels">frontWheels
   <span class="release-stage public"></span>
@@ -1067,7 +1174,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_handbrakeActive.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.handbrakeActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1308">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1487">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_handbrakeActive" data-uid="@altmp/altv-types.alt-server.Vehicle.handbrakeActive">handbrakeActive
   <span class="release-stage public"></span>
@@ -1101,7 +1208,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_hasArmoredWindows.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.hasArmoredWindows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1312">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1491">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_hasArmoredWindows" data-uid="@altmp/altv-types.alt-server.Vehicle.hasArmoredWindows">hasArmoredWindows
   <span class="release-stage public"></span>
@@ -1135,7 +1242,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_headlightColor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.headlightColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1316">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1495">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_headlightColor" data-uid="@altmp/altv-types.alt-server.Vehicle.headlightColor">headlightColor
   <span class="release-stage public"></span>
@@ -1169,7 +1276,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_interiorColor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.interiorColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1320">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1499">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_interiorColor" data-uid="@altmp/altv-types.alt-server.Vehicle.interiorColor">interiorColor
   <span class="release-stage public"></span>
@@ -1203,7 +1310,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_isMissionTrain.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.isMissionTrain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1818">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1997">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_isMissionTrain" data-uid="@altmp/altv-types.alt-server.Vehicle.isMissionTrain">isMissionTrain
   <span class="release-stage public"></span>
@@ -1237,7 +1344,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_isTrainCaboose.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.isTrainCaboose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1859">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2038">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_isTrainCaboose" data-uid="@altmp/altv-types.alt-server.Vehicle.isTrainCaboose">isTrainCaboose
   <span class="release-stage public"></span>
@@ -1271,7 +1378,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_isTrainEngine.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.isTrainEngine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1854">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2033">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_isTrainEngine" data-uid="@altmp/altv-types.alt-server.Vehicle.isTrainEngine">isTrainEngine
   <span class="release-stage public"></span>
@@ -1305,7 +1412,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_lightsMultiplier.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.lightsMultiplier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1324">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1503">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_lightsMultiplier" data-uid="@altmp/altv-types.alt-server.Vehicle.lightsMultiplier">lightsMultiplier
   <span class="release-stage public"></span>
@@ -1339,7 +1446,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_livery.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.livery%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1328">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1507">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_livery" data-uid="@altmp/altv-types.alt-server.Vehicle.livery">livery
   <span class="release-stage public"></span>
@@ -1373,7 +1480,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_lockState.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.lockState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1332">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1511">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_lockState" data-uid="@altmp/altv-types.alt-server.Vehicle.lockState">lockState
   <span class="release-stage public"></span>
@@ -1407,7 +1514,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_manualEngineControl.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.manualEngineControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1336">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1515">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_manualEngineControl" data-uid="@altmp/altv-types.alt-server.Vehicle.manualEngineControl">manualEngineControl
   <span class="release-stage public"></span>
@@ -1441,7 +1548,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_modKit.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.modKit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1340">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1519">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_modKit" data-uid="@altmp/altv-types.alt-server.Vehicle.modKit">modKit
   <span class="release-stage public"></span>
@@ -1475,7 +1582,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_modKitsCount.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.modKitsCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1344">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1523">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_modKitsCount" data-uid="@altmp/altv-types.alt-server.Vehicle.modKitsCount">modKitsCount
   <span class="release-stage public"></span>
@@ -1509,14 +1616,14 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_model.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.model%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1244">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1297">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_model" data-uid="@altmp/altv-types.alt-server.Vehicle.model">model
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Entity model hash.</p>
+  <div class="markdown level1 summary"><p>Get the entity model hash.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1541,12 +1648,21 @@
   <h5 id="_altmp_altv_types_alt_server_Vehicle_model_remarks" class="decalaration">Remarks</h5>
   <div class="markdown level1 remarks"><p>Only setter accepts string or number as input, getter returns value as number.</p>
 </div>
+  <h5 id="_altmp_altv_types_alt_server_Vehicle_model_examples" class="decalaration">Examples</h5>
+  <pre><code class="lang-js">const comparisonHash = alt.hash('infernus');
+if (comparisonHash === someVehicle.model) {
+    console.log('This vehicle is an infernus.');
+} else {
+    console.log('This vehicle is not an infernus.');
+}
+</code></pre>
+
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_neon.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.neon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1348">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1527">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_neon" data-uid="@altmp/altv-types.alt-server.Vehicle.neon">neon
   <span class="release-stage public"></span>
@@ -1580,7 +1696,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_neonColor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.neonColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1352">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1531">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_neonColor" data-uid="@altmp/altv-types.alt-server.Vehicle.neonColor">neonColor
   <span class="release-stage public"></span>
@@ -1614,7 +1730,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_nightlightOn.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.nightlightOn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1356">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1535">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_nightlightOn" data-uid="@altmp/altv-types.alt-server.Vehicle.nightlightOn">nightlightOn
   <span class="release-stage public"></span>
@@ -1648,7 +1764,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_numberPlateIndex.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.numberPlateIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1360">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1539">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_numberPlateIndex" data-uid="@altmp/altv-types.alt-server.Vehicle.numberPlateIndex">numberPlateIndex
   <span class="release-stage public"></span>
@@ -1682,7 +1798,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_numberPlateText.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.numberPlateText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1364">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1543">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_numberPlateText" data-uid="@altmp/altv-types.alt-server.Vehicle.numberPlateText">numberPlateText
   <span class="release-stage public"></span>
@@ -1716,7 +1832,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_pearlColor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.pearlColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1368">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1547">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_pearlColor" data-uid="@altmp/altv-types.alt-server.Vehicle.pearlColor">pearlColor
   <span class="release-stage public"></span>
@@ -1750,7 +1866,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_petrolTankHealth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.petrolTankHealth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1372">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1551">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_petrolTankHealth" data-uid="@altmp/altv-types.alt-server.Vehicle.petrolTankHealth">petrolTankHealth
   <span class="release-stage public"></span>
@@ -1784,7 +1900,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_primaryColor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.primaryColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1376">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1555">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_primaryColor" data-uid="@altmp/altv-types.alt-server.Vehicle.primaryColor">primaryColor
   <span class="release-stage public"></span>
@@ -1818,7 +1934,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_rearWheels.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.rearWheels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1420">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1599">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_rearWheels" data-uid="@altmp/altv-types.alt-server.Vehicle.rearWheels">rearWheels
   <span class="release-stage public"></span>
@@ -1852,7 +1968,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_repairsCount.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.repairsCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1380">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1559">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_repairsCount" data-uid="@altmp/altv-types.alt-server.Vehicle.repairsCount">repairsCount
   <span class="release-stage public"></span>
@@ -1886,7 +2002,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_roofLivery.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.roofLivery%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1384">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1563">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_roofLivery" data-uid="@altmp/altv-types.alt-server.Vehicle.roofLivery">roofLivery
   <span class="release-stage public"></span>
@@ -1920,7 +2036,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_roofState.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.roofState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1388">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1567">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_roofState" data-uid="@altmp/altv-types.alt-server.Vehicle.roofState">roofState
   <span class="release-stage public"></span>
@@ -1954,7 +2070,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_secondaryColor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.secondaryColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1392">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1571">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_secondaryColor" data-uid="@altmp/altv-types.alt-server.Vehicle.secondaryColor">secondaryColor
   <span class="release-stage public"></span>
@@ -1988,7 +2104,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_sirenActive.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.sirenActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1396">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1575">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_sirenActive" data-uid="@altmp/altv-types.alt-server.Vehicle.sirenActive">sirenActive
   <span class="release-stage public"></span>
@@ -2022,7 +2138,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_tireSmokeColor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.tireSmokeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1400">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1579">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_tireSmokeColor" data-uid="@altmp/altv-types.alt-server.Vehicle.tireSmokeColor">tireSmokeColor
   <span class="release-stage public"></span>
@@ -2056,7 +2172,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainCarriageConfigIndex.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainCarriageConfigIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1889">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2068">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainCarriageConfigIndex" data-uid="@altmp/altv-types.alt-server.Vehicle.trainCarriageConfigIndex">trainCarriageConfigIndex
   <span class="release-stage public"></span>
@@ -2090,7 +2206,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainConfigIndex.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainConfigIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1844">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2023">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainConfigIndex" data-uid="@altmp/altv-types.alt-server.Vehicle.trainConfigIndex">trainConfigIndex
   <span class="release-stage public"></span>
@@ -2127,7 +2243,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainCruiseSpeed.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainCruiseSpeed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1884">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2063">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainCruiseSpeed" data-uid="@altmp/altv-types.alt-server.Vehicle.trainCruiseSpeed">trainCruiseSpeed
   <span class="release-stage public"></span>
@@ -2161,7 +2277,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainDirection.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1869">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2048">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainDirection" data-uid="@altmp/altv-types.alt-server.Vehicle.trainDirection">trainDirection
   <span class="release-stage public"></span>
@@ -2195,7 +2311,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainDistanceFromEngine.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainDistanceFromEngine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1849">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2028">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainDistanceFromEngine" data-uid="@altmp/altv-types.alt-server.Vehicle.trainDistanceFromEngine">trainDistanceFromEngine
   <span class="release-stage public"></span>
@@ -2229,7 +2345,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainEngineId.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainEngineId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1830">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2009">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainEngineId" data-uid="@altmp/altv-types.alt-server.Vehicle.trainEngineId">trainEngineId
   <span class="release-stage public"></span>
@@ -2263,7 +2379,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainForceDoorsOpen.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainForceDoorsOpen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1879">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2058">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainForceDoorsOpen" data-uid="@altmp/altv-types.alt-server.Vehicle.trainForceDoorsOpen">trainForceDoorsOpen
   <span class="release-stage public"></span>
@@ -2297,7 +2413,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainLinkedToBackwardId.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainLinkedToBackwardId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1894">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2073">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainLinkedToBackwardId" data-uid="@altmp/altv-types.alt-server.Vehicle.trainLinkedToBackwardId">trainLinkedToBackwardId
   <span class="release-stage public"></span>
@@ -2331,7 +2447,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainLinkedToForwardId.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainLinkedToForwardId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1906">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2085">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainLinkedToForwardId" data-uid="@altmp/altv-types.alt-server.Vehicle.trainLinkedToForwardId">trainLinkedToForwardId
   <span class="release-stage public"></span>
@@ -2365,7 +2481,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainPassengerCarriages.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainPassengerCarriages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1864">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2043">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainPassengerCarriages" data-uid="@altmp/altv-types.alt-server.Vehicle.trainPassengerCarriages">trainPassengerCarriages
   <span class="release-stage public"></span>
@@ -2399,7 +2515,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainRenderDerailed.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainRenderDerailed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1874">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2053">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainRenderDerailed" data-uid="@altmp/altv-types.alt-server.Vehicle.trainRenderDerailed">trainRenderDerailed
   <span class="release-stage public"></span>
@@ -2433,7 +2549,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainTrackId.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainTrackId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1825">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2004">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainTrackId" data-uid="@altmp/altv-types.alt-server.Vehicle.trainTrackId">trainTrackId
   <span class="release-stage public"></span>
@@ -2470,7 +2586,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainUnk1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainUnk1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1915">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2094">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainUnk1" data-uid="@altmp/altv-types.alt-server.Vehicle.trainUnk1">trainUnk1
   <span class="release-stage public"></span>
@@ -2503,7 +2619,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainUnk2.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainUnk2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1917">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2096">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainUnk2" data-uid="@altmp/altv-types.alt-server.Vehicle.trainUnk2">trainUnk2
   <span class="release-stage public"></span>
@@ -2536,7 +2652,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_trainUnk3.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.trainUnk3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1919">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2098">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_trainUnk3" data-uid="@altmp/altv-types.alt-server.Vehicle.trainUnk3">trainUnk3
   <span class="release-stage public"></span>
@@ -2569,7 +2685,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_velocity.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.velocity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1436">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1615">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_velocity" data-uid="@altmp/altv-types.alt-server.Vehicle.velocity">velocity
   <span class="release-stage public"></span>
@@ -2603,7 +2719,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_wheelColor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.wheelColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1404">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1583">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_wheelColor" data-uid="@altmp/altv-types.alt-server.Vehicle.wheelColor">wheelColor
   <span class="release-stage public"></span>
@@ -2637,7 +2753,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_wheelType.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.wheelType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1412">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1591">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_wheelType" data-uid="@altmp/altv-types.alt-server.Vehicle.wheelType">wheelType
   <span class="release-stage public"></span>
@@ -2671,7 +2787,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_wheelsCount.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.wheelsCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1408">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1587">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_wheelsCount" data-uid="@altmp/altv-types.alt-server.Vehicle.wheelsCount">wheelsCount
   <span class="release-stage public"></span>
@@ -2705,7 +2821,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_windowTint.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.windowTint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1424">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1603">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_windowTint" data-uid="@altmp/altv-types.alt-server.Vehicle.windowTint">windowTint
   <span class="release-stage public"></span>
@@ -2739,7 +2855,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_all.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.all%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1238">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1281">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_all" data-uid="@altmp/altv-types.alt-server.Vehicle.all">all
   <span class="release-stage public"></span>
@@ -2787,7 +2903,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_doesWheelHasTire.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.doesWheelHasTire%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1457">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1636">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_doesWheelHasTire" data-uid="@altmp/altv-types.alt-server.Vehicle.doesWheelHasTire">doesWheelHasTire(number)
   <span class="release-stage public"></span>
@@ -2843,7 +2959,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getAppearanceDataBase64.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getAppearanceDataBase64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1464">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1643">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getAppearanceDataBase64" data-uid="@altmp/altv-types.alt-server.Vehicle.getAppearanceDataBase64">getAppearanceDataBase64()
   <span class="release-stage public"></span>
@@ -2881,7 +2997,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getArmoredWindowHealth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getArmoredWindowHealth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1471">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1650">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getArmoredWindowHealth" data-uid="@altmp/altv-types.alt-server.Vehicle.getArmoredWindowHealth">getArmoredWindowHealth(number)
   <span class="release-stage public"></span>
@@ -2937,7 +3053,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getArmoredWindowShootCount.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getArmoredWindowShootCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1478">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1657">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getArmoredWindowShootCount" data-uid="@altmp/altv-types.alt-server.Vehicle.getArmoredWindowShootCount">getArmoredWindowShootCount(number)
   <span class="release-stage public"></span>
@@ -2993,7 +3109,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getBumperDamageLevel.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getBumperDamageLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1485">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1664">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getBumperDamageLevel" data-uid="@altmp/altv-types.alt-server.Vehicle.getBumperDamageLevel">getBumperDamageLevel(VehicleBumper)
   <span class="release-stage public"></span>
@@ -3049,7 +3165,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getBumperDamageLevel_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getBumperDamageLevel_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1485">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1664">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getBumperDamageLevel_1" data-uid="@altmp/altv-types.alt-server.Vehicle.getBumperDamageLevel_1">getBumperDamageLevel&lt;T extends number, V extends number&gt;(T)
   <span class="release-stage public"></span>
@@ -3102,7 +3218,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getDamageStatusBase64.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getDamageStatusBase64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1494">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1673">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getDamageStatusBase64" data-uid="@altmp/altv-types.alt-server.Vehicle.getDamageStatusBase64">getDamageStatusBase64()
   <span class="release-stage public"></span>
@@ -3140,7 +3256,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getDoorState.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getDoorState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1501">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1680">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getDoorState" data-uid="@altmp/altv-types.alt-server.Vehicle.getDoorState">getDoorState(VehicleDoor)
   <span class="release-stage public"></span>
@@ -3196,7 +3312,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getDoorState_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getDoorState_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1501">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1680">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getDoorState_1" data-uid="@altmp/altv-types.alt-server.Vehicle.getDoorState_1">getDoorState&lt;T extends number, V extends number&gt;(T)
   <span class="release-stage public"></span>
@@ -3249,7 +3365,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getExtra.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getExtra%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1511">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1690">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getExtra" data-uid="@altmp/altv-types.alt-server.Vehicle.getExtra">getExtra(number)
   <span class="release-stage public"></span>
@@ -3308,7 +3424,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getGamestateDataBase64.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getGamestateDataBase64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1519">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1698">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getGamestateDataBase64" data-uid="@altmp/altv-types.alt-server.Vehicle.getGamestateDataBase64">getGamestateDataBase64()
   <span class="release-stage public"></span>
@@ -3346,7 +3462,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getHealthDataBase64.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getHealthDataBase64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1527">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1706">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getHealthDataBase64" data-uid="@altmp/altv-types.alt-server.Vehicle.getHealthDataBase64">getHealthDataBase64()
   <span class="release-stage public"></span>
@@ -3384,7 +3500,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getMod.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getMod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1534">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1713">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getMod" data-uid="@altmp/altv-types.alt-server.Vehicle.getMod">getMod(VehicleModType)
   <span class="release-stage public"></span>
@@ -3440,7 +3556,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getMod_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getMod_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1534">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1713">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getMod_1" data-uid="@altmp/altv-types.alt-server.Vehicle.getMod_1">getMod&lt;T extends number&gt;(T)
   <span class="release-stage public"></span>
@@ -3493,7 +3609,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getModsCount.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getModsCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1542">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1721">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getModsCount" data-uid="@altmp/altv-types.alt-server.Vehicle.getModsCount">getModsCount(VehicleModType)
   <span class="release-stage public"></span>
@@ -3549,7 +3665,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getModsCount_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getModsCount_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1542">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1721">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getModsCount_1" data-uid="@altmp/altv-types.alt-server.Vehicle.getModsCount_1">getModsCount&lt;T extends number&gt;(T)
   <span class="release-stage public"></span>
@@ -3602,7 +3718,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getPartBulletHoles.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getPartBulletHoles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1550">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1729">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getPartBulletHoles" data-uid="@altmp/altv-types.alt-server.Vehicle.getPartBulletHoles">getPartBulletHoles(VehiclePart)
   <span class="release-stage public"></span>
@@ -3658,7 +3774,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getPartBulletHoles_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getPartBulletHoles_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1550">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1729">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getPartBulletHoles_1" data-uid="@altmp/altv-types.alt-server.Vehicle.getPartBulletHoles_1">getPartBulletHoles&lt;T extends number&gt;(T)
   <span class="release-stage public"></span>
@@ -3711,7 +3827,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getPartDamageLevel.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getPartDamageLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1558">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1737">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getPartDamageLevel" data-uid="@altmp/altv-types.alt-server.Vehicle.getPartDamageLevel">getPartDamageLevel(VehiclePart)
   <span class="release-stage public"></span>
@@ -3767,7 +3883,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getPartDamageLevel_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getPartDamageLevel_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1558">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1737">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getPartDamageLevel_1" data-uid="@altmp/altv-types.alt-server.Vehicle.getPartDamageLevel_1">getPartDamageLevel&lt;T extends number, V extends number&gt;(T)
   <span class="release-stage public"></span>
@@ -3820,7 +3936,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getScriptDataBase64.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getScriptDataBase64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1567">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1746">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getScriptDataBase64" data-uid="@altmp/altv-types.alt-server.Vehicle.getScriptDataBase64">getScriptDataBase64()
   <span class="release-stage public"></span>
@@ -3858,7 +3974,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getWheelHealth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getWheelHealth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1574">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1753">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getWheelHealth" data-uid="@altmp/altv-types.alt-server.Vehicle.getWheelHealth">getWheelHealth(number)
   <span class="release-stage public"></span>
@@ -3914,7 +4030,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_isLightDamaged.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.isLightDamaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1581">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1760">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_isLightDamaged" data-uid="@altmp/altv-types.alt-server.Vehicle.isLightDamaged">isLightDamaged(number)
   <span class="release-stage public"></span>
@@ -3970,7 +4086,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_isSpecialLightDamaged.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.isSpecialLightDamaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1588">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1767">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_isSpecialLightDamaged" data-uid="@altmp/altv-types.alt-server.Vehicle.isSpecialLightDamaged">isSpecialLightDamaged(number)
   <span class="release-stage public"></span>
@@ -4026,7 +4142,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_isWheelBurst.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.isWheelBurst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1595">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1774">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_isWheelBurst" data-uid="@altmp/altv-types.alt-server.Vehicle.isWheelBurst">isWheelBurst(number)
   <span class="release-stage public"></span>
@@ -4082,7 +4198,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_isWheelDetached.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.isWheelDetached%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1602">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1781">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_isWheelDetached" data-uid="@altmp/altv-types.alt-server.Vehicle.isWheelDetached">isWheelDetached(number)
   <span class="release-stage public"></span>
@@ -4138,7 +4254,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_isWheelOnFire.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.isWheelOnFire%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1609">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1788">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_isWheelOnFire" data-uid="@altmp/altv-types.alt-server.Vehicle.isWheelOnFire">isWheelOnFire(number)
   <span class="release-stage public"></span>
@@ -4194,7 +4310,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_isWindowDamaged.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.isWindowDamaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1616">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1795">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_isWindowDamaged" data-uid="@altmp/altv-types.alt-server.Vehicle.isWindowDamaged">isWindowDamaged(number)
   <span class="release-stage public"></span>
@@ -4250,7 +4366,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_isWindowOpened.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.isWindowOpened%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1623">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1802">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_isWindowOpened" data-uid="@altmp/altv-types.alt-server.Vehicle.isWindowOpened">isWindowOpened(number)
   <span class="release-stage public"></span>
@@ -4306,7 +4422,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_repair.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.repair%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1627">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1806">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_repair" data-uid="@altmp/altv-types.alt-server.Vehicle.repair">repair()
   <span class="release-stage public"></span>
@@ -4325,7 +4441,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setAppearanceDataBase64.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setAppearanceDataBase64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1636">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1815">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setAppearanceDataBase64" data-uid="@altmp/altv-types.alt-server.Vehicle.setAppearanceDataBase64">setAppearanceDataBase64(string)
   <span class="release-stage public"></span>
@@ -4368,7 +4484,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setArmoredWindowHealth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setArmoredWindowHealth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1643">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1822">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setArmoredWindowHealth" data-uid="@altmp/altv-types.alt-server.Vehicle.setArmoredWindowHealth">setArmoredWindowHealth(number, number)
   <span class="release-stage public"></span>
@@ -4417,7 +4533,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setArmoredWindowShootCount.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setArmoredWindowShootCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1650">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1829">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setArmoredWindowShootCount" data-uid="@altmp/altv-types.alt-server.Vehicle.setArmoredWindowShootCount">setArmoredWindowShootCount(number, number)
   <span class="release-stage public"></span>
@@ -4466,7 +4582,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setBumperDamageLevel.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setBumperDamageLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1657">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1836">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setBumperDamageLevel" data-uid="@altmp/altv-types.alt-server.Vehicle.setBumperDamageLevel">setBumperDamageLevel(VehicleBumper, VehicleBumperDamage)
   <span class="release-stage public"></span>
@@ -4515,7 +4631,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setBumperDamageLevel_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setBumperDamageLevel_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1657">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1836">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setBumperDamageLevel_1" data-uid="@altmp/altv-types.alt-server.Vehicle.setBumperDamageLevel_1">setBumperDamageLevel&lt;T extends number, V extends number&gt;(T, V)
   <span class="release-stage public"></span>
@@ -4561,7 +4677,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setDamageStatusBase64.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setDamageStatusBase64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1666">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1845">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setDamageStatusBase64" data-uid="@altmp/altv-types.alt-server.Vehicle.setDamageStatusBase64">setDamageStatusBase64(string)
   <span class="release-stage public"></span>
@@ -4604,7 +4720,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setDoorState.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setDoorState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1673">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1852">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setDoorState" data-uid="@altmp/altv-types.alt-server.Vehicle.setDoorState">setDoorState(VehicleDoor, VehicleDoorState)
   <span class="release-stage public"></span>
@@ -4653,7 +4769,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setDoorState_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setDoorState_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1673">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1852">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setDoorState_1" data-uid="@altmp/altv-types.alt-server.Vehicle.setDoorState_1">setDoorState&lt;T extends number, V extends number&gt;(T, V)
   <span class="release-stage public"></span>
@@ -4699,7 +4815,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setExtra.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setExtra%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1683">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1862">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setExtra" data-uid="@altmp/altv-types.alt-server.Vehicle.setExtra">setExtra(number, boolean)
   <span class="release-stage public"></span>
@@ -4751,7 +4867,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setGamestateDataBase64.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setGamestateDataBase64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1691">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1870">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setGamestateDataBase64" data-uid="@altmp/altv-types.alt-server.Vehicle.setGamestateDataBase64">setGamestateDataBase64(string)
   <span class="release-stage public"></span>
@@ -4794,7 +4910,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setHealthDataBase64.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setHealthDataBase64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1699">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1878">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setHealthDataBase64" data-uid="@altmp/altv-types.alt-server.Vehicle.setHealthDataBase64">setHealthDataBase64(string)
   <span class="release-stage public"></span>
@@ -4837,7 +4953,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setLightDamaged.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setLightDamaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1706">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1885">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setLightDamaged" data-uid="@altmp/altv-types.alt-server.Vehicle.setLightDamaged">setLightDamaged(number, boolean)
   <span class="release-stage public"></span>
@@ -4886,7 +5002,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setMod.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setMod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1713">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1892">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setMod" data-uid="@altmp/altv-types.alt-server.Vehicle.setMod">setMod(VehicleModType, number)
   <span class="release-stage public"></span>
@@ -4935,7 +5051,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setMod_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setMod_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1713">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1892">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setMod_1" data-uid="@altmp/altv-types.alt-server.Vehicle.setMod_1">setMod&lt;T extends number&gt;(T, number)
   <span class="release-stage public"></span>
@@ -4981,7 +5097,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setPartBulletHoles.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setPartBulletHoles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1721">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1900">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setPartBulletHoles" data-uid="@altmp/altv-types.alt-server.Vehicle.setPartBulletHoles">setPartBulletHoles(VehiclePart, number)
   <span class="release-stage public"></span>
@@ -5030,7 +5146,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setPartBulletHoles_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setPartBulletHoles_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1721">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1900">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setPartBulletHoles_1" data-uid="@altmp/altv-types.alt-server.Vehicle.setPartBulletHoles_1">setPartBulletHoles&lt;T extends number&gt;(T, number)
   <span class="release-stage public"></span>
@@ -5076,7 +5192,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setPartDamageLevel.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setPartDamageLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1729">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1908">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setPartDamageLevel" data-uid="@altmp/altv-types.alt-server.Vehicle.setPartDamageLevel">setPartDamageLevel(VehiclePart, VehiclePartDamage)
   <span class="release-stage public"></span>
@@ -5125,7 +5241,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setPartDamageLevel_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setPartDamageLevel_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1729">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1908">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setPartDamageLevel_1" data-uid="@altmp/altv-types.alt-server.Vehicle.setPartDamageLevel_1">setPartDamageLevel&lt;T extends number, V extends number&gt;(T, V)
   <span class="release-stage public"></span>
@@ -5171,7 +5287,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setRearWheels.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setRearWheels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1736">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1915">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setRearWheels" data-uid="@altmp/altv-types.alt-server.Vehicle.setRearWheels">setRearWheels(number)
   <span class="release-stage public"></span>
@@ -5211,7 +5327,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setScriptDataBase64.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setScriptDataBase64%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1744">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1923">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setScriptDataBase64" data-uid="@altmp/altv-types.alt-server.Vehicle.setScriptDataBase64">setScriptDataBase64(string)
   <span class="release-stage public"></span>
@@ -5254,7 +5370,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setSearchLightTo.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setSearchLightTo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1926">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2105">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setSearchLightTo" data-uid="@altmp/altv-types.alt-server.Vehicle.setSearchLightTo">setSearchLightTo(Entity, boolean)
   <span class="release-stage public"></span>
@@ -5304,7 +5420,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setSpecialLightDamaged.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setSpecialLightDamaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1751">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1930">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setSpecialLightDamaged" data-uid="@altmp/altv-types.alt-server.Vehicle.setSpecialLightDamaged">setSpecialLightDamaged(number, boolean)
   <span class="release-stage public"></span>
@@ -5353,7 +5469,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setTrainEngineId.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setTrainEngineId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1837">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2016">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setTrainEngineId" data-uid="@altmp/altv-types.alt-server.Vehicle.setTrainEngineId">setTrainEngineId(null | Vehicle)
   <span class="release-stage public"></span>
@@ -5393,7 +5509,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setTrainLinkedToBackwardId.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setTrainLinkedToBackwardId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1901">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2080">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setTrainLinkedToBackwardId" data-uid="@altmp/altv-types.alt-server.Vehicle.setTrainLinkedToBackwardId">setTrainLinkedToBackwardId(null | Vehicle)
   <span class="release-stage public"></span>
@@ -5433,7 +5549,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setTrainLinkedToForwardId.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setTrainLinkedToForwardId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1913">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L2092">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setTrainLinkedToForwardId" data-uid="@altmp/altv-types.alt-server.Vehicle.setTrainLinkedToForwardId">setTrainLinkedToForwardId(null | Vehicle)
   <span class="release-stage public"></span>
@@ -5473,7 +5589,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setWheelBurst.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setWheelBurst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1758">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1937">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setWheelBurst" data-uid="@altmp/altv-types.alt-server.Vehicle.setWheelBurst">setWheelBurst(number, boolean)
   <span class="release-stage public"></span>
@@ -5522,7 +5638,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setWheelDetached.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setWheelDetached%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1765">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1944">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setWheelDetached" data-uid="@altmp/altv-types.alt-server.Vehicle.setWheelDetached">setWheelDetached(number, boolean)
   <span class="release-stage public"></span>
@@ -5571,7 +5687,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setWheelFixed.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setWheelFixed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1813">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1992">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setWheelFixed" data-uid="@altmp/altv-types.alt-server.Vehicle.setWheelFixed">setWheelFixed(number)
   <span class="release-stage public"></span>
@@ -5611,7 +5727,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setWheelHasTire.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setWheelHasTire%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1772">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1951">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setWheelHasTire" data-uid="@altmp/altv-types.alt-server.Vehicle.setWheelHasTire">setWheelHasTire(number, boolean)
   <span class="release-stage public"></span>
@@ -5660,7 +5776,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setWheelHealth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setWheelHealth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1779">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1958">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setWheelHealth" data-uid="@altmp/altv-types.alt-server.Vehicle.setWheelHealth">setWheelHealth(number, number)
   <span class="release-stage public"></span>
@@ -5709,7 +5825,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setWheelOnFire.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setWheelOnFire%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1786">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1965">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setWheelOnFire" data-uid="@altmp/altv-types.alt-server.Vehicle.setWheelOnFire">setWheelOnFire(number, boolean)
   <span class="release-stage public"></span>
@@ -5758,7 +5874,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setWheels.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setWheels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1793">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1972">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setWheels" data-uid="@altmp/altv-types.alt-server.Vehicle.setWheels">setWheels(number, number)
   <span class="release-stage public"></span>
@@ -5807,7 +5923,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setWindowDamaged.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setWindowDamaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1800">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1979">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setWindowDamaged" data-uid="@altmp/altv-types.alt-server.Vehicle.setWindowDamaged">setWindowDamaged(number, boolean)
   <span class="release-stage public"></span>
@@ -5856,7 +5972,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_setWindowOpened.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.setWindowOpened%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1807">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1986">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_setWindowOpened" data-uid="@altmp/altv-types.alt-server.Vehicle.setWindowOpened">setWindowOpened(number, boolean)
   <span class="release-stage public"></span>
@@ -5905,7 +6021,7 @@ for(let i = 0; i &lt; vehicles.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Vehicle_getByID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Vehicle.getByID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1450">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/True/./server/index.d.ts/#L1629">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_server_Vehicle_getByID" data-uid="@altmp/altv-types.alt-server.Vehicle.getByID">getByID(number)
   <span class="release-stage public"></span>
