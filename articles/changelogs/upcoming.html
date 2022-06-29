@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#110-release">11.0-Release</a><ul class="level2 nav bs-docs-sidenav 110-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a></li></ul></li><li><a href="#js-module">JS Module</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#110-release">11.0-Release</a><ul class="level2 nav bs-docs-sidenav 110-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a></li></ul></li><li><a href="#js-module">JS Module</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -138,35 +138,48 @@
 <h5>Warning</h5>
 <p>This update isn't released yet.</p>
 </div>
-<div class="CAUTION">
-<h5>Caution</h5>
-<p>This update contains <strong>breaking changes</strong>, which can potentially break the functionality of your gamemode, please verify and change accordingly.</p>
-</div>
 <h2 id="client">Client</h2>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- local currentWeaponRecoil, currentWeaponSpread, currentWeaponDamage, currentWeaponRange getter
+<pre><code class="lang-yaml">- weapondata api (https://docs.altv.mp/js/api/alt-client.WeaponData.html)
+- Save external console position and reapply on every start
+- vehicle lockState, petrolTankHealth getter
+- focusdata api (overrideFocus, clearFocus, focusOverrideEntity, etc)
+- WheelCamber, WheelTrackWidth, WheelHeight, WheelTyreRadius, WheelRimRadius, WheelTyreWidth, fuelLevel, engineTemperature, oilLevel getter &amp; setter
+- persistent localstorage for early auth
+- loadDefaultIpls method
 </code></pre>
 </div>
-<!-- ### Fixed
-
-> [!div class="nohljsln"]
-> ```yaml
-
-> ``` -->
+<h3 id="fixed">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- weapon auto swap flag disabled vehicle weapons
+- playPedAmbientSpeechWithVoiceNative native
+- RMLUI style property
+- &quot;This PC&quot; crashes the game directory selection dialog
+- vehicle gear setter
+- permission dialog for optional permissions
+</code></pre>
+</div>
 <h2 id="server">Server</h2>
 <h3 id="added-1">Added</h3>
 <div class="nohljsln">
 <pre><code class="lang-yaml">- isSpawned getter
 - currentAnimationDict &amp; currentAnimationName getter
+- improved client-files wildcard support in ressource.cfg
+- autoenable headlightcolor mod if headlightColor setter is used
+- autoenable tireSmokeColor mod if tireSmokeColor setter is used
+- allow installation in appdata folder
 </code></pre>
 </div>
-<!-- ### Fixed
-
-> [!div class="nohljsln"]
-> ```yaml
-> - blip rotation setter
-> ``` -->
+<h3 id="fixed-1">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Fix frozen and collision setter
+- Bicycles don't work sometimes
+- Size property doesn't work for areablip
+- playAmbientSpeech method
+- removed clothing &amp; appearance missmatch message
+</code></pre>
+</div>
 <h2 id="server--client">Server &amp; Client</h2>
 <h3 id="added-2">Added</h3>
 <div class="nohljsln">
@@ -177,6 +190,7 @@
 <div class="nohljsln">
 <pre><code class="lang-yaml">- Updated nodeJS launch options to support native ECMAScript module loader by default (removed experimental loader warning)
   → The js-module automatically detects esm files if one of the described cases are fullfilled, see: https://nodejs.org/docs/latest-v17.x/api/esm.html#enabling
+- Added extra-cli-args to server.cfg
 </code></pre>
 </div>
 </article>

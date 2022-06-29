@@ -1,0 +1,969 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RmlDocument
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class RmlDocument
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument__ctor_AltV_Net_Client_ICore_IntPtr_">RmlDocument(ICore, IntPtr)</a></li><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument__ctor_AltV_Net_Client_ICore_System_String_">RmlDocument(ICore, String)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_Body">Body</a></li><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_IsModal">IsModal</a></li><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_IsVisible">IsVisible</a></li><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_NativePointer">NativePointer</a></li><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_RmlDocumentNativePointer">RmlDocumentNativePointer</a></li><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_SourceUrl">SourceUrl</a></li><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_Title">Title</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_CreateElement_System_String_">CreateElement(String)</a></li><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_CreateTextNode_System_String_">CreateTextNode(String)</a></li><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_Hide">Hide()</a></li><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_Show_System_Boolean_System_Boolean_">Show(Boolean, Boolean)</a></li><li><a href="#AltV_Net_Client_Elements_Entities_RmlDocument_Update">Update()</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L8">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Client_Elements_Entities_RmlDocument" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument" class="text-break">Class RmlDocument
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html">SharedBaseObject</a></div>
+    <div class="level2"><a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html">BaseObject</a></div>
+    <div class="level3"><a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html">RmlElement</a></div>
+    <div class="level4"><span class="xref">RmlDocument</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IRmlDocument.html">IRmlDocument</a></div>
+    <div><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IRmlElement.html">IRmlElement</a></div>
+    <div><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IBaseObject.html">IBaseObject</a></div>
+    <div><a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html">ISharedBaseObject</a></div>
+    <div><a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a></div>
+    <div><a class="xref" href="AltV.Net.Types.INative.html">INative</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_RmlElementNativePointer">RmlElement.RmlElementNativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_AbsoluteLeft">RmlElement.AbsoluteLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_AbsoluteTop">RmlElement.AbsoluteTop</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_AbsoluteOffset">RmlElement.AbsoluteOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_Baseline">RmlElement.Baseline</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ChildCount">RmlElement.ChildCount</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ChildNodes">RmlElement.ChildNodes</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ClientTop">RmlElement.ClientTop</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ClientLeft">RmlElement.ClientLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ClientWidth">RmlElement.ClientWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ClientHeight">RmlElement.ClientHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ContainingBlockSize">RmlElement.ContainingBlockSize</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_FirstChild">RmlElement.FirstChild</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_FocusedElement">RmlElement.FocusedElement</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_HasChildren">RmlElement.HasChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_Id">RmlElement.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_InnerRml">RmlElement.InnerRml</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_IsOwned">RmlElement.IsOwned</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_LastChild">RmlElement.LastChild</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_NextSibling">RmlElement.NextSibling</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_PreviousSibling">RmlElement.PreviousSibling</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_OffsetTop">RmlElement.OffsetTop</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_OffsetLeft">RmlElement.OffsetLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_OffsetWidth">RmlElement.OffsetWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_OffsetHeight">RmlElement.OffsetHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_OwnerDocument">RmlElement.OwnerDocument</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_Parent">RmlElement.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ScrollHeight">RmlElement.ScrollHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ScrollWidth">RmlElement.ScrollWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ScrollTop">RmlElement.ScrollTop</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ScrollLeft">RmlElement.ScrollLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_TagName">RmlElement.TagName</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ZIndex">RmlElement.ZIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_AddClass_System_String_">RmlElement.AddClass(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_AddPseudoClass_System_String_">RmlElement.AddPseudoClass(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_AppendChild_AltV_Net_Client_Elements_Interfaces_IRmlElement_">RmlElement.AppendChild(IRmlElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_Blur">RmlElement.Blur()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_Click">RmlElement.Click()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_GetClosest_System_String_">RmlElement.GetClosest(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_Focus">RmlElement.Focus()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_GetAttribute_System_String_">RmlElement.GetAttribute(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_GetAttributes">RmlElement.GetAttributes()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_GetClassList">RmlElement.GetClassList()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_GetElementById_System_String_">RmlElement.GetElementById(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_GetElementsByClassName_System_String_">RmlElement.GetElementsByClassName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_GetElementsByTagName_System_String_">RmlElement.GetElementsByTagName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_GetLocalProperty_System_String_">RmlElement.GetLocalProperty(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_GetProperty_System_String_">RmlElement.GetProperty(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_GetPropertyAbsoluteValue_System_String_">RmlElement.GetPropertyAbsoluteValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_GetPseudoClassList">RmlElement.GetPseudoClassList()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_HasAttribute_System_String_">RmlElement.HasAttribute(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_HasClass_System_String_">RmlElement.HasClass(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_HasLocalProperty_System_String_">RmlElement.HasLocalProperty(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_HasProperty_System_String_">RmlElement.HasProperty(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_HasPseudoClass_System_String_">RmlElement.HasPseudoClass(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_InsertBefore_AltV_Net_Client_Elements_Interfaces_IRmlElement_AltV_Net_Client_Elements_Interfaces_IRmlElement_">RmlElement.InsertBefore(IRmlElement, IRmlElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_IsPointWithinElement_Vector2_">RmlElement.IsPointWithinElement(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_QuerySelector_System_String_">RmlElement.QuerySelector(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_QuerySelectorAll_System_String_">RmlElement.QuerySelectorAll(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_RemoveAttribute_System_String_">RmlElement.RemoveAttribute(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_RemoveChild_AltV_Net_Client_Elements_Interfaces_IRmlElement_">RmlElement.RemoveChild(IRmlElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_RemoveClass_System_String_">RmlElement.RemoveClass(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_RemoveProperty_System_String_">RmlElement.RemoveProperty(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_RemovePseudoClass_System_String_">RmlElement.RemovePseudoClass(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ReplaceChild_AltV_Net_Client_Elements_Interfaces_IRmlElement_AltV_Net_Client_Elements_Interfaces_IRmlElement_">RmlElement.ReplaceChild(IRmlElement, IRmlElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_ScrollIntoView_System_Boolean_">RmlElement.ScrollIntoView(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_SetAttribute_System_String_System_String_">RmlElement.SetAttribute(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_SetOffset_AltV_Net_Client_Elements_Interfaces_IRmlElement_Vector2_System_Boolean_">RmlElement.SetOffset(IRmlElement, Vector2, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_SetProperty_System_String_System_String_">RmlElement.SetProperty(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html#AltV_Net_Client_Elements_Entities_BaseObject_BaseObjectNativePointer">BaseObject.BaseObjectNativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html#AltV_Net_Client_Elements_Entities_BaseObject_Core">BaseObject.Core</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html#AltV_Net_Client_Elements_Entities_BaseObject_Type">BaseObject.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html#AltV_Net_Client_Elements_Entities_BaseObject_CheckIfEntityExists">BaseObject.CheckIfEntityExists()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html#AltV_Net_Client_Elements_Entities_BaseObject_CheckIfCallIsValid">BaseObject.CheckIfCallIsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_SetData_System_String_System_Object_">SharedBaseObject.SetData(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetData__1_System_String___0__">SharedBaseObject.GetData&lt;T&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetAllDataKeys">SharedBaseObject.GetAllDataKeys()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_HasData_System_String_">SharedBaseObject.HasData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_DeleteData_System_String_">SharedBaseObject.DeleteData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_ClearData">SharedBaseObject.ClearData()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">SharedBaseObject.GetMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">SharedBaseObject.SetMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_HasMetaData_System_String_">SharedBaseObject.HasMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_DeleteMetaData_System_String_">SharedBaseObject.DeleteMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_SetMetaData_System_String_System_Object_">SharedBaseObject.SetMetaData(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData_System_String_System_Int32__">SharedBaseObject.GetMetaData(String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData_System_String_System_UInt32__">SharedBaseObject.GetMetaData(String, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData_System_String_System_Single__">SharedBaseObject.GetMetaData(String, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData__1_System_String___0__">SharedBaseObject.GetMetaData&lt;T&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_exists">SharedBaseObject.exists</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Exists">SharedBaseObject.Exists</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_refCount">SharedBaseObject.refCount</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_OnRemove">SharedBaseObject.OnRemove()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Equals_System_Object_">SharedBaseObject.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_InternalAddRef">SharedBaseObject.InternalAddRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_InternalRemoveRef">SharedBaseObject.InternalRemoveRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_InternalAddRefIfExists">SharedBaseObject.InternalAddRefIfExists()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_AddRef">SharedBaseObject.AddRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_RemoveRef">SharedBaseObject.RemoveRef()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetHashCode">SharedBaseObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Remove">SharedBaseObject.Remove()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Client.Elements.Entities.html">AltV.Net.Client.Elements.Entities</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Client.dll</h6>
+  <h5 id="AltV_Net_Client_Elements_Entities_RmlDocument_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RmlDocument : RmlElement, IInternalBaseObject, IRmlDocument, IRmlElement, IBaseObject, ISharedBaseObject, IRefCountable, INative</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument__ctor_AltV_Net_Client_ICore_IntPtr_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.%23ctor(AltV.Net.Client.ICore%2CIntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L21">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument__ctor_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.#ctor*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument__ctor_AltV_Net_Client_ICore_IntPtr_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.#ctor(AltV.Net.Client.ICore,IntPtr)">RmlDocument(ICore, IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RmlDocument(ICore core, IntPtr rmlDocumentPointer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Client.ICore.html">ICore</a></td>
+        <td><span class="parametername">core</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">rmlDocumentPointer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument__ctor_AltV_Net_Client_ICore_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.%23ctor(AltV.Net.Client.ICore%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L26">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument__ctor_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.#ctor*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument__ctor_AltV_Net_Client_ICore_System_String_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.#ctor(AltV.Net.Client.ICore,System.String)">RmlDocument(ICore, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RmlDocument(ICore core, string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Client.ICore.html">ICore</a></td>
+        <td><span class="parametername">core</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_Body.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.Body%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L31">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_Body_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.Body*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_Body" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.Body">Body</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRmlElement Body { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IRmlElement.html">IRmlElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_IsModal.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.IsModal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L57">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_IsModal_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.IsModal*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_IsModal" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.IsModal">IsModal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsModal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_IsVisible.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.IsVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L69">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_IsVisible_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.IsVisible*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_IsVisible" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.IsVisible">IsVisible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_NativePointer.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.NativePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L19">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_NativePointer_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.NativePointer*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_NativePointer" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.NativePointer">NativePointer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IntPtr NativePointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Client.Elements.Entities.RmlElement.html#AltV_Net_Client_Elements_Entities_RmlElement_NativePointer">RmlElement.NativePointer</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_RmlDocumentNativePointer.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.RmlDocumentNativePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L18">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_RmlDocumentNativePointer_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.RmlDocumentNativePointer*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_RmlDocumentNativePointer" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.RmlDocumentNativePointer">RmlDocumentNativePointer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr RmlDocumentNativePointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_SourceUrl.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.SourceUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L44">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_SourceUrl_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.SourceUrl*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_SourceUrl" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.SourceUrl">SourceUrl</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SourceUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_Title.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.Title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L81">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_Title_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.Title*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_Title" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.Title">Title</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Title { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_CreateElement_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.CreateElement(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L105">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_CreateElement_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.CreateElement*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_CreateElement_System_String_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.CreateElement(System.String)">CreateElement(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRmlElement CreateElement(string tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IRmlElement.html">IRmlElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_CreateTextNode_System_String_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.CreateTextNode(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L117">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_CreateTextNode_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.CreateTextNode*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_CreateTextNode_System_String_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.CreateTextNode(System.String)">CreateTextNode(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRmlElement CreateTextNode(string text)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IRmlElement.html">IRmlElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_Hide.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.Hide%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L129">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_Hide_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.Hide*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_Hide" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.Hide">Hide()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_Show_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.Show(System.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L138">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_Show_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.Show*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_Show_System_Boolean_System_Boolean_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.Show(System.Boolean,System.Boolean)">Show(Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show(bool isModal = false, bool focused = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isModal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">focused</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_RmlDocument_Update.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.RmlDocument.Update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Entities/RmlDocument.cs/#L147">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_RmlDocument_Update_" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.Update*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_RmlDocument_Update" data-uid="AltV.Net.Client.Elements.Entities.RmlDocument.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Interfaces.IRmlDocument.html">IRmlDocument</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Interfaces.IRmlElement.html">IRmlElement</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Interfaces.IBaseObject.html">IBaseObject</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html">ISharedBaseObject</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Types.INative.html">INative</a>
+  </div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,648 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WeaponData
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class WeaponData
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_AccuracySpread">AccuracySpread</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_AnimReloadRate">AnimReloadRate</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_ClipSize">ClipSize</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_Damage">Damage</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_HeadshotDamageModifier">HeadshotDamageModifier</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_LockOnRange">LockOnRange</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_ModelHash">ModelHash</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_NameHash">NameHash</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_Range">Range</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_RecoilAccuracyMax">RecoilAccuracyMax</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_RecoilAccuracyToAllowHeadshotPlayer">RecoilAccuracyToAllowHeadshotPlayer</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_RecoilRecoveryRate">RecoilRecoveryRate</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_RecoilShakeAmplitude">RecoilShakeAmplitude</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_TimeBetweenShots">TimeBetweenShots</a></li><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_VehicleReloadTime">VehicleReloadTime</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Client_Elements_Data_WeaponData_Dispose">Dispose()</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Client.Elements.Data.WeaponData">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L5">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Client_Elements_Data_WeaponData" data-uid="AltV.Net.Client.Elements.Data.WeaponData" class="text-break">Class WeaponData
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">WeaponData</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Client.Elements.Data.html">AltV.Net.Client.Elements.Data</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Client.dll</h6>
+  <h5 id="AltV_Net_Client_Elements_Data_WeaponData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WeaponData : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_AccuracySpread.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.AccuracySpread%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L164">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_AccuracySpread_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.AccuracySpread*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_AccuracySpread" data-uid="AltV.Net.Client.Elements.Data.WeaponData.AccuracySpread">AccuracySpread</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AccuracySpread { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_AnimReloadRate.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.AnimReloadRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L110">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_AnimReloadRate_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.AnimReloadRate*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_AnimReloadRate" data-uid="AltV.Net.Client.Elements.Data.WeaponData.AnimReloadRate">AnimReloadRate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AnimReloadRate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_ClipSize.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.ClipSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L218">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_ClipSize_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.ClipSize*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_ClipSize" data-uid="AltV.Net.Client.Elements.Data.WeaponData.ClipSize">ClipSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ClipSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_Damage.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.Damage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L200">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_Damage_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.Damage*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_Damage" data-uid="AltV.Net.Client.Elements.Data.WeaponData.Damage">Damage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Damage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_HeadshotDamageModifier.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.HeadshotDamageModifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L240">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_HeadshotDamageModifier_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.HeadshotDamageModifier*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_HeadshotDamageModifier" data-uid="AltV.Net.Client.Elements.Data.WeaponData.HeadshotDamageModifier">HeadshotDamageModifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HeadshotDamageModifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_LockOnRange.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.LockOnRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L146">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_LockOnRange_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.LockOnRange*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_LockOnRange" data-uid="AltV.Net.Client.Elements.Data.WeaponData.LockOnRange">LockOnRange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LockOnRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_ModelHash.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.ModelHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L27">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_ModelHash_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.ModelHash*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_ModelHash" data-uid="AltV.Net.Client.Elements.Data.WeaponData.ModelHash">ModelHash</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ModelHash { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_NameHash.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.NameHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L16">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_NameHash_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.NameHash*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_NameHash" data-uid="AltV.Net.Client.Elements.Data.WeaponData.NameHash">NameHash</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint NameHash { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_Range.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.Range%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L182">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_Range_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.Range*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_Range" data-uid="AltV.Net.Client.Elements.Data.WeaponData.Range">Range</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Range { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_RecoilAccuracyMax.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.RecoilAccuracyMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L56">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_RecoilAccuracyMax_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.RecoilAccuracyMax*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_RecoilAccuracyMax" data-uid="AltV.Net.Client.Elements.Data.WeaponData.RecoilAccuracyMax">RecoilAccuracyMax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RecoilAccuracyMax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_RecoilAccuracyToAllowHeadshotPlayer.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.RecoilAccuracyToAllowHeadshotPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L74">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_RecoilAccuracyToAllowHeadshotPlayer_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.RecoilAccuracyToAllowHeadshotPlayer*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_RecoilAccuracyToAllowHeadshotPlayer" data-uid="AltV.Net.Client.Elements.Data.WeaponData.RecoilAccuracyToAllowHeadshotPlayer">RecoilAccuracyToAllowHeadshotPlayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RecoilAccuracyToAllowHeadshotPlayer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_RecoilRecoveryRate.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.RecoilRecoveryRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L92">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_RecoilRecoveryRate_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.RecoilRecoveryRate*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_RecoilRecoveryRate" data-uid="AltV.Net.Client.Elements.Data.WeaponData.RecoilRecoveryRate">RecoilRecoveryRate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RecoilRecoveryRate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_RecoilShakeAmplitude.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.RecoilShakeAmplitude%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L38">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_RecoilShakeAmplitude_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.RecoilShakeAmplitude*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_RecoilShakeAmplitude" data-uid="AltV.Net.Client.Elements.Data.WeaponData.RecoilShakeAmplitude">RecoilShakeAmplitude</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RecoilShakeAmplitude { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_TimeBetweenShots.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.TimeBetweenShots%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L229">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_TimeBetweenShots_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.TimeBetweenShots*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_TimeBetweenShots" data-uid="AltV.Net.Client.Elements.Data.WeaponData.TimeBetweenShots">TimeBetweenShots</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TimeBetweenShots { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_VehicleReloadTime.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.VehicleReloadTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L128">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_VehicleReloadTime_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.VehicleReloadTime*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_VehicleReloadTime" data-uid="AltV.Net.Client.Elements.Data.WeaponData.VehicleReloadTime">VehicleReloadTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float VehicleReloadTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_WeaponData_Dispose.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.WeaponData.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/adbc04f88b4f2b427298dc8f2e2c806c65ad611f/api/AltV.Net.Client/Elements/Data/WeaponData.cs/#L258">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_WeaponData_Dispose_" data-uid="AltV.Net.Client.Elements.Data.WeaponData.Dispose*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_WeaponData_Dispose" data-uid="AltV.Net.Client.Elements.Data.WeaponData.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>
