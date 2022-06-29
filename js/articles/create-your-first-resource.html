@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#your-first-resource">Your first resource</a><ul class="level2 nav bs-docs-sidenav your-first-resource"><li><a href="#general-server-structure">General server structure</a></li><li><a href="#configuring-the-resourcecfg">Configuring the resource.cfg</a></li><li><a href="#creating-serverside-code---serverjs">Creating serverside code - server.js</a></li><li><a href="#creating-clientside-code---clientjs">Creating clientside code - client.js</a></li><li><a href="#final-words">Final Words</a></li><li><a href="#word-of-advice">Word of advice</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#your-first-resource">Your first resource</a><ul class="level2 nav bs-docs-sidenav your-first-resource"><li><a href="#general-server-structure">General server structure</a></li><li><a href="#configuring-the-resourcecfg">Configuring the resource.cfg</a></li><li><a href="#creating-serverside-code---serverjs">Creating serverside code - server.js</a></li><li><a href="#creating-clientside-code---clientjs">Creating clientside code - client.js</a></li><li><a href="#usage-with-typescript">Usage with typescript</a><ul class="level3 nav bs-docs-sidenav usage-with-typescript"><li><a href="#setup-packagejson">Setup package.json</a></li><li><a href="#installing-the-types">Installing the types</a></li><li><a href="#create-a-tsconfig-file">Create a tsconfig file</a><ul class="level4 nav bs-docs-sidenav create-a-tsconfig-file"><li><a href="#word-of-advice">Word of advice</a></li></ul></li></ul></li><li><a href="#final-words">Final Words</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -226,6 +226,128 @@ alt.onServer('Server:Log', (msg1, msg2) =&gt; {
     alt.log(`Message From Server: ${msg1}`);
     alt.log(`Message From Server: ${msg2}`);
 });
+</code></pre>
+<h2 id="usage-with-typescript">Usage with typescript</h2>
+<p>To utilize all the advantages of typescript 2 steps are necessary:</p>
+<ol>
+<li>Setup <code>package.json</code></li>
+<li>Installing the types</li>
+<li>Create a tsconfig file</li>
+</ol>
+<h3 id="setup-packagejson">Setup package.json</h3>
+<p>If your resource does not already have a <code>package.json</code>, open a terminal in your resources folder and execute the following commands, depending on your preferred package manager:</p>
+<pre><code># For usage with npm
+npm init
+# For usage with yarn
+yarn init
+</code></pre>
+<p>After following the next wizard, open the package.json with a text editor and add the following entry:</p>
+<pre><code class="lang-yaml">{
+    # Here are the values you provided in the assistent
+    &quot;name&quot;: &quot;altv-client&quot;,
+    ...
+    # Add this line on the bottom
+    &quot;type: module
+}
+</code></pre>
+<h3 id="installing-the-types">Installing the types</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Required for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@altv/types-shared</td>
+<td>Client &amp; Server</td>
+</tr>
+<tr>
+<td>@altv/types-client</td>
+<td>Client</td>
+</tr>
+<tr>
+<td>@altv/types-natives</td>
+<td>Client</td>
+</tr>
+<tr>
+<td>@altv/types-webview</td>
+<td>Client</td>
+</tr>
+<tr>
+<td>@altv/types-worker</td>
+<td>Client</td>
+</tr>
+<tr>
+<td>@altv/types-server</td>
+<td>Server</td>
+</tr>
+</tbody>
+</table>
+<p>Depending on the required types, these must now be installed. If the project contains scripts for server &amp; client, all types can be installed as well:</p>
+<pre><code class="lang-yaml"># Client only
+# For usage with npm
+npm i -D @altv/types-shared @altv/types-client @altv/types-natives @altv/types-webview
+# For usage with yarn
+yarn add -D @altv/types-shared @altv/types-client @altv/types-natives @altv/types-webview
+
+# Server only
+# For usage with npm
+npm i -D @altv/types-shared @altv/types-server
+# For usage with yarn
+yarn add -D @altv/types-shared @altv/types-server
+
+# Combined
+# For usage with npm
+npm i -D @altv/types-shared @altv/types-client @altv/types-natives @altv/types-webview @altv/types-shared @altv/types-server
+# For usage with yarn
+yarn add -D @altv/types-shared @altv/types-client @altv/types-natives @altv/types-webview @altv/types-shared @altv/types-server
+</code></pre>
+<h3 id="create-a-tsconfig-file">Create a tsconfig file</h3>
+<p>Now create a new file in your resource folder and name it <code>tsconfig.json</code> and open it with your favorite text editor.</p>
+<p>Insert the following content and adjust it if necessary.
+Some options are not discussed here, because they are not directly related to alt:V and are already described in detail
+in the <a href="https://www.typescriptlang.org/docs/handbook/tsconfig-json.html">typescript documentation</a>.</p>
+<pre><code class="lang-yaml">{
+  &quot;compilerOptions&quot;: {
+    &quot;lib&quot;: [ &quot;es5&quot;, &quot;es6&quot;, &quot;esnext&quot; ],
+    &quot;module&quot;: &quot;esnext&quot;,
+    &quot;moduleResolution&quot;: &quot;node&quot;,
+    &quot;target&quot;: &quot;esnext&quot;,
+
+    &quot;resolveJsonModule&quot;: true,
+    &quot;esModuleInterop&quot;: true,
+    &quot;removeComments&quot;: true,
+    &quot;experimentalDecorators&quot;: true,
+    &quot;emitDecoratorMetadata&quot;: true,
+    &quot;preserveConstEnums&quot;: true,
+
+    &quot;noImplicitAny&quot;: true,
+    &quot;sourceMap&quot;: false,
+
+    # If you have subfolder where all your ts files are located you can add the following line to specify the root folder 
+    &quot;rootDir&quot;: &quot;./Source/&quot;,
+    # Here you can set the output folder where the javascript files will be generated
+    &quot;outDir&quot;: &quot;./Dist/&quot;,
+
+    # Here you can add your type files
+    # Depending on your IDE you can also set &quot;typeRoots&quot;: [&quot;node_modules/@altv&quot;] instead the single paths
+    &quot;paths&quot;: {
+      &quot;natives&quot;: [ &quot;node_modules/@altv/types-natives&quot; ],
+      &quot;alt-client&quot;: [ &quot;node_modules/@altv/types-client&quot; ],
+      &quot;alt-shared&quot;: [ &quot;node_modules/@altv/types-shared&quot; ],
+      &quot;alt-worker&quot;: [ &quot;node_modules/@altv/types-worker&quot;]
+    }
+  },
+  &quot;compileOnSave&quot;: true,
+  &quot;include&quot;: [
+    &quot;./**/*.ts&quot;
+  ],
+  &quot;exclude&quot;: [
+    &quot;node_modules&quot;
+  ]
+}
 </code></pre>
 <h2 id="final-words">Final Words</h2>
 <p>First of all - Congrats you've written your first clientside code that logs to the 'F8' console =&gt; Open the console to see it.

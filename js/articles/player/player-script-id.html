@@ -138,7 +138,11 @@
 <p>A General Overview</p>
 <ul>
 <li>A scriptID is unique to only the client side.</li>
-<li>scriptID will provide us a way to modify the native behavior of a player.</li>
+<li>scriptID will provide us a way to modify the native behavior of a player.
+<ul>
+<li>The usage of the player instance is preferred to the usage of the scriptID.</li>
+</ul>
+</li>
 <li>They are most often used in tandem with natives.</li>
 <li>They are unique per client per player.
 <ul>
@@ -175,7 +179,8 @@ alt.onServer('joined', otherPlayer =&gt; {
         // We'll unfreeze ourself in 5 seconds.
         alt.setTimeout(() =&gt; {
             alt.log(`You are unfrozen.`);
-            native.freezeEntityPosition(alt.Player.local.scriptID, false);
+            // You can preferably use the player instance itself, this will include some internal checks
+            native.freezeEntityPosition(alt.Player.local, false);
         }, 5000);
         return;
     }
