@@ -136,9 +136,12 @@
 
 <p>This article will explain the auto reconnect feature introduced in the 9.0 update.</p>
 <h2 id="what-is-auto-reconnect">What is auto reconnect</h2>
-<p>The auto reconnect allows the server to send a post request to the local client in order to initialize a connection / reconnection to the server.<br>
-This feature is only available when the client and server are in debug mode and is intended for a smoother local development.<br>
-It is important to note that you can also send the post request when you want, meaning it's possible to wait for your server to finish his startup procedure (fetching data from database, loading modules..).</p>
+<p>The auto reconnect allows the server to send a post request to the local client in order to initialize a connection /
+reconnection to the server.<br>
+This feature is only available when the client and server are in debug mode and is intended for a smoother local
+development.<br>
+It is important to note that you can also send the post request when you want, meaning it's possible to wait for your
+server to finish his startup procedure (fetching data from database, loading modules..).</p>
 <h2 id="script-usage">Script usage</h2>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S">
 <ul role="tablist">
@@ -155,80 +158,91 @@ It is important to note that you can also send the post request when you want, m
 <section id="tabpanel_bHGHmlrG6S_tabid-1" role="tabpanel" data-tab="tabid-1">
 
 <pre><code class="lang-js">import fetch from &quot;node-fetch&quot;;
-import alt from &quot;alt-server&quot;;
 
+const RETRY_DELAY = 2500;
 const DEBUG_PORT = 9223;
 
-async function getClientStatus() {
+async function getLocalClientStatus() {
     try {
         const response = await fetch(`http://127.0.0.1:${DEBUG_PORT}/status`);
-        return Promise.resolve(response.text());
+        return response.text();
     } catch (error) {
-        return Promise.resolve(&quot;ERROR&quot;);
+        return null;
     }
 }
 
-async function autoReconnect()  {
-    const status = await getClientStatus();
+async function connectLocalClient() {
+    const status = await getLocalClientStatus();
+    if (status === null) return;
+
     if (status !== &quot;MAIN_MENU&quot; &amp;&amp; status !== &quot;IN_GAME&quot;) {
-        setTimeout(autoReconnect, 2500);
-        return;
+        setTimeout(() =&gt; connectLocalClient(), RETRY_DELAY);
     }
 
     try {
         await fetch(`http://127.0.0.1:${DEBUG_PORT}/reconnect`, {
             method: &quot;POST&quot;,
-            body: &quot;serverPassword&quot; // only needed when a password is set in the server.cfg
+            body: &quot;serverPassword&quot;, // only needed when a password is set in the server.cfg
         });
-    } catch(error) {
+    } catch (error) {
         console.log(error);
     }
 }
 
-autoReconnect();
+connectLocalClient();
 </code></pre>
 </section>
 <section id="tabpanel_bHGHmlrG6S_tabid-2" role="tabpanel" data-tab="tabid-2" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-ts">import fetch from &quot;node-fetch&quot;;
-import alt from &quot;alt-server&quot;;
 
-type STATUS = &quot;LOADING&quot; | &quot;MAIN_MENU&quot; | &quot;DOWNLOADING_FILES&quot; | &quot;CONNECTING&quot; | &quot;IN_GAME&quot; | &quot;DISCONNECTING&quot; | &quot;ERROR&quot;;
+const enum Status {
+    Loading = &quot;LOADING&quot;,
+    MainMenu = &quot;MAIN_MENU&quot;,
+    DownloadingFiles = &quot;DOWNLOADING_FILES&quot;,
+    Connecting = &quot;CONNECTING&quot;,
+    InGame = &quot;IN_GAME&quot;,
+    Disconnecting = &quot;DISCONNECTING&quot;,
+    Error = &quot;ERROR&quot;
+}
+
+const RETRY_DELAY = 2500;
 const DEBUG_PORT = 9223;
 
-async function getClientStatus(): Promise&lt;STATUS&gt; {
+async function getLocalClientStatus(): Promise&lt;Status | null&gt; {
     try {
         const response = await fetch(`http://127.0.0.1:${DEBUG_PORT}/status`);
-        const body = response.text() as unknown as STATUS;
-        return Promise.resolve(body);
+        return response.text() as unknown as Status;
     } catch (error) {
-        return Promise.resolve(&quot;ERROR&quot;);
+        return null;
     }
 }
 
-async function autoReconnect(): Promise&lt;void&gt; {
-    const status = await getClientStatus();
-    if (status !== &quot;MAIN_MENU&quot; &amp;&amp; status !== &quot;IN_GAME&quot;) {
-        setTimeout(autoReconnect, 2500);
-        return;
+async function connectLocalClient(): Promise&lt;void&gt; {
+    const status = await getLocalClientStatus();
+    if (status === null) return;
+
+    if (status !== Status.MainMenu &amp;&amp; status !== Status.InGame) {
+        setTimeout(() =&gt; connectLocalClient(), RETRY_DELAY);
     }
 
     try {
         await fetch(`http://127.0.0.1:${DEBUG_PORT}/reconnect`, {
             method: &quot;POST&quot;,
-            body: &quot;serverPassword&quot; // only needed when a password is set in the server.cfg
+            body: &quot;serverPassword&quot;, // only needed when a password is set in the server.cfg
         });
-    } catch(error) {
+    } catch (error) {
         console.log(error);
     }
 }
 
-autoReconnect();
+connectLocalClient();
 </code></pre>
 </section>
 <section id="tabpanel_bHGHmlrG6S_tabid-3" role="tabpanel" data-tab="tabid-3" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-csharp">using AltV.Net.Async;
+using System.Runtime.Serialization;
 using Timer = System.Timers.Timer;
 
 namespace Example
@@ -236,53 +250,72 @@ namespace Example
     class ExampleResource : AsyncResource
     {
         private const int DebugPort = 9223;
+        private const int RetryDelay = 2500;
 
         private readonly HttpClient _httpClient = new();
-        private readonly Timer _timer = new(2500);
+        private readonly Timer _timer = new(RetryDelay);
 
-        private async Task&lt;string&gt; GetClientStatus()
+        private enum ClientStatus
+        {
+            [EnumMember(Value = &quot;LOADING&quot;)] Loading,
+            [EnumMember(Value = &quot;MAIN_MENU&quot;)] MainMenu,
+            [EnumMember(Value = &quot;DOWNLOADING_FILES&quot;)] DownloadingFiles,
+            [EnumMember(Value = &quot;CONNECTING&quot;)] Connecting,
+            [EnumMember(Value = &quot;IN_GAME&quot;)] InGame,
+            [EnumMember(Value = &quot;DISCONNECTING&quot;)] Disconnecting,
+            [EnumMember(Value = &quot;ERROR&quot;)] Error
+        }
+
+        private async Task&lt;ClientStatus&gt; GetLocalClientStatus()
         {
             try
             {
-                var response = await this._httpClient.GetAsync($&quot;http://127.0.0.1:{DebugPort}/status&quot;);
-                return await response.Content.ReadAsStringAsync();
+                var status = await _httpClient.GetStringAsync($&quot;http://127.0.0.1:{DebugPort}/status&quot;);
+                var enumValue = typeof(ClientStatus).GetFields()
+                    .FirstOrDefault(f =&gt; f.GetCustomAttribute&lt;EnumMemberAttribute&gt;()?.Value == status)?
+                    .GetValue(null);
+    
+                return enumValue != null ? (ClientStatus)enumValue : ClientStatus.Error;
             }
-            catch (Exception)
+            catch
             {
-                return &quot;ERROR&quot;;
+                return ClientStatus.Error;
             }
         }
 
-        private async Task AutoReconnect()
+        private async Task ConnectLocalClient()
         {
-            var status = await this.GetClientStatus();
-            if (status != &quot;MAIN_MENU&quot; &amp;&amp; status != &quot;IN_GAME&quot;)
+            var status = await GetLocalClientStatus();
+            if (status == ClientStatus.Error) return;
+            if (status != ClientStatus.MainMenu &amp;&amp; status != ClientStatus.InGame &amp;&amp; !_timer.Enabled)
             {
-                this._timer.Start();
+                _timer.Start();
                 return;
             }
-
+            if (status == ClientStatus.InGame &amp;&amp; _timer.Enabled)
+            {
+                _timer.Stop();
+                return;
+            }
+    
             try
             {
-                await this._httpClient.PostAsync(
+                await _httpClient.PostAsync(
                     $&quot;http://127.0.0.1:{DebugPort}/reconnect&quot;,
-                    new StringContent(&quot;serverPassword&quot;)  // only needed when a password is set in the server.cfg, otherwise pass null instead of StringContent
+                    // Only needed when a password is set in the server.cfg, otherwise pass null instead of StringContent
+                    new StringContent(&quot;serverPassword&quot;)
                 );
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                Console.WriteLine(e);
+                Console.WriteLine($&quot;Reconnect failed: {ex}&quot;);
             }
         }
 
         public override void OnStart()
         {
-            this._timer.Elapsed += (_, _) =&gt;
-            {
-                _ = this.AutoReconnect();
-            };
-            
-            _ = this.AutoReconnect();
+            _timer.Elapsed += (_, _) =&gt; _ = ConnectLocalClient();
+            _ = ConnectLocalClient();
         }
 
         public override void OnStop()

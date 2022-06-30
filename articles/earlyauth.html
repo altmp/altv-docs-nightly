@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#setup-earlyauth">Setup EarlyAuth</a></li><li><a href="#step-by-step-tutorial">Step-by-Step Tutorial</a><ul class="level2 nav bs-docs-sidenav step-by-step-tutorial"><li><a href="#example-values">Example values</a></li><li><a href="#step-by-step-example">Step-by-Step Example</a></li><li><a href="#request-altv-name">Request alt:V Name</a></li><li><a href="#extra-informations">Extra informations</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#setup-earlyauth">Setup EarlyAuth</a></li><li><a href="#step-by-step-tutorial">Step-by-Step Tutorial</a><ul class="level2 nav bs-docs-sidenav step-by-step-tutorial"><li><a href="#example-values">Example values</a></li><li><a href="#step-by-step-example">Step-by-Step Example</a></li><li><a href="#request-altv-name">Request alt:V Name</a></li><li><a href="#store-and-retrieve-data">Store and retrieve data</a></li><li><a href="#extra-informations">Extra informations</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -200,6 +200,27 @@ It's working as followed: A client connects to the server over the server list, 
     })
 &lt;/script&gt;
 </code></pre>
+<h2 id="store-and-retrieve-data">Store and retrieve data</h2>
+<p>Since the CEF cache is flushed between restarts, there is an alternative to store data persistently using alt:V LocalStorage.
+The following snippet explains how to use it:</p>
+<pre><code class="lang-html">&lt;script&gt;
+    // Subscribe to the localStorage event to get the requested data
+    alt.on(&quot;localStorage&quot;, (key, value) =&gt; {
+        if (key === &quot;lastLogin&quot;) {
+            // Do something with the retrieved data, stored in the variable &quot;value&quot;
+        }
+    });
+    
+    // Request the data for a key of the LocalStorage
+    // alt.emit(&quot;requestLocalStorage&quot;, key);
+    alt.emit(&quot;requestLocalStorage&quot;, &quot;lastLogin&quot;);
+    
+    // Store data in the LocalStorage
+    // alt.emit(&quot;setLocalStorage&quot;, key, value);
+    alt.emit(&quot;setLocalStorage&quot;, &quot;lastLogin&quot;, Date.now());
+&lt;/script&gt;
+</code></pre>
+<p>This data is now persistently stored until the alt:V client's cache folder is deleted.</p>
 <h2 id="extra-informations">Extra informations</h2>
 <p>If you want to close your early auth window, you have to use <code>alt.emit('closeMe')</code></p>
 </article>

@@ -168,6 +168,11 @@ It can either be set via setClothes (<code>player.setClothes(11, 133, 0)</code>)
 If Rockstar were to append another piece of clothing to the first dlc pack, the setClothes function would point to a different piece of clothing than which was originally used.
 The setDlcClothes function, on the other hand, is not affected because the used dlc pack has not changed.</p>
 <p>The usage of <code>setProp</code> (equivalent to <code>setPedPropIndex</code>) and <code>setDlcProp</code> is the same as the cloth functions.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>As noted, the use of <code>setDlcClothes</code> and <code>setDlcProp</code> requires the specification of a dlc hash.
+If the dlc hash is not known, it can be found in the respective meta file at the entry &quot;dlcName&quot; (needs to be hashed first).</p>
+</div>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="clothes-override-data-error-in-console">&quot;clothes override data&quot; error in console</h3>
 <p>If you combine the client-side and server-side functions to set clothes, sooner or later you will encounter the following error message:</p>
