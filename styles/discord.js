@@ -145,7 +145,7 @@ function enableSearch() {
       });
 
       $("#search-query").on("beforeinput textInput", function(ev) {
-        if (ev.originalEvent.inputType !== "insertParagraph" && ev.originalEvent.data?.split(/(?!$)/u)?.pop() !== "\n") {
+        if (ev.originalEvent.inputType !== "insertParagraph" && XRegExp.split(ev.originalEvent.data, /(?<=[^\\])/)?.pop() !== "\n") {
           return;
         }
         ev.preventDefault();
@@ -292,7 +292,7 @@ function handleSearchInput(el) {
   if (str.length < 3) {
     flipContents("show");
   } else if (isSearchInputAValidQuery(el)) {
-    query = str.replaceAll(filterRegexFinal, "$1:$2");
+    query = XRegExp.replace(str, filterRegexFinal, "$1:$2");
     flipContents("hide");
     $("#search-results > .search-list > span").text("\"" + str + "\"");
     $("body").trigger("queryReady");
@@ -320,7 +320,7 @@ function toggleSearch() {
 }
 
 function insertSearchKeywords(el) {
-  const str = $(el).text().replaceAll(filterRegex, function(match, p1, p2, offset, str) {
+  const str = XRegExp.replace($(el).text(), filterRegex, function(match, p1, p2, offset, str) {
     const searchTerm = $("<span />").addClass("field-term").addClass(p1);
     const field = $("<span />").addClass("field").html(p1 + ':');
     searchTerm.append(field);
@@ -338,10 +338,10 @@ function isSearchInputAValidQuery(el) {
     return false;
   }
   const str = $(el).text();
-  if (!/^(?!\s).*(?<!\s)$/.test(str)) {
+  if (!XRegExp.test(str, /^(?!\s).*(?<!\s)$/)) {
     return false;
   }
-  const keywords = str.matchAll(filterRegex);
+  const keywords = XRegExp.match(str, filterRegex);
   for (const word of keywords) {
     if (getFilterKeywords().indexOf(word[1]) === -1 || !word[2]) {
       return false;
@@ -494,7 +494,7 @@ function convertQueryIntoWords(query) {
 }
 
 function relativeUrlToAbsoluteUrl(currentUrl, relativeUrl) {
-  var currentItems = currentUrl.split(/(?!\/{2})\/+(?<!\/{2})/);
+  var currentItems = XRegExp.split(currentUrl, /(?!\/{2})\/+(?<!\/{2})/);
   var relativeItems = relativeUrl.split(/\/+/);
   var depth = currentItems.length - 1;
   var items = [];
