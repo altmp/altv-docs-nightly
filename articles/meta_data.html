@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#meta-data">Meta data</a></li><li><a href="#types">Types</a><ul class="level2 nav bs-docs-sidenav types"><li><a href="#overview">Overview</a></li><li><a href="#meta">Meta</a></li><li><a href="#local-meta">Local Meta</a></li><li><a href="#synced-meta">Synced Meta</a></li><li><a href="#stream-synced-meta">Stream Synced Meta</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#meta-data">Meta data</a></li><li><a href="#types">Types</a><ul class="level2 nav bs-docs-sidenav types"><li><a href="#overview">Overview</a></li><li><a href="#usage">Usage</a></li><li><a href="#local-meta">Local Meta</a></li><li><a href="#synced-meta">Synced Meta</a></li><li><a href="#stream-synced-meta">Stream Synced Meta</a></li><li><a href="#remarks">Remarks</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -183,7 +183,7 @@ These topics will be discussed in more detail in the respective subsections.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="meta">Meta</h2>
+<h2 id="usage">Usage</h2>
 <p>A meta is set by using the method setMeta on the class alt or an entity (player or vehicle).
 The meta is only available on the same side that it has been set and can be fetched by all resources.</p>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S">
@@ -592,6 +592,62 @@ It is basically the same as a synced meta, but only gets send to clients in the 
 </code></pre>
 </section>
 </div>
+<h2 id="remarks">Remarks</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>The meta change events are only called if the (new) data is not yet known to the client.
+If this data is already known, it must be queried &amp; processed independently, for example via the gameEntityCreate event.</p>
+</div>
+<p>Let's take the example case of a <strong>streamSyncedMeta</strong> with the key <code>trackWidth</code>, which sets the track width of a vehicle.</p>
+<p>The event <code>streamSyncedMetaChange</code> is only called here if the client does not yet know this value.<br>
+If you now leave the streaming range and then return to it, the vehicle is created, but no 'streamSyncedMetaChange' event is triggered.<br>
+To ensure that the values are always applied, the <code>gameEntityCreate</code> event must also be used.</p>
+<p>Here is an example:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-4">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-4_tab5-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-4_tab5-0" data-tab="tab5-0" tabindex="0" aria-selected="true">Server</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-4_tab5-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-4_tab5-1" data-tab="tab5-1" tabindex="-1">Client</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-4_tab5-0" role="tabpanel" data-tab="tab5-0">
+
+<pre><code class="lang-js">const vehicle = new alt.Vehicle(&quot;t20&quot;, 0, 0, 72, 0, 0, 0);
+vehicle.setStreamSyncedMeta(&quot;trackWidth&quot;, 0.85);
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-4_tab5-1" role="tabpanel" data-tab="tab5-1" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-js">// This is called when the meta is communicated to the client for the first time
+alt.on(&quot;streamSyncedMetaChange&quot;, (entity, key, newValue, oldValue) =&gt; {
+    if (key === &quot;trackWidth&quot;) setTrackWidth(entity, newValue);
+});
+
+// This is called as soon as the vehicle is created on the client
+// Here we check if the vehicle has the meta and if so process it
+alt.on(&quot;gameEntityCreate&quot;, (entity) =&gt; {
+    if (entity.hasStreamSyncedMeta(&quot;trackWidth&quot;)) {
+        const trackWidth = entity.getStreamSyncedMeta(&quot;trackWidth&quot;);
+        setTrackWidth(entity, trackWidth);
+    }
+});
+
+// If applicable, the `gameEntityDestroy` event can be used to undo changes that should only exist as long as the entity exists.
+alt.on(&quot;gameEntityDestroy&quot;, (entity) =&gt; {
+   // Remove meta changes for example 
+});
+
+// To avoid duplicating the code in both events we move it to its own function
+function setTrackWidth(entity, trackWidth) {
+    for (let i = 0; i &lt; entity.wheelsCount; i++) {
+        entity.setWheelTrackWidth(i, trackWidth);
+    }
+}
+</code></pre>
+</section>
+</div>
 </article>
                     </div>
 
@@ -608,6 +664,7 @@ It is basically the same as a synced meta, but only gets send to clients in the 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../styles/docfx.js"></script>
 <script type="text/javascript" src="../styles/discord.js"></script>
 <script type="text/javascript" src="../styles/main.js"></script>

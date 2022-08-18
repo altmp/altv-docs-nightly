@@ -1,0 +1,1828 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HUD Colors </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="HUD Colors ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../styles/colors.css">
+    <link rel="stylesheet" href="../../../styles/discord.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../../index.html">
+                        <img src="../../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#hud-colors">HUD Colors</a><ul class="level2 nav bs-docs-sidenav hud-colors"><li><a href="#overview">Overview</a></li><li><a href="#usage">Usage</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs-gta/blob/master/articles/references/hud-colors.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="hud-colors">HUD Colors</h1>
+
+<h2 id="overview">Overview</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The source of this data is the file <code>common:/data/ui/hudcolor.dat</code></p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th>Name</th>
+<th>Preview</th>
+<th>HEX</th>
+<th>RGBA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>HUD_COLOUR_PURE_WHITE</td>
+<td><div class="color-box" style="background-color: #FFFFFFFF"></div></td>
+<td>#FFFFFFFF</td>
+<td>255, 255, 255, 1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>HUD_COLOUR_WHITE</td>
+<td><div class="color-box" style="background-color: #F0F0F0FF"></div></td>
+<td>#F0F0F0FF</td>
+<td>240, 240, 240, 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>HUD_COLOUR_BLACK</td>
+<td><div class="color-box" style="background-color: #000000FF"></div></td>
+<td>#000000FF</td>
+<td>0, 0, 0, 1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>HUD_COLOUR_GREY</td>
+<td><div class="color-box" style="background-color: #9B9B9BFF"></div></td>
+<td>#9B9B9BFF</td>
+<td>155, 155, 155, 1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>HUD_COLOUR_GREYLIGHT</td>
+<td><div class="color-box" style="background-color: #CDCDCDFF"></div></td>
+<td>#CDCDCDFF</td>
+<td>205, 205, 205, 1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>HUD_COLOUR_GREYDARK</td>
+<td><div class="color-box" style="background-color: #4D4D4DFF"></div></td>
+<td>#4D4D4DFF</td>
+<td>77, 77, 77, 1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>HUD_COLOUR_RED</td>
+<td><div class="color-box" style="background-color: #E03232FF"></div></td>
+<td>#E03232FF</td>
+<td>224, 50, 50, 1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>HUD_COLOUR_REDLIGHT</td>
+<td><div class="color-box" style="background-color: #F09999FF"></div></td>
+<td>#F09999FF</td>
+<td>240, 153, 153, 1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>HUD_COLOUR_REDDARK</td>
+<td><div class="color-box" style="background-color: #701919FF"></div></td>
+<td>#701919FF</td>
+<td>112, 25, 25, 1</td>
+</tr>
+<tr>
+<td>9</td>
+<td>HUD_COLOUR_BLUE</td>
+<td><div class="color-box" style="background-color: #5DB6E5FF"></div></td>
+<td>#5DB6E5FF</td>
+<td>93, 182, 229, 1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>HUD_COLOUR_BLUELIGHT</td>
+<td><div class="color-box" style="background-color: #AEDBF2FF"></div></td>
+<td>#AEDBF2FF</td>
+<td>174, 219, 242, 1</td>
+</tr>
+<tr>
+<td>11</td>
+<td>HUD_COLOUR_BLUEDARK</td>
+<td><div class="color-box" style="background-color: #2F5C73FF"></div></td>
+<td>#2F5C73FF</td>
+<td>47, 92, 115, 1</td>
+</tr>
+<tr>
+<td>12</td>
+<td>HUD_COLOUR_YELLOW</td>
+<td><div class="color-box" style="background-color: #F0C850FF"></div></td>
+<td>#F0C850FF</td>
+<td>240, 200, 80, 1</td>
+</tr>
+<tr>
+<td>13</td>
+<td>HUD_COLOUR_YELLOWLIGHT</td>
+<td><div class="color-box" style="background-color: #FEEBA9FF"></div></td>
+<td>#FEEBA9FF</td>
+<td>254, 235, 169, 1</td>
+</tr>
+<tr>
+<td>14</td>
+<td>HUD_COLOUR_YELLOWDARK</td>
+<td><div class="color-box" style="background-color: #7E6B29FF"></div></td>
+<td>#7E6B29FF</td>
+<td>126, 107, 41, 1</td>
+</tr>
+<tr>
+<td>15</td>
+<td>HUD_COLOUR_ORANGE</td>
+<td><div class="color-box" style="background-color: #FF8555FF"></div></td>
+<td>#FF8555FF</td>
+<td>255, 133, 85, 1</td>
+</tr>
+<tr>
+<td>16</td>
+<td>HUD_COLOUR_ORANGELIGHT</td>
+<td><div class="color-box" style="background-color: #FFC2AAFF"></div></td>
+<td>#FFC2AAFF</td>
+<td>255, 194, 170, 1</td>
+</tr>
+<tr>
+<td>17</td>
+<td>HUD_COLOUR_ORANGEDARK</td>
+<td><div class="color-box" style="background-color: #7F422AFF"></div></td>
+<td>#7F422AFF</td>
+<td>127, 66, 42, 1</td>
+</tr>
+<tr>
+<td>18</td>
+<td>HUD_COLOUR_GREEN</td>
+<td><div class="color-box" style="background-color: #72CC72FF"></div></td>
+<td>#72CC72FF</td>
+<td>114, 204, 114, 1</td>
+</tr>
+<tr>
+<td>19</td>
+<td>HUD_COLOUR_GREENLIGHT</td>
+<td><div class="color-box" style="background-color: #B9E6B9FF"></div></td>
+<td>#B9E6B9FF</td>
+<td>185, 230, 185, 1</td>
+</tr>
+<tr>
+<td>20</td>
+<td>HUD_COLOUR_GREENDARK</td>
+<td><div class="color-box" style="background-color: #396639FF"></div></td>
+<td>#396639FF</td>
+<td>57, 102, 57, 1</td>
+</tr>
+<tr>
+<td>21</td>
+<td>HUD_COLOUR_PURPLE</td>
+<td><div class="color-box" style="background-color: #8466E2FF"></div></td>
+<td>#8466E2FF</td>
+<td>132, 102, 226, 1</td>
+</tr>
+<tr>
+<td>22</td>
+<td>HUD_COLOUR_PURPLELIGHT</td>
+<td><div class="color-box" style="background-color: #C0B3EFFF"></div></td>
+<td>#C0B3EFFF</td>
+<td>192, 179, 239, 1</td>
+</tr>
+<tr>
+<td>23</td>
+<td>HUD_COLOUR_PURPLEDARK</td>
+<td><div class="color-box" style="background-color: #43396FFF"></div></td>
+<td>#43396FFF</td>
+<td>67, 57, 111, 1</td>
+</tr>
+<tr>
+<td>24</td>
+<td>HUD_COLOUR_PINK</td>
+<td><div class="color-box" style="background-color: #CB3694FF"></div></td>
+<td>#CB3694FF</td>
+<td>203, 54, 148, 1</td>
+</tr>
+<tr>
+<td>25</td>
+<td>HUD_COLOUR_RADAR_HEALTH</td>
+<td><div class="color-box" style="background-color: #359A47FF"></div></td>
+<td>#359A47FF</td>
+<td>53, 154, 71, 1</td>
+</tr>
+<tr>
+<td>26</td>
+<td>HUD_COLOUR_RADAR_ARMOUR</td>
+<td><div class="color-box" style="background-color: #5DB6E5FF"></div></td>
+<td>#5DB6E5FF</td>
+<td>93, 182, 229, 1</td>
+</tr>
+<tr>
+<td>27</td>
+<td>HUD_COLOUR_RADAR_DAMAGE</td>
+<td><div class="color-box" style="background-color: #EB2427FF"></div></td>
+<td>#EB2427FF</td>
+<td>235, 36, 39, 1</td>
+</tr>
+<tr>
+<td>28</td>
+<td>HUD_COLOUR_NET_PLAYER1</td>
+<td><div class="color-box" style="background-color: #C25050FF"></div></td>
+<td>#C25050FF</td>
+<td>194, 80, 80, 1</td>
+</tr>
+<tr>
+<td>29</td>
+<td>HUD_COLOUR_NET_PLAYER2</td>
+<td><div class="color-box" style="background-color: #9C6EAFFF"></div></td>
+<td>#9C6EAFFF</td>
+<td>156, 110, 175, 1</td>
+</tr>
+<tr>
+<td>30</td>
+<td>HUD_COLOUR_NET_PLAYER3</td>
+<td><div class="color-box" style="background-color: #FF7BC4FF"></div></td>
+<td>#FF7BC4FF</td>
+<td>255, 123, 196, 1</td>
+</tr>
+<tr>
+<td>31</td>
+<td>HUD_COLOUR_NET_PLAYER4</td>
+<td><div class="color-box" style="background-color: #F79F7BFF"></div></td>
+<td>#F79F7BFF</td>
+<td>247, 159, 123, 1</td>
+</tr>
+<tr>
+<td>32</td>
+<td>HUD_COLOUR_NET_PLAYER5</td>
+<td><div class="color-box" style="background-color: #B29084FF"></div></td>
+<td>#B29084FF</td>
+<td>178, 144, 132, 1</td>
+</tr>
+<tr>
+<td>33</td>
+<td>HUD_COLOUR_NET_PLAYER6</td>
+<td><div class="color-box" style="background-color: #8DCEA7FF"></div></td>
+<td>#8DCEA7FF</td>
+<td>141, 206, 167, 1</td>
+</tr>
+<tr>
+<td>34</td>
+<td>HUD_COLOUR_NET_PLAYER7</td>
+<td><div class="color-box" style="background-color: #71A9AFFF"></div></td>
+<td>#71A9AFFF</td>
+<td>113, 169, 175, 1</td>
+</tr>
+<tr>
+<td>35</td>
+<td>HUD_COLOUR_NET_PLAYER8</td>
+<td><div class="color-box" style="background-color: #D3D1E7FF"></div></td>
+<td>#D3D1E7FF</td>
+<td>211, 209, 231, 1</td>
+</tr>
+<tr>
+<td>36</td>
+<td>HUD_COLOUR_NET_PLAYER9</td>
+<td><div class="color-box" style="background-color: #907F99FF"></div></td>
+<td>#907F99FF</td>
+<td>144, 127, 153, 1</td>
+</tr>
+<tr>
+<td>37</td>
+<td>HUD_COLOUR_NET_PLAYER10</td>
+<td><div class="color-box" style="background-color: #6AC4BFFF"></div></td>
+<td>#6AC4BFFF</td>
+<td>106, 196, 191, 1</td>
+</tr>
+<tr>
+<td>38</td>
+<td>HUD_COLOUR_NET_PLAYER11</td>
+<td><div class="color-box" style="background-color: #D6C499FF"></div></td>
+<td>#D6C499FF</td>
+<td>214, 196, 153, 1</td>
+</tr>
+<tr>
+<td>39</td>
+<td>HUD_COLOUR_NET_PLAYER12</td>
+<td><div class="color-box" style="background-color: #EA8E50FF"></div></td>
+<td>#EA8E50FF</td>
+<td>234, 142, 80, 1</td>
+</tr>
+<tr>
+<td>40</td>
+<td>HUD_COLOUR_NET_PLAYER13</td>
+<td><div class="color-box" style="background-color: #98CBEAFF"></div></td>
+<td>#98CBEAFF</td>
+<td>152, 203, 234, 1</td>
+</tr>
+<tr>
+<td>41</td>
+<td>HUD_COLOUR_NET_PLAYER14</td>
+<td><div class="color-box" style="background-color: #B26287FF"></div></td>
+<td>#B26287FF</td>
+<td>178, 98, 135, 1</td>
+</tr>
+<tr>
+<td>42</td>
+<td>HUD_COLOUR_NET_PLAYER15</td>
+<td><div class="color-box" style="background-color: #908E7AFF"></div></td>
+<td>#908E7AFF</td>
+<td>144, 142, 122, 1</td>
+</tr>
+<tr>
+<td>43</td>
+<td>HUD_COLOUR_NET_PLAYER16</td>
+<td><div class="color-box" style="background-color: #A6755EFF"></div></td>
+<td>#A6755EFF</td>
+<td>166, 117, 94, 1</td>
+</tr>
+<tr>
+<td>44</td>
+<td>HUD_COLOUR_NET_PLAYER17</td>
+<td><div class="color-box" style="background-color: #AFA8A8FF"></div></td>
+<td>#AFA8A8FF</td>
+<td>175, 168, 168, 1</td>
+</tr>
+<tr>
+<td>45</td>
+<td>HUD_COLOUR_NET_PLAYER18</td>
+<td><div class="color-box" style="background-color: #E88E9BFF"></div></td>
+<td>#E88E9BFF</td>
+<td>232, 142, 155, 1</td>
+</tr>
+<tr>
+<td>46</td>
+<td>HUD_COLOUR_NET_PLAYER19</td>
+<td><div class="color-box" style="background-color: #BBD65BFF"></div></td>
+<td>#BBD65BFF</td>
+<td>187, 214, 91, 1</td>
+</tr>
+<tr>
+<td>47</td>
+<td>HUD_COLOUR_NET_PLAYER20</td>
+<td><div class="color-box" style="background-color: #0C7B56FF"></div></td>
+<td>#0C7B56FF</td>
+<td>12, 123, 86, 1</td>
+</tr>
+<tr>
+<td>48</td>
+<td>HUD_COLOUR_NET_PLAYER21</td>
+<td><div class="color-box" style="background-color: #7BC4FFFF"></div></td>
+<td>#7BC4FFFF</td>
+<td>123, 196, 255, 1</td>
+</tr>
+<tr>
+<td>49</td>
+<td>HUD_COLOUR_NET_PLAYER22</td>
+<td><div class="color-box" style="background-color: #AB3CE6FF"></div></td>
+<td>#AB3CE6FF</td>
+<td>171, 60, 230, 1</td>
+</tr>
+<tr>
+<td>50</td>
+<td>HUD_COLOUR_NET_PLAYER23</td>
+<td><div class="color-box" style="background-color: #CEA90DFF"></div></td>
+<td>#CEA90DFF</td>
+<td>206, 169, 13, 1</td>
+</tr>
+<tr>
+<td>51</td>
+<td>HUD_COLOUR_NET_PLAYER24</td>
+<td><div class="color-box" style="background-color: #4763ADFF"></div></td>
+<td>#4763ADFF</td>
+<td>71, 99, 173, 1</td>
+</tr>
+<tr>
+<td>52</td>
+<td>HUD_COLOUR_NET_PLAYER25</td>
+<td><div class="color-box" style="background-color: #2AA6B9FF"></div></td>
+<td>#2AA6B9FF</td>
+<td>42, 166, 185, 1</td>
+</tr>
+<tr>
+<td>53</td>
+<td>HUD_COLOUR_NET_PLAYER26</td>
+<td><div class="color-box" style="background-color: #BA9D7DFF"></div></td>
+<td>#BA9D7DFF</td>
+<td>186, 157, 125, 1</td>
+</tr>
+<tr>
+<td>54</td>
+<td>HUD_COLOUR_NET_PLAYER27</td>
+<td><div class="color-box" style="background-color: #C9E1FFFF"></div></td>
+<td>#C9E1FFFF</td>
+<td>201, 225, 255, 1</td>
+</tr>
+<tr>
+<td>55</td>
+<td>HUD_COLOUR_NET_PLAYER28</td>
+<td><div class="color-box" style="background-color: #F0F096FF"></div></td>
+<td>#F0F096FF</td>
+<td>240, 240, 150, 1</td>
+</tr>
+<tr>
+<td>56</td>
+<td>HUD_COLOUR_NET_PLAYER29</td>
+<td><div class="color-box" style="background-color: #ED8CA1FF"></div></td>
+<td>#ED8CA1FF</td>
+<td>237, 140, 161, 1</td>
+</tr>
+<tr>
+<td>57</td>
+<td>HUD_COLOUR_NET_PLAYER30</td>
+<td><div class="color-box" style="background-color: #F98A8AFF"></div></td>
+<td>#F98A8AFF</td>
+<td>249, 138, 138, 1</td>
+</tr>
+<tr>
+<td>58</td>
+<td>HUD_COLOUR_NET_PLAYER31</td>
+<td><div class="color-box" style="background-color: #FCEFA6FF"></div></td>
+<td>#FCEFA6FF</td>
+<td>252, 239, 166, 1</td>
+</tr>
+<tr>
+<td>59</td>
+<td>HUD_COLOUR_NET_PLAYER32</td>
+<td><div class="color-box" style="background-color: #F0F0F0FF"></div></td>
+<td>#F0F0F0FF</td>
+<td>240, 240, 240, 1</td>
+</tr>
+<tr>
+<td>60</td>
+<td>HUD_COLOUR_SIMPLEBLIP_DEFAULT</td>
+<td><div class="color-box" style="background-color: #9FC9A6FF"></div></td>
+<td>#9FC9A6FF</td>
+<td>159, 201, 166, 1</td>
+</tr>
+<tr>
+<td>61</td>
+<td>HUD_COLOUR_MENU_BLUE</td>
+<td><div class="color-box" style="background-color: #8C8C8CFF"></div></td>
+<td>#8C8C8CFF</td>
+<td>140, 140, 140, 1</td>
+</tr>
+<tr>
+<td>62</td>
+<td>HUD_COLOUR_MENU_GREY_LIGHT</td>
+<td><div class="color-box" style="background-color: #8C8C8CFF"></div></td>
+<td>#8C8C8CFF</td>
+<td>140, 140, 140, 1</td>
+</tr>
+<tr>
+<td>63</td>
+<td>HUD_COLOUR_MENU_BLUE_EXTRA_DARK</td>
+<td><div class="color-box" style="background-color: #282828FF"></div></td>
+<td>#282828FF</td>
+<td>40, 40, 40, 1</td>
+</tr>
+<tr>
+<td>64</td>
+<td>HUD_COLOUR_MENU_YELLOW</td>
+<td><div class="color-box" style="background-color: #F0A000FF"></div></td>
+<td>#F0A000FF</td>
+<td>240, 160, 0, 1</td>
+</tr>
+<tr>
+<td>65</td>
+<td>HUD_COLOUR_MENU_YELLOW_DARK</td>
+<td><div class="color-box" style="background-color: #F0A000FF"></div></td>
+<td>#F0A000FF</td>
+<td>240, 160, 0, 1</td>
+</tr>
+<tr>
+<td>66</td>
+<td>HUD_COLOUR_MENU_GREEN</td>
+<td><div class="color-box" style="background-color: #F0A000FF"></div></td>
+<td>#F0A000FF</td>
+<td>240, 160, 0, 1</td>
+</tr>
+<tr>
+<td>67</td>
+<td>HUD_COLOUR_MENU_GREY</td>
+<td><div class="color-box" style="background-color: #8C8C8CFF"></div></td>
+<td>#8C8C8CFF</td>
+<td>140, 140, 140, 1</td>
+</tr>
+<tr>
+<td>68</td>
+<td>HUD_COLOUR_MENU_GREY_DARK</td>
+<td><div class="color-box" style="background-color: #3C3C3CFF"></div></td>
+<td>#3C3C3CFF</td>
+<td>60, 60, 60, 1</td>
+</tr>
+<tr>
+<td>69</td>
+<td>HUD_COLOUR_MENU_HIGHLIGHT</td>
+<td><div class="color-box" style="background-color: #1E1E1EFF"></div></td>
+<td>#1E1E1EFF</td>
+<td>30, 30, 30, 1</td>
+</tr>
+<tr>
+<td>70</td>
+<td>HUD_COLOUR_MENU_STANDARD</td>
+<td><div class="color-box" style="background-color: #8C8C8CFF"></div></td>
+<td>#8C8C8CFF</td>
+<td>140, 140, 140, 1</td>
+</tr>
+<tr>
+<td>71</td>
+<td>HUD_COLOUR_MENU_DIMMED</td>
+<td><div class="color-box" style="background-color: #4B4B4BFF"></div></td>
+<td>#4B4B4BFF</td>
+<td>75, 75, 75, 1</td>
+</tr>
+<tr>
+<td>72</td>
+<td>HUD_COLOUR_MENU_EXTRA_DIMMED</td>
+<td><div class="color-box" style="background-color: #323232FF"></div></td>
+<td>#323232FF</td>
+<td>50, 50, 50, 1</td>
+</tr>
+<tr>
+<td>73</td>
+<td>HUD_COLOUR_BRIEF_TITLE</td>
+<td><div class="color-box" style="background-color: #5F5F5FFF"></div></td>
+<td>#5F5F5FFF</td>
+<td>95, 95, 95, 1</td>
+</tr>
+<tr>
+<td>74</td>
+<td>HUD_COLOUR_MID_GREY_MP</td>
+<td><div class="color-box" style="background-color: #646464FF"></div></td>
+<td>#646464FF</td>
+<td>100, 100, 100, 1</td>
+</tr>
+<tr>
+<td>75</td>
+<td>HUD_COLOUR_NET_PLAYER1_DARK</td>
+<td><div class="color-box" style="background-color: #5D2727FF"></div></td>
+<td>#5D2727FF</td>
+<td>93, 39, 39, 1</td>
+</tr>
+<tr>
+<td>76</td>
+<td>HUD_COLOUR_NET_PLAYER2_DARK</td>
+<td><div class="color-box" style="background-color: #4D3759FF"></div></td>
+<td>#4D3759FF</td>
+<td>77, 55, 89, 1</td>
+</tr>
+<tr>
+<td>77</td>
+<td>HUD_COLOUR_NET_PLAYER3_DARK</td>
+<td><div class="color-box" style="background-color: #7C3E63FF"></div></td>
+<td>#7C3E63FF</td>
+<td>124, 62, 99, 1</td>
+</tr>
+<tr>
+<td>78</td>
+<td>HUD_COLOUR_NET_PLAYER4_DARK</td>
+<td><div class="color-box" style="background-color: #785050FF"></div></td>
+<td>#785050FF</td>
+<td>120, 80, 80, 1</td>
+</tr>
+<tr>
+<td>79</td>
+<td>HUD_COLOUR_NET_PLAYER5_DARK</td>
+<td><div class="color-box" style="background-color: #574842FF"></div></td>
+<td>#574842FF</td>
+<td>87, 72, 66, 1</td>
+</tr>
+<tr>
+<td>80</td>
+<td>HUD_COLOUR_NET_PLAYER6_DARK</td>
+<td><div class="color-box" style="background-color: #4A6753FF"></div></td>
+<td>#4A6753FF</td>
+<td>74, 103, 83, 1</td>
+</tr>
+<tr>
+<td>81</td>
+<td>HUD_COLOUR_NET_PLAYER7_DARK</td>
+<td><div class="color-box" style="background-color: #3C5558FF"></div></td>
+<td>#3C5558FF</td>
+<td>60, 85, 88, 1</td>
+</tr>
+<tr>
+<td>82</td>
+<td>HUD_COLOUR_NET_PLAYER8_DARK</td>
+<td><div class="color-box" style="background-color: #696940FF"></div></td>
+<td>#696940FF</td>
+<td>105, 105, 64, 1</td>
+</tr>
+<tr>
+<td>83</td>
+<td>HUD_COLOUR_NET_PLAYER9_DARK</td>
+<td><div class="color-box" style="background-color: #483F4CFF"></div></td>
+<td>#483F4CFF</td>
+<td>72, 63, 76, 1</td>
+</tr>
+<tr>
+<td>84</td>
+<td>HUD_COLOUR_NET_PLAYER10_DARK</td>
+<td><div class="color-box" style="background-color: #35625FFF"></div></td>
+<td>#35625FFF</td>
+<td>53, 98, 95, 1</td>
+</tr>
+<tr>
+<td>85</td>
+<td>HUD_COLOUR_NET_PLAYER11_DARK</td>
+<td><div class="color-box" style="background-color: #6B624CFF"></div></td>
+<td>#6B624CFF</td>
+<td>107, 98, 76, 1</td>
+</tr>
+<tr>
+<td>86</td>
+<td>HUD_COLOUR_NET_PLAYER12_DARK</td>
+<td><div class="color-box" style="background-color: #754728FF"></div></td>
+<td>#754728FF</td>
+<td>117, 71, 40, 1</td>
+</tr>
+<tr>
+<td>87</td>
+<td>HUD_COLOUR_NET_PLAYER13_DARK</td>
+<td><div class="color-box" style="background-color: #4C6575FF"></div></td>
+<td>#4C6575FF</td>
+<td>76, 101, 117, 1</td>
+</tr>
+<tr>
+<td>88</td>
+<td>HUD_COLOUR_NET_PLAYER14_DARK</td>
+<td><div class="color-box" style="background-color: #41232FFF"></div></td>
+<td>#41232FFF</td>
+<td>65, 35, 47, 1</td>
+</tr>
+<tr>
+<td>89</td>
+<td>HUD_COLOUR_NET_PLAYER15_DARK</td>
+<td><div class="color-box" style="background-color: #48473DFF"></div></td>
+<td>#48473DFF</td>
+<td>72, 71, 61, 1</td>
+</tr>
+<tr>
+<td>90</td>
+<td>HUD_COLOUR_NET_PLAYER16_DARK</td>
+<td><div class="color-box" style="background-color: #553A2FFF"></div></td>
+<td>#553A2FFF</td>
+<td>85, 58, 47, 1</td>
+</tr>
+<tr>
+<td>91</td>
+<td>HUD_COLOUR_NET_PLAYER17_DARK</td>
+<td><div class="color-box" style="background-color: #575454FF"></div></td>
+<td>#575454FF</td>
+<td>87, 84, 84, 1</td>
+</tr>
+<tr>
+<td>92</td>
+<td>HUD_COLOUR_NET_PLAYER18_DARK</td>
+<td><div class="color-box" style="background-color: #74474DFF"></div></td>
+<td>#74474DFF</td>
+<td>116, 71, 77, 1</td>
+</tr>
+<tr>
+<td>93</td>
+<td>HUD_COLOUR_NET_PLAYER19_DARK</td>
+<td><div class="color-box" style="background-color: #5D6B2DFF"></div></td>
+<td>#5D6B2DFF</td>
+<td>93, 107, 45, 1</td>
+</tr>
+<tr>
+<td>94</td>
+<td>HUD_COLOUR_NET_PLAYER20_DARK</td>
+<td><div class="color-box" style="background-color: #063D2BFF"></div></td>
+<td>#063D2BFF</td>
+<td>6, 61, 43, 1</td>
+</tr>
+<tr>
+<td>95</td>
+<td>HUD_COLOUR_NET_PLAYER21_DARK</td>
+<td><div class="color-box" style="background-color: #3D627FFF"></div></td>
+<td>#3D627FFF</td>
+<td>61, 98, 127, 1</td>
+</tr>
+<tr>
+<td>96</td>
+<td>HUD_COLOUR_NET_PLAYER22_DARK</td>
+<td><div class="color-box" style="background-color: #551E73FF"></div></td>
+<td>#551E73FF</td>
+<td>85, 30, 115, 1</td>
+</tr>
+<tr>
+<td>97</td>
+<td>HUD_COLOUR_NET_PLAYER23_DARK</td>
+<td><div class="color-box" style="background-color: #675406FF"></div></td>
+<td>#675406FF</td>
+<td>103, 84, 6, 1</td>
+</tr>
+<tr>
+<td>98</td>
+<td>HUD_COLOUR_NET_PLAYER24_DARK</td>
+<td><div class="color-box" style="background-color: #233156FF"></div></td>
+<td>#233156FF</td>
+<td>35, 49, 86, 1</td>
+</tr>
+<tr>
+<td>99</td>
+<td>HUD_COLOUR_NET_PLAYER25_DARK</td>
+<td><div class="color-box" style="background-color: #15535CFF"></div></td>
+<td>#15535CFF</td>
+<td>21, 83, 92, 1</td>
+</tr>
+<tr>
+<td>100</td>
+<td>HUD_COLOUR_NET_PLAYER26_DARK</td>
+<td><div class="color-box" style="background-color: #5D623EFF"></div></td>
+<td>#5D623EFF</td>
+<td>93, 98, 62, 1</td>
+</tr>
+<tr>
+<td>101</td>
+<td>HUD_COLOUR_NET_PLAYER27_DARK</td>
+<td><div class="color-box" style="background-color: #64707FFF"></div></td>
+<td>#64707FFF</td>
+<td>100, 112, 127, 1</td>
+</tr>
+<tr>
+<td>102</td>
+<td>HUD_COLOUR_NET_PLAYER28_DARK</td>
+<td><div class="color-box" style="background-color: #78784BFF"></div></td>
+<td>#78784BFF</td>
+<td>120, 120, 75, 1</td>
+</tr>
+<tr>
+<td>103</td>
+<td>HUD_COLOUR_NET_PLAYER29_DARK</td>
+<td><div class="color-box" style="background-color: #984C5DFF"></div></td>
+<td>#984C5DFF</td>
+<td>152, 76, 93, 1</td>
+</tr>
+<tr>
+<td>104</td>
+<td>HUD_COLOUR_NET_PLAYER30_DARK</td>
+<td><div class="color-box" style="background-color: #7C4545FF"></div></td>
+<td>#7C4545FF</td>
+<td>124, 69, 69, 1</td>
+</tr>
+<tr>
+<td>105</td>
+<td>HUD_COLOUR_NET_PLAYER31_DARK</td>
+<td><div class="color-box" style="background-color: #0A2B32FF"></div></td>
+<td>#0A2B32FF</td>
+<td>10, 43, 50, 1</td>
+</tr>
+<tr>
+<td>106</td>
+<td>HUD_COLOUR_NET_PLAYER32_DARK</td>
+<td><div class="color-box" style="background-color: #5F5F0AFF"></div></td>
+<td>#5F5F0AFF</td>
+<td>95, 95, 10, 1</td>
+</tr>
+<tr>
+<td>107</td>
+<td>HUD_COLOUR_BRONZE</td>
+<td><div class="color-box" style="background-color: #B48261FF"></div></td>
+<td>#B48261FF</td>
+<td>180, 130, 97, 1</td>
+</tr>
+<tr>
+<td>108</td>
+<td>HUD_COLOUR_SILVER</td>
+<td><div class="color-box" style="background-color: #9699A1FF"></div></td>
+<td>#9699A1FF</td>
+<td>150, 153, 161, 1</td>
+</tr>
+<tr>
+<td>109</td>
+<td>HUD_COLOUR_GOLD</td>
+<td><div class="color-box" style="background-color: #D6B563FF"></div></td>
+<td>#D6B563FF</td>
+<td>214, 181, 99, 1</td>
+</tr>
+<tr>
+<td>110</td>
+<td>HUD_COLOUR_PLATINUM</td>
+<td><div class="color-box" style="background-color: #A6DDBEFF"></div></td>
+<td>#A6DDBEFF</td>
+<td>166, 221, 190, 1</td>
+</tr>
+<tr>
+<td>111</td>
+<td>HUD_COLOUR_GANG1</td>
+<td><div class="color-box" style="background-color: #1D6499FF"></div></td>
+<td>#1D6499FF</td>
+<td>29, 100, 153, 1</td>
+</tr>
+<tr>
+<td>112</td>
+<td>HUD_COLOUR_GANG2</td>
+<td><div class="color-box" style="background-color: #D6740FFF"></div></td>
+<td>#D6740FFF</td>
+<td>214, 116, 15, 1</td>
+</tr>
+<tr>
+<td>113</td>
+<td>HUD_COLOUR_GANG3</td>
+<td><div class="color-box" style="background-color: #877D8EFF"></div></td>
+<td>#877D8EFF</td>
+<td>135, 125, 142, 1</td>
+</tr>
+<tr>
+<td>114</td>
+<td>HUD_COLOUR_GANG4</td>
+<td><div class="color-box" style="background-color: #E577B9FF"></div></td>
+<td>#E577B9FF</td>
+<td>229, 119, 185, 1</td>
+</tr>
+<tr>
+<td>115</td>
+<td>HUD_COLOUR_SAME_CREW</td>
+<td><div class="color-box" style="background-color: #FCEFA6FF"></div></td>
+<td>#FCEFA6FF</td>
+<td>252, 239, 166, 1</td>
+</tr>
+<tr>
+<td>116</td>
+<td>HUD_COLOUR_FREEMODE</td>
+<td><div class="color-box" style="background-color: #2D6EB9FF"></div></td>
+<td>#2D6EB9FF</td>
+<td>45, 110, 185, 1</td>
+</tr>
+<tr>
+<td>117</td>
+<td>HUD_COLOUR_PAUSE_BG</td>
+<td><div class="color-box" style="background-color: #000000BA"></div></td>
+<td>#000000BA</td>
+<td>0, 0, 0, 0.73</td>
+</tr>
+<tr>
+<td>118</td>
+<td>HUD_COLOUR_FRIENDLY</td>
+<td><div class="color-box" style="background-color: #5DB6E5FF"></div></td>
+<td>#5DB6E5FF</td>
+<td>93, 182, 229, 1</td>
+</tr>
+<tr>
+<td>119</td>
+<td>HUD_COLOUR_ENEMY</td>
+<td><div class="color-box" style="background-color: #C25050FF"></div></td>
+<td>#C25050FF</td>
+<td>194, 80, 80, 1</td>
+</tr>
+<tr>
+<td>120</td>
+<td>HUD_COLOUR_LOCATION</td>
+<td><div class="color-box" style="background-color: #F0C850FF"></div></td>
+<td>#F0C850FF</td>
+<td>240, 200, 80, 1</td>
+</tr>
+<tr>
+<td>121</td>
+<td>HUD_COLOUR_PICKUP</td>
+<td><div class="color-box" style="background-color: #72CC72FF"></div></td>
+<td>#72CC72FF</td>
+<td>114, 204, 114, 1</td>
+</tr>
+<tr>
+<td>122</td>
+<td>HUD_COLOUR_PAUSE_SINGLEPLAYER</td>
+<td><div class="color-box" style="background-color: #72CC72FF"></div></td>
+<td>#72CC72FF</td>
+<td>114, 204, 114, 1</td>
+</tr>
+<tr>
+<td>123</td>
+<td>HUD_COLOUR_FREEMODE_DARK</td>
+<td><div class="color-box" style="background-color: #16375CFF"></div></td>
+<td>#16375CFF</td>
+<td>22, 55, 92, 1</td>
+</tr>
+<tr>
+<td>124</td>
+<td>HUD_COLOUR_INACTIVE_MISSION</td>
+<td><div class="color-box" style="background-color: #9A9A9AFF"></div></td>
+<td>#9A9A9AFF</td>
+<td>154, 154, 154, 1</td>
+</tr>
+<tr>
+<td>125</td>
+<td>HUD_COLOUR_DAMAGE</td>
+<td><div class="color-box" style="background-color: #C25050FF"></div></td>
+<td>#C25050FF</td>
+<td>194, 80, 80, 1</td>
+</tr>
+<tr>
+<td>126</td>
+<td>HUD_COLOUR_PINKLIGHT</td>
+<td><div class="color-box" style="background-color: #FC73C9FF"></div></td>
+<td>#FC73C9FF</td>
+<td>252, 115, 201, 1</td>
+</tr>
+<tr>
+<td>127</td>
+<td>HUD_COLOUR_PM_MITEM_HIGHLIGHT</td>
+<td><div class="color-box" style="background-color: #FCB131FF"></div></td>
+<td>#FCB131FF</td>
+<td>252, 177, 49, 1</td>
+</tr>
+<tr>
+<td>128</td>
+<td>HUD_COLOUR_SCRIPT_VARIABLE</td>
+<td><div class="color-box" style="background-color: #000000FF"></div></td>
+<td>#000000FF</td>
+<td>0, 0, 0, 1</td>
+</tr>
+<tr>
+<td>129</td>
+<td>HUD_COLOUR_YOGA</td>
+<td><div class="color-box" style="background-color: #6DF7CCFF"></div></td>
+<td>#6DF7CCFF</td>
+<td>109, 247, 204, 1</td>
+</tr>
+<tr>
+<td>130</td>
+<td>HUD_COLOUR_TENNIS</td>
+<td><div class="color-box" style="background-color: #F16522FF"></div></td>
+<td>#F16522FF</td>
+<td>241, 101, 34, 1</td>
+</tr>
+<tr>
+<td>131</td>
+<td>HUD_COLOUR_GOLF</td>
+<td><div class="color-box" style="background-color: #D6BD61FF"></div></td>
+<td>#D6BD61FF</td>
+<td>214, 189, 97, 1</td>
+</tr>
+<tr>
+<td>132</td>
+<td>HUD_COLOUR_SHOOTING_RANGE</td>
+<td><div class="color-box" style="background-color: #701919FF"></div></td>
+<td>#701919FF</td>
+<td>112, 25, 25, 1</td>
+</tr>
+<tr>
+<td>133</td>
+<td>HUD_COLOUR_FLIGHT_SCHOOL</td>
+<td><div class="color-box" style="background-color: #2F5C73FF"></div></td>
+<td>#2F5C73FF</td>
+<td>47, 92, 115, 1</td>
+</tr>
+<tr>
+<td>134</td>
+<td>HUD_COLOUR_NORTH_BLUE</td>
+<td><div class="color-box" style="background-color: #5DB6E5FF"></div></td>
+<td>#5DB6E5FF</td>
+<td>93, 182, 229, 1</td>
+</tr>
+<tr>
+<td>135</td>
+<td>HUD_COLOUR_SOCIAL_CLUB</td>
+<td><div class="color-box" style="background-color: #EA991CFF"></div></td>
+<td>#EA991CFF</td>
+<td>234, 153, 28, 1</td>
+</tr>
+<tr>
+<td>136</td>
+<td>HUD_COLOUR_PLATFORM_BLUE</td>
+<td><div class="color-box" style="background-color: #0B377BFF"></div></td>
+<td>#0B377BFF</td>
+<td>11, 55, 123, 1</td>
+</tr>
+<tr>
+<td>137</td>
+<td>HUD_COLOUR_PLATFORM_GREEN</td>
+<td><div class="color-box" style="background-color: #92C83EFF"></div></td>
+<td>#92C83EFF</td>
+<td>146, 200, 62, 1</td>
+</tr>
+<tr>
+<td>138</td>
+<td>HUD_COLOUR_PLATFORM_GREY</td>
+<td><div class="color-box" style="background-color: #EA991CFF"></div></td>
+<td>#EA991CFF</td>
+<td>234, 153, 28, 1</td>
+</tr>
+<tr>
+<td>139</td>
+<td>HUD_COLOUR_FACEBOOK_BLUE</td>
+<td><div class="color-box" style="background-color: #425994FF"></div></td>
+<td>#425994FF</td>
+<td>66, 89, 148, 1</td>
+</tr>
+<tr>
+<td>140</td>
+<td>HUD_COLOUR_INGAME_BG</td>
+<td><div class="color-box" style="background-color: #000000BA"></div></td>
+<td>#000000BA</td>
+<td>0, 0, 0, 0.73</td>
+</tr>
+<tr>
+<td>141</td>
+<td>HUD_COLOUR_DARTS</td>
+<td><div class="color-box" style="background-color: #72CC72FF"></div></td>
+<td>#72CC72FF</td>
+<td>114, 204, 114, 1</td>
+</tr>
+<tr>
+<td>142</td>
+<td>HUD_COLOUR_WAYPOINT</td>
+<td><div class="color-box" style="background-color: #A44CF2FF"></div></td>
+<td>#A44CF2FF</td>
+<td>164, 76, 242, 1</td>
+</tr>
+<tr>
+<td>143</td>
+<td>HUD_COLOUR_MICHAEL</td>
+<td><div class="color-box" style="background-color: #65B4D4FF"></div></td>
+<td>#65B4D4FF</td>
+<td>101, 180, 212, 1</td>
+</tr>
+<tr>
+<td>144</td>
+<td>HUD_COLOUR_FRANKLIN</td>
+<td><div class="color-box" style="background-color: #ABEDABFF"></div></td>
+<td>#ABEDABFF</td>
+<td>171, 237, 171, 1</td>
+</tr>
+<tr>
+<td>145</td>
+<td>HUD_COLOUR_TREVOR</td>
+<td><div class="color-box" style="background-color: #FFA357FF"></div></td>
+<td>#FFA357FF</td>
+<td>255, 163, 87, 1</td>
+</tr>
+<tr>
+<td>146</td>
+<td>HUD_COLOUR_GOLF_P1</td>
+<td><div class="color-box" style="background-color: #F0F0F0FF"></div></td>
+<td>#F0F0F0FF</td>
+<td>240, 240, 240, 1</td>
+</tr>
+<tr>
+<td>147</td>
+<td>HUD_COLOUR_GOLF_P2</td>
+<td><div class="color-box" style="background-color: #EBEF1EFF"></div></td>
+<td>#EBEF1EFF</td>
+<td>235, 239, 30, 1</td>
+</tr>
+<tr>
+<td>148</td>
+<td>HUD_COLOUR_GOLF_P3</td>
+<td><div class="color-box" style="background-color: #FF950EFF"></div></td>
+<td>#FF950EFF</td>
+<td>255, 149, 14, 1</td>
+</tr>
+<tr>
+<td>149</td>
+<td>HUD_COLOUR_GOLF_P4</td>
+<td><div class="color-box" style="background-color: #F63CA1FF"></div></td>
+<td>#F63CA1FF</td>
+<td>246, 60, 161, 1</td>
+</tr>
+<tr>
+<td>150</td>
+<td>HUD_COLOUR_WAYPOINTLIGHT</td>
+<td><div class="color-box" style="background-color: #D2A6F9FF"></div></td>
+<td>#D2A6F9FF</td>
+<td>210, 166, 249, 1</td>
+</tr>
+<tr>
+<td>151</td>
+<td>HUD_COLOUR_WAYPOINTDARK</td>
+<td><div class="color-box" style="background-color: #522679FF"></div></td>
+<td>#522679FF</td>
+<td>82, 38, 121, 1</td>
+</tr>
+<tr>
+<td>152</td>
+<td>HUD_COLOUR_PANEL_LIGHT</td>
+<td><div class="color-box" style="background-color: #0000004D"></div></td>
+<td>#0000004D</td>
+<td>0, 0, 0, 0.3</td>
+</tr>
+<tr>
+<td>153</td>
+<td>HUD_COLOUR_MICHAEL_DARK</td>
+<td><div class="color-box" style="background-color: #486774FF"></div></td>
+<td>#486774FF</td>
+<td>72, 103, 116, 1</td>
+</tr>
+<tr>
+<td>154</td>
+<td>HUD_COLOUR_FRANKLIN_DARK</td>
+<td><div class="color-box" style="background-color: #557655FF"></div></td>
+<td>#557655FF</td>
+<td>85, 118, 85, 1</td>
+</tr>
+<tr>
+<td>155</td>
+<td>HUD_COLOUR_TREVOR_DARK</td>
+<td><div class="color-box" style="background-color: #7F512BFF"></div></td>
+<td>#7F512BFF</td>
+<td>127, 81, 43, 1</td>
+</tr>
+<tr>
+<td>156</td>
+<td>HUD_COLOUR_OBJECTIVE_ROUTE</td>
+<td><div class="color-box" style="background-color: #F0C850FF"></div></td>
+<td>#F0C850FF</td>
+<td>240, 200, 80, 1</td>
+</tr>
+<tr>
+<td>157</td>
+<td>HUD_COLOUR_PAUSEMAP_TINT</td>
+<td><div class="color-box" style="background-color: #000000D7"></div></td>
+<td>#000000D7</td>
+<td>0, 0, 0, 0.84</td>
+</tr>
+<tr>
+<td>158</td>
+<td>HUD_COLOUR_PAUSE_DESELECT</td>
+<td><div class="color-box" style="background-color: #6464647F"></div></td>
+<td>#6464647F</td>
+<td>100, 100, 100, 0.5</td>
+</tr>
+<tr>
+<td>159</td>
+<td>HUD_COLOUR_PM_WEAPONS_PURCHASABLE</td>
+<td><div class="color-box" style="background-color: #2D6EB9FF"></div></td>
+<td>#2D6EB9FF</td>
+<td>45, 110, 185, 1</td>
+</tr>
+<tr>
+<td>160</td>
+<td>HUD_COLOUR_PM_WEAPONS_LOCKED</td>
+<td><div class="color-box" style="background-color: #F0F0F0BF"></div></td>
+<td>#F0F0F0BF</td>
+<td>240, 240, 240, 0.75</td>
+</tr>
+<tr>
+<td>161</td>
+<td>HUD_COLOUR_END_SCREEN_BG</td>
+<td><div class="color-box" style="background-color: #000000BA"></div></td>
+<td>#000000BA</td>
+<td>0, 0, 0, 0.73</td>
+</tr>
+<tr>
+<td>162</td>
+<td>HUD_COLOUR_CHOP</td>
+<td><div class="color-box" style="background-color: #E03232FF"></div></td>
+<td>#E03232FF</td>
+<td>224, 50, 50, 1</td>
+</tr>
+<tr>
+<td>163</td>
+<td>HUD_COLOUR_PAUSEMAP_TINT_HALF</td>
+<td><div class="color-box" style="background-color: #000000D7"></div></td>
+<td>#000000D7</td>
+<td>0, 0, 0, 0.84</td>
+</tr>
+<tr>
+<td>164</td>
+<td>HUD_COLOUR_NORTH_BLUE_OFFICIAL</td>
+<td><div class="color-box" style="background-color: #004785FF"></div></td>
+<td>#004785FF</td>
+<td>0, 71, 133, 1</td>
+</tr>
+<tr>
+<td>165</td>
+<td>HUD_COLOUR_SCRIPT_VARIABLE_2</td>
+<td><div class="color-box" style="background-color: #000000FF"></div></td>
+<td>#000000FF</td>
+<td>0, 0, 0, 1</td>
+</tr>
+<tr>
+<td>166</td>
+<td>HUD_COLOUR_H</td>
+<td><div class="color-box" style="background-color: #217625FF"></div></td>
+<td>#217625FF</td>
+<td>33, 118, 37, 1</td>
+</tr>
+<tr>
+<td>167</td>
+<td>HUD_COLOUR_HDARK</td>
+<td><div class="color-box" style="background-color: #256628FF"></div></td>
+<td>#256628FF</td>
+<td>37, 102, 40, 1</td>
+</tr>
+<tr>
+<td>168</td>
+<td>HUD_COLOUR_T</td>
+<td><div class="color-box" style="background-color: #EA991CFF"></div></td>
+<td>#EA991CFF</td>
+<td>234, 153, 28, 1</td>
+</tr>
+<tr>
+<td>169</td>
+<td>HUD_COLOUR_TDARK</td>
+<td><div class="color-box" style="background-color: #E18C08FF"></div></td>
+<td>#E18C08FF</td>
+<td>225, 140, 8, 1</td>
+</tr>
+<tr>
+<td>170</td>
+<td>HUD_COLOUR_HSHARD</td>
+<td><div class="color-box" style="background-color: #142800FF"></div></td>
+<td>#142800FF</td>
+<td>20, 40, 0, 1</td>
+</tr>
+<tr>
+<td>171</td>
+<td>HUD_COLOUR_CONTROLLER_MICHAEL</td>
+<td><div class="color-box" style="background-color: #30FFFFFF"></div></td>
+<td>#30FFFFFF</td>
+<td>48, 255, 255, 1</td>
+</tr>
+<tr>
+<td>172</td>
+<td>HUD_COLOUR_CONTROLLER_FRANKLIN</td>
+<td><div class="color-box" style="background-color: #30FF00FF"></div></td>
+<td>#30FF00FF</td>
+<td>48, 255, 0, 1</td>
+</tr>
+<tr>
+<td>173</td>
+<td>HUD_COLOUR_CONTROLLER_TREVOR</td>
+<td><div class="color-box" style="background-color: #B05000FF"></div></td>
+<td>#B05000FF</td>
+<td>176, 80, 0, 1</td>
+</tr>
+<tr>
+<td>174</td>
+<td>HUD_COLOUR_CONTROLLER_CHOP</td>
+<td><div class="color-box" style="background-color: #7F0000FF"></div></td>
+<td>#7F0000FF</td>
+<td>127, 0, 0, 1</td>
+</tr>
+<tr>
+<td>175</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_VIDEO</td>
+<td><div class="color-box" style="background-color: #35A6E0FF"></div></td>
+<td>#35A6E0FF</td>
+<td>53, 166, 224, 1</td>
+</tr>
+<tr>
+<td>176</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_AUDIO</td>
+<td><div class="color-box" style="background-color: #A24F9DFF"></div></td>
+<td>#A24F9DFF</td>
+<td>162, 79, 157, 1</td>
+</tr>
+<tr>
+<td>177</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_TEXT</td>
+<td><div class="color-box" style="background-color: #68C08DFF"></div></td>
+<td>#68C08DFF</td>
+<td>104, 192, 141, 1</td>
+</tr>
+<tr>
+<td>178</td>
+<td>HUD_COLOUR_HB_BLUE</td>
+<td><div class="color-box" style="background-color: #1D6499FF"></div></td>
+<td>#1D6499FF</td>
+<td>29, 100, 153, 1</td>
+</tr>
+<tr>
+<td>179</td>
+<td>HUD_COLOUR_HB_YELLOW</td>
+<td><div class="color-box" style="background-color: #EA991CFF"></div></td>
+<td>#EA991CFF</td>
+<td>234, 153, 28, 1</td>
+</tr>
+<tr>
+<td>180</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_SCORE</td>
+<td><div class="color-box" style="background-color: #F0A001FF"></div></td>
+<td>#F0A001FF</td>
+<td>240, 160, 1, 1</td>
+</tr>
+<tr>
+<td>181</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_AUDIO_FADEOUT</td>
+<td><div class="color-box" style="background-color: #3B2239FF"></div></td>
+<td>#3B2239FF</td>
+<td>59, 34, 57, 1</td>
+</tr>
+<tr>
+<td>182</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_TEXT_FADEOUT</td>
+<td><div class="color-box" style="background-color: #294435FF"></div></td>
+<td>#294435FF</td>
+<td>41, 68, 53, 1</td>
+</tr>
+<tr>
+<td>183</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_SCORE_FADEOUT</td>
+<td><div class="color-box" style="background-color: #523A0AFF"></div></td>
+<td>#523A0AFF</td>
+<td>82, 58, 10, 1</td>
+</tr>
+<tr>
+<td>184</td>
+<td>HUD_COLOUR_HEIST_BACKGROUND</td>
+<td><div class="color-box" style="background-color: #256628BA"></div></td>
+<td>#256628BA</td>
+<td>37, 102, 40, 0.73</td>
+</tr>
+<tr>
+<td>185</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_AMBIENT</td>
+<td><div class="color-box" style="background-color: #F0C850FF"></div></td>
+<td>#F0C850FF</td>
+<td>240, 200, 80, 1</td>
+</tr>
+<tr>
+<td>186</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_AMBIENT_FADEOUT</td>
+<td><div class="color-box" style="background-color: #504622FF"></div></td>
+<td>#504622FF</td>
+<td>80, 70, 34, 1</td>
+</tr>
+<tr>
+<td>187</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_AMBIENT_DARK</td>
+<td><div class="color-box" style="background-color: #FF8555FF"></div></td>
+<td>#FF8555FF</td>
+<td>255, 133, 85, 1</td>
+</tr>
+<tr>
+<td>188</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_AMBIENT_LIGHT</td>
+<td><div class="color-box" style="background-color: #FFC2AAFF"></div></td>
+<td>#FFC2AAFF</td>
+<td>255, 194, 170, 1</td>
+</tr>
+<tr>
+<td>189</td>
+<td>HUD_COLOUR_VIDEO_EDITOR_AMBIENT_MID</td>
+<td><div class="color-box" style="background-color: #FF8555FF"></div></td>
+<td>#FF8555FF</td>
+<td>255, 133, 85, 1</td>
+</tr>
+<tr>
+<td>190</td>
+<td>HUD_COLOUR_LOW_FLOW</td>
+<td><div class="color-box" style="background-color: #F0C850FF"></div></td>
+<td>#F0C850FF</td>
+<td>240, 200, 80, 1</td>
+</tr>
+<tr>
+<td>191</td>
+<td>HUD_COLOUR_LOW_FLOW_DARK</td>
+<td><div class="color-box" style="background-color: #7E6B29FF"></div></td>
+<td>#7E6B29FF</td>
+<td>126, 107, 41, 1</td>
+</tr>
+<tr>
+<td>192</td>
+<td>HUD_COLOUR_G1</td>
+<td><div class="color-box" style="background-color: #F79F7BFF"></div></td>
+<td>#F79F7BFF</td>
+<td>247, 159, 123, 1</td>
+</tr>
+<tr>
+<td>193</td>
+<td>HUD_COLOUR_G2</td>
+<td><div class="color-box" style="background-color: #E286BBFF"></div></td>
+<td>#E286BBFF</td>
+<td>226, 134, 187, 1</td>
+</tr>
+<tr>
+<td>194</td>
+<td>HUD_COLOUR_G3</td>
+<td><div class="color-box" style="background-color: #EFEE97FF"></div></td>
+<td>#EFEE97FF</td>
+<td>239, 238, 151, 1</td>
+</tr>
+<tr>
+<td>195</td>
+<td>HUD_COLOUR_G4</td>
+<td><div class="color-box" style="background-color: #71A9AFFF"></div></td>
+<td>#71A9AFFF</td>
+<td>113, 169, 175, 1</td>
+</tr>
+<tr>
+<td>196</td>
+<td>HUD_COLOUR_G5</td>
+<td><div class="color-box" style="background-color: #A08CC1FF"></div></td>
+<td>#A08CC1FF</td>
+<td>160, 140, 193, 1</td>
+</tr>
+<tr>
+<td>197</td>
+<td>HUD_COLOUR_G6</td>
+<td><div class="color-box" style="background-color: #8DCEA7FF"></div></td>
+<td>#8DCEA7FF</td>
+<td>141, 206, 167, 1</td>
+</tr>
+<tr>
+<td>198</td>
+<td>HUD_COLOUR_G7</td>
+<td><div class="color-box" style="background-color: #B5D6EAFF"></div></td>
+<td>#B5D6EAFF</td>
+<td>181, 214, 234, 1</td>
+</tr>
+<tr>
+<td>199</td>
+<td>HUD_COLOUR_G8</td>
+<td><div class="color-box" style="background-color: #B29084FF"></div></td>
+<td>#B29084FF</td>
+<td>178, 144, 132, 1</td>
+</tr>
+<tr>
+<td>200</td>
+<td>HUD_COLOUR_G9</td>
+<td><div class="color-box" style="background-color: #008472FF"></div></td>
+<td>#008472FF</td>
+<td>0, 132, 114, 1</td>
+</tr>
+<tr>
+<td>201</td>
+<td>HUD_COLOUR_G10</td>
+<td><div class="color-box" style="background-color: #D85575FF"></div></td>
+<td>#D85575FF</td>
+<td>216, 85, 117, 1</td>
+</tr>
+<tr>
+<td>202</td>
+<td>HUD_COLOUR_G11</td>
+<td><div class="color-box" style="background-color: #1E6498FF"></div></td>
+<td>#1E6498FF</td>
+<td>30, 100, 152, 1</td>
+</tr>
+<tr>
+<td>203</td>
+<td>HUD_COLOUR_G12</td>
+<td><div class="color-box" style="background-color: #2BB575FF"></div></td>
+<td>#2BB575FF</td>
+<td>43, 181, 117, 1</td>
+</tr>
+<tr>
+<td>204</td>
+<td>HUD_COLOUR_G13</td>
+<td><div class="color-box" style="background-color: #E98D4FFF"></div></td>
+<td>#E98D4FFF</td>
+<td>233, 141, 79, 1</td>
+</tr>
+<tr>
+<td>205</td>
+<td>HUD_COLOUR_G14</td>
+<td><div class="color-box" style="background-color: #89D2D7FF"></div></td>
+<td>#89D2D7FF</td>
+<td>137, 210, 215, 1</td>
+</tr>
+<tr>
+<td>206</td>
+<td>HUD_COLOUR_G15</td>
+<td><div class="color-box" style="background-color: #867D8DFF"></div></td>
+<td>#867D8DFF</td>
+<td>134, 125, 141, 1</td>
+</tr>
+<tr>
+<td>207</td>
+<td>HUD_COLOUR_ADVERSARY</td>
+<td><div class="color-box" style="background-color: #6D2221FF"></div></td>
+<td>#6D2221FF</td>
+<td>109, 34, 33, 1</td>
+</tr>
+<tr>
+<td>208</td>
+<td>HUD_COLOUR_DEGEN_RED</td>
+<td><div class="color-box" style="background-color: #FF0000FF"></div></td>
+<td>#FF0000FF</td>
+<td>255, 0, 0, 1</td>
+</tr>
+<tr>
+<td>209</td>
+<td>HUD_COLOUR_DEGEN_YELLOW</td>
+<td><div class="color-box" style="background-color: #FFFF00FF"></div></td>
+<td>#FFFF00FF</td>
+<td>255, 255, 0, 1</td>
+</tr>
+<tr>
+<td>210</td>
+<td>HUD_COLOUR_DEGEN_GREEN</td>
+<td><div class="color-box" style="background-color: #00FF00FF"></div></td>
+<td>#00FF00FF</td>
+<td>0, 255, 0, 1</td>
+</tr>
+<tr>
+<td>211</td>
+<td>HUD_COLOUR_DEGEN_CYAN</td>
+<td><div class="color-box" style="background-color: #00FFFFFF"></div></td>
+<td>#00FFFFFF</td>
+<td>0, 255, 255, 1</td>
+</tr>
+<tr>
+<td>212</td>
+<td>HUD_COLOUR_DEGEN_BLUE</td>
+<td><div class="color-box" style="background-color: #0000FFFF"></div></td>
+<td>#0000FFFF</td>
+<td>0, 0, 255, 1</td>
+</tr>
+<tr>
+<td>213</td>
+<td>HUD_COLOUR_DEGEN_MAGENTA</td>
+<td><div class="color-box" style="background-color: #FF00FFFF"></div></td>
+<td>#FF00FFFF</td>
+<td>255, 0, 255, 1</td>
+</tr>
+<tr>
+<td>214</td>
+<td>HUD_COLOUR_STUNT_1</td>
+<td><div class="color-box" style="background-color: #2688EAFF"></div></td>
+<td>#2688EAFF</td>
+<td>38, 136, 234, 1</td>
+</tr>
+<tr>
+<td>215</td>
+<td>HUD_COLOUR_STUNT_2</td>
+<td><div class="color-box" style="background-color: #E03232FF"></div></td>
+<td>#E03232FF</td>
+<td>224, 50, 50, 1</td>
+</tr>
+<tr>
+<td>216</td>
+<td>HUD_COLOUR_SPECIAL_RACE_SERIES</td>
+<td><div class="color-box" style="background-color: #9AB236FF"></div></td>
+<td>#9AB236FF</td>
+<td>154, 178, 54, 1</td>
+</tr>
+<tr>
+<td>217</td>
+<td>HUD_COLOUR_SPECIAL_RACE_SERIES_DARK</td>
+<td><div class="color-box" style="background-color: #5D6B2DFF"></div></td>
+<td>#5D6B2DFF</td>
+<td>93, 107, 45, 1</td>
+</tr>
+<tr>
+<td>218</td>
+<td>HUD_COLOUR_CS</td>
+<td><div class="color-box" style="background-color: #CEA90DFF"></div></td>
+<td>#CEA90DFF</td>
+<td>206, 169, 13, 1</td>
+</tr>
+<tr>
+<td>219</td>
+<td>HUD_COLOUR_CS_DARK</td>
+<td><div class="color-box" style="background-color: #675406FF"></div></td>
+<td>#675406FF</td>
+<td>103, 84, 6, 1</td>
+</tr>
+<tr>
+<td>220</td>
+<td>HUD_COLOUR_TECH_GREEN</td>
+<td><div class="color-box" style="background-color: #009797FF"></div></td>
+<td>#009797FF</td>
+<td>0, 151, 151, 1</td>
+</tr>
+<tr>
+<td>221</td>
+<td>HUD_COLOUR_TECH_GREEN_DARK</td>
+<td><div class="color-box" style="background-color: #057771FF"></div></td>
+<td>#057771FF</td>
+<td>5, 119, 113, 1</td>
+</tr>
+<tr>
+<td>222</td>
+<td>HUD_COLOUR_TECH_RED</td>
+<td><div class="color-box" style="background-color: #970000FF"></div></td>
+<td>#970000FF</td>
+<td>151, 0, 0, 1</td>
+</tr>
+<tr>
+<td>223</td>
+<td>HUD_COLOUR_TECH_GREEN_VERY_DARK</td>
+<td><div class="color-box" style="background-color: #002828FF"></div></td>
+<td>#002828FF</td>
+<td>0, 40, 40, 1</td>
+</tr>
+<tr>
+<td>224</td>
+<td>HUD_COLOUR_PLACEHOLDER_01</td>
+<td><div class="color-box" style="background-color: #FFFFFFFF"></div></td>
+<td>#FFFFFFFF</td>
+<td>255, 255, 255, 1</td>
+</tr>
+<tr>
+<td>225</td>
+<td>HUD_COLOUR_PLACEHOLDER_02</td>
+<td><div class="color-box" style="background-color: #FFFFFFFF"></div></td>
+<td>#FFFFFFFF</td>
+<td>255, 255, 255, 1</td>
+</tr>
+<tr>
+<td>226</td>
+<td>HUD_COLOUR_PLACEHOLDER_03</td>
+<td><div class="color-box" style="background-color: #FFFFFFFF"></div></td>
+<td>#FFFFFFFF</td>
+<td>255, 255, 255, 1</td>
+</tr>
+<tr>
+<td>227</td>
+<td>HUD_COLOUR_PLACEHOLDER_04</td>
+<td><div class="color-box" style="background-color: #FFFFFFFF"></div></td>
+<td>#FFFFFFFF</td>
+<td>255, 255, 255, 1</td>
+</tr>
+<tr>
+<td>228</td>
+<td>HUD_COLOUR_PLACEHOLDER_05</td>
+<td><div class="color-box" style="background-color: #FFFFFFFF"></div></td>
+<td>#FFFFFFFF</td>
+<td>255, 255, 255, 1</td>
+</tr>
+<tr>
+<td>229</td>
+<td>HUD_COLOUR_PLACEHOLDER_06</td>
+<td><div class="color-box" style="background-color: #FFFFFFFF"></div></td>
+<td>#FFFFFFFF</td>
+<td>255, 255, 255, 1</td>
+</tr>
+<tr>
+<td>230</td>
+<td>HUD_COLOUR_PLACEHOLDER_07</td>
+<td><div class="color-box" style="background-color: #FFFFFFFF"></div></td>
+<td>#FFFFFFFF</td>
+<td>255, 255, 255, 1</td>
+</tr>
+<tr>
+<td>231</td>
+<td>HUD_COLOUR_PLACEHOLDER_08</td>
+<td><div class="color-box" style="background-color: #FFFFFFFF"></div></td>
+<td>#FFFFFFFF</td>
+<td>255, 255, 255, 1</td>
+</tr>
+<tr>
+<td>232</td>
+<td>HUD_COLOUR_PLACEHOLDER_09</td>
+<td><div class="color-box" style="background-color: #FFFFFFFF"></div></td>
+<td>#FFFFFFFF</td>
+<td>255, 255, 255, 1</td>
+</tr>
+<tr>
+<td>233</td>
+<td>HUD_COLOUR_PLACEHOLDER_10</td>
+<td><div class="color-box" style="background-color: #FFFFFFFF"></div></td>
+<td>#FFFFFFFF</td>
+<td>255, 255, 255, 1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usage">Usage</h2>
+<p>There are several natives which allow you to read the hud color values and also modify them.<br>
+To get the specific RGBA values of a hud color, you can use the native <a href="https://natives.altv.mp/#/0x7C9C91AB74A0360F">getHudColour</a>.<br>
+Modification of the hud colors can be done with the natives <a href="https://natives.altv.mp/#/0x1CCC708F0F850613">replaceHudColour</a> and <a href="https://natives.altv.mp/#/0xF314CF4F0211894E">replaceHudColourWithRgba</a>.</p>
+<p>To use those colors in a drawn text, visit the article <a href="text-formatting.html">text formatting</a>.</p>
+<style>
+    .color-box {
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #FFFFFF;
+    }
+</style>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../../styles/discord.js"></script>
+<script type="text/javascript" src="../../../styles/main.js"></script>
+
+    </body>
+
+</html>

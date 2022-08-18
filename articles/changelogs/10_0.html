@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>10.0-Release </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="10.0-Release ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#100-release">10.0-Release</a><ul class="level2 nav bs-docs-sidenav 100-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li><li><a href="#breaking-changes">Breaking changes</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a><ul class="level4 nav bs-docs-sidenav added-2"><li><a href="#c-server-module">C# Server Module</a><ul class="level5 nav bs-docs-sidenav c-server-module"><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li></ul></li></ul></li><li><a href="#js-module">JS Module</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/changelogs/10_0.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="100-release">10.0-Release</h1>
+
+<div class="TIP">
+<h5>Tip</h5>
+<p>This update was released on 20.05.2022</p>
+</div>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>This update contains <strong>breaking changes</strong>, which can potentially break the functionality of your gamemode, please verify and change accordingly.</p>
+</div>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- 10.1:
+   - Fixed problems with syncedMetaData
+- 10.2:
+   - Fixed a crash on connect if ressource is missing
+   - Fixed a crash related to cef
+   - Fixed a crash related to vehicles
+   - CEF cache didnt get cleared
+- 10.3:
+  - Fixed a crash related to disconnects
+  - Fixed a crash related to early auth
+  - Fixed a crash related to webviews
+  - Disabled default ipl loading
+- 10.4:
+  - Fixed discord oAuth api
+  - Prevent alt:V from starting, if it's installed in GTA:V folder
+  - Add ascii check for paths
+- 10.5:
+  - Removed ascii check for paths
+- 10.6:
+  - Fixed a common crash regarding to mlo's and vehicles
+- 10.7:
+  - Show broken asset warnings only in debug mode
+- 10.8:
+  - Add handling for invalid archetypes to avoid crashes
+  - Add 2 more fixes to avoid crashes
+- 10.9:
+  - Fixed a crash related to weapons
+  - Fixed 2 crashes related to clothes
+- 10.10:
+  - Fix a hook which was broken after 10.9
+</code></pre>
+</div>
+<h2 id="client">Client</h2>
+<h3 id="added">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- windowFocusChange Event
+- netOwnerChange event for local player ownership changes
+- loading rml document from string
+- alt.setMinimapComponentPosition
+- alt.setMinimapIsRectangle
+- branch validation to launcher config
+- alt.getScreenResolution
+- windowResolutionChange event
+- webview size setter &amp; getter
+- webview pos getter
+- isRemote getter for blips
+- increased 2d volume of sound api
+- discord oAuth api
+- alt.isCursorVisible()
+- c# client module
+- console connect command
+- important missing ipls will be loaded by default now
+- disable idle cam flag also disables vehicle idle cam now
+</code></pre>
+</div>
+<h3 id="fixed">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- clientside created blips didn't delete on reconnect
+- Rockstar launcher detected unexpected Files because of cef cache
+- serverside blip attached to entity is not deleted with entity
+- serverside created blip API category setter doesent update
+- resolution change did not apply for rmlui
+- webview visible setter before view is initialized didn't worked
+- webview size and pos parameter in constructor
+- pixelation in rmlui when resolution changes
+- resource import/export
+- missing collision for helicopters, what caused explosions
+</code></pre>
+</div>
+<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- disabled document.execCommand in webviews
+</code></pre>
+</div>
+<h2 id="server">Server</h2>
+<h3 id="added-1">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- getServerConfig method
+- optimized synced meta data
+- support for resources in subfolders
+- error message when binding to invalid host address
+- serverStarted event
+- node inspector, source-maps, heap-profiler, profiler server.cfg entry for js module, global-fetch, global-webcrypto, network-imports (see https://docs.altv.mp/articles/configs/server.html for references)
+- props &amp; clothes setters returns a bool now
+- collision &amp; frozen setter, getter
+- don't disable props when inside a bike, helicopter, submarine
+- cancelable requestControl event
+- hasAutoAttachTrailer to vehicleModelInfo
+- isAccepted getter to ConnectionInfo
+- arm64 build support
+</code></pre>
+</div>
+<h3 id="fixed-1">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- blip rotation setter
+- vehicles created on resource start will be missing in resource start
+- empty resources got sended to client
+- last command being executed when pressed enter
+- checkpoint destroy
+- utf-8 with BOM destroyed server.cfg
+- GetResourceExports crashed the server
+- calling OnCreateBaseObject for objects that got created before other resource existed
+- netowner reset on migration in few cases
+</code></pre>
+</div>
+<h2 id="server--client">Server &amp; Client</h2>
+<h3 id="added-2">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- resource class
+- resourceStop and resourceStart events now support async functions, and will wait until the async function is resolved
+- stringToSHA256 method
+- alt.Utils class
+</code></pre>
+</div>
+<h2 id="js-module">JS Module</h2>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Updated nodeJS to v17.7.0
+- Fixed emitClient &amp; emitClientRaw not sending events properly when passing an array of players
+- Fixed JS module reserved commands are sent to users
+</code></pre>
+</div>
+<h2 id="c-server-module">C# Server Module</h2>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Now AltV.Net NuGet depends on AltV.Net.Shared and AltV.Net.CApi. Consider that, if you specify dlls manually to move/deploy
+- Floating point values now can be received as int in the events and meta
+- Alt.Server was deprecated, use Alt.Core instead
+- Function.Create was deprecated, use Alt.CreateFunction instead
+- MValueBuffer2 constructor was deprecated, use Alt.CreateMValueBuffer instead
+- MValueWriter2 constructor was deprecated, use Alt.CreateMValueWriter instead
+- MValueObject old constructor was deprecated, use one with ICore as first argument
+- MValueArray old constructor was deprecated, use one with ICore as first argument 
+- MValueAdapters API was deprecated, use corrseponding method from Alt instead
+- VehicleBuilder was deprecated, use Vehicle constructor instead
+- IColShape.IsPlayerIn was deprecated, use IColShape.IsEntityIn instead
+- IColShape.IsVehicleIn was deprecated, use IColShape.IsEntityIn instead
+- ICheckpoint.IsPlayerIn was deprecated, use ICheckpoint.IsEntityIn instead
+- ICheckpoint.IsVehicleIn was deprecated, use ICheckpoint.IsEntityIn instead
+- All entity async methods, and AltAsync async methods except for entity creation ones were deprecated. Use async entities instead. For more info see Async article in C# docs
+- AltInteractions Trigger method did trigger all types at once. Now, there's a TriggerAll method for that.
+</code></pre>
+</div>
+<h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- IServer was renamed to ICore
+- IEntityPool, IBaseObjectPool and IBaseBaseObjectPool method signatures were changed. (now they return a nullable entity, instead of returning boolean and entity via out variable)
+- Alt.GetAll* methods now return IReadOnlyCollection instead of ICollection
+</code></pre>
+</div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

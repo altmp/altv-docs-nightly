@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>11.0-Release </title>
+    <title>13.0-Release </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="11.0-Release ">
+    <meta name="title" content="13.0-Release ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#110-release">11.0-Release</a><ul class="level2 nav bs-docs-sidenav 110-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a></li></ul></li><li><a href="#js-module">JS Module</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#130-release">13.0-Release</a><ul class="level2 nav bs-docs-sidenav 130-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#c-server-module">C# Server Module</a><ul class="level3 nav bs-docs-sidenav c-server-module"><li><a href="#breaking-changes-2">Breaking changes</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,71 +132,60 @@
                                     </ul>
                                 </span>
 
-<h1 id="110-release">11.0-Release</h1>
+<h1 id="130-release">13.0-Release</h1>
 
 <div class="WARNING">
 <h5>Warning</h5>
 <p>This update isn't released yet.</p>
 </div>
 <h2 id="client">Client</h2>
+<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- some natives got renamed
+</code></pre>
+</div>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- weapondata api (https://docs.altv.mp/js/api/alt-client.WeaponData.html)
-- Save external console position and reapply on every start
-- vehicle lockState, petrolTankHealth getter
-- focusdata api (overrideFocus, clearFocus, focusOverrideEntity, etc)
-- WheelCamber, WheelTrackWidth, WheelHeight, WheelTyreRadius, WheelRimRadius, WheelTyreWidth, fuelLevel, engineTemperature, oilLevel getter &amp; setter
-- persistent localstorage for early auth
-- loadDefaultIpls method
+<pre><code class="lang-yaml">- weapondata playerDamageModifier getter &amp; setter
+- isPointOnScreen method
+- vehicle engineOn getter
+- localplayer getWeaponAmmo, weapons, getWeaponComponents getter
+- localplayer hasWeapon method
+- cef getEventListeners method
+- few new natives
+- logDebug to prints custom log if client is in debugmode
+- Object api
+- increased weapon component pool
+- eval option to worker
+- weapon shoot event
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- weapon auto swap flag disabled vehicle weapons
-- playPedAmbientSpeechWithVoiceNative native
-- RMLUI style property
-- &quot;This PC&quot; crashes the game directory selection dialog
-- vehicle gear setter
-- permission dialog for optional permissions
+<pre><code class="lang-yaml">- Connect to server via ipv6 adress
+- resource deps with subfolder clientside
+- memorybuffer method
+- playermodel getter returned new value with a delay
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
-<h3 id="added-1">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- isSpawned, discordID getter
-- currentAnimationDict &amp; currentAnimationName getter
-- improved client-files wildcard support in ressource.cfg
-- autoenable headlightcolor mod if headlightColor setter is used
-- autoenable tireSmokeColor mod if tireSmokeColor setter is used
-- allow installation in appdata folder
-- isEntityIn colshape method with entityID
-- duplicatePlayers config entry (see [server config article](~/articles/configs/server.md))
-- vehicle lightState setter &amp; getter
-- vehicle setTimedExplosion method
-- vehicle timedExplosionTime, timedExplosionCulprit, hasTimedExplosion getter
-</code></pre>
-</div>
 <h3 id="fixed-1">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Fix frozen and collision setter
-- Bicycles don't work sometimes
-- Size property doesn't work for areablip
-- playAmbientSpeech method
-- removed clothing &amp; appearance missmatch message
-</code></pre>
-</div>
-<h2 id="server--client">Server &amp; Client</h2>
-<h3 id="added-2">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- animationChange event
-- player forwardSpeed &amp; strafeSpeed getter
+<pre><code class="lang-yaml">- Master server used default interface even if bound to different ip
 </code></pre>
 </div>
 <h2 id="js-module">JS Module</h2>
+<h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Updated nodeJS launch options to support native ECMAScript module loader by default (removed experimental loader warning)
-  → The js-module automatically detects esm files if one of the described cases are fullfilled, see: https://nodejs.org/docs/latest-v17.x/api/esm.html#enabling
-- Added extra-cli-args to server.cfg
+<pre><code class="lang-yaml">- player, blips, vehicles all getter are readonly now (server &amp; client)
+- emitClient &amp; emitClientRaw with null, use emitAllClients &amp; emitAllClientsRaw instead
+</code></pre>
+</div>
+<h2 id="c-server-module">C# Server Module</h2>
+<h3 id="breaking-changes-2"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- IPlayer DiscordId changed type from string to long
+- IConnectionInfo DiscordUserId changed type from string to long
 </code></pre>
 </div>
 </article>
@@ -215,6 +204,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../../styles/docfx.js"></script>
 <script type="text/javascript" src="../../styles/discord.js"></script>
 <script type="text/javascript" src="../../styles/main.js"></script>

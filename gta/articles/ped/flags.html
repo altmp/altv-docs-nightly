@@ -140,191 +140,644 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <thead>
 <tr>
 <th>Name</th>
-<th style="text-align: center;">Flag ID</th>
+<th>Flag ID</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>PED_FLAG_NO_CRITICAL_HITS</td>
+<td>2</td>
+</tr>
+<tr>
+<td>PED_FLAG_DROWNS_IN_WATER</td>
+<td>3</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_RETICULE_FIXED_LOCKON</td>
+<td>4</td>
+</tr>
+<tr>
+<td>PED_FLAG_UPPER_BODY_DAMAGE_ANIMS_ONLY</td>
+<td>7</td>
+</tr>
+<tr>
+<td>PED_FLAG_NEVER_LEAVES_GROUP</td>
+<td>13</td>
+</tr>
+<tr>
+<td>PED_FLAG_BLOCK_NON_TEMPORARY_EVENTS</td>
+<td>17</td>
+</tr>
+<tr>
 <td>PED_FLAG_CAN_PUNCH</td>
-<td style="text-align: center;">18</td>
+<td>18</td>
+</tr>
+<tr>
+<td>PED_FLAG_IGNORE_SEEN_MELEE</td>
+<td>24</td>
 </tr>
 <tr>
 <td>PED_FLAG_CAN_FLY_THRU_WINDSCREEN</td>
-<td style="text-align: center;">32</td>
+<td>32</td>
 </tr>
 <tr>
-<td>PED_FLAG_DIES_BY_RAGDOLL</td>
-<td style="text-align: center;">33</td>
+<td>PED_FLAG_DIES_WHEN_RAGDOLL</td>
+<td>33</td>
+</tr>
+<tr>
+<td>PED_FLAG_HAS_HELMET</td>
+<td>34</td>
 </tr>
 <tr>
 <td>PED_FLAG_PUT_ON_MOTORCYCLE_HELMET</td>
-<td style="text-align: center;">35</td>
+<td>35</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_EVASIVE_DIVES</td>
+<td>39</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_INFLUENCE_WANTED_LEVEL</td>
+<td>42</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_PLAYER_LOCKON</td>
+<td>43</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_LOCKON_TO_RANDOM_PEDS</td>
+<td>44</td>
+</tr>
+<tr>
+<td>PED_FLAG_BEING_DELETED</td>
+<td>47</td>
+</tr>
+<tr>
+<td>PED_FLAG_BLOCK_WEAPON_SWITCHING</td>
+<td>48</td>
 </tr>
 <tr>
 <td>PED_FLAG_NO_COLLISION</td>
-<td style="text-align: center;">52</td>
+<td>52</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_SHOOTING</td>
-<td style="text-align: center;">58</td>
+<td>58</td>
+</tr>
+<tr>
+<td>PED_FLAG_WAS_SHOOTING</td>
+<td>59</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_ON_GROUND</td>
-<td style="text-align: center;">60</td>
+<td>60</td>
 </tr>
 <tr>
-<td>PED_FLAG_NO_COLLIDE</td>
-<td style="text-align: center;">62</td>
+<td>PED_FLAG_WAS_ON_GROUND</td>
+<td>61</td>
 </tr>
 <tr>
-<td>PED_FLAG_DEAD</td>
-<td style="text-align: center;">71</td>
+<td>PED_FLAG_IN_VEHICLE</td>
+<td>62</td>
+</tr>
+<tr>
+<td>PED_FLAG_ON_MOUNT</td>
+<td>63</td>
+</tr>
+<tr>
+<td>PED_FLAG_ATTACHED_TO_VEHICLE</td>
+<td>64</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_SWIMMING</td>
+<td>65</td>
+</tr>
+<tr>
+<td>PED_FLAG_WAS_SWIMMING</td>
+<td>66</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_SKIING</td>
+<td>67</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_SITTING</td>
+<td>68</td>
+</tr>
+<tr>
+<td>PED_FLAG_KILLED_BY_STEALTH</td>
+<td>69</td>
+</tr>
+<tr>
+<td>PED_FLAG_KILLED_BY_TAKEDOWN</td>
+<td>70</td>
+</tr>
+<tr>
+<td>PED_FLAG_KNOCKEDOUT</td>
+<td>71</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_SNIPER_SCOPE_ACTIVE</td>
-<td style="text-align: center;">72</td>
+<td>72</td>
 </tr>
 <tr>
 <td>PED_FLAG_SUPER_DEAD</td>
-<td style="text-align: center;">73</td>
+<td>73</td>
 </tr>
 <tr>
-<td>PED_FLAG_IS_IN_AIR</td>
-<td style="text-align: center;">76</td>
+<td>PED_FLAG_USING_COVER_POINT</td>
+<td>75</td>
 </tr>
 <tr>
-<td>PED_FLAG_IS_AIMING</td>
-<td style="text-align: center;">78</td>
+<td>PED_FLAG_IS_IN_THE_AIR</td>
+<td>76</td>
 </tr>
 <tr>
-<td>PED_FLAG_DRUNK</td>
-<td style="text-align: center;">100</td>
+<td>PED_FLAG_IS_AIMING_GUN</td>
+<td>78</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_PED_LOAD_COVER</td>
+<td>93</td>
+</tr>
+<tr>
+<td>PED_FLAG_VAULT_FROM_COVER</td>
+<td>97</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_DRUNK</td>
+<td>100</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCED_AIM</td>
+<td>101</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_NOT_RAGDOLL_AND_NOT_PLAYING_ANIM</td>
-<td style="text-align: center;">104</td>
+<td>104</td>
 </tr>
 <tr>
-<td>PED_FLAG_NO_PLAYER_MELEE</td>
-<td style="text-align: center;">122</td>
+<td>PED_FLAG_FORCE_RELOAD</td>
+<td>105</td>
+</tr>
+<tr>
+<td>PED_FLAG_BUMPED_BY_PLAYER</td>
+<td>117</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_HAND_CUFFED</td>
+<td>120</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_ANKLE_CUFFED</td>
+<td>121</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_MELEE</td>
+<td>122</td>
 </tr>
 <tr>
 <td>PED_FLAG_NM_MESSAGE_466</td>
-<td style="text-align: center;">125</td>
+<td>125</td>
 </tr>
 <tr>
-<td>PED_FLAG_INJURED_LIMP</td>
-<td style="text-align: center;">166</td>
+<td>PED_FLAG_CAN_BE_AGITATED</td>
+<td>128</td>
 </tr>
 <tr>
-<td>PED_FLAG_INJURED_LIMP_2</td>
-<td style="text-align: center;">170</td>
+<td>PED_FLAG_IS_SCUBA</td>
+<td>135</td>
 </tr>
 <tr>
-<td>PED_FLAG_DISABLE_SHUFFLING_TO_DRIVER_SEAT</td>
-<td style="text-align: center;">184</td>
+<td>PED_FLAG_WILL_ARREST_RATHER_THAN_JACK</td>
+<td>136</td>
 </tr>
 <tr>
-<td>PED_FLAG_INJURED_DOWN</td>
-<td style="text-align: center;">187</td>
+<td>PED_FLAG_RIDING_TRAIN</td>
+<td>138</td>
+</tr>
+<tr>
+<td>PED_FLAG_ARREST_RESULT</td>
+<td>139</td>
+</tr>
+<tr>
+<td>PED_FLAG_CAN_ATTACK_FRIENDLY</td>
+<td>140</td>
+</tr>
+<tr>
+<td>PED_FLAG_SHOOTING_ANIM_FLAG</td>
+<td>145</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_LADDER_CLIMBING</td>
+<td>146</td>
+</tr>
+<tr>
+<td>PED_FLAG_STAIRS_DETECTED</td>
+<td>147</td>
+</tr>
+<tr>
+<td>PED_FLAG_SLOPE_DETECTED</td>
+<td>148</td>
+</tr>
+<tr>
+<td>PED_FLAG_CAN_PERFORM_ARREST</td>
+<td>155</td>
+</tr>
+<tr>
+<td>PED_FLAG_CAN_PERFORM_UNCUFF</td>
+<td>156</td>
+</tr>
+<tr>
+<td>PED_FLAG_CAN_BE_ARRESTED</td>
+<td>157</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_INJURED</td>
+<td>166</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_INJURED_2</td>
+<td>170</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_IN_CUSTODY</td>
+<td>180</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_AGITATED</td>
+<td>183</td>
+</tr>
+<tr>
+<td>PED_FLAG_PREVENT_AUTO_SHUFFLE_TO_DRIVERS_SEAT</td>
+<td>184</td>
+</tr>
+<tr>
+<td>PED_FLAG_ENABLE_WEAPON_BLOCKING</td>
+<td>186</td>
+</tr>
+<tr>
+<td>PED_FLAG_HAS_HURT_STARTED</td>
+<td>187</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_HURT</td>
+<td>188</td>
+</tr>
+<tr>
+<td>PED_FLAG_PLAYER_IS_WEIRD</td>
+<td>189</td>
+</tr>
+<tr>
+<td>PED_FLAG_USING_SCENARIO</td>
+<td>194</td>
+</tr>
+<tr>
+<td>PED_FLAG_VISIBLE_ON_SCREEN</td>
+<td>195</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_EXPLOSION_REACTIONS</td>
+<td>208</td>
+</tr>
+<tr>
+<td>PED_FLAG_DODGED_PLAYER</td>
+<td>209</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_ENTER_LEADERS_VEHICLE</td>
+<td>220</td>
 </tr>
 <tr>
 <td>PED_FLAG_SHRINK</td>
-<td style="text-align: center;">223</td>
+<td>223</td>
 </tr>
 <tr>
 <td>PED_FLAG_MELEE_COMBAT</td>
-<td style="text-align: center;">224</td>
+<td>224</td>
 </tr>
 <tr>
-<td>PED_FLAG_DISABLE_STOPPING_VEH_ENGINE</td>
-<td style="text-align: center;">241</td>
+<td>PED_FLAG_DISABLE_POTENTIAL_TO_BE_WALKED_INTO_RESPONSE</td>
+<td>225</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_PED_AVOIDANCE</td>
+<td>226</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_PANIC_IN_VEHICLE</td>
+<td>229</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_HOLDING_PROP</td>
+<td>236</td>
+</tr>
+<tr>
+<td>PED_FLAG_BLOCKS_PATHING_WHEN_DEAD</td>
+<td>237</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_STOPPING_VEHICLE_ENGINE</td>
+<td>241</td>
+</tr>
+<tr>
+<td>PED_FLAG_CAN_PLAY_IN_CAR_IDLES</td>
+<td>248</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_ON_STAIRS</td>
-<td style="text-align: center;">253</td>
+<td>253</td>
 </tr>
 <tr>
-<td>PED_FLAG_HAS_ONE_LEG_ON_GROUND</td>
-<td style="text-align: center;">276</td>
+<td>PED_FLAG_DISABLE_CLOSING_VEHICLE_DOOR</td>
+<td>264</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_ON_STAIRS_SLOPE</td>
+<td>270</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_BLIP_COP</td>
+<td>272</td>
+</tr>
+<tr>
+<td>PED_FLAG_CLIMBED_SHIFTED_FENCE</td>
+<td>273</td>
+</tr>
+<tr>
+<td>PED_FLAG_EDGE_DETECTED</td>
+<td>276</td>
+</tr>
+<tr>
+<td>PED_FLAG_AVOID_TEAR_GAS</td>
+<td>279</td>
 </tr>
 <tr>
 <td>PED_FLAG_NO_WRITHE</td>
-<td style="text-align: center;">281</td>
+<td>281</td>
 </tr>
 <tr>
-<td>PED_FLAG_FREEZE</td>
-<td style="text-align: center;">292</td>
+<td>PED_FLAG_RAGDOLLING_ON_BOAT</td>
+<td>287</td>
 </tr>
 <tr>
-<td>PED_FLAG_IS_STILL</td>
-<td style="text-align: center;">301</td>
+<td>PED_FLAG_HAS_BRANDISHED_WEAPON</td>
+<td>288</td>
+</tr>
+<tr>
+<td>PED_FLAG_FREEZE_POSITION</td>
+<td>292</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_SHOCKING_EVENTS</td>
+<td>294</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_PED_CONSTRAINTS</td>
+<td>301</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_IN_CLUSTER</td>
+<td>310</td>
 </tr>
 <tr>
 <td>PED_FLAG_NO_PED_MELEE</td>
-<td style="text-align: center;">314</td>
+<td>314</td>
 </tr>
 <tr>
-<td>PED_FLAG_SWITCHING_WEAPON</td>
-<td style="text-align: center;">331</td>
+<td>PED_FLAG_HAS_HIGH_HEELS</td>
+<td>322</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_TALK_TO</td>
+<td>329</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_BLIP</td>
+<td>330</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_SWITCHING_WEAPON</td>
+<td>331</td>
+</tr>
+<tr>
+<td>PED_FLAG_EQUIP_JETPACK</td>
+<td>349</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_DUCKING_IN_VEHICLE</td>
+<td>359</td>
+</tr>
+<tr>
+<td>PED_FLAG_HAS_RESERVE_PARACHUTE</td>
+<td>362</td>
+</tr>
+<tr>
+<td>PED_FLAG_USE_RESERVE_PARACHUTE</td>
+<td>363</td>
+</tr>
+<tr>
+<td>PED_FLAG_NEVER_LEAVE_TRAIN</td>
+<td>374</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_CLIMBING_LADDER</td>
+<td>388</td>
+</tr>
+<tr>
+<td>PED_FLAG_HAS_BARE_FEET</td>
+<td>389</td>
 </tr>
 <tr>
 <td>PED_FLAG_ALPHA</td>
-<td style="text-align: center;">410</td>
+<td>410</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_HOLSTERING_WEAPON</td>
+<td>413</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_SWITCHING_HELMET_VISOR</td>
+<td>418</td>
 </tr>
 <tr>
 <td>PED_FLAG_FLAMING_FOOTPRINTS</td>
-<td style="text-align: center;">421</td>
+<td>421</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_VEHICLE_COMBAT</td>
+<td>422</td>
 </tr>
 <tr>
 <td>PED_FLAG_DISABLE_PROP_KNOCK_OFF</td>
-<td style="text-align: center;">423</td>
+<td>423</td>
 </tr>
 <tr>
-<td>PED_FLAG_DISABLE_STARTING_VEH_ENGINE</td>
-<td style="text-align: center;">429</td>
+<td>PED_FLAG_FALLS_LIKE_AIRCRAFT</td>
+<td>424</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_STARTING_VEHICLE_ENGINE</td>
+<td>429</td>
+</tr>
+<tr>
+<td>PED_FLAG_IGNORE_BEING_ON_FIRE</td>
+<td>430</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_HOMING_MISSILE_LOCKON</td>
+<td>434</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_HELMET_ARMOR</td>
+<td>438</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_ARRESTING</td>
+<td>450</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_DECOY_PED</td>
+<td>451</td>
+</tr>
+<tr>
+<td>PED_FLAG_CAN_BE_INCAPACITATED</td>
+<td>456</td>
+</tr>
+<tr>
+<td>PED_FLAG_MUTABLE_FORCED_AIM</td>
+<td>457</td>
 </tr>
 </tbody>
 </table>
 <h2 id="config-flag-enum">Config Flag Enum</h2>
-<pre><code class="lang-ts">// noinspection JSUnusedGlobalSymbols
-export enum PedConfigFlag {
-    // noinspection JSUnusedGlobalSymbols
+<pre><code class="lang-ts">export enum PedConfigFlag {
+    NoCriticalHits = 2,
+    DrownsInWater = 3,
+    DisableReticuleFixedLockon = 4,
+    UpperBodyDamageAnimsOnly = 7,
+    NeverLeavesGroup = 13,
+    BlockNonTemporaryEvents = 17,
     CanPunch = 18,
+    IgnoreSeenMelee = 24,
     CanFlyThruWindscreen = 32,
-    DiesByRagdoll = 33,
+    DiesWhenRagdoll = 33,
+    HasHelmet = 34,
     PutOnMotorcycleHelmet = 35,
+    DisableEvasiveDives = 39,
+    DontInfluenceWantedLevel = 42,
+    DisablePlayerLockon = 43,
+    DisableLockonToRandomPeds = 44,
+    BeingDeleted = 47,
+    BlockWeaponSwitching = 48,
     NoCollision = 52,
     IsShooting = 58,
+    WasShooting = 59,
     IsOnGround = 60,
-    NoCollide = 62,
-    Dead = 71,
+    WasOnGround = 61,
+    InVehicle = 62,
+    OnMount = 63,
+    AttachedToVehicle = 64,
+    IsSwimming = 65,
+    WasSwimming = 66,
+    IsSkiing = 67,
+    IsSitting = 68,
+    KilledByStealth = 69,
+    KilledByTakedown = 70,
+    Knockedout = 71,
     IsSniperScopeActive = 72,
     SuperDead = 73,
-    IsInAir = 76,
-    IsAiming = 78,
-    Drunk = 100,
+    UsingCoverPoint = 75,
+    IsInTheAir = 76,
+    IsAimingGun = 78,
+    ForcePedLoadCover = 93,
+    VaultFromCover = 97,
+    IsDrunk = 100,
+    ForcedAim = 101,
     IsNotRagdollAndNotPlayingAnim = 104,
-    NoPlayerMelee = 122,
+    ForceReload = 105,
+    BumpedByPlayer = 117,
+    IsHandCuffed = 120,
+    IsAnkleCuffed = 121,
+    DisableMelee = 122,
     NmMessage466 = 125,
-    InjuredLimp = 166,
-    InjuredLimp2 = 170,
-    DisableShufflingToDriverSeat = 184,
-    InjuredDown = 187,
+    CanBeAgitated = 128,
+    IsScuba = 135,
+    WillArrestRatherThanJack = 136,
+    RidingTrain = 138,
+    ArrestResult = 139,
+    CanAttackFriendly = 140,
+    ShootingAnimFlag = 145,
+    DisableLadderClimbing = 146,
+    StairsDetected = 147,
+    SlopeDetected = 148,
+    CanPerformArrest = 155,
+    CanPerformUncuff = 156,
+    CanBeArrested = 157,
+    IsInjured = 166,
+    IsInjured2 = 170,
+    IsInCustody = 180,
+    IsAgitated = 183,
+    PreventAutoShuffleToDriversSeat = 184,
+    EnableWeaponBlocking = 186,
+    HasHurtStarted = 187,
+    DisableHurt = 188,
+    PlayerIsWeird = 189,
+    UsingScenario = 194,
+    VisibleOnScreen = 195,
+    DisableExplosionReactions = 208,
+    DodgedPlayer = 209,
+    DontEnterLeadersVehicle = 220,
     Shrink = 223,
     MeleeCombat = 224,
-    DisableStoppingVehEngine = 241,
+    DisablePotentialToBeWalkedIntoResponse = 225,
+    DisablePedAvoidance = 226,
+    DisablePanicInVehicle = 229,
+    IsHoldingProp = 236,
+    BlocksPathingWhenDead = 237,
+    DisableStoppingVehicleEngine = 241,
+    CanPlayInCarIdles = 248,
     IsOnStairs = 253,
-    HasOneLegOnGround = 276,
+    DisableClosingVehicleDoor = 264,
+    IsOnStairsSlope = 270,
+    DontBlipCop = 272,
+    ClimbedShiftedFence = 273,
+    EdgeDetected = 276,
+    AvoidTearGas = 279,
     NoWrithe = 281,
-    Freeze = 292,
-    IsStill = 301,
+    RagdollingOnBoat = 287,
+    HasBrandishedWeapon = 288,
+    FreezePosition = 292,
+    DisableShockingEvents = 294,
+    DisablePedConstraints = 301,
+    IsInCluster = 310,
     NoPedMelee = 314,
-    PedSwitchingWeapon = 331,
+    HasHighHeels = 322,
+    DisableTalkTo = 329,
+    DontBlip = 330,
+    IsSwitchingWeapon = 331,
+    EquipJetpack = 349,
+    IsDuckingInVehicle = 359,
+    HasReserveParachute = 362,
+    UseReserveParachute = 363,
+    NeverLeaveTrain = 374,
+    IsClimbingLadder = 388,
+    HasBareFeet = 389,
     Alpha = 410,
+    IsHolsteringWeapon = 413,
+    IsSwitchingHelmetVisor = 418,
+    FlamingFootprints = 421,
+    DisableVehicleCombat = 422,
     DisablePropKnockOff = 423,
-    DisableStartingVehEngine = 429,
-    FlamingFootprints = 421
+    FallsLikeAircraft = 424,
+    DisableStartingVehicleEngine = 429,
+    IgnoreBeingOnFire = 430,
+    DisableHomingMissileLockon = 434,
+    DisableHelmetArmor = 438,
+    IsArresting = 450,
+    IsDecoyPed = 451,
+    CanBeIncapacitated = 456,
+    MutableForcedAim = 457
 }
 </code></pre>
 </article>
@@ -343,6 +796,7 @@ export enum PedConfigFlag {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../../../styles/docfx.js"></script>
 <script type="text/javascript" src="../../../styles/discord.js"></script>
 <script type="text/javascript" src="../../../styles/main.js"></script>

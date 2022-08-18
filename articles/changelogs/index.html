@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>10.0-Release </title>
+    <title>12.0-Release </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="10.0-Release ">
+    <meta name="title" content="12.0-Release ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#100-release">10.0-Release</a><ul class="level2 nav bs-docs-sidenav 100-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li><li><a href="#breaking-changes">Breaking changes</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#added-2">Added</a><ul class="level4 nav bs-docs-sidenav added-2"><li><a href="#c-server-module">C# Server Module</a><ul class="level5 nav bs-docs-sidenav c-server-module"><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li></ul></li></ul></li><li><a href="#js-module">JS Module</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#120-release">12.0-Release</a><ul class="level2 nav bs-docs-sidenav 120-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,7 +132,7 @@
                                     </ul>
                                 </span>
 
-<h1 id="100-release">10.0-Release</h1>
+<h1 id="120-release">12.0-Release</h1>
 
 <div class="WARNING">
 <h5>Warning</h5>
@@ -140,159 +140,39 @@
 </div>
 <div class="TIP">
 <h5>Tip</h5>
-<p>This update was released on 20.05.2022</p>
-</div>
-<div class="CAUTION">
-<h5>Caution</h5>
-<p>This update contains <strong>breaking changes</strong>, which can potentially break the functionality of your gamemode, please verify and change accordingly.</p>
+<p>This update was released on 26.07.2022</p>
 </div>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- 10.1:
-   - Fixed problems with syncedMetaData
-- 10.2:
-   - Fixed a crash on connect if ressource is missing
-   - Fixed a crash related to cef
-   - Fixed a crash related to vehicles
-   - CEF cache didnt get cleared
-- 10.3:
-  - Fixed a crash related to disconnects
-  - Fixed a crash related to early auth
-  - Fixed a crash related to webviews
-  - Disabled default ipl loading
-- 10.4:
-  - Fixed discord oAuth api
-  - Prevent alt:V from starting, if it's installed in GTA:V folder
-  - Add ascii check for paths
-- 10.5:
-  - Removed ascii check for paths
-- 10.6:
-  - Fixed a common crash regarding to mlo's and vehicles
-- 10.7:
-  - Show broken asset warnings only in debug mode
-- 10.8:
-  - Add handling for invalid archetypes to avoid crashes
-  - Add 2 more fixes to avoid crashes
-- 10.9:
-  - Fixed a crash related to weapons
-  - Fixed 2 crashes related to clothes
-- 10.10:
-  - Fix a hook which was broken after 10.9
+<pre><code class="lang-yaml">- 12.1:
+   - Increased txd pool
+   - Fixed modded minimap
+- 12.2:
+   - attachentitytoentity native
+- 12.3:
+   - Fixed dead desync
+   - Dont load gta update dummy files
+- 12.4:
+   - Fixed gta pool crashes
+- 12.5:
+   - Fixed Crashes related to gadgets
+- 12.6:
+   - Added spawned event on modelchange
+   - Fixed licensehash
+   - Fixed blips
+- 12.7:
+   - More blip fixes
+- 12.8:
+   - Fixed Blip route
+- 12.9:
+   - Fixed Resolving of dependencies inside sub directories failed clientside
+- 12.10:
+   - Fixed one more crash related to dependencies reload
 </code></pre>
 </div>
 <h2 id="client">Client</h2>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- windowFocusChange Event
-- netOwnerChange event for local player ownership changes
-- loading rml document from string
-- alt.setMinimapComponentPosition
-- alt.setMinimapIsRectangle
-- branch validation to launcher config
-- alt.getScreenResolution
-- windowResolutionChange event
-- webview size setter &amp; getter
-- webview pos getter
-- isRemote getter for blips
-- increased 2d volume of sound api
-- discord oAuth api
-- alt.isCursorVisible()
-- c# client module
-- console connect command
-- important missing ipls will be loaded by default now
-- disable idle cam flag also disables vehicle idle cam now
-</code></pre>
-</div>
-<h3 id="fixed">Fixed</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- clientside created blips didn't delete on reconnect
-- Rockstar launcher detected unexpected Files because of cef cache
-- serverside blip attached to entity is not deleted with entity
-- serverside created blip API category setter doesent update
-- resolution change did not apply for rmlui
-- webview visible setter before view is initialized didn't worked
-- webview size and pos parameter in constructor
-- pixelation in rmlui when resolution changes
-- resource import/export
-- missing collision for helicopters, what caused explosions
-</code></pre>
-</div>
-<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- disabled document.execCommand in webviews
-</code></pre>
-</div>
-<h2 id="server">Server</h2>
-<h3 id="added-1">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- getServerConfig method
-- optimized synced meta data
-- support for resources in subfolders
-- error message when binding to invalid host address
-- serverStarted event
-- node inspector, source-maps, heap-profiler, profiler server.cfg entry for js module, global-fetch, global-webcrypto, network-imports (see https://docs.altv.mp/articles/configs/server.html for references)
-- props &amp; clothes setters returns a bool now
-- collision &amp; frozen setter, getter
-- don't disable props when inside a bike, helicopter, submarine
-- cancelable requestControl event
-- hasAutoAttachTrailer to vehicleModelInfo
-- isAccepted getter to ConnectionInfo
-- arm64 build support
-</code></pre>
-</div>
-<h3 id="fixed-1">Fixed</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- blip rotation setter
-- vehicles created on resource start will be missing in resource start
-- empty resources got sended to client
-- last command being executed when pressed enter
-- checkpoint destroy
-- utf-8 with BOM destroyed server.cfg
-- GetResourceExports crashed the server
-- calling OnCreateBaseObject for objects that got created before other resource existed
-- netowner reset on migration in few cases
-</code></pre>
-</div>
-<h2 id="server--client">Server &amp; Client</h2>
-<h3 id="added-2">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- resource class
-- resourceStop and resourceStart events now support async functions, and will wait until the async function is resolved
-- stringToSHA256 method
-- alt.Utils class
-</code></pre>
-</div>
-<h2 id="js-module">JS Module</h2>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Updated nodeJS to v17.7.0
-- Fixed emitClient &amp; emitClientRaw not sending events properly when passing an array of players
-- Fixed JS module reserved commands are sent to users
-</code></pre>
-</div>
-<h2 id="c-server-module">C# Server Module</h2>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- Now AltV.Net NuGet depends on AltV.Net.Shared and AltV.Net.CApi. Consider that, if you specify dlls manually to move/deploy
-- Floating point values now can be received as int in the events and meta
-- Alt.Server was deprecated, use Alt.Core instead
-- Function.Create was deprecated, use Alt.CreateFunction instead
-- MValueBuffer2 constructor was deprecated, use Alt.CreateMValueBuffer instead
-- MValueWriter2 constructor was deprecated, use Alt.CreateMValueWriter instead
-- MValueObject old constructor was deprecated, use one with ICore as first argument
-- MValueArray old constructor was deprecated, use one with ICore as first argument 
-- MValueAdapters API was deprecated, use corrseponding method from Alt instead
-- VehicleBuilder was deprecated, use Vehicle constructor instead
-- IColShape.IsPlayerIn was deprecated, use IColShape.IsEntityIn instead
-- IColShape.IsVehicleIn was deprecated, use IColShape.IsEntityIn instead
-- ICheckpoint.IsPlayerIn was deprecated, use ICheckpoint.IsEntityIn instead
-- ICheckpoint.IsVehicleIn was deprecated, use ICheckpoint.IsEntityIn instead
-- All entity async methods, and AltAsync async methods except for entity creation ones were deprecated. Use async entities instead. For more info see Async article in C# docs
-- AltInteractions Trigger method did trigger all types at once. Now, there's a TriggerAll method for that.
-</code></pre>
-</div>
-<h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- IServer was renamed to ICore
-- IEntityPool, IBaseObjectPool and IBaseBaseObjectPool method signatures were changed. (now they return a nullable entity, instead of returning boolean and entity via out variable)
-- Alt.GetAll* methods now return IReadOnlyCollection instead of ICollection
+<pre><code class="lang-yaml">- Add support for GTA version 2699
 </code></pre>
 </div>
 </article>
@@ -311,6 +191,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
 <script type="text/javascript" src="../../styles/docfx.js"></script>
 <script type="text/javascript" src="../../styles/discord.js"></script>
 <script type="text/javascript" src="../../styles/main.js"></script>

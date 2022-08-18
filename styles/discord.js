@@ -145,7 +145,7 @@ function enableSearch() {
       });
 
       $("#search-query").on("beforeinput textInput", function(ev) {
-        if (ev.originalEvent.inputType !== "insertParagraph" && ev.originalEvent.data?.split(/(?<=[^\\])/)?.pop() !== "\n") {
+        if (ev.originalEvent.inputType !== "insertParagraph" && ev.originalEvent.data?.split(/(?!$)/u)?.pop() !== "\n") {
           return;
         }
         ev.preventDefault();

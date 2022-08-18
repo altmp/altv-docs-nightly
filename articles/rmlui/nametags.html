@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Nametag example </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Nametag example ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#nametag-example">Nametag example</a><ul class="level2 nav bs-docs-sidenav nametag-example"><li><a href="#requirements">Requirements</a></li><li><a href="#creating-the-rml-document">Creating the rml document</a></li><li><a href="#creating-the-client-script">Creating the client script</a></li><li><a href="#summary">Summary</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/rmlui/nametags.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="nametag-example">Nametag example</h1>
+
+<p>This article deals with name tags as RmlUi example.
+All used files for this example can be found in the following <a href="https://github.com/altmp/altv-example-resources/tree/master/rml-nametags">repository</a>.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Some code editor (for example Visual Studio Code)</li>
+<li>Basic knowledge of HTML &amp; CSS</li>
+<li>A font file (.ttf)</li>
+<li>Empty resource with <code>Client</code> subfolder and <code>Client/main.js</code> as entry point</li>
+</ul>
+<h2 id="creating-the-rml-document">Creating the rml document</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>In this example <code>arialbd.ttf</code> is used as font, which can be found in the repository mentioned at the beginning.</p>
+</div>
+<p>Creating an Rml document is relatively simple and, except for the leading <code>&lt;rml&gt;</code> tag and the XHTML1 standard, is no different from creating an .html file.<br>
+We create the file <code>index.rml</code> in the <code>Client</code> subfolder and add the following content there:</p>
+<pre><code class="lang-html">&lt;!-- For RmlUi documents we have to begin our html with the &lt;rml&gt; tag --&gt; 
+&lt;rml&gt;
+    &lt;!-- Everything else is simply html based on XHTML1 standard --&gt;
+    &lt;head&gt;
+        &lt;title&gt;Demo&lt;/title&gt;
+        &lt;style&gt;
+            body, #nametag-container {
+                /* The font-family needs to be contained in the font file we will load later */
+                font-family: arial;
+                font-weight: bold;
+                font-style: normal;
+                font-weight: bold;
+
+                width: 100%;
+                height: 100%;
+            }
+
+            .nametag {
+                position: absolute;
+                font-effect: outline(1px black);
+                color: #FFFFFFFF;
+                width: auto;
+                height: auto;
+                text-align: center;
+                font-size: 20dp;
+            }
+
+            .hide {
+                display: none;
+            }
+
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;!-- This is the container we will use later in our client script --&gt;
+    &lt;div id=&quot;nametag-container&quot;&gt;&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/rml&gt;
+</code></pre>
+<h2 id="creating-the-client-script">Creating the client script</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Although JavaScript is used in this example, it can also be used with C# and other modules.
+Further information can be found in the respective modules documentation.</p>
+</div>
+<p>After we have created our <code>index.rml</code> we create our script file named <code>main.js</code> in the same folder.<br>
+In this file we put the following content, which will be described in more detail by the comments:</p>
+<pre><code class="lang-js">import * as alt from &quot;alt-client&quot;;
+import * as native from &quot;natives&quot;;
+
+// ---------------- Config ----------------
+// showVehicleIds: `true` vehicles will also have nametags containing their id
+// showPlayerIds: `true` player nametags will contain the id
+// showPlayerNames: `true` player nametags will contain their name
+// checkLoS: `true` line of sight is required to draw the nametags
+// dynamicSize: `true` size increases or decreases depending on the distance to the entity
+// controlKey: `79` toggle key for activating or deactivating the rml controls. 79 is the O key
+// 
+// NOTE: For players either id, name or both settings have to be enabled, else there will no nametags be drawn
+
+const showVehicleIds = true;
+const showPlayerIds = true;
+const showPlayerNames = true;
+const checkLoS = true;
+const dynamicSize = true;
+const controlKey = 79;
+
+// --------------- Prototype --------------
+// We use a custom prototype on the RmlElement to quickly check if its currently drawn or not
+
+alt.RmlElement.prototype.shown = false;
+
+// ---------------- Script ----------------
+// All the code. More detailed instructions will be included to the lines
+
+// For rml you have to load the required font so it can be used
+alt.loadRmlFont(&quot;/Client/arialbd.ttf&quot;, &quot;arial&quot;, false, true);
+// Creating a new rml document. This is similar to creating a new WebView
+const document = new alt.RmlDocument(&quot;/Client/index.rml&quot;);
+// We're storing the nametag-container for further usage, e.g. adding and removing nametags
+const container = document.getElementByID(&quot;nametag-container&quot;);
+// We use a map to simplify the mapping of entity and RmlElement
+const nameTags = new Map();
+// This variable will store the id of our everyTick, so we can disable it as soon as there are no nametags to draw
+let tickHandle = undefined;
+
+// We will use the gameEntityCreate event to add new nametags to our container
+alt.on(&quot;gameEntityCreate&quot;, (entity) =&gt; {
+    // Create a &lt;button&gt; html element and store it in the variable rmlElement
+    const rmlElement = document.createElement(&quot;button&quot;);
+    // Set the id property of the html element
+    rmlElement.id = entity.id.toString();
+    // Add our classes to apply stylings
+    rmlElement.addClass(&quot;nametag&quot;);
+    rmlElement.addClass(&quot;hide&quot;);
+
+    // As setup in the config on the top, we will draw different nametags depending on the config
+    // If no configuration applies for the entity type we will destroy the RmlElement
+    if (entity instanceof alt.Player) {
+        if (showPlayerIds &amp;&amp; !showPlayerNames)
+            rmlElement.innerRML = `ID: ${entity.id}`;
+        else if (showPlayerIds &amp;&amp; showPlayerNames)
+            rmlElement.innerRML = `ID: ${entity.id} | Name: ${entity.name}`;
+        else if (!showPlayerIds &amp;&amp; showPlayerNames)
+            rmlElement.innerRML = `Name: ${entity.name}`;
+        else {
+            rmlElement.destroy();
+            return;
+        }
+    } else if (entity instanceof alt.Vehicle &amp;&amp; showVehicleIds)
+        rmlElement.innerRML = `ID: ${entity.id}`;
+    else {
+        rmlElement.destroy();
+        return;
+    }
+
+    // Adding the RmlElement and Entity to our map
+    nameTags.set(entity, rmlElement);
+    // Adding the RmlElement to our RmlDocument. As soon as the class &quot;hide&quot; gets removed it will get drawn
+    container.appendChild(rmlElement);
+    // We subscribe the click event so we can print out the entity coordinates if we want to
+    rmlElement.on(&quot;click&quot;, printCoordinates);
+
+    // If there is already an everyTick active we can just return, else we will start our everyTick
+    if (tickHandle !== undefined) return;
+    tickHandle = alt.everyTick(drawMarkers);
+});
+
+// Same as gameEntityCreate event, but here we will remove the nametags
+alt.on(&quot;gameEntityDestroy&quot;, (entity) =&gt; {
+    // We get the rmlElement for the entity from our map
+    const rmlElement = nameTags.get(entity);
+    // If there's nothing found, e.g. because the creation conditions didn't matched we can just return here
+    if (rmlElement === undefined) return;
+    // Removing the RmlElement from the container...
+    container.removeChild(rmlElement);
+    // ... and ending its existence.
+    rmlElement.destroy();
+
+    // If there are no more nametags left we stop the everyTick to save performance
+    if (tickHandle === undefined || nameTags.size &gt; 0) return;
+    alt.clearEveryTick(tickHandle);
+    tickHandle = undefined;
+});
+
+// We use the keyup event to enable or disable the controls
+alt.on(&quot;keyup&quot;, (key) =&gt; {
+    // If the key isn't our control key we don't need any further processing
+    if (key !== controlKey) return;
+
+    // Getting the current control state
+    const currentState = alt.rmlControlsEnabled();
+    if (currentState) {
+        // And disabling the controls if it's already enabled...
+        alt.toggleGameControls(true);
+        alt.showCursor(false);
+        alt.toggleRmlControls(false);
+    } else {
+        // Or enable if it's disabled
+        alt.toggleGameControls(false);
+        alt.showCursor(true);
+        alt.toggleRmlControls(true);
+    }
+});
+
+// This function gets called from the click event
+// The event args can be found in the rmlui documentation: https://mikke89.github.io/RmlUiDoc/pages/rml/events.html
+function printCoordinates(rmlElement, eventArgs) {
+    // Here we access the id we prior set to the rmlElement
+    const entity = alt.Entity.getByID(parseInt(rmlElement.id));
+    alt.log(&quot;Entity Position&quot;, &quot;X&quot;, entity.pos.x, &quot;Y&quot;, entity.pos.y, &quot;Z&quot;, entity.pos.z);
+}
+
+// This function gets called from our everyTick
+function drawMarkers() {
+    // We loop through all entities in our map
+    nameTags.forEach((rmlElement, entity) =&gt; {
+        // Get their position
+        const {x, y, z} = entity.pos;
+
+        // Check if they're on the screen and optionally if line of sight check is enabled if there's nothing between us
+        if (!native.isSphereVisible(x, y, z, 0.0099999998) || (checkLoS &amp;&amp; !native.hasEntityClearLosToEntity(alt.Player.local, entity, 17))) {
+            // If we can't see it and the RmlElement is already hidden we can just return
+            if (!rmlElement.shown) return;
+
+            // Else we're going to hide it by adding the css class...
+            rmlElement.addClass(&quot;hide&quot;);
+            // ... and setting our custom property
+            rmlElement.shown = false;
+        } else {
+            // Entity is visible, so we check if the RmlElement may be still hidden
+            if (!rmlElement.shown) {
+                // If yes we remove our hide class...
+                rmlElement.removeClass(&quot;hide&quot;);
+                // ... and set the shown property to true
+                rmlElement.shown = true;
+            }
+
+            // Now we get the screen coordinates of the entity
+            const {x: screenX, y: screenY} = alt.worldToScreen(x, y, z + 2);
+            // And apply it to our RmlElement
+            rmlElement.style[&quot;left&quot;] = `${screenX}px`;
+            rmlElement.style[&quot;top&quot;] = `${screenY}px`;
+
+            // If dynamic size is disabled we can simply return here ...
+            if (!dynamicSize) return;
+            // ... else we check the distance, in this example we will use a minimum size of 1dp and maximum size of 50dp
+            // which gets applied based on the distance from 1 to 100 meter. Everything below or above will either use
+            // 1 or 50 as font size.
+            const fontSizeModificator = Math.min(entity.pos.distanceTo(alt.Player.local.pos) / 100, 1);
+            const fontSize = (1 - fontSizeModificator) * 50;
+            // And after calculating it we modify the style property to use the new font size
+            rmlElement.style[&quot;font-size&quot;] = `${fontSize}dp`;
+        }
+    });
+}
+</code></pre>
+<h2 id="summary">Summary</h2>
+<p>After we have created both the <code>index.rml</code> and the <code>main.js</code> as well as added our font file, the RmlUi resource is ready to use.</p>
+<p>What is especially noticeable here is that HTML elements can be controlled directly via the client code and thus updates can take place without events.<br>
+This is one of the reasons why RmlUi can achieve a higher performance.</p>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>
