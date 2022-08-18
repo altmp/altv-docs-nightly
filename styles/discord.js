@@ -43,8 +43,8 @@ function getFilterKeywords() {
   return Object.keys(filterKeywords);
 }
 
-const filterRegex = new RegExp("(" + getFilterKeywords().join('|') + "):(\\s*\\w*(?<!\\s))", 'g');
-const filterRegexFinal = new RegExp("(" + getFilterKeywords().join('|') + "):\\s*(\\w*(?<!\\s))", 'g');
+const filterRegex = "(" + getFilterKeywords().join('|') + "):(\\s*\\w*(?<!\\s))";
+const filterRegexFinal = "(" + getFilterKeywords().join('|') + "):\\s*(\\w*(?<!\\s))";
 
 const userAgent = navigator.userAgent.toLowerCase();
 const mobileDevices = ['Android','webOS','iPhone','iPad','iPod','BlackBerry'];
@@ -145,7 +145,7 @@ function enableSearch() {
       });
 
       $("#search-query").on("beforeinput textInput", function(ev) {
-        if (ev.originalEvent.inputType !== "insertParagraph" && XRegExp.split(ev.originalEvent.data, /(?<=[^\\])/)?.pop() !== "\n") {
+        if (ev.originalEvent.inputType !== "insertParagraph" && XRegExp.split(ev.originalEvent.data, '(?<=[^\\])')?.pop() !== "\n") {
           return;
         }
         ev.preventDefault();
@@ -292,7 +292,7 @@ function handleSearchInput(el) {
   if (str.length < 3) {
     flipContents("show");
   } else if (isSearchInputAValidQuery(el)) {
-    query = XRegExp.replace(str, filterRegexFinal, "$1:$2");
+    query = XRegExp.replace(str, filterRegexFinal, "$1:$2", 'all');
     flipContents("hide");
     $("#search-results > .search-list > span").text("\"" + str + "\"");
     $("body").trigger("queryReady");
@@ -329,7 +329,7 @@ function insertSearchKeywords(el) {
       searchTerm.append(term);
     }
     return searchTerm.prop('outerHTML');
-  });
+  }, 'all');
   $(el).html(str);
 }
 
@@ -338,10 +338,10 @@ function isSearchInputAValidQuery(el) {
     return false;
   }
   const str = $(el).text();
-  if (!XRegExp.test(str, /^(?!\s).*(?<!\s)$/)) {
+  if (!XRegExp.test(str, '^(?!\s).*(?<!\s)$')) {
     return false;
   }
-  const keywords = XRegExp.match(str, filterRegex);
+  const keywords = XRegExp.match(str, filterRegex, 'all');
   for (const word of keywords) {
     if (getFilterKeywords().indexOf(word[1]) === -1 || !word[2]) {
       return false;
@@ -494,7 +494,7 @@ function convertQueryIntoWords(query) {
 }
 
 function relativeUrlToAbsoluteUrl(currentUrl, relativeUrl) {
-  var currentItems = XRegExp.split(currentUrl, /(?!\/{2})\/+(?<!\/{2})/);
+  var currentItems = XRegExp.split(currentUrl, '(?!\/{2})\/+(?<!\/{2})');
   var relativeItems = relativeUrl.split(/\/+/);
   var depth = currentItems.length - 1;
   var items = [];
