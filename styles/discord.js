@@ -29,7 +29,7 @@ var rel = $("meta[property='docfx\\:rel']").detach();
  *  Stub for DocFx script to disable code syntax highlighting
  */
 window.hljs = {
-  highlightBlock: (block) => {},
+  highlightBlock: (_block) => {},
 };
 
 const filterKeywords = {
@@ -43,8 +43,8 @@ function getFilterKeywords() {
   return Object.keys(filterKeywords);
 }
 
-const filterRegex = "(" + getFilterKeywords().join('|') + "):(\\s*\\w*(?<!\\s))";
-const filterRegexFinal = "(" + getFilterKeywords().join('|') + "):\\s*(\\w*(?<!\\s))";
+const filterRegex = '(' + getFilterKeywords().join('|') + '):(\s*\w*(?<!\s))';
+const filterRegexFinal = '(' + getFilterKeywords().join('|') + '):\s*(\w*(?<!\s))';
 
 const userAgent = navigator.userAgent.toLowerCase();
 const mobileDevices = ['Android','webOS','iPhone','iPad','iPod','BlackBerry'];
@@ -338,10 +338,10 @@ function isSearchInputAValidQuery(el) {
     return false;
   }
   const str = $(el).text();
-  if (!XRegExp.test(str, '^(?!\s).*(?<!\s)$')) {
+  if (!XRegExp.test(str, XRegExp('^(?!\s).*(?<!\s)$'))) {
     return false;
   }
-  const keywords = XRegExp.match(str, filterRegex, 'all');
+  const keywords = XRegExp.match(str, XRegExp(filterRegex), 'all');
   for (const word of keywords) {
     if (getFilterKeywords().indexOf(word[1]) === -1 || !word[2]) {
       return false;
@@ -537,6 +537,9 @@ function highlight() {
       el.html(code).addClass("hljs");
     };
     const language = Object.values(block.classList).filter(el => el.startsWith("lang-")).map(el => el.substring(5)).pop();
+    if (!language) {
+      return;
+    }
     const innerText = block.textContent;
     worker.postMessage({id: i, innerText, language});
   });
