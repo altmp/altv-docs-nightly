@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-objects">Stream Objects</a><ul class="level2 nav bs-docs-sidenav stream-objects"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#creating-the-resources">Creating the resources</a></li><li><a href="#folder-structure">Folder Structure</a></li><li><a href="#resourcecfg">resource.cfg</a></li><li><a href="#streamcfg">stream.cfg</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-objects">Stream Objects</a><ul class="level2 nav bs-docs-sidenav stream-objects"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#creating-the-resources">Creating the resources</a></li><li><a href="#folder-structure">Folder Structure</a></li><li><a href="#resourcecfg">resource.cfg</a></li><li><a href="#streamcfg">stream.cfg</a></li><li><a href="#spawning-the-object">Spawning the object</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -134,7 +134,7 @@
 
 <h1 id="stream-objects">Stream Objects</h1>
 
-<p>This tutorial will show how to add custom objects to your server. For this tutorial we will use <a href="https://www.gta5-mods.com/maps/billboard-props-pack-addon">Billboard Props Pack by War_Reporter</a>.</p>
+<p>This tutorial will show how to add custom objects to your server. For this tutorial we will use the <a href="https://github.com/deluvas1911/altv_logo/releases/download/release/altvlogo.zip">alt:V logo</a>.</p>
 <h2 id="suggested-tools">Suggested tools</h2>
 <ul>
 <li><a href="https://openiv.com/">Open IV</a></li>
@@ -157,37 +157,11 @@
 The Data Files List and examples can be found <a href="https://docs.altv.mp/gta/articles/references/data-files.html">here</a>.</p>
 </div>
 <h2 id="folder-structure"><strong>Folder Structure</strong></h2>
-<pre><code>billboards/
+<pre><code>altvlogo/
 |-&gt; stream/
 |    |-&gt; assets/
-|    |    |-&gt; block_01.ydr
-|    |    |-&gt; block_02.ydr
-|    |    |-&gt; block_03.ydr
-|    |    |-&gt; block_04.ydr
-|    |    |-&gt; block_05.ydr
-|    |    |-&gt; block_06.ydr
-|    |    |-&gt; sign_big_01.ydr
-|    |    |-&gt; sign_big_02.ydr
-|    |    |-&gt; sign_big_03.ydr
-|    |    |-&gt; sign_big_04.ydr
-|    |    |-&gt; sign_big_05.ydr
-|    |    |-&gt; sign_big_06.ydr
-|    |    |-&gt; sign_big_07.ydr
-|    |    |-&gt; sign_big_08.ydr
-|    |    |-&gt; sign_shop_a_01.ydr
-|    |    |-&gt; sign_shop_a_02.ydr
-|    |    |-&gt; sign_shop_a_03.ydr
-|    |    |-&gt; sign_shop_a_04.ydr
-|    |    |-&gt; sign_shop_b_01.ydr
-|    |    |-&gt; sign_shop_b_01+hidr.ytd
-|    |    |-&gt; sign_shop_b_02.ydr
-|    |    |-&gt; sign_shop_b_02+hidr.ytd
-|    |    |-&gt; sign_shop_b_03.ydr
-|    |    |-&gt; sign_shop_b_03+hidr.ytd
-|    |    |-&gt; sign_shop_b_04.ydr
-|    |    |-&gt; sign_shop_b_04+hidr.ytd
-|    |    \-&gt; sign_shop_c_01.ydr
-|    \-&gt; def_props.ytyp
+|    |    |-&gt; tw_altv_logo.ydr
+|    \    \-&gt; tw_altv_logo.ytyp
 |-&gt; resource.cfg
 \-&gt; stream.cfg
 </code></pre>
@@ -205,10 +179,20 @@ client-files: [
 ]
 
 meta: {
-  stream/def_props.ytyp: DLC_ITYP_REQUEST
+  stream/assets/tw_altv_logo.ytyp: DLC_ITYP_REQUEST
 }
 </code></pre>
-<p>Add the <code>billboards</code> (folder name is your resource name) for the <code>server.cfg</code> file.</p>
+<p>Add the <code>altvlogo</code> (folder name is your resource name) to the <code>server.cfg</code> file inside the resource section.</p>
+<h2 id="spawning-the-object">Spawning the object</h2>
+<p>To spawn the object now, use the following snippet:</p>
+<pre><code class="lang-js">async function spawnLogo() {
+    const modelHash = alt.hash(&quot;tw_altv_logo&quot;);
+    await alt.Utils.requestModel(modelHash);
+    native.createObject(modelHash, 0, 0, 100, false, false, false);
+}
+</code></pre>
+<p>Executing this code will result in this awesome view:</p>
+<img src="https://raw.githubusercontent.com/deluvas1911/altv_logo/main/altvlogo.png" loading="lazy">
 </article>
                     </div>
 
