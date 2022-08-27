@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#_altmp_altv_types_alt_server_Colshape_colshapeType">colshapeType</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_playersOnly">playersOnly</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_server_Colshape_deleteMeta">deleteMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_deleteMeta_1">deleteMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_getMeta">getMeta&lt;K extends string&gt;(Exclude&lt;K, never&gt;)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_getMeta_1">getMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_getMeta_2">getMeta&lt;V extends unknown&gt;(string)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_hasMeta">hasMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_hasMeta_1">hasMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_isEntityIn">isEntityIn(Entity)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_isEntityIn_1">isEntityIn(number)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_isPointIn">isPointIn(IVector3)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_setMeta">setMeta&lt;K extends string&gt;(K, InterfaceValueByKey&lt;ICustomColshapeMeta, K, unknown, void&gt;)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_setMeta_1">setMeta&lt;K extends never&gt;(K, ICustomColshapeMeta[K])</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_setMeta_2">setMeta&lt;V extends unknown, K extends string&gt;(K, InterfaceValueByKey&lt;ICustomColshapeMeta, K, V, void&gt;)</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#_altmp_altv_types_alt_server_Colshape_colshapeType">colshapeType</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_playersOnly">playersOnly</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_server_Colshape_isEntityIn">isEntityIn(Entity)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_isEntityIn_1">isEntityIn(number)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_isPointIn">isPointIn(IVector3)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_deleteMeta">deleteMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_deleteMeta_1">deleteMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_hasMeta">hasMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_hasMeta_1">hasMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_getMeta">getMeta&lt;K extends string&gt;(Exclude&lt;K, never&gt;)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_getMeta_1">getMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_getMeta_2">getMeta&lt;V extends unknown&gt;(string)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_setMeta">setMeta&lt;K extends string&gt;(K, InterfaceValueByKey&lt;ICustomColshapeMeta, K, unknown, void&gt;)</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_setMeta_1">setMeta&lt;K extends never&gt;(K, ICustomColshapeMeta[K])</a></li><li><a href="#_altmp_altv_types_alt_server_Colshape_setMeta_2">setMeta&lt;V extends unknown, K extends string&gt;(K, InterfaceValueByKey&lt;ICustomColshapeMeta, K, V, void&gt;)</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -165,9 +165,6 @@
       <a class="xref" href="alt-server.WorldObject.html#_altmp_altv_types_alt_server_WorldObject_pos">pos</a>
     </div>
     <div>
-      <span class="xref">WorldObject.refCount</span>
-    </div>
-    <div>
       <span class="xref">WorldObject.type</span>
     </div>
     <div>
@@ -175,6 +172,9 @@
     </div>
     <div>
       <span class="xref">WorldObject.destroy</span>
+    </div>
+    <div>
+      <span class="xref">WorldObject.refCount</span>
     </div>
   </div>
   <h6 data-noindex=""><strong>Module</strong>: <a class="xref" href="alt-server.html">alt-server</a></h6>
@@ -256,6 +256,165 @@
   </h3>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Colshape_isEntityIn.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Colshape.isEntityIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L2345">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Colshape_isEntityIn" data-uid="@altmp/altv-types.alt-server.Colshape.isEntityIn">isEntityIn(Entity)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public isEntityIn(entity: Entity): boolean</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-server.Entity.html">Entity</a></td>
+        <td><em>entity</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Colshape_isEntityIn_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Colshape.isEntityIn_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L2345">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Colshape_isEntityIn_1" data-uid="@altmp/altv-types.alt-server.Colshape.isEntityIn_1">isEntityIn(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public isEntityIn(entityID: number): boolean</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>entityID</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Colshape_isPointIn.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Colshape.isPointIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L2348">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Colshape_isPointIn" data-uid="@altmp/altv-types.alt-server.Colshape.isPointIn">isPointIn(IVector3)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public isPointIn(position: IVector3): boolean</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-server.IVector3.html">IVector3</a></td>
+        <td><em>position</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Colshape_deleteMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Colshape.deleteMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
@@ -327,6 +486,112 @@
           
           
         </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Colshape_hasMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Colshape.hasMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L2353">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Colshape_hasMeta" data-uid="@altmp/altv-types.alt-server.Colshape.hasMeta">hasMeta(string)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public hasMeta(key: string): boolean</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Colshape_hasMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Colshape.hasMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L2353">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_server_Colshape_hasMeta_1" data-uid="@altmp/altv-types.alt-server.Colshape.hasMeta_1">hasMeta&lt;K extends never&gt;(K)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public hasMeta&lt;K extends never&gt;(key: K): boolean</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -498,271 +763,6 @@
     <tbody>
       <tr>
         <td><span class="xref">undefined | V</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <span class="divider">|</span>
-    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Colshape_hasMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Colshape.hasMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L2353">View Source</a>
-  </span>
-  <h4 id="_altmp_altv_types_alt_server_Colshape_hasMeta" data-uid="@altmp/altv-types.alt-server.Colshape.hasMeta">hasMeta(string)
-  <span class="release-stage public"></span>
-  <span class="release-stage beta"></span>
-  <span class="release-stage alpha"></span>
-  </h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public hasMeta(key: string): boolean</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><em>key</em></td>
-        <td>
-          
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <span class="divider">|</span>
-    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Colshape_hasMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Colshape.hasMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L2353">View Source</a>
-  </span>
-  <h4 id="_altmp_altv_types_alt_server_Colshape_hasMeta_1" data-uid="@altmp/altv-types.alt-server.Colshape.hasMeta_1">hasMeta&lt;K extends never&gt;(K)
-  <span class="release-stage public"></span>
-  <span class="release-stage beta"></span>
-  <span class="release-stage alpha"></span>
-  </h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public hasMeta&lt;K extends never&gt;(key: K): boolean</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><em>key</em></td>
-        <td>
-          
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <span class="divider">|</span>
-    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Colshape_isEntityIn.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Colshape.isEntityIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L2345">View Source</a>
-  </span>
-  <h4 id="_altmp_altv_types_alt_server_Colshape_isEntityIn" data-uid="@altmp/altv-types.alt-server.Colshape.isEntityIn">isEntityIn(Entity)
-  <span class="release-stage public"></span>
-  <span class="release-stage beta"></span>
-  <span class="release-stage alpha"></span>
-  </h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public isEntityIn(entity: Entity): boolean</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="alt-server.Entity.html">Entity</a></td>
-        <td><em>entity</em></td>
-        <td>
-          
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <span class="divider">|</span>
-    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Colshape_isEntityIn_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Colshape.isEntityIn_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L2345">View Source</a>
-  </span>
-  <h4 id="_altmp_altv_types_alt_server_Colshape_isEntityIn_1" data-uid="@altmp/altv-types.alt-server.Colshape.isEntityIn_1">isEntityIn(number)
-  <span class="release-stage public"></span>
-  <span class="release-stage beta"></span>
-  <span class="release-stage alpha"></span>
-  </h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public isEntityIn(entityID: number): boolean</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">number</span></td>
-        <td><em>entityID</em></td>
-        <td>
-          
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <span class="divider">|</span>
-    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_server_Colshape_isPointIn.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-server.Colshape.isPointIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./server/index.d.ts/#L2348">View Source</a>
-  </span>
-  <h4 id="_altmp_altv_types_alt_server_Colshape_isPointIn" data-uid="@altmp/altv-types.alt-server.Colshape.isPointIn">isPointIn(IVector3)
-  <span class="release-stage public"></span>
-  <span class="release-stage beta"></span>
-  <span class="release-stage alpha"></span>
-  </h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public isPointIn(position: IVector3): boolean</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="alt-server.IVector3.html">IVector3</a></td>
-        <td><em>position</em></td>
-        <td>
-          
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_BaseObject_deleteMeta">deleteMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_deleteMeta_1">deleteMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_getMeta">getMeta&lt;K extends string&gt;(Exclude&lt;K, never&gt;)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_getMeta_1">getMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_getMeta_2">getMeta&lt;V extends unknown&gt;(string)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_hasMeta">hasMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_hasMeta_1">hasMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_setMeta">setMeta&lt;K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectMeta, K, unknown, void&gt;)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_setMeta_1">setMeta&lt;K extends never&gt;(K, ICustomBaseObjectMeta[K])</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_setMeta_2">setMeta&lt;V extends unknown, K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectMeta, K, V, void&gt;)</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_BaseObject_deleteMeta">deleteMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_deleteMeta_1">deleteMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_hasMeta">hasMeta(string)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_hasMeta_1">hasMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_getMeta">getMeta&lt;K extends string&gt;(Exclude&lt;K, never&gt;)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_getMeta_1">getMeta&lt;K extends never&gt;(K)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_getMeta_2">getMeta&lt;V extends unknown&gt;(string)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_setMeta">setMeta&lt;K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectMeta, K, unknown, void&gt;)</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_setMeta_1">setMeta&lt;K extends never&gt;(K, ICustomBaseObjectMeta[K])</a></li><li><a href="#_altmp_altv_types_alt_client_BaseObject_setMeta_2">setMeta&lt;V extends unknown, K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectMeta, K, V, void&gt;)</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -157,9 +157,6 @@
       <span class="xref">shared.BaseObject.constructor</span>
     </div>
     <div>
-      <span class="xref">shared.BaseObject.refCount</span>
-    </div>
-    <div>
       <span class="xref">shared.BaseObject.type</span>
     </div>
     <div>
@@ -167,6 +164,9 @@
     </div>
     <div>
       <span class="xref">shared.BaseObject.destroy</span>
+    </div>
+    <div>
+      <span class="xref">shared.BaseObject.refCount</span>
     </div>
   </div>
   <h6 data-noindex=""><strong>Module</strong>: <a class="xref" href="alt-client.html">alt-client</a></h6>
@@ -250,6 +250,112 @@
           
           
         </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_BaseObject_hasMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.BaseObject.hasMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L344">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_BaseObject_hasMeta" data-uid="@altmp/altv-types.alt-client.BaseObject.hasMeta">hasMeta(string)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public hasMeta(key: string): boolean</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_BaseObject_hasMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.BaseObject.hasMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L344">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_BaseObject_hasMeta_1" data-uid="@altmp/altv-types.alt-client.BaseObject.hasMeta_1">hasMeta&lt;K extends never&gt;(K)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public hasMeta&lt;K extends never&gt;(key: K): boolean</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">K</span></td>
+        <td><em>key</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -421,112 +527,6 @@
     <tbody>
       <tr>
         <td><span class="xref">undefined | V</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <span class="divider">|</span>
-    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_BaseObject_hasMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.BaseObject.hasMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L344">View Source</a>
-  </span>
-  <h4 id="_altmp_altv_types_alt_client_BaseObject_hasMeta" data-uid="@altmp/altv-types.alt-client.BaseObject.hasMeta">hasMeta(string)
-  <span class="release-stage public"></span>
-  <span class="release-stage beta"></span>
-  <span class="release-stage alpha"></span>
-  </h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public hasMeta(key: string): boolean</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><em>key</em></td>
-        <td>
-          
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <span class="divider">|</span>
-    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_BaseObject_hasMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.BaseObject.hasMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L344">View Source</a>
-  </span>
-  <h4 id="_altmp_altv_types_alt_client_BaseObject_hasMeta_1" data-uid="@altmp/altv-types.alt-client.BaseObject.hasMeta_1">hasMeta&lt;K extends never&gt;(K)
-  <span class="release-stage public"></span>
-  <span class="release-stage beta"></span>
-  <span class="release-stage alpha"></span>
-  </h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public hasMeta&lt;K extends never&gt;(key: K): boolean</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><em>key</em></td>
-        <td>
-          
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">boolean</span></td>
         <td></td>
       </tr>
     </tbody>

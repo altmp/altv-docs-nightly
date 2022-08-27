@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_LocalStorage_clear">clear()</a></li><li><a href="#_altmp_altv_types_alt_client_LocalStorage_delete">delete(string)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalStorage_deleteAll">deleteAll()</a></li><li><a href="#_altmp_altv_types_alt_client_LocalStorage_get">get(string)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalStorage_save">save()</a></li><li><a href="#_altmp_altv_types_alt_client_LocalStorage_set">set(string, any)</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_LocalStorage_get">get(string)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalStorage_delete">delete(string)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalStorage_deleteAll">deleteAll()</a></li><li><a href="#_altmp_altv_types_alt_client_LocalStorage_clear">clear()</a></li><li><a href="#_altmp_altv_types_alt_client_LocalStorage_save">save()</a></li><li><a href="#_altmp_altv_types_alt_client_LocalStorage_set">set(string, any)</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -156,23 +156,58 @@
   </h3>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
-    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalStorage_clear.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalStorage.clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalStorage_get.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalStorage.get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1960">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1945">View Source</a>
   </span>
-  <h4 id="_altmp_altv_types_alt_client_LocalStorage_clear" data-uid="@altmp/altv-types.alt-client.LocalStorage.clear">clear()
+  <h4 id="_altmp_altv_types_alt_client_LocalStorage_get" data-uid="@altmp/altv-types.alt-client.LocalStorage.get">get(string)
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Alias for <a class="xref" href="alt-client.LocalStorage.html#_altmp_altv_types_alt_client_LocalStorage_deleteAll">deleteAll()</a>.</p>
+  <div class="markdown level1 summary"><p>Gets the value from the specified key in the local storage.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public static clear(): void</code></pre>
+    <pre><code class="lang-typeScript hljs">public static get(key: string): any</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><em>key</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">any</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalStorage_delete.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalStorage.delete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -233,58 +268,23 @@
   </div>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
-    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalStorage_get.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalStorage.get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalStorage_clear.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalStorage.clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1945">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L1960">View Source</a>
   </span>
-  <h4 id="_altmp_altv_types_alt_client_LocalStorage_get" data-uid="@altmp/altv-types.alt-client.LocalStorage.get">get(string)
+  <h4 id="_altmp_altv_types_alt_client_LocalStorage_clear" data-uid="@altmp/altv-types.alt-client.LocalStorage.clear">clear()
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Gets the value from the specified key in the local storage.</p>
+  <div class="markdown level1 summary"><p>Alias for <a class="xref" href="alt-client.LocalStorage.html#_altmp_altv_types_alt_client_LocalStorage_deleteAll">deleteAll()</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-typeScript hljs">public static get(key: string): any</code></pre>
+    <pre><code class="lang-typeScript hljs">public static clear(): void</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">string</span></td>
-        <td><em>key</em></td>
-        <td>
-          
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">any</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalStorage_save.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalStorage.save%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
