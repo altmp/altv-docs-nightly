@@ -129,7 +129,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d8a70ec7801dd97c99a08077935d1e1eb5611cdb/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L10">View Source</a>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L10">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_BaseObject.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.BaseObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -159,7 +159,6 @@
     <h5>Implements</h5>
     <div><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IBaseObject.html">IBaseObject</a></div>
     <div><a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html">ISharedBaseObject</a></div>
-    <div><a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a></div>
     <div><a class="xref" href="AltV.Net.Types.INative.html">INative</a></div>
   </div>
   <div class="inheritedMembers">
@@ -181,6 +180,9 @@
     </div>
     <div>
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_ClearData">SharedBaseObject.ClearData()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_OnRemove">SharedBaseObject.OnRemove()</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">SharedBaseObject.GetMetaData(String, MValueConst)</a>
@@ -210,34 +212,16 @@
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData__1_System_String___0__">SharedBaseObject.GetMetaData&lt;T&gt;(String, T)</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_exists">SharedBaseObject.exists</a>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_CheckIfEntityExistsOrCached">SharedBaseObject.CheckIfEntityExistsOrCached()</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Exists">SharedBaseObject.Exists</a>
     </div>
     <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_refCount">SharedBaseObject.refCount</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_OnRemove">SharedBaseObject.OnRemove()</a>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Cached">SharedBaseObject.Cached</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Equals_System_Object_">SharedBaseObject.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_InternalAddRef">SharedBaseObject.InternalAddRef()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_InternalRemoveRef">SharedBaseObject.InternalRemoveRef()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_InternalAddRefIfExists">SharedBaseObject.InternalAddRefIfExists()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_AddRef">SharedBaseObject.AddRef()</a>
-    </div>
-    <div>
-      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_RemoveRef">SharedBaseObject.RemoveRef()</a>
     </div>
     <div>
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetHashCode">SharedBaseObject.GetHashCode()</a>
@@ -245,12 +229,30 @@
     <div>
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Remove">SharedBaseObject.Remove()</a>
     </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_SetCached_IntPtr_">SharedBaseObject.SetCached(IntPtr)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Client.Elements.Entities.html">AltV.Net.Client.Elements.Entities</a></h6>
   <h6><strong>Assembly</strong>: AltV.Net.Client.dll</h6>
   <h5 id="AltV_Net_Client_Elements_Entities_BaseObject_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BaseObject : SharedBaseObject, IInternalBaseObject, IBaseObject, ISharedBaseObject, IRefCountable, INative</code></pre>
+    <pre><code class="lang-csharp hljs">public class BaseObject : SharedBaseObject, IInternalBaseObject, IBaseObject, ISharedBaseObject, INative</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -259,7 +261,7 @@
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_BaseObject__ctor_AltV_Net_Client_ICore_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.BaseObject.%23ctor(AltV.Net.Client.ICore%2CIntPtr%2CAltV.Net.Elements.Entities.BaseObjectType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d8a70ec7801dd97c99a08077935d1e1eb5611cdb/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L17">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L17">View Source</a>
   </span>
   <a id="AltV_Net_Client_Elements_Entities_BaseObject__ctor_" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.#ctor*"></a>
   <h4 id="AltV_Net_Client_Elements_Entities_BaseObject__ctor_AltV_Net_Client_ICore_IntPtr_AltV_Net_Elements_Entities_BaseObjectType_" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.#ctor(AltV.Net.Client.ICore,IntPtr,AltV.Net.Elements.Entities.BaseObjectType)">BaseObject(ICore, IntPtr, BaseObjectType)</h4>
@@ -303,7 +305,7 @@
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_BaseObject_BaseObjectNativePointer.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.BaseObject.BaseObjectNativePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d8a70ec7801dd97c99a08077935d1e1eb5611cdb/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L12">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L12">View Source</a>
   </span>
   <a id="AltV_Net_Client_Elements_Entities_BaseObject_BaseObjectNativePointer_" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.BaseObjectNativePointer*"></a>
   <h4 id="AltV_Net_Client_Elements_Entities_BaseObject_BaseObjectNativePointer" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.BaseObjectNativePointer">BaseObjectNativePointer</h4>
@@ -311,7 +313,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IntPtr BaseObjectNativePointer { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override IntPtr BaseObjectNativePointer { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -335,7 +337,7 @@
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_BaseObject_Core.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.BaseObject.Core%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d8a70ec7801dd97c99a08077935d1e1eb5611cdb/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L14">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L14">View Source</a>
   </span>
   <a id="AltV_Net_Client_Elements_Entities_BaseObject_Core_" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.Core*"></a>
   <h4 id="AltV_Net_Client_Elements_Entities_BaseObject_Core" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.Core">Core</h4>
@@ -367,7 +369,7 @@
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_BaseObject_NativePointer.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.BaseObject.NativePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d8a70ec7801dd97c99a08077935d1e1eb5611cdb/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L13">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L13">View Source</a>
   </span>
   <a id="AltV_Net_Client_Elements_Entities_BaseObject_NativePointer_" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.NativePointer*"></a>
   <h4 id="AltV_Net_Client_Elements_Entities_BaseObject_NativePointer" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.NativePointer">NativePointer</h4>
@@ -399,7 +401,7 @@
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_BaseObject_Type.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.BaseObject.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d8a70ec7801dd97c99a08077935d1e1eb5611cdb/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L15">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L15">View Source</a>
   </span>
   <a id="AltV_Net_Client_Elements_Entities_BaseObject_Type_" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.Type*"></a>
   <h4 id="AltV_Net_Client_Elements_Entities_BaseObject_Type" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.Type">Type</h4>
@@ -433,7 +435,7 @@
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_BaseObject_CheckIfCallIsValid.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.BaseObject.CheckIfCallIsValid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d8a70ec7801dd97c99a08077935d1e1eb5611cdb/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L42">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L42">View Source</a>
   </span>
   <a id="AltV_Net_Client_Elements_Entities_BaseObject_CheckIfCallIsValid_" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.CheckIfCallIsValid*"></a>
   <h4 id="AltV_Net_Client_Elements_Entities_BaseObject_CheckIfCallIsValid" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.CheckIfCallIsValid">CheckIfCallIsValid()</h4>
@@ -450,7 +452,7 @@
     <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_BaseObject_CheckIfEntityExists.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.BaseObject.CheckIfEntityExists%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/d8a70ec7801dd97c99a08077935d1e1eb5611cdb/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L31">View Source</a>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Entities/BaseObject.cs/#L31">View Source</a>
   </span>
   <a id="AltV_Net_Client_Elements_Entities_BaseObject_CheckIfEntityExists_" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.CheckIfEntityExists*"></a>
   <h4 id="AltV_Net_Client_Elements_Entities_BaseObject_CheckIfEntityExists" data-uid="AltV.Net.Client.Elements.Entities.BaseObject.CheckIfEntityExists">CheckIfEntityExists()</h4>
@@ -468,9 +470,6 @@
   </div>
   <div>
       <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html">ISharedBaseObject</a>
-  </div>
-  <div>
-      <a class="xref" href="AltV.Net.Types.IRefCountable.html">IRefCountable</a>
   </div>
   <div>
       <a class="xref" href="AltV.Net.Types.INative.html">INative</a>

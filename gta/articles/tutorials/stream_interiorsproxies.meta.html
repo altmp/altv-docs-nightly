@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-interiorproxiesmeta-files">Stream Interiorproxies.meta Files</a><ul class="level2 nav bs-docs-sidenav stream-interiorproxiesmeta-files"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#adding-the-mlo-to-the-server">Adding the MLO to the Server</a></li></ul></li><li><a href="#creating-the-resource">Creating the Resource</a><ul class="level2 nav bs-docs-sidenav creating-the-resource"><li><a href="#folder-structure">Folder Structure</a></li><li><a href="#resourcecfg">resource.cfg</a></li><li><a href="#streamcfg">stream.cfg</a></li><li><a href="#interiorproxiesmeta">interiorproxies.meta</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-interiorproxiesmeta-files">Stream Interiorproxies.meta Files</a><ul class="level2 nav bs-docs-sidenav stream-interiorproxiesmeta-files"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#adding-the-mlo-to-the-server">Adding the MLO to the Server</a></li></ul></li><li><a href="#creating-the-resource">Creating the Resource</a><ul class="level2 nav bs-docs-sidenav creating-the-resource"><li><a href="#folder-structure">Folder Structure</a></li><li><a href="#resourcetoml">resource.toml</a></li><li><a href="#streamtoml">stream.toml</a></li><li><a href="#interiorproxiesmeta">interiorproxies.meta</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -154,25 +154,20 @@
 <pre><code>i-streamer/
 |-&gt; stream/
 |    |-&gt; interiorproxies.meta
-|-&gt; resource.cfg
-\-&gt; stream.cfg
+|-&gt; resource.toml
+\-&gt; stream.toml
 </code></pre>
-<h3 id="resourcecfg"><strong>resource.cfg</strong></h3>
-<pre><code>type: dlc,
-main: stream.cfg,
+<h3 id="resourcetoml"><strong>resource.toml</strong></h3>
+<pre><code>type = 'dlc'
+main: 'stream.toml'
 
-client-files: [
-  stream/*
-]
+client-files = [ 'stream/*' ]
 </code></pre>
-<h3 id="streamcfg"><strong>stream.cfg</strong></h3>
-<pre><code>files: [
-  stream/*
-]
+<h3 id="streamtoml"><strong>stream.toml</strong></h3>
+<pre><code>files = [ 'stream/*' ]
 
-meta: {
-  stream/interiorproxies.meta: INTERIOR_PROXY_ORDER_FILE
-}
+[meta]
+'stream/interiorproxies.meta' = 'INTERIOR_PROXY_ORDER_FILE'
 </code></pre>
 <h3 id="interiorproxiesmeta"><strong>interiorproxies.meta</strong></h3>
 <p>You can add every <code>milo_</code> as a <code>&lt;Item&gt;</code> into <code>proxies</code></p>
@@ -184,7 +179,7 @@ meta: {
     &lt;/proxies&gt;
 &lt;/SInteriorOrderData&gt;
 </code></pre>
-<p>Add the <code>i-streamer</code> (folder name is your resource name) for the <code>server.cfg</code> file.</p>
+<p>Add the <code>i-streamer</code> (folder name is your resource name) for the <code>server.toml</code> file.</p>
 </article>
                     </div>
 

@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#the-client-configuration">The client configuration</a><ul class="level2 nav bs-docs-sidenav the-client-configuration"><li><a href="#list-of-possible-client-configurations">List of possible client configurations</a></li><li><a href="#example-altvcfg-file">Example altv.cfg file</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#the-client-configuration">The client configuration</a><ul class="level2 nav bs-docs-sidenav the-client-configuration"><li><a href="#list-of-possible-client-configurations">List of possible client configurations</a></li><li><a href="#example-altvtoml-file">Example altv.toml file</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -134,7 +134,7 @@
 
 <h1 id="the-client-configuration">The client configuration</h1>
 
-<p>After you downloaded and installed the alt:V Multiplayer client, you can find the <code>altv.cfg</code> file in the installation folder. This file contains the settings of the client. Per default this file only contains the branch and the path to your GTA:V installation. After the first launch of alt:V there are more settings available in the <code>altv.cfg</code>. However, there are more settings that you can apply. Most of these settings can also be applied in the main menu under <code>Settings</code> but some of them need to be set up directly in this file.</p>
+<p>After you downloaded and installed the alt:V Multiplayer client, you can find the <code>altv.toml</code> file in the installation folder. This file contains the settings of the client. Per default this file only contains the branch and the path to your GTA:V installation. After the first launch of alt:V there are more settings available in the <code>altv.toml</code>. However, there are more settings that you can apply. Most of these settings can also be applied in the main menu under <code>Settings</code> but some of them need to be set up directly in this file.</p>
 <h2 id="list-of-possible-client-configurations">List of possible client configurations</h2>
 <table>
 <thead>
@@ -262,24 +262,24 @@
 </tr>
 </tbody>
 </table>
-<h2 id="example-altvcfg-file">Example altv.cfg file</h2>
-<pre><code class="lang-yaml">branch: 'release'
-debug: 'false'
-gtapath: 'C:\Program Files (x86)\Steam\steamapps\common\Grand Theft Auto V'
-lang: 'en'
-lastip: '127.0.0.1:7788'
-name: 'exampleName'
-netgraph: 'false'
-streamerMode: 'false'
-useExternalConsole: 'false'
-voiceActivationEnabled: 'false'
-voiceActivationKey: '78'
-voiceAutoInputVolume: 'true'
-voiceEnabled: 'true'
-voiceInputSensitivity: '20'
-voiceInputVolume: '100'
-voiceNoiseSuppression: 'true'
-voiceVolume: '100'
+<h2 id="example-altvtoml-file">Example altv.toml file</h2>
+<pre><code class="lang-toml">branch = &quot;release&quot;
+debug = false
+gtapath = &quot;C:\\Program Files (x86)\\Steam\\steamapps\\common\\Grand Theft Auto V&quot;
+lang = &quot;en&quot;
+lastip = &quot;127.0.0.1:7788&quot;
+name = &quot;exampleName&quot;
+netgraph = false
+streamerMode = false
+useExternalConsole = false
+voiceActivationEnabled = false
+voiceActivationKey = 78
+voiceAutoInputVolume = false
+voiceEnabled = false
+voiceInputSensitivity = 20
+voiceInputVolume = false
+voiceNoiseSuppression = false
+voiceVolume = false
 </code></pre>
 </article>
                     </div>

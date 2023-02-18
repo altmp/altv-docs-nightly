@@ -167,8 +167,8 @@
 </table>
 <h2 id="step-by-step-example">Step-by-Step Example</h2>
 <ol>
-<li>Add <code>useCdn: true</code> to <code>server.cfg</code>.</li>
-<li>Add <code>cdnUrl: &quot;http://connect.example.com&quot;</code> to <code>server.cfg</code>.</li>
+<li>Add <code>useCdn = true</code> to <code>server.toml</code>.</li>
+<li>Add <code>cdnUrl = &quot;http://connect.example.com&quot;</code> to <code>server.toml</code>.</li>
 <li>Start you server with params <code>--host 127.0.0.1 --port 7788 --justpack</code></li>
 <li>Add all generated files from the folder <code>cdn_upload</code> to your CDN Server, the files should be placed in the root of the domain. (You should be abble to access <code>connect.json</code> under <code>http://connect.example.com/connect.json</code>).</li>
 <li>For direct connect use your cdnUrl <code>connect.example.com</code></li>

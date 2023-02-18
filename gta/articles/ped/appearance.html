@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#appearance">Appearance</a><ul class="level2 nav bs-docs-sidenav appearance"><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#headblenddata">HeadBlendData</a><ul class="level4 nav bs-docs-sidenav headblenddata"><li><a href="#head-blend-palette-color">Head blend palette color</a><ul class="level5 nav bs-docs-sidenav head-blend-palette-color"><li><a href="#head-overlay">Head overlay</a></li><li><a href="#headoverlaycolor">HeadOverlayColor</a></li><li><a href="#eye-color">Eye color</a></li><li><a href="#hair-color">Hair color</a></li></ul></li></ul></li><li><a href="#face-feature">Face feature</a></li></ul></li><li><a href="#troubleshooting">Troubleshooting</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#appearance">Appearance</a><ul class="level2 nav bs-docs-sidenav appearance"><li><a href="#usage">Usage</a><ul class="level3 nav bs-docs-sidenav usage"><li><a href="#headblenddata">HeadBlendData</a><ul class="level4 nav bs-docs-sidenav headblenddata"><li><a href="#head-blend-palette-color">Head blend palette color</a><ul class="level5 nav bs-docs-sidenav head-blend-palette-color"><li><a href="#head-overlay">Head overlay</a></li><li><a href="#headoverlaycolor">HeadOverlayColor</a></li><li><a href="#eye-color">Eye color</a></li><li><a href="#hair-color">Hair color</a></li></ul></li></ul></li><li><a href="#face-feature-micro-morph">Face feature (micro morph)</a></li></ul></li><li><a href="#troubleshooting">Troubleshooting</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -269,7 +269,7 @@ player.getHeadBlendPaletteColor(id);
 </code></pre>
 </section>
 </div>
-<h3 id="face-feature">Face feature</h3>
+<h3 id="face-feature-micro-morph">Face feature (micro morph)</h3>
 <p>Index ranges from 0 to 19. e.g. nose length, chin shape.
 Scale ranges from -1.0 to 1.0.</p>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
@@ -292,7 +292,7 @@ const ped = alt.Player.local;
 const index = 0;
 const scale = 0.5;
 
-native.setPedFaceFeature(ped, index, scale);
+native.setPedMicroMorph(ped, index, scale);
 </code></pre>
 </section>
 <section id="tabpanel_bHGHmlrG6S-2_tab3-1" role="tabpanel" data-tab="tab3-1" aria-hidden="true" hidden="hidden">
@@ -365,7 +365,7 @@ import * as alt from 'alt-client';
 const ped = alt.Player.local;
 const overlayID = 0;
 
-native.getPedHeadOverlayValue(ped, overlayID);
+native.getPedHeadOverlay(ped, overlayID);
 </code></pre>
 </section>
 <section id="tabpanel_bHGHmlrG6S-3_tab4-1" role="tabpanel" data-tab="tab4-1" aria-hidden="true" hidden="hidden">
@@ -429,7 +429,7 @@ const colorType = 0;
 const colorID = 0;
 const secondColorID = 0;
 
-native.setPedHeadOverlayColor(ped, overlayID, colorType, colorID, secondColorID);
+native.setPedHeadOverlayTint(ped, overlayID, colorType, colorID, secondColorID);
 </code></pre>
 </section>
 <section id="tabpanel_bHGHmlrG6S-4_tab5-1" role="tabpanel" data-tab="tab5-1" aria-hidden="true" hidden="hidden">
@@ -470,7 +470,7 @@ import * as alt from 'alt-client';
 const ped = alt.Player.local;
 const index = 0;
 
-native.setPedEyeColor(ped, index);
+native.setHeadBlendEyeColor(ped, index);
 </code></pre>
 <p><strong>To get eye color</strong>
 <a href="https://natives.altv.mp/#/0x76BBA2CEE66D47E9">native</a></p>
@@ -479,7 +479,7 @@ import * as alt from 'alt-client';
 
 const ped = alt.Player.local;
 
-native.getPedEyeColor(ped);
+native.getHeadBlendEyeColor(ped);
 </code></pre>
 </section>
 <section id="tabpanel_bHGHmlrG6S-5_tab6-1" role="tabpanel" data-tab="tab6-1" aria-hidden="true" hidden="hidden">
@@ -525,7 +525,7 @@ const ped = alt.Player.local;
 const colorID = 0;
 const highlightColorID = 0;
 
-native.setPedHairColor(ped, colorID, highlightColorID);
+native.setPedHairTint(ped, colorID, highlightColorID);
 </code></pre>
 </section>
 <section id="tabpanel_bHGHmlrG6S-6_tab7-1" role="tabpanel" data-tab="tab7-1" aria-hidden="true" hidden="hidden">

@@ -234,12 +234,12 @@ namespace ExampleProject
 <h2 id="create-resource-1">Create resource</h2>
 <p>In the server's <code>resource</code> folder you need to create a folder, which will be a folder for your resource.</p>
 <p>Make a <code>bin</code> folder inside of your resource folder, and copy your project dll's (with NuGet generated dlls e.g. AltV.Net.dll) to this folder</p>
-<p>Finally, in the folder you should contain a config file with name <code>resource.cfg</code>.</p>
+<p>Finally, in the folder you should contain a config file with name <code>resource.toml</code>.</p>
 <h3 id="client-side">Client-side</h3>
-<p>Example <code>resource.cfg</code> for a C# client-side resource:</p>
-<pre><code class="lang-yaml">client-type: &quot;csharp&quot;,
-client-main: &quot;bin/ExampleProject.dll&quot;,
-client-files: [
+<p>Example <code>resource.toml</code> for a C# client-side resource:</p>
+<pre><code class="lang-yaml">client-type = &quot;csharp&quot;
+client-main = &quot;bin/ExampleProject.dll&quot;
+client-files = [
     &quot;bin/*&quot;
 ]
 </code></pre>
@@ -255,12 +255,12 @@ In order to do that, just combine both config examples, and change dll names.</p
 That will lead to the server-side dll being sent to client.</p>
 </div>
 <h3 id="server-side">Server-side</h3>
-<p>Example <code>resource.cfg</code> for a C# server-side resource:</p>
-<pre><code class="lang-yaml">type: &quot;csharp&quot;,
-main: &quot;bin/ExampleProject.dll&quot;
+<p>Example <code>resource.toml</code> for a C# server-side resource:</p>
+<pre><code class="lang-yaml">type = &quot;csharp&quot;
+main = &quot;bin/ExampleProject.dll&quot;
 </code></pre>
-<p>At the end you should add the resource in your <code>server.cfg</code> like this:</p>
-<pre><code class="lang-yaml">resources: [
+<p>At the end you should add the resource in your <code>server.toml</code> like this:</p>
+<pre><code class="lang-yaml">resources = [
     &quot;my-example-csharp-resource&quot;
 ]
 </code></pre>
@@ -269,13 +269,13 @@ main: &quot;bin/ExampleProject.dll&quot;
 └── csharp-module.dll
 resources/
 └── my-example-csharp-resource/
-    ├── resource.cfg
+    ├── resource.toml
     ├── ExampleProject.dll
     ├── AltV.Net.dll
     └── ... (Dependencies like &quot;AltV.Net.Async.dll&quot;, &quot;mysql.dll&quot;, if you have any)
 AltV.Net.Host.dll
 AltV.Net.Host.runtimeconfig.json
-server.cfg
+server.toml
 altv-server.exe
 </code></pre>
 <h2 id="next-steps">Next steps</h2>

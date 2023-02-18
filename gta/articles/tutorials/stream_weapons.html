@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-weapons">Stream Weapons</a><ul class="level2 nav bs-docs-sidenav stream-weapons"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#creating-the-resources">Creating the resources</a></li><li><a href="#weapons-add-on">Weapons add-on</a></li><li><a href="#folder-structure">Folder structure</a></li><li><a href="#resourcecfg">resource.cfg</a></li><li><a href="#streamcfg">stream.cfg</a></li><li><a href="#weapons-replace">Weapons replace</a></li><li><a href="#folder-structure-1">Folder structure</a></li><li><a href="#resourcecfg-1">resource.cfg</a></li><li><a href="#streamcfg-1">stream.cfg</a></li><li><a href="#edit-weapons-damages">Edit weapons damages</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-weapons">Stream Weapons</a><ul class="level2 nav bs-docs-sidenav stream-weapons"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#creating-the-resources">Creating the resources</a></li><li><a href="#weapons-add-on">Weapons add-on</a></li><li><a href="#folder-structure">Folder structure</a></li><li><a href="#resourcetoml">resource.toml</a></li><li><a href="#streamtoml">stream.toml</a></li><li><a href="#weapons-replace">Weapons replace</a></li><li><a href="#folder-structure-1">Folder structure</a></li><li><a href="#resourcetoml-1">resource.toml</a></li><li><a href="#streamtoml-1">stream.toml</a></li><li><a href="#edit-weapons-damages">Edit weapons damages</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -154,27 +154,22 @@
 │  ├─ weaponkatana.meta
 │  ├─ weaponarchetypes.meta
 │  ├─ weaponanimations.meta
-├─ resource.cfg
-├─ stream.cfg
+├─ resource.toml
+├─ stream.toml
 </code></pre>
-<h2 id="resourcecfg"><strong>resource.cfg</strong></h2>
-<pre><code>type: dlc,
-main: stream.cfg,
+<h2 id="resourcetoml"><strong>resource.toml</strong></h2>
+<pre><code>type = 'dlc'
+main = 'stream.toml'
 
-client-files: [
-  stream/*
-]
+client-files = [ 'stream/*' ]
 </code></pre>
-<h2 id="streamcfg"><strong>stream.cfg</strong></h2>
-<pre><code>files: [
-  stream/assets/*
-]
+<h2 id="streamtoml"><strong>stream.toml</strong></h2>
+<pre><code>files = [ 'stream/assets/*' ]
 
-meta: {
-	stream/weaponkatana.meta: WEAPONINFO_FILE
-	stream/weaponanimations.meta: WEAPON_ANIMATIONS_FILE
-	stream/weaponarchetypes.meta: WEAPON_METADATA_FILE
-}
+[meta]
+'stream/weaponkatana.meta' = 'WEAPONINFO_FILE'
+'stream/weaponanimations.meta' = 'WEAPON_ANIMATIONS_FILE'
+'stream/weaponarchetypes.meta' = 'WEAPON_METADATA_FILE'
 </code></pre>
 <h2 id="weapons-replace"><u>Weapons replace</u></h2>
 <h2 id="folder-structure-1">Folder structure</h2>
@@ -184,25 +179,19 @@ meta: {
 │  ├─ assets/models/
 │  │  |  ├─ w_pe_pistol.ydr
 │  │  |  ├─ w_pe_pistol.ytd
-├─ resource.cfg
-├─ stream.cfg
+├─ resource.toml
+├─ stream.toml
 </code></pre>
-<h2 id="resourcecfg-1"><strong>resource.cfg</strong></h2>
-<pre><code>type: dlc,
-main: stream.cfg,
+<h2 id="resourcetoml-1"><strong>resource.toml</strong></h2>
+<pre><code>type = 'dlc',
+main = 'stream.toml',
 
-client-files: [
-  stream/*
-]
+client-files = [ 'stream/*' ]
 </code></pre>
-<h2 id="streamcfg-1"><strong>stream.cfg</strong></h2>
-<pre><code>files: [
-  stream/*
-]
+<h2 id="streamtoml-1"><strong>stream.toml</strong></h2>
+<pre><code>files = [ 'stream/*' ]
 
-meta: {
-
-}
+[meta]
 </code></pre>
 <h2 id="edit-weapons-damages"><u>Edit weapons damages</u></h2>
 <ol>

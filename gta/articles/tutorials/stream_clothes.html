@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-clothes">Stream Clothes</a><ul class="level2 nav bs-docs-sidenav stream-clothes"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#creating-the-resources">Creating the resources</a></li><li><a href="#tool-tutorial">Tool tutorial</a></li><li><a href="#resourcecfg">resource.cfg</a></li><li><a href="#streamcfg">stream.cfg</a></li><li><a href="#folder-structure">Folder structure</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-clothes">Stream Clothes</a><ul class="level2 nav bs-docs-sidenav stream-clothes"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#creating-the-resources">Creating the resources</a></li><li><a href="#tool-tutorial">Tool tutorial</a></li><li><a href="#resourcetoml">resource.toml</a></li><li><a href="#streamtoml">stream.toml</a></li><li><a href="#folder-structure">Folder structure</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -150,7 +150,7 @@
 <li><code>Third step</code>: when you have select all clothes you want to add, just click on <code>&quot;Build Project&quot;</code>.</li>
 <li><code>Fourth step</code>: be sure that's alt:V resource is ticked, if it's not for alt:V, you can tick others options.</li>
 <li><code>Fifth step</code>: give a name to your clothes collection, and create a folder for your exported resource</li>
-<li><code>Sixth step</code>: add the resource name in your <code>server.cfg</code> and your resource folder into the <code>server resource folder</code></li>
+<li><code>Sixth step</code>: add the resource name in your <code>server.toml</code> and your resource folder into the <code>server resource folder</code></li>
 </ol>
 <p><img src="../../images/tutorials/first.png" alt="First step">
 <img src="../../images/tutorials/second.png" alt="Second step"></p>
@@ -158,22 +158,19 @@
 Tutorial clothes firstl.webp| First steps
 Tutorial_clothes_second.png| Last Steps
 </gallery>
-<h2 id="resourcecfg"><strong>resource.cfg</strong></h2>
-<pre><code>type: dlc,
-main: stream.cfg,
-client-files: [
-  stream/*
-]
+<h2 id="resourcetoml"><strong>resource.toml</strong></h2>
+<pre><code>type = 'dlc'
+main = 'stream.toml'
+client-files = [ 'stream/*' ]
 </code></pre>
-<h2 id="streamcfg"><strong>stream.cfg</strong></h2>
-<pre><code>files: [
-  stream/ped_male.rpf/*
-  stream/ped_female.rpf/*
+<h2 id="streamtoml"><strong>stream.toml</strong></h2>
+<pre><code>files = [
+  'stream/ped_male.rpf/*',
+  'stream/ped_female.rpf/*'
 ]
-meta: {
-  stream/mp_m_freemode_01_mp_m_ClothesTutorial.meta: SHOP_PED_APPAREL_META_FILE
-  stream/mp_f_freemode_01_mp_f_ClothesTutorial.meta: SHOP_PED_APPAREL_META_FILE
-}
+[meta]
+'stream/mp_m_freemode_01_mp_m_ClothesTutorial.meta' = 'SHOP_PED_APPAREL_META_FILE'
+'stream/mp_f_freemode_01_mp_f_ClothesTutorial.meta' = 'SHOP_PED_APPAREL_META_FILE'
 </code></pre>
 <h2 id="folder-structure">Folder structure</h2>
 <pre><code>clotheResource/
@@ -190,8 +187,8 @@ meta: {
 │  │  ├─ mp_f_freemode_01_mp_f_ClothesTutorial.ymt
 │  ├─ mp_m_freemode_01_mp_m_ClothesTutorial.meta
 │  ├─ mp_f_freemode_01_mp_f_ClothesTutorial.meta
-├─ resource.cfg
-├─ stream.cfg
+├─ resource.toml
+├─ stream.toml
 </code></pre>
 <p>With this tutorial you can add every clothes you want for your server, GTA5 main characters clothes will not work with this tutorial, same for NPC add-on.
 If you have any trouble with your resource, you can ask on the discord modding channel.</p>

@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-clothes-overwrite-gta-dlc">Stream Clothes (Overwrite GTA DLC)</a><ul class="level2 nav bs-docs-sidenav stream-clothes-overwrite-gta-dlc"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#creating-the-resources">Creating the resources</a></li><li><a href="#get-the-cloth-collection-name">Get the cloth collection name</a></li><li><a href="#tool-tutorial">Tool tutorial</a></li><li><a href="#resourcecfg">resource.cfg</a></li><li><a href="#streamcfg">stream.cfg</a></li><li><a href="#folder-structure">Folder structure</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-clothes-overwrite-gta-dlc">Stream Clothes (Overwrite GTA DLC)</a><ul class="level2 nav bs-docs-sidenav stream-clothes-overwrite-gta-dlc"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#creating-the-resources">Creating the resources</a></li><li><a href="#get-the-cloth-collection-name">Get the cloth collection name</a></li><li><a href="#tool-tutorial">Tool tutorial</a></li><li><a href="#resourcetoml">resource.toml</a></li><li><a href="#streamtoml">stream.toml</a></li><li><a href="#folder-structure">Folder structure</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -157,23 +157,21 @@
 <li>when you have select all clothes you want to add, just click on <code>&quot;Build Project&quot;</code>.</li>
 <li>be sure that's alt:V resource is ticked, if it's not for alt:V, you can tick others options.</li>
 <li>enter the collection name which we got before.</li>
-<li>open the stream.cfg of your generated clothes dlc and remove the <code>meta:</code> part of the file and also the 2 generated meta files in the stream folder.</li>
+<li>open the stream.toml of your generated clothes dlc and remove the <code>[meta]</code> part of the file and also the 2 generated meta files in the stream folder.</li>
 <li>in the stream folder you have to rename the <code>ped_female.rpf</code> and <code>ped_male.rpf</code> folder to <code>dlcName_female.rpf</code> and <code>dlcName_male.rpf</code> (use the correct dlc name here, e.g <code>mpsecurity_male.rpf</code>)</li>
-<li>add the resource name in your <code>server.cfg</code> and your resource folder into the <code>server resource folder</code></li>
+<li>add the resource name in your <code>server.toml</code> and your resource folder into the <code>server resource folder</code></li>
 </ol>
 <p><img src="../../images/tutorials/stream_clothes/first_overwrite.png" alt="First step">
 <img src="../../images/tutorials/stream_clothes/second_overwrite.png" alt="Second step"></p>
-<h2 id="resourcecfg"><strong>resource.cfg</strong></h2>
-<pre><code>type: dlc,
-main: stream.cfg,
-client-files: [
-  stream/*
-]
+<h2 id="resourcetoml"><strong>resource.toml</strong></h2>
+<pre><code>type = 'dlc'
+main = 'stream.toml'
+client-files = [ 'stream/*' ]
 </code></pre>
-<h2 id="streamcfg"><strong>stream.cfg</strong></h2>
-<pre><code>files: [
-  stream/mpsecurity_male.rpf/*
-  stream/mpsecurity_female.rpf/*
+<h2 id="streamtoml"><strong>stream.toml</strong></h2>
+<pre><code>files = [
+  'stream/mpsecurity_male.rpf/*'
+  'stream/mpsecurity_female.rpf/*'
 ]
 </code></pre>
 <h2 id="folder-structure">Folder structure</h2>
@@ -189,8 +187,8 @@ client-files: [
 │  │  │  ├─ jbib_000_u.ydd
 │  │  │  ├─ jbib_diff_000_a_uni.ytd
 │  │  ├─ mp_f_freemode_01_mp_f_security.ymt
-├─ resource.cfg
-├─ stream.cfg
+├─ resource.toml
+├─ stream.toml
 </code></pre>
 <p>With this tutorial you can add every clothes you want for your server, GTA5 main characters clothes will not work with this tutorial, same for NPC add-on.
 If you have any trouble with your resource, you can ask on the discord modding channel.</p>

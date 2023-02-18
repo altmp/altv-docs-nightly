@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#setting-up-an-altv-server-with-the-js-module">Setting up an alt:V server with the JS module</a><ul class="level2 nav bs-docs-sidenav setting-up-an-altv-server-with-the-js-module"><li><a href="#requirements">Requirements</a></li><li><a href="#summary">Summary</a></li><li><a href="#obtaining-the-server-files">Obtaining the server files</a></li><li><a href="#running-the-server">Running the server</a><ul class="level3 nav bs-docs-sidenav running-the-server"><li><a href="#visual-studio-code">Visual Studio Code</a></li><li><a href="#powershell">PowerShell</a></li><li><a href="#command-prompt">Command Prompt</a></li></ul></li><li><a href="#configuring-your-client-for-development">Configuring your client for development</a><ul class="level3 nav bs-docs-sidenav configuring-your-client-for-development"><li><a href="#using-branches">Using branches</a></li><li><a href="#using-debug-mode-client">Using debug mode (client)</a><ul class="level4 nav bs-docs-sidenav using-debug-mode-client"><li><a href="#using-debug-mode-server">Using debug mode (server)</a></li><li><a href="#adding-resources">Adding resources</a></li><li><a href="#typescript-video-tutorial">Typescript Video Tutorial</a></li></ul></li></ul></li><li><a href="#configuring-the-servercfg">Configuring the server.cfg</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#setting-up-an-altv-server-with-the-js-module">Setting up an alt:V server with the JS module</a><ul class="level2 nav bs-docs-sidenav setting-up-an-altv-server-with-the-js-module"><li><a href="#requirements">Requirements</a></li><li><a href="#summary">Summary</a></li><li><a href="#obtaining-the-server-files">Obtaining the server files</a></li><li><a href="#running-the-server">Running the server</a><ul class="level3 nav bs-docs-sidenav running-the-server"><li><a href="#visual-studio-code">Visual Studio Code</a></li><li><a href="#powershell">PowerShell</a></li><li><a href="#command-prompt">Command Prompt</a></li></ul></li><li><a href="#configuring-your-client-for-development">Configuring your client for development</a><ul class="level3 nav bs-docs-sidenav configuring-your-client-for-development"><li><a href="#using-branches">Using branches</a></li><li><a href="#using-debug-mode-client">Using debug mode (client)</a><ul class="level4 nav bs-docs-sidenav using-debug-mode-client"><li><a href="#using-debug-mode-server">Using debug mode (server)</a></li><li><a href="#adding-resources">Adding resources</a></li><li><a href="#typescript-video-tutorial">Typescript Video Tutorial</a></li></ul></li></ul></li><li><a href="#configuring-the-servertoml">Configuring the server.toml</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -141,7 +141,7 @@
 <li>A Code Editor (Visual Studio Code, Sublime Text etc.)</li>
 <li>Basic knowledge of command prompts</li>
 <li>VC Redist Latest Version installed</li>
-<li>Windows 10 or Linux (For running the server)</li>
+<li>Windows 10+ or Linux (For running the server)</li>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>If you are interested in learning all of the ins and outs of getting a server setup please follow this tutorial entirely.</p>
@@ -197,24 +197,24 @@ Congrats, your server is now running
 <h2 id="configuring-your-client-for-development">Configuring your client for development</h2>
 <ul>
 <li>Navigate to your root of alt:V Client</li>
-<li>View altv.cfg in your preferred editor</li>
+<li>View <code>altv.toml</code> in your preferred editor</li>
 </ul>
 <p>Now something similar to this should appear:</p>
-<pre><code class="lang-yaml">branch: 'rc'
-build: '1182'
-debug: 'true'
-gtapath: 'D:\\Program Files (x86)\\Steam\\steamapps\\common\\Grand Theft Auto V'
-ignoreLowPriorityProps: 'false'
-lang: 'en'
-lastip: ''
-name: 'YourWonderfulName'
-netgraph: 'false'
-streamerMode: 'false'
-voiceActivationEnabled: 'false'
-voiceActivationKey: '78'
-voiceEnabled: 'true'
-voiceInputSensitivity: '20'
-voiceVolume: '100'
+<pre><code class="lang-toml">branch = 'rc'
+build = 1182
+debug = true
+gtapath = 'D\\Program Files (x86)\\Steam\\steamapps\\common\\Grand Theft Auto V'
+ignoreLowPriorityProps = false
+lang = 'en'
+lastip = ''
+name = 'YourWonderfulName'
+netgraph = false
+streamerMode = false
+voiceActivationEnabled = false
+voiceActivationKey = 78
+voiceEnabled = true
+voiceInputSensitivity = 20
+voiceVolume = 100
 </code></pre>
 <h3 id="using-branches">Using branches</h3>
 <p>Set your branch based on what you've choose in <a href="#obtaining-the-server-files">Obtaining the Server Files</a>.
@@ -224,62 +224,62 @@ Branch names:</p>
 <li>release candidate</li>
 <li>dev</li>
 </ul>
-<pre><code class="lang-yaml">Release:
-branch: 'release'
+<pre><code class="lang-toml"># Release (Mostly used):
+branch = 'release'
 
-Release candidate (Mostly used):
-branch: 'rc'
+# Release candidate:
+branch = 'rc'
 
-Development:
-branch: 'dev'
+# Development:
+branch = 'dev'
 </code></pre>
 <h3 id="using-debug-mode-client">Using debug mode (client)</h3>
-<p>Edit the <code>altv.cfg</code> in the directory of your alt:V installation and add the following:</p>
-<pre><code class="lang-yaml">debug: true
+<p>Edit the <code>altv.toml</code> in the directory of your alt:V installation and add the following:</p>
+<pre><code class="lang-toml">debug = true
 </code></pre>
 <p>This allows the usage of several debug features like reconnect etc. with your F8 console.</p>
-<h2 id="configuring-the-servercfg">Configuring the <code>server.cfg</code></h2>
+<h2 id="configuring-the-servertoml">Configuring the <code>server.toml</code></h2>
 <p>Once you're done changing the stated things above, it's time to head to the server again.
-The server.cfg is where the magic happens, here you can change what is most important.</p>
+The <code>server.toml</code> is where the magic happens, here you can change what is most important.</p>
 <p>Once opened, something similar to this should appear:</p>
-<pre><code class="lang-yaml">name: 'alt:V Server'
-host: 0.0.0.0
-port: 7788
-players: 128
-#password: ultra-password
-announce: false
-#token: YOUR_TOKEN
-gamemode: Freeroam
-website: example.com
-language: en
-description: 'alt:V Sample Server'
-modules: [ js-module ]
-resources: [
+<pre><code class="lang-toml">name = 'alt:V Server'
+host = '0.0.0.0'
+port = 7788
+players = 128
+#password = ultra-password
+announce = false
+#token = YOUR_TOKEN
+gamemode = 'Freeroam'
+website = 'example.com'
+language = 'en'
+description = 'alt:V Sample Server'
+modules = [ 'js-module' ]
+resources = [
   
 ]
 </code></pre>
 <h2 id="using-debug-mode-server">Using debug mode (server)</h2>
-<p>While you are developing make sure you <strong>ENABLE</strong> the following inside the server.cfg.
+<p>While you are developing make sure you <strong>ENABLE</strong> the following inside the <code>server.toml</code>.
 Add this to your config:</p>
-<pre><code class="lang-yaml">debug: true
+<pre><code class="lang-toml">debug = true
 </code></pre>
 <p>Once enabled, you can now use several debug commands like:</p>
-<p><code>restart [RESOURCE]</code><br>
-<code>stop [RESOURCE]</code><br>
-<code>start [RESOURCE]</code><br>
-<code>reconnect</code>*<br>
+<p><code>restart [RESOURCE]</code> (server) <br>
+<code>stop [RESOURCE]</code> (server) <br>
+<code>start [RESOURCE]</code> (server) <br>
+<code>reconnect</code>* (client)<br>
 *Reconnect can cause bugs and issues, this is an experimental feature and only meant to be used in development.</p>
+<p>See <a href="https://docs.altv.mp/articles/commandlineargs.html#server-commands">server commands</a> for all server console commands, and <a href="https://docs.altv.mp/articles/console.html">client console</a> for all client console (F8) commands.</p>
 <h2 id="adding-resources">Adding resources</h2>
-<p>Adding a resource is as simple as putting the folders name inside of the resources array.
-No commas necessary - But you can add them if you want.</p>
+<p>Adding a resource is as simple as putting the folders name inside of the resources array.</p>
 <p>Right now, your resource array is empty.
 Keep in mind, as you've chosen the Example Resource Pack you've got three example resources.</p>
 <p>Load them, by simple adding the folder names*<br>
 *The name is case sensitive! - Also templating with [resourceName] isn't gonna work as seen in other multiplayer modifications.</p>
-<pre><code class="lang-yaml">resources: [
-    freeroam
-    chat
-    newResource
+<pre><code class="lang-toml">resources = [
+    'freeroam',
+    'chat',
+    'newResource'
 ]
 </code></pre>
 <h2 id="typescript-video-tutorial">Typescript Video Tutorial</h2>

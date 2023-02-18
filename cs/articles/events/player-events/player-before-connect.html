@@ -174,7 +174,7 @@ For more info see: <a href="../../getting-started/create-script.html">Create scr
 <pre><code class="lang-csharp">public class MyScript : IScript
 {
     [ScriptEvent(ScriptEventType.PlayerBeforeConnect)]
-    public string OnPlayerBeforeConnect(IPlayer player, string reason)
+    public string OnPlayerBeforeConnect(PlayerConnectionInfo connectionInfo, string reason)
     {
         // ...
         // null to allow the connection

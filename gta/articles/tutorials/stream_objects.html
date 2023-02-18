@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-objects">Stream Objects</a><ul class="level2 nav bs-docs-sidenav stream-objects"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#creating-the-resources">Creating the resources</a></li><li><a href="#folder-structure">Folder Structure</a></li><li><a href="#resourcecfg">resource.cfg</a></li><li><a href="#streamcfg">stream.cfg</a></li><li><a href="#spawning-the-object">Spawning the object</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-objects">Stream Objects</a><ul class="level2 nav bs-docs-sidenav stream-objects"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#creating-the-resources">Creating the resources</a></li><li><a href="#folder-structure">Folder Structure</a></li><li><a href="#resourcetoml">resource.toml</a></li><li><a href="#streamtoml">stream.toml</a></li><li><a href="#spawning-the-object">Spawning the object</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -135,6 +135,17 @@
 <h1 id="stream-objects">Stream Objects</h1>
 
 <p>This tutorial will show how to add custom objects to your server. For this tutorial we will use the <a href="https://github.com/deluvas1911/altv_logo/releases/download/release/altvlogo.zip">alt:V logo</a>.</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>As of the current state (alt:V 13.x) there are several conditions for the resource name which could crash the client.
+To avoid those crashes, follow those rules for naming the resource:</p>
+<ul>
+<li>All lowercase</li>
+<li>No special characters</li>
+<li>Must begin with a letter</li>
+</ul>
+<p>More information regarding this issue can be found at <a href="https://github.com/altmp/altv-issues/issues/436">GitHub issue #436</a></p>
+</div>
 <h2 id="suggested-tools">Suggested tools</h2>
 <ul>
 <li><a href="https://openiv.com/">Open IV</a></li>
@@ -149,7 +160,7 @@
 <li>Place all <code>ytyp</code> files into the folder <code>stream\</code></li>
 </ul>
 </li>
-<li>You have to specify the ytyp files in the resources stream.cfg. More information at the bottom of this article</li>
+<li>You have to specify the ytyp files in the resources stream.toml. More information at the bottom of this article</li>
 </ol>
 <div class="WARNING">
 <h5>Warning</h5>
@@ -162,27 +173,22 @@ The Data Files List and examples can be found <a href="https://docs.altv.mp/gta/
 |    |-&gt; assets/
 |    |    |-&gt; tw_altv_logo.ydr
 |    \    \-&gt; tw_altv_logo.ytyp
-|-&gt; resource.cfg
-\-&gt; stream.cfg
+|-&gt; resource.toml
+\-&gt; stream.toml
 </code></pre>
-<h2 id="resourcecfg"><strong>resource.cfg</strong></h2>
-<pre><code>type: dlc,
-main: stream.cfg,
+<h2 id="resourcetoml"><strong>resource.toml</strong></h2>
+<pre><code>type = 'dlc'
+main = 'stream.toml'
 
-client-files: [
-  stream/*
-]
+client-files = [ 'stream/*' ]
 </code></pre>
-<h2 id="streamcfg"><strong>stream.cfg</strong></h2>
-<pre><code>files: [
-  stream/assets/*
-]
+<h2 id="streamtoml"><strong>stream.toml</strong></h2>
+<pre><code>files = [ 'stream/assets/*' ]
 
-meta: {
-  stream/assets/tw_altv_logo.ytyp: DLC_ITYP_REQUEST
-}
+[meta]
+'stream/assets/tw_altv_logo.ytyp' = 'DLC_ITYP_REQUEST'
 </code></pre>
-<p>Add the <code>altvlogo</code> (folder name is your resource name) to the <code>server.cfg</code> file inside the resource section.</p>
+<p>Add the <code>altvlogo</code> (folder name is your resource name) to the <code>server.toml</code> file inside the resource section.</p>
 <h2 id="spawning-the-object">Spawning the object</h2>
 <p>To spawn the object now, use the following snippet:</p>
 <pre><code class="lang-js">async function spawnLogo() {

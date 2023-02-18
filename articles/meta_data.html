@@ -193,7 +193,10 @@ The meta is only available on the same side that it has been set and can be fetc
 <a href="#tabpanel_bHGHmlrG6S_tab1-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-0" data-tab="tab1-0" tabindex="0" aria-selected="true">JS</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_tab1-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-1" data-tab="tab1-1" tabindex="-1">C#</a>
+<a href="#tabpanel_bHGHmlrG6S_tab1-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-1" data-tab="tab1-1" tabindex="-1">TS</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tab1-2" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-2" data-tab="tab1-2" tabindex="-1">C#</a>
 </li>
 </ul>
 <section id="tabpanel_bHGHmlrG6S_tab1-0" role="tabpanel" data-tab="tab1-0">
@@ -240,6 +243,21 @@ alt.deleteMeta(&quot;metaKey&quot;);
 </code></pre>
 </section>
 <section id="tabpanel_bHGHmlrG6S_tab1-1" role="tabpanel" data-tab="tab1-1" aria-hidden="true" hidden="hidden">
+
+<p>Meta declaration in the interface (can be added to .ts or .d.ts file)</p>
+<pre><code class="lang-ts">declare module &quot;alt-shared&quot; {
+  // extending interface by interface merging
+  export interface ICustomGlobalMeta {
+    metaKey: string
+  }
+}
+</code></pre>
+<p>The usage is the same as in JS:</p>
+<p><strong>Server &amp; Client</strong></p>
+<pre><code class="lang-ts">const metaValue /* string | undefined */  = alt.getMeta(&quot;metaKey&quot;);
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_tab1-2" role="tabpanel" data-tab="tab1-2" aria-hidden="true" hidden="hidden">
 
 <p>Applying a global meta</p>
 <pre><code class="lang-cs">// Set a global meta (single-sided, cross-resource) with a given key and value
@@ -303,7 +321,10 @@ set.</p>
 <a href="#tabpanel_bHGHmlrG6S-1_tab2-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_tab2-0" data-tab="tab2-0" tabindex="0" aria-selected="true">JS</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-1_tab2-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_tab2-1" data-tab="tab2-1" tabindex="-1">C#</a>
+<a href="#tabpanel_bHGHmlrG6S-1_tab2-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_tab2-1" data-tab="tab2-1" tabindex="-1">TS</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_tab2-2" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_tab2-2" data-tab="tab2-2" tabindex="-1">C#</a>
 </li>
 </ul>
 <section id="tabpanel_bHGHmlrG6S-1_tab2-0" role="tabpanel" data-tab="tab2-0">
@@ -320,7 +341,7 @@ set.</p>
         alt.log(&quot;Meta isn't set&quot;);
     }
     // Fetch and save the value of the local meta
-    const metaValue = player.getMeta(&quot;username&quot;);
+    const metaValue = player.getLocalMeta(&quot;username&quot;);
     // Delete the meta (only available on server)
     player.deleteLocalMeta(&quot;username&quot;);
 });
@@ -362,6 +383,24 @@ set.</p>
 </section>
 <section id="tabpanel_bHGHmlrG6S-1_tab2-1" role="tabpanel" data-tab="tab2-1" aria-hidden="true" hidden="hidden">
 
+<p>Meta declaration in the interface (can be added to .ts or .d.ts file)</p>
+<pre><code class="lang-ts">declare module &quot;alt-shared&quot; {
+  // extending interface by interface merging
+  export interface ICustomPlayerLocalMeta {
+    username: string
+  }
+}
+</code></pre>
+<p>The usage is the same as in JS:</p>
+<p><strong>Server</strong></p>
+<pre><code class="lang-ts">const metaValue /* string | undefined */ = player.getLocalMeta(&quot;username&quot;);
+</code></pre>
+<p><strong>Client</strong></p>
+<pre><code class="lang-ts">const metaValue /* string | undefined */ = alt.getLocalMeta(&quot;username&quot;);
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-1_tab2-2" role="tabpanel" data-tab="tab2-2" aria-hidden="true" hidden="hidden">
+
 <p><strong>Server</strong></p>
 <p>Applying a local meta bound to a entity</p>
 <pre><code class="lang-cs">Alt.OnPlayerConnect += (player, reason) =&gt;
@@ -398,7 +437,10 @@ set.</p>
 <a href="#tabpanel_bHGHmlrG6S-2_tab3-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_tab3-0" data-tab="tab3-0" tabindex="0" aria-selected="true">JS</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-2_tab3-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_tab3-1" data-tab="tab3-1" tabindex="-1">C#</a>
+<a href="#tabpanel_bHGHmlrG6S-2_tab3-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_tab3-1" data-tab="tab3-1" tabindex="-1">TS</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_tab3-2" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_tab3-2" data-tab="tab3-2" tabindex="-1">C#</a>
 </li>
 </ul>
 <section id="tabpanel_bHGHmlrG6S-2_tab3-0" role="tabpanel" data-tab="tab3-0">
@@ -478,6 +520,27 @@ alt.deleteSyncedMeta(&quot;metaKey&quot;);
 </section>
 <section id="tabpanel_bHGHmlrG6S-2_tab3-1" role="tabpanel" data-tab="tab3-1" aria-hidden="true" hidden="hidden">
 
+<p>Meta declaration in the interface (can be added to .ts or .d.ts file)</p>
+<pre><code class="lang-ts">declare module &quot;alt-shared&quot; {
+  // extending interface by interface merging
+
+  export interface ICustomGlobalSyncedMeta {
+    globalMetaKey: string
+  }
+
+  export interface ICustomPlayerSyncedMeta {
+    playerMetaKey: string
+  }
+}
+</code></pre>
+<p>The usage is the same as in JS:</p>
+<p><strong>Server &amp; Client</strong></p>
+<pre><code class="lang-ts">const globalMetaValue /* string | undefined */ = alt.getSyncedMeta(&quot;globalMetaKey&quot;);
+const playerMetaValue /* string | undefined */ = player.getSyncedMeta(&quot;playerMetaKey&quot;);
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-2_tab3-2" role="tabpanel" data-tab="tab3-2" aria-hidden="true" hidden="hidden">
+
 <p><strong>Server</strong></p>
 <p>Applying a global meta</p>
 <pre><code class="lang-cs">Alt.OnPlayerConnect += (player, reason) =&gt;
@@ -511,7 +574,10 @@ It is basically the same as a synced meta, but only gets send to clients in the 
 <a href="#tabpanel_bHGHmlrG6S-3_tab4-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_tab4-0" data-tab="tab4-0" tabindex="0" aria-selected="true">JS</a>
 </li>
 <li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S-3_tab4-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_tab4-1" data-tab="tab4-1" tabindex="-1">C#</a>
+<a href="#tabpanel_bHGHmlrG6S-3_tab4-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_tab4-1" data-tab="tab4-1" tabindex="-1">TS</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-3_tab4-2" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_tab4-2" data-tab="tab4-2" tabindex="-1">C#</a>
 </li>
 </ul>
 <section id="tabpanel_bHGHmlrG6S-3_tab4-0" role="tabpanel" data-tab="tab4-0">
@@ -544,30 +610,47 @@ It is basically the same as a synced meta, but only gets send to clients in the 
 });
 </code></pre>
 <p><strong>Client</strong></p>
-<p>Checking if stream synced meta is set</p>
-<pre><code class="lang-js">alt.on(&quot;spawned&quot;, () =&gt; {
-    // Check if the global synced meta is set
-    if (alt.hasSyncedMeta(&quot;metaKey&quot;)) {
-        alt.log(&quot;Meta is set&quot;);
-    } else {
-        alt.log(&quot;Meta isn't set&quot;);
-    }
-    // Fetch and save the value of the meta
-    const metaValue = alt.getSyncedMeta(&quot;metaKey&quot;);
-});
-</code></pre>
-<p>Listening for stream synced meta changes</p>
-<pre><code class="lang-js">alt.on(&quot;streamSyncedMetaChange&quot;, (entity, key, oldValue, newValue) =&gt; {
-    // This event gets called when a synced meta changes which is applied to an entity  
-    // You can also check it yourself by using the entity.hasSyncedMeta(key) method
-    if (entity.hasSyncedMeta(&quot;metaKey&quot;)) {
-        const metaValue = entity.getSyncedMeta(&quot;metaKey&quot;);
+<p>Listening for stream synced meta changes (basically the same as on the server side)</p>
+<pre><code class="lang-js">alt.on(&quot;streamSyncedMetaChange&quot;, (entity, key, newValue, oldValue) =&gt; {
+    // This event gets called when a stream synced meta changes which is applied to an entity  
+    // You can also check it yourself by using the entity.hasStreamSyncedMeta(key) method
+    if (entity.hasStreamSyncedMeta(&quot;metaKey&quot;)) {
+        const metaValue = entity.getStreamSyncedMeta(&quot;metaKey&quot;);
         // &lt;Do something with the value&gt;
     }
 });
 </code></pre>
 </section>
 <section id="tabpanel_bHGHmlrG6S-3_tab4-1" role="tabpanel" data-tab="tab4-1" aria-hidden="true" hidden="hidden">
+
+<p>Meta declaration in the interface (can be added to .ts or .d.ts file)</p>
+<pre><code class="lang-ts">declare module &quot;alt-shared&quot; {
+  // extending interface by interface merging
+
+  // alt.Player and alt.Vehicle
+  export interface ICustomEntityStreamSyncedMeta {
+    entityMetaKey: string
+  }
+
+  // only alt.Player
+  export interface ICustomPlayerStreamSyncedMeta {
+    playerMetaKey: number
+  }
+
+  // only alt.Vehicle
+  export interface ICustomVehicleStreamSyncedMeta {
+    vehicleMetaKey: boolean
+  }
+}
+</code></pre>
+<p>The usage is the same as in JS:</p>
+<p><strong>Server &amp; Client</strong></p>
+<pre><code class="lang-ts">const entityMetaValue /* string | undefined */ = entity.getSyncedMeta(&quot;entityMetaKey&quot;);
+const playerMetaValue /* number | undefined */ = player.getSyncedMeta(&quot;playerMetaKey&quot;);
+const vehicleMetaValue /* boolean | undefined */ = vehicle.getSyncedMeta(&quot;vehicleMetaKey&quot;);
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-3_tab4-2" role="tabpanel" data-tab="tab4-2" aria-hidden="true" hidden="hidden">
 
 <p><strong>Server</strong></p>
 <p>Applying a stream synced meta bound to a entity</p>

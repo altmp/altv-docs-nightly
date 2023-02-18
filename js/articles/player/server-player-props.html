@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#player-properties">Player Properties</a><ul class="level2 nav bs-docs-sidenav player-properties"><li><a href="#playerarmour">player.armour</a></li><li><a href="#playerauthtoken">player.authToken</a></li><li><a href="#playercurrentweapon">player.currentWeapon</a></li><li><a href="#playercurrentweaponcomponents">player.currentWeaponComponents</a></li><li><a href="#playercurrentweapontintindex">player.currentWeaponTintIndex</a></li><li><a href="#playerdimension">player.dimension</a></li><li><a href="#playerentityaimoffset">player.entityAimOffset</a></li><li><a href="#playerentityaimingat">player.entityAimingAt</a></li><li><a href="#playerflashlightactive">player.flashlightActive</a></li><li><a href="#playerhealth">player.health</a></li><li><a href="#playerhwidexhash">player.hwidExHash</a></li><li><a href="#playerhwidhash">player.hwidHash</a></li><li><a href="#playerid">player.id</a></li><li><a href="#playerip">player.ip</a></li><li><a href="#playermaxarmour">player.maxArmour</a></li><li><a href="#playermaxhealth">player.maxHealth</a></li><li><a href="#playermodel">player.model</a></li><li><a href="#playername">player.name</a></li><li><a href="#playernetowner">player.netOwner</a></li><li><a href="#playerping">player.ping</a></li><li><a href="#playerpos">player.pos</a></li><li><a href="#playerrot">player.rot</a></li><li><a href="#playerseat">player.seat</a></li><li><a href="#playersocialid">player.socialId</a></li><li><a href="#playervalid">player.valid</a></li><li><a href="#playervehicle">player.vehicle</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#player-properties">Player Properties</a><ul class="level2 nav bs-docs-sidenav player-properties"><li><a href="#playerarmour">player.armour</a></li><li><a href="#playerauthtoken">player.authToken</a></li><li><a href="#playercurrentweapon">player.currentWeapon</a></li><li><a href="#playercurrentweaponcomponents">player.currentWeaponComponents</a></li><li><a href="#playercurrentweapontintindex">player.currentWeaponTintIndex</a></li><li><a href="#playerdimension">player.dimension</a></li><li><a href="#playerentityaimoffset">player.entityAimOffset</a></li><li><a href="#playerentityaimingat">player.entityAimingAt</a></li><li><a href="#playerflashlightactive">player.flashlightActive</a></li><li><a href="#playerhealth">player.health</a></li><li><a href="#playerhwidexhash">player.hwidExHash</a></li><li><a href="#playerhwidhash">player.hwidHash</a></li><li><a href="#playerid">player.id</a></li><li><a href="#playerip">player.ip</a></li><li><a href="#playermaxarmour">player.maxArmour</a></li><li><a href="#playermaxhealth">player.maxHealth</a></li><li><a href="#playermodel">player.model</a></li><li><a href="#playername">player.name</a></li><li><a href="#playernetowner">player.netOwner</a></li><li><a href="#playerping">player.ping</a></li><li><a href="#playerpos">player.pos</a></li><li><a href="#playerrot">player.rot</a></li><li><a href="#playerseat">player.seat</a></li><li><a href="#playersocialid">player.socialID</a></li><li><a href="#playervalid">player.valid</a></li><li><a href="#playervehicle">player.vehicle</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -344,26 +344,26 @@ player.pos = new alt.Vector3(0, 0, 0);
 </code></pre>
 <h2 id="playerseat">player.seat</h2>
 <p>Used to <strong>get</strong> the current seat that the player is in.</p>
-<pre><code class="lang-js">if (player.vehicle &amp;&amp; player.seat === -1) {
+<pre><code class="lang-js">if (player.vehicle &amp;&amp; player.seat === 1) {
     alt.log(`Player is in the driver's seat.`); // Front Left
 }
 
-if (player.vehicle &amp;&amp; player.seat === 0) {
+if (player.vehicle &amp;&amp; player.seat === 2) {
     alt.log(`Player is riding shotgun.`); // Passenger. Right side.
 }
 
-if (player.vehicle &amp;&amp; player.seat === 1) {
+if (player.vehicle &amp;&amp; player.seat === 3) {
     alt.log(`Player is behind the driver's seat.`); // Back Left
 }
 
-if (player.vehicle &amp;&amp; player.seat === 2) {
+if (player.vehicle &amp;&amp; player.seat === 4) {
     alt.log(`Player is behind the player riding shotgun.`); // Back Right
 }
 </code></pre>
-<h2 id="playersocialid">player.socialId</h2>
+<h2 id="playersocialid">player.socialID</h2>
 <p>Used to <strong>get</strong> a non-safe version of a player's current social club identification that is linked to their Rockstar account.</p>
 <p>Keep in mind that this value <strong>IS NOT SAFE</strong> do not use it for authentication. <strong>IT CAN BE SPOOFED</strong>.</p>
-<pre><code class="lang-js">const social = player.socialId;
+<pre><code class="lang-js">const social = player.socialID;
 </code></pre>
 <h2 id="playervalid">player.valid</h2>
 <p>Used to <strong>get</strong> if a player entity is still valid. This is useful when using timeouts, intervals, and handling disconnect events.</p>

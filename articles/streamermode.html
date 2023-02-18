@@ -136,7 +136,7 @@
 
 <p>The idea behind Streamer Mode is to hide selected webviews (often used for HUD and Interfaces) to recording and streaming software like OBS. The software needs to record GTA V in &quot;Game Capture&quot;-Mode, this mode doesn't record overlays.</p>
 <h2 id="how-to-activate-streamer-mode">How to activate streamer mode?</h2>
-<p>Open your alt:V folder and open the altv.cfg file with Notepad++ or Notepad and add <code>streamerMode: 'true'</code> to the end of the file. If a line with <code>streamerMode</code> already exist, modify the parameter <code>false</code> to <code>true</code>. Restart your game and now Streamer Mode is enabled.</p>
+<p>Open your alt:V folder and open the altv.toml file with Notepad++ or Notepad and add <code>streamerMode = true</code> to the end of the file. If a line with <code>streamerMode</code> already exist, modify the parameter <code>false</code> to <code>true</code>. Restart your game and now Streamer Mode is enabled.</p>
 <h2 id="how-to-script-with-streamer-mode">How to script with streamer mode?</h2>
 <p>To create a webview which isn't rendered in streamer mode, you need to set the overlay parameter from webview constructor to <code>true</code>. The default value of the overlay parameter is <code>false</code> if the argument isn't specified.</p>
 <p>Here you can see an example on how to hide a webview from streaming software in streamer mode:</p>

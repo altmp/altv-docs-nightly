@@ -1,0 +1,2157 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IHandlingData
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Interface IHandlingData
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column interface">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_Acceleration">Acceleration</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarBiasFront">AntiRollBarBiasFront</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarBiasRear">AntiRollBarBiasRear</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarForce">AntiRollBarForce</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_BrakeBiasFront">BrakeBiasFront</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_BrakeBiasRear">BrakeBiasRear</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_BrakeForce">BrakeForce</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_CamberStiffness">CamberStiffness</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_CentreOfMassOffset">CentreOfMassOffset</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_ClutchChangeRateScaleDownShift">ClutchChangeRateScaleDownShift</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_ClutchChangeRateScaleUpShift">ClutchChangeRateScaleUpShift</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_CollisionDamageMult">CollisionDamageMult</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_DamageFlags">DamageFlags</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_DeformationDamageMult">DeformationDamageMult</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_DownforceModifier">DownforceModifier</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_DriveBiasFront">DriveBiasFront</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_DriveInertia">DriveInertia</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_DriveMaxFlatVel">DriveMaxFlatVel</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_EngineDamageMult">EngineDamageMult</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_HandBrakeForce">HandBrakeForce</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_HandlingFlags">HandlingFlags</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_HandlingNameHash">HandlingNameHash</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_InertiaMultiplier">InertiaMultiplier</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_InitialDragCoeff">InitialDragCoeff</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveForce">InitialDriveForce</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveGears">InitialDriveGears</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveMaxFlatVel">InitialDriveMaxFlatVel</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_LowSpeedTractionLossMult">LowSpeedTractionLossMult</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_Mass">Mass</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_ModelFlags">ModelFlags</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_MonetaryValue">MonetaryValue</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_OilVolume">OilVolume</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_PercentSubmerged">PercentSubmerged</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_PercentSubmergedRatio">PercentSubmergedRatio</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_PetrolTankVolume">PetrolTankVolume</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_RollCentreHeightFront">RollCentreHeightFront</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_RollCentreHeightRear">RollCentreHeightRear</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistX">SeatOffsetDistX</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistY">SeatOffsetDistY</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistZ">SeatOffsetDistZ</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SteeringLock">SteeringLock</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SteeringLockRatio">SteeringLockRatio</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SuspensionBiasFront">SuspensionBiasFront</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SuspensionBiasRear">SuspensionBiasRear</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SuspensionCompDamp">SuspensionCompDamp</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SuspensionForce">SuspensionForce</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SuspensionLowerLimit">SuspensionLowerLimit</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SuspensionRaise">SuspensionRaise</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SuspensionReboundDamp">SuspensionReboundDamp</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_SuspensionUpperLimit">SuspensionUpperLimit</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_TractionBiasFront">TractionBiasFront</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_TractionBiasRear">TractionBiasRear</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveLateral">TractionCurveLateral</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveLateralRatio">TractionCurveLateralRatio</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMax">TractionCurveMax</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMaxRatio">TractionCurveMaxRatio</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMin">TractionCurveMin</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMinRatio">TractionCurveMinRatio</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_TractionLossMult">TractionLossMult</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_TractionSpringDeltaMax">TractionSpringDeltaMax</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_TractionSpringDeltaMaxRatio">TractionSpringDeltaMaxRatio</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_unkFloat1">unkFloat1</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_unkFloat2">unkFloat2</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_unkFloat4">unkFloat4</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_unkFloat5">unkFloat5</a></li><li><a href="#AltV_Net_Client_Elements_Data_IHandlingData_WeaponDamageMult">WeaponDamageMult</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Client.Elements.Data.IHandlingData">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L5">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Client_Elements_Data_IHandlingData" data-uid="AltV.Net.Client.Elements.Data.IHandlingData" class="text-break">Interface IHandlingData
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Client.Elements.Data.html">AltV.Net.Client.Elements.Data</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Client.dll</h6>
+  <h5 id="AltV_Net_Client_Elements_Data_IHandlingData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IHandlingData</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_Acceleration.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.Acceleration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L18">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_Acceleration_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.Acceleration*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_Acceleration" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.Acceleration">Acceleration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float Acceleration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarBiasFront.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.AntiRollBarBiasFront%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L55">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarBiasFront_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.AntiRollBarBiasFront*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarBiasFront" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.AntiRollBarBiasFront">AntiRollBarBiasFront</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float AntiRollBarBiasFront { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarBiasRear.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.AntiRollBarBiasRear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L56">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarBiasRear_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.AntiRollBarBiasRear*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarBiasRear" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.AntiRollBarBiasRear">AntiRollBarBiasRear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float AntiRollBarBiasRear { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarForce.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.AntiRollBarForce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L54">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarForce_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.AntiRollBarForce*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_AntiRollBarForce" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.AntiRollBarForce">AntiRollBarForce</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float AntiRollBarForce { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_BrakeBiasFront.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.BrakeBiasFront%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L28">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_BrakeBiasFront_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.BrakeBiasFront*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_BrakeBiasFront" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.BrakeBiasFront">BrakeBiasFront</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float BrakeBiasFront { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_BrakeBiasRear.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.BrakeBiasRear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L29">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_BrakeBiasRear_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.BrakeBiasRear*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_BrakeBiasRear" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.BrakeBiasRear">BrakeBiasRear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float BrakeBiasRear { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_BrakeForce.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.BrakeForce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L26">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_BrakeForce_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.BrakeForce*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_BrakeForce" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.BrakeForce">BrakeForce</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float BrakeForce { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_CamberStiffness.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.CamberStiffness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L42">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_CamberStiffness_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.CamberStiffness*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_CamberStiffness" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.CamberStiffness">CamberStiffness</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float CamberStiffness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_CentreOfMassOffset.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.CentreOfMassOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L13">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_CentreOfMassOffset_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.CentreOfMassOffset*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_CentreOfMassOffset" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.CentreOfMassOffset">CentreOfMassOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 CentreOfMassOffset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Numerics.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_ClutchChangeRateScaleDownShift.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.ClutchChangeRateScaleDownShift%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L22">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_ClutchChangeRateScaleDownShift_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.ClutchChangeRateScaleDownShift*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_ClutchChangeRateScaleDownShift" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.ClutchChangeRateScaleDownShift">ClutchChangeRateScaleDownShift</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float ClutchChangeRateScaleDownShift { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_ClutchChangeRateScaleUpShift.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.ClutchChangeRateScaleUpShift%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L21">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_ClutchChangeRateScaleUpShift_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.ClutchChangeRateScaleUpShift*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_ClutchChangeRateScaleUpShift" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.ClutchChangeRateScaleUpShift">ClutchChangeRateScaleUpShift</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float ClutchChangeRateScaleUpShift { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_CollisionDamageMult.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.CollisionDamageMult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L59">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_CollisionDamageMult_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.CollisionDamageMult*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_CollisionDamageMult" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.CollisionDamageMult">CollisionDamageMult</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float CollisionDamageMult { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_DamageFlags.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.DamageFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L72">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_DamageFlags_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DamageFlags*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_DamageFlags" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DamageFlags">DamageFlags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint DamageFlags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_DeformationDamageMult.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.DeformationDamageMult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L61">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_DeformationDamageMult_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DeformationDamageMult*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_DeformationDamageMult" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DeformationDamageMult">DeformationDamageMult</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float DeformationDamageMult { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_DownforceModifier.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.DownforceModifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L10">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_DownforceModifier_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DownforceModifier*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_DownforceModifier" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DownforceModifier">DownforceModifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float DownforceModifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_DriveBiasFront.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.DriveBiasFront%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L17">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_DriveBiasFront_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DriveBiasFront*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_DriveBiasFront" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DriveBiasFront">DriveBiasFront</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float DriveBiasFront { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_DriveInertia.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.DriveInertia%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L20">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_DriveInertia_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DriveInertia*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_DriveInertia" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DriveInertia">DriveInertia</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float DriveInertia { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_DriveMaxFlatVel.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.DriveMaxFlatVel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L24">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_DriveMaxFlatVel_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DriveMaxFlatVel*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_DriveMaxFlatVel" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.DriveMaxFlatVel">DriveMaxFlatVel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float DriveMaxFlatVel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_EngineDamageMult.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.EngineDamageMult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L62">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_EngineDamageMult_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.EngineDamageMult*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_EngineDamageMult" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.EngineDamageMult">EngineDamageMult</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float EngineDamageMult { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_HandBrakeForce.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.HandBrakeForce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L30">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_HandBrakeForce_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.HandBrakeForce*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_HandBrakeForce" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.HandBrakeForce">HandBrakeForce</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float HandBrakeForce { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_HandlingFlags.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.HandlingFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L71">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_HandlingFlags_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.HandlingFlags*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_HandlingFlags" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.HandlingFlags">HandlingFlags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint HandlingFlags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_HandlingNameHash.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.HandlingNameHash%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L7">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_HandlingNameHash_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.HandlingNameHash*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_HandlingNameHash" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.HandlingNameHash">HandlingNameHash</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint HandlingNameHash { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_InertiaMultiplier.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.InertiaMultiplier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L14">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_InertiaMultiplier_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.InertiaMultiplier*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_InertiaMultiplier" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.InertiaMultiplier">InertiaMultiplier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 InertiaMultiplier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Numerics.Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_InitialDragCoeff.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.InitialDragCoeff%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L9">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_InitialDragCoeff_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.InitialDragCoeff*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_InitialDragCoeff" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.InitialDragCoeff">InitialDragCoeff</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float InitialDragCoeff { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveForce.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.InitialDriveForce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L23">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveForce_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.InitialDriveForce*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveForce" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.InitialDriveForce">InitialDriveForce</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float InitialDriveForce { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveGears.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.InitialDriveGears%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L19">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveGears_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.InitialDriveGears*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveGears" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.InitialDriveGears">InitialDriveGears</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint InitialDriveGears { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveMaxFlatVel.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.InitialDriveMaxFlatVel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L25">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveMaxFlatVel_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.InitialDriveMaxFlatVel*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_InitialDriveMaxFlatVel" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.InitialDriveMaxFlatVel">InitialDriveMaxFlatVel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float InitialDriveMaxFlatVel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_LowSpeedTractionLossMult.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.LowSpeedTractionLossMult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L41">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_LowSpeedTractionLossMult_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.LowSpeedTractionLossMult*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_LowSpeedTractionLossMult" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.LowSpeedTractionLossMult">LowSpeedTractionLossMult</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float LowSpeedTractionLossMult { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_Mass.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.Mass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L8">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_Mass_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.Mass*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_Mass" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.Mass">Mass</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float Mass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_ModelFlags.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.ModelFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L70">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_ModelFlags_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.ModelFlags*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_ModelFlags" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.ModelFlags">ModelFlags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint ModelFlags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_MonetaryValue.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.MonetaryValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L69">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_MonetaryValue_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.MonetaryValue*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_MonetaryValue" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.MonetaryValue">MonetaryValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint MonetaryValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_OilVolume.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.OilVolume%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L64">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_OilVolume_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.OilVolume*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_OilVolume" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.OilVolume">OilVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float OilVolume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_PercentSubmerged.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.PercentSubmerged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L15">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_PercentSubmerged_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.PercentSubmerged*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_PercentSubmerged" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.PercentSubmerged">PercentSubmerged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float PercentSubmerged { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_PercentSubmergedRatio.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.PercentSubmergedRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L16">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_PercentSubmergedRatio_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.PercentSubmergedRatio*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_PercentSubmergedRatio" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.PercentSubmergedRatio">PercentSubmergedRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float PercentSubmergedRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_PetrolTankVolume.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.PetrolTankVolume%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L63">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_PetrolTankVolume_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.PetrolTankVolume*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_PetrolTankVolume" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.PetrolTankVolume">PetrolTankVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float PetrolTankVolume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_RollCentreHeightFront.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.RollCentreHeightFront%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L57">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_RollCentreHeightFront_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.RollCentreHeightFront*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_RollCentreHeightFront" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.RollCentreHeightFront">RollCentreHeightFront</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float RollCentreHeightFront { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_RollCentreHeightRear.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.RollCentreHeightRear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L58">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_RollCentreHeightRear_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.RollCentreHeightRear*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_RollCentreHeightRear" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.RollCentreHeightRear">RollCentreHeightRear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float RollCentreHeightRear { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistX.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SeatOffsetDistX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L66">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistX_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SeatOffsetDistX*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistX" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SeatOffsetDistX">SeatOffsetDistX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SeatOffsetDistX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistY.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SeatOffsetDistY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L67">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistY_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SeatOffsetDistY*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistY" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SeatOffsetDistY">SeatOffsetDistY</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SeatOffsetDistY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistZ.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SeatOffsetDistZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L68">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistZ_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SeatOffsetDistZ*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SeatOffsetDistZ" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SeatOffsetDistZ">SeatOffsetDistZ</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SeatOffsetDistZ { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SteeringLock.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SteeringLock%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L31">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SteeringLock_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SteeringLock*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SteeringLock" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SteeringLock">SteeringLock</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SteeringLock { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SteeringLockRatio.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SteeringLockRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L32">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SteeringLockRatio_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SteeringLockRatio*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SteeringLockRatio" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SteeringLockRatio">SteeringLockRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SteeringLockRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SuspensionBiasFront.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SuspensionBiasFront%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L52">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionBiasFront_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionBiasFront*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionBiasFront" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionBiasFront">SuspensionBiasFront</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SuspensionBiasFront { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SuspensionBiasRear.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SuspensionBiasRear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L53">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionBiasRear_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionBiasRear*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionBiasRear" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionBiasRear">SuspensionBiasRear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SuspensionBiasRear { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SuspensionCompDamp.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SuspensionCompDamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L47">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionCompDamp_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionCompDamp*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionCompDamp" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionCompDamp">SuspensionCompDamp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SuspensionCompDamp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SuspensionForce.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SuspensionForce%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L46">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionForce_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionForce*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionForce" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionForce">SuspensionForce</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SuspensionForce { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SuspensionLowerLimit.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SuspensionLowerLimit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L50">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionLowerLimit_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionLowerLimit*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionLowerLimit" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionLowerLimit">SuspensionLowerLimit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SuspensionLowerLimit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SuspensionRaise.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SuspensionRaise%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L51">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionRaise_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionRaise*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionRaise" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionRaise">SuspensionRaise</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SuspensionRaise { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SuspensionReboundDamp.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SuspensionReboundDamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L48">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionReboundDamp_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionReboundDamp*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionReboundDamp" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionReboundDamp">SuspensionReboundDamp</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SuspensionReboundDamp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_SuspensionUpperLimit.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.SuspensionUpperLimit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L49">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionUpperLimit_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionUpperLimit*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_SuspensionUpperLimit" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.SuspensionUpperLimit">SuspensionUpperLimit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float SuspensionUpperLimit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_TractionBiasFront.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.TractionBiasFront%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L43">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_TractionBiasFront_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionBiasFront*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_TractionBiasFront" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionBiasFront">TractionBiasFront</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TractionBiasFront { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_TractionBiasRear.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.TractionBiasRear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L44">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_TractionBiasRear_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionBiasRear*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_TractionBiasRear" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionBiasRear">TractionBiasRear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TractionBiasRear { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveLateral.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveLateral%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L37">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveLateral_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveLateral*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveLateral" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveLateral">TractionCurveLateral</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TractionCurveLateral { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveLateralRatio.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveLateralRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L38">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveLateralRatio_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveLateralRatio*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveLateralRatio" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveLateralRatio">TractionCurveLateralRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TractionCurveLateralRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMax.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L33">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMax_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMax*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMax" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMax">TractionCurveMax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TractionCurveMax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMaxRatio.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMaxRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L34">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMaxRatio_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMaxRatio*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMaxRatio" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMaxRatio">TractionCurveMaxRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TractionCurveMaxRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMin.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L35">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMin_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMin*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMin" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMin">TractionCurveMin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TractionCurveMin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMinRatio.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMinRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L36">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMinRatio_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMinRatio*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_TractionCurveMinRatio" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionCurveMinRatio">TractionCurveMinRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TractionCurveMinRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_TractionLossMult.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.TractionLossMult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L45">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_TractionLossMult_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionLossMult*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_TractionLossMult" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionLossMult">TractionLossMult</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TractionLossMult { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_TractionSpringDeltaMax.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.TractionSpringDeltaMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L39">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_TractionSpringDeltaMax_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionSpringDeltaMax*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_TractionSpringDeltaMax" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionSpringDeltaMax">TractionSpringDeltaMax</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TractionSpringDeltaMax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_TractionSpringDeltaMaxRatio.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.TractionSpringDeltaMaxRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L40">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_TractionSpringDeltaMaxRatio_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionSpringDeltaMaxRatio*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_TractionSpringDeltaMaxRatio" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.TractionSpringDeltaMaxRatio">TractionSpringDeltaMaxRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float TractionSpringDeltaMaxRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_unkFloat1.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.unkFloat1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L11">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_unkFloat1_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.unkFloat1*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_unkFloat1" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.unkFloat1">unkFloat1</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float unkFloat1 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_unkFloat2.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.unkFloat2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L12">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_unkFloat2_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.unkFloat2*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_unkFloat2" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.unkFloat2">unkFloat2</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float unkFloat2 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_unkFloat4.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.unkFloat4%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L27">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_unkFloat4_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.unkFloat4*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_unkFloat4" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.unkFloat4">unkFloat4</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float unkFloat4 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_unkFloat5.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.unkFloat5%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L65">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_unkFloat5_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.unkFloat5*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_unkFloat5" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.unkFloat5">unkFloat5</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float unkFloat5 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Data_IHandlingData_WeaponDamageMult.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Data.IHandlingData.WeaponDamageMult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/f797f12cd09089a807bda50ac605978db27ff3c7/api/AltV.Net.Client/Elements/Data/IHandlingData.cs/#L60">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Data_IHandlingData_WeaponDamageMult_" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.WeaponDamageMult*"></a>
+  <h4 id="AltV_Net_Client_Elements_Data_IHandlingData_WeaponDamageMult" data-uid="AltV.Net.Client.Elements.Data.IHandlingData.WeaponDamageMult">WeaponDamageMult</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float WeaponDamageMult { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

@@ -155,8 +155,8 @@
 │  │  ├─ yourmodelname.ymt
 │  │  ├─ yourmodelname.yft
 │  ├─ anynameofmeta.meta
-├─ resource.cfg
-├─ stream.cfg
+├─ resource.toml
+├─ stream.toml
 </code></pre>
 <p><strong>Note</strong>: You could divide metafiles and your ped models into subfolders as you wish. The only rule is to pass the right paths to metafiles and subfolders should be inside the stream folder.</p>
 <p><strong>Note</strong>: You could rename the model if you don’t want to replace others (default or DLC), just change the number on the ending of the filename.</p>
@@ -167,20 +167,17 @@
 <pre><code>    &lt;Name&gt;yourmodelname&lt;/Name&gt;
 </code></pre>
 <p><strong>Note</strong>: You can mix models in one meta file, just paste new <code>&lt;Item&gt;</code> block into <code>&lt;InitDatas&gt;</code> and change model name ( or other stuff ) in meta file.</p>
-<h2 id="resourcecfg"><strong>Resource.cfg</strong></h2>
-<pre><code>type: dlc,
-main: stream.cfg,
-client-files: [
-	stream/*
-]
+<h2 id="resourcetoml"><strong>resource.toml</strong></h2>
+<pre><code>type = 'dlc'
+main = 'stream.toml'
+
+client-files = [ 'stream/*' ]
 </code></pre>
-<h2 id="streamcfg"><strong>Stream.cfg</strong></h2>
-<pre><code>files: [
-   stream/models/*
-],
-meta: {
-   stream/anynameofmeta.meta: PED_METADATA_FILE
-}
+<h2 id="streamtoml"><strong>stream.toml</strong></h2>
+<pre><code>files = [ 'stream/models/*' ]
+
+[meta]
+'stream/anynameofmeta.meta' = 'PED_METADATA_FILE'
 </code></pre>
 </article>
                     </div>

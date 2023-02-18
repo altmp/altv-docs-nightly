@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#config-files-in-altv">Config files in alt:V</a><ul class="level2 nav bs-docs-sidenav config-files-in-altv"><li><a href="#what-are-config-files-used-for">What are config files used for</a></li><li><a href="#important-rules-about-the-config-files">Important rules about the config files</a></li><li><a href="#for-advanced-users">For advanced users</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#config-files-in-altv">Config files in alt:V</a><ul class="level2 nav bs-docs-sidenav config-files-in-altv"><li><a href="#what-are-config-files-used-for">What are config files used for</a></li><li><a href="#important-rules-about-the-config-files">Important rules about the config files</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -141,18 +141,12 @@ In a config file you specify e.g. your server name, the amount of slots, the typ
 There are several different config files in alt:V, which all have their own set of configuration options, usage and location.</p>
 <h2 id="important-rules-about-the-config-files">Important rules about the config files</h2>
 <ol>
+<li>The config is written in <a href="https://toml.io/en/">TOML format</a></li>
 <li>Every line only contains one configuration option</li>
-<li>Every configuration option is a key value pair, so it starts with the <code>key</code>, then a <code>:</code> to seperate the key and the value, and after that the <code>value</code></li>
-<li>Lines are ended with a linebreak, commas at the end of every line are optional</li>
-<li>Strings don't need to be inclosed in <code>&quot;</code> or <code>'</code>, only when they contain special characters like <code>,</code> for example</li>
+<li>Every configuration option is a key value pair, so it starts with the <code>key</code>, then a <code>=</code> to seperate the key and the value, and after that the <code>value</code></li>
 <li>Lines that start with a hashtag (<code>#</code>) are ignored and can be used for comments</li>
 <li>Empty lines are ignored</li>
 </ol>
-<h2 id="for-advanced-users">For advanced users</h2>
-<p>If you want to see for yourself how the config files get parsed or even want to use the config files that alt:V uses yourself,
-you can take a look at the <a href="https://github.com/altmp/alt-config/blob/master/alt-config.h">GitHub repository</a> for it.<br>
-The config solution alt:V uses is a single C/C++ header file, so you should keep in mind that you probably need some experience
-in the C programming language if you want to take a look at the source code of it yourself.</p>
 </article>
                     </div>
 

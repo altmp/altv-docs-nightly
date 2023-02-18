@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#your-first-resource">Your first resource</a><ul class="level2 nav bs-docs-sidenav your-first-resource"><li><a href="#general-server-structure">General server structure</a></li><li><a href="#configuring-the-resourcecfg">Configuring the resource.cfg</a></li><li><a href="#creating-serverside-code---serverjs">Creating serverside code - server.js</a></li><li><a href="#creating-clientside-code---clientjs">Creating clientside code - client.js</a></li><li><a href="#usage-with-typescript">Usage with typescript</a><ul class="level3 nav bs-docs-sidenav usage-with-typescript"><li><a href="#setup-packagejson">Setup package.json</a></li><li><a href="#installing-the-types">Installing the types</a></li><li><a href="#create-a-tsconfig-file">Create a tsconfig file</a><ul class="level4 nav bs-docs-sidenav create-a-tsconfig-file"><li><a href="#word-of-advice">Word of advice</a></li></ul></li></ul></li><li><a href="#final-words">Final Words</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#your-first-resource">Your first resource</a><ul class="level2 nav bs-docs-sidenav your-first-resource"><li><a href="#general-server-structure">General server structure</a></li><li><a href="#configuring-the-resourcetoml">Configuring the resource.toml</a></li><li><a href="#creating-serverside-code---serverjs">Creating serverside code - server.js</a></li><li><a href="#creating-clientside-code---clientjs">Creating clientside code - client.js</a></li><li><a href="#usage-with-typescript">Usage with typescript</a><ul class="level3 nav bs-docs-sidenav usage-with-typescript"><li><a href="#setup-packagejson">Setup package.json</a></li><li><a href="#installing-the-types">Installing the types</a></li><li><a href="#create-a-tsconfig-file">Create a tsconfig file</a><ul class="level4 nav bs-docs-sidenav create-a-tsconfig-file"><li><a href="#word-of-advice">Word of advice</a></li></ul></li></ul></li><li><a href="#final-words">Final Words</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -148,7 +148,7 @@
     ├── example/
 ├── altv-server.exe
 ├── libnode.dll
-├── server.cfg
+├── server.toml
 </code></pre>
 <p>Let's create an example resource.</p>
 <pre><code>This is the name of your resource:
@@ -161,18 +161,18 @@ Here go the Server-side Files:
 example/server/
 
 Here go the configuration &amp; information:
-example/resource.cfg
+example/resource.toml
 </code></pre>
-<h2 id="configuring-the-resourcecfg">Configuring the <code>resource.cfg</code></h2>
-<p>When you create a resource.cfg, it should look like something similar to this:</p>
-<pre><code class="lang-yaml">type: js,
-main: server/server.js,
-client-main: client/client.js,
-client-files: [
-    client/*
-],
-deps: [ 
-    chat
+<h2 id="configuring-the-resourcetoml">Configuring the <code>resource.toml</code></h2>
+<p>When you create a resource.toml, it should look like something similar to this:</p>
+<pre><code class="lang-toml">type = &quot;js&quot;
+main = &quot;server/server.js&quot;
+client-main = &quot;client/client.js&quot;
+client-files = [
+    &quot;client/*&quot;
+]
+deps = [ 
+    &quot;chat&quot;
 ]
 </code></pre>
 <p><strong>deps</strong> Allows you to require other resources, if they aren't found your resource will fail to load!</p>
@@ -186,7 +186,9 @@ deps: [
 <p>Creating Server-side Code - server.js
 We're going to add <strong>chat</strong> as a dependency to our resource.
 Then we're going to import 'alt' and 'chat'.</p>
-<pre><code class="lang-js">import * as alt from 'alt-server';
+<pre><code class="lang-js">// alt:V built-in module that provides server-side API.
+import * as alt from 'alt-server';
+// Your chat resource module.
 import * as chat from 'chat';
 
 console.log('==&gt; Your Resource Has Loaded! Horray!');
@@ -202,8 +204,8 @@ alt.on('playerConnect', (player) =&gt; {
     // Sets the player's model.
     player.model = 'mp_m_freemode_01';
 
-    // Spawns the player at coordinates x, y, z, with a delay of 1000 Milliseconds.
-    player.spawn(813, -279, 66, 1000);
+    // Spawns the player at coordinates x, y, z.
+    player.spawn(813, -279, 66);
 
     // Emit to the player passed, the event name, the argument to send.
     alt.emitClient(player, 'Server:Log', 'hello', 'world');
@@ -217,7 +219,9 @@ Emits an event to clientside</p>
 <p>See the clientside section down below to see how to intercept the event on clientside.</p>
 <h2 id="creating-clientside-code---clientjs">Creating clientside code - <code>client.js</code></h2>
 <p>We're going to import two essential alt:V dependencies: <strong>natives</strong> and <strong>alt</strong></p>
-<pre><code class="lang-js">import * as alt from 'alt-client';
+<pre><code class="lang-js">// alt:V built-in module that provides client-side API.
+import * as alt from 'alt-client';
+// alt:V built-in module that provides natives API (functions from GTA V).
 import * as native from 'natives';
 
 alt.log('Client-side has loaded!');
@@ -242,12 +246,12 @@ npm init
 yarn init
 </code></pre>
 <p>After following the next wizard, open the package.json with a text editor and add the following entry:</p>
-<pre><code class="lang-yaml">{
+<pre><code class="lang-not_json">{
     # Here are the values you provided in the assistent
     &quot;name&quot;: &quot;altv-client&quot;,
     ...
     # Add this line on the bottom
-    &quot;type: module
+    &quot;type&quot;: module
 }
 </code></pre>
 <h3 id="installing-the-types">Installing the types</h3>
@@ -273,10 +277,6 @@ yarn init
 </tr>
 <tr>
 <td>@altv/types-webview</td>
-<td>Client</td>
-</tr>
-<tr>
-<td>@altv/types-worker</td>
 <td>Client</td>
 </tr>
 <tr>
@@ -331,14 +331,8 @@ in the <a href="https://www.typescriptlang.org/docs/handbook/tsconfig-json.html"
     # Here you can set the output folder where the javascript files will be generated
     &quot;outDir&quot;: &quot;./Dist/&quot;,
 
-    # Here you can add your type files
-    # Depending on your IDE you can also set &quot;typeRoots&quot;: [&quot;node_modules/@altv&quot;] instead the single paths
-    &quot;paths&quot;: {
-      &quot;natives&quot;: [ &quot;node_modules/@altv/types-natives&quot; ],
-      &quot;alt-client&quot;: [ &quot;node_modules/@altv/types-client&quot; ],
-      &quot;alt-shared&quot;: [ &quot;node_modules/@altv/types-shared&quot; ],
-      &quot;alt-worker&quot;: [ &quot;node_modules/@altv/types-worker&quot;]
-    }
+    # Here you specify the TypeScript (IDE) where the alt:V types are located
+    &quot;typeRoots&quot;: [&quot;./node_modules/@altv&quot;]
   },
   &quot;compileOnSave&quot;: true,
   &quot;include&quot;: [
@@ -356,7 +350,7 @@ Followed by setting up a whole server with basic fundamentals!</p>
 <p>Keep in mind that...</p>
 <ul>
 <li>alt:V uses ES6 modules</li>
-<li>the server does not automatically update</li>
+<li>the server does not automatically update, you can use something like <a href="https://github.com/Stuyk/altv-pkg">altv-pkg</a> (unofficial) to easily update server files</li>
 </ul>
 </article>
                     </div>

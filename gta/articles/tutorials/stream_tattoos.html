@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-tattoos">Stream Tattoos</a><ul class="level2 nav bs-docs-sidenav stream-tattoos"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#customtattoos_overlaysxml">customtattoos_overlays.xml</a></li><li><a href="#shop_tattoometa">shop_tattoo.meta</a></li><li><a href="#zonenames">Zonenames</a></li><li><a href="#efacing">eFacing</a></li><li><a href="#updategroup">updateGroup</a></li><li><a href="#important-for-the-ytd-files">Important for the ytd files</a></li><li><a href="#resourcecfg">resource.cfg</a></li><li><a href="#streamcfg">stream.cfg</a></li></ul></li><li><a href="#final-touch">Final touch</a></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#stream-tattoos">Stream Tattoos</a><ul class="level2 nav bs-docs-sidenav stream-tattoos"><li><a href="#suggested-tools">Suggested tools</a></li><li><a href="#customtattoos_overlaysxml">customtattoos_overlays.xml</a></li><li><a href="#shop_tattoometa">shop_tattoo.meta</a></li><li><a href="#zonenames">Zonenames</a></li><li><a href="#efacing">eFacing</a></li><li><a href="#updategroup">updateGroup</a></li><li><a href="#important-for-the-ytd-files">Important for the ytd files</a></li><li><a href="#resourcetoml">resource.toml</a></li><li><a href="#streamtoml">stream.toml</a></li></ul></li><li><a href="#final-touch">Final touch</a></li></ul></div>
                             </div>
 
                             
@@ -187,26 +187,21 @@
 <li>Image needs to be 512x512</li>
 <li>Image name needs to match the ytd file name</li>
 </ol>
-<h2 id="resourcecfg"><strong>resource.cfg</strong></h2>
-<pre><code>type: dlc,
-main: stream.cfg,
+<h2 id="resourcetoml"><strong>resource.toml</strong></h2>
+<pre><code>type = 'dlc'
+main = 'stream.toml'
 
-client-files: [
-  stream/*
-]
+client-files = [ 'stream/*' ]
 </code></pre>
-<h2 id="streamcfg"><strong>stream.cfg</strong></h2>
-<pre><code>files: [
-  stream/assets/*
-]
+<h2 id="streamtoml"><strong>stream.toml</strong></h2>
+<pre><code>files = [ 'stream/assets/*' ]
 
-meta: {
-    stream/customtattoos_overlays.xml: PED_OVERLAY_FILE
-    stream/shop_tattoo.meta: TATTOO_SHOP_DLC_FILE
-}
+[meta]
+'stream/customtattoos_overlays.xml' = 'PED_OVERLAY_FILE'
+'stream/shop_tattoo.meta' = 'TATTOO_SHOP_DLC_FILE'
 </code></pre>
 <h1 id="final-touch"><strong>Final touch</strong></h1>
-<p>Add the <code>custom_tattoos</code> to the resource list inside the <code>server.cfg</code> file.<ref>custom_tattoos stands for the resource name which is represented by your folder name.</ref><br><br>
+<p>Add the <code>custom_tattoos</code> to the resource list inside the <code>server.toml</code> file.<ref>custom_tattoos stands for the resource name which is represented by your folder name.</ref><br><br>
 Resource names <strong>aren't</strong> case sensitive!</p>
 </article>
                     </div>

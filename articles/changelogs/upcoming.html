@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>13.0-Release </title>
+    <title>14.0-Release </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="13.0-Release ">
+    <meta name="title" content="14.0-Release ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#130-release">13.0-Release</a><ul class="level2 nav bs-docs-sidenav 130-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#fixed-1">Fixed</a></li><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-2">Breaking changes</a></li></ul></li><li><a href="#c-server-module">C# Server Module</a><ul class="level3 nav bs-docs-sidenav c-server-module"><li><a href="#breaking-changes-3">Breaking changes</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#140-release">14.0-Release</a><ul class="level2 nav bs-docs-sidenav 140-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#added-2">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,66 +132,61 @@
                                     </ul>
                                 </span>
 
-<h1 id="130-release">13.0-Release</h1>
+<h1 id="140-release">14.0-Release</h1>
 
 <div class="WARNING">
 <h5>Warning</h5>
 <p>This update isn't released yet.</p>
 </div>
 <h2 id="client">Client</h2>
-<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- some natives got renamed
-</code></pre>
-</div>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- weapondata playerDamageModifier getter &amp; setter
-- isPointOnScreen method
-- vehicle engineOn getter
-- localplayer getWeaponAmmo, weapons, getWeaponComponents getter
-- localplayer hasWeapon method
-- cef getEventListeners method
-- few new natives
-- logDebug to prints custom log if client is in debugmode
-- Object api
-- increased weapon component pool
-- weapon shoot event
+<pre><code class="lang-yaml">- Render RMLUI under CEF
+- Updated RMLUI to 5.0
+- RMLUI antialiasing
+- RMLUI fallback font
+- getPedBonePos method
+- Side Mouse buttons for voice keybinding
+- Display downloadspeed while downloading ressources
+- Server Permission translations
+- submit nickname on first start by pressing enter
+- adaptivity for client console layout
+- cef support while pause menu ped is active
+- downloadspeed setting
+- Updated cef to v103
+- general new UI
+- clear console command
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Connect to server via ipv6 adress
-- resource deps with subfolder clientside
-- memorybuffer method
-- playermodel getter returned new value with a delay
-- clear focus data didn't reset on disconnect
+<pre><code class="lang-yaml">- Disconnection modal displayed twice after reconnect
+- The Win key got blocked by active webview in the game
+- Ipv6 support
+- wrong menu after connect rejection
+- webview freezed on FileDialog
+- cursor type didnt reset on webview destroy
+- crashdump location folder
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
-<h3 id="fixed-1">Fixed</h3>
+<h3 id="added-1">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Master server used default interface even if bound to different ip
-- getServerConfig() does not return variable values properly that start with numeric characters
-</code></pre>
-</div>
-<h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- attachTo now takes boneid instead of boneindex
+<pre><code class="lang-yaml">- &quot;all&quot; as setting language
 </code></pre>
 </div>
 <h2 id="js-module">JS Module</h2>
-<h3 id="breaking-changes-2"><span style="color: red;">Breaking changes</span></h3>
+<h3 id="added-2">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- player, blips, vehicles all getter are readonly now (server &amp; client)
-- emitClient &amp; emitClientRaw with null, use emitAllClients &amp; emitAllClientsRaw instead
+<pre><code class="lang-yaml">- (server) Display source path on deprecated methods usage
+- (Server) Automatically fix paths with special characters
+- (Server) Updated nodeJS to 18.13.1
+- (Client) Updated v8 to 10.2
 </code></pre>
 </div>
-<h2 id="c-server-module">C# Server Module</h2>
-<h3 id="breaking-changes-3"><span style="color: red;">Breaking changes</span></h3>
+<h3 id="fixed-1">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- IPlayer DiscordId changed type from string to long
-- IConnectionInfo DiscordUserId changed type from string to long
+<pre><code class="lang-yaml">- (client) webview, audio, websocket &amp; rml geteventhandler returned removed ones
 </code></pre>
 </div>
 </article>

@@ -252,26 +252,21 @@
 |    |-&gt; vb_03_strm_0.ymap
 |    |-&gt; vb_occl_01.ymap
 |    \-&gt; vespucci_burgershot_milo_.ymap
-|-&gt; resource.cfg
-\-&gt; stream.cfg
+|-&gt; resource.toml
+\-&gt; stream.toml
 </code></pre>
-<h2 id="resourcecfg"><strong>resource.cfg</strong></h2>
-<pre><code>type: dlc,
-main: stream.cfg,
+<h2 id="resourcetoml"><strong>resource.toml</strong></h2>
+<pre><code>type = 'dlc'
+main = 'stream.toml'
 
-client-files: [
-  stream/*
-]
+client-files = [ 'stream/*' ]
 </code></pre>
-<h2 id="streamcfg"><strong>stream.cfg</strong></h2>
-<pre><code>files: [
-  stream/*
-]
+<h2 id="streamtoml"><strong>stream.toml</strong></h2>
+<pre><code>files = [ 'stream/*' ]
 
-meta: {
-}
+[meta]
 </code></pre>
-<p>Add the <code>burgershot</code> (folder name is your resource name) for the <code>server.cfg</code> file.</p>
+<p>Add the <code>burgershot</code> (folder name is your resource name) for the <code>server.toml</code> file.</p>
 </article>
                     </div>
 

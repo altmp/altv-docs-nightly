@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>The stream.cfg configuration file </title>
+    <title>The stream.toml configuration file </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="The stream.cfg configuration file ">
+    <meta name="title" content="The stream.toml configuration file ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -134,25 +134,25 @@
                                     </ul>
                                 </span>
 
-<h1 id="the-streamcfg-configuration-file">The <code>stream.cfg</code> configuration file</h1>
+<h1 id="the-streamtoml-configuration-file">The <code>stream.toml</code> configuration file</h1>
 
-<p>The <code>stream.cfg</code> configuration file is needed for every dlc resource, e.g. a new vehicle. It has some configuration options like the GXT values and meta files.</p>
-<p>Here is a list of all configuration options for the <code>stream.cfg</code> and what they are used for:</p>
-<pre><code class="lang-yaml"># An array containing all files that should be loaded for this dlc
-files: [
+<p>The <code>stream.toml</code> configuration file is needed for every dlc resource, e.g. a new vehicle. It has some configuration options like the GXT values and meta files.</p>
+<p>Here is a list of all configuration options for the <code>stream.toml</code> and what they are used for:</p>
+<pre><code class="lang-toml"># An array containing all files that should be loaded for this dlc
+files = [
     # You can also use glob patterns to give access to a whole directory
     &quot;stream/assets/*&quot;
 ]
 # The meta files your dlc uses
-meta: {
-    &quot;stream/carcols.meta&quot;: CARCOLS_FILE,
-    &quot;stream/vehicles.meta&quot;: VEHICLE_METADATA_FILE,
-    &quot;stream/handling.meta&quot;: HANDLING_FILE
-}
+[meta]
+&quot;stream/carcols.meta&quot; = &quot;CARCOLS_FILE&quot;
+&quot;stream/vehicles.meta&quot; = &quot;VEHICLE_METADATA_FILE&quot;
+&quot;stream/handling.meta&quot; = &quot;HANDLING_FILE&quot;
+
 # The GXT entries for your dlc
-gxt: {
-    &quot;myveh&quot;: &quot;My vehicle&quot;
-}
+[gxt]
+&quot;myveh&quot; = &quot;My vehicle&quot;
+
 </code></pre>
 </article>
                     </div>

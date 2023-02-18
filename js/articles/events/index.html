@@ -201,8 +201,7 @@ Clients may only communicate with WebViews and the server.</p>
 </tbody>
 </table>
 <h2 id="server-to-client">Server to client</h2>
-<p>The server may only emit data to the client-side with <code>emitClient</code> or <code>emitClientRaw</code>, which requires a Player.
-However, a player can also be substituted for <code>null</code> which works the same way as <code>alt.emitAllClients</code> by emitting it to all clients.</p>
+<p>The server may only emit data to the client-side with <code>emitClient</code> or <code>emitClientRaw</code>, which requires a Player.</p>
 <p><code>emitClientRaw</code> and <code>emitAllClientsRaw</code> are used for big data and are faster than <code>emitClient</code> or <code>emitAllClients</code>.</p>
 <div class="tabGroup" id="tabgroup_bHGHmlrG6S">
 <ul role="tablist">
@@ -226,7 +225,6 @@ However, a player can also be substituted for <code>null</code> which works the 
     alt.emitClient(player, 'sayHello'); // Send an event to a specific player
 
     // Send an event to all players
-    alt.emitClient(null, 'sayHello');
     alt.emitAllClients('sayHello');
 });
 </code></pre>
@@ -381,7 +379,8 @@ function customEventFunction() {
 </section>
 </div>
 <h2 id="raw-events">Raw Events</h2>
-<p>Raw events serialize the values to their raw byte buffer representation instead of converting them to an intermediate value, because of this the raw events can serialize and send big objects / arrays a lot faster than the normal events, BUT the downside is that this only works when both sides are using JavaScript</p>
+<p>Raw events serialize the values to their raw byte buffer representation instead of converting them to an intermediate value, because of this the raw events can serialize and send big objects / arrays a lot faster than the normal events, BUT the downside is that this only works when both sides are using JavaScript.</p>
+<p>Think of them as &quot;native&quot; JavaScript events, they can send almost any JS built-in data structure, such as <code>Set</code>, <code>Map</code>, <code>Date</code>, etc. and without limits (for example, BigInt of any size).</p>
 <div class="CAUTION">
 <h5>Caution</h5>
 <p><code>alt.emitServerRaw</code> only works if the server is using javascript.</p>

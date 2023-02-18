@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#resources">Resources</a></li><li><a href="#resourcecfg">resource.cfg</a></li><li><a href="#types">Types</a><ul class="level2 nav bs-docs-sidenav types"><li><a href="#js">js</a></li><li><a href="#csharp">csharp</a></li><li><a href="#dlc">dlc</a></li><li><a href="#asset-pack">asset-pack</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#resources">Resources</a></li><li><a href="#resourcetoml">resource.toml</a></li><li><a href="#types">Types</a><ul class="level2 nav bs-docs-sidenav types"><li><a href="#js">js</a></li><li><a href="#csharp">csharp</a></li><li><a href="#dlc">dlc</a></li><li><a href="#asset-pack">asset-pack</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -136,13 +136,13 @@
 
 <p>Resources are one of the main parts of the alt:V server. They handle the data and gamescripts for server- and clientside used by the alt:V server.<br>
 Resources a represented as a subfolder of the <code>resources/</code> folder in the alt:V server root.</p>
-<h1 id="resourcecfg">resource.cfg</h1>
-<p>A resource (folder) is required to contain at minimum a <code>resource.cfg</code> configuration file. Depending on which resource type you are using, the properties you specify in the config file may differ between each other.<br>
+<h1 id="resourcetoml">resource.toml</h1>
+<p>A resource (folder) is required to contain at minimum a <code>resource.toml</code> configuration file. Depending on which resource type you are using, the properties you specify in the config file may differ between each other.<br>
 A resource has a folder structure like this:</p>
 <div class="nohljsln">
 <pre><code>resources/
   [RESOURCE_NAME]/
-    resource.cfg
+    resource.toml
 </code></pre>
 </div>
 <p>Keep in mind that this is only the minimum requirement for a resource to work. Each type has custom specifications.</p>
@@ -155,8 +155,8 @@ For more information see: <a href="../js/articles/index.html">Getting Started</a
 <p>This resource type is providing the ability to write gamescript in C# on serverside and JavaScript on clientside.
 For more information see: <a href="../cs/articles/index.html">Getting Started</a></p>
 <h2 id="dlc">dlc</h2>
-<p>This resource type is for providing modded content (eg Vehicles, MLOs, Clothes) to the client. You need a <code>stream.cfg</code> to get this type to work.</p>
-<p>stream.cfg</p>
+<p>This resource type is for providing modded content (eg Vehicles, MLOs, Clothes) to the client. You need a <code>stream.toml</code> to get this type to work.</p>
+<p>stream.toml</p>
 <table>
 <thead>
 <tr>
@@ -171,11 +171,11 @@ For more information see: <a href="../cs/articles/index.html">Getting Started</a
 </tr>
 <tr>
 <td style="text-align: center;">meta</td>
-<td style="text-align: center;">Path to the meta files and the corresponding Data files (Format: [PATH: DATA_FILE_TAG]).</td>
+<td style="text-align: center;">Path to the meta files and the corresponding Data files (Format: [PATH = DATA_FILE_TAG]).</td>
 </tr>
 <tr>
 <td style="text-align: center;">gxt</td>
-<td style="text-align: center;">Path to the gtx files.</td>
+<td style="text-align: center;">Path to the gxt files.</td>
 </tr>
 </tbody>
 </table>
@@ -187,8 +187,8 @@ For more information see: <a href="../cs/articles/index.html">Getting Started</a
 <li>FileAPI: With <code>@[packName]</code> before the path.</li>
 </ol>
 <div class="nohljsln">
-<pre><code>type: asset-pack
-client-files: [ ... ]
+<pre><code>type = asset-pack
+client-files = [ ... ]
 </code></pre>
 </div>
 </article>

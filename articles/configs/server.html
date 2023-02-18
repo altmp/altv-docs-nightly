@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>The server.cfg configuration file </title>
+    <title>The server.toml configuration file </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="The server.cfg configuration file ">
+    <meta name="title" content="The server.toml configuration file ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -134,128 +134,146 @@
                                     </ul>
                                 </span>
 
-<h1 id="the-servercfg-configuration-file">The <code>server.cfg</code> configuration file</h1>
+<h1 id="the-servertoml-configuration-file">The <code>server.toml</code> configuration file</h1>
 
-<p>The <code>server.cfg</code> file is the most important configuration file, it is the main configuration file for your whole server, and will define
+<p>The <code>server.toml</code> file is the most important configuration file, it is the main configuration file for your whole server, and will define
 important configurations like server name, amount of slots, loaded resources and more.</p>
-<p>Here is a list of all configuration options for the <code>server.cfg</code> and what they are used for:</p>
-<pre><code class="lang-yaml"># The display name of your server
-name: &quot;My server name&quot;
+<p>The current <code>server.cfg</code> in <code>yaml</code> format is deprecated but will support too.</p>
+<p>Here is a list of all configuration options for the <code>server.toml</code> and what they are used for:</p>
+<pre><code class="lang-toml"># The display name of your server
+name = &quot;My server name&quot;
 # The binding address of your server (usually 0.0.0.0)
-host: &quot;0.0.0.0&quot;
+host = &quot;0.0.0.0&quot;
 # The port of your server (default 7788)
-port: 7788
+port = 7788
 # The amount of players that can play on your server concurrently
-players: 256
+players = 256
 # The password required to join your server
-password: &quot;mySecretPassword&quot;
+password = &quot;mySecretPassword&quot;
 # If the server should be visible on the masterlist in the alt:V client
-announce: true
+announce = true
 # Token to announce the server to the masterlist
-token: &quot;superSecretToken&quot;
+token = &quot;superSecretToken&quot;
 # The gamemode your server is running
-gamemode: &quot;Freeroam&quot;
+gamemode = &quot;Freeroam&quot;
 # The website of your server
-website: &quot;example.com&quot;
+website = &quot;example.com&quot;
 # The language of your server
-language: &quot;English&quot;
+language = &quot;English&quot;
 # The description of your server
-description: &quot;My cool server&quot;
+description = &quot;My cool server&quot;
 # If the debug mode should be allowed (Debug mode allows debugging functions like reconnect or the CEF debugger)
-debug: false
+debug = false
 # The stream in distance for entities
-streamingDistance: 400
+streamingDistance = 400
 # The migration distance for entities
-migrationDistance: 150
+migrationDistance = 150
 # The timeout multiplier (must be &gt;= 1)
-timeout: 1
+timeout = 1
 # The delay that is used when the announceRetryErrorAttempts are reached (in ms)
-announceRetryErrorDelay: 10000
+announceRetryErrorDelay = 10000
 # Max retries until announceRetryErrorDelay will be used
-announceRetryErrorAttempts: 50
+announceRetryErrorAttempts = 50
 # Max players which can connect with the same ip address
-duplicatePlayers: 4096
+duplicatePlayers = 4096
 
 # Define the map bound size
-mapBoundsMinX: 10000 # values are considered negative
-mapBoundsMinY: 10000 # values are considered negative
-mapBoundsMaxX: 65536
-mapBoundsMaxY: 65536
-mapCellAreaSize: 100 #smaller areas uses more ram and less cpu
+mapBoundsMinX = 10000 # values are considered negative
+mapBoundsMinY = 10000 # values are considered negative
+mapBoundsMaxX = 65536
+mapBoundsMaxY = 65536
+mapCellAreaSize = 100 #smaller areas uses more ram and less cpu
 
-# An array of all modules that should be loaded
-modules: [
-    &quot;js-module&quot;,
-    &quot;csharp-module&quot;
+# Defines the rate (miliseconds) in which colshape calculations should occur (dev/13.0-dev32 and higher)
+colShapeTickRate = 200
+
+# Defines the used logging streams (console, file, stdconsole) for the server (dev/13.0-dev32 and higher)
+logStreams = [ &quot;console&quot;, &quot;file&quot; ]
+
+# Defines the amount of worker threads for entity computation, like colshapes, streaming, etc. Good value is cpu count * 2
+entityWorkerCount = 8
+
+# The tags for your server (max. 4)
+tags = [
+    &quot;Freeroam&quot;,
+    &quot;Cool&quot;
 ]
-# Settings related to js-module
-js-module: {
-    # Enable node.js inspector
-    inspector: {
-        # Define inspector ip
-        host: 127.0.0.1,
-        # Define inspector port
-        port: 9229
-    },
-    # &quot;https://nodejs.org/api/cli.html#--enable-source-maps&quot;
-    source-maps: true,
-    # &quot;https://nodejs.org/api/cli.html#--heap-prof&quot;
-    heap-profiler: true,
-    # Enable profiler
-    profiler: true,
-    # &quot;https://nodejs.org/api/cli.html#--experimental-fetch&quot;
-    global-fetch: true,
-    # &quot;https://nodejs.org/api/cli.html#--experimental-global-webcrypto&quot;
-    global-webcrypto: true,
-    # &quot;https://nodejs.org/api/cli.html#--experimental-network-imports&quot;
-    network-imports: true,
-    # Add extra cli arguments to the node environment &quot;https://nodejs.org/api/cli.html&quot;
-    extra-cli-args: [&quot;--inspect=127.0.0.1:9229&quot;, &quot;--max-old-space-size=8192&quot;]
-}
-# Settings related to c#-module
-csharp-module: {
-    # Disable dependency (NuGet) check and download at server startup, this is recommended if you have a bad connection to the NuGet server (e.g china)
-    disableDependencyDownload: true
-}
+
+# Should connection queue be enabled for your server.
+# ConnectionQueueAdd &amp; ConnectionQueueRemove serverside events are required to accept or decline connections
+connectionQueue = false
+# Should early auth be used for your server
+useEarlyAuth = false
+# The url for the early auth login page (only used when useEarlyAuth is true)
+earlyAuthUrl = &quot;https://example.com/login&quot;
+# Should a CDN be used for your server
+useCdn = false
+# The url for the CDN page
+cdnUrl = &quot;https://cdn.example.com&quot;
+
+# Should alt:V server send all clients player name on connect
+sendPlayerNames = true
+
 # An array of all resources that should be loaded
-resources: [
-    &quot;myResource&quot;
+resources = [
+    &quot;myResource&quot;,
     # Since alt:V 10.0 you can also use resources in subdirectories
     &quot;vehicles/firstVehicle&quot;,
     &quot;vehicles/secondVehicle&quot;
 ]
-# Voice configuration (needs to be set to enable voice chat)
-voice: {
-    # The bitrate of the voice server
-    bitrate: 64000,
-    # The secret for the external server (only needed when using externalHost)
-    # The secret must consist of numeric values only
-    externalSecret: &quot;1234567890&quot;,
-    # The external host address (leave 127.0.0.1, if voice-server is on same machine)
-    externalHost: &quot;127.0.0.1&quot;,
-    # The external host port
-    externalPort: 7798,
-    # The external host public address (should be the ip address of your server, not localhost!)
-    externalPublicHost: &quot;xx.xx.xx.xx&quot;,
-    # The external host public port
-    externalPublicPort: 7799
-}
-# The tags for your server (max. 4)
-tags: [
-    &quot;Freeroam&quot;,
-    &quot;Cool&quot;
+
+# An array of all modules that should be loaded
+modules = [
+    &quot;js-module&quot;,
+    &quot;csharp-module&quot;
 ]
-# Should connection queue be enabled for your server.
-# ConnectionQueueAdd &amp; ConnectionQueueRemove serverside events are required to accept or decline connections
-connectionQueue: false
-# Should early auth be used for your server
-useEarlyAuth: false
-# The url for the early auth login page (only used when useEarlyAuth is true)
-earlyAuthUrl: &quot;https://example.com/login&quot;
-# Should a CDN be used for your server
-useCdn: false
-# The url for the CDN page
-cdnUrl: &quot;https://cdn.example.com&quot;
+
+# Profiling entity creation, systems like streaming etc
+[worldProfiler]
+port = 7797
+host = &quot;0.0.0.0&quot;
+
+# Settings related to js-module
+[js-module]
+# &quot;https://nodejs.org/api/cli.html#--enable-source-maps&quot;
+source-maps = true
+# &quot;https://nodejs.org/api/cli.html#--heap-prof&quot;
+heap-profiler = true
+# Enable profiler
+profiler = true
+# &quot;https://nodejs.org/api/cli.html#--experimental-fetch&quot;
+global-fetch = true
+# &quot;https://nodejs.org/api/cli.html#--experimental-global-webcrypto&quot;
+global-webcrypto = true
+# &quot;https://nodejs.org/api/cli.html#--experimental-network-imports&quot;
+network-imports = true
+# Add extra cli arguments to the node environment &quot;https://nodejs.org/api/cli.html&quot;
+extra-cli-args = [&quot;--inspect=127.0.0.1:9229&quot;, &quot;--max-old-space-size=8192&quot;]
+# Enable node.js inspector
+[js-module.inspector]
+host = &quot;127.0.0.1&quot;
+port = 9229
+
+# Settings related to c#-module
+[csharp-module]
+# Disable dependency (NuGet) check and download at server startup, this is recommended if you have a bad connection to the NuGet server (e.g china)
+disableDependencyDownload= true
+
+# Voice configuration (needs to be set to enable voice chat)
+[voice]
+# The bitrate of the voice server
+bitrate = 64000
+# The secret for the external server (only needed when using externalHost)
+# The secret must consist of numeric values only
+externalSecret = &quot;1234567890&quot;
+# The external host address (leave 127.0.0.1, if voice-server is on same machine)
+externalHost = &quot;127.0.0.1&quot;
+# The external host port
+externalPort = 7798
+# The external host public address (should be the ip address of your server, not localhost!)
+externalPublicHost = &quot;xx.xx.xx.xx&quot;
+# The external host public port
+externalPublicPort = 7799
 </code></pre>
 </article>
                     </div>

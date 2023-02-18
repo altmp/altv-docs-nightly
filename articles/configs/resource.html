@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>The resource.cfg configuration file </title>
+    <title>The resource.toml configuration file </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="The resource.cfg configuration file ">
+    <meta name="title" content="The resource.toml configuration file ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -134,35 +134,35 @@
                                     </ul>
                                 </span>
 
-<h1 id="the-resourcecfg-configuration-file">The <code>resource.cfg</code> configuration file</h1>
+<h1 id="the-resourcetoml-configuration-file">The <code>resource.toml</code> configuration file</h1>
 
-<p>The <code>resource.cfg</code> configuration file is needed for every resource you have, it has to be located in the main directory of your resource.<br>
+<p>The <code>resource.toml</code> configuration file is needed for every resource you have, it has to be located in the main directory of your resource.<br>
 It has some configuration options for your resource like the type of your resource and its dependencies.</p>
-<p>Here is a list of all configuration options for the <code>resource.cfg</code> and what they are used for:</p>
-<pre><code class="lang-yaml"># The serverside type of your resource (the correct module for that type has to be loaded)
-type: &quot;js&quot;
+<p>Here is a list of all configuration options for the <code>resource.toml</code> and what they are used for:</p>
+<pre><code class="lang-toml"># The serverside type of your resource (the correct module for that type has to be loaded)
+type = &quot;js&quot;
 # The clientside type of your resource (the correct module for that type has to be loaded)
-client-type: &quot;js&quot;
+client-type = &quot;js&quot;
 # The main serverside file that will get loaded when the server starts
-main: &quot;server.js&quot;
+main = &quot;server.js&quot;
 # The main clientside file that will get loaded when the client starts
-client-main: &quot;client.js&quot;
+client-main = &quot;client.js&quot;
 # The files that the client has access to (The client-main file does not have to be included here)
-client-files: [
+client-files = [
     &quot;myFile.js&quot;,
     # You can also use glob patterns to give access to a whole directory
     &quot;client/*&quot;
 ]
 # The required permissions to play on the server (these have to be accepted, otherwise the player can't join)
-required-permissions: [
+required-permissions = [
     &quot;Screen Capture&quot;
 ]
 # The optional permissions to play on the server (these permissions can be declined by the user)
-optional-permissions: [
+optional-permissions = [
     &quot;WebRTC&quot;
 ]
 # The dependencies of this resource (All dependencies get loaded before the resource)
-deps: [
+deps = [
     &quot;myOtherResource&quot;
 ]
 </code></pre>

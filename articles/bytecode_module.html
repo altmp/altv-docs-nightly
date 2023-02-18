@@ -147,8 +147,8 @@ to generate a stack trace or any other additional debug information, making debu
 <p>Setting up the bytecode module is a relatively easy process, just follow the steps below:</p>
 <ol>
 <li><a href="#download">Download the bytecode module</a>, and place the downloaded <code>.dll</code> or <code>.so</code> in your <code>modules</code> directory</li>
-<li>Add <code>js-bytecode-module</code> to the <code>modules</code> array in the <code>server.cfg</code></li>
-<li><em>For every resource you want to use the bytecode module for</em> set the <code>client-type</code> in the <code>resource.cfg</code> to <code>jsb</code></li>
+<li>Add <code>js-bytecode-module</code> to the <code>modules</code> array in the <code>server.toml</code></li>
+<li><em>For every resource you want to use the bytecode module for</em> set the <code>client-type</code> in the <code>resource.toml</code> to <code>jsb</code></li>
 <li>Start the server</li>
 </ol>
 <p>Now every time you start the server you should get logs similiar to this one:</p>
@@ -160,14 +160,14 @@ all its dependencies (modules imported with the <code>import</code> statement), 
 So these have to be manually specified, so they are also compiled.
 To do this just:</p>
 <ol start="5">
-<li>Add all files that should additionally be compiled to the <code>extra-compile-files</code> array in the <code>resource.cfg</code></li>
+<li>Add all files that should additionally be compiled to the <code>extra-compile-files</code> array in the <code>resource.toml</code></li>
 </ol>
 <p>That array accepts the same paths as the <code>client-files</code> option does, so it is possible to include a whole folder for example.</p>
 <h2 id="download">Download</h2>
 <p>The module can be downloaded from the following sources:</p>
 <ol>
 <li><a href="https://altv.mp/#/downloads">The official alt:V downloads page</a></li>
-<li>The CDN directly - <a href="http://cdn.altv.mp/js-bytecode-module/release/x64_win32/js-bytecode-module.dll">Windows</a> / <a href="http://cdn.altv.mp/js-bytecode-module/release/x64_linux/libjs-bytecode-module.so">Linux</a></li>
+<li>The CDN directly - <a href="http://cdn.alt-mp.com/js-bytecode-module/release/x64_win32/js-bytecode-module.dll">Windows</a> / <a href="http://cdn.alt-mp.com/js-bytecode-module/release/x64_linux/libjs-bytecode-module.so">Linux</a></li>
 <li><a href="https://github.com/altmp/altv-js-bytecode/releases">The bytecode module releases page</a></li>
 </ol>
 <h2 id="troubleshooting">Troubleshooting</h2>

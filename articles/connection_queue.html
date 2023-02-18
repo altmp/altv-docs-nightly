@@ -141,8 +141,8 @@ When the player queue is activated, the playerConnect event is triggered once th
 The connection queue will place the players attempting to connect to the server in a queue. You can then accept or decline the upcoming connection at any moment.</p>
 <h2 id="usage">Usage</h2>
 <h3 id="config">Config</h3>
-<p>You have to set / add the following field in your server.cfg</p>
-<pre><code class="lang-json">connectionQueue: 'true'
+<p>You have to set / add the following field in your server.toml</p>
+<pre><code class="lang-toml">connectionQueue = true
 </code></pre>
 <h3 id="player-queue-events">Player queue events</h3>
 <p>The connectionQueueRemove event is triggered when you accept / decline the connection or when the player disconnects by canceling the connection.</p>

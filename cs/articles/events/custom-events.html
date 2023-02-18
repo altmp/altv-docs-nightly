@@ -154,7 +154,7 @@
 Also any dictionary in dictionary, array in array, ect. endless depth types are supported, because they are resolved recursively.</p>
 <h2 id="dictionaries">Dictionaries</h2>
 <p>Any js object send via <code>alt.emitServer</code> will be a dictionary.</p>
-<pre><code class="lang-csharp">Alt.On&lt;IPlayer, string&gt;(&quot;myBigObject&quot;, MyBigObjectHandler);
+<pre><code class="lang-csharp">Alt.On&lt;IPlayer, Dictionary&lt;string, string&gt;&gt;(&quot;myBigObject&quot;, MyBigObjectHandler);
 ...
 public void MyBigObjectHandler(IPlayer player, Dictionary&lt;string, string&gt; myBigObject)
 {            
