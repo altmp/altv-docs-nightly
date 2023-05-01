@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#_altmp_altv_types_alt_client_RmlDocument_constructor">RmlDocument(string)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#_altmp_altv_types_alt_client_RmlDocument_title">title</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_sourceUrl">sourceUrl</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_isVisible">isVisible</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_isModal">isModal</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_body">body</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_RmlDocument_show">show(boolean, boolean)</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_hide">hide()</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_update">update()</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_createElement">createElement(string)</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_createTextNode">createTextNode(string)</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#_altmp_altv_types_alt_client_RmlDocument_constructor">RmlDocument(string)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#_altmp_altv_types_alt_client_RmlDocument_title">title</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_id">id</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_sourceUrl">sourceUrl</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_isVisible">isVisible</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_isModal">isModal</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_body">body</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_RmlDocument_getByID">getByID(number)</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_show">show(boolean, boolean)</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_hide">hide()</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_update">update()</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_createElement">createElement(string)</a></li><li><a href="#_altmp_altv_types_alt_client_RmlDocument_createTextNode">createTextNode(string)</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -129,7 +129,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2865">View Source</a>
+                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3160">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -155,6 +155,12 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByID">getByID(BaseObjectType, number)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByRemoteID">getByRemoteID(BaseObjectType, number)</a>
+    </div>
     <div>
       <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_deleteMeta_1">deleteMeta&lt;K extends never&gt;(K)</a>
     </div>
@@ -198,7 +204,7 @@
       <a class="xref" href="alt-client.RmlElement.html#_altmp_altv_types_alt_client_RmlElement_tagName">tagName</a>
     </div>
     <div>
-      <a class="xref" href="alt-client.RmlElement.html#_altmp_altv_types_alt_client_RmlElement_id">id</a>
+      <a class="xref" href="alt-client.RmlElement.html#_altmp_altv_types_alt_client_RmlElement_rmlId">rmlId</a>
     </div>
     <div>
       <a class="xref" href="alt-client.RmlElement.html#_altmp_altv_types_alt_client_RmlElement_isOwned">isOwned</a>
@@ -399,6 +405,15 @@
       <span class="xref">RmlElement.getMetaDataKeys</span>
     </div>
     <div>
+      <span class="xref">RmlElement.getSyncedMeta</span>
+    </div>
+    <div>
+      <span class="xref">RmlElement.hasSyncedMeta</span>
+    </div>
+    <div>
+      <span class="xref">RmlElement.getSyncedMetaKeys</span>
+    </div>
+    <div>
       <span class="xref">RmlElement.refCount</span>
     </div>
   </div>
@@ -410,8 +425,13 @@
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_constructor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.constructor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3161">View Source</a>
+  </span>
   <h4 id="_altmp_altv_types_alt_client_RmlDocument_constructor" data-uid="@altmp/altv-types.alt-client.RmlDocument.constructor">RmlDocument(string)
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
@@ -450,7 +470,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_title.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2868">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3163">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_RmlDocument_title" data-uid="@altmp/altv-types.alt-client.RmlDocument.title">title
   <span class="release-stage public"></span>
@@ -480,10 +500,43 @@
   </table>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_id.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3175">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_RmlDocument_id" data-uid="@altmp/altv-types.alt-client.RmlDocument.id">id
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly id: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_sourceUrl.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.sourceUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2870">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3177">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_RmlDocument_sourceUrl" data-uid="@altmp/altv-types.alt-client.RmlDocument.sourceUrl">sourceUrl
   <span class="release-stage public"></span>
@@ -516,7 +569,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_isVisible.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.isVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2872">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3179">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_RmlDocument_isVisible" data-uid="@altmp/altv-types.alt-client.RmlDocument.isVisible">isVisible
   <span class="release-stage public"></span>
@@ -549,7 +602,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_isModal.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.isModal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2874">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3181">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_RmlDocument_isModal" data-uid="@altmp/altv-types.alt-client.RmlDocument.isModal">isModal
   <span class="release-stage public"></span>
@@ -582,7 +635,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_body.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.body%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2876">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3183">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_RmlDocument_body" data-uid="@altmp/altv-types.alt-client.RmlDocument.body">body
   <span class="release-stage public"></span>
@@ -614,10 +667,63 @@
   </h3>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_getByID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.getByID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3173">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_RmlDocument_getByID" data-uid="@altmp/altv-types.alt-client.RmlDocument.getByID">getByID(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public static getByID(id: number): null | RmlDocument</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>id</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>null | <a class="xref" href="alt-client.RmlDocument.html">RmlDocument</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_show.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.show%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2878">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3185">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_RmlDocument_show" data-uid="@altmp/altv-types.alt-client.RmlDocument.show">show(boolean, boolean)
   <span class="release-stage public"></span>
@@ -663,7 +769,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_hide.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.hide%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2880">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3187">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_RmlDocument_hide" data-uid="@altmp/altv-types.alt-client.RmlDocument.hide">hide()
   <span class="release-stage public"></span>
@@ -681,7 +787,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_update.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.update%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2882">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3189">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_RmlDocument_update" data-uid="@altmp/altv-types.alt-client.RmlDocument.update">update()
   <span class="release-stage public"></span>
@@ -699,7 +805,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_createElement.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.createElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2884">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3191">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_RmlDocument_createElement" data-uid="@altmp/altv-types.alt-client.RmlDocument.createElement">createElement(string)
   <span class="release-stage public"></span>
@@ -752,7 +858,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_RmlDocument_createTextNode.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.RmlDocument.createTextNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2886">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3193">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_RmlDocument_createTextNode" data-uid="@altmp/altv-types.alt-client.RmlDocument.createTextNode">createTextNode(string)
   <span class="release-stage public"></span>

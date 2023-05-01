@@ -1,0 +1,1217 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PoolManager
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class PoolManager
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Elements_Pools_PoolManager__ctor_AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IPlayer__AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IVehicle__AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IPed__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IBlip__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_ICheckpoint__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVoiceChannel__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IColShape__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVirtualEntity__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVirtualEntityGroup__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IMarker__">PoolManager(IEntityPool&lt;IPlayer&gt;, IEntityPool&lt;IVehicle&gt;, IEntityPool&lt;IPed&gt;, IBaseObjectPool&lt;IBlip&gt;, IBaseObjectPool&lt;ICheckpoint&gt;, IBaseObjectPool&lt;IVoiceChannel&gt;, IBaseObjectPool&lt;IColShape&gt;, IBaseObjectPool&lt;IVirtualEntity&gt;, IBaseObjectPool&lt;IVirtualEntityGroup&gt;, IBaseObjectPool&lt;IMarker&gt;)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Elements_Pools_PoolManager_Blip">Blip</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_Checkpoint">Checkpoint</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_ColShape">ColShape</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_Marker">Marker</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_Object">Object</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_Ped">Ped</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_Player">Player</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_Vehicle">Vehicle</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_VirtualEntity">VirtualEntity</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_VirtualEntityGroup">VirtualEntityGroup</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_VoiceChannel">VoiceChannel</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Elements_Pools_PoolManager_Dispose">Dispose()</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_Get_System_IntPtr_BaseObjectType_">Get(IntPtr, BaseObjectType)</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_GetOrCreate_AltV_Net_ICore_System_IntPtr_BaseObjectType_">GetOrCreate(ICore, IntPtr, BaseObjectType)</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_GetOrCreate_AltV_Net_ICore_System_IntPtr_BaseObjectType_System_UInt32_">GetOrCreate(ICore, IntPtr, BaseObjectType, UInt32)</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_Remove_AltV_Net_Elements_Entities_IBaseObject_">Remove(IBaseObject)</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_Remove_System_IntPtr_BaseObjectType_">Remove(IntPtr, BaseObjectType)</a></li></ul></li><li><a href="#eii">Explicit Interface Implementations</a><ul class="level2 nav bs-docs-sidenav eii"><li><a href="#AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Blip">ISharedPoolManager.Blip</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Checkpoint">ISharedPoolManager.Checkpoint</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_ColShape">ISharedPoolManager.ColShape</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Marker">ISharedPoolManager.Marker</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Object">ISharedPoolManager.Object</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Ped">ISharedPoolManager.Ped</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Player">ISharedPoolManager.Player</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Vehicle">ISharedPoolManager.Vehicle</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_VirtualEntity">ISharedPoolManager.VirtualEntity</a></li><li><a href="#AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_VirtualEntityGroup">ISharedPoolManager.VirtualEntityGroup</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Elements.Pools.PoolManager">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L11">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Elements_Pools_PoolManager" data-uid="AltV.Net.Elements.Pools.PoolManager" class="text-break">Class PoolManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PoolManager</span></div>
+      <div class="level2"><a class="xref" href="AltV.Net.Mock.MockPoolManager.html">MockPoolManager</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AltV.Net.IPoolManager.html">IPoolManager</a></div>
+    <div><a class="xref" href="AltV.Net.Shared.ISharedPoolManager.html">ISharedPoolManager</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Elements.Pools.html">AltV.Net.Elements.Pools</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.dll</h6>
+  <h5 id="AltV_Net_Elements_Pools_PoolManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PoolManager : IPoolManager, ISharedPoolManager</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager__ctor_AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IPlayer__AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IVehicle__AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IPed__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IBlip__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_ICheckpoint__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVoiceChannel__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IColShape__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVirtualEntity__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVirtualEntityGroup__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IMarker__.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.%23ctor(AltV.Net.IEntityPool%7BAltV.Net.Elements.Entities.IPlayer%7D%2CAltV.Net.IEntityPool%7BAltV.Net.Elements.Entities.IVehicle%7D%2CAltV.Net.IEntityPool%7BAltV.Net.Elements.Entities.IPed%7D%2CAltV.Net.IBaseObjectPool%7BAltV.Net.Elements.Entities.IBlip%7D%2CAltV.Net.IBaseObjectPool%7BAltV.Net.Elements.Entities.ICheckpoint%7D%2CAltV.Net.IBaseObjectPool%7BAltV.Net.Elements.Entities.IVoiceChannel%7D%2CAltV.Net.IBaseObjectPool%7BAltV.Net.Elements.Entities.IColShape%7D%2CAltV.Net.IBaseObjectPool%7BAltV.Net.Elements.Entities.IVirtualEntity%7D%2CAltV.Net.IBaseObjectPool%7BAltV.Net.Elements.Entities.IVirtualEntityGroup%7D%2CAltV.Net.IBaseObjectPool%7BAltV.Net.Elements.Entities.IMarker%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L39">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager__ctor_" data-uid="AltV.Net.Elements.Pools.PoolManager.#ctor*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager__ctor_AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IPlayer__AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IVehicle__AltV_Net_IEntityPool_AltV_Net_Elements_Entities_IPed__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IBlip__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_ICheckpoint__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVoiceChannel__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IColShape__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVirtualEntity__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IVirtualEntityGroup__AltV_Net_IBaseObjectPool_AltV_Net_Elements_Entities_IMarker__" data-uid="AltV.Net.Elements.Pools.PoolManager.#ctor(AltV.Net.IEntityPool{AltV.Net.Elements.Entities.IPlayer},AltV.Net.IEntityPool{AltV.Net.Elements.Entities.IVehicle},AltV.Net.IEntityPool{AltV.Net.Elements.Entities.IPed},AltV.Net.IBaseObjectPool{AltV.Net.Elements.Entities.IBlip},AltV.Net.IBaseObjectPool{AltV.Net.Elements.Entities.ICheckpoint},AltV.Net.IBaseObjectPool{AltV.Net.Elements.Entities.IVoiceChannel},AltV.Net.IBaseObjectPool{AltV.Net.Elements.Entities.IColShape},AltV.Net.IBaseObjectPool{AltV.Net.Elements.Entities.IVirtualEntity},AltV.Net.IBaseObjectPool{AltV.Net.Elements.Entities.IVirtualEntityGroup},AltV.Net.IBaseObjectPool{AltV.Net.Elements.Entities.IMarker})">PoolManager(IEntityPool&lt;IPlayer&gt;, IEntityPool&lt;IVehicle&gt;, IEntityPool&lt;IPed&gt;, IBaseObjectPool&lt;IBlip&gt;, IBaseObjectPool&lt;ICheckpoint&gt;, IBaseObjectPool&lt;IVoiceChannel&gt;, IBaseObjectPool&lt;IColShape&gt;, IBaseObjectPool&lt;IVirtualEntity&gt;, IBaseObjectPool&lt;IVirtualEntityGroup&gt;, IBaseObjectPool&lt;IMarker&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PoolManager(IEntityPool&lt;IPlayer&gt; playerPool, IEntityPool&lt;IVehicle&gt; vehiclePool, IEntityPool&lt;IPed&gt; pedPool, IBaseObjectPool&lt;IBlip&gt; blipPool, IBaseObjectPool&lt;ICheckpoint&gt; checkpointPool, IBaseObjectPool&lt;IVoiceChannel&gt; voiceChannelPool, IBaseObjectPool&lt;IColShape&gt; colShapePool, IBaseObjectPool&lt;IVirtualEntity&gt; virtualEntityPool, IBaseObjectPool&lt;IVirtualEntityGroup&gt; virtualEntityGroupPool, IBaseObjectPool&lt;IMarker&gt; markerPool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>&gt;</td>
+        <td><span class="parametername">playerPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a>&gt;</td>
+        <td><span class="parametername">vehiclePool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IPed.html">IPed</a>&gt;</td>
+        <td><span class="parametername">pedPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IBlip.html">IBlip</a>&gt;</td>
+        <td><span class="parametername">blipPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.ICheckpoint.html">ICheckpoint</a>&gt;</td>
+        <td><span class="parametername">checkpointPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVoiceChannel.html">IVoiceChannel</a>&gt;</td>
+        <td><span class="parametername">voiceChannelPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a>&gt;</td>
+        <td><span class="parametername">colShapePool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVirtualEntity.html">IVirtualEntity</a>&gt;</td>
+        <td><span class="parametername">virtualEntityPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVirtualEntityGroup.html">IVirtualEntityGroup</a>&gt;</td>
+        <td><span class="parametername">virtualEntityGroupPool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IMarker.html">IMarker</a>&gt;</td>
+        <td><span class="parametername">markerPool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_Blip.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.Blip%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L24">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_Blip_" data-uid="AltV.Net.Elements.Pools.PoolManager.Blip*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_Blip" data-uid="AltV.Net.Elements.Pools.PoolManager.Blip">Blip</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBaseObjectPool&lt;IBlip&gt; Blip { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IBlip.html">IBlip</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_Checkpoint.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.Checkpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L26">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_Checkpoint_" data-uid="AltV.Net.Elements.Pools.PoolManager.Checkpoint*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_Checkpoint" data-uid="AltV.Net.Elements.Pools.PoolManager.Checkpoint">Checkpoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBaseObjectPool&lt;ICheckpoint&gt; Checkpoint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.ICheckpoint.html">ICheckpoint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_ColShape.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.ColShape%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L29">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_ColShape_" data-uid="AltV.Net.Elements.Pools.PoolManager.ColShape*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_ColShape" data-uid="AltV.Net.Elements.Pools.PoolManager.ColShape">ColShape</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBaseObjectPool&lt;IColShape&gt; ColShape { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IColShape.html">IColShape</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_Marker.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.Marker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L35">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_Marker_" data-uid="AltV.Net.Elements.Pools.PoolManager.Marker*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_Marker" data-uid="AltV.Net.Elements.Pools.PoolManager.Marker">Marker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBaseObjectPool&lt;IMarker&gt; Marker { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IMarker.html">IMarker</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_Object.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.Object%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L20">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_Object_" data-uid="AltV.Net.Elements.Pools.PoolManager.Object*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_Object" data-uid="AltV.Net.Elements.Pools.PoolManager.Object">Object</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityPool&lt;IObject&gt; Object { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IObject.html">IObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_Ped.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.Ped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L17">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_Ped_" data-uid="AltV.Net.Elements.Pools.PoolManager.Ped*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_Ped" data-uid="AltV.Net.Elements.Pools.PoolManager.Ped">Ped</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityPool&lt;IPed&gt; Ped { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IPed.html">IPed</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_Player.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.Player%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L13">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_Player_" data-uid="AltV.Net.Elements.Pools.PoolManager.Player*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_Player" data-uid="AltV.Net.Elements.Pools.PoolManager.Player">Player</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityPool&lt;IPlayer&gt; Player { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IPlayer.html">IPlayer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_Vehicle.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.Vehicle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L15">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_Vehicle_" data-uid="AltV.Net.Elements.Pools.PoolManager.Vehicle*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_Vehicle" data-uid="AltV.Net.Elements.Pools.PoolManager.Vehicle">Vehicle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEntityPool&lt;IVehicle&gt; Vehicle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IEntityPool-1.html">IEntityPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVehicle.html">IVehicle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_VirtualEntity.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.VirtualEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L31">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_VirtualEntity_" data-uid="AltV.Net.Elements.Pools.PoolManager.VirtualEntity*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_VirtualEntity" data-uid="AltV.Net.Elements.Pools.PoolManager.VirtualEntity">VirtualEntity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBaseObjectPool&lt;IVirtualEntity&gt; VirtualEntity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVirtualEntity.html">IVirtualEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_VirtualEntityGroup.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.VirtualEntityGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L33">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_VirtualEntityGroup_" data-uid="AltV.Net.Elements.Pools.PoolManager.VirtualEntityGroup*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_VirtualEntityGroup" data-uid="AltV.Net.Elements.Pools.PoolManager.VirtualEntityGroup">VirtualEntityGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBaseObjectPool&lt;IVirtualEntityGroup&gt; VirtualEntityGroup { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVirtualEntityGroup.html">IVirtualEntityGroup</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_VoiceChannel.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.VoiceChannel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L28">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_VoiceChannel_" data-uid="AltV.Net.Elements.Pools.PoolManager.VoiceChannel*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_VoiceChannel" data-uid="AltV.Net.Elements.Pools.PoolManager.VoiceChannel">VoiceChannel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBaseObjectPool&lt;IVoiceChannel&gt; VoiceChannel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IBaseObjectPool-1.html">IBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Elements.Entities.IVoiceChannel.html">IVoiceChannel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_Dispose.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L109">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_Dispose_" data-uid="AltV.Net.Elements.Pools.PoolManager.Dispose*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_Dispose" data-uid="AltV.Net.Elements.Pools.PoolManager.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_Get_System_IntPtr_BaseObjectType_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.Get(System.IntPtr%2CBaseObjectType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L92">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_Get_" data-uid="AltV.Net.Elements.Pools.PoolManager.Get*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_Get_System_IntPtr_BaseObjectType_" data-uid="AltV.Net.Elements.Pools.PoolManager.Get(System.IntPtr,BaseObjectType)">Get(IntPtr, BaseObjectType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBaseObject Get(IntPtr entityPointer, BaseObjectType baseObjectType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">entityPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">BaseObjectType</span></td>
+        <td><span class="parametername">baseObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_GetOrCreate_AltV_Net_ICore_System_IntPtr_BaseObjectType_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.GetOrCreate(AltV.Net.ICore%2CSystem.IntPtr%2CBaseObjectType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L75">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_GetOrCreate_" data-uid="AltV.Net.Elements.Pools.PoolManager.GetOrCreate*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_GetOrCreate_AltV_Net_ICore_System_IntPtr_BaseObjectType_" data-uid="AltV.Net.Elements.Pools.PoolManager.GetOrCreate(AltV.Net.ICore,System.IntPtr,BaseObjectType)">GetOrCreate(ICore, IntPtr, BaseObjectType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBaseObject GetOrCreate(ICore core, IntPtr entityPointer, BaseObjectType baseObjectType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.ICore.html">ICore</a></td>
+        <td><span class="parametername">core</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">entityPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">BaseObjectType</span></td>
+        <td><span class="parametername">baseObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_GetOrCreate_AltV_Net_ICore_System_IntPtr_BaseObjectType_System_UInt32_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.GetOrCreate(AltV.Net.ICore%2CSystem.IntPtr%2CBaseObjectType%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L58">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_GetOrCreate_" data-uid="AltV.Net.Elements.Pools.PoolManager.GetOrCreate*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_GetOrCreate_AltV_Net_ICore_System_IntPtr_BaseObjectType_System_UInt32_" data-uid="AltV.Net.Elements.Pools.PoolManager.GetOrCreate(AltV.Net.ICore,System.IntPtr,BaseObjectType,System.UInt32)">GetOrCreate(ICore, IntPtr, BaseObjectType, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBaseObject GetOrCreate(ICore core, IntPtr entityPointer, BaseObjectType baseObjectType, uint entityId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.ICore.html">ICore</a></td>
+        <td><span class="parametername">core</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">entityPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">BaseObjectType</span></td>
+        <td><span class="parametername">baseObjectType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">entityId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_Remove_AltV_Net_Elements_Entities_IBaseObject_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.Remove(AltV.Net.Elements.Entities.IBaseObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L123">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_Remove_" data-uid="AltV.Net.Elements.Pools.PoolManager.Remove*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_Remove_AltV_Net_Elements_Entities_IBaseObject_" data-uid="AltV.Net.Elements.Pools.PoolManager.Remove(AltV.Net.Elements.Entities.IBaseObject)">Remove(IBaseObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(IBaseObject entity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Elements.Entities.IBaseObject.html">IBaseObject</a></td>
+        <td><span class="parametername">entity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_Remove_System_IntPtr_BaseObjectType_.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.Remove(System.IntPtr%2CBaseObjectType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L128">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_Remove_" data-uid="AltV.Net.Elements.Pools.PoolManager.Remove*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_Remove_System_IntPtr_BaseObjectType_" data-uid="AltV.Net.Elements.Pools.PoolManager.Remove(System.IntPtr,BaseObjectType)">Remove(IntPtr, BaseObjectType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(IntPtr entityPointer, BaseObjectType baseObjectType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">entityPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">BaseObjectType</span></td>
+        <td><span class="parametername">baseObjectType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Blip.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.AltV%23Net%23Shared%23ISharedPoolManager%23Blip%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L25">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Blip_" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Blip*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Blip" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Blip">ISharedPoolManager.Blip</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyBaseObjectPool&lt;ISharedBlip&gt; ISharedPoolManager.Blip { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IReadOnlyBaseObjectPool-1.html">IReadOnlyBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBlip.html">ISharedBlip</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Checkpoint.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.AltV%23Net%23Shared%23ISharedPoolManager%23Checkpoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L27">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Checkpoint_" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Checkpoint*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Checkpoint" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Checkpoint">ISharedPoolManager.Checkpoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyBaseObjectPool&lt;ISharedCheckpoint&gt; ISharedPoolManager.Checkpoint { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IReadOnlyBaseObjectPool-1.html">IReadOnlyBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedCheckpoint.html">ISharedCheckpoint</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_ColShape.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.AltV%23Net%23Shared%23ISharedPoolManager%23ColShape%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L30">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_ColShape_" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#ColShape*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_ColShape" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#ColShape">ISharedPoolManager.ColShape</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyBaseObjectPool&lt;ISharedColShape&gt; ISharedPoolManager.ColShape { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IReadOnlyBaseObjectPool-1.html">IReadOnlyBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedColShape.html">ISharedColShape</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Marker.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.AltV%23Net%23Shared%23ISharedPoolManager%23Marker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L37">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Marker_" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Marker*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Marker" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Marker">ISharedPoolManager.Marker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyBaseObjectPool&lt;ISharedMarker&gt; ISharedPoolManager.Marker { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IReadOnlyBaseObjectPool-1.html">IReadOnlyBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedMarker.html">ISharedMarker</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Object.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.AltV%23Net%23Shared%23ISharedPoolManager%23Object%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L22">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Object_" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Object*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Object" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Object">ISharedPoolManager.Object</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyEntityPool&lt;ISharedObject&gt; ISharedPoolManager.Object { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IReadOnlyEntityPool-1.html">IReadOnlyEntityPool</a>&lt;<a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedObject.html">ISharedObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Ped.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.AltV%23Net%23Shared%23ISharedPoolManager%23Ped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L19">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Ped_" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Ped*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Ped" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Ped">ISharedPoolManager.Ped</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyEntityPool&lt;ISharedPed&gt; ISharedPoolManager.Ped { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IReadOnlyEntityPool-1.html">IReadOnlyEntityPool</a>&lt;<a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedPed.html">ISharedPed</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Player.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.AltV%23Net%23Shared%23ISharedPoolManager%23Player%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L14">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Player_" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Player*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Player" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Player">ISharedPoolManager.Player</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyEntityPool&lt;ISharedPlayer&gt; ISharedPoolManager.Player { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IReadOnlyEntityPool-1.html">IReadOnlyEntityPool</a>&lt;<a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedPlayer.html">ISharedPlayer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Vehicle.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.AltV%23Net%23Shared%23ISharedPoolManager%23Vehicle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L16">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Vehicle_" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Vehicle*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_Vehicle" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#Vehicle">ISharedPoolManager.Vehicle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyEntityPool&lt;ISharedVehicle&gt; ISharedPoolManager.Vehicle { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IReadOnlyEntityPool-1.html">IReadOnlyEntityPool</a>&lt;<a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedVehicle.html">ISharedVehicle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_VirtualEntity.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.AltV%23Net%23Shared%23ISharedPoolManager%23VirtualEntity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L32">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_VirtualEntity_" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#VirtualEntity*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_VirtualEntity" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#VirtualEntity">ISharedPoolManager.VirtualEntity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyBaseObjectPool&lt;ISharedVirtualEntity&gt; ISharedPoolManager.VirtualEntity { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IReadOnlyBaseObjectPool-1.html">IReadOnlyBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedVirtualEntity.html">ISharedVirtualEntity</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_VirtualEntityGroup.md&amp;value=---%0Auid%3A%20AltV.Net.Elements.Pools.PoolManager.AltV%23Net%23Shared%23ISharedPoolManager%23VirtualEntityGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net/Elements/Pools/PoolManager.cs/#L34">View Source</a>
+  </span>
+  <a id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_VirtualEntityGroup_" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#VirtualEntityGroup*"></a>
+  <h4 id="AltV_Net_Elements_Pools_PoolManager_AltV_Net_Shared_ISharedPoolManager_VirtualEntityGroup" data-uid="AltV.Net.Elements.Pools.PoolManager.AltV#Net#Shared#ISharedPoolManager#VirtualEntityGroup">ISharedPoolManager.VirtualEntityGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyBaseObjectPool&lt;ISharedVirtualEntityGroup&gt; ISharedPoolManager.VirtualEntityGroup { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.IReadOnlyBaseObjectPool-1.html">IReadOnlyBaseObjectPool</a>&lt;<a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedVirtualEntityGroup.html">ISharedVirtualEntityGroup</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AltV.Net.IPoolManager.html">IPoolManager</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Shared.ISharedPoolManager.html">ISharedPoolManager</a>
+  </div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

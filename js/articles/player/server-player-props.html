@@ -208,15 +208,9 @@ player.dimension = player.id;
 <p>At the time of writing this document we're not even sure if it's functioning.</p>
 <h2 id="playerhealth">player.health</h2>
 <p>Used to <strong>get or set</strong> the player's current health.</p>
-<p>Health in GTA:V is based on the values <code>100 - 200</code>.</p>
-<p>200 is the player's maximum health.</p>
-<p>&lt; 100 means the player is dead.</p>
+<p>Each model in GTA:V has its own health range.</p>
 <pre><code class="lang-js">const currentHealth = player.health;
 player.health += 10;
-
-if (player.health &gt; 200) {
-    player.health = 200;
-}
 
 // Kill the player.
 player.health = 0;
@@ -234,8 +228,8 @@ player.health = 0;
 <pre><code class="lang-js">const currentHwid = player.hwidHash;
 </code></pre>
 <h2 id="playerid">player.id</h2>
-<p>Used to <strong>get</strong> the player's current id. These are strictly unique to the join order of a player.</p>
-<p>ID's may be used up to the value <code>65535</code>. After reaching 65,535 the id is recycled to a new joiner.</p>
+<p>Used to <strong>get</strong> the player's current id. These are strictly unique to the join order of a player. If a player disconnects its id will be reused by the new player who connects or vehicle which will be created later.</p>
+<p>ID's may be used up to the value <code>65535</code>.</p>
 <pre><code class="lang-js">alt.on('playerConnect', handleConnect);
 
 function handleConnect(player) {
@@ -339,8 +333,12 @@ player.pos = {
 player.pos = new alt.Vector3(0, 0, 0);
 </code></pre>
 <h2 id="playerrot">player.rot</h2>
-<p>Used to <strong>get or set</strong> the player's current rotation. However, <strong>setting rotation is broken on server-side</strong>.</p>
-<pre><code class="lang-js">const currentRot = { ...player.rot };
+<p>Used to <strong>get or set</strong> the player's current rotation.</p>
+<pre><code class="lang-js">// Get and log current player rotation.
+alt.log(player.rot);
+
+// Set player rotation to zero.
+player.rot = new alt.Vector3(0, 0, 0);
 </code></pre>
 <h2 id="playerseat">player.seat</h2>
 <p>Used to <strong>get</strong> the current seat that the player is in.</p>
@@ -367,7 +365,7 @@ if (player.vehicle &amp;&amp; player.seat === 4) {
 </code></pre>
 <h2 id="playervalid">player.valid</h2>
 <p>Used to <strong>get</strong> if a player entity is still valid. This is useful when using timeouts, intervals, and handling disconnect events.</p>
-<p>A player that invalid means that it can longer receive data from the server.</p>
+<p>A player that invalid means that it disconnected from the server.</p>
 <pre><code class="lang-js">alt.on('playerDisconnect', handleDisconnect);
 
 function handleDisconnect(player, reason) {
@@ -380,15 +378,11 @@ function handleDisconnect(player, reason) {
 }
 </code></pre>
 <h2 id="playervehicle">player.vehicle</h2>
-<p>Used to <strong>get</strong> the current vehicle that the player is inside. Returns <strong>null</strong> or <strong>undefined</strong> if the player is <strong>NOT</strong> in a vehicle.</p>
-<pre><code class="lang-js">if (player.vehicle) {
-    console.log(`Player is in a vehicle. Let's change its color!`);
-    player.vehicle.setPrimaryColor = {
-        r: 255,
-        g: 0,
-        b: 0,
-        a: 255
-    };
+<p>Used to <strong>get</strong> the current vehicle that the player is inside. Returns <strong>null</strong> if the player is <strong>NOT</strong> in a vehicle.</p>
+<pre><code class="lang-js">const { vehicle } = player
+if (vehicle) {
+    console.log(`Player is in a vehicle. Let's change its color to red!`);
+    vehicle.customPrimaryColor = new alt.RGBA(255, 0, 0);
 }
 
 if (!player.vehicle) {

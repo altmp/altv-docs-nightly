@@ -138,11 +138,6 @@
 <h5>Tip</h5>
 <p>This article covers both <strong>client-side</strong> and <strong>server-side</strong> resources.</p>
 </div>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>C# client-side module cannot be used in production yet.<br>
-The module is still in development, and can be released regardless of alt:V updates.<br></p>
-</div>
 <h2 id="create-solution">Create solution</h2>
 <p>In this example we will assume you call both your resource and your solution &quot;ExampleProject&quot;.</p>
 <div class="TIP">
@@ -232,12 +227,12 @@ namespace ExampleProject
 <p>For client-side resource use <code>using AltV.Net.Client</code> instead of <code>using AltV.Net</code></p>
 </div>
 <h2 id="create-resource-1">Create resource</h2>
-<p>In the server's <code>resource</code> folder you need to create a folder, which will be a folder for your resource.</p>
+<p>In the server's <code>resources</code> folder you need to create a folder, which will be a folder for your resource.</p>
 <p>Make a <code>bin</code> folder inside of your resource folder, and copy your project dll's (with NuGet generated dlls e.g. AltV.Net.dll) to this folder</p>
 <p>Finally, in the folder you should contain a config file with name <code>resource.toml</code>.</p>
 <h3 id="client-side">Client-side</h3>
 <p>Example <code>resource.toml</code> for a C# client-side resource:</p>
-<pre><code class="lang-yaml">client-type = &quot;csharp&quot;
+<pre><code class="lang-toml">client-type = &quot;csharp&quot;
 client-main = &quot;bin/ExampleProject.dll&quot;
 client-files = [
     &quot;bin/*&quot;
@@ -256,11 +251,11 @@ That will lead to the server-side dll being sent to client.</p>
 </div>
 <h3 id="server-side">Server-side</h3>
 <p>Example <code>resource.toml</code> for a C# server-side resource:</p>
-<pre><code class="lang-yaml">type = &quot;csharp&quot;
+<pre><code class="lang-toml">type = &quot;csharp&quot;
 main = &quot;bin/ExampleProject.dll&quot;
 </code></pre>
 <p>At the end you should add the resource in your <code>server.toml</code> like this:</p>
-<pre><code class="lang-yaml">resources = [
+<pre><code class="lang-toml">resources = [
     &quot;my-example-csharp-resource&quot;
 ]
 </code></pre>

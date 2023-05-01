@@ -207,7 +207,7 @@ and to cast it to its corresponding event class.</p>
 </code></pre>
 <p>It is recommended to not handle every event in this method directly for clarity.
 There should be some sort of wrapper for events in your module.
-An example for this can be found in the <a href="https://github.com/altmp/v8-helpers/blob/89972fcdfd8f2f80c40cb910a9da61dcc8148ccd/V8Helpers.h#L110">JS module</a>
+An example for this can be found in the <a href="https://github.com/altmp/altv-js-module/blob/10c39827fea32d6092d69364b3d6ec3b46540ba2/shared/V8Helpers.h#L108">JS module</a>
 or the <a href="https://github.com/LeonMrBonnie/altv-angelscript-module/blob/dev/src/helpers/events.h">AngelScript module</a>.</p>
 <blockquote>
 <p>A list of event types can be found <a href="https://github.com/altmp/cpp-sdk/blob/master/events/CEvent.h#L10">here</a>.</p>
@@ -220,9 +220,9 @@ will not receive that event.</p>
 <h2 id="how-to-emit-events">How to emit events</h2>
 <p>It is possible to emit custom events (<code>alt::CEvent::Type::SERVER_SCRIPT_EVENT</code> or <code>alt::CEvent::Type::CLIENT_SCRIPT_EVENT</code>) from the module.
 These events can be emitted by using
-<a href="https://github.com/altmp/cpp-sdk/blob/master/ICore.h#L100"><code>alt::ICore::TriggerLocalEvent</code></a>,
-<a href="https://github.com/altmp/cpp-sdk/blob/master/ICore.h#L123"><code>alt::ICore::TriggerServerEvent</code></a> and
-<a href="https://github.com/altmp/cpp-sdk/blob/master/ICore.h#L215"><code>alt::ICore::TriggerClientEvent</code></a> respectively.</p>
+<a href="https://github.com/altmp/cpp-sdk/blob/14d63e7b7bf1135c43664144aed07a061eac26ca/ICore.h#L106s"><code>alt::ICore::TriggerLocalEvent</code></a>,
+<a href="https://github.com/altmp/cpp-sdk/blob/14d63e7b7bf1135c43664144aed07a061eac26ca/ICore.h#L107"><code>alt::ICore::TriggerLocalEventOnMain</code></a> and
+<a href="https://github.com/altmp/cpp-sdk/blob/14d63e7b7bf1135c43664144aed07a061eac26ca/ICore.h#L297"><code>alt::ICore::TriggerClientEvent</code></a> respectively.</p>
 <p>These methods take the custom event name and the event arguments as parameters. The event arguments have to be in the form
 of <a href="#what-are-mvalues">MValues</a>.
 An example on how to emit an custom event can be found here:</p>
@@ -243,7 +243,7 @@ args.Push(arg2);
 alt::ICore::Instance().TriggerLocalEvent(&quot;MyCustomEvent&quot;, args);
 </code></pre>
 <blockquote>
-<p>All methods to create MValues can be found <a href="https://github.com/altmp/cpp-sdk/blob/master/ICore.h#L63">here</a>.</p>
+<p>All methods to create MValues can be found <a href="https://github.com/altmp/cpp-sdk/blob/14d63e7b7bf1135c43664144aed07a061eac26ca/ICore.h#L68-L84">here</a>.</p>
 </blockquote>
 <h2 id="what-are-mvalues">What are MValues</h2>
 <p>The <a href="mvalues.html">next article</a> will explain what MValues are and how to use them.</p>

@@ -1,0 +1,1832 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LocalVehicle
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class LocalVehicle
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_constructor">LocalVehicle(string | number, number, IVector3, IVector3, boolean, number)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_id">id</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_model">model</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_rot">rot</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_streamingDistance">streamingDistance</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_visible">visible</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_scriptID">scriptID</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_remoteId">remoteId</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_isRemote">isRemote</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_isStreamedIn">isStreamedIn</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_speed">speed</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_gear">gear</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_maxGear">maxGear</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_rpm">rpm</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_wheelsCount">wheelsCount</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_speedVector">speedVector</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_engineOn">engineOn</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_lockState">lockState</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_petrolTankHealth">petrolTankHealth</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_indicatorLights">indicatorLights</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_seatCount">seatCount</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_engineTemperature">engineTemperature</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_fuelLevel">fuelLevel</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_oilLevel">oilLevel</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_getByID">getByID(number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_getByScriptID">getByScriptID(number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_getWheelCamber">getWheelCamber(number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_setWheelCamber">setWheelCamber(number, number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_getWheelTrackWidth">getWheelTrackWidth(number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_setWheelTrackWidth">setWheelTrackWidth(number, number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_getWheelHeight">getWheelHeight(number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_setWheelHeight">setWheelHeight(number, number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_getWheelTyreRadius">getWheelTyreRadius(number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_setWheelTyreRadius">setWheelTyreRadius(number, number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_getWheelRimRadius">getWheelRimRadius(number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_setWheelRimRadius">setWheelRimRadius(number, number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_getWheelTyreWidth">getWheelTyreWidth(number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_setWheelTyreWidth">setWheelTyreWidth(number, number)</a></li><li><a href="#_altmp_altv_types_alt_client_LocalVehicle_getWheelSurfaceMaterial">getWheelSurfaceMaterial(number)</a></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="@altmp/altv-types.alt-client.LocalVehicle">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3916">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="_altmp_altv_types_alt_client_LocalVehicle" data-uid="@altmp/altv-types.alt-client.LocalVehicle">Class LocalVehicle
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+              <div class="level0"><span class="xref">BaseObject</span></div>
+          <div class="level1"><a class="xref" href="alt-client.BaseObject.html">BaseObject</a></div>
+      <div class="level2"><a class="xref" href="alt-client.WorldObject.html">WorldObject</a></div>
+      <div class="level3"><span class="xref">LocalVehicle</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByID">getByID(BaseObjectType, number)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByRemoteID">getByRemoteID(BaseObjectType, number)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_deleteMeta_1">deleteMeta&lt;K extends never&gt;(K)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_hasMeta_1">hasMeta&lt;K extends never&gt;(K)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getMeta_2">getMeta&lt;V extends unknown&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_setMeta_2">setMeta&lt;V extends unknown, K extends string&gt;(K, InterfaceValueByKey&lt;ICustomBaseObjectMeta, K, V, void&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.WorldObject.html#_altmp_altv_types_alt_client_WorldObject_pos">pos</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.WorldObject.html#_altmp_altv_types_alt_client_WorldObject_dimension">dimension</a>
+    </div>
+    <div>
+      <span class="xref">WorldObject.type</span>
+    </div>
+    <div>
+      <span class="xref">WorldObject.valid</span>
+    </div>
+    <div>
+      <span class="xref">WorldObject.destroy</span>
+    </div>
+    <div>
+      <span class="xref">WorldObject.getMetaDataKeys</span>
+    </div>
+    <div>
+      <span class="xref">WorldObject.getSyncedMeta</span>
+    </div>
+    <div>
+      <span class="xref">WorldObject.hasSyncedMeta</span>
+    </div>
+    <div>
+      <span class="xref">WorldObject.getSyncedMetaKeys</span>
+    </div>
+    <div>
+      <span class="xref">WorldObject.refCount</span>
+    </div>
+  </div>
+  <h6 data-noindex=""><strong>Module</strong>: <a class="xref" href="alt-client.html">alt-client</a></h6>
+  <h6 data-noindex=""><strong>Package</strong>: <span class="xref">@altmp/altv-types</span></h6>
+  <h5 id="_altmp_altv_types_alt_client_LocalVehicle_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">class LocalVehicle extends WorldObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_constructor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.constructor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3917">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_constructor" data-uid="@altmp/altv-types.alt-client.LocalVehicle.constructor">LocalVehicle(string | number, number, IVector3, IVector3, boolean, number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public LocalVehicle(model: string | number, dimension: number, pos: IVector3, rot: IVector3, useStreaming: boolean, streamingDistance: number): LocalVehicle</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string | number</span></td>
+        <td><em>model</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>dimension</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="alt-client.IVector3.html">IVector3</a></td>
+        <td><em>pos</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="alt-client.IVector3.html">IVector3</a></td>
+        <td><em>rot</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td><em>useStreaming</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>streamingDistance</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_id.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3935">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_id" data-uid="@altmp/altv-types.alt-client.LocalVehicle.id">id
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly id: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_model.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.model%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3937">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_model" data-uid="@altmp/altv-types.alt-client.LocalVehicle.model">model
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly model: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_rot.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.rot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3939">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_rot" data-uid="@altmp/altv-types.alt-client.LocalVehicle.rot">rot
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public rot: Vector3</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-client.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_streamingDistance.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.streamingDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3941">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_streamingDistance" data-uid="@altmp/altv-types.alt-client.LocalVehicle.streamingDistance">streamingDistance
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly streamingDistance: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_visible.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.visible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3943">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_visible" data-uid="@altmp/altv-types.alt-client.LocalVehicle.visible">visible
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public visible: boolean</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_scriptID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.scriptID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3945">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_scriptID" data-uid="@altmp/altv-types.alt-client.LocalVehicle.scriptID">scriptID
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly scriptID: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_remoteId.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.remoteId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3947">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_remoteId" data-uid="@altmp/altv-types.alt-client.LocalVehicle.remoteId">remoteId
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly remoteId: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_isRemote.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.isRemote%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3949">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_isRemote" data-uid="@altmp/altv-types.alt-client.LocalVehicle.isRemote">isRemote
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly isRemote: boolean</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_isStreamedIn.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.isStreamedIn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3951">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_isStreamedIn" data-uid="@altmp/altv-types.alt-client.LocalVehicle.isStreamedIn">isStreamedIn
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly isStreamedIn: boolean</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_speed.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.speed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3956">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_speed" data-uid="@altmp/altv-types.alt-client.LocalVehicle.speed">speed
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly speed: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_gear.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.gear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3963">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_gear" data-uid="@altmp/altv-types.alt-client.LocalVehicle.gear">gear
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public gear: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_maxGear.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.maxGear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3968">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_maxGear" data-uid="@altmp/altv-types.alt-client.LocalVehicle.maxGear">maxGear
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly maxGear: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_rpm.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.rpm%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3975">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_rpm" data-uid="@altmp/altv-types.alt-client.LocalVehicle.rpm">rpm
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public rpm: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_wheelsCount.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.wheelsCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3980">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_wheelsCount" data-uid="@altmp/altv-types.alt-client.LocalVehicle.wheelsCount">wheelsCount
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly wheelsCount: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_speedVector.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.speedVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3985">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_speedVector" data-uid="@altmp/altv-types.alt-client.LocalVehicle.speedVector">speedVector
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly speedVector: Vector3</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-client.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_engineOn.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.engineOn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3990">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_engineOn" data-uid="@altmp/altv-types.alt-client.LocalVehicle.engineOn">engineOn
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly engineOn: boolean</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_lockState.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.lockState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3995">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_lockState" data-uid="@altmp/altv-types.alt-client.LocalVehicle.lockState">lockState
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly lockState: VehicleLockState</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-client.html">VehicleLockState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_petrolTankHealth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.petrolTankHealth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4000">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_petrolTankHealth" data-uid="@altmp/altv-types.alt-client.LocalVehicle.petrolTankHealth">petrolTankHealth
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly petrolTankHealth: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_indicatorLights.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.indicatorLights%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4005">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_indicatorLights" data-uid="@altmp/altv-types.alt-client.LocalVehicle.indicatorLights">indicatorLights
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public indicatorLights: VehicleIndicatorLights</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="alt-client.html">VehicleIndicatorLights</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_seatCount.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.seatCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4010">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_seatCount" data-uid="@altmp/altv-types.alt-client.LocalVehicle.seatCount">seatCount
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly seatCount: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_engineTemperature.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.engineTemperature%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4109">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_engineTemperature" data-uid="@altmp/altv-types.alt-client.LocalVehicle.engineTemperature">engineTemperature
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public engineTemperature: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_fuelLevel.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.fuelLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4114">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_fuelLevel" data-uid="@altmp/altv-types.alt-client.LocalVehicle.fuelLevel">fuelLevel
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public fuelLevel: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_oilLevel.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.oilLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4119">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_oilLevel" data-uid="@altmp/altv-types.alt-client.LocalVehicle.oilLevel">oilLevel
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public oilLevel: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_getByID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.getByID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3925">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_getByID" data-uid="@altmp/altv-types.alt-client.LocalVehicle.getByID">getByID(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public static getByID(id: number): null | LocalVehicle</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>id</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>null | <a class="xref" href="alt-client.LocalVehicle.html">LocalVehicle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_getByScriptID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.getByScriptID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3933">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_getByScriptID" data-uid="@altmp/altv-types.alt-client.LocalVehicle.getByScriptID">getByScriptID(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public static getByScriptID(scriptID: number): null | LocalVehicle</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>scriptID</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>null | <a class="xref" href="alt-client.LocalVehicle.html">LocalVehicle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_getWheelCamber.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.getWheelCamber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4017">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_getWheelCamber" data-uid="@altmp/altv-types.alt-client.LocalVehicle.getWheelCamber">getWheelCamber(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public getWheelCamber(wheelIndex: number): number</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_setWheelCamber.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.setWheelCamber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4027">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_setWheelCamber" data-uid="@altmp/altv-types.alt-client.LocalVehicle.setWheelCamber">setWheelCamber(number, number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public setWheelCamber(wheelIndex: number, camber: number): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>camber</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_getWheelTrackWidth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.getWheelTrackWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4034">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_getWheelTrackWidth" data-uid="@altmp/altv-types.alt-client.LocalVehicle.getWheelTrackWidth">getWheelTrackWidth(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public getWheelTrackWidth(wheelIndex: number): number</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_setWheelTrackWidth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.setWheelTrackWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4042">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_setWheelTrackWidth" data-uid="@altmp/altv-types.alt-client.LocalVehicle.setWheelTrackWidth">setWheelTrackWidth(number, number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public setWheelTrackWidth(wheelIndex: number, width: number): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>width</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_getWheelHeight.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.getWheelHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4049">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_getWheelHeight" data-uid="@altmp/altv-types.alt-client.LocalVehicle.getWheelHeight">getWheelHeight(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public getWheelHeight(wheelIndex: number): number</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_setWheelHeight.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.setWheelHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4057">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_setWheelHeight" data-uid="@altmp/altv-types.alt-client.LocalVehicle.setWheelHeight">setWheelHeight(number, number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public setWheelHeight(wheelIndex: number, height: number): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>height</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_getWheelTyreRadius.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.getWheelTyreRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4064">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_getWheelTyreRadius" data-uid="@altmp/altv-types.alt-client.LocalVehicle.getWheelTyreRadius">getWheelTyreRadius(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public getWheelTyreRadius(wheelIndex: number): number</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_setWheelTyreRadius.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.setWheelTyreRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4072">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_setWheelTyreRadius" data-uid="@altmp/altv-types.alt-client.LocalVehicle.setWheelTyreRadius">setWheelTyreRadius(number, number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public setWheelTyreRadius(wheelIndex: number, radius: number): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>radius</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_getWheelRimRadius.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.getWheelRimRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4079">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_getWheelRimRadius" data-uid="@altmp/altv-types.alt-client.LocalVehicle.getWheelRimRadius">getWheelRimRadius(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public getWheelRimRadius(wheelIndex: number): number</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_setWheelRimRadius.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.setWheelRimRadius%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4087">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_setWheelRimRadius" data-uid="@altmp/altv-types.alt-client.LocalVehicle.setWheelRimRadius">setWheelRimRadius(number, number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public setWheelRimRadius(wheelIndex: number, radius: number): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>radius</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_getWheelTyreWidth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.getWheelTyreWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4094">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_getWheelTyreWidth" data-uid="@altmp/altv-types.alt-client.LocalVehicle.getWheelTyreWidth">getWheelTyreWidth(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public getWheelTyreWidth(wheelIndex: number): number</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_setWheelTyreWidth.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.setWheelTyreWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4102">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_setWheelTyreWidth" data-uid="@altmp/altv-types.alt-client.LocalVehicle.setWheelTyreWidth">setWheelTyreWidth(number, number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public setWheelTyreWidth(wheelIndex: number, width: number): void</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheelIndex</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>width</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_LocalVehicle_getWheelSurfaceMaterial.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.LocalVehicle.getWheelSurfaceMaterial%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L4104">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_LocalVehicle_getWheelSurfaceMaterial" data-uid="@altmp/altv-types.alt-client.LocalVehicle.getWheelSurfaceMaterial">getWheelSurfaceMaterial(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public getWheelSurfaceMaterial(wheel: number): number</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>wheel</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../../styles/docfx.js"></script>
+        <script type="text/javascript" src="../../styles/discord.js"></script>
+        <script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

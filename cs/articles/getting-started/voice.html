@@ -137,33 +137,33 @@
 <h3 id="note-">Note :</h3>
 <hr>
 <ul>
-<li>You can´t use the Alt:V Voice without editing your Server.cfg!</li>
+<li>You can´t use the Alt:V Voice without editing your <code>server.toml</code>!</li>
 </ul>
 <h1 id="before-we-start">Before we start...</h1>
 <hr>
-<h5 id="before-we-start-we-have-to-edit-our-servercfg-file">Before we start, we have to edit our Server.CFG File!</h5>
-<h5 id="so-we-add--voice--to-initialize-our-voice">So we add : voice: {} to initialize our Voice.</h5>
+<h5 id="before-we-start-we-have-to-edit-our-servertoml-file">Before we start, we have to edit our <code>server.toml</code> File!</h5>
+<h5 id="so-we-add--voice-to-initialize-our-voice">So we add : <code>[voice]</code> to initialize our Voice.</h5>
 <h5 id="this-would-look-like-that-">this would look like that :</h5>
-<pre><code class="lang-javascript">name: 'alt:V Server'
-host: 0.0.0.0
-port: 7788
-players: 128
+<pre><code class="lang-toml">name = &quot;alt:V Server&quot;
+host = &quot;0.0.0.0&quot;
+port = 7788
+players = 128
 #password: ultra-password
-announce: false
+announce = false
 #token: YOUR_TOKEN
-gamemode: Freeroam
-website: example.com
-language: en
+gamemode = &quot;Freeroam&quot;
+website = &quot;example.com&quot;
+language = &quot;en&quot;
 
-// The Voice Initialization
-voice: {} //  &lt;---- We add this to our server.cfg File
-
-description: 'alt:V Sample Server'
-modules: [ 
-	csharp-module
-	node-module
+description = &quot;alt:V Sample Server&quot;
+modules = [ 
+	&quot;csharp-module&quot;,
+	&quot;node-module&quot;
 ]
-resources: []
+resources = []
+
+# The Voice Initialization
+[voice] #  &lt;---- We add this to our server.toml File
 </code></pre>
 <h1 id="create-a-voice-channel--add-players-to-it-3d">Create a Voice Channel &amp; Add Players to it [3D]</h1>
 <hr>

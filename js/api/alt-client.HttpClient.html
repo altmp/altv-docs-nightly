@@ -112,7 +112,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#_altmp_altv_types_alt_client_HttpClient_constructor">HttpClient()</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_HttpClient_setExtraHeader">setExtraHeader(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_getExtraHeaders">getExtraHeaders()</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_get">get(string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_head">head(string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_post">post(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_put">put(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_delete">delete(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_connect">connect(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_options">options(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_trace">trace(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_patch">patch(string, string)</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#_altmp_altv_types_alt_client_HttpClient_constructor">HttpClient()</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#_altmp_altv_types_alt_client_HttpClient_id">id</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#_altmp_altv_types_alt_client_HttpClient_getByID">getByID(number)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_setExtraHeader">setExtraHeader(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_getExtraHeaders">getExtraHeaders()</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_get">get(string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_head">head(string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_post">post(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_put">put(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_delete">delete(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_connect">connect(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_options">options(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_trace">trace(string, string)</a></li><li><a href="#_altmp_altv_types_alt_client_HttpClient_patch">patch(string, string)</a></li></ul></li></ul></div>
                             </div>
 
                             
@@ -129,7 +129,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2696">View Source</a>
+                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2978">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -155,6 +155,12 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByID">getByID(BaseObjectType, number)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByRemoteID">getByRemoteID(BaseObjectType, number)</a>
+    </div>
+    <div>
       <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_deleteMeta_1">deleteMeta&lt;K extends never&gt;(K)</a>
     </div>
     <div>
@@ -179,6 +185,15 @@
       <span class="xref">BaseObject.getMetaDataKeys</span>
     </div>
     <div>
+      <span class="xref">BaseObject.getSyncedMeta</span>
+    </div>
+    <div>
+      <span class="xref">BaseObject.hasSyncedMeta</span>
+    </div>
+    <div>
+      <span class="xref">BaseObject.getSyncedMetaKeys</span>
+    </div>
+    <div>
       <span class="xref">BaseObject.refCount</span>
     </div>
   </div>
@@ -190,8 +205,13 @@
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  
-  
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_constructor.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.constructor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2979">View Source</a>
+  </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_constructor" data-uid="@altmp/altv-types.alt-client.HttpClient.constructor">HttpClient()
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
@@ -203,14 +223,102 @@
   <div class="codewrapper">
     <pre><code class="lang-typeScript hljs">public HttpClient(): HttpClient</code></pre>
   </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_id.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2992">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_HttpClient_id" data-uid="@altmp/altv-types.alt-client.HttpClient.id">id
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public readonly id: number</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <span class="divider">|</span>
+    <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_getByID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.getByID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide" data-noindex="">
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2989">View Source</a>
+  </span>
+  <h4 id="_altmp_altv_types_alt_client_HttpClient_getByID" data-uid="@altmp/altv-types.alt-client.HttpClient.getByID">getByID(number)
+  <span class="release-stage public"></span>
+  <span class="release-stage beta"></span>
+  <span class="release-stage alpha"></span>
+  </h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">public static getByID(id: number): null | HttpClient</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">number</span></td>
+        <td><em>id</em></td>
+        <td>
+          
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>null | <a class="xref" href="alt-client.HttpClient.html">HttpClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_setExtraHeader.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.setExtraHeader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2699">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2994">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_setExtraHeader" data-uid="@altmp/altv-types.alt-client.HttpClient.setExtraHeader">setExtraHeader(string, string)
   <span class="release-stage public"></span>
@@ -256,7 +364,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_getExtraHeaders.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.getExtraHeaders%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2701">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2996">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_getExtraHeaders" data-uid="@altmp/altv-types.alt-client.HttpClient.getExtraHeaders">getExtraHeaders()
   <span class="release-stage public"></span>
@@ -289,7 +397,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_get.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.get%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2703">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2998">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_get" data-uid="@altmp/altv-types.alt-client.HttpClient.get">get(string)
   <span class="release-stage public"></span>
@@ -342,7 +450,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_head.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.head%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2705">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3000">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_head" data-uid="@altmp/altv-types.alt-client.HttpClient.head">head(string)
   <span class="release-stage public"></span>
@@ -395,7 +503,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_post.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.post%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2707">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3002">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_post" data-uid="@altmp/altv-types.alt-client.HttpClient.post">post(string, string)
   <span class="release-stage public"></span>
@@ -456,7 +564,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_put.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.put%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2709">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3004">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_put" data-uid="@altmp/altv-types.alt-client.HttpClient.put">put(string, string)
   <span class="release-stage public"></span>
@@ -517,7 +625,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_delete.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.delete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2711">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3006">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_delete" data-uid="@altmp/altv-types.alt-client.HttpClient.delete">delete(string, string)
   <span class="release-stage public"></span>
@@ -578,7 +686,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_connect.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.connect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2713">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3008">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_connect" data-uid="@altmp/altv-types.alt-client.HttpClient.connect">connect(string, string)
   <span class="release-stage public"></span>
@@ -639,7 +747,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_options.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2715">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3010">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_options" data-uid="@altmp/altv-types.alt-client.HttpClient.options">options(string, string)
   <span class="release-stage public"></span>
@@ -700,7 +808,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_trace.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.trace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2717">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3012">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_trace" data-uid="@altmp/altv-types.alt-client.HttpClient.trace">trace(string, string)
   <span class="release-stage public"></span>
@@ -761,7 +869,7 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_HttpClient_patch.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.HttpClient.patch%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L2719">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L3014">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_HttpClient_patch" data-uid="@altmp/altv-types.alt-client.HttpClient.patch">patch(string, string)
   <span class="release-stage public"></span>

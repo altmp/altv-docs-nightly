@@ -1,0 +1,822 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TextLabel
+   </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Class TextLabel
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column class">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#constructors">Constructors</a><ul class="level2 nav bs-docs-sidenav constructors"><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel__ctor_AltV_Net_Client_ICore_IntPtr_System_UInt32_">TextLabel(ICore, IntPtr, UInt32)</a></li><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel__ctor_AltV_Net_Client_ICore_System_String_System_String_System_Single_System_Single_AltV_Net_Data_Position_AltV_Net_Data_Rotation_AltV_Net_Data_Rgba_System_Single_AltV_Net_Data_Rgba_">TextLabel(ICore, String, String, Single, Single, Position, Rotation, Rgba, Single, Rgba)</a></li></ul></li><li><a href="#properties">Properties</a><ul class="level2 nav bs-docs-sidenav properties"><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel_Color">Color</a></li><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel_IsGlobal">IsGlobal</a></li><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel_IsRemote">IsRemote</a></li><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel_NativePointer">NativePointer</a></li><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel_RemoteId">RemoteId</a></li><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel_Rotation">Rotation</a></li><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel_Scale">Scale</a></li><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel_Target">Target</a></li><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel_TextLabelNativePointer">TextLabelNativePointer</a></li><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel_Visible">Visible</a></li></ul></li><li><a href="#methods">Methods</a><ul class="level2 nav bs-docs-sidenav methods"><li><a href="#AltV_Net_Client_Elements_Entities_TextLabel_GetWorldObjectPointer_AltV_Net_Client_ICore_IntPtr_">GetWorldObjectPointer(ICore, IntPtr)</a></li></ul></li><li><a href="#implements">Implements</a></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="AltV.Net.Client.Elements.Entities.TextLabel">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L7">View Source</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+  
+  
+  <h1 id="AltV_Net_Client_Elements_Entities_TextLabel" data-uid="AltV.Net.Client.Elements.Entities.TextLabel" class="text-break">Class TextLabel
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html">SharedBaseObject</a></div>
+    <div class="level2"><a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html">BaseObject</a></div>
+    <div class="level3"><a class="xref" href="AltV.Net.Client.Elements.Entities.WorldObject.html">WorldObject</a></div>
+    <div class="level4"><span class="xref">TextLabel</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="AltV.Net.Client.Elements.Interfaces.ITextLabel.html">ITextLabel</a></div>
+    <div><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IWorldObject.html">IWorldObject</a></div>
+    <div><a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedWorldObject.html">ISharedWorldObject</a></div>
+    <div><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IBaseObject.html">IBaseObject</a></div>
+    <div><a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html">ISharedBaseObject</a></div>
+    <div><a class="xref" href="AltV.Net.Types.INative.html">INative</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.WorldObject.html#AltV_Net_Client_Elements_Entities_WorldObject_WorldObjectNativePointer">WorldObject.WorldObjectNativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.WorldObject.html#AltV_Net_Client_Elements_Entities_WorldObject_Position">WorldObject.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.WorldObject.html#AltV_Net_Client_Elements_Entities_WorldObject_CheckIfEntityExists">WorldObject.CheckIfEntityExists()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.WorldObject.html#AltV_Net_Client_Elements_Entities_WorldObject_SetCached_IntPtr_">WorldObject.SetCached(IntPtr)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html#AltV_Net_Client_Elements_Entities_BaseObject_BaseObjectNativePointer">BaseObject.BaseObjectNativePointer</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html#AltV_Net_Client_Elements_Entities_BaseObject_Core">BaseObject.Core</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html#AltV_Net_Client_Elements_Entities_BaseObject_Type">BaseObject.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html#AltV_Net_Client_Elements_Entities_BaseObject_Id">BaseObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Entities.BaseObject.html#AltV_Net_Client_Elements_Entities_BaseObject_CheckIfCallIsValid">BaseObject.CheckIfCallIsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_SetData_System_String_System_Object_">SharedBaseObject.SetData(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetData__1_System_String___0__">SharedBaseObject.GetData&lt;T&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetAllDataKeys">SharedBaseObject.GetAllDataKeys()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_HasData_System_String_">SharedBaseObject.HasData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_DeleteData_System_String_">SharedBaseObject.DeleteData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_ClearData">SharedBaseObject.ClearData()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_OnDestroy">SharedBaseObject.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">SharedBaseObject.GetMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_SetMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">SharedBaseObject.SetMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_HasMetaData_System_String_">SharedBaseObject.HasMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_DeleteMetaData_System_String_">SharedBaseObject.DeleteMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_SetMetaData_System_String_System_Object_">SharedBaseObject.SetMetaData(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData_System_String_System_Int32__">SharedBaseObject.GetMetaData(String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData_System_String_System_UInt32__">SharedBaseObject.GetMetaData(String, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData_System_String_System_Single__">SharedBaseObject.GetMetaData(String, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetMetaData__1_System_String___0__">SharedBaseObject.GetMetaData&lt;T&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_CheckIfEntityExistsOrCached">SharedBaseObject.CheckIfEntityExistsOrCached()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Exists">SharedBaseObject.Exists</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Cached">SharedBaseObject.Cached</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Equals_System_Object_">SharedBaseObject.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetHashCode">SharedBaseObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Remove">SharedBaseObject.Remove()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_Destroy">SharedBaseObject.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetSyncedMetaData_System_String_AltV_Net_Elements_Args_MValueConst__">SharedBaseObject.GetSyncedMetaData(String, MValueConst)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetSyncedMetaData__1_System_String___0__">SharedBaseObject.GetSyncedMetaData&lt;T&gt;(String, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_HasSyncedMetaData_System_String_">SharedBaseObject.HasSyncedMetaData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetSyncedMetaData_System_String_System_Int32__">SharedBaseObject.GetSyncedMetaData(String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetSyncedMetaData_System_String_System_UInt32__">SharedBaseObject.GetSyncedMetaData(String, UInt32)</a>
+    </div>
+    <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.SharedBaseObject.html#AltV_Net_Shared_Elements_Entities_SharedBaseObject_GetSyncedMetaData_System_String_System_Single__">SharedBaseObject.GetSyncedMetaData(String, Single)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AltV.Net.Client.Elements.Entities.html">AltV.Net.Client.Elements.Entities</a></h6>
+  <h6><strong>Assembly</strong>: AltV.Net.Client.dll</h6>
+  <h5 id="AltV_Net_Client_Elements_Entities_TextLabel_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TextLabel : WorldObject, IInternalBaseObject, ITextLabel, IWorldObject, ISharedWorldObject, IBaseObject, ISharedBaseObject, INative</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel__ctor_AltV_Net_Client_ICore_IntPtr_System_UInt32_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.%23ctor(AltV.Net.Client.ICore%2CIntPtr%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L17">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel__ctor_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.#ctor*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel__ctor_AltV_Net_Client_ICore_IntPtr_System_UInt32_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.#ctor(AltV.Net.Client.ICore,IntPtr,System.UInt32)">TextLabel(ICore, IntPtr, UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextLabel(ICore core, IntPtr worldObjectPointer, uint id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Client.ICore.html">ICore</a></td>
+        <td><span class="parametername">core</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">worldObjectPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel__ctor_AltV_Net_Client_ICore_System_String_System_String_System_Single_System_Single_AltV_Net_Data_Position_AltV_Net_Data_Rotation_AltV_Net_Data_Rgba_System_Single_AltV_Net_Data_Rgba_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.%23ctor(AltV.Net.Client.ICore%2CSystem.String%2CSystem.String%2CSystem.Single%2CSystem.Single%2CAltV.Net.Data.Position%2CAltV.Net.Data.Rotation%2CAltV.Net.Data.Rgba%2CSystem.Single%2CAltV.Net.Data.Rgba)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L22">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel__ctor_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.#ctor*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel__ctor_AltV_Net_Client_ICore_System_String_System_String_System_Single_System_Single_AltV_Net_Data_Position_AltV_Net_Data_Rotation_AltV_Net_Data_Rgba_System_Single_AltV_Net_Data_Rgba_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.#ctor(AltV.Net.Client.ICore,System.String,System.String,System.Single,System.Single,AltV.Net.Data.Position,AltV.Net.Data.Rotation,AltV.Net.Data.Rgba,System.Single,AltV.Net.Data.Rgba)">TextLabel(ICore, String, String, Single, Single, Position, Rotation, Rgba, Single, Rgba)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextLabel(ICore core, string name, string fontName, float fontSize, float scale, Position pos, Rotation rot, Rgba color, float outlineWidth, Rgba outlineColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Client.ICore.html">ICore</a></td>
+        <td><span class="parametername">core</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fontName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">fontSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Position.html">Position</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Rotation.html">Rotation</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Rgba.html">Rgba</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">outlineWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Rgba.html">Rgba</a></td>
+        <td><span class="parametername">outlineColor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel_Color.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.Color%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L80">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel_Color_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.Color*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel_Color" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.Color">Color</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rgba Color { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Rgba.html">Rgba</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel_IsGlobal.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.IsGlobal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L55">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel_IsGlobal_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.IsGlobal*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel_IsGlobal" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.IsGlobal">IsGlobal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGlobal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel_IsRemote.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.IsRemote%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L31">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel_IsRemote_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.IsRemote*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel_IsRemote" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.IsRemote">IsRemote</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRemote { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel_NativePointer.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.NativePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L29">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel_NativePointer_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.NativePointer*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel_NativePointer" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.NativePointer">NativePointer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IntPtr NativePointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="AltV.Net.Client.Elements.Entities.WorldObject.html#AltV_Net_Client_Elements_Entities_WorldObject_NativePointer">WorldObject.NativePointer</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel_RemoteId.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.RemoteId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L43">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel_RemoteId_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.RemoteId*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel_RemoteId" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.RemoteId">RemoteId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong RemoteId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel_Rotation.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.Rotation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L138">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel_Rotation_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.Rotation*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel_Rotation" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.Rotation">Rotation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rotation Rotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Data.Rotation.html">Rotation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel_Scale.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.Scale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L121">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel_Scale_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.Scale*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel_Scale" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.Scale">Scale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Scale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel_Target.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.Target%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L66">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel_Target_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.Target*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel_Target" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.Target">Target</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPlayer Target { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Client.Elements.Interfaces.IPlayer.html">IPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel_TextLabelNativePointer.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.TextLabelNativePointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L28">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel_TextLabelNativePointer_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.TextLabelNativePointer*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel_TextLabelNativePointer" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.TextLabelNativePointer">TextLabelNativePointer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr TextLabelNativePointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel_Visible.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.Visible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L102">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel_Visible_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.Visible*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel_Visible" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.Visible">Visible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Visible { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/FabianTerhorst/coreclr-module/new/master/docs/apidoc/new?filename=AltV_Net_Client_Elements_Entities_TextLabel_GetWorldObjectPointer_AltV_Net_Client_ICore_IntPtr_.md&amp;value=---%0Auid%3A%20AltV.Net.Client.Elements.Entities.TextLabel.GetWorldObjectPointer(AltV.Net.Client.ICore%2CIntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/FabianTerhorst/coreclr-module/blob/479e0cd6b2d1fe325037ba4b4196b13a8534dee9/api/AltV.Net.Client/Elements/Entities/TextLabel.cs/#L9">View Source</a>
+  </span>
+  <a id="AltV_Net_Client_Elements_Entities_TextLabel_GetWorldObjectPointer_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.GetWorldObjectPointer*"></a>
+  <h4 id="AltV_Net_Client_Elements_Entities_TextLabel_GetWorldObjectPointer_AltV_Net_Client_ICore_IntPtr_" data-uid="AltV.Net.Client.Elements.Entities.TextLabel.GetWorldObjectPointer(AltV.Net.Client.ICore,IntPtr)">GetWorldObjectPointer(ICore, IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPtr GetWorldObjectPointer(ICore core, IntPtr nativePointer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="AltV.Net.Client.ICore.html">ICore</a></td>
+        <td><span class="parametername">core</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td><span class="parametername">nativePointer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Interfaces.ITextLabel.html">ITextLabel</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Interfaces.IWorldObject.html">IWorldObject</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedWorldObject.html">ISharedWorldObject</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Client.Elements.Interfaces.IBaseObject.html">IBaseObject</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Shared.Elements.Entities.ISharedBaseObject.html">ISharedBaseObject</a>
+  </div>
+  <div>
+      <a class="xref" href="AltV.Net.Types.INative.html">INative</a>
+  </div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

@@ -129,7 +129,7 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L498">View Source</a>
+                                                <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L670">View Source</a>
                                             </li>
                                             <li>
                                                 <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -155,6 +155,15 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByID">getByID(BaseObjectType, number)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.BaseObject.html#_altmp_altv_types_alt_client_BaseObject_getByRemoteID">getByRemoteID(BaseObjectType, number)</a>
+    </div>
+    <div>
+      <a class="xref" href="alt-client.WorldObject.html#_altmp_altv_types_alt_client_WorldObject_dimension">dimension</a>
+    </div>
     <div>
       <span class="xref">WorldObject.constructor</span>
     </div>
@@ -187,15 +196,14 @@
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_all.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.all%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L513">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L685">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_all" data-uid="@altmp/altv-types.alt-client.Entity.all">all
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Array with all entities.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -216,32 +224,19 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="_altmp_altv_types_alt_client_Entity_all_remarks" class="decalaration">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This creates a clone of the array everytime it is called.
-It is advised to call this once and store the result in a variable, before iterating over it.</p>
-</div>
-  <h5 id="_altmp_altv_types_alt_client_Entity_all_examples" class="decalaration">Examples</h5>
-  <pre><code class="lang-js">const entities = alt.Entity.all; // Store it in a variable, so it doesn't create a copy of the array on each iteration
-for(let i = 0; i &lt; entities.length; i++)
-{
-  alt.log(`${entities[i].id}`); // Logs the id of every entity
-}
-</code></pre>
-
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_id.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L516">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L688">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_id" data-uid="@altmp/altv-types.alt-client.Entity.id">id
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Entity unique id</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -267,15 +262,14 @@ for(let i = 0; i &lt; entities.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_scriptID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.scriptID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L519">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L691">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_scriptID" data-uid="@altmp/altv-types.alt-client.Entity.scriptID">scriptID
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Internal game id that can be used in native calls</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -301,15 +295,14 @@ for(let i = 0; i &lt; entities.length; i++)
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_netOwner.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.netOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L530">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L702">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_netOwner" data-uid="@altmp/altv-types.alt-client.Entity.netOwner">netOwner
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Network owner of the entity.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -330,27 +323,19 @@ for(let i = 0; i &lt; entities.length; i++)
       </tr>
     </tbody>
   </table>
-  <h5 id="_altmp_altv_types_alt_client_Entity_netOwner_remarks" class="decalaration">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Network owner is responsible for syncing entity with the server.
-It changes when actual network owner passes the migration range,
-then the new one is determined based on distance from the entity
-(if entity is a vehicle, then the driver will take priority for becoming network owner).
-Disabling migration range will stop this process from happening until turned on again.</p>
-</div>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_isSpawned.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.isSpawned%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L537">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L709">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_isSpawned" data-uid="@altmp/altv-types.alt-client.Entity.isSpawned">isSpawned
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Returns whether the entity is spawned in the game world.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -371,23 +356,19 @@ Disabling migration range will stop this process from happening until turned on 
       </tr>
     </tbody>
   </table>
-  <h5 id="_altmp_altv_types_alt_client_Entity_isSpawned_remarks" class="decalaration">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This does the same thing as checking if the <a class="xref" href="alt-client.Entity.html#_altmp_altv_types_alt_client_Entity_scriptID">scriptID</a> is 0.</p>
-</div>
   <span class="small pull-right mobile-hide" data-noindex="">
     <span class="divider">|</span>
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_model.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.model%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L540">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L712">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_model" data-uid="@altmp/altv-types.alt-client.Entity.model">model
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Hash of entity model</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -413,15 +394,14 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_pos.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.pos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L545">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L717">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_pos" data-uid="@altmp/altv-types.alt-client.Entity.pos">pos
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Object position</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -447,15 +427,14 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_rot.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.rot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L548">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L720">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_rot" data-uid="@altmp/altv-types.alt-client.Entity.rot">rot
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Entity rotation in radians</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -481,7 +460,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_visible.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.visible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L550">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L722">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_visible" data-uid="@altmp/altv-types.alt-client.Entity.visible">visible
   <span class="release-stage public"></span>
@@ -516,15 +495,14 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getByID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getByID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L558">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L730">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getByID" data-uid="@altmp/altv-types.alt-client.Entity.getByID">getByID(number)
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Retrieves the entity from the pool.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -544,8 +522,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">number</span></td>
         <td><em>id</em></td>
         <td>
-          <p>The id of the entity.</p>
-
+          
           
         </td>
       </tr>
@@ -562,8 +539,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td>null | <a class="xref" href="alt-client.Entity.html">Entity</a></td>
-        <td><p>Entity if it was found, otherwise null.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -572,15 +548,14 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getByScriptID.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getByScriptID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L566">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L738">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getByScriptID" data-uid="@altmp/altv-types.alt-client.Entity.getByScriptID">getByScriptID(number)
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Retrieves the entity from the pool.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -600,8 +575,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">number</span></td>
         <td><em>scriptID</em></td>
         <td>
-          <p>The script id of the entity.</p>
-
+          
           
         </td>
       </tr>
@@ -618,8 +592,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td>null | <a class="xref" href="alt-client.Entity.html">Entity</a></td>
-        <td><p>Entity if it was found, otherwise null.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -628,7 +601,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_setMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.setMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L568">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L740">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_setMeta" data-uid="@altmp/altv-types.alt-client.Entity.setMeta">setMeta&lt;K extends string&gt;(K, InterfaceValueByKey&lt;ICustomEntityMeta, K, unknown, void&gt;)
   <span class="release-stage public"></span>
@@ -674,7 +647,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_setMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.setMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L568">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L740">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_setMeta_1" data-uid="@altmp/altv-types.alt-client.Entity.setMeta_1">setMeta&lt;K extends never&gt;(K, ICustomEntityMeta[K])
   <span class="release-stage public"></span>
@@ -720,7 +693,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_setMeta_2.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.setMeta_2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L568">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L740">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_setMeta_2" data-uid="@altmp/altv-types.alt-client.Entity.setMeta_2">setMeta&lt;V extends unknown, K extends string&gt;(K, InterfaceValueByKey&lt;ICustomEntityMeta, K, V, void&gt;)
   <span class="release-stage public"></span>
@@ -729,19 +702,6 @@ Disabling migration range will stop this process from happening until turned on 
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th><span style="color: red; text-transform: uppercase;">Deprecated</span></th>
-      </tr>
-    </thead>
-      <tbody>
-        <tr>
-          <td><p>See <a class="xref" href="alt-client.ICustomEntityMeta.html">ICustomEntityMeta</a></p>
-</td>
-        </tr>
-      </tbody>
-  </table>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-typeScript hljs">public setMeta&lt;V extends unknown, K extends string&gt;(key: K, value: InterfaceValueByKey&lt;ICustomEntityMeta, K, V, void&gt;): void</code></pre>
@@ -779,7 +739,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_deleteMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.deleteMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L573">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L745">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_deleteMeta" data-uid="@altmp/altv-types.alt-client.Entity.deleteMeta">deleteMeta(string)
   <span class="release-stage public"></span>
@@ -817,7 +777,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_deleteMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.deleteMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L573">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L745">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_deleteMeta_1" data-uid="@altmp/altv-types.alt-client.Entity.deleteMeta_1">deleteMeta&lt;K extends never&gt;(K)
   <span class="release-stage public"></span>
@@ -855,7 +815,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L576">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L748">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getMeta" data-uid="@altmp/altv-types.alt-client.Entity.getMeta">getMeta&lt;K extends string&gt;(Exclude&lt;K, never&gt;)
   <span class="release-stage public"></span>
@@ -908,7 +868,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L576">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L748">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getMeta_1" data-uid="@altmp/altv-types.alt-client.Entity.getMeta_1">getMeta&lt;K extends never&gt;(K)
   <span class="release-stage public"></span>
@@ -961,7 +921,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getMeta_2.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getMeta_2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L576">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L748">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getMeta_2" data-uid="@altmp/altv-types.alt-client.Entity.getMeta_2">getMeta&lt;V extends unknown&gt;(string)
   <span class="release-stage public"></span>
@@ -970,19 +930,6 @@ Disabling migration range will stop this process from happening until turned on 
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th><span style="color: red; text-transform: uppercase;">Deprecated</span></th>
-      </tr>
-    </thead>
-      <tbody>
-        <tr>
-          <td><p>See <a class="xref" href="alt-client.ICustomEntityMeta.html">ICustomEntityMeta</a></p>
-</td>
-        </tr>
-      </tbody>
-  </table>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-typeScript hljs">public getMeta&lt;V extends unknown&gt;(key: string): undefined | V</code></pre>
@@ -1027,7 +974,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_hasMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.hasMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L581">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L753">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_hasMeta" data-uid="@altmp/altv-types.alt-client.Entity.hasMeta">hasMeta(string)
   <span class="release-stage public"></span>
@@ -1080,7 +1027,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_hasMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.hasMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L581">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L753">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_hasMeta_1" data-uid="@altmp/altv-types.alt-client.Entity.hasMeta_1">hasMeta&lt;K extends never&gt;(K)
   <span class="release-stage public"></span>
@@ -1133,15 +1080,14 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L590">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L762">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getSyncedMeta" data-uid="@altmp/altv-types.alt-client.Entity.getSyncedMeta">getSyncedMeta&lt;K extends string&gt;(Exclude&lt;K, never&gt;)
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Gets a value using the specified key.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1161,8 +1107,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">Exclude&lt;K, never&gt;</span></td>
         <td><em>key</em></td>
         <td>
-          <p>The key of the value to get.</p>
-
+          
           
         </td>
       </tr>
@@ -1179,8 +1124,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td><span class="xref">unknown</span></td>
-        <td><p>Dynamic value associated with the specified key or undefined if no data is present.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1189,7 +1133,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getSyncedMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getSyncedMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L590">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L762">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getSyncedMeta_1" data-uid="@altmp/altv-types.alt-client.Entity.getSyncedMeta_1">getSyncedMeta&lt;K extends never&gt;(K)
   <span class="release-stage public"></span>
@@ -1242,7 +1186,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getSyncedMeta_2.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getSyncedMeta_2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L590">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L762">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getSyncedMeta_2" data-uid="@altmp/altv-types.alt-client.Entity.getSyncedMeta_2">getSyncedMeta&lt;V extends unknown&gt;(string)
   <span class="release-stage public"></span>
@@ -1251,19 +1195,6 @@ Disabling migration range will stop this process from happening until turned on 
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th><span style="color: red; text-transform: uppercase;">Deprecated</span></th>
-      </tr>
-    </thead>
-      <tbody>
-        <tr>
-          <td><p>See &lt;xref:%22alt-shared%22.ICustomEntitySyncedMeta&gt;</p>
-</td>
-        </tr>
-      </tbody>
-  </table>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-typeScript hljs">public getSyncedMeta&lt;V extends unknown&gt;(key: string): undefined | V</code></pre>
@@ -1308,15 +1239,14 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_hasSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.hasSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L601">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L773">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_hasSyncedMeta" data-uid="@altmp/altv-types.alt-client.Entity.hasSyncedMeta">hasSyncedMeta(string)
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Determines whether contains the specified key.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1336,8 +1266,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          <p>The key of the value to locate.</p>
-
+          
           
         </td>
       </tr>
@@ -1354,8 +1283,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td><span class="xref">boolean</span></td>
-        <td><p>True if the meta table contains any data at the specified key or False if not</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1364,7 +1292,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_hasSyncedMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.hasSyncedMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L601">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L773">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_hasSyncedMeta_1" data-uid="@altmp/altv-types.alt-client.Entity.hasSyncedMeta_1">hasSyncedMeta&lt;K extends never&gt;(K)
   <span class="release-stage public"></span>
@@ -1417,7 +1345,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getSyncedMetaKeys.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getSyncedMetaKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L604">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L776">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getSyncedMetaKeys" data-uid="@altmp/altv-types.alt-client.Entity.getSyncedMetaKeys">getSyncedMetaKeys()
   <span class="release-stage public"></span>
@@ -1450,15 +1378,14 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getStreamSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getStreamSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L612">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L784">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getStreamSyncedMeta" data-uid="@altmp/altv-types.alt-client.Entity.getStreamSyncedMeta">getStreamSyncedMeta&lt;K extends string&gt;(Exclude&lt;K, never&gt;)
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Gets a value using the specified key.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1478,8 +1405,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">Exclude&lt;K, never&gt;</span></td>
         <td><em>key</em></td>
         <td>
-          <p>The key of the value to get.</p>
-
+          
           
         </td>
       </tr>
@@ -1496,8 +1422,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td><span class="xref">unknown</span></td>
-        <td><p>Dynamic value associated with the specified key or undefined if no data is present.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1506,7 +1431,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getStreamSyncedMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getStreamSyncedMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L612">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L784">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getStreamSyncedMeta_1" data-uid="@altmp/altv-types.alt-client.Entity.getStreamSyncedMeta_1">getStreamSyncedMeta&lt;K extends never&gt;(K)
   <span class="release-stage public"></span>
@@ -1559,7 +1484,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getStreamSyncedMeta_2.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getStreamSyncedMeta_2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L612">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L784">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getStreamSyncedMeta_2" data-uid="@altmp/altv-types.alt-client.Entity.getStreamSyncedMeta_2">getStreamSyncedMeta&lt;V extends unknown&gt;(string)
   <span class="release-stage public"></span>
@@ -1568,19 +1493,6 @@ Disabling migration range will stop this process from happening until turned on 
   </h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th><span style="color: red; text-transform: uppercase;">Deprecated</span></th>
-      </tr>
-    </thead>
-      <tbody>
-        <tr>
-          <td><p>See &lt;xref:%22alt-shared%22.ICustomEntityStreamSyncedMeta&gt;</p>
-</td>
-        </tr>
-      </tbody>
-  </table>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-typeScript hljs">public getStreamSyncedMeta&lt;V extends unknown&gt;(key: string): undefined | V</code></pre>
@@ -1625,15 +1537,14 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_hasStreamSyncedMeta.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.hasStreamSyncedMeta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L623">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L795">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_hasStreamSyncedMeta" data-uid="@altmp/altv-types.alt-client.Entity.hasStreamSyncedMeta">hasStreamSyncedMeta(string)
   <span class="release-stage public"></span>
   <span class="release-stage beta"></span>
   <span class="release-stage alpha"></span>
   </h4>
-  <div class="markdown level1 summary"><p>Determines whether contains the specified key.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1653,8 +1564,7 @@ Disabling migration range will stop this process from happening until turned on 
         <td><span class="xref">string</span></td>
         <td><em>key</em></td>
         <td>
-          <p>The key of the value to locate.</p>
-
+          
           
         </td>
       </tr>
@@ -1671,8 +1581,7 @@ Disabling migration range will stop this process from happening until turned on 
     <tbody>
       <tr>
         <td><span class="xref">boolean</span></td>
-        <td><p>True if the meta table contains any data at the specified key or False if not</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1681,7 +1590,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_hasStreamSyncedMeta_1.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.hasStreamSyncedMeta_1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L623">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L795">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_hasStreamSyncedMeta_1" data-uid="@altmp/altv-types.alt-client.Entity.hasStreamSyncedMeta_1">hasStreamSyncedMeta&lt;K extends never&gt;(K)
   <span class="release-stage public"></span>
@@ -1734,7 +1643,7 @@ Disabling migration range will stop this process from happening until turned on 
     <a href="https://github.com/altmp/altv-types/new/master/docs/apidoc/new?filename=_altmp_altv_types_alt_client_Entity_getStreamSyncedMetaKeys.md&amp;value=---%0Auid%3A%20%40altmp%2Faltv-types.alt-client.Entity.getStreamSyncedMetaKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide" data-noindex="">
-    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L626">View Source</a>
+    <a href="https://github.com/altmp/altv-types/blob/master/./client/index.d.ts/#L798">View Source</a>
   </span>
   <h4 id="_altmp_altv_types_alt_client_Entity_getStreamSyncedMetaKeys" data-uid="@altmp/altv-types.alt-client.Entity.getStreamSyncedMetaKeys">getStreamSyncedMetaKeys()
   <span class="release-stage public"></span>

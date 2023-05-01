@@ -169,7 +169,7 @@ alt.everyTick(() =&gt; {
 
         if (distance &gt;= 3000) {
             nearIsland = false;
-            game.setIslandHopperEnabled('HeistIsland', false);
+            game.setIslandEnabled('HeistIsland', false);
             game.setScenarioGroupEnabled(&quot;Heist_Island_Peds&quot;, false);
             game.setAudioFlag(&quot;PlayerOnDLCHeist4Island&quot;, false);
             game.setAmbientZoneListStatePersistent(&quot;AZL_DLC_Hei4_Island_Zones&quot;, false, false);
@@ -177,7 +177,7 @@ alt.everyTick(() =&gt; {
         }
     } else if (distance &lt; 2000 &amp;&amp; !nearIsland) {
         nearIsland = true;
-        game.setIslandHopperEnabled('HeistIsland', true);
+        game.setIslandEnabled('HeistIsland', true);
         game.setScenarioGroupEnabled('Heist_Island_Peds', true);
         game.setAudioFlag(&quot;PlayerOnDLCHeist4Island&quot;, true);
         game.setAmbientZoneListStatePersistent(&quot;AZL_DLC_Hei4_Island_Zones&quot;, true, true);

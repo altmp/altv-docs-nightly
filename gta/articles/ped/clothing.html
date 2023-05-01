@@ -137,7 +137,7 @@
 <p>Starting with the alt:V 4.0 release, in addition to setting the clothes on the client side (native: setPedComponentVariation), it is also possible to set them on the server side (setClothes, setDlcClothes, setProp, setDlcProp).</p>
 <div class="CAUTION">
 <h5>Caution</h5>
-<p>The synchronization of client-side set clothing is valid until the first time a server-side setter is used. To realize the client-side preview of clothes it is recommended to clone the player's ped and display the clothes on this ped (either with natives or using alt.setPedClothes &amp; setPedDlcClothes).</p>
+<p>The synchronization of client-side set clothing is valid until the first time a server-side setter is used. To realize the client-side preview of clothes it is recommended to clone the player's ped (native: <code>clonePed(alt.Player.local, false, false, false)</code>) and display the clothes on this ped (either with natives or using setPedDlcClothes &amp; setPedDlcProp).</p>
 </div>
 <div class="TIP">
 <h5>Tip</h5>

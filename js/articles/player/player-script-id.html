@@ -160,8 +160,8 @@
 <pre><code class="lang-js">import * as alt from 'alt-server';
 
 alt.on('playerConnect', player =&gt; {
-    // This emits to all player
-    alt.emitClient(null, 'joined', player);
+    // Send 'joined' event with a player instance to all players 
+    alt.emitAllClients('joined', player);
 });
 </code></pre>
 <h3 id="client-side">Client Side</h3>
@@ -169,7 +169,7 @@ alt.on('playerConnect', player =&gt; {
 import * as native from 'natives';
 
 alt.onServer('joined', otherPlayer =&gt; {
-    // Check if self. Ignore self.
+    // Check if otherPlayer is our local player
     if (otherPlayer === alt.Player.local) {
         // Let's freeze ourself.
         // Don't actually do this. This is just how most natives work with scriptID.

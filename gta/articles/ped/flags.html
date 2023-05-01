@@ -177,6 +177,10 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>24</td>
 </tr>
 <tr>
+<td>PED_FLAG_GET_OUT_UNDRIVEABLE_VEHICLE</td>
+<td>29</td>
+</tr>
+<tr>
 <td>PED_FLAG_CAN_FLY_THRU_WINDSCREEN</td>
 <td>32</td>
 </tr>
@@ -193,6 +197,10 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>35</td>
 </tr>
 <tr>
+<td>PED_FLAG_DONT_TAKE_OFF_HELMET</td>
+<td>36</td>
+</tr>
+<tr>
 <td>PED_FLAG_DISABLE_EVASIVE_DIVES</td>
 <td>39</td>
 </tr>
@@ -207,6 +215,10 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <tr>
 <td>PED_FLAG_DISABLE_LOCKON_TO_RANDOM_PEDS</td>
 <td>44</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALLOW_LOCKON_TO_FRIENDLY_PLAYERS</td>
+<td>45</td>
 </tr>
 <tr>
 <td>PED_FLAG_BEING_DELETED</td>
@@ -321,8 +333,44 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>105</td>
 </tr>
 <tr>
+<td>PED_FLAG_DONT_ACTIVATE_RAGDOLL_FROM_VEHICLE_IMPACT</td>
+<td>106</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_ACTIVATE_RAGDOLL_FROM_BULLET_IMPACT</td>
+<td>107</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_ACTIVATE_RAGDOLL_FROM_EXPLOSIONS</td>
+<td>108</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_ACTIVATE_RAGDOLL_FROM_FIRE</td>
+<td>109</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_ACTIVATE_RAGDOLL_FROM_ELECTROCUTION</td>
+<td>110</td>
+</tr>
+<tr>
+<td>PED_FLAG_KEEP_WEAPON_HOLSTERED_UNLESS_FIRED</td>
+<td>113</td>
+</tr>
+<tr>
+<td>PED_FLAG_GET_OUT_BURNING_VEHICLE</td>
+<td>116</td>
+</tr>
+<tr>
 <td>PED_FLAG_BUMPED_BY_PLAYER</td>
 <td>117</td>
+</tr>
+<tr>
+<td>PED_FLAG_RUN_FROM_FIRES_AND_EXPLOSIONS</td>
+<td>118</td>
+</tr>
+<tr>
+<td>PED_FLAG_TREAT_AS_PLAYER_DURING_TARGETING</td>
+<td>119</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_HAND_CUFFED</td>
@@ -337,12 +385,52 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>122</td>
 </tr>
 <tr>
-<td>PED_FLAG_NM_MESSAGE_466</td>
+<td>PED_FLAG_DISABLE_UNARMED_DRIVEBYS</td>
+<td>123</td>
+</tr>
+<tr>
+<td>PED_FLAG_JUST_GETS_PULLED_OUT_WHEN_ELECTROCUTED</td>
+<td>124</td>
+</tr>
+<tr>
+<td>PED_FLAG_NM_MESSAGE466</td>
 <td>125</td>
+</tr>
+<tr>
+<td>PED_FLAG_WILL_NOT_HOTWIRE_LAW_ENFORCEMENT_VEHICLE</td>
+<td>126</td>
+</tr>
+<tr>
+<td>PED_FLAG_WILL_COMMANDEER_RATHER_THAN_JACK</td>
+<td>127</td>
 </tr>
 <tr>
 <td>PED_FLAG_CAN_BE_AGITATED</td>
 <td>128</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_PED_TO_FACE_LEFT_IN_COVER</td>
+<td>129</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_PED_TO_FACE_RIGHT_IN_COVER</td>
+<td>130</td>
+</tr>
+<tr>
+<td>PED_FLAG_BLOCK_PED_FROM_TURNING_IN_COVER</td>
+<td>131</td>
+</tr>
+<tr>
+<td>PED_FLAG_KEEP_RELATIONSHIP_GROUP_AFTER_CLEAN_UP</td>
+<td>132</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_PED_TO_BE_DRAGGED</td>
+<td>133</td>
+</tr>
+<tr>
+<td>PED_FLAG_PREVENT_PED_FROM_REACTING_TO_BEING_JACKED</td>
+<td>134</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_SCUBA</td>
@@ -351,6 +439,10 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <tr>
 <td>PED_FLAG_WILL_ARREST_RATHER_THAN_JACK</td>
 <td>136</td>
+</tr>
+<tr>
+<td>PED_FLAG_REMOVE_DEAD_EXTRA_FAR_AWAY</td>
+<td>137</td>
 </tr>
 <tr>
 <td>PED_FLAG_RIDING_TRAIN</td>
@@ -363,6 +455,14 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <tr>
 <td>PED_FLAG_CAN_ATTACK_FRIENDLY</td>
 <td>140</td>
+</tr>
+<tr>
+<td>PED_FLAG_WILL_JACK_ANY_PLAYER</td>
+<td>141</td>
+</tr>
+<tr>
+<td>PED_FLAG_WILL_JACK_WANTED_PLAYERS_RATHER_THAN_STEAL_CAR</td>
+<td>144</td>
 </tr>
 <tr>
 <td>PED_FLAG_SHOOTING_ANIM_FLAG</td>
@@ -381,6 +481,26 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>148</td>
 </tr>
 <tr>
+<td>PED_FLAG_COWER_INSTEAD_OF_FLEE</td>
+<td>150</td>
+</tr>
+<tr>
+<td>PED_FLAG_CAN_ACTIVATE_RAGDOLL_WHEN_VEHICLE_UPSIDE_DOWN</td>
+<td>151</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALWAYS_RESPOND_TO_CRIES_FOR_HELP</td>
+<td>152</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_BLOOD_POOL_CREATION</td>
+<td>153</td>
+</tr>
+<tr>
+<td>PED_FLAG_SHOULD_FIX_IF_NO_COLLISION</td>
+<td>154</td>
+</tr>
+<tr>
 <td>PED_FLAG_CAN_PERFORM_ARREST</td>
 <td>155</td>
 </tr>
@@ -393,16 +513,60 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>157</td>
 </tr>
 <tr>
+<td>PED_FLAG_PLAYER_PREFER_FRONT_SEAT_MP</td>
+<td>159</td>
+</tr>
+<tr>
 <td>PED_FLAG_IS_INJURED</td>
 <td>166</td>
 </tr>
 <tr>
-<td>PED_FLAG_IS_INJURED_2</td>
+<td>PED_FLAG_DONT_ENTER_VEHICLES_IN_PLAYERS_GROUP</td>
+<td>167</td>
+</tr>
+<tr>
+<td>PED_FLAG_PREVENT_ALL_MELEE_TAUNTS</td>
+<td>169</td>
+</tr>
+<tr>
+<td>PED_FLAG_IS_INJURED2</td>
 <td>170</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALWAYS_SEE_APPROACHING_VEHICLES</td>
+<td>171</td>
+</tr>
+<tr>
+<td>PED_FLAG_CAN_DIVE_AWAY_FROM_APPROACHING_VEHICLES</td>
+<td>172</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALLOW_PLAYER_TO_INTERRUPT_VEHICLE_ENTRY_EXIT</td>
+<td>173</td>
+</tr>
+<tr>
+<td>PED_FLAG_ONLY_ATTACK_LAW_IF_PLAYER_IS_WANTED</td>
+<td>174</td>
+</tr>
+<tr>
+<td>PED_FLAG_PEDS_JACKING_ME_DONT_GET_IN</td>
+<td>177</td>
+</tr>
+<tr>
+<td>PED_FLAG_PED_IGNORES_ANIM_INTERRUPT_EVENTS</td>
+<td>179</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_IN_CUSTODY</td>
 <td>180</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_STANDARD_BUMP_REACTION_THRESHOLDS</td>
+<td>181</td>
+</tr>
+<tr>
+<td>PED_FLAG_LAW_WILL_ONLY_ATTACK_IF_PLAYER_IS_WANTED</td>
+<td>182</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_AGITATED</td>
@@ -411,6 +575,10 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <tr>
 <td>PED_FLAG_PREVENT_AUTO_SHUFFLE_TO_DRIVERS_SEAT</td>
 <td>184</td>
+</tr>
+<tr>
+<td>PED_FLAG_USE_KINEMATIC_MODE_WHEN_STATIONARY</td>
+<td>185</td>
 </tr>
 <tr>
 <td>PED_FLAG_ENABLE_WEAPON_BLOCKING</td>
@@ -429,12 +597,44 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>189</td>
 </tr>
 <tr>
+<td>PED_FLAG_DO_NOTHING_WHEN_ON_FOOT_BY_DEFAULT</td>
+<td>193</td>
+</tr>
+<tr>
 <td>PED_FLAG_USING_SCENARIO</td>
 <td>194</td>
 </tr>
 <tr>
 <td>PED_FLAG_VISIBLE_ON_SCREEN</td>
 <td>195</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_ACTIVATE_RAGDOLL_ON_VEHICLE_COLLISION_WHEN_DEAD</td>
+<td>199</td>
+</tr>
+<tr>
+<td>PED_FLAG_HAS_BEEN_IN_ARMED_COMBAT</td>
+<td>200</td>
+</tr>
+<tr>
+<td>PED_FLAG_AVOIDANCE_IGNORE_ALL</td>
+<td>202</td>
+</tr>
+<tr>
+<td>PED_FLAG_AVOIDANCE_IGNORED_BY_ALL</td>
+<td>203</td>
+</tr>
+<tr>
+<td>PED_FLAG_AVOIDANCE_IGNORE_GROUP1</td>
+<td>204</td>
+</tr>
+<tr>
+<td>PED_FLAG_AVOIDANCE_MEMBER_OF_GROUP1</td>
+<td>205</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCED_TO_USE_SPECIFIC_GROUP_SEAT_INDEX</td>
+<td>206</td>
 </tr>
 <tr>
 <td>PED_FLAG_DISABLE_EXPLOSION_REACTIONS</td>
@@ -445,8 +645,44 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>209</td>
 </tr>
 <tr>
+<td>PED_FLAG_WAITING_FOR_PLAYER_CONTROL_INTERRUPT</td>
+<td>210</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCED_TO_STAY_IN_COVER</td>
+<td>211</td>
+</tr>
+<tr>
+<td>PED_FLAG_GENERATES_SOUND_EVENTS</td>
+<td>212</td>
+</tr>
+<tr>
+<td>PED_FLAG_LISTENS_TO_SOUND_EVENTS</td>
+<td>213</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALLOW_TO_BE_TARGETED_IN_A_VEHICLE</td>
+<td>214</td>
+</tr>
+<tr>
+<td>PED_FLAG_WAIT_FOR_DIRECT_ENTRY_POINT_TO_BE_FREE_WHEN_EXITING</td>
+<td>215</td>
+</tr>
+<tr>
+<td>PED_FLAG_ONLY_REQUIRE_ONE_PRESS_TO_EXIT_VEHICLE</td>
+<td>216</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_EXIT_TO_SKY_DIVE</td>
+<td>217</td>
+</tr>
+<tr>
 <td>PED_FLAG_DONT_ENTER_LEADERS_VEHICLE</td>
 <td>220</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_EXIT_TO_SKY_DIVE</td>
+<td>221</td>
 </tr>
 <tr>
 <td>PED_FLAG_SHRINK</td>
@@ -465,8 +701,16 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>226</td>
 </tr>
 <tr>
+<td>PED_FLAG_FORCE_RAGDOLL_UPON_DEATH</td>
+<td>227</td>
+</tr>
+<tr>
 <td>PED_FLAG_DISABLE_PANIC_IN_VEHICLE</td>
 <td>229</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALLOWED_TO_DETACH_TRAILER</td>
+<td>230</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_HOLDING_PROP</td>
@@ -477,23 +721,83 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>237</td>
 </tr>
 <tr>
+<td>PED_FLAG_FORCE_SKIN_CHARACTER_CLOTH</td>
+<td>240</td>
+</tr>
+<tr>
 <td>PED_FLAG_DISABLE_STOPPING_VEHICLE_ENGINE</td>
 <td>241</td>
+</tr>
+<tr>
+<td>PED_FLAG_PHONE_DISABLE_TEXTING_ANIMATIONS</td>
+<td>242</td>
+</tr>
+<tr>
+<td>PED_FLAG_PHONE_DISABLE_TALKING_ANIMATIONS</td>
+<td>243</td>
+</tr>
+<tr>
+<td>PED_FLAG_PHONE_DISABLE_CAMERA_ANIMATIONS</td>
+<td>244</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_BLIND_FIRING_IN_SHOT_REACTIONS</td>
+<td>245</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALLOW_NEARBY_COVER_USAGE</td>
+<td>246</td>
 </tr>
 <tr>
 <td>PED_FLAG_CAN_PLAY_IN_CAR_IDLES</td>
 <td>248</td>
 </tr>
 <tr>
+<td>PED_FLAG_CAN_ATTACK_NON_WANTED_PLAYER_AS_LAW</td>
+<td>249</td>
+</tr>
+<tr>
+<td>PED_FLAG_WILL_TAKE_DAMAGE_WHEN_VEHICLE_CRASHES</td>
+<td>250</td>
+</tr>
+<tr>
+<td>PED_FLAG_AI_CAN_DRIVE_PLAYER_AS_REAR_PASSENGER</td>
+<td>251</td>
+</tr>
+<tr>
+<td>PED_FLAG_PLAYER_CAN_JACK_FRIENDLY_PLAYERS</td>
+<td>252</td>
+</tr>
+<tr>
 <td>PED_FLAG_IS_ON_STAIRS</td>
 <td>253</td>
+</tr>
+<tr>
+<td>PED_FLAG_AI_DRIVER_ALLOW_FRIENDLY_PASSENGER_SEAT_ENTRY</td>
+<td>255</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALLOW_MISSION_PED_TO_USE_INJURED_MOVEMENT</td>
+<td>257</td>
+</tr>
+<tr>
+<td>PED_FLAG_PREVENT_USING_LOWER_PRIORITY_SEATS</td>
+<td>261</td>
 </tr>
 <tr>
 <td>PED_FLAG_DISABLE_CLOSING_VEHICLE_DOOR</td>
 <td>264</td>
 </tr>
 <tr>
-<td>PED_FLAG_IS_ON_STAIRS_SLOPE</td>
+<td>PED_FLAG_TELEPORT_TO_LEADER_VEHICLE</td>
+<td>268</td>
+</tr>
+<tr>
+<td>PED_FLAG_AVOIDANCE_IGNORE_WEIRD_PED_BUFFER</td>
+<td>269</td>
+</tr>
+<tr>
+<td>PED_FLAG_ON_STAIR_SLOPE</td>
 <td>270</td>
 </tr>
 <tr>
@@ -503,6 +807,10 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <tr>
 <td>PED_FLAG_CLIMBED_SHIFTED_FENCE</td>
 <td>273</td>
+</tr>
+<tr>
+<td>PED_FLAG_KILL_WHEN_TRAPPED</td>
+<td>275</td>
 </tr>
 <tr>
 <td>PED_FLAG_EDGE_DETECTED</td>
@@ -515,6 +823,18 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <tr>
 <td>PED_FLAG_NO_WRITHE</td>
 <td>281</td>
+</tr>
+<tr>
+<td>PED_FLAG_ONLY_USE_FORCED_SEAT_WHEN_ENTERING_HELI_IN_GROUP</td>
+<td>282</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_WEIRD_PED_EVENTS</td>
+<td>285</td>
+</tr>
+<tr>
+<td>PED_FLAG_SHOULD_CHARGE_NOW</td>
+<td>286</td>
 </tr>
 <tr>
 <td>PED_FLAG_RAGDOLLING_ON_BOAT</td>
@@ -533,20 +853,80 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>294</td>
 </tr>
 <tr>
+<td>PED_FLAG_NEVER_REACT_TO_PED_ON_ROOF</td>
+<td>296</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_SHOCKING_DRIVING_ON_PAVEMENT_EVENTS</td>
+<td>299</td>
+</tr>
+<tr>
 <td>PED_FLAG_DISABLE_PED_CONSTRAINTS</td>
 <td>301</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_INITIAL_PEEK_IN_COVER</td>
+<td>302</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_JUMPING_FROM_VEHICLES_AFTER_LEADER</td>
+<td>305</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_IN_CLUSTER</td>
 <td>310</td>
 </tr>
 <tr>
+<td>PED_FLAG_SHOUT_TO_GROUP_ON_PLAYER_MELEE</td>
+<td>311</td>
+</tr>
+<tr>
+<td>PED_FLAG_IGNORED_BY_AUTO_OPEN_DOORS</td>
+<td>312</td>
+</tr>
+<tr>
 <td>PED_FLAG_NO_PED_MELEE</td>
 <td>314</td>
 </tr>
 <tr>
+<td>PED_FLAG_CHECK_LOS_FOR_SOUND_EVENTS</td>
+<td>315</td>
+</tr>
+<tr>
+<td>PED_FLAG_CAN_SAY_FOLLOWED_BY_PLAYER_AUDIO</td>
+<td>317</td>
+</tr>
+<tr>
+<td>PED_FLAG_ACTIVATE_RAGDOLL_FROM_MINOR_PLAYER_CONTACT</td>
+<td>318</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_POSE_CHARACTER_CLOTH</td>
+<td>320</td>
+</tr>
+<tr>
+<td>PED_FLAG_HAS_CLOTH_COLLISION_BOUNDS</td>
+<td>321</td>
+</tr>
+<tr>
 <td>PED_FLAG_HAS_HIGH_HEELS</td>
 <td>322</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_BEHAVE_LIKE_LAW</td>
+<td>324</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_POLICE_INVESTIGATING_BODY</td>
+<td>326</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_WRITHE_SHOOT_FROM_GROUND</td>
+<td>327</td>
+</tr>
+<tr>
+<td>PED_FLAG_LOWER_PRIORITY_OF_WARP_SEATS</td>
+<td>328</td>
 </tr>
 <tr>
 <td>PED_FLAG_DISABLE_TALK_TO</td>
@@ -561,12 +941,60 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>331</td>
 </tr>
 <tr>
+<td>PED_FLAG_IGNORE_LEG_IK_RESTRICTIONS</td>
+<td>332</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALLOW_TASK_DO_NOTHING_TIMESLICING</td>
+<td>339</td>
+</tr>
+<tr>
+<td>PED_FLAG_NOT_ALLOWED_TO_JACK_ANY_PLAYERS</td>
+<td>342</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALWAYS_LEAVE_TRAIN_UPON_ARRIVAL</td>
+<td>345</td>
+</tr>
+<tr>
+<td>PED_FLAG_ONLY_WRITHE_FROM_WEAPON_DAMAGE</td>
+<td>347</td>
+</tr>
+<tr>
+<td>PED_FLAG_USE_SLO_MO_BLOOD_VFX</td>
+<td>348</td>
+</tr>
+<tr>
 <td>PED_FLAG_EQUIP_JETPACK</td>
 <td>349</td>
 </tr>
 <tr>
+<td>PED_FLAG_PREVENT_DRAGGED_OUT_OF_CAR_THREAT_RESPONSE</td>
+<td>350</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_DEEP_SURFACE_CHECK</td>
+<td>356</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_DEEP_SURFACE_ANIMS</td>
+<td>357</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_BLIP_NOT_SYNCED</td>
+<td>358</td>
+</tr>
+<tr>
 <td>PED_FLAG_IS_DUCKING_IN_VEHICLE</td>
 <td>359</td>
+</tr>
+<tr>
+<td>PED_FLAG_PREVENT_AUTO_SHUFFLE_TO_TURRET_SEAT</td>
+<td>360</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_EVENT_INTERIOR_STATUS_CHECK</td>
+<td>361</td>
 </tr>
 <tr>
 <td>PED_FLAG_HAS_RESERVE_PARACHUTE</td>
@@ -577,8 +1005,36 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>363</td>
 </tr>
 <tr>
+<td>PED_FLAG_TREAT_DISLIKE_AS_HATE_WHEN_IN_COMBAT</td>
+<td>364</td>
+</tr>
+<tr>
+<td>PED_FLAG_ONLY_UPDATE_TARGET_WANTED_IF_SEEN</td>
+<td>365</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALLOW_AUTO_SHUFFLE_TO_DRIVERS_SEAT</td>
+<td>366</td>
+</tr>
+<tr>
+<td>PED_FLAG_PREVENT_REACTING_TO_SILENCED_CLONE_BULLETS</td>
+<td>372</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_INJURED_CRY_FOR_HELP_EVENTS</td>
+<td>373</td>
+</tr>
+<tr>
 <td>PED_FLAG_NEVER_LEAVE_TRAIN</td>
 <td>374</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_DROP_JETPACK_ON_DEATH</td>
+<td>375</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_AUTO_EQUIP_HELMETS_IN_BIKES</td>
+<td>380</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_CLIMBING_LADDER</td>
@@ -589,16 +1045,104 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>389</td>
 </tr>
 <tr>
+<td>PED_FLAG_GO_ON_WITHOUT_VEHICLE_IF_IT_IS_UNABLE_TO_GET_BACK_TO_ROAD</td>
+<td>391</td>
+</tr>
+<tr>
+<td>PED_FLAG_BLOCK_DROPPING_HEALTH_SNACKS_ON_DEATH</td>
+<td>392</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_THREAT_RESPONSE_TO_NON_FRIEND_TO_FRIEND_MELEE_ACTIONS</td>
+<td>394</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_RESPOND_TO_RANDOM_PEDS_DAMAGE</td>
+<td>395</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALLOW_CONTINUOUS_THREAT_RESPONSE_WANTED_LEVEL_UPDATES</td>
+<td>396</td>
+</tr>
+<tr>
+<td>PED_FLAG_KEEP_TARGET_LOSS_RESPONSE_ON_CLEANUP</td>
+<td>397</td>
+</tr>
+<tr>
+<td>PED_FLAG_PLAYERS_DONT_DRAG_ME_OUT_OF_CAR</td>
+<td>398</td>
+</tr>
+<tr>
+<td>PED_FLAG_BROADCAST_REPONDED_TO_THREAT_WHEN_GOING_TO_POINT_SHOOTING</td>
+<td>399</td>
+</tr>
+<tr>
+<td>PED_FLAG_IGNORE_PED_TYPE_FOR_IS_FRIENDLY_WITH</td>
+<td>400</td>
+</tr>
+<tr>
+<td>PED_FLAG_TREAT_NON_FRIENDLY_AS_HATE_WHEN_IN_COMBAT</td>
+<td>401</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_LEAVE_VEHICLE_IF_LEADER_NOT_IN_VEHICLE</td>
+<td>402</td>
+</tr>
+<tr>
+<td>PED_FLAG_ALLOW_MELEE_REACTION_IF_MELEE_PROOF_IS_ON</td>
+<td>404</td>
+</tr>
+<tr>
+<td>PED_FLAG_USE_NORMAL_EXPLOSION_DAMAGE_WHEN_BLOWN_UP_IN_VEHICLE</td>
+<td>407</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_HOMING_MISSILE_LOCK_FOR_VEHICLE_PED_INSIDE</td>
+<td>408</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_TAKE_OFF_SCUBA_GEAR</td>
+<td>409</td>
+</tr>
+<tr>
 <td>PED_FLAG_ALPHA</td>
 <td>410</td>
+</tr>
+<tr>
+<td>PED_FLAG_LAW_PEDS_CAN_FLEE_FROM_NON_WANTED_PLAYER</td>
+<td>411</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_BLIP_SECURITY_PEDS_IF_PLAYER_IS_WANTED</td>
+<td>412</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_HOLSTERING_WEAPON</td>
 <td>413</td>
 </tr>
 <tr>
+<td>PED_FLAG_USE_GO_TO_POINT_FOR_SCENARIO_NAVIGATION</td>
+<td>414</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_CLEAR_LOCAL_PASSENGERS_WANTED_LEVEL</td>
+<td>415</td>
+</tr>
+<tr>
+<td>PED_FLAG_BLOCK_AUTO_SWAP_ON_WEAPON_PICKUPS</td>
+<td>416</td>
+</tr>
+<tr>
+<td>PED_FLAG_THIS_PED_IS_A_TARGET_PRIORITY_FOR_AI</td>
+<td>417</td>
+</tr>
+<tr>
 <td>PED_FLAG_IS_SWITCHING_HELMET_VISOR</td>
 <td>418</td>
+</tr>
+<tr>
+<td>PED_FLAG_FORCE_HELMET_VISOR_SWITCH</td>
+<td>419</td>
 </tr>
 <tr>
 <td>PED_FLAG_FLAMING_FOOTPRINTS</td>
@@ -617,6 +1161,18 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>424</td>
 </tr>
 <tr>
+<td>PED_FLAG_USE_LOCKPICK_VEHICLE_ENTRY_ANIMATIONS</td>
+<td>426</td>
+</tr>
+<tr>
+<td>PED_FLAG_IGNORE_INTERIOR_CHECK_FOR_SPRINTING</td>
+<td>427</td>
+</tr>
+<tr>
+<td>PED_FLAG_SWAT_HELI_SPAWN_WITHIN_LAST_SPOTTED_LOCATION</td>
+<td>428</td>
+</tr>
+<tr>
 <td>PED_FLAG_DISABLE_STARTING_VEHICLE_ENGINE</td>
 <td>429</td>
 </tr>
@@ -625,12 +1181,72 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>430</td>
 </tr>
 <tr>
+<td>PED_FLAG_DISABLE_TURRET_OR_REAR_SEAT_PREFERENCE</td>
+<td>431</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_WANTED_HELICOPTER_SPAWNING</td>
+<td>432</td>
+</tr>
+<tr>
+<td>PED_FLAG_USE_TARGET_PERCEPTION_FOR_CREATING_AIMED_AT_EVENTS</td>
+<td>433</td>
+</tr>
+<tr>
 <td>PED_FLAG_DISABLE_HOMING_MISSILE_LOCKON</td>
 <td>434</td>
 </tr>
 <tr>
+<td>PED_FLAG_FORCE_IGNORE_MAX_MELEE_ACTIVE_SUPPORT_COMBATANTS</td>
+<td>435</td>
+</tr>
+<tr>
+<td>PED_FLAG_STAY_IN_DEFENSIVE_AREA_WHEN_IN_VEHICLE</td>
+<td>436</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_SHOUT_TARGET_POSITION</td>
+<td>437</td>
+</tr>
+<tr>
 <td>PED_FLAG_DISABLE_HELMET_ARMOR</td>
 <td>438</td>
+</tr>
+<tr>
+<td>PED_FLAG_PREVENT_VEH_EXIT_DUE_TO_INVALID_WEAPON</td>
+<td>441</td>
+</tr>
+<tr>
+<td>PED_FLAG_IGNORE_NET_SESSION_FRIENDLY_FIRE_CHECK_FOR_ALLOW_DAMAGE</td>
+<td>442</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_LEAVE_COMBAT_IF_TARGET_PLAYER_IS_ATTACKED_BY_POLICE</td>
+<td>443</td>
+</tr>
+<tr>
+<td>PED_FLAG_CHECK_LOCKED_BEFORE_WARP</td>
+<td>444</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_SHUFFLE_IN_VEHICLE_TO_MAKE_ROOM</td>
+<td>445</td>
+</tr>
+<tr>
+<td>PED_FLAG_GIVE_WEAPON_ON_GETUP</td>
+<td>446</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_HIT_VEHICLE_WITH_PROJECTILES</td>
+<td>447</td>
+</tr>
+<tr>
+<td>PED_FLAG_DISABLE_FORCED_ENTRY_FOR_OPEN_VEHICLES_FROM_TRY_LOCKED_DOOR</td>
+<td>448</td>
+</tr>
+<tr>
+<td>PED_FLAG_FIRES_DUMMY_ROCKETS</td>
+<td>449</td>
 </tr>
 <tr>
 <td>PED_FLAG_IS_ARRESTING</td>
@@ -641,12 +1257,28 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
 <td>451</td>
 </tr>
 <tr>
+<td>PED_FLAG_HAS_ESTABLISHED_DECOY</td>
+<td>452</td>
+</tr>
+<tr>
+<td>PED_FLAG_BLOCK_DISPATCHED_HELICOPTERS_FROM_LANDING</td>
+<td>453</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_CRY_FOR_HELP_ON_STUN</td>
+<td>454</td>
+</tr>
+<tr>
 <td>PED_FLAG_CAN_BE_INCAPACITATED</td>
 <td>456</td>
 </tr>
 <tr>
 <td>PED_FLAG_MUTABLE_FORCED_AIM</td>
 <td>457</td>
+</tr>
+<tr>
+<td>PED_FLAG_DONT_CHANGE_TARGET_FROM_MELEE</td>
+<td>458</td>
 </tr>
 </tbody>
 </table>
@@ -660,14 +1292,17 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
     BlockNonTemporaryEvents = 17,
     CanPunch = 18,
     IgnoreSeenMelee = 24,
+    GetOutUndriveableVehicle = 29,
     CanFlyThruWindscreen = 32,
     DiesWhenRagdoll = 33,
     HasHelmet = 34,
     PutOnMotorcycleHelmet = 35,
+    DontTakeOffHelmet = 36,
     DisableEvasiveDives = 39,
     DontInfluenceWantedLevel = 42,
     DisablePlayerLockon = 43,
     DisableLockonToRandomPeds = 44,
+    AllowLockonToFriendlyPlayers = 45,
     BeingDeleted = 47,
     BlockWeaponSwitching = 48,
     NoCollision = 52,
@@ -694,90 +1329,245 @@ Flag means: that the value of the variable can only be 0 or 1 (false or true). T
     VaultFromCover = 97,
     IsDrunk = 100,
     ForcedAim = 101,
-    IsNotRagdollAndNotPlayingAnim = 104,
+    IsNotRagdollAndNotPlayingAnim = 104, // OpenDoorArmIK
     ForceReload = 105,
+    DontActivateRagdollFromVehicleImpact = 106,
+    DontActivateRagdollFromBulletImpact = 107,
+    DontActivateRagdollFromExplosions = 108,
+    DontActivateRagdollFromFire = 109,
+    DontActivateRagdollFromElectrocution = 110,
+    KeepWeaponHolsteredUnlessFired = 113,
+    GetOutBurningVehicle = 116,
     BumpedByPlayer = 117,
+    RunFromFiresAndExplosions = 118,
+    TreatAsPlayerDuringTargeting = 119,
     IsHandCuffed = 120,
     IsAnkleCuffed = 121,
     DisableMelee = 122,
+    DisableUnarmedDrivebys = 123,
+    JustGetsPulledOutWhenElectrocuted = 124,
     NmMessage466 = 125,
+    WillNotHotwireLawEnforcementVehicle = 126,
+    WillCommandeerRatherThanJack = 127,
     CanBeAgitated = 128,
+    ForcePedToFaceLeftInCover = 129,
+    ForcePedToFaceRightInCover = 130,
+    BlockPedFromTurningInCover = 131,
+    KeepRelationshipGroupAfterCleanUp = 132,
+    ForcePedToBeDragged = 133,
+    PreventPedFromReactingToBeingJacked = 134,
     IsScuba = 135,
     WillArrestRatherThanJack = 136,
+    RemoveDeadExtraFarAway = 137,
     RidingTrain = 138,
     ArrestResult = 139,
     CanAttackFriendly = 140,
+    WillJackAnyPlayer = 141,
+    WillJackWantedPlayersRatherThanStealCar = 144,
     ShootingAnimFlag = 145,
     DisableLadderClimbing = 146,
     StairsDetected = 147,
     SlopeDetected = 148,
+    CowerInsteadOfFlee = 150,
+    CanActivateRagdollWhenVehicleUpsideDown = 151,
+    AlwaysRespondToCriesForHelp = 152,
+    DisableBloodPoolCreation = 153,
+    ShouldFixIfNoCollision = 154,
     CanPerformArrest = 155,
     CanPerformUncuff = 156,
     CanBeArrested = 157,
+    PlayerPreferFrontSeatMP = 159,
     IsInjured = 166,
-    IsInjured2 = 170,
+    DontEnterVehiclesInPlayersGroup = 167,
+    PreventAllMeleeTaunts = 169,
+    IsInjured2 = 170, // ForceDirectEntry
+    AlwaysSeeApproachingVehicles = 171,
+    CanDiveAwayFromApproachingVehicles = 172,
+    AllowPlayerToInterruptVehicleEntryExit = 173,
+    OnlyAttackLawIfPlayerIsWanted = 174,
+    PedsJackingMeDontGetIn = 177,
+    PedIgnoresAnimInterruptEvents = 179,
     IsInCustody = 180,
+    ForceStandardBumpReactionThresholds = 181,
+    LawWillOnlyAttackIfPlayerIsWanted = 182,
     IsAgitated = 183,
     PreventAutoShuffleToDriversSeat = 184,
+    UseKinematicModeWhenStationary = 185,
     EnableWeaponBlocking = 186,
     HasHurtStarted = 187,
     DisableHurt = 188,
     PlayerIsWeird = 189,
+    DoNothingWhenOnFootByDefault = 193,
     UsingScenario = 194,
     VisibleOnScreen = 195,
+    DontActivateRagdollOnVehicleCollisionWhenDead = 199,
+    HasBeenInArmedCombat = 200,
+    AvoidanceIgnoreAll = 202,
+    AvoidanceIgnoredByAll = 203,
+    AvoidanceIgnoreGroup1 = 204,
+    AvoidanceMemberOfGroup1 = 205,
+    ForcedToUseSpecificGroupSeatIndex = 206,
     DisableExplosionReactions = 208,
     DodgedPlayer = 209,
+    WaitingForPlayerControlInterrupt = 210,
+    ForcedToStayInCover = 211,
+    GeneratesSoundEvents = 212,
+    ListensToSoundEvents = 213,
+    AllowToBeTargetedInAVehicle = 214,
+    WaitForDirectEntryPointToBeFreeWhenExiting = 215,
+    OnlyRequireOnePressToExitVehicle = 216,
+    ForceExitToSkyDive = 217,
     DontEnterLeadersVehicle = 220,
+    DisableExitToSkyDive = 221,
     Shrink = 223,
     MeleeCombat = 224,
     DisablePotentialToBeWalkedIntoResponse = 225,
     DisablePedAvoidance = 226,
+    ForceRagdollUponDeath = 227,
     DisablePanicInVehicle = 229,
+    AllowedToDetachTrailer = 230,
     IsHoldingProp = 236,
     BlocksPathingWhenDead = 237,
+    ForceSkinCharacterCloth = 240,
     DisableStoppingVehicleEngine = 241,
+    PhoneDisableTextingAnimations = 242,
+    PhoneDisableTalkingAnimations = 243,
+    PhoneDisableCameraAnimations = 244,
+    DisableBlindFiringInShotReactions = 245,
+    AllowNearbyCoverUsage = 246,
     CanPlayInCarIdles = 248,
+    CanAttackNonWantedPlayerAsLaw = 249,
+    WillTakeDamageWhenVehicleCrashes = 250,
+    AICanDrivePlayerAsRearPassenger = 251,
+    PlayerCanJackFriendlyPlayers = 252,
     IsOnStairs = 253,
+    AIDriverAllowFriendlyPassengerSeatEntry = 255,
+    AllowMissionPedToUseInjuredMovement = 257,
+    PreventUsingLowerPrioritySeats = 261,
     DisableClosingVehicleDoor = 264,
-    IsOnStairsSlope = 270,
+    TeleportToLeaderVehicle = 268,
+    AvoidanceIgnoreWeirdPedBuffer = 269,
+    OnStairSlope = 270,
     DontBlipCop = 272,
     ClimbedShiftedFence = 273,
+    KillWhenTrapped = 275,
     EdgeDetected = 276,
     AvoidTearGas = 279,
-    NoWrithe = 281,
+    NoWrithe = 281, // DisableGoToWritheWhenInjured
+    OnlyUseForcedSeatWhenEnteringHeliInGroup = 282,
+    DisableWeirdPedEvents = 285,
+    ShouldChargeNow = 286,
     RagdollingOnBoat = 287,
     HasBrandishedWeapon = 288,
     FreezePosition = 292,
     DisableShockingEvents = 294,
+    NeverReactToPedOnRoof = 296,
+    DisableShockingDrivingOnPavementEvents = 299,
     DisablePedConstraints = 301,
+    ForceInitialPeekInCover = 302,
+    DisableJumpingFromVehiclesAfterLeader = 305,
     IsInCluster = 310,
-    NoPedMelee = 314,
+    ShoutToGroupOnPlayerMelee = 311,
+    IgnoredByAutoOpenDoors = 312,
+    NoPedMelee = 314, // ForceIgnoreMeleeActiveCombatant
+    CheckLoSForSoundEvents = 315,
+    CanSayFollowedByPlayerAudio = 317,
+    ActivateRagdollFromMinorPlayerContact = 318,
+    ForcePoseCharacterCloth = 320,
+    HasClothCollisionBounds = 321,
     HasHighHeels = 322,
+    DontBehaveLikeLaw = 324,
+    DisablePoliceInvestigatingBody = 326,
+    DisableWritheShootFromGround = 327,
+    LowerPriorityOfWarpSeats = 328,
     DisableTalkTo = 329,
     DontBlip = 330,
     IsSwitchingWeapon = 331,
+    IgnoreLegIkRestrictions = 332,
+    AllowTaskDoNothingTimeslicing = 339,
+    NotAllowedToJackAnyPlayers = 342,
+    AlwaysLeaveTrainUponArrival = 345,
+    OnlyWritheFromWeaponDamage = 347,
+    UseSloMoBloodVfx = 348,
     EquipJetpack = 349,
+    PreventDraggedOutOfCarThreatResponse = 350,
+    ForceDeepSurfaceCheck = 356,
+    DisableDeepSurfaceAnims = 357,
+    DontBlipNotSynced = 358,
     IsDuckingInVehicle = 359,
+    PreventAutoShuffleToTurretSeat = 360,
+    DisableEventInteriorStatusCheck = 361,
     HasReserveParachute = 362,
     UseReserveParachute = 363,
+    TreatDislikeAsHateWhenInCombat = 364,
+    OnlyUpdateTargetWantedIfSeen = 365,
+    AllowAutoShuffleToDriversSeat = 366,
+    PreventReactingToSilencedCloneBullets = 372,
+    DisableInjuredCryForHelpEvents = 373,
     NeverLeaveTrain = 374,
+    DontDropJetpackOnDeath = 375,
+    DisableAutoEquipHelmetsInBikes = 380,
     IsClimbingLadder = 388,
     HasBareFeet = 389,
-    Alpha = 410,
+    GoOnWithoutVehicleIfItIsUnableToGetBackToRoad = 391,
+    BlockDroppingHealthSnacksOnDeath = 392,
+    ForceThreatResponseToNonFriendToFriendMeleeActions = 394,
+    DontRespondToRandomPedsDamage = 395,
+    AllowContinuousThreatResponseWantedLevelUpdates = 396,
+    KeepTargetLossResponseOnCleanup = 397,
+    PlayersDontDragMeOutOfCar = 398,
+    BroadcastRepondedToThreatWhenGoingToPointShooting = 399,
+    IgnorePedTypeForIsFriendlyWith = 400,
+    TreatNonFriendlyAsHateWhenInCombat = 401,
+    DontLeaveVehicleIfLeaderNotInVehicle = 402,
+    AllowMeleeReactionIfMeleeProofIsOn = 404,
+    UseNormalExplosionDamageWhenBlownUpInVehicle = 407,
+    DisableHomingMissileLockForVehiclePedInside = 408,
+    DisableTakeOffScubaGear = 409,
+    Alpha = 410, // IgnoreMeleeFistWeaponDamageMult
+    LawPedsCanFleeFromNonWantedPlayer = 411,
+    ForceBlipSecurityPedsIfPlayerIsWanted = 412,
     IsHolsteringWeapon = 413,
+    UseGoToPointForScenarioNavigation = 414,
+    DontClearLocalPassengersWantedLevel = 415,
+    BlockAutoSwapOnWeaponPickups = 416,
+    ThisPedIsATargetPriorityForAI = 417,
     IsSwitchingHelmetVisor = 418,
-    FlamingFootprints = 421,
+    ForceHelmetVisorSwitch = 419,
+    FlamingFootprints = 421, // UseOverrideFootstepPtFx
     DisableVehicleCombat = 422,
     DisablePropKnockOff = 423,
     FallsLikeAircraft = 424,
+    UseLockpickVehicleEntryAnimations = 426,
+    IgnoreInteriorCheckForSprinting = 427,
+    SwatHeliSpawnWithinLastSpottedLocation = 428,
     DisableStartingVehicleEngine = 429,
     IgnoreBeingOnFire = 430,
+    DisableTurretOrRearSeatPreference = 431,
+    DisableWantedHelicopterSpawning = 432,
+    UseTargetPerceptionForCreatingAimedAtEvents = 433,
     DisableHomingMissileLockon = 434,
+    ForceIgnoreMaxMeleeActiveSupportCombatants = 435,
+    StayInDefensiveAreaWhenInVehicle = 436,
+    DontShoutTargetPosition = 437,
     DisableHelmetArmor = 438,
+    PreventVehExitDueToInvalidWeapon = 441,
+    IgnoreNetSessionFriendlyFireCheckForAllowDamage = 442,
+    DontLeaveCombatIfTargetPlayerIsAttackedByPolice = 443,
+    CheckLockedBeforeWarp = 444,
+    DontShuffleInVehicleToMakeRoom = 445,
+    GiveWeaponOnGetup = 446,
+    DontHitVehicleWithProjectiles = 447,
+    DisableForcedEntryForOpenVehiclesFromTryLockedDoor = 448,
+    FiresDummyRockets = 449,
     IsArresting = 450,
     IsDecoyPed = 451,
+    HasEstablishedDecoy = 452,
+    BlockDispatchedHelicoptersFromLanding = 453,
+    DontCryForHelpOnStun = 454,
     CanBeIncapacitated = 456,
-    MutableForcedAim = 457
+    MutableForcedAim = 457,
+    DontChangeTargetFromMelee = 458
 }
 </code></pre>
 </article>
