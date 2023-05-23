@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>14.0-Release </title>
+    <title>13.0-Release </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="14.0-Release ">
+    <meta name="title" content="13.0-Release ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#140-release">14.0-Release</a><ul class="level2 nav bs-docs-sidenav 140-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#added-2">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#c-module">C# Module</a><ul class="level3 nav bs-docs-sidenav c-module"><li><a href="#breaking-changes-1">Breaking changes</a></li><li><a href="#added-3">Added</a></li><li><a href="#fixed-2">Fixed</a></li><li><a href="#rework">Rework</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#130-release">13.0-Release</a><ul class="level2 nav bs-docs-sidenav 130-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#breaking-changes-2">Breaking changes</a></li><li><a href="#added-2">Added</a></li><li><a href="#fixed-2">Fixed</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#added-3">Added</a></li><li><a href="#fixed-3">Fixed</a></li><li><a href="#breaking-changes-3">Breaking changes</a></li></ul></li><li><a href="#c-server-module">C# Server Module</a><ul class="level3 nav bs-docs-sidenav c-server-module"><li><a href="#breaking-changes-4">Breaking changes</a></li><li><a href="#changed">Changed</a></li><li><a href="#added-4">Added</a></li></ul></li><li><a href="#c-client-module">C# Client Module</a><ul class="level3 nav bs-docs-sidenav c-client-module"><li><a href="#fixed-4">Fixed</a></li><li><a href="#added-5">Added</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,7 +132,7 @@
                                     </ul>
                                 </span>
 
-<h1 id="140-release">14.0-Release</h1>
+<h1 id="130-release">13.0-Release</h1>
 
 <div class="WARNING">
 <h5>Warning</h5>
@@ -140,142 +140,258 @@
 </div>
 <div class="TIP">
 <h5>Tip</h5>
-<p>This update was released on 31.03.2023</p>
+<p>This update was released on 07.12.2022</p>
 </div>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- 14.1:
-   - Fixed Wrong playercount
-- 14.2:
-   - Fixed Some cef core fixes
-- 14.3:
-   - Fixed cef performance issues
-- 14.4:
-   - Fixed some master server problems
-- 14.5:
-   - Masterserver fixes
-- 14.6:
-   - Masterserver fixes
-- 14.7:
-   - Masterserver fixes
-- 14.8:
-   - Masterserver fixes
-- 14.9:
-   - Masterserver fixes
-- 14.10:
-   - Masterserver fixes
-- 14.11:
-   - CI Changes
-- 14.13:
-   - Streamermode fixes
-- 14.14:
-   - Freeze on huge amount of entities fix
-   - Vehicle teleport on owner change fix
-   - Vehicle angular velocity shuttering fix
-   - Dead body sync fix
-- 14.15:
-   - Revert Vehicle angular velocity shuttering fix
-- 14.16:
-   - Vehicle angular velocity shuttering fix
+<pre><code class="lang-yaml">- 13.2:
+   - Fixed client &amp; server crash
+- 13.3:
+   - Fixed more client &amp; server crash related to events
+- 13.4:
+   - Improve event performance
+- 13.5:
+   - Serverside improvements
+- 13.6:
+   - Serverside improvements
+- 13.7:
+   - Serverside improvements
+- 13.8:
+   - Serverside improvements
+- 13.9:
+   - Add more event validations
+- 13.10:
+   - Serverside improvements &amp; crash fix
+- 13.11:
+   - Serverside improvements
+- 13.12:
+   - Fixed death event
+- 13.13:
+   - Serverside improvements
+- 13.14:
+   - Serverside improvements &amp; crash fixes
+- 13.15:
+   - Serverside improvements, vehicle base64 setter &amp; getter improvements, improve weapons &amp; weapons component getter
+- 13.16:
+   - Improve streaming &amp; fix migrations checks
+- 13.17:
+   - Improve vehicle base64 setter &amp; getter
+- 13.18:
+   - Improve blips performance, fix vehicle creation
+- 13.19:
+   - Fix position setter
+- 13.20:
+   - Fix position setter, fix neon getter (js module only)
+- 13.21:
+   - Colshape improvement
+   - Improve vehicle base64 setter
+   - Add checks when serializing entities
+- 13.22:
+   - Improve emits inside disconnect event  (js module only)
+   - Serverside crash fix
+- 13.23:
+   - Serverside crash fix
+- 13.24:
+   - Fixed hasExtra property in getVehicleModelInfoByHash for modded vehicles
+   - Fix server crash
+   - Improve server performance
+- 13.25:
+   - Fixed vehicle extra reading crash for modded vehicles
+- 13.26:
+   - Improve dlc parser crashes
+- 13.27:
+   - Add Support GTA 2802
+- 13.28:
+   - 3d webview crashes
+   - fix ressource loading
+- 13.29:
+   - attachto api
+- 13.30:
+   - fix ressource loading
+- 13.31:
+   - fix ressource loading
+- 13.32:
+   - Revert 13.31
+- 13.33:
+   - fix 3d webviews
+- 13.34:
+   - Fix crashes in scriptById getter
+   - Fix crash in istalking  getter
+- 13.35:
+   - Improve networking
+   - Fix addExplosion native
+   - Small fix for setExtra
+- 13.36:
+   - improve asset loading
+   - Multiple cleanups and improvements
+- 13.37:
+   - Improve caching
+- 13.38:
+   - Disabled mod folder
+   - Fix clear blood damage sync
+- 13.39:
+   - Fix multiple server crash cases
+   - Only one logfile got created clientside
+   - Invalid polys fix was broken after gta update
+- 13.40:
+   - Fixed Servercrash on disconnect
+- 13.41:
+   - improved health setter/getter
+- 13.42:
+   - Added clientside stamina getter &amp; setter
+   - Added clientside maxStamina getter &amp; setter
+   - Added more informations to pedmodelinfos (type, dlcName, defaultUnarmedWeapon, movementClipSet)
+   - Changed name of roofstate getter &amp; setter
+   - (JS) Fixed resource valid getter
+- 13.43:
+   - Reverted client js changes
+- 13.44:
+   - (JS) extendet client utils timeouts
+- 13.45:
+   - Add Support GTA 2824
 </code></pre>
 </div>
 <h2 id="client">Client</h2>
 <h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- disabled cloth sync if setted via native
+<pre><code class="lang-yaml">- some natives got renamed
 </code></pre>
 </div>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Render RMLUI under CEF
-- Updated RMLUI to 5.0
-- RMLUI antialiasing
-- RMLUI fallback font
-- getPedBonePos method
-- Side Mouse buttons for voice keybinding
-- Display downloadspeed while downloading ressources
-- Server Permission translations
-- submit nickname on first start by pressing enter
-- adaptivity for client console layout
-- cef support while pause menu ped is active
-- Updated cef to v103
-- general new UI
-- clear console command
-- ime support for rmlui
-- error message in launcher, if gta:v start fails
-- language selection on installation
-- debug, branch &amp; skipprocessconfirmation cli arg
-- installer &amp; uninstaller rework
-- general launcher rework
+<pre><code class="lang-yaml">- weapondata playerDamageModifier getter &amp; setter
+- isPointOnScreen method
+- vehicle engineOn, getWheelSurfaceMaterial getter
+- localplayer getWeaponAmmo, weapons, getWeaponComponents getter
+- localplayer hasWeapon method
+- cef getEventListeners method
+- few new natives
+- logDebug to prints custom log if client is in debugmode
+- Object api
+- increased weapon component pool
+- increased decal defs pool (20000-20249 decal ids which copy settings from id 10000)
+- weapon shoot, weapon change, weapondamage event
+- once method to webview
+- dashboard light getters and setters
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Disconnection modal displayed twice after reconnect
-- wrong menu after connect rejection
-- webview freezed on FileDialog
-- cursor type didnt reset on webview destroy
-- crashdump location folder
-- cursor in iframe inputs wasnt visible
-- scrolling in iframes
-- rmlui clipboard
-- blips &amp; object got not destroyed on resource stop
-- vehiclelayout meta
-- alt + f4 in vehicle stopped vehicle immediately
-- crash while pressing ESC after ressource restart
-- launcher shortcut was system wide
-- website url of a server was always lowercase
-- inputs in webviews didnt trigger focus &amp; blur events
-- GTA Sound options didnt save
-- webview stayed unfocus if data url was used
-- cloning ped in pause menu disappeared all UI's
-- testProbeAgainstWater native
+<pre><code class="lang-yaml">- Connect to server via ipv6 adress
+- resource deps with subfolder clientside
+- memorybuffer method
+- playermodel getter returned new value with a delay
+- clear focus data didn't reset on disconnect
+- some natives didn't return boolean correctly (js clientside)
+- rmlui cursor setting
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
 <h3 id="added-1">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- &quot;all&quot; as setting language
-</code></pre>
-</div>
-<h2 id="js-module">JS Module</h2>
-<h3 id="added-2">Added</h3>
-<div class="nohljsln">
-<pre><code class="lang-yaml">- (server) Display source path on deprecated methods usage
-- (Server) Automatically fix paths with special characters
-- (Server) partial TextEncoder and TextDecoder
-- (Server) Updated nodeJS to 18.13.1
-- (Server) Possible to modify damage value in weapondamage event
-- (Client) Updated v8 to 10.2
-- Allow emitting typed arrays
+<pre><code class="lang-yaml">- getPedModelInfoByHash method
+- bones info to getVehicleModelInfoByHash method
+- toggleWorldProfiler
+- worldProfiler server config entry
+- playerConnectDenied event
+- sendPlayerNames server config entry to disable sending player name to all clients on connect
+- player sendNames property
+- sendNames parameter to accept method in connection queue (default is true)
+- player dimension change event
+- Warning when DLC resource name not only contain lowercase letters, numbers or &quot;-&quot;/&quot;_&quot; as special character or its not starting with a letter
+- Add pedmodels.bin file to server data
+- scriptMaxSpeed, hybridExtraActive, hybridExtraState, counterMeasureCount, rocketRefuelSpeed properties to vehicle
+- getWeaponCapacity &amp; setWeaponCapacity methods
+- getLocalMetaKeys method
 </code></pre>
 </div>
 <h3 id="fixed-1">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- (client) webview, audio, websocket &amp; rml geteventhandler returned removed ones
-- (client) crash in vehicle handling if entity is invalid
-- (client) Internal error. Icu error when using for example toLocaleString
+<pre><code class="lang-yaml">- Master server used default interface even if bound to different ip
+- getServerConfig() does not return variable values properly that start with numeric characters
+- server connected to external voice server with --justpack argument
+- setting password during runtime didn't work
+- server crash with invalid carcols.meta
+- server crash when enabling stdconsole without console enabled
 </code></pre>
 </div>
-<h2 id="c-module">C# Module</h2>
 <h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- OnRemove() method replaced by OnDestroy()
+<pre><code class="lang-yaml">- attachTo now takes boneid instead of boneindex
+- Connection info authToken has a limit of 255 characters
+- config cli argument only works with toml configs now
 </code></pre>
 </div>
-<h3 id="added-3">Added</h3>
+<h2 id="server--client">Server &amp; Client</h2>
+<h3 id="breaking-changes-2"><span style="color: red;">Breaking changes</span></h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- alt:V custom .NET project template 
-- (client) Add all missing vehicle properties
+<pre><code class="lang-yaml">- Automatically change all configurations for Client (alt.cfg/history.servers) to [toml](https://toml.io/en/) format
+- Change all configurations for Server (server.cfg/resource.cfg/stream.cfg) to [toml](https://toml.io/en/) format by using the command line argument &quot;--convert-config-format&quot; on server start
+</code></pre>
+</div>
+<h3 id="added-2">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- getSyncedMetaKeys, getStreamSyncedMetaKeys, getMetaKeys methods
+- baseObjectCreate, baseObjectRemove events
 </code></pre>
 </div>
 <h3 id="fixed-2">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- (client) weapondata using properties
+<pre><code class="lang-yaml">- blip route didn't update when setting pos
+- Blips' heading indicator showed as a dollar sign
 </code></pre>
 </div>
-<h3 id="rework">Rework</h3>
+<h2 id="js-module">JS Module</h2>
+<h3 id="added-3">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Mark Remove() method as deprecated and add Destroy() method for consistent alt:V api
+<pre><code class="lang-yaml">- Utils.inspect (ported util.inspect from NodeJS with small differences)
+- functions &amp; classes in Utils (e.g. drawText3d, loadMapArea, Timeout class, etc.)
+- log, logDebug, logError, logWarning now use alt.Utils.inspect
+- player.spawn(model, pos) overload
+</code></pre>
+</div>
+<h3 id="fixed-3">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- HandlingData.handlingNameHash returned wrong hash
+</code></pre>
+</div>
+<h3 id="breaking-changes-3"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- player, blips, vehicles all getter are readonly now (server &amp; client)
+- emitClient &amp; emitClientRaw with null, use emitAllClients &amp; emitAllClientsRaw instead
+- Worker is deprecated
+</code></pre>
+</div>
+<h2 id="c-server-module">C# Server Module</h2>
+<h3 id="breaking-changes-4"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- IPlayer DiscordId changed type from string to long
+- IConnectionInfo DiscordUserId changed type from string to long
+- By AsyncResource constructor the default of &quot;forceAsyncBaseObjects&quot; is set to &quot;true&quot;. To go back to old behavior you need to set &quot;false&quot;
+- Refs were removed (Ref classes, .TryCreateRef etc)
+- ToAsync now returns null when providing async context
+</code></pre>
+</div>
+<h3 id="changed">Changed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Async events do not force entities to exist anymore (previously it was guaranteed that if entity exists at async event start, it will exist until async event finishes)
+- ToAsync does not force entity to exist anymore. If base entity will be destroyed, async entity will fallback to cached value (or default for specific type, if caching is disabled)
+</code></pre>
+</div>
+<h3 id="added-4">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- After entity is destroyed getters return last available information instead of throwing exception or returning default. This behavior can be reverted by setting &quot;Alt.CacheEntities&quot; to &quot;false&quot;
+- Added ability to configure behavior of handling setter/getter call on non existent entity via &quot;Alt.ThrowIfEntityDoesNotExist&quot;. Default value is &quot;false&quot;
+</code></pre>
+</div>
+<h2 id="c-client-module">C# Client Module</h2>
+<h3 id="fixed-4">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Func&lt;bool&gt; returned invalid result when invoked if sandboxing is enabled
+</code></pre>
+</div>
+<h3 id="added-5">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- AltAsync.WaitFor allows to wait asynchronously for some result. After awaiting the function automatically returns you to main thread
 </code></pre>
 </div>
 </article>

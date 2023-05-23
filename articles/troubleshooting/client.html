@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#troubleshoot-client">Troubleshoot Client</a><ul class="level2 nav bs-docs-sidenav troubleshoot-client"><li><a href="#minimum-requirements">Minimum Requirements</a></li><li><a href="#basic-steps-its-recommended-to-try-all-of-them-first-for-any-problem">Basic Steps (it's recommended to try ALL OF THEM first for any problem)</a></li><li><a href="#known-problems--solutions">Known Problems &amp; Solutions</a><ul class="level3 nav bs-docs-sidenav known-problems--solutions"><li><a href="#ragemp-is-starting">RageMP is starting</a></li><li><a href="#steam-version-or-steam-is-launched">Steam Version or Steam is launched</a></li><li><a href="#epic-games-launcher-is-starting">Epic Games launcher is starting</a></li><li><a href="#timeout-when-starting-game">Timeout when starting game</a></li><li><a href="#fps-problems">FPS Problems</a></li><li><a href="#interface-not-responsive">Interface not responsive</a></li><li><a href="#webview-lagging">Webview lagging</a></li><li><a href="#webview-not-working">Webview not working</a></li><li><a href="#webview-not-rendering-on-linux">Webview not rendering on Linux</a></li><li><a href="#signed-out-from-social-club">Signed out from Social Club</a></li><li><a href="#altv-clientdll-cant-be-loaded">&quot;altv-client.dll can't be loaded&quot;</a></li><li><a href="#mouse-is-trapped-in-middle-of-screen">Mouse is trapped in middle of screen</a></li><li><a href="#something-else-hooked-directx-context-try-to-shutdown-programs-that-can-do-it-riva-tuner-fraps-etc">Something else hooked DirectX context. Try to shutdown programs that can do it... (Riva Tuner, Fraps, etc.)</a></li><li><a href="#failed-to-fetch-updates">Failed to fetch updates</a></li><li><a href="#your-game-version-is-x-but-only-y-supported-at-the-moment-update-your-game">Your game version is X, but only Y supported at the moment. Update your Game!</a></li><li><a href="#widevine-cdm-registration-failed">Widevine CDM registration failed</a></li><li><a href="#client-crashescloses-during-start">Client crashes/closes during start</a></li><li><a href="#services-known-to-cause-problems">Services known to cause problems:</a></li><li><a href="#altv-is-asking-for-installation-directory-when-launching-from-browser">alt:V is asking for installation directory when launching from browser</a></li><li><a href="#launcher-does-not-opencrashes-while-opening">Launcher does not open/crashes while opening</a></li><li><a href="#integrity-check-of-resource-failed">Integrity check of resource failed</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#troubleshoot-client">Troubleshoot Client</a><ul class="level2 nav bs-docs-sidenav troubleshoot-client"><li><a href="#minimum-requirements">Minimum Requirements</a></li><li><a href="#basic-steps-its-recommended-to-try-all-of-them-first-for-any-problem">Basic Steps (it's recommended to try ALL OF THEM first for any problem)</a></li><li><a href="#known-problems--solutions">Known Problems &amp; Solutions</a><ul class="level3 nav bs-docs-sidenav known-problems--solutions"><li><a href="#ragemp-is-starting">RageMP is starting</a></li><li><a href="#steam-version-or-steam-is-launched">Steam Version or Steam is launched</a></li><li><a href="#epic-games-launcher-is-starting">Epic Games launcher is starting</a></li><li><a href="#fps-problems">FPS Problems</a></li><li><a href="#webview-lagging">Webview lagging</a></li><li><a href="#webview-not-working">Webview not working</a></li><li><a href="#webview-not-rendering-on-linux">Webview not rendering on Linux</a></li><li><a href="#signed-out-from-social-club">Signed out from Social Club</a></li><li><a href="#altv-clientdll-cant-be-loaded">&quot;altv-client.dll can't be loaded&quot;</a></li><li><a href="#mouse-is-trapped-in-middle-of-screen">Mouse is trapped in middle of screen</a></li><li><a href="#something-else-hooked-directx-context-try-to-shutdown-programs-that-can-do-it-riva-tuner-fraps-etc">Something else hooked DirectX context. Try to shutdown programs that can do it... (Riva Tuner, Fraps, etc.)</a></li><li><a href="#failed-to-fetch-updates">Failed to fetch updates</a></li><li><a href="#your-game-version-is-x-but-only-y-supported-at-the-moment-update-your-game">Your game version is X, but only Y supported at the moment. Update your Game!</a></li><li><a href="#widevine-cdm-registration-failed">Widevine CDM registration failed</a></li><li><a href="#client-crashescloses-during-start">Client crashes/closes during start</a></li><li><a href="#services-known-to-cause-problems">Services known to cause problems:</a></li><li><a href="#altv-is-asking-for-installation-directory-when-launching-from-browser">alt:V is asking for installation directory when launching from browser</a></li><li><a href="#integrity-check-of-resource-failed">Integrity check of resource failed</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -182,23 +182,11 @@ Storage:    SSD for OS and Game
 <li>Go to your GTA directory</li>
 <li>Delete EOSSDK-Win64-Shipping.dll from the GTA directory</li>
 </ol>
-<h4 id="timeout-when-starting-game">Timeout when starting game</h4>
-<ol>
-<li>Go to your alt:V directory</li>
-<li>Open the altv.toml with your prefered editor (e.g. notepad)</li>
-<li>Add <code>gameTimeout = 120</code> at the bottom, where 120 (seconds) is the maximum waiting time</li>
-</ol>
 <h4 id="fps-problems">FPS Problems</h4>
 <ol>
 <li>Launch Singleplayer</li>
 <li>Go to Graphics Settings</li>
 <li>Set MSAA to Off</li>
-</ol>
-<h4 id="interface-not-responsive">Interface not responsive</h4>
-<ol>
-<li>Launch Singleplayer</li>
-<li>Go to &quot;Keyboard / Mouse&quot; settings</li>
-<li>Change &quot;Mouse Input Method&quot; to &quot;Raw Input&quot;</li>
 </ol>
 <h4 id="webview-lagging">Webview lagging</h4>
 <p>This can reduce the webview performance, but may fix input lags:</p>
@@ -299,9 +287,6 @@ Storage:    SSD for OS and Game
 <p>NVIDIA Display Container LS</p>
 <h4 id="altv-is-asking-for-installation-directory-when-launching-from-browser">alt:V is asking for installation directory when launching from browser</h4>
 <p>This may happen if an old entry is saved as launch option in your browser.</p>
-<h4 id="launcher-does-not-opencrashes-while-opening">Launcher does not open/crashes while opening</h4>
-<p>Sometimes a faulty driver can cause some issues in the launcher.
-If you have a <code>C:\Windows\USB Vibration\dr100&amp;110\811EZFRD64.dll</code> - either rename the file, or remove it.</p>
 <h4 id="integrity-check-of-resource-failed">Integrity check of resource failed</h4>
 <p>It can happen because there is not enough free space on your disk.
 If you have enough free space, try the following:</p>
