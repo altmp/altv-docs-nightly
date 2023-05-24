@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="theme-dark">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>13.0-Release </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="13.0-Release ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css" integrity="sha512-T3VL1q6jMUIzGLRB9z86oJg9PgF7A55eC2XkB93zyWSqQw3Ju+6IEJZYBfT7E9wOHM7HCMCOZSpcssxnUn6AeQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-dark.min.css" integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css" integrity="sha512-RDtnAhiPytLVV3AwzHkGVMVI4szjtSjxxyhDaH3gqdHPIw5qwQld1MVGuMu1EYoof+CaEccrO3zUVb13hQFU/A==" crossorigin="anonymous" disabled="disabled">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/solid.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/colors.css">
+    <link rel="stylesheet" href="../../styles/discord.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+
+  <body>
+
+        <div class="body-content">
+
+            <nav id="sidebar" role="navigation">
+
+                <div class="sidebar">
+                    
+                    
+                    
+                    
+                    <div>
+                      
+                      <a class="brand" href="../../index.html">
+                        <img src="../../logo.svg" alt="alt:V" class="logomark">
+                        <span class="brand-title">alt:V</span>
+                      </a>
+                      <div id="navbar">
+                    
+                      </div>
+                    
+                    </div>
+                    
+
+
+                </div>
+
+
+            </nav>
+
+            <main class="main-panel">
+
+                <div class="blackout desktop-hide"></div>
+
+                    
+                    <div class="subnav navbar navbar-default">
+                      <button class="btn-link search-back desktop-hide"></button>
+                      <button class="btn-link navbar-toggler" aria-label="Toggle navigation"></button>
+                      <div class="container" id="breadcrumb">
+                        <ul class="breadcrumb">
+                          <li></li>
+                        </ul>
+                      </div>
+                      <div class="flex-space"></div>
+                      <div class="toolbar">
+                          <div style="position: relative; margin: 0 8px;">
+                            <form class="search-bar mobile-hide" role="search" id="search" style="position: relative;">
+                              <button class="btn-link clear" id="search-query-clear"></button>
+                              <div role="textbox" class="form-control" id="search-query" placeholder="Search" contenteditable="true"></div>
+                            </form>
+                            <div class="popout" id="search-menu">
+                                <button class="btn-link search-help" data-href="../../articles/search_help.html"></button>
+                              <span class="title">
+                                Search options:
+                              </span>
+                            </div>
+                            <button class="btn-link search-tip desktop-hide"></button>
+                          </div>
+                      </div>
+                      <button class="btn-link btn-floating search desktop-hide"></button>
+                      <div class="theme">
+                        <button class="btn-link theme" aria-label="Switch theme"></button>
+                        <div class="popout" id="theme-menu">
+                          <div class="theme-option light" data-theme="light">
+                            <span class="btn-link theme-light">Light</span>
+                          </div>
+                          <div class="theme-option dark" data-theme="dark">
+                            <span class="btn-link theme-dark">Dark</span>
+                          </div>
+                          <div class="theme-option auto" data-theme="auto">
+                            <span class="btn-link theme-auto">Sync with OS</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div class="content-region" role="main">
+
+                    <div class="content-column Conceptual">
+
+                            
+                            <div class="sideaffix hide-when-search" data-noindex="">
+                              <h3>Index</h3>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#130-release">13.0-Release</a><ul class="level2 nav bs-docs-sidenav 130-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#breaking-changes-2">Breaking changes</a></li><li><a href="#added-2">Added</a></li><li><a href="#fixed-2">Fixed</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#added-3">Added</a></li><li><a href="#fixed-3">Fixed</a></li><li><a href="#breaking-changes-3">Breaking changes</a></li></ul></li><li><a href="#c-server-module">C# Server Module</a><ul class="level3 nav bs-docs-sidenav c-server-module"><li><a href="#breaking-changes-4">Breaking changes</a></li><li><a href="#changed">Changed</a></li><li><a href="#added-4">Added</a></li></ul></li><li><a href="#c-client-module">C# Client Module</a><ul class="level3 nav bs-docs-sidenav c-client-module"><li><a href="#fixed-4">Fixed</a></li><li><a href="#added-5">Added</a></li></ul></li></ul></li></ul></div>
+                            </div>
+
+                            
+                            <div id="search-results">
+                              <div class="search-list">Search Results for <span></span></div>
+                              <div class="sr-items">
+                                <p><span class="glyphicon glyphicon-refresh index-loading"></span></p>
+                              </div>
+                              <ul id="pagination" data-first="" data-prev="&#xf053;" data-next="&#xf054;" data-last=""></ul>
+                            </div>
+
+                        <article class="content wrap hide-when-search" id="_content" data-uid="">
+
+                                <span class="small pull-right article mobile-hide" style="margin: 0;" data-noindex="">
+                                    <ul class="subnav contribution">
+                                            <li>
+                                                <a href="https://github.com/altmp/altv-docs/blob/master/articles/changelogs/13_0.md/#L1">Improve this Doc</a>
+                                            </li>
+                                    </ul>
+                                </span>
+
+<h1 id="130-release">13.0-Release</h1>
+
+<div class="TIP">
+<h5>Tip</h5>
+<p>This update was released on 07.12.2022</p>
+</div>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- 13.2:
+   - Fixed client &amp; server crash
+- 13.3:
+   - Fixed more client &amp; server crash related to events
+- 13.4:
+   - Improve event performance
+- 13.5:
+   - Serverside improvements
+- 13.6:
+   - Serverside improvements
+- 13.7:
+   - Serverside improvements
+- 13.8:
+   - Serverside improvements
+- 13.9:
+   - Add more event validations
+- 13.10:
+   - Serverside improvements &amp; crash fix
+- 13.11:
+   - Serverside improvements
+- 13.12:
+   - Fixed death event
+- 13.13:
+   - Serverside improvements
+- 13.14:
+   - Serverside improvements &amp; crash fixes
+- 13.15:
+   - Serverside improvements, vehicle base64 setter &amp; getter improvements, improve weapons &amp; weapons component getter
+- 13.16:
+   - Improve streaming &amp; fix migrations checks
+- 13.17:
+   - Improve vehicle base64 setter &amp; getter
+- 13.18:
+   - Improve blips performance, fix vehicle creation
+- 13.19:
+   - Fix position setter
+- 13.20:
+   - Fix position setter, fix neon getter (js module only)
+- 13.21:
+   - Colshape improvement
+   - Improve vehicle base64 setter
+   - Add checks when serializing entities
+- 13.22:
+   - Improve emits inside disconnect event  (js module only)
+   - Serverside crash fix
+- 13.23:
+   - Serverside crash fix
+- 13.24:
+   - Fixed hasExtra property in getVehicleModelInfoByHash for modded vehicles
+   - Fix server crash
+   - Improve server performance
+- 13.25:
+   - Fixed vehicle extra reading crash for modded vehicles
+- 13.26:
+   - Improve dlc parser crashes
+- 13.27:
+   - Add Support GTA 2802
+- 13.28:
+   - 3d webview crashes
+   - fix ressource loading
+- 13.29:
+   - attachto api
+- 13.30:
+   - fix ressource loading
+- 13.31:
+   - fix ressource loading
+- 13.32:
+   - Revert 13.31
+- 13.33:
+   - fix 3d webviews
+- 13.34:
+   - Fix crashes in scriptById getter
+   - Fix crash in istalking  getter
+- 13.35:
+   - Improve networking
+   - Fix addExplosion native
+   - Small fix for setExtra
+- 13.36:
+   - improve asset loading
+   - Multiple cleanups and improvements
+- 13.37:
+   - Improve caching
+- 13.38:
+   - Disabled mod folder
+   - Fix clear blood damage sync
+- 13.39:
+   - Fix multiple server crash cases
+   - Only one logfile got created clientside
+   - Invalid polys fix was broken after gta update
+- 13.40:
+   - Fixed Servercrash on disconnect
+- 13.41:
+   - improved health setter/getter
+- 13.42:
+   - Added clientside stamina getter &amp; setter
+   - Added clientside maxStamina getter &amp; setter
+   - Added more informations to pedmodelinfos (type, dlcName, defaultUnarmedWeapon, movementClipSet)
+   - Changed name of roofstate getter &amp; setter
+   - (JS) Fixed resource valid getter
+- 13.43:
+   - Reverted client js changes
+- 13.44:
+   - (JS) extendet client utils timeouts
+- 13.45:
+   - Add Support GTA 2824
+- 13.46:
+   - More fixes for GTA 2824
+- 13.47:
+   - Just some internal serverside changes
+- 13.48:
+   - Add Support GTA 2845
+   - Updated NodeJS Module to v18
+- 13.49:
+   - Fix testProbeAgainstWater native
+</code></pre>
+</div>
+<h2 id="client">Client</h2>
+<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- some natives got renamed
+</code></pre>
+</div>
+<h3 id="added">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- weapondata playerDamageModifier getter &amp; setter
+- isPointOnScreen method
+- vehicle engineOn, getWheelSurfaceMaterial getter
+- localplayer getWeaponAmmo, weapons, getWeaponComponents getter
+- localplayer hasWeapon method
+- cef getEventListeners method
+- few new natives
+- logDebug to prints custom log if client is in debugmode
+- Object api
+- increased weapon component pool
+- increased decal defs pool (20000-20249 decal ids which copy settings from id 10000)
+- weapon shoot, weapon change, weapondamage event
+- once method to webview
+- dashboard light getters and setters
+</code></pre>
+</div>
+<h3 id="fixed">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Connect to server via ipv6 adress
+- resource deps with subfolder clientside
+- memorybuffer method
+- playermodel getter returned new value with a delay
+- clear focus data didn't reset on disconnect
+- some natives didn't return boolean correctly (js clientside)
+- rmlui cursor setting
+</code></pre>
+</div>
+<h2 id="server">Server</h2>
+<h3 id="added-1">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- getPedModelInfoByHash method
+- bones info to getVehicleModelInfoByHash method
+- toggleWorldProfiler
+- worldProfiler server config entry
+- playerConnectDenied event
+- sendPlayerNames server config entry to disable sending player name to all clients on connect
+- player sendNames property
+- sendNames parameter to accept method in connection queue (default is true)
+- player dimension change event
+- Warning when DLC resource name not only contain lowercase letters, numbers or &quot;-&quot;/&quot;_&quot; as special character or its not starting with a letter
+- Add pedmodels.bin file to server data
+- scriptMaxSpeed, hybridExtraActive, hybridExtraState, counterMeasureCount, rocketRefuelSpeed properties to vehicle
+- getWeaponCapacity &amp; setWeaponCapacity methods
+- getLocalMetaKeys method
+</code></pre>
+</div>
+<h3 id="fixed-1">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Master server used default interface even if bound to different ip
+- getServerConfig() does not return variable values properly that start with numeric characters
+- server connected to external voice server with --justpack argument
+- setting password during runtime didn't work
+- server crash with invalid carcols.meta
+- server crash when enabling stdconsole without console enabled
+</code></pre>
+</div>
+<h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- attachTo now takes boneid instead of boneindex
+- Connection info authToken has a limit of 255 characters
+- config cli argument only works with toml configs now
+</code></pre>
+</div>
+<h2 id="server--client">Server &amp; Client</h2>
+<h3 id="breaking-changes-2"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Automatically change all configurations for Client (alt.cfg/history.servers) to [toml](https://toml.io/en/) format
+- Change all configurations for Server (server.cfg/resource.cfg/stream.cfg) to [toml](https://toml.io/en/) format by using the command line argument &quot;--convert-config-format&quot; on server start
+</code></pre>
+</div>
+<h3 id="added-2">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- getSyncedMetaKeys, getStreamSyncedMetaKeys, getMetaKeys methods
+</code></pre>
+</div>
+<h3 id="fixed-2">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- blip route didn't update when setting pos
+- Blips' heading indicator showed as a dollar sign
+</code></pre>
+</div>
+<h2 id="js-module">JS Module</h2>
+<h3 id="added-3">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Utils.inspect (ported util.inspect from NodeJS with small differences)
+- functions &amp; classes in Utils (e.g. drawText3d, loadMapArea, Timeout class, etc.)
+- log, logDebug, logError, logWarning now use alt.Utils.inspect
+- player.spawn(model, pos) overload
+</code></pre>
+</div>
+<h3 id="fixed-3">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- HandlingData.handlingNameHash returned wrong hash
+</code></pre>
+</div>
+<h3 id="breaking-changes-3"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- player, blips, vehicles all getter are readonly now (server &amp; client)
+- emitClient &amp; emitClientRaw with null, use emitAllClients &amp; emitAllClientsRaw instead
+- Worker is deprecated
+</code></pre>
+</div>
+<h2 id="c-server-module">C# Server Module</h2>
+<h3 id="breaking-changes-4"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- IPlayer DiscordId changed type from string to long
+- IConnectionInfo DiscordUserId changed type from string to long
+- By AsyncResource constructor the default of &quot;forceAsyncBaseObjects&quot; is set to &quot;true&quot;. To go back to old behavior you need to set &quot;false&quot;
+- Refs were removed (Ref classes, .TryCreateRef etc)
+- ToAsync now returns null when providing async context
+</code></pre>
+</div>
+<h3 id="changed">Changed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Async events do not force entities to exist anymore (previously it was guaranteed that if entity exists at async event start, it will exist until async event finishes)
+- ToAsync does not force entity to exist anymore. If base entity will be destroyed, async entity will fallback to cached value (or default for specific type, if caching is disabled)
+</code></pre>
+</div>
+<h3 id="added-4">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- After entity is destroyed getters return last available information instead of throwing exception or returning default. This behavior can be reverted by setting &quot;Alt.CacheEntities&quot; to &quot;false&quot;
+- Added ability to configure behavior of handling setter/getter call on non existent entity via &quot;Alt.ThrowIfEntityDoesNotExist&quot;. Default value is &quot;false&quot;
+</code></pre>
+</div>
+<h2 id="c-client-module">C# Client Module</h2>
+<h3 id="fixed-4">Fixed</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Func&lt;bool&gt; returned invalid result when invoked if sandboxing is enabled
+- (server) Alt.GetPedModelInfo()
+</code></pre>
+</div>
+<h3 id="added-5">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- AltAsync.WaitFor allows to wait asynchronously for some result. After awaiting the function automatically returns you to main thread
+</code></pre>
+</div>
+</article>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.min.js" integrity="sha512-wkU3qYWjenbM+t2cmvw2ADRRh4opbOYBjkhrPGHV7M6dcE/TR0oKpoDkWXfUs3HrulI2JFuTQyqPLRih1V54EQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.3.0/anchor.min.js" integrity="sha512-G2OGlm41XXw+fcgDcRPjVYEn7qCY6qiKWNqDGT37SnKh0qtRXTuKZ5/UQR0kDN0PZRNWcGExd3lAeqEH0I36bQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.8/url.min.js" integrity="sha512-r7Z8tYN1iMr6CTQ7pNJa2q+3owm4Tc6dLkVzGV68AFGiI0muMh5eLVQlas5kb9qwPY168HsTBctUwn3k0FVqyw==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../styles/docfx.js"></script>
+<script type="text/javascript" src="../../styles/discord.js"></script>
+<script type="text/javascript" src="../../styles/main.js"></script>
+
+    </body>
+
+</html>

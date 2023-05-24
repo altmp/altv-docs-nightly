@@ -347,7 +347,7 @@ set.</p>
 });
 </code></pre>
 <p>Listening for local meta changes</p>
-<pre><code class="lang-js">alt.on(&quot;localMetaChange&quot;, (player, key, oldValue, newValue) =&gt; {
+<pre><code class="lang-js">alt.on(&quot;localMetaChange&quot;, (player, key, newValue, oldValue) =&gt; {
     // This event gets called when a local meta changes
     // You can also check it yourself by using the player.hasLocalMeta &amp; player.getLocalMeta methods
     if (player.hasLocalMeta(&quot;metaKey&quot;)) {
@@ -371,7 +371,7 @@ set.</p>
 });
 </code></pre>
 <p>Listening for local meta changes</p>
-<pre><code class="lang-js">alt.on(&quot;localMetaChange&quot;, (key, oldValue, newValue) =&gt; {
+<pre><code class="lang-js">alt.on(&quot;localMetaChange&quot;, (key, newValue, oldValue) =&gt; {
     // This event gets called when a local meta changes
     // You can also check it yourself by using the alt.hasLocalMeta &amp; alt.getLocalMeta methods
     if (alt.hasLocalMeta(&quot;metaKey&quot;)) {
@@ -498,7 +498,7 @@ alt.deleteSyncedMeta(&quot;metaKey&quot;);
 });
 </code></pre>
 <p>Listening for global synced meta changes</p>
-<pre><code class="lang-js">alt.on(&quot;globalSyncedMetaChange&quot;, (key, oldValue, newValue) =&gt; {
+<pre><code class="lang-js">alt.on(&quot;globalSyncedMetaChange&quot;, (key, newValue, oldValue) =&gt; {
     // This event gets called when a synced meta changes which is applied to alt
     // You can also check it yourself by using the alt.hasSyncedMeta(key) method
     if (alt.hasSyncedMeta(&quot;metaKey&quot;)) {
@@ -508,7 +508,7 @@ alt.deleteSyncedMeta(&quot;metaKey&quot;);
 });
 </code></pre>
 <p>Listening for synced meta changes</p>
-<pre><code class="lang-js">alt.on(&quot;syncedMetaChange&quot;, (entity, key, oldValue, newValue) =&gt; {
+<pre><code class="lang-js">alt.on(&quot;syncedMetaChange&quot;, (entity, key, newValue, oldValue) =&gt; {
     // This event gets called when a synced meta changes which is applied to an entity  
     // You can also check it yourself by using the entity.hasSyncedMeta(key) method
     if (entity.hasSyncedMeta(&quot;metaKey&quot;)) {

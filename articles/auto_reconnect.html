@@ -157,36 +157,35 @@ server to finish his startup procedure (fetching data from database, loading mod
 </ul>
 <section id="tabpanel_bHGHmlrG6S_tabid-1" role="tabpanel" data-tab="tabid-1">
 
-<pre><code class="lang-js">import fetch from &quot;node-fetch&quot;;
-
-const RETRY_DELAY = 2500;
+<pre><code class="lang-js">const RETRY_DELAY = 2500;
 const DEBUG_PORT = 9223;
 
 async function getLocalClientStatus() {
-    try {
-        const response = await fetch(`http://127.0.0.1:${DEBUG_PORT}/status`);
-        return response.text();
-    } catch (error) {
-        return null;
-    }
+  try {
+    const response = await fetch(`http://127.0.0.1:${DEBUG_PORT}/status`);
+    return response.text();
+  } catch (error) {
+    return null;
+  }
 }
 
 async function connectLocalClient() {
-    const status = await getLocalClientStatus();
-    if (status === null) return;
+  const status = await getLocalClientStatus();
+  if (status === null) return;
 
-    if (status !== &quot;MAIN_MENU&quot; &amp;&amp; status !== &quot;IN_GAME&quot;) {
-        setTimeout(() =&gt; connectLocalClient(), RETRY_DELAY);
-    }
+  if (status !== &quot;MAIN_MENU&quot; &amp;&amp; status !== &quot;IN_GAME&quot;) {
+    setTimeout(() =&gt; connectLocalClient(), RETRY_DELAY);
+    return;
+  }
 
-    try {
-        await fetch(`http://127.0.0.1:${DEBUG_PORT}/reconnect`, {
-            method: &quot;POST&quot;,
-            body: &quot;serverPassword&quot;, // only needed when a password is set in the server.cfg
-        });
-    } catch (error) {
-        console.log(error);
-    }
+  try {
+    await fetch(`http://127.0.0.1:${DEBUG_PORT}/reconnect`, {
+      method: &quot;POST&quot;,
+      body: &quot;serverPassword&quot;, // only needed when a password is set in the server.toml
+    });
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 connectLocalClient();
@@ -194,46 +193,45 @@ connectLocalClient();
 </section>
 <section id="tabpanel_bHGHmlrG6S_tabid-2" role="tabpanel" data-tab="tabid-2" aria-hidden="true" hidden="hidden">
 
-<pre><code class="lang-ts">import fetch from &quot;node-fetch&quot;;
-
-const enum Status {
-    Loading = &quot;LOADING&quot;,
-    MainMenu = &quot;MAIN_MENU&quot;,
-    DownloadingFiles = &quot;DOWNLOADING_FILES&quot;,
-    Connecting = &quot;CONNECTING&quot;,
-    InGame = &quot;IN_GAME&quot;,
-    Disconnecting = &quot;DISCONNECTING&quot;,
-    Error = &quot;ERROR&quot;
+<pre><code class="lang-ts">const enum Status {
+  Loading = &quot;LOADING&quot;,
+  MainMenu = &quot;MAIN_MENU&quot;,
+  DownloadingFiles = &quot;DOWNLOADING_FILES&quot;,
+  Connecting = &quot;CONNECTING&quot;,
+  InGame = &quot;IN_GAME&quot;,
+  Disconnecting = &quot;DISCONNECTING&quot;,
+  Error = &quot;ERROR&quot;,
 }
 
 const RETRY_DELAY = 2500;
 const DEBUG_PORT = 9223;
 
 async function getLocalClientStatus(): Promise&lt;Status | null&gt; {
-    try {
-        const response = await fetch(`http://127.0.0.1:${DEBUG_PORT}/status`);
-        return response.text() as unknown as Status;
-    } catch (error) {
-        return null;
-    }
+  try {
+    const response = await fetch(`http://127.0.0.1:${DEBUG_PORT}/status`);
+    return response.text() as unknown as Status;
+  } catch (error) {
+    return null;
+  }
 }
 
 async function connectLocalClient(): Promise&lt;void&gt; {
-    const status = await getLocalClientStatus();
-    if (status === null) return;
+  const status = await getLocalClientStatus();
+  if (status === null) return;
 
-    if (status !== Status.MainMenu &amp;&amp; status !== Status.InGame) {
-        setTimeout(() =&gt; connectLocalClient(), RETRY_DELAY);
-    }
+  if (status !== Status.MainMenu &amp;&amp; status !== Status.InGame) {
+    setTimeout(() =&gt; connectLocalClient(), RETRY_DELAY);
+    return;
+  }
 
-    try {
-        await fetch(`http://127.0.0.1:${DEBUG_PORT}/reconnect`, {
-            method: &quot;POST&quot;,
-            body: &quot;serverPassword&quot;, // only needed when a password is set in the server.cfg
-        });
-    } catch (error) {
-        console.log(error);
-    }
+  try {
+    await fetch(`http://127.0.0.1:${DEBUG_PORT}/reconnect`, {
+      method: &quot;POST&quot;,
+      body: &quot;serverPassword&quot;, // only needed when a password is set in the server.toml
+    });
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 connectLocalClient();
@@ -274,7 +272,7 @@ namespace Example
                 var enumValue = typeof(ClientStatus).GetFields()
                     .FirstOrDefault(f =&gt; f.GetCustomAttribute&lt;EnumMemberAttribute&gt;()?.Value == status)?
                     .GetValue(null);
-    
+
                 return enumValue != null ? (ClientStatus)enumValue : ClientStatus.Error;
             }
             catch
@@ -297,12 +295,12 @@ namespace Example
                 _timer.Stop();
                 return;
             }
-    
+
             try
             {
                 await _httpClient.PostAsync(
                     $&quot;http://127.0.0.1:{DebugPort}/reconnect&quot;,
-                    // Only needed when a password is set in the server.cfg, otherwise pass null instead of StringContent
+                    // Only needed when a password is set in the server.toml, otherwise pass null instead of StringContent
                     new StringContent(&quot;serverPassword&quot;)
                 );
             }

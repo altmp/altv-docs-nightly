@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Custom Launcher </title>
+    <title>Introduction </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="Custom Launcher ">
+    <meta name="title" content="Introduction ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#custom-launcher">Custom Launcher</a></li><li><a href="#how-to-get-the-official-custom-launcher">How to get the official custom launcher?</a></li><li><a href="#what-can-be-modified-in-the-official-custom-launcher">What can be modified in the official custom launcher?</a></li><li><a href="#how-can-i-modify-the-official-custom-launcher">How can I modify the official custom launcher?</a><ul class="level2 nav bs-docs-sidenav how-can-i-modify-the-official-custom-launcher"><li><a href="#ico-file-as-icon">ICO file as Icon</a></li><li><a href="#sizes">Sizes</a></li><li><a href="#bit-depth">Bit depth</a></li><li><a href="#bmp-file-as-splash-screen">BMP file as splash screen</a></li><li><a href="#json-file-as-manifest">JSON file as manifest</a></li><li><a href="#example-file">Example file</a></li><li><a href="#preview">Preview</a></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#introduction">Introduction</a></li><li><a href="#samples">Samples</a></li><li><a href="#requesting-a-launcher">Requesting a launcher</a></li><li><a href="#rss-feed">RSS Feed</a><ul class="level2 nav bs-docs-sidenav rss-feed"><li><a href="#title">Title</a></li><li><a href="#item-properties">Item Properties</a></li><li><a href="#html-usage">HTML usage</a></li><li><a href="#special-elements">Special elements</a><ul class="level3 nav bs-docs-sidenav special-elements"><li><a href="#spoiler">Spoiler</a></li><li><a href="#localized-strings">Localized strings</a></li><li><a href="#timestamps">Timestamps</a></li><li><a href="#mentions">Mentions</a></li><li><a href="#images">Images</a><ul class="level4 nav bs-docs-sidenav images"><li><a href="#emoji">Emoji</a></li><li><a href="#image-row">Image row</a><ul class="level5 nav bs-docs-sidenav image-row"><li><a href="#code">Code</a><ul class="level6 nav bs-docs-sidenav code"><li><a href="#inline">Inline</a></li><li><a href="#block">Block</a></li></ul></li></ul></li></ul></li><li><a href="#quote">Quote</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,69 +132,140 @@
                                     </ul>
                                 </span>
 
-<h1 id="custom-launcher">Custom Launcher</h1>
+<h1 id="introduction">Introduction</h1>
 
-<p>You may want to brand your server experience from starting the game to playing on the server, if you want to make a own custom launcher and it's required to join your server, you need to open source it and the server isn't allowed to be listed on masterlist. As an alternative to creating your own launcher, it is possible to customize the official launcher. In this article you will be able to get information, how to get the official custom launcher, what you can modify and how you can modify it.</p>
-<h1 id="how-to-get-the-official-custom-launcher">How to get the official custom launcher?</h1>
-<p>You must support alt:V as a <a href="https://www.patreon.com/altVMP/">Diamond Altruist on Patreon</a>, there is currently no other way.</p>
-<h1 id="what-can-be-modified-in-the-official-custom-launcher">What can be modified in the official custom launcher?</h1>
-<p>These features can currently be used, more may be added in the future:</p>
-<ul>
-<li>Splash screen can be replaced with own Logo</li>
-<li>Icon can be replaced with own Logo</li>
-<li>Your servers will be displayed on the home screen of alt:V</li>
-<li>You can add a custom RSS feed with news from your project</li>
-<li>Own download link for your launcher hosted on alt:V CDN.</li>
-</ul>
-<h1 id="how-can-i-modify-the-official-custom-launcher">How can I modify the official custom launcher?</h1>
-<p>After getting <a href="https://www.patreon.com/altVMP/">Diamond Altruist on Patreon</a>, connect your Discord Account with Patreon. If the linking process is finished, contact a member of the Public Relations Team. You need to provide us following things, so we can setup the launcher for you:</p>
-<h2 id="ico-file-as-icon">ICO file as Icon</h2>
-<p>A single ICO file can store multiple resolutions. You can create such files with various software (eg <a href="https://www.icoconverter.com/">ICOconverter.com</a>) we need following settings:</p>
-<h2 id="sizes">Sizes</h2>
-<ul>
-<li>16 pixels</li>
-<li>32 pixels</li>
-<li>48 pixels</li>
-<li>256 pixels</li>
-</ul>
-<h2 id="bit-depth">Bit depth</h2>
-<p>32 bits (16.7M colors &amp; alpha transparency)<br>
-A reference icon ICO file can be found <a href="../altv-docs-assets/altv-docs-gta/images/customlauncher/icon.ico">here</a>.</p>
-<h2 id="bmp-file-as-splash-screen">BMP file as splash screen</h2>
-<p>The splash screen must have a size of 300x400. And is shown when alt:V is starting GTA V and is making updates.<br>
-A reference splash screen BMP file can be found <a href="../altv-docs-assets/altv-docs-gta/images/customlauncher/splash.bmp">here</a>.</p>
-<h2 id="json-file-as-manifest">JSON file as manifest</h2>
-<p>A file named <code>manifest.json</code> must be provided with following information:</p>
-<ol>
-<li><em>branch</em> - Used branch for the alt:V server (release, rc, dev)</li>
-<li><em>name</em> - Your project name (for more infomations you can take look at the screenshot below)</li>
-<li><em>rss</em> - The url to your rss feed for news</li>
-<li><em>servers</em> - List of servers you want to show on the home page
-<ol>
-<li><em>name</em> - Name of the server</li>
-<li><em>url</em> - Connect url to the server (<a href="https://cdn.example.com/">https://cdn.example.com/</a> or host:port)</li>
-<li><em>id</em> - Masterlist id of your server (can be found <a href="master_list_api.html">here</a>)</li>
-</ol>
-</li>
-</ol>
-<h2 id="example-file">Example file</h2>
-<div class="nohljsln">
-<pre><code class="lang-json">{
- &quot;branch&quot;: &quot;release&quot;,
- &quot;name&quot;: &quot;Your Project Name&quot;,
- &quot;rss&quot;: &quot;https://example.com/rss&quot;,
- &quot;servers&quot;: [
-   {
-     &quot;name&quot;: &quot;Your server name&quot;,
-     &quot;url&quot;: &quot;ConnectUrl&quot;,
-     &quot;id&quot;: &quot;ServerId&quot;
-   }
- ]
-}
-</code></pre>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>Custom launchers that are required to connect to the server are only allowed if they are fully open source and the server is not listed on the masterlist.</p>
 </div>
-<h2 id="preview">Preview</h2>
-<p><img src="../altv-docs-assets/altv-docs-gta/images/customlauncher/impression.png" alt="Impression of the alt:V custom launcher."></p>
+<p>As an alternative to the custom launcher, it is possible to obtain a branded launcher.</p>
+<p>The branded launcher is available from the Patreon &quot;Diamond&quot; tier or higher and features several server-specific displays such as an RSS feed, launcher and UI background, logo, primary color, and server name.<br>
+In order for a user to activate this branding, a &quot;Apply server skin&quot; checkbox is shown when connecting to the server, which is enabled by default.</p>
+<p>This article explains what information is required and how to request it.</p>
+<h1 id="samples">Samples</h1>
+<p>You can check out the following examples for some of the available customizations:</p>
+<ul>
+<li><a href="../gta/images/customlauncher/launcher_splash.png">Launcher background</a></li>
+<li><a href="../gta/images/customlauncher/user_interface.png">Interface background and RSS feed</a></li>
+<li><a href="../gta/images/customlauncher/loading_screen.png">Loading screen</a></li>
+<li><a href="../gta/images/customlauncher/apply_skin.png">Activate the skin</a></li>
+</ul>
+<h1 id="requesting-a-launcher">Requesting a launcher</h1>
+<p>To request a launcher, you must have an active Patreon membership at the &quot;Diamond&quot; level or higher.</p>
+<p>The following data can be included optionally to customize the interface:</p>
+<ul>
+<li><strong>All images must be in PNG format</strong></li>
+<li>A launcher background with a resolution of 300x400 [<a href="../gta/images/customlauncher/launcher_splash.png">Example</a>]</li>
+<li>A logo with a resolution of 128x128 [<a href="../gta/images/customlauncher/user_interface.png">Example</a>]</li>
+<li>A UI background with a resolution of 1920x1080 or 3840x2160 [<a href="../gta/images/customlauncher/loading_screen.png">Example</a>]</li>
+<li>A color to replace the primary color of the interface [<a href="../gta/images/customlauncher/user_interface.png">Example 1</a>] [<a href="../gta/images/customlauncher/color_customization.png">Example 2</a>]</li>
+<li>The link to an RSS feed. The exact format of the RSS feed is covered in the following topics. [<a href="../gta/images/customlauncher/user_interface.png">Example</a>]</li>
+</ul>
+<p>Once you have fulfilled all requirements and prepared the necessary media, join our <a href="https://discord.altv.mp/">Discord server</a> and contact a member of the Public Relations team.</p>
+<h1 id="rss-feed">RSS Feed</h1>
+<h2 id="title">Title</h2>
+<p>The title of the RSS feed is visible above the feed. If the 'title' property of the RSS feed is an empty string, the translation of 'Latest news' in the users language will be used instead.</p>
+<h2 id="item-properties">Item Properties</h2>
+<p>The following properties of the RSS feed entries are processed by the launcher:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>No</td>
+<td>Title of the post, displayed at the beginning of the post</td>
+</tr>
+<tr>
+<td>link</td>
+<td>No</td>
+<td>Opens in the browser when the user clicks on the post</td>
+</tr>
+<tr>
+<td>pubDate</td>
+<td>Yes</td>
+<td>Date of publication of the post. Displayed at the end in the user's language-specific formatting</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Yes</td>
+<td>Content of the post. Use of various HTML elements is allowed. The allowed elements are covered in the following topic.</td>
+</tr>
+<tr>
+<td>dc:creator</td>
+<td>No</td>
+<td>Creator of the post. Allows the use of HTML.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="html-usage">HTML usage</h2>
+<p>The following HTML elements are allowed and can be used in the RSS feed:<br>
+address, article, aside, footer, header, h1, h2, h3, h4, h5, h6, hgroup, main, nav, section, blockquote, dd, div, dl, dt, figcaption, figure, hr, li, main, ol, p, pre, ul, a, abbr, b, bdi, bdo, br, cite, code, data, dfn, em, i, kbd, mark, q, rb, rp, rt, rtc, ruby, s, samp, small, span, strong, sub, sup, time, u, var, wbr, caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr, img, del</p>
+<h2 id="special-elements">Special elements</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Unless otherwise specified, the display styles of the elements listed below follow the display style of Discord.</p>
+</div>
+<h3 id="spoiler">Spoiler</h3>
+<pre><code class="lang-html">&lt;span data-spoiler&gt;content&lt;/span&gt;
+</code></pre>
+<p>Displays a spoiler that can be revealed by the user clicking on it.</p>
+<h3 id="localized-strings">Localized strings</h3>
+<pre><code class="lang-html">&lt;!-- Localized string without arguments --&gt;
+&lt;span data-localized&gt;LOCALIZATION_KEY&lt;/span&gt;
+
+&lt;!-- Localized string with arguments --&gt;
+&lt;span data-localized=&quot;localization argument&quot;&gt;LOCALIZATION_KEY&lt;/span&gt;
+</code></pre>
+<p>A list of translated strings can be found in the <a href="https://github.com/altmp/altv-locales/tree/master">altv-locales</a> repository.</p>
+<p>The usage of the localized strings is only possible in the properties <code>description</code> and <code>dc:creator</code>.</p>
+<h3 id="timestamps">Timestamps</h3>
+<pre><code class="lang-html">&lt;span data-timestamp=&quot;F&quot;&gt;1675455031&lt;/span&gt;
+</code></pre>
+<p>The timestamp behaves like a timestamp in Discord and displays the respective time in the user's timezone.<br>
+The content of the span is a Unix timestamp and the possible <a href="https://discord.com/developers/docs/reference#message-formatting-timestamp-styles">formats</a> are based on Discords syntax.</p>
+<p>If no other format is specified, the &quot;F&quot; format is used by default.</p>
+<h3 id="mentions">Mentions</h3>
+<pre><code class="lang-html">&lt;span data-mention=&quot;255, 0, 0&quot;&gt;@zziger&lt;/span&gt;
+</code></pre>
+<p>Displays a mention. As the value of the attribute, a color in RGB syntax separated by a comma can be specified.<br>
+If no value is specified, Discord's default mention color is used.</p>
+<h3 id="images">Images</h3>
+<h4 id="emoji">Emoji</h4>
+<pre><code class="lang-html">&lt;img data-emoji src=&quot;https://emoji/icon/url.png&quot; alt=&quot;emojiname&quot;&gt;
+</code></pre>
+<p>Displays an image as a small inline element (1.375em height).<br>
+Allowed in the description and dc:creator properties.</p>
+<h4 id="image-row">Image row</h4>
+<pre><code class="lang-html">&lt;span data-images&gt;
+    &lt;img src=&quot;https://image/one/url.png&quot; alt=&quot;image one&quot;&gt;
+    &lt;img src=&quot;https://image/two/url.png&quot; alt=&quot;image two&quot;&gt;
+    &lt;img src=&quot;https://image/three/url.png&quot; alt=&quot;image three&quot;&gt;
+&lt;/span&gt;
+</code></pre>
+<p>Displays the given images in a horizontally scrollable list. The scrollbar is only shown when the width exceeds the possible display. Recommended for example for galleries.</p>
+<h3 id="quote">Quote</h3>
+<pre><code class="lang-html">&lt;blockquote&gt;quote content&lt;/blockquote&gt;
+</code></pre>
+<p>Displays the specified content as a quote.</p>
+<h3 id="code">Code</h3>
+<h4 id="inline">Inline</h4>
+<pre><code class="lang-html">&lt;code&gt;Inline code&lt;/code&gt;
+</code></pre>
+<p>Displays the specified text as code without line breaks.</p>
+<h4 id="block">Block</h4>
+<pre><code class="lang-html">&lt;pre&gt;
+    &lt;code&gt;
+        Multi line
+        Code block
+    &lt;/code&gt;
+&lt;/pre&gt;
+</code></pre>
 </article>
                     </div>
 

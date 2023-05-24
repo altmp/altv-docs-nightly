@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>14.0-Release </title>
+    <title>15.0-Release </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="14.0-Release ">
+    <meta name="title" content="15.0-Release ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -110,7 +110,7 @@
                             
                             <div class="sideaffix hide-when-search" data-noindex="">
                               <h3>Index</h3>
-                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#140-release">14.0-Release</a><ul class="level2 nav bs-docs-sidenav 140-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#added-1">Added</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#added-2">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li></ul></li></ul></div>
+                              <div class="bs-docs-sidebar affix" id="affix"><ul class="level1 nav bs-docs-sidenav"><li><a href="#150-release">15.0-Release</a><ul class="level2 nav bs-docs-sidenav 150-release"><li><a href="#client">Client</a><ul class="level3 nav bs-docs-sidenav client"><li><a href="#added">Added</a></li><li><a href="#fixed">Fixed</a></li></ul></li><li><a href="#server">Server</a><ul class="level3 nav bs-docs-sidenav server"><li><a href="#breaking-changes">Breaking changes</a></li><li><a href="#added-1">Added</a></li><li><a href="#fixed-1">Fixed</a></li></ul></li><li><a href="#server--client">Server &amp; Client</a><ul class="level3 nav bs-docs-sidenav server--client"><li><a href="#breaking-changes-1">Breaking changes</a></li></ul></li><li><a href="#js-module">JS Module</a><ul class="level3 nav bs-docs-sidenav js-module"><li><a href="#breaking-changes-2">Breaking changes</a></li><li><a href="#added-2">Added</a></li></ul></li></ul></li></ul></div>
                             </div>
 
                             
@@ -132,7 +132,7 @@
                                     </ul>
                                 </span>
 
-<h1 id="140-release">14.0-Release</h1>
+<h1 id="150-release">15.0-Release</h1>
 
 <div class="WARNING">
 <h5>Warning</h5>
@@ -141,52 +141,118 @@
 <h2 id="client">Client</h2>
 <h3 id="added">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Render RMLUI under CEF
-- Updated RMLUI to 5.0
-- RMLUI antialiasing
-- RMLUI fallback font
-- getPedBonePos method
-- Side Mouse buttons for voice keybinding
-- Display downloadspeed while downloading ressources
-- Server Permission translations
-- submit nickname on first start by pressing enter
-- adaptivity for client console layout
-- cef support while pause menu ped is active
-- downloadspeed setting
-- Updated cef to v103
-- general new UI
-- clear console command
+<pre><code class="lang-yaml">- mute loading music
+- DISABLE_VEHICLE_ENGINE_SHUTDOWN_ON_LEAVE flag to keep engines on when leaving a vehicle
+- worldObjectPositionChange event
+- audio, checkpoint, webview all getter
+- audio, webview, httpclien, websocketclient id getter
+- audio, blip remoteid getter
+- worldObjectStreamIn &amp; worldObjectStreamOut event
+- audio filter api
+- colshape api
+- textlabel api
+- dimension getter, position &amp; rotation setter for localplayer
+- httpclient, rmldocument, websocketclient, webview, checkpoint getbyID method
+- blip getByScriptID method
+- multiple webviews can be focused
+- resource config getter
+- vehicle rpm setter
+- warning if gta systems have performance issues
+- overwrite all game meta &amp; dat files
+- DISABLE_SP_ENTER_VEHICLE_CLIPSET flag (true by default)
+- extendet texture budget
+- new setter &amp; getter for object, checkpoint
+- localPed &amp; localVehicle api
+- activityInputEnabled, activationLevel, noiseSuppressionEnabled, toggleInput methods
+- Extended Voice API Permission
+- isFullScreen method
+- cef hardware acceleration
+- improve ressource loading speed
 </code></pre>
 </div>
 <h3 id="fixed">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- Disconnection modal displayed twice after reconnect
-- The Win key got blocked by active webview in the game
-- Ipv6 support
-- wrong menu after connect rejection
-- webview freezed on FileDialog
-- cursor type didnt reset on webview destroy
-- crashdump location folder
+<pre><code class="lang-yaml">- minimap textures couldn't be replaced
+- ap1_* ytds, vehshare.ytd, hud.ytd, minimap.ytd couldn't be replaced
+- gfx couldn't be replaced
+- cef flickering while marker is visible (native.drawRect(0, 0, 0, 0, 0, 0, 0, 0) workaround is no longer needed)
+- weapon dlc addon crashed the game on connect to the server
+- cef locale detection
+- webview didnt get destroyed
+- wrong reported resource downloadspeed
+- optional permissions
+- cancel button crashed client
+- voiceInputVolume sets volume in reverse
 </code></pre>
 </div>
 <h2 id="server">Server</h2>
-<h3 id="added-1">Added</h3>
+<h3 id="breaking-changes"><span style="color: red;">Breaking changes</span></h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- &quot;all&quot; as setting language
+<pre><code class="lang-yaml">- Removed PlayerBeforeConnect event
+- Removed id support for entityinstreamingrange method
 </code></pre>
 </div>
-<h2 id="js-module">JS Module</h2>
-<h3 id="added-2">Added</h3>
+<h3 id="added-1">Added</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- (server) Display source path on deprecated methods usage
-- (Server) Automatically fix paths with special characters
-- (Server) Updated nodeJS to 18.13.1
-- (Client) Updated v8 to 10.2
+<pre><code class="lang-yaml">- unreliable events
+- vehicleHorn event (cancable)
+- vehicleSiren, playerSpawn event
+- getEntitiesInDimension, getEntitiesInRange, getClosestEntities methods
+- support for singleplayer rpf files
+- extend limit to 65.000 entities (players, vehicles, etc.)
+- colshape &amp; blip, voicechannel id getter
+- checkpoint all getter
+- extend resource limit to 4GB
+- added priority, filter getter &amp; setter for voiceserver
+- player playAnimation, clearTasks method
+- streamsyncedmeta for checkpoints
+- vehicle quaternion setter &amp; getter
+- objects Api
+- player socialClubName getter
+- socialClubName info in connectioInfo
+- option (spawnAfterConnect = true) to spawn player automatically at position 0,0,71
+- no-regenerate-rpf-cache cmd line arg
+- error message if justpack gets used without valid host config
+- possible to enable only specific gta dlcs with the dlc-whitelist config option
+- player streamedEntities getter
+- hashClientResourceName server option
+- Modify gamepool size via server config
 </code></pre>
 </div>
 <h3 id="fixed-1">Fixed</h3>
 <div class="nohljsln">
-<pre><code class="lang-yaml">- (client) webview, audio, websocket &amp; rml geteventhandler returned removed ones
+<pre><code class="lang-yaml">- Dead body position sync
+- vehicle angular interpolator
+- vehicle flickers when the netowner changes
+</code></pre>
+</div>
+<h2 id="server--client">Server &amp; Client</h2>
+<h3 id="breaking-changes-1"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Removed alt.Entity.getByID method
+</code></pre>
+</div>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- getByID &amp; getByRemoteID method for baseobjects
+- getMetaKeys &amp; getSyncedMetaKeys methods
+- ped's Api
+- virtual entitys api
+- markers api
+- isEnteringVehicle, isLeavingVehicle, isOnLadder, isInCover, isInMelee player getter
+- metachange event
+</code></pre>
+</div>
+<h2 id="js-module">JS Module</h2>
+<h3 id="breaking-changes-2"><span style="color: red;">Breaking changes</span></h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- Removed deprecated null in emitClient &amp; emitClientRaw as target parameter
+</code></pre>
+</div>
+<h3 id="added-2">Added</h3>
+<div class="nohljsln">
+<pre><code class="lang-yaml">- (Client) toggleStrictChecks for natives
+- (Server|Client) baseObjectCreate &amp; baseObjectRemove event
+- (Server) Missing maxDistance &amp; isSpatial voicechannel getter
 </code></pre>
 </div>
 </article>
